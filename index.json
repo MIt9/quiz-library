@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "languages": {
+    "en": {
+      "title": "English",
+      "quizzes": [
+        {
+          "file": "en/rest-api-junior.json",
+          "title": "Rest Api Junior",
+          "questions": 5
+        }
+      ]
+    },
+    "uk": {
+      "title": "Українська",
+      "quizzes": [
+        {
+          "file": "uk/flutter-junior.json",
+          "title": "Flutter Junior",
+          "questions": 5
+        }
+      ]
+    }
+  }
+}

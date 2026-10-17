@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "question": "Що таке Flutter?",
+    "options": [
+      "Фреймворк від Google для створення кросплатформних застосунків",
+      "Реляційна база даних",
+      "Серверна мова програмування",
+      "Хмарний сервіс для зберігання файлів"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "2",
+    "question": "Якою мовою програмування пишуть застосунки на Flutter?",
+    "options": ["Kotlin", "Dart", "Swift", "JavaScript"],
+    "correct_index": 1
+  },
+  {
+    "id": "3",
+    "question": "Який віджет потрібно використовувати, якщо його стан змінюється під час роботи застосунку?",
+    "options": [
+      "StatelessWidget",
+      "Container",
+      "StatefulWidget",
+      "SizedBox"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "4",
+    "question": "Що робить метод setState()?",
+    "options": [
+      "Зберігає стан у файл",
+      "Закриває поточний екран",
+      "Очищає кеш застосунку",
+      "Повідомляє фреймворк, що стан змінився, і запускає перебудову віджета"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "5",
+    "question": "Яка команда завантажує залежності проєкту Flutter?",
+    "options": [
+      "flutter pub get",
+      "flutter clean",
+      "flutter doctor",
+      "flutter build"
+    ],
+    "correct_index": 0
+  }
+]
