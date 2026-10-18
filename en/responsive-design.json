@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What does responsive web design mean?",
+  "options": [
+   "A separate mobile site that a server sends only to phone users.",
+   "One site adapts its layout to each screen size.",
+   "A site that loads faster because it uses fewer image files overall.",
+   "A site that uses JavaScript to detect the exact device model first."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "Which element makes a page use the device width on a phone?",
+  "options": [
+   "`<meta name=\"responsive\" content=\"device-width, scale=auto\">`",
+   "`<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">`",
+   "`<meta http-equiv=\"viewport\" content=\"mobile-first, fluid\">`",
+   "`<meta name=\"device\" content=\"width=100%, initial-zoom=1\">`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "What does `width=device-width` set in the viewport meta tag?",
+  "options": [
+   "The width of every image equals the screen width in pixels.",
+   "The page stays at the same width when the user turns the phone.",
+   "The page width is fixed to the physical pixels of the screen.",
+   "The layout viewport width equals the screen width in CSS pixels."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "4",
+  "question": "What is a media query?",
+  "options": [
+   "An HTML tag that picks an image or video file for each screen size.",
+   "A JavaScript function that reads the type of device and then loads files.",
+   "A CSS rule that applies styles only when a condition is true.",
+   "A server request that returns a different page for mobile devices."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "5",
+  "question": "Which rule applies styles only when the viewport is at least 768px wide?",
+  "options": [
+   "`@media (max-width: 768px)`",
+   "`@media (min-width: 768px)`",
+   "`@media (viewport-width > 768px)`",
+   "`@media (width-minimum: 768px)`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "6",
+  "question": "What is a breakpoint in responsive design?",
+  "options": [
+   "A width at which the browser stops to load more images.",
+   "A line of JavaScript where the debugger stops the page.",
+   "A viewport width at which the layout changes.",
+   "A pixel position where the scroll of the page ends."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "7",
+  "question": "What does the mobile-first approach mean for CSS?",
+  "options": [
+   "You write base styles for large screens, then add `max-width` queries for small screens.",
+   "You build the phone site first and make a separate desktop site later.",
+   "You test the site on a phone first and write the CSS after the tests.",
+   "You write base styles for small screens, then add `min-width` queries for larger screens."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "What is a fluid layout?",
+  "options": [
+   "A layout that uses fixed pixel widths and shows a scroll bar on small screens.",
+   "A layout whose sizes use percentages, so they follow the container.",
+   "A layout that uses JavaScript animation to move the blocks on the page.",
+   "A layout that keeps the same proportions of all blocks on every device."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "9",
+  "question": "Which CSS unit is a percentage of the viewport width?",
+  "options": [
+   "`em`",
+   "`ch`",
+   "`rem`",
+   "`vw`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "10",
+  "question": "What does `1rem` equal?",
+  "options": [
+   "One percent of the width of the current viewport.",
+   "The font size of the nearest parent element in the page.",
+   "The font size of the root `html` element.",
+   "The height of one line of text in the body."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "11",
+  "question": "In the `font-size` property, what is `1.5em` relative to?",
+  "options": [
+   "The font size of the root `html` element.",
+   "The font size of the parent element.",
+   "The width of the viewport in CSS pixels.",
+   "The width of the letter M in the current font."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "12",
+  "question": "Which rule stops an image from overflowing its container and keeps its ratio?",
+  "options": [
+   "`img { width: 100vw; height: 100%; }`",
+   "`img { min-width: 100%; height: 100%; }`",
+   "`img { max-width: 100%; height: auto; }`",
+   "`img { overflow: hidden; width: auto; }`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "13",
+  "question": "Which HTML attribute gives the browser a list of image files to choose from?",
+  "options": [
+   "`data-src`",
+   "`loading`",
+   "`srcset`",
+   "`decoding`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "14",
+  "question": "What does the `<picture>` element do?",
+  "options": [
+   "It loads an image only when the user scrolls near the element.",
+   "It makes every image inside it scale to the width of the page.",
+   "It offers different image sources for different screens.",
+   "It compresses the image file in the browser before the page shows it."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "15",
+  "question": "What does the `sizes` attribute tell the browser?",
+  "options": [
+   "The file size in kilobytes of each image in the `srcset` list.",
+   "The number of images that the browser must download at the same time.",
+   "The largest width that the browser can use to scale the image.",
+   "How wide the image will be on the page under different viewport conditions."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "16",
+  "question": "In `srcset=\"photo-800.jpg 800w\"`, what does `800w` mean?",
+  "options": [
+   "The image shows at 800 CSS pixels on the page.",
+   "The image file is 800 pixels wide.",
+   "The image file is 800 kilobytes in size.",
+   "The image loads when the viewport is 800 pixels wide."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "17",
+  "question": "Which Flexbox property lets items move to the next line when there is no space?",
+  "options": [
+   "`flex-flow: break`",
+   "`flex-direction: wrap`",
+   "`align-content: wrap`",
+   "`flex-wrap: wrap`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "18",
+  "question": "Which grid rule makes as many columns as fit, each at least 200px, with no media query?",
+  "options": [
+   "`grid-template-columns: auto-fill(200px, 1fr)`",
+   "`grid-template-columns: repeat(auto-columns, minmax(1fr, 200px))`",
+   "`grid-template-columns: repeat(fit, 200px) 1fr`",
+   "`grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "19",
+  "question": "What does `font-size: clamp(1rem, 2.5vw, 2rem)` do?",
+  "options": [
+   "It uses the average of `1rem`, `2.5vw`, and `2rem` at all times.",
+   "It uses `2.5vw`, kept between `1rem` and `2rem`.",
+   "It uses `2.5vw` only when the value is between `1rem` and `2rem`.",
+   "It rounds the value of `2.5vw` to the nearest of `1rem` or `2rem`."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "What is the order of the arguments in `clamp()`?",
+  "options": [
+   "Maximum, preferred value, minimum.",
+   "Preferred value, minimum, then maximum.",
+   "Minimum, preferred value, maximum.",
+   "Minimum, maximum, preferred value."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "21",
+  "question": "Which size is a common guide for the minimum comfortable touch target?",
+  "options": [
+   "About 28 by 14 CSS pixels, like a text link.",
+   "About 16 by 16 CSS pixels, like body text.",
+   "About 8 by 8 CSS pixels, like a small icon.",
+   "About 44 by 44 CSS pixels."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "What is the main difference between responsive and adaptive design?",
+  "options": [
+   "Responsive layouts use JavaScript for changes; adaptive layouts use only CSS for changes.",
+   "Responsive layouts flex continuously; adaptive layouts switch between fixed layouts.",
+   "Responsive layouts use fixed widths; adaptive layouts use percentages for all widths.",
+   "Responsive layouts work only on phones; adaptive layouts work on all screens."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "23",
+  "question": "Which browser tool shows a page at the size of a phone screen?",
+  "options": [
+   "The coverage panel in the developer tools.",
+   "The network throttling menu in the developer tools.",
+   "The sources panel in the developer tools.",
+   "The device toolbar in the developer tools."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "What does `initial-scale=1` do in the viewport meta tag?",
+  "options": [
+   "It makes the page zoom to fit the widest element when it loads.",
+   "It makes all text on the page 100 percent larger at the start.",
+   "It sets the first zoom level so one CSS pixel equals one device-independent pixel.",
+   "It stops the user from zooming out below the first scale of the page."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "25",
+  "question": "A developer adds `user-scalable=no` to the viewport meta tag. What is the problem?",
+  "options": [
+   "The page loads at a wrong width on phones.",
+   "The media queries stop matching on small screens.",
+   "Users with low vision cannot zoom the page.",
+   "The page cannot turn from portrait to landscape."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "26",
+  "question": "Which CSS keeps content at most 1200px wide and centers it on large screens?",
+  "options": [
+   "`min-width: 1200px; margin: auto 0;`",
+   "`width: 1200px; text-align: center;`",
+   "`max-width: 1200px; margin: 0 auto;`",
+   "`max-height: 1200px; margin: 0 auto;`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "27",
+  "question": "Which CSS limits a text column to about 65 characters per line?",
+  "options": [
+   "`max-width: 65vh`",
+   "`max-width: 65vmax`",
+   "`max-width: 65px`",
+   "`max-width: 65ch`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "28",
+  "question": "Which pattern is common for the main navigation on small screens?",
+  "options": [
+   "A row of all links with a very small font size.",
+   "A button that opens and closes the list of links.",
+   "A horizontal scroll bar on the whole page.",
+   "A second page that has only the links."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "29",
+  "question": "When does `@media (orientation: landscape)` match?",
+  "options": [
+   "When the device is a phone with a built-in camera.",
+   "When the viewport is wider than it is high.",
+   "When the viewport is at least 1024px wide on a desktop.",
+   "When the user holds the device in one hand only."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "30",
+  "question": "Which media feature value shows that the main input is a finger?",
+  "options": [
+   "`@media (touch-enabled: true)`",
+   "`@media (hover: hover) and (pointer: fine)`",
+   "`@media (pointer: coarse)`",
+   "`@media (input-type: finger)`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "31",
+  "question": "Why do developers often set font sizes in `rem`?",
+  "options": [
+   "The text always has the same pixel size on every device.",
+   "The text follows the font size that the user sets in the browser.",
+   "The text scales with the width of the viewport.",
+   "The text ignores the font size of the root element."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "32",
+  "question": "A screen has a device pixel ratio of 2. What does this mean?",
+  "options": [
+   "The screen has two times more CSS pixels than the width in `vw`.",
+   "One CSS pixel uses 2 by 2 device pixels.",
+   "The browser draws every page at half of its size.",
+   "The screen can show two pages at the same time."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "Why do you add a `2x` image in `srcset`?",
+  "options": [
+   "Slow networks get a smaller image file.",
+   "Large screens get an image that is twice as tall.",
+   "Older browsers get a second option for the image.",
+   "High-density screens get a sharper image."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "34",
+  "question": "What does `aspect-ratio: 16 / 9` do on a box?",
+  "options": [
+   "It sets the box to 16 percent of the width and 9 percent of the height.",
+   "It makes the box 16 pixels wide and 9 pixels high.",
+   "It crops the box content to a 16 by 9 area.",
+   "It keeps the proportion of the box when its width changes."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "35",
+  "question": "What does `flex: 1` on all flex items usually do?",
+  "options": [
+   "The items all keep a width of one pixel.",
+   "The items all shrink to the size of their content.",
+   "The items grow to share the free space equally.",
+   "The items all move to the first line of the container."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "What is the `fr` unit in CSS Grid?",
+  "options": [
+   "A fixed number of pixels for each row or column of the grid.",
+   "A fraction of the free space in the grid container.",
+   "A fraction of the height of the viewport, like a `vh` unit.",
+   "A fraction of the width of the widest item in the grid."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "37",
+  "question": "Which query type does a desktop-first stylesheet usually use?",
+  "options": [
+   "`orientation`",
+   "`min-width`",
+   "`max-width`",
+   "`min-resolution`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "38",
+  "question": "Which attribute delays the load of an offscreen image until the user scrolls near it?",
+  "options": [
+   "`srcset=\"lazy\"`",
+   "`decoding=\"async\"`",
+   "`fetchpriority=\"low\"`",
+   "`loading=\"lazy\"`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "How should you choose the values for the breakpoints?",
+  "options": [
+   "Use the screen widths of the most popular phone models.",
+   "Use the widths where the content starts to look bad.",
+   "Use the same three widths that all other sites use.",
+   "Use only the width of the device of the project owner."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "40",
+  "question": "Why is `width: 960px` on the main container a problem for responsive design?",
+  "options": [
+   "It stops the media queries from working on large screens.",
+   "It causes a horizontal scroll bar on screens narrower than 960px.",
+   "It makes the text smaller on screens wider than 960px.",
+   "It hides the content on screens narrower than 960px."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "41",
+  "question": "What is a common reason for a horizontal scroll bar on a phone?",
+  "options": [
+   "The viewport meta tag has the value `initial-scale=1`.",
+   "An element, such as a table or image, is wider than the viewport.",
+   "The page uses `rem` units for the font sizes.",
+   "The CSS has more than three media queries."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "42",
+  "question": "What can happen on iPhone when an input has a font size below 16px?",
+  "options": [
+   "Safari hides the keyboard when the user taps the input.",
+   "Safari makes the input read-only until the page zooms.",
+   "Safari changes the font of the input to a system font.",
+   "Safari zooms the page when the user taps the input."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "What does `width: min(100%, 600px)` do?",
+  "options": [
+   "It uses the larger of the two values.",
+   "It uses the average of the two values.",
+   "It uses the smaller of the two values.",
+   "It uses 100% only when the screen is 600px wide."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "What does `object-fit: cover` do for an image in a fixed box?",
+  "options": [
+   "It stretches the image to the box and changes the ratio.",
+   "It shrinks the image to fit fully inside the box.",
+   "It fills the box, keeps the ratio, and crops the extra part.",
+   "It shows the image at its original size in the box."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "A page has no viewport meta tag. What does a phone usually do?",
+  "options": [
+   "It renders the page at the device width and hides the overflow.",
+   "It shows an error and asks the user to open the desktop site.",
+   "It renders the page at a wide default width and scales it down.",
+   "It renders the page at 320px wide and removes the media queries."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "46",
+  "question": "Why do you test on real devices and not only in the emulator?",
+  "options": [
+   "Real devices are the only place where media queries can work at all.",
+   "Emulators cannot change the size of the viewport or the device pixel ratio.",
+   "Emulators miss real touch, speed, and browser differences.",
+   "Real devices show the CSS file in a more correct way than emulators."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "47",
+  "question": "What does `width: 100%` mean for a block element?",
+  "options": [
+   "The width equals the width of the viewport.",
+   "The width equals the width of its containing block.",
+   "The width equals the width of its content.",
+   "The width equals the width of the root element."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "48",
+  "question": "What does `@media screen and (max-width: 600px)` mean?",
+  "options": [
+   "The styles apply to images that are 600px wide or narrower.",
+   "The styles apply on screens that are 600px wide or wider.",
+   "The styles apply to print pages that are 600px wide.",
+   "The styles apply on screens up to 600px wide."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "49",
+  "question": "Where do you put the viewport meta tag?",
+  "options": [
+   "Inside the `<body>` element before the first heading.",
+   "At the top of the main CSS file.",
+   "Inside the `<head>` element of the HTML page.",
+   "In the HTTP response body after the closing `</html>` tag."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "50",
+  "question": "Which CSS makes Flexbox items stack in a column on a small screen?",
+  "options": [
+   "`flex-wrap: column`",
+   "`flex-direction: column`",
+   "`align-items: vertical`",
+   "`justify-content: column`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "51",
+  "question": "Which CSS makes an element a container for size-based container queries?",
+  "options": [
+   "`display: container-query`",
+   "`container-name: card-container`",
+   "`container-type: inline-size`",
+   "`contain: media-query`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "52",
+  "question": "What does `@container (min-width: 400px)` check?",
+  "options": [
+   "The width of the viewport.",
+   "The width of the element that gets the styles.",
+   "The width of the page in the parent window.",
+   "The width of the nearest ancestor query container."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "53",
+  "question": "Why use a container query and not a media query for a card component?",
+  "options": [
+   "The card gets its own viewport meta tag inside the page.",
+   "The card loads faster because it needs no media query at all.",
+   "The card works in older browsers that lack media queries.",
+   "The card adapts to its own space, not to the viewport."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "54",
+  "question": "A card has an `@container` rule, but the rule never applies. What is the likely cause?",
+  "options": [
+   "The card has no `max-width`.",
+   "The viewport meta tag is missing.",
+   "No ancestor has a `container-type`.",
+   "The rule must be inside a `@media` block."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "55",
+  "question": "What does `sizes=\"(min-width: 800px) 50vw, 100vw\"` say?",
+  "options": [
+   "The image is half the viewport wide from 800px, and full width below.",
+   "The image is 50 pixels wide above 800px, and 100 pixels below.",
+   "The image file has 800 pixels and uses 50 percent of its size.",
+   "The image is hidden below 800px and full width above."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "A developer uses `w` descriptors in `srcset` and no `sizes` attribute. What does the browser assume?",
+  "options": [
+   "The image is the same width as its container, so it loads the exact size.",
+   "The image is 100px wide, so it loads the smallest file.",
+   "The image has no size, so it loads the first file in the list.",
+   "The image is 100vw wide, so it can load a file that is too large."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "57",
+  "question": "When do you use `<picture>` and not only `srcset`?",
+  "options": [
+   "When you need art direction, such as a different crop.",
+   "When you need the browser to choose the file by screen density.",
+   "When you need to lazy load the image below the first screen.",
+   "When you need to add alt text that screen readers can read."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "58",
+  "question": "A `<picture>` has `<source type=\"image/avif\">` and then a JPEG `<img>`. How does the browser choose?",
+  "options": [
+   "It downloads both files and shows the smaller one.",
+   "It uses the first source with a type that it supports.",
+   "It uses the JPEG first and then replaces it with the AVIF.",
+   "It uses the AVIF file only when the viewport is wide."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "59",
+  "question": "Images have no `width` and `height` attributes. What is the main risk?",
+  "options": [
+   "The images do not scale on small screens.",
+   "The browser ignores the `srcset` attribute.",
+   "The layout shifts when the images load.",
+   "The images load in a wrong order."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "60",
+  "question": "Which unit follows the visible viewport height when the mobile address bar shows or hides?",
+  "options": [
+   "`vh`",
+   "`lvh`",
+   "`dvh`",
+   "`vmax`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "61",
+  "question": "A heading uses `font-size: 4vw` only. Which problem can happen?",
+  "options": [
+   "The text is always the same size on every screen.",
+   "The text ignores the media queries of the page.",
+   "The text may not grow when the user zooms the page.",
+   "The text changes only when the user turns the phone."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "62",
+  "question": "Why do developers write `font-size: calc(1rem + 1vw)` and not `1vw`?",
+  "options": [
+   "The `rem` part makes the text smaller on large screens.",
+   "The `rem` part stops the text from changing with the viewport.",
+   "The `rem` part makes the browser calculate the value one time.",
+   "The `rem` part keeps the text responsive to the user font settings."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "63",
+  "question": "A flex item with a long word overflows the container. Which fix is common?",
+  "options": [
+   "Set `flex-shrink: 0` on the flex item.",
+   "Set `min-width: 0` on the flex item.",
+   "Set `align-items: stretch` on the container.",
+   "Set `flex-basis: auto` on the container."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "64",
+  "question": "What is the difference between `auto-fit` and `auto-fill` in `repeat()`?",
+  "options": [
+   "`auto-fit` collapses empty tracks, so the items grow to fill the row.",
+   "`auto-fit` keeps empty tracks, so the items stay at the minimum size of the track.",
+   "`auto-fit` works only with `px` units and `auto-fill` with `fr`.",
+   "`auto-fit` adds a new row and `auto-fill` adds a new column."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "What is a risk of a desktop-first stylesheet with `max-width` queries?",
+  "options": [
+   "Phones must read and override the desktop styles.",
+   "Desktop browsers cannot read `max-width` media queries at all.",
+   "Phones do not support `max-width` media queries in CSS.",
+   "The layout cannot use Flexbox or Grid in the base styles."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "Which query matches widths from 400px to 800px, including both values?",
+  "options": [
+   "`(min-width: 400px) and (max-width: 800px)`",
+   "`(min-width: 400px), (max-width: 800px), print`",
+   "`(width: 400px to 800px)`",
+   "`(min-width: 400px) or (max-width: 800px)`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "67",
+  "question": "A page has `max-width: 768px` and `min-width: 768px` rules. What happens at exactly 768px?",
+  "options": [
+   "Neither rule applies.",
+   "Only the `min-width` rule applies.",
+   "Only the `max-width` rule applies.",
+   "Both rules apply."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "68",
+  "question": "Cards use `flex: 1 1 250px` with `flex-wrap: wrap` in a 600px container with no gap. How many cards fit in one row?",
+  "options": [
+   "Two, and they grow to share the extra space.",
+   "Three, and they shrink to about 200px each.",
+   "Two, and they stay at exactly 250px each, leaving space.",
+   "One, because the cards need the full row width."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "69",
+  "question": "A menu opens on `:hover` and stays open after a tap on a phone. What is the best fix?",
+  "options": [
+   "Put the hover styles inside `@media (hover: hover)`.",
+   "Replace `:hover` with `:visited` on all of the links.",
+   "Add `user-scalable=no` to the viewport meta tag of the page.",
+   "Use `pointer-events: none` on the menu and its links."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "70",
+  "question": "Links in a list are 20px high and touch each other. What is the best fix?",
+  "options": [
+   "Add padding to make each tap area about 44px high.",
+   "Make the font of the links bold and a little bigger.",
+   "Add a `:hover` style and an underline to each of the links.",
+   "Make the links a lighter color with a stronger contrast."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "71",
+  "question": "A block with `width: 100vw` makes a horizontal scroll bar on a desktop. Why?",
+  "options": [
+   "`100vw` is wider than the screen on desktop browsers.",
+   "`100vw` includes the width of the vertical scroll bar.",
+   "`100vw` includes the margin of the body element.",
+   "`100vw` is calculated before the page loads."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "72",
+  "question": "Which CSS function gets the space for a phone notch?",
+  "options": [
+   "`env(safe-area-inset-top)`",
+   "`var(--safe-area-inset-top)`",
+   "`calc(notch-top)`",
+   "`attr(safe-area-inset-top)`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "73",
+  "question": "How do you find layout errors between your chosen breakpoints?",
+  "options": [
+   "Resize the window slowly through all widths and look at the layout.",
+   "Test only at the exact width of each breakpoint that you chose in the CSS.",
+   "Test only on the three most common phone models on sale.",
+   "Run an HTML validator and a CSS linter on the page."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "74",
+  "question": "A wide data table breaks a mobile page. Which fix keeps the page without a horizontal scroll bar?",
+  "options": [
+   "Put the table in a container with `overflow-x: auto`.",
+   "Set `table-layout: fixed` on the body element of the page.",
+   "Set `width: 100vw` on the table and its cells in the page.",
+   "Add `user-scalable=yes` to the viewport meta tag of the page."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "Why do some teams write media query breakpoints in `em`?",
+  "options": [
+   "The breakpoints stay the same when the user zooms the page.",
+   "The breakpoints follow the font size that the user sets in the browser.",
+   "The breakpoints work in old browsers that do not know `px`.",
+   "The breakpoints change with the font size of the parent element."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "76",
+  "question": "Inside `<picture>`, which element is required and shows the image?",
+  "options": [
+   "A `<source>` element with a `media` attribute.",
+   "A `<figure>` element with a `src` attribute.",
+   "A `<noscript>` element with a `srcset` attribute.",
+   "An `<img>` element, which also is the fallback."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "77",
+  "question": "Which layout tool is best for a page with rows and columns that change at breakpoints?",
+  "options": [
+   "CSS Grid",
+   "CSS floats",
+   "Table layout",
+   "CSS columns"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "78",
+  "question": "How do you keep a 16:9 embedded video in a fluid container?",
+  "options": [
+   "Set `width: 100%` and `aspect-ratio: 16 / 9`.",
+   "Set `width: 100vw` and `height: 56.25px`.",
+   "Set `max-height: 100%` and `object-fit: 16/9`.",
+   "Set `height: auto` and `min-width: 16%`."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "79",
+  "question": "Why is `max-width` better than `width` for a fluid container?",
+  "options": [
+   "The container always stays at the size of the value.",
+   "The container ignores the padding of its children.",
+   "The container becomes wider than the viewport on phones.",
+   "The container can become narrower than the value on small screens."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "80",
+  "question": "What is `1cqw` in a container query?",
+  "options": [
+   "One percent of the width of the viewport.",
+   "One percent of the width of the parent element.",
+   "One percent of the width of the page content.",
+   "One percent of the width of the query container."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "81",
+  "question": "A user pinches to zoom on a phone. What changes?",
+  "options": [
+   "The visual viewport changes; the layout viewport stays.",
+   "The layout viewport changes, and the visual viewport stays the same.",
+   "Both viewports change, and the media queries run again on the page.",
+   "The device pixel ratio changes, and the CSS pixels stay the same."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "82",
+  "question": "What is a cost of using `dvh` for a full-screen hero section?",
+  "options": [
+   "The height changes when the address bar shows or hides, so the layout can move.",
+   "The height is always smaller than the visible area of the screen.",
+   "The height does not work in the `min-height` property.",
+   "The height ignores the safe area of the device."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "83",
+  "question": "Why can an element with `container-type: inline-size` not get its width from its children?",
+  "options": [
+   "Container queries need a fixed `px` width to work.",
+   "Inline-size containment makes its width independent of its content.",
+   "The element changes to `display: block` and ignores its children.",
+   "The browser sets its width to the width of the viewport."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "84",
+  "question": "Which element can an `@container` rule style?",
+  "options": [
+   "Only the container element itself, not its descendants.",
+   "Only the descendants of the container, not the container itself.",
+   "Any element in the page, if the width condition is true.",
+   "Only the direct children of the container element."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "85",
+  "question": "A designer needs the browser to always load `hero-wide.jpg` at 1000px or wider. Which tool gives this control?",
+  "options": [
+   "`<picture>` with a `<source media>` element",
+   "`srcset` with `w` descriptors and a `sizes` attribute",
+   "`srcset` with `2x` descriptors",
+   "The `sizes` attribute on the `<img>`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "86",
+  "question": "How do you preload a hero image that uses `srcset`?",
+  "options": [
+   "Use `srcset` and `sizes` on `<link rel=\"prefetch\">`.",
+   "Use `href` with the largest file in `<link rel=\"preload\">`.",
+   "Use `loading=\"eager\"` on the `<link rel=\"preload\">`.",
+   "Use `imagesrcset` and `imagesizes` on `<link rel=\"preload\" as=\"image\">`."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "A team adds `loading=\"lazy\"` to the main hero image. What is the likely result?",
+  "options": [
+   "The Largest Contentful Paint gets slower.",
+   "The Cumulative Layout Shift gets worse.",
+   "The image does not load on slow networks.",
+   "The browser ignores the `srcset` attribute."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "Why do some teams write `max-width: 767.98px` with `min-width: 768px`?",
+  "options": [
+   "To avoid an overlap or a gap at fractional viewport widths.",
+   "To make the rule work in browsers that do not support `px`.",
+   "To give the `min-width` rule a higher specificity than the other.",
+   "To stop the rules from applying on print pages."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "89",
+  "question": "A grid with `1fr` columns overflows because of a long word. Which fix is correct?",
+  "options": [
+   "Use `minmax(0, 1fr)` for the columns.",
+   "Use `minmax(auto, 1fr)` for the columns.",
+   "Use `max-content` for the columns.",
+   "Use `repeat(auto-fill, 1fr)` for the columns."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "90",
+  "question": "What is a trade-off of `repeat(auto-fit, minmax(240px, 1fr))` instead of breakpoints?",
+  "options": [
+   "You have less control of the exact number of columns at each width.",
+   "You must add JavaScript to count the columns and set the widths.",
+   "The grid does not work with items of different heights or content.",
+   "The grid works only when all items have the same content and height."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "Why does the browser need the `sizes` attribute before layout?",
+  "options": [
+   "The CSS parser needs it to build the media queries.",
+   "The layout engine uses it to set the height of the image.",
+   "The preload scanner picks the image before CSS and layout are known.",
+   "The server needs it to choose the file by the device type."
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "92",
+  "question": "A tablet has a keyboard and a mouse. Which feature tells you that any input can hover?",
+  "options": [
+   "`hover: hover`",
+   "`pointer: fine`",
+   "`any-hover: hover`",
+   "`any-pointer: coarse`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "93",
+  "question": "How do you give a CSS background image a `1x` and a `2x` version?",
+  "options": [
+   "Use `srcset` in the `background-image` property.",
+   "Use `@media (min-width: 2x)` for the `background` property.",
+   "Use `background-size: 2x` in the rule.",
+   "Use `image-set()` in the `background-image` property."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "94",
+  "question": "WCAG 1.4.10 Reflow applies at 400% zoom on a 1280px viewport. What must the page do?",
+  "options": [
+   "Show the same layout as at 1280 pixels but with larger text.",
+   "Show the content at 320 CSS pixels wide without horizontal scroll.",
+   "Show a link to a separate mobile version of the page.",
+   "Show the content at 640 CSS pixels wide with a horizontal scroll bar."
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "Why use `matchMedia` instead of reading `innerWidth` in a resize handler?",
+  "options": [
+   "It runs only when the query result changes.",
+   "It runs on every pixel of resize and gives a more exact width.",
+   "It works without a media query in the CSS file.",
+   "It stops the browser from running the layout again."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "96",
+  "question": "A full-screen hero must stay fully visible when the mobile address bar shows. Its size must not change on scroll. Which unit fits?",
+  "options": [
+   "`svh`",
+   "`lvh`",
+   "`dvh`",
+   "`vmax`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "97",
+  "question": "A team uses a separate `m.` site and not a responsive site. What is the biggest cost?",
+  "options": [
+   "Two codebases, plus redirects and canonical links to keep in sync.",
+   "The mobile site cannot use images or CSS Grid.",
+   "The mobile site loads more slowly than a responsive site on every device.",
+   "The desktop site cannot use media queries."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "98",
+  "question": "Google uses mobile-first indexing. A mobile page removes content from its HTML that desktop shows. What is the risk?",
+  "options": [
+   "Google shows the desktop page in the results.",
+   "Google does not crawl the mobile page.",
+   "Google ignores the viewport meta tag.",
+   "Google may not index the removed content."
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "99",
+  "question": "What does `subgrid` solve in a responsive card grid?",
+  "options": [
+   "The inner parts of each card align to the tracks of the parent grid.",
+   "The cards keep a fixed height at all viewport widths and content sizes.",
+   "The cards change their column count without media queries.",
+   "The cards inherit the media queries of the parent grid."
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "100",
+  "question": "A team adds `overflow-x: hidden` to `body` to remove a horizontal scroll bar. What is the main risk?",
+  "options": [
+   "It hides the symptom, so some content stays cut off and unreachable.",
+   "It stops all media queries from running on the page and in its child frames.",
+   "It makes the page slower on every device.",
+   "It turns off the zoom of the page on phones."
+  ],
+  "correct_index": 0
+ }
+]

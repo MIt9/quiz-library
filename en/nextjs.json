@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "In the App Router, which file makes a route segment publicly reachable and shows its UI?",
+  "options": [
+   "route.tsx",
+   "page.tsx",
+   "template.tsx",
+   "layout.tsx"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "Which top-level folder holds the routes of the App Router?",
+  "options": [
+   "pages",
+   "src/views",
+   "app",
+   "routes"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "3",
+  "question": "In the App Router, what kind of component is each component by default?",
+  "options": [
+   "A Web Component",
+   "A Server Component",
+   "A Client Component",
+   "A static HTML component"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "4",
+  "question": "Which directive at the top of a file marks the start of a client boundary?",
+  "options": [
+   "\"use server\"",
+   "\"use strict\"",
+   "\"use client\"",
+   "\"use browser\""
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "5",
+  "question": "Which file wraps child pages and keeps its state when the user moves between them?",
+  "options": [
+   "layout.tsx",
+   "template.tsx",
+   "page.tsx",
+   "loading.tsx"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "6",
+  "question": "Which file shows an instant fallback UI while the content of a route segment loads?",
+  "options": [
+   "fallback.tsx",
+   "suspense.tsx",
+   "pending.tsx",
+   "loading.tsx"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "7",
+  "question": "Which file defines the error UI for a route segment?",
+  "options": [
+   "error.tsx",
+   "boundary.tsx",
+   "catch.tsx",
+   "fallback.tsx"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "8",
+  "question": "Which file defines the UI that Next.js shows when code calls `notFound()`?",
+  "options": [
+   "error.tsx",
+   "not-found.tsx",
+   "404.tsx",
+   "global-error.tsx"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "9",
+  "question": "How do you create a dynamic route for a blog post with a `slug` value?",
+  "options": [
+   "Make a folder named @slug",
+   "Make a folder named (slug)",
+   "Make a folder named [slug]",
+   "Make a folder named {slug}"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "Which folder name creates a catch-all route segment that matches many path parts?",
+  "options": [
+   "[*slug]",
+   "[slug...]",
+   "[...slug]",
+   "[[slug]]"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "11",
+  "question": "What does a folder named `(marketing)` do in the `app` directory?",
+  "options": [
+   "It marks all the routes inside as dynamic",
+   "It makes the routes private, so no URL reaches them",
+   "It creates a parallel route slot for the layout",
+   "It groups routes and leaves the URL path as is"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "12",
+  "question": "A folder named `_utils` is inside `app`. What is the result?",
+  "options": [
+   "The folder works as a route group",
+   "The code inside runs only on the server",
+   "The URL path /_utils becomes a route",
+   "The folder opts out of routing"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "13",
+  "question": "Why do you use `Link` from `next/link` instead of a plain `a` tag?",
+  "options": [
+   "It renders the target page on the server only, with no client code",
+   "It adds the rel and target attributes to every link in the page",
+   "It navigates on the client and prefetches routes",
+   "It sends a full page reload to get new data"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "14",
+  "question": "Which module exports `useRouter` for Client Components in the App Router?",
+  "options": [
+   "next/navigation",
+   "next/router",
+   "next/client",
+   "next/link"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "15",
+  "question": "Which hook reads the query string of the current URL in a Client Component?",
+  "options": [
+   "useSearchParams",
+   "useRouter().query",
+   "useQuery",
+   "useParams"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "Which file name creates an HTTP endpoint inside the `app` directory?",
+  "options": [
+   "endpoint.ts",
+   "handler.ts",
+   "api.ts",
+   "route.ts"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "17",
+  "question": "Which class from `next/server` helps you return a JSON response in a route handler?",
+  "options": [
+   "NextJson",
+   "NextResponse",
+   "ApiResponse",
+   "ServerResponse"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "18",
+  "question": "Where do you put the `middleware.ts` file in a Next.js 14 project?",
+  "options": [
+   "In the project root, next to app or inside src",
+   "Inside the pages folder as a file named _middleware.ts",
+   "Inside the app/api folder with the handlers",
+   "Inside the app folder, next to the root layout"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "When does middleware run in a Next.js app?",
+  "options": [
+   "After the page finishes its render on the server",
+   "Before the request reaches the matched route",
+   "Only at build time for each static route",
+   "Only in the browser after the page loads"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "Which export of `middleware.ts` limits the paths on which middleware runs?",
+  "options": [
+   "config.paths",
+   "config.routes",
+   "config.include",
+   "config.matcher"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "What is a Server Action?",
+  "options": [
+   "A function that Next.js runs in the browser to update the page",
+   "A hook that sends a fetch request from a Client Component",
+   "A route handler that Next.js creates for each file in app",
+   "An async function that runs on the server and a form can call"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "Which `form` prop do you set to a Server Action function?",
+  "options": [
+   "handler",
+   "action",
+   "formMethod",
+   "onSubmit"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "23",
+  "question": "Which function from `next/navigation` redirects the user in a Server Component?",
+  "options": [
+   "res.redirect",
+   "navigate",
+   "router.push",
+   "redirect"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "What does `notFound()` from `next/navigation` do when you call it?",
+  "options": [
+   "It stops the render and shows the not-found UI",
+   "It redirects the user to the /404 route",
+   "It logs an error and renders an empty page",
+   "It sends a 404 status and keeps the page content"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "25",
+  "question": "What does the `next/image` component do for you?",
+  "options": [
+   "It converts every image to a base64 string and inlines it in the HTML",
+   "It uploads images to a CDN when you run next build",
+   "It blocks the page until all images finish to load",
+   "It resizes images, loads them late, and serves modern formats"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "A remote image does not use `fill`. Which props does `next/image` need?",
+  "options": [
+   "layout and objectFit",
+   "width and height",
+   "alt and title",
+   "src and srcSet"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "27",
+  "question": "Where do you allow remote image hosts for `next/image`?",
+  "options": [
+   "env.IMAGE_HOSTS in .env.local",
+   "images.domains in tsconfig.json",
+   "images.remotePatterns in next.config.js",
+   "experimental.imageHosts in next.config.js"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "What is the main benefit of `next/font/google`?",
+  "options": [
+   "Next.js self-hosts the font files, so the browser never calls Google",
+   "Next.js loads the font from the Google CDN, and browsers share the cache",
+   "Next.js delays the font request until the page becomes interactive",
+   "Next.js converts the font to an SVG icon set at build time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "29",
+  "question": "How do you set a fixed page title in a page of the App Router?",
+  "options": [
+   "Call document.title in a useEffect hook",
+   "Set the title in the next.config.js file",
+   "Put a title tag inside the page component",
+   "Export a `metadata` object with a title field"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "Which export lets you build page metadata from data, like a product name?",
+  "options": [
+   "getMetadata",
+   "generateMetadata",
+   "useMetadata",
+   "createMetadata"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "In the App Router, how does Next.js render a route that uses no dynamic function?",
+  "options": [
+   "It renders the route on each request on the server",
+   "It renders the route only in the browser",
+   "It renders the route at build time as static HTML",
+   "It renders the route on each request at the edge"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "Which call makes a route use dynamic rendering?",
+  "options": [
+   "notFound()",
+   "cookies()",
+   "export const metadata",
+   "generateStaticParams()"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "What does `generateStaticParams` do for a dynamic route?",
+  "options": [
+   "It reads the param values from the URL on each request",
+   "It sets default param values for the client router",
+   "It validates the param values before the render",
+   "It lists the param values to pre-render at build time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "34",
+  "question": "Which prefix makes an environment variable available in browser code?",
+  "options": [
+   "PUBLIC_NEXT_",
+   "CLIENT_",
+   "NEXT_PUBLIC_",
+   "NEXT_BROWSER_"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "Where do you define redirects that Next.js applies for all requests?",
+  "options": [
+   "The .redirects file in the project root",
+   "The redirect.json file in the public folder",
+   "The redirects() function in next.config.js",
+   "The redirects export in the root layout"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "In the Pages Router, which function runs on the server for each request?",
+  "options": [
+   "getServerSideProps",
+   "getStaticProps",
+   "getRequestProps",
+   "getInitialPaths"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "37",
+  "question": "In the Pages Router, which function gets data at build time for a page?",
+  "options": [
+   "getStaticProps",
+   "getBuildProps",
+   "getPreloadProps",
+   "getServerSideProps"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "38",
+  "question": "What is `pages/_app.tsx` in the Pages Router?",
+  "options": [
+   "A file that sets the metadata of each page",
+   "A custom component that wraps every page",
+   "A custom server that handles the API calls",
+   "A file that lists all the routes of the app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "39",
+  "question": "Where do API routes live in the Pages Router?",
+  "options": [
+   "In api/pages",
+   "In pages/routes",
+   "In pages/api",
+   "In app/api"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "40",
+  "question": "Can one Next.js project use both the `app` and the `pages` directories?",
+  "options": [
+   "No, unless you set a flag in next.config.js",
+   "No, you must choose one router for the whole project",
+   "Yes, and the pages folder always wins for the same path",
+   "Yes, but the same URL path must not exist in both"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "41",
+  "question": "What must the root layout of the App Router include?",
+  "options": [
+   "The main and nav tags",
+   "The head and title tags",
+   "The html and body tags",
+   "The Providers and Metadata components"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "42",
+  "question": "Where do you import a global CSS file in the App Router?",
+  "options": [
+   "In the next.config.js file",
+   "In the root layout file",
+   "In the public/index.html file",
+   "In the pages/_app.tsx file"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "43",
+  "question": "Which file name pattern gives CSS classes that are local to one component?",
+  "options": [
+   "Button.module.css",
+   "Button.scoped.css",
+   "Button.local.css",
+   "Button.styles.css"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "44",
+  "question": "Which command starts the production server after you run `next build`?",
+  "options": [
+   "next run",
+   "next serve",
+   "next start",
+   "next export"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "Which hook returns the current URL path, without the query string, in a Client Component?",
+  "options": [
+   "usePathname",
+   "useRouteName",
+   "useCurrentPath",
+   "useLocation"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "Which hook can you not use in a Server Component?",
+  "options": [
+   "useState",
+   "useId",
+   "use",
+   "unstable_cache"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "47",
+  "question": "What can a Server Component do that a Client Component cannot do directly in Next.js 14?",
+  "options": [
+   "Read the value of a React context",
+   "Handle a click event on a button",
+   "Read the browser localStorage",
+   "Be an async function and await data"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "48",
+  "question": "Which next.config.js setting makes `next build` produce a fully static HTML export?",
+  "options": [
+   "export: true",
+   "output: 'export'",
+   "mode: 'static'",
+   "target: 'static'"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "49",
+  "question": "Which export sets a route handler or page to use the Edge runtime?",
+  "options": [
+   "export const runtime = 'edge'",
+   "export const edge = true",
+   "export const target = 'edge'",
+   "export const mode = 'edge'"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "Which file in the `app` folder generates the sitemap.xml file from code?",
+  "options": [
+   "robots.ts",
+   "sitemap.ts",
+   "seo.ts",
+   "metadata-routes.ts"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "51",
+  "question": "A Client Component must show a Server Component. How can you keep the Server Component on the server?",
+  "options": [
+   "Wrap it in a call to React.lazy in the Client Component",
+   "Pass it as children from a Server Component parent",
+   "Add a use server directive at the top of the file",
+   "Import it at the top of the Client Component file and render it"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "A Server Component passes a normal function as a prop to a Client Component. What is the problem?",
+  "options": [
+   "A function is not serializable, so Next.js shows an error",
+   "The function runs once on the server and the client gets its result",
+   "The function becomes a Server Action in an automatic way",
+   "The function runs on the client but loses its closure variables"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "53",
+  "question": "How do you make the build fail if a module with secrets reaches the client bundle?",
+  "options": [
+   "Add a use server directive to the module",
+   "Import the `server-only` package in the module",
+   "Rename the module file to use a .server.ts suffix",
+   "Add the module to the serverExternalPackages list"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "54",
+  "question": "`createContext` fails in a Server Component. What is the correct fix?",
+  "options": [
+   "Move the provider call into generateMetadata",
+   "Add a use server directive to the context file",
+   "Put the provider in a separate file with \"use client\"",
+   "Add async to the provider component"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "55",
+  "question": "In Next.js 14, what is the default cache behavior of `fetch` in a Server Component?",
+  "options": [
+   "Next.js caches the result only for one render",
+   "Next.js caches the result only in the browser",
+   "Next.js never caches the result",
+   "Next.js caches the result in the Data Cache"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "56",
+  "question": "What does `fetch(url, { next: { revalidate: 60 } })` do?",
+  "options": [
+   "It deletes the cached data every 60 seconds",
+   "It waits 60 seconds before it sends the request",
+   "It marks the cached data as stale after 60 seconds",
+   "It stops the request after 60 seconds"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "You use `fetch(url, { next: { tags: ['posts'] } })`. How do you refresh this data after a post change?",
+  "options": [
+   "Change the build ID in next.config.js",
+   "Call router.refresh() with the posts tag",
+   "Call revalidatePath('posts') in a Client Component",
+   "Call revalidateTag('posts') in a Server Action"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "58",
+  "question": "What does `revalidatePath('/blog')` do?",
+  "options": [
+   "It deletes the blog route from the app",
+   "It marks the cached data of that path as invalid",
+   "It renders the blog page again in the browser",
+   "It sets a time limit for the blog page cache"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "59",
+  "question": "A Server Action saves a post, but the list page still shows old data. What do you add?",
+  "options": [
+   "A cache: 'no-store' option in the form tag",
+   "A use client directive at the top of the action",
+   "A call to router.push in the action file",
+   "A call to revalidatePath for the list page"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "60",
+  "question": "A teammate hides a delete button for non-admin users and the Server Action has no checks. What is the risk?",
+  "options": [
+   "The action runs twice for each click",
+   "The action runs only at build time",
+   "The action fails to run for admin users",
+   "Anyone can call the action with a POST request"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "Where must a component that calls `useFormStatus` be rendered?",
+  "options": [
+   "Next to the form element, as a sibling",
+   "Inside the form element, as a child component",
+   "Inside the root layout of the app",
+   "Outside any form, in a Server Component"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "62",
+  "question": "A slow data component blocks the full page in a Server Component tree. What is the best fix?",
+  "options": [
+   "Add a use client directive to the page",
+   "Move its fetch call into a useEffect hook",
+   "Set dynamic to force-static for the route",
+   "Wrap it in Suspense with a fallback"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "63",
+  "question": "Two independent `await fetch` calls run one after the other in a page. What is the problem?",
+  "options": [
+   "A race condition; use a lock so the calls run in a fixed order",
+   "A cache miss; use revalidate to store both results in the Data Cache",
+   "A hydration error; use Suspense to show both results one by one",
+   "A request waterfall; use Promise.all to run them together"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "64",
+  "question": "Two components call `fetch` with the same URL and options in one render. How many network requests happen?",
+  "options": [
+   "One, because Next.js memoizes the request in a render",
+   "Two, because each component sends its own request to the server",
+   "Zero, because the Router Cache returns both results from earlier",
+   "Two, but Next.js sends them together in one batched request"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "How do you share one database query between a layout and a page in one render?",
+  "options": [
+   "Wrap the query function with React `cache`",
+   "Store the result in a global variable",
+   "Add the revalidate option to the query function",
+   "Wrap the query function with useMemo"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "What is the difference between `template.tsx` and `layout.tsx`?",
+  "options": [
+   "A template wraps the whole app and a layout wraps one page",
+   "A template can fetch data but a layout cannot",
+   "A template creates a new instance for each child on navigation",
+   "A template runs only on the server and a layout runs on the client"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "Why does a layout not receive the `searchParams` prop?",
+  "options": [
+   "Layouts render before the router reads the URL",
+   "Layouts run on the client and cannot read the URL",
+   "Layouts do not render again when only the child page changes",
+   "Layouts are static and cannot read request data"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "68",
+  "question": "A file `error.tsx` has no \"use client\" directive. What happens?",
+  "options": [
+   "Next.js ignores the file and shows its own default error page for the app",
+   "Next.js shows an error, because error boundaries must be Client Components",
+   "Next.js runs it as a Server Component and only logs the error to the console",
+   "Next.js adds the directive in an automatic way"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "An error happens in `app/dashboard/layout.tsx`. Which `error.tsx` catches it?",
+  "options": [
+   "The one in the public folder",
+   "The one in the parent segment of dashboard",
+   "The one in the page segment below dashboard",
+   "The one in app/dashboard"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "In Next.js 14, why does a call to Node `fs` fail in middleware?",
+  "options": [
+   "Middleware runs before the Node server starts, so the fs module is not loaded",
+   "Middleware runs in the browser, which has no file system",
+   "Middleware blocks file access for security reasons only",
+   "Middleware runs on the Edge runtime, which has no Node APIs"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "Middleware must show the content of /beta at the URL /home. The browser URL must not change. What do you use?",
+  "options": [
+   "NextResponse.json",
+   "NextResponse.next",
+   "NextResponse.rewrite",
+   "NextResponse.redirect"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "72",
+  "question": "In Next.js 15, how do you read `params` in a page component?",
+  "options": [
+   "Await it, because params is a Promise",
+   "Read it from the headers() function",
+   "Read it as a plain object in the props",
+   "Call the useParams hook in the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "73",
+  "question": "Where can you call `cookies().set()` in the App Router?",
+  "options": [
+   "In a generateMetadata function",
+   "In the render of a layout file",
+   "In a Server Action or a route handler",
+   "In the render of a Server Component"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "74",
+  "question": "In Next.js 14, a GET route handler reads no request data. What happens at build time?",
+  "options": [
+   "Next.js runs it once and caches the response as static",
+   "Next.js skips it and runs it for each request",
+   "Next.js shows a build error for the handler",
+   "Next.js runs it again for each user session"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "A page uses `generateStaticParams` and `export const dynamicParams = false`. What happens for an unlisted param?",
+  "options": [
+   "The server renders the page and caches it",
+   "The server redirects the user to the parent route",
+   "The server returns a 404 response",
+   "The server renders the page on demand"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "What does `export const revalidate = 3600` do in a page file?",
+  "options": [
+   "It allows Next.js to regenerate the page at most once per hour",
+   "It deletes the page from the cache after one hour",
+   "It sets the browser cache time of the page to one hour",
+   "It renders the page again every hour in the browser"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "77",
+  "question": "What does `export const dynamic = 'force-dynamic'` do?",
+  "options": [
+   "It renders the route once and caches the result",
+   "It renders the route again each hour",
+   "It renders the route only on the client",
+   "It renders the route on each request"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "78",
+  "question": "An image uses half of the viewport width on desktop. What does the `sizes` prop do?",
+  "options": [
+   "It sets the CSS width of the image in the layout",
+   "It makes Next.js create only the sizes you list",
+   "It tells the browser the display width, so it picks a good source",
+   "It sets the file size limit for the image in bytes"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "79",
+  "question": "In Next.js 14, a user goes back to a page and sees old data. What is the likely cause?",
+  "options": [
+   "The client Router Cache keeps the earlier page payload",
+   "The CDN keeps the HTML of a dynamic page",
+   "The Data Cache keeps the fetch result forever",
+   "The browser HTTP cache keeps the HTML document of the earlier page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "80",
+  "question": "Which folder name creates a named slot for a parallel route?",
+  "options": [
+   "_modal",
+   "@modal",
+   "[modal]",
+   "(modal)"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "81",
+  "question": "Which cache stores the rendered HTML and RSC payload of static routes on the server?",
+  "options": [
+   "The Request Memoization cache",
+   "The Router Cache",
+   "The Full Route Cache",
+   "The Data Cache"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "82",
+  "question": "In Next.js 14, a page calls `cookies()` and has a `fetch` with `revalidate: 3600`. What is cached?",
+  "options": [
+   "Nothing is cached, so the page and the fetch both run on each request",
+   "The page renders on each request, but the fetch result stays in the Data Cache",
+   "The full page is cached in the Full Route Cache for one hour",
+   "The page is cached in the Full Route Cache, but the fetch runs again on each request"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "What does Partial Prerendering (PPR) do in Next.js 14 and 15, where it is experimental?",
+  "options": [
+   "It sends a static shell and streams the dynamic parts later",
+   "It renders half of the route at build and half in the browser",
+   "It splits the route into two pages with two URLs",
+   "It caches each Client Component in the CDN edge"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "Why are Server Actions a poor choice for parallel data fetching from the client?",
+  "options": [
+   "The server runs only one action at a time for all users",
+   "Each action needs a new HTTP connection to the server",
+   "The browser blocks a second POST request to the same URL",
+   "The client sends them one at a time, in a queue"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "An inline Server Action uses a variable from its closure. How does Next.js protect that value?",
+  "options": [
+   "It removes the value and passes undefined to the action on the server",
+   "It keeps the value on the server in a memory store",
+   "It encrypts the captured value before it goes to the client",
+   "It signs the value with a public key only"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "86",
+  "question": "What does the RSC payload contain?",
+  "options": [
+   "The JSON data returned by all the fetch calls that the page makes on the server",
+   "The HTML of the full page, with all inline scripts and style tags included",
+   "The source code of each Server Component file, sent as text to the browser",
+   "The rendered Server Component output and links to Client Component code"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "A route handler must use a Postgres driver over a TCP socket. Which runtime do you choose and why?",
+  "options": [
+   "The Node.js runtime, because the Edge runtime cannot read env variables",
+   "The Edge runtime, because it keeps database connections open longer",
+   "The Node.js runtime, because the Edge runtime has no TCP sockets",
+   "The Edge runtime, because Node.js cannot use connection pools"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "88",
+  "question": "Why do you exclude `_next/static` from the middleware `matcher`?",
+  "options": [
+   "Middleware cannot read the files in the _next folder of the build output",
+   "Middleware would block the build step that writes the static files",
+   "Middleware would break the hashed file names of the static assets",
+   "Middleware would run on each static asset request and add latency"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "89",
+  "question": "Why do you check authorization again in the data layer, not only in middleware?",
+  "options": [
+   "The data layer is always faster than middleware for session checks on dynamic routes",
+   "A matcher gap can skip middleware, and actions accept direct POST calls",
+   "Middleware runs only at build time for static and dynamic routes in production",
+   "Middleware cannot read cookies from the request, so it cannot check a session"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "90",
+  "question": "A component inside Suspense calls `notFound()` after Next.js sent the page shell. What is the HTTP status?",
+  "options": [
+   "It stays 200, because Next.js already sent the status line",
+   "It changes to 404, because Next.js buffers the full response",
+   "It stays 200, and Next.js removes the stream",
+   "It changes to 500, because the stream has an error"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "A big layout file has a \"use client\" directive at the top. What is the effect on the bundle?",
+  "options": [
+   "The imported modules stay on the server as Server Components",
+   "Only the layout file goes into the client bundle",
+   "The layout renders on the server, but its hooks run on the client",
+   "All modules that the layout imports go into the client bundle"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "92",
+  "question": "Why use `unstable_cache` in Next.js 14 and 15?",
+  "options": [
+   "It caches the result of a non-fetch function, such as a database query",
+   "It stores the result of a fetch call in the client Router Cache of the browser",
+   "It stores the result of a function in the memory of the user's browser tab",
+   "It makes a Server Component render only once for each signed-in user"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "A static route has one fetch with `revalidate: 60` and one with `revalidate: 3600`. What is the route revalidate time?",
+  "options": [
+   "1830 seconds, the average value",
+   "60 seconds, the lowest value",
+   "60 seconds for data and 3600 seconds for HTML",
+   "3600 seconds, the highest value"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "94",
+  "question": "ISR shows different content on different self-hosted containers. What is the cause and the fix?",
+  "options": [
+   "The CDN caches pages by client IP address; use a single region for all users",
+   "Each instance has its own local cache; use a shared cacheHandler",
+   "Next.js ISR works only on Vercel; use a static export",
+   "Each instance has its own build ID; use a shared build folder"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "With `output: 'export'`, `next/image` fails at build. What do you need?",
+  "options": [
+   "Set images.unoptimized to true or use a custom loader",
+   "Install the sharp package in the project and run next build again",
+   "Set the runtime to edge in next.config.js for the whole app",
+   "Add the priority prop to each image on the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "96",
+  "question": "A UI library component uses `useState` but has no \"use client\" directive. You import it in a Server Component. What happens?",
+  "options": [
+   "The component works, because Next.js adds the directive for you",
+   "The component runs on the server and the state resets on each render",
+   "The build fails; wrap it in your own file with \"use client\"",
+   "The component renders only on the client with no error"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "A static page uses `useSearchParams` in a Client Component without Suspense. The build fails. Why?",
+  "options": [
+   "The hook works only in dynamic routes that use a [param] folder in the path",
+   "The params are unknown at build time, so Next.js needs a Suspense boundary",
+   "The hook needs a use server directive in the same file as the page",
+   "The hook reads cookies on the server, so it blocks the static export of pages"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "Find the bug:\ntry { redirect('/login') } catch (e) { console.log(e) }",
+  "options": [
+   "redirect needs a return value, and this call here returns undefined",
+   "redirect works only in Client Components with the useRouter hook",
+   "redirect throws a special error, and the catch block stops it",
+   "redirect needs an await call, and the code has none"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "Which folder name intercepts a route at the same segment level?",
+  "options": [
+   "(...)photo",
+   "@photo",
+   "(..)photo",
+   "(.)photo"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "A Server Action calls `revalidatePath`. Why does the user see fresh UI without a second request?",
+  "options": [
+   "The server sends the new RSC payload in the response of the action",
+   "The Router Cache is read again by a background fetch after the action",
+   "The client polls the server until the data changes",
+   "The browser reloads the page after the action ends"
+  ],
+  "correct_index": 0
+ }
+]

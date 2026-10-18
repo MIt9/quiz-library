@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What does PageSpeed Insights show that the Lighthouse CLI alone does not show?",
+  "options": [
+   "Field data from real Chrome users",
+   "A ranked list of the slowest pages on the site",
+   "A code patch for each failed audit",
+   "The server error logs of the tested URL"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "2",
+  "question": "Where does the lab part of a PageSpeed Insights report come from?",
+  "options": [
+   "The Chrome User Experience Report dataset",
+   "The Google Analytics account of the site",
+   "A Lighthouse run on a Google server",
+   "The Googlebot index of the tested URL"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "3",
+  "question": "What is the name of the public dataset that gives field data to PageSpeed Insights?",
+  "options": [
+   "The HTTP Archive monthly crawl dataset",
+   "Chrome User Experience Report (CrUX)",
+   "The Google Analytics 4 export data",
+   "The Search Console index coverage data"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "4",
+  "question": "What is lab data in a performance report?",
+  "options": [
+   "Data from real users on many devices",
+   "Data from the server logs of the last month",
+   "Data that the site owner enters by hand",
+   "Data from one test with fixed settings"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "5",
+  "question": "You want to compare two builds on your laptop. Which data type fits best?",
+  "options": [
+   "Field data, since it updates after each build",
+   "Lab data, since the settings stay the same",
+   "Field data, since it comes from your own laptop",
+   "Lab data, since it shows all real user devices"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "6",
+  "question": "In PSI, when does the Core Web Vitals Assessment show Passed?",
+  "options": [
+   "When the Lighthouse performance score is 90 or higher",
+   "When most of the audits in the report are passed",
+   "When the lab and field data show the same score",
+   "When each Core Web Vitals metric is Good at the 75th percentile"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "7",
+  "question": "Which score range does Lighthouse show in green for the performance category?",
+  "options": [
+   "90 to 100",
+   "75 to 100",
+   "80 to 100",
+   "95 to 100"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "8",
+  "question": "A page gets a performance score of 63. Which color and meaning does Lighthouse use?",
+  "options": [
+   "Green, which means the page is fast enough",
+   "Red, which means the page has a serious error",
+   "Orange, which means needs improvement",
+   "Gray, which means Lighthouse could not rate it"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "9",
+  "question": "How does Lighthouse calculate the performance score?",
+  "options": [
+   "It uses only the score of the slowest metric",
+   "It counts how many audits the page passes",
+   "It adds up the weighted scores of several metrics",
+   "It uses the median value of the field data"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "Which list shows the four default Lighthouse categories?",
+  "options": [
+   "Performance, Accessibility, Best Practices, SEO",
+   "Performance, Security, Best Practices, Search Indexing",
+   "Performance, Accessibility, Privacy, Mobile",
+   "Speed, Accessibility, Best Practices, Indexing"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "11",
+  "question": "In Lighthouse 10 and later, which metric has the highest weight in the performance score?",
+  "options": [
+   "Largest Contentful Paint",
+   "First Contentful Paint",
+   "Speed Index",
+   "Total Blocking Time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "12",
+  "question": "A new page has very few visitors. What does PageSpeed Insights show for field data?",
+  "options": [
+   "Lab data that it labels as field data",
+   "No URL data, but it can show origin data",
+   "An estimate that it computes from the Lighthouse score",
+   "Data copied from the most visited page of the site"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "13",
+  "question": "What does origin-level data in PageSpeed Insights mean?",
+  "options": [
+   "Data from the home page and its links only",
+   "Data from the server that hosts the files",
+   "Data from the first visit of each new user",
+   "Data combined from all pages of the same site"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "14",
+  "question": "What time period does the CrUX data in PageSpeed Insights cover?",
+  "options": [
+   "The last 24 hours, updated each hour",
+   "The last 28 days, as a rolling window",
+   "The last 7 days, updated each week",
+   "The last 90 days, updated each month"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "15",
+  "question": "Which percentile does PageSpeed Insights use to judge the field data of a metric?",
+  "options": [
+   "The 50th percentile of all visits",
+   "The 90th percentile of all visits",
+   "The 75th percentile",
+   "The 99th percentile of all visits"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "16",
+  "question": "Which users give data to the CrUX dataset?",
+  "options": [
+   "Chrome users who opt in to usage statistics",
+   "Users of every browser who visit the page",
+   "Only users who sign in to the website and accept cookies",
+   "Only visitors that come from Google Search results"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "17",
+  "question": "In a Lighthouse report, what do opportunities show? Newer versions call them insights.",
+  "options": [
+   "Ideas with an estimated load time saving",
+   "Checks that the page already passes",
+   "Facts about the page with no estimated saving",
+   "A list of faster pages of competitors"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "18",
+  "question": "What are Diagnostics in a Lighthouse performance report?",
+  "options": [
+   "Ideas with the exact time saving for each fix",
+   "Checks that the page already passes",
+   "Extra page details with no direct time estimate",
+   "Field data of the most visited pages of the site"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "19",
+  "question": "What does the Passed audits section of a Lighthouse report list?",
+  "options": [
+   "Fixes that the team already made",
+   "Checks that the page already meets",
+   "Checks that Lighthouse could not run",
+   "Checks that apply only to desktop pages"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "Where can you run Lighthouse without an install?",
+  "options": [
+   "In the Network panel of Chrome DevTools",
+   "In the Application panel of Chrome DevTools",
+   "In the Sources panel of Chrome DevTools",
+   "In the Lighthouse panel of Chrome DevTools"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "Which command runs Lighthouse from the terminal and writes an HTML report file?",
+  "options": [
+   "`lighthouse https://example.com --format html --save-report report.html`",
+   "`lighthouse https://example.com --output html --output-path report.html`",
+   "`lighthouse https://example.com --report html --report-file report.html`",
+   "`lighthouse https://example.com --export html --export-path report.html`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "22",
+  "question": "Which device and network does Lighthouse test by default?",
+  "options": [
+   "A desktop computer with a fast cable network",
+   "A tablet with Wi-Fi and the normal CPU speed",
+   "The real device of the person who runs the test",
+   "A mobile phone with a slow 4G network and a slower CPU"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "23",
+  "question": "The same URL has a lower score on the Mobile tab than on the Desktop tab. What is the usual reason?",
+  "options": [
+   "The mobile test uses a slower network and CPU",
+   "The mobile test loads a different page with more ads",
+   "The mobile test counts only the images of the page",
+   "The mobile test starts with a full browser cache"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "24",
+  "question": "What cache state does Lighthouse use at the start of a test?",
+  "options": [
+   "A full cache from the last test run",
+   "The cache of the Chrome profile of the user",
+   "An empty cache, like a first visit",
+   "Only the cache of the service worker"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "25",
+  "question": "Why do you run Lighthouse in an Incognito window in Chrome DevTools?",
+  "options": [
+   "Incognito mode makes the CPU run faster during the test",
+   "Incognito mode removes the network limit for the test",
+   "Browser extensions can change the test result",
+   "Incognito mode sends the result to the Google servers"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "26",
+  "question": "Which Lighthouse metric works as a lab stand-in for how fast the page reacts to input?",
+  "options": [
+   "Total Blocking Time",
+   "Speed Index",
+   "First Contentful Paint",
+   "Time to First Byte"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "27",
+  "question": "What does Speed Index measure?",
+  "options": [
+   "How fast the server sends the first byte of the page",
+   "How fast the page reacts to the first click",
+   "How much the layout shifts while the page loads",
+   "How quickly the page content appears during load"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "28",
+  "question": "Lighthouse reports a slow response to the first HTML request. Which fix helps most?",
+  "options": [
+   "Compress all the images with a stronger setting",
+   "Cache the HTML on a CDN or speed up the server code",
+   "Move all scripts to the end of the body",
+   "Add a preload hint for each web font"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "29",
+  "question": "What is Lighthouse CI used for?",
+  "options": [
+   "To rewrite the slow code of the page by itself",
+   "To collect field data from the users of the live site",
+   "To host the pages of the site on a fast edge server",
+   "To run Lighthouse on every commit and assert results"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "What is a performance budget?",
+  "options": [
+   "A fixed amount of money for the speed tools of the team",
+   "A set of limits for metrics or file sizes that the team agrees to keep",
+   "A list of the pages that the team wants to speed up first",
+   "A target number of visits for each page each month"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "Which file holds the Lighthouse CI configuration by default?",
+  "options": [
+   "`lighthouse.config.json`",
+   "`lhci.settings.js`",
+   "`lighthouserc.js`",
+   "`.lighthouseci`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "What does the command `lhci autorun` do when the configuration is complete?",
+  "options": [
+   "It runs the collect, assert, and upload steps in one command",
+   "It starts the Lighthouse CI server and opens the dashboard",
+   "It watches the source files and runs Lighthouse on each save",
+   "It installs Lighthouse and creates a sample configuration file"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "33",
+  "question": "Why does Lighthouse CI run the test several times for one URL?",
+  "options": [
+   "Results vary between runs, so several runs reduce the noise",
+   "The first run fills the browser cache for the later runs",
+   "Each run tests a different device type in turn",
+   "The first run warms the server so the score goes up"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "34",
+  "question": "What is a common name for lab tests that run on a schedule or in CI?",
+  "options": [
+   "Real user monitoring",
+   "Passive field sampling",
+   "Synthetic monitoring",
+   "Crowdsourced profiling"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "Which tool lets you collect Core Web Vitals field data from your own visitors with a small script?",
+  "options": [
+   "The `lhci server` command",
+   "The web-vitals JavaScript library",
+   "The Coverage tab in Chrome DevTools",
+   "The PSI API in lab mode"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "36",
+  "question": "Which Google tool shows Core Web Vitals field data for groups of similar URLs on your site?",
+  "options": [
+   "The Lighthouse panel in Chrome DevTools",
+   "The Performance panel in Chrome DevTools",
+   "The URL Inspection live test in Search Console",
+   "The Core Web Vitals report in Search Console"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "37",
+  "question": "How can a script get PageSpeed Insights results without the web page?",
+  "options": [
+   "Read the lighthouse.json file in the site root folder",
+   "Call the PageSpeed Insights API with the page URL",
+   "Send a request to the CrUX dashboard page",
+   "Read the robots.txt file of the site"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "38",
+  "question": "What does the Treemap view in a Lighthouse report show?",
+  "options": [
+   "The list of all requests in the order of the load",
+   "The layout of the page as a tree of DOM nodes",
+   "The share of each image format used on the page",
+   "The bytes of each JavaScript module, used and unused"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "What do the metric filter chips in a Lighthouse performance report do?",
+  "options": [
+   "They filter the audits to those that affect that metric",
+   "They change the weight of the metric in the final score",
+   "They run the test again for only the metric you pick",
+   "They hide the metrics that already pass the thresholds"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "Which Lighthouse mode measures a user action, such as a menu click, over a period of time?",
+  "options": [
+   "Navigation",
+   "Snapshot",
+   "Timespan",
+   "Cold start"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "41",
+  "question": "Lighthouse says the browser downloads images much larger than it shows. Which fix helps?",
+  "options": [
+   "Add alt text to every image for screen readers",
+   "Move the images to a different domain name",
+   "Serve smaller images that match the display size",
+   "Rename the image files with shorter names"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "42",
+  "question": "Many images below the first screen load at once. Which fix helps most?",
+  "options": [
+   "Lazy load the images below the fold",
+   "Remove the width and height from the images",
+   "Preload all images in the head of the page",
+   "Convert all images to inline Base64 text"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "43",
+  "question": "Which files most often block the first paint of a page?",
+  "options": [
+   "Images that load below the first screen",
+   "Fonts that the server sends with compression",
+   "Requests that return a 404 error code",
+   "CSS files and synchronous scripts in the head"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "44",
+  "question": "Lighthouse shows a large amount of unused JavaScript. Which fix fits best?",
+  "options": [
+   "Minify the files again with a stronger setting",
+   "Split the code and load parts on demand",
+   "Move all scripts to the top of the head section",
+   "Inline all scripts into the HTML document of the page"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "45",
+  "question": "A tag manager adds much main-thread work. Where does Lighthouse show which third party costs most?",
+  "options": [
+   "In the list of passed audits of the report",
+   "In the origin summary of the field data",
+   "In the Accessibility category of the report",
+   "In the audit that lists the cost of each third party"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "46",
+  "question": "Lighthouse reports uncompressed text files. Which server change fixes it?",
+  "options": [
+   "Add a no-cache header to HTML, CSS, and JS files",
+   "Enable gzip or Brotli for HTML, CSS, and JS",
+   "Send HTML, CSS, and JS only with a Content-Length",
+   "Serve HTML, CSS, and JS over HTTP/1.0 connections"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "47",
+  "question": "Lighthouse reports static files with a short cache lifetime. What does it ask for?",
+  "options": [
+   "A `no-store` value in the `Cache-Control` header of all files",
+   "A service worker that deletes old files each hour",
+   "A long `max-age` in the `Cache-Control` header of static files",
+   "A different file name for each page view"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "48",
+  "question": "What does a `preconnect` hint do?",
+  "options": [
+   "It opens an early connection to a needed origin",
+   "It downloads a file and keeps it in the memory cache",
+   "It runs a script before the HTML parser has started",
+   "It tells the server to push files with HTTP push"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "49",
+  "question": "What does First Contentful Paint measure?",
+  "options": [
+   "The time until the first text or image appears",
+   "The time until the page finishes all network requests",
+   "The time until the largest image is drawn",
+   "The time until the user can click the first link"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "Lighthouse suggests newer image formats. Which change is that?",
+  "options": [
+   "Use BMP or TIFF in place of PNG or JPEG files",
+   "Use SVG in place of every photo on the page",
+   "Use WebP or AVIF in place of PNG or JPEG",
+   "Use GIF in place of PNG or JPEG files"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "51",
+  "question": "PSI shows a lab score of 98, but the field data fails. What is a likely reason?",
+  "options": [
+   "Lighthouse measures the page twice and keeps the best run",
+   "Real users can have slower devices and networks",
+   "Field data counts only the first visit of each user",
+   "The score uses other weights for field data"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "You ship a large fix today. When does the 28-day field data show its full effect?",
+  "options": [
+   "On the next day, after Google crawls the new HTML again",
+   "After seven days, when the browser cache of users expires",
+   "After Googlebot crawls the page a second time",
+   "After about 28 days, as old data drops out"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "53",
+  "question": "Two PSI runs for the same URL give 71 and 84. Which cause is possible?",
+  "options": [
+   "Lighthouse changes the metric weights for each run",
+   "Network and server load change between the runs",
+   "PSI adds field data to the lab score at random",
+   "The browser cache keeps old files between the runs"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "54",
+  "question": "Why does PSI show mobile and desktop field data apart?",
+  "options": [
+   "PSI collects desktop data only from Google data centers",
+   "CrUX stores phone data for 7 days and desktop for 28",
+   "Desktop data comes from Safari and phone data from Chrome",
+   "CrUX reports phone and desktop visits as separate groups"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "55",
+  "question": "The default Lighthouse throttling method is simulate. What does this mean?",
+  "options": [
+   "It observes a fast load, then models a slow network and CPU",
+   "It slows the network with a proxy during the whole load",
+   "It slows the CPU only and leaves the network alone",
+   "It replays a recorded HAR file of the page load"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "When do you set `--throttling-method=provided`?",
+  "options": [
+   "When Lighthouse must read the limits from page headers",
+   "When you want to use the limits from the CrUX data",
+   "When an outside tool already limits network and CPU",
+   "When the page sets its own limits in a service worker"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "The lab TBT is low, but real users report slow clicks. What is a likely reason?",
+  "options": [
+   "TBT counts only network time, not script time",
+   "TBT is a field metric and ignores the lab data",
+   "TBT misses blocking after the load ends",
+   "TBT measures only the time of the first click"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "58",
+  "question": "Three opportunities each show a saving of 1 s. Why can the total gain be less than 3 s?",
+  "options": [
+   "The estimates overlap, so they do not simply add up",
+   "Lighthouse counts only the biggest saving of the three",
+   "Each saving is measured for a different device type",
+   "The score uses only the first three savings"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "59",
+  "question": "How do opportunity audits affect the performance score?",
+  "options": [
+   "Each failed opportunity subtracts a fixed number of points",
+   "Each opportunity has its own weight in the score",
+   "Together they make 10 percent of the score",
+   "They do not; only the metric values set the score"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "60",
+  "question": "A report shows 15 audits. Which order of fixes is best?",
+  "options": [
+   "First the easiest audits, to remove the red icons fast",
+   "First the fixes that help a failing field metric most",
+   "First the audits in the alphabetical order of the report",
+   "First the audits with the smallest file size in bytes"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "61",
+  "question": "Most visits to your site come from phones. Which PSI tab should drive your fix priority?",
+  "options": [
+   "Desktop, since its score is higher and easier to keep",
+   "Desktop, since Google uses only desktop data for ranking",
+   "Neither, since the two tabs use the same data",
+   "Mobile, since it matches how most users reach the site"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "62",
+  "question": "Which Lighthouse CLI flag runs the test with the desktop settings?",
+  "options": [
+   "`--device=desktop`",
+   "`--preset=desktop`",
+   "`--mode=desktop`",
+   "`--platform=desktop`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "63",
+  "question": "Which `lighthouserc.js` assertion fails the build when the performance score is below 0.9?",
+  "options": [
+   "`\"categories:performance\": [\"warn\", {\"minScore\": 0.9}]`",
+   "`\"categories:performance\": [\"error\", {\"maxNumericValue\": 0.9}]`",
+   "`\"categories:performance\": [\"error\", {\"minScore\": 0.9}]`",
+   "`\"categories:performance\": [\"off\", {\"minScore\": 0.9}]`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "64",
+  "question": "An assertion with level `warn` fails in Lighthouse CI. What happens?",
+  "options": [
+   "The tool prints a warning, and the exit code stays 0",
+   "The build fails with a non-zero exit code and no report",
+   "The assertion is skipped and the tool prints nothing at all",
+   "The run repeats until the assertion passes"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "In `budget.json`, which entry limits the total size of JavaScript files in KB?",
+  "options": [
+   "`resourceSizes` with `resourceType` set to `script`",
+   "`resourceCounts` with `resourceType` set to `script`",
+   "`timings` with `metric` set to `script`",
+   "`resourceSizes` with `resourceType` set to `third-party`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "Lighthouse CI scores are noisy on a shared runner. What is the best first step?",
+  "options": [
+   "Raise the assertion limits until the noise is no longer seen",
+   "Use only the best result out of ten runs",
+   "Use a consistent runner and run each URL several times",
+   "Turn off the assertions on the main branch"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "Why do teams assert on metric values like TBT in CI, not only on the overall score?",
+  "options": [
+   "Metric values never change between Lighthouse versions",
+   "A score change can hide which metric got worse",
+   "Lighthouse CI cannot assert on the overall score",
+   "Metric assertions run faster than score assertions"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "68",
+  "question": "The score drops after a Lighthouse major upgrade with no code change. What is the likely cause?",
+  "options": [
+   "The old version kept a cache of the page score",
+   "The new version tests with a real user device",
+   "The CrUX window moved to a shorter period",
+   "The score weights or curves changed"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "69",
+  "question": "A lab test runs from a data center in Europe. Your users are in Asia. How does this affect the lab result?",
+  "options": [
+   "It shows slower network time than users really see, always",
+   "It can show faster network time than users really see",
+   "It has no effect, since the lab test ignores the network",
+   "It changes the weights of the metrics in the score"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "The page shows a cookie banner and A/B tests for new visitors. How does Lighthouse load it?",
+  "options": [
+   "With the cookie banner already accepted by a click",
+   "As a returning visitor with cookies saved earlier",
+   "With the A/B variant that most real users see",
+   "As a new visitor with no cookies or storage"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "How can you test a page behind a login with Lighthouse?",
+  "options": [
+   "Use a user flow script to sign in, then measure the page",
+   "Run PSI with the session cookie in the URL query string",
+   "Run PSI in a browser that already has your Google login",
+   "Ask the CrUX team to add the page to the dataset"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "72",
+  "question": "A single page app changes views without a full reload. What gap does a navigation test have?",
+  "options": [
+   "It counts every view change as a new page load of the app",
+   "It cannot run the JavaScript files of the single page app",
+   "It measures only the first load, not later view changes",
+   "It tests only the server HTML and skips the scripts"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "PSI shows that the URL data fails but the origin data passes. What does this mean?",
+  "options": [
+   "The site has no field data for this URL at all",
+   "The lab test and the field data disagree here",
+   "This page is worse than the site as a whole",
+   "The origin data is older than the URL data by days"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "74",
+  "question": "Why can the upload target `temporary-public-storage` be a risk for private sites?",
+  "options": [
+   "Anyone with the link can open the report",
+   "It deletes the report at the end of the run",
+   "It sends the report to the site users",
+   "It stores the report in the page source"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "Why store Lighthouse CI results on an LHCI server, not on temporary public storage?",
+  "options": [
+   "To make each Lighthouse run finish much faster",
+   "To get field data for each build of the site",
+   "To remove the need for any assertions in CI",
+   "To keep history and compare builds"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "76",
+  "question": "The CI TBT is higher than on your laptop. Which part of the report helps you compare the two machines?",
+  "options": [
+   "The list of passed audits in the report footer",
+   "The CPU/Memory Power value in the runtime settings",
+   "The origin summary of the field data section",
+   "The Treemap of the JavaScript files in the report"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "77",
+  "question": "Lighthouse reports that text stays hidden while web fonts load. Which CSS setting fixes it?",
+  "options": [
+   "`font-display: block`",
+   "`font-synthesis: none`",
+   "`font-variant: normal`",
+   "`font-display: swap`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "78",
+  "question": "A script adds the main image late. Which change helps the browser find the image sooner?",
+  "options": [
+   "Add `loading=\"lazy\"` to the image and keep the script",
+   "Put the image in the HTML with `fetchpriority=\"high\"`",
+   "Move the image to a CSS class that a script adds later",
+   "Add `decoding=\"async\"` and keep the script as it is"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "A developer adds `<img src=\"hero.jpg\" loading=\"lazy\">` to the hero image at the top. What is the risk?",
+  "options": [
+   "The browser never loads the image at all",
+   "The image shifts the layout in all cases",
+   "It delays the hero image and can slow the page",
+   "The server sends the image twice to the browser"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "80",
+  "question": "A large CSS file blocks the first paint. Which fix is best?",
+  "options": [
+   "Inline critical CSS and defer the rest",
+   "Move the whole CSS file to the end of the body",
+   "Add `async` to the link tag of the CSS file",
+   "Minify the CSS file and keep it blocking"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "81",
+  "question": "How does Lighthouse turn a raw metric value, such as 3 s, into a score from 0 to 100?",
+  "options": [
+   "It maps the value on a log-normal curve fit to HTTP Archive data",
+   "It divides the value by a fixed limit set for each device type",
+   "It ranks the value against the field data of the same site",
+   "It draws a straight line between a good value and a bad value"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "82",
+  "question": "A manager asks if the Lighthouse score of 98 sets the Search ranking. What is the correct answer?",
+  "options": [
+   "Yes; Google reads the Lighthouse score of each page directly",
+   "Yes; the score is the only signal for page experience in Search",
+   "No; Google uses field data from real users, not the lab score",
+   "No; Google ranks pages only by the total page size in bytes"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "83",
+  "question": "Why does Lighthouse use simulated throttling by default and not applied throttling?",
+  "options": [
+   "It matches real network behavior in every test case",
+   "It runs faster and varies less between runs",
+   "It is the only mode that works with HTTPS sites",
+   "It lets Lighthouse also collect field data from users"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "84",
+  "question": "Why can a standard Lighthouse navigation run not report INP?",
+  "options": [
+   "INP needs a 28-day window that one run does not have",
+   "INP is a server metric that the browser cannot see",
+   "Lighthouse measures only the first 5 seconds of a load",
+   "No real user input happens during a navigation test"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "A metric has 74% good, 16% needs improvement, and 10% poor visits. Which category does the 75th percentile give?",
+  "options": [
+   "Good, since most visits are in the good range",
+   "Needs improvement; the good share is under 75%",
+   "Poor, since the worst 10% sets the category",
+   "Good, since the average is in the good range"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "86",
+  "question": "Most of your visitors use iPhones. Why is the CrUX data in PSI a weak guide for them?",
+  "options": [
+   "CrUX reports only the slowest 25% of all visits",
+   "CrUX covers only users on desktop computers",
+   "CrUX removes visits from phones with low memory",
+   "CrUX has no data from any browser on iOS"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "Which page can have no URL-level CrUX data even with many visitors?",
+  "options": [
+   "A page behind a login or marked `noindex`",
+   "A page that is served over HTTP/2 or HTTP/3",
+   "A page that uses a service worker for caching",
+   "A page with a very large JavaScript bundle"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "A team gets a score of 100 by delaying all third-party scripts with a 10 s timer. Why is this risky?",
+  "options": [
+   "It lowers the lab score again in the next Lighthouse version",
+   "It makes the CrUX data show no results for the origin",
+   "It lifts the lab score but can hurt users and tracking",
+   "It stops Lighthouse from loading the first-party code"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "A bug appears only on low-end Android phones in one country. Which setup finds it best?",
+  "options": [
+   "Run PSI once a day on the home page and the product page",
+   "Raise the CPU slowdown in Lighthouse CI to 8x for all runs",
+   "Collect RUM data and split it by device, country, and browser",
+   "Compare the Lighthouse score of two builds on each commit"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "90",
+  "question": "A CI runner is slower than a normal laptop. Which Lighthouse setting do you adjust to keep results close to a target phone?",
+  "options": [
+   "`cpuSlowdownMultiplier`",
+   "`rttMs`",
+   "`throughputKbps`",
+   "`maxWaitForLoad`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "With several runs, `lhci assert` uses the default `optimistic` aggregation. What does this mean for a `minScore` assertion?",
+  "options": [
+   "The check passes only when every run meets the minimum",
+   "The check uses the median score of all runs",
+   "The check ignores the first and last run",
+   "The check passes when the best run meets the minimum"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "92",
+  "question": "After FCP, the main thread runs two tasks of 60 ms and 120 ms. What TBT does Lighthouse count?",
+  "options": [
+   "180 ms",
+   "80 ms",
+   "130 ms",
+   "30 ms"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "93",
+  "question": "Why are size budgets less noisy in CI than timing budgets?",
+  "options": [
+   "Byte counts are measured in field data only",
+   "Timing budgets are not allowed in Lighthouse CI",
+   "Size budgets use the median of ten runs by default",
+   "Byte counts do not depend on CPU or network speed"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "94",
+  "question": "Returning visitors often have a warm cache. How does this change the reading of a lab report?",
+  "options": [
+   "The lab run models a warm cache, so field data is slower",
+   "The lab run models a first visit; field data can be faster",
+   "The lab run reuses the cache of the last field visit",
+   "The cache of returning users has no effect on field data"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "Which change did Lighthouse 10 make to the performance score, compared with Lighthouse 9?",
+  "options": [
+   "It removed Total Blocking Time and added INP to the score",
+   "It removed Speed Index and raised the weight of FCP to 25%",
+   "It dropped Time to Interactive and raised CLS weight",
+   "It removed CLS and raised the weight of TBT to 30 percent"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "96",
+  "question": "Which data source shows a weekly trend of CrUX data for one origin?",
+  "options": [
+   "The CrUX History API",
+   "The Lighthouse CI server history",
+   "The PSI API with the strategy parameter",
+   "The CrUX API with the form factor parameter"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "97",
+  "question": "PSI fails with a 403 status and says Lighthouse could not load the page. What is a likely cause?",
+  "options": [
+   "A firewall or bot rule blocks the Lighthouse test",
+   "The CrUX dataset has no entry for the URL or its origin",
+   "The page has too many images for the test to finish",
+   "The score is below 50, so PSI hides the whole report"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "98",
+  "question": "Which CI design finds a small regression best on a noisy runner?",
+  "options": [
+   "Run the pull request once and compare it to the score of last week",
+   "Run the pull request once with a low assertion limit",
+   "Run base and PR together, several runs each, then compare",
+   "Run the base branch once a month and keep that value"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "Staging scores 95 and production scores 60. Which difference most likely makes staging too optimistic?",
+  "options": [
+   "Staging uses a slower CPU than production by default",
+   "Staging has no real third-party or consent scripts",
+   "Staging always serves larger images than production",
+   "Staging has more field data than production does"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "100",
+  "question": "A team moves a heavy script to a web worker to lower TBT. What is a trade-off?",
+  "options": [
+   "The script runs on the main thread again after the load",
+   "The browser cannot cache the script file at all",
+   "The worker blocks the first paint of the page",
+   "The script loses direct DOM access and needs a message layer"
+  ],
+  "correct_index": 3
+ }
+]

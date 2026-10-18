@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "Which module must an NgModule import to use `formControlName` and `[formGroup]`?",
+  "options": [
+   "`ReactiveFormsModule`",
+   "`FormsModule`",
+   "`CommonModule`",
+   "`BrowserModule`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "2",
+  "question": "What does a `FormControl` track?",
+  "options": [
+   "The value and status of all fields in a form",
+   "The value and status of one field",
+   "The list of fields that the user can add",
+   "The HTML and CSS of one field"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "What is the purpose of `FormGroup`?",
+  "options": [
+   "To show several inputs in one row of the layout",
+   "To keep an ordered list of controls by index position",
+   "To send the form data to a server over HTTP",
+   "To group named controls in one value"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "4",
+  "question": "When do you use `FormArray`?",
+  "options": [
+   "When the number of controls can change",
+   "When you need one control only",
+   "When the form has no validators",
+   "When you need a fixed set of named controls"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "5",
+  "question": "Which directive binds a `FormGroup` instance to a `<form>` element?",
+  "options": [
+   "`formGroupName`",
+   "`[formGroup]`",
+   "`[ngModelGroup]`",
+   "`[formControl]`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "6",
+  "question": "Which directive links an input to a control with a given name in the parent group?",
+  "options": [
+   "`[formControl]`",
+   "`ngModel`",
+   "`formControlName`",
+   "`formGroupName`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "7",
+  "question": "Where do you define the form model in Reactive Forms?",
+  "options": [
+   "In the template with directives",
+   "In the module metadata",
+   "In the route configuration",
+   "In the component class"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "Which validator makes a text field required?",
+  "options": [
+   "`Validators.required`",
+   "`Validators.requiredTrue`",
+   "`Validators.minLength(1)`",
+   "`Validators.nullValidator`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "9",
+  "question": "What does `Validators.email` check?",
+  "options": [
+   "That the address exists on a mail server",
+   "That the input has `type=\"email\"`",
+   "That the domain is on a list",
+   "That the value has an email format"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "10",
+  "question": "Which control property is `true` when all validators pass?",
+  "options": [
+   "`pristine`",
+   "`valid`",
+   "`enabled`",
+   "`untouched`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "11",
+  "question": "When does a control become `touched`?",
+  "options": [
+   "When the user leaves the field",
+   "When the user types in the field",
+   "When the value passes validation",
+   "When the field gets focus"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "12",
+  "question": "When does a control become `dirty`?",
+  "options": [
+   "When the user moves the focus out of the field",
+   "When code calls `setValue` with a new value",
+   "When the user edits the value",
+   "When the value fails one of the validators"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "13",
+  "question": "Which method needs a value for every control in a `FormGroup`?",
+  "options": [
+   "`patchValue`",
+   "`reset`",
+   "`setValue`",
+   "`markAsTouched`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "14",
+  "question": "What does `patchValue` do on a `FormGroup`?",
+  "options": [
+   "It replaces the group with new controls from the object",
+   "It throws an error if a control is missing in the object",
+   "It updates only the listed controls",
+   "It sets all other controls to null after the update"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "15",
+  "question": "What does `reset()` do on a control?",
+  "options": [
+   "It removes the control from its parent group",
+   "It removes all validators from the control",
+   "It disables the control until the next submit",
+   "It clears the value and the dirty state"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "16",
+  "question": "When does the `ngSubmit` event fire?",
+  "options": [
+   "When any value changes",
+   "When the user submits the form",
+   "When all controls become valid",
+   "When the component loads"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "17",
+  "question": "How do you read the current value of the whole form?",
+  "options": [
+   "`form.model`",
+   "`form.state`",
+   "`form.data`",
+   "`form.value`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "18",
+  "question": "What is `FormBuilder` for?",
+  "options": [
+   "A tool that builds form HTML from JSON",
+   "A service that checks form data on the server",
+   "A router helper that opens form pages",
+   "A short syntax to create controls and groups"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "19",
+  "question": "How does a standalone component get a `FormBuilder`?",
+  "options": [
+   "Use `inject(FormBuilder)`",
+   "Add it to the `declarations` array",
+   "Import it from `@angular/common`",
+   "Add it as an attribute on `<form>`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "20",
+  "question": "Which statement about template-driven forms is true?",
+  "options": [
+   "They build every control with `FormBuilder`",
+   "`ngModel` directives create the model",
+   "They need `ReactiveFormsModule` in the imports",
+   "They cannot use any validators in the template"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "21",
+  "question": "Which module gives you `ngModel`?",
+  "options": [
+   "`ReactiveFormsModule`",
+   "`CommonModule`",
+   "`FormsModule`",
+   "`HttpClientModule`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "22",
+  "question": "Why are reactive forms easy to unit test?",
+  "options": [
+   "Angular replaces the DOM with a mock for them",
+   "The model is plain code, no DOM needed",
+   "They skip all validators when run in a test",
+   "They need no `TestBed` imports at all in tests"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "23",
+  "question": "Which condition usually shows an error only after the user leaves a field?",
+  "options": [
+   "`control.invalid && control.pristine`",
+   "`control.valid && control.touched`",
+   "`control.invalid && control.disabled`",
+   "`control.invalid && control.touched`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "What is `control.errors` when all validators pass?",
+  "options": [
+   "`{}`",
+   "`false`",
+   "`null`",
+   "`undefined`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "25",
+  "question": "What must a custom sync validator return when the value is valid?",
+  "options": [
+   "`true`",
+   "`false`",
+   "`null`",
+   "`'valid'`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "26",
+  "question": "What does a custom validator return when the value is not valid?",
+  "options": [
+   "An error object such as `{ bad: true }`",
+   "A boolean value, where `false` means a bad value",
+   "A string with the text of the error message",
+   "A new `Error` instance that holds a message"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "27",
+  "question": "Which method tells you if a control has a given error?",
+  "options": [
+   "`control.hasError('required')`",
+   "`control.isError('required')`",
+   "`control.errors.has('required')`",
+   "`control.checkError('required')`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "28",
+  "question": "When do you use `[formControl]`?",
+  "options": [
+   "To bind a whole group to a `<form>` element",
+   "To bind a standalone control",
+   "To bind a nested group by its name in a group",
+   "To create a new control inside the template"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "29",
+  "question": "What does `formGroupName` do?",
+  "options": [
+   "It renames the root group of the form",
+   "It binds a `FormArray` to an element by name",
+   "It creates a new group in the template",
+   "It binds a nested `FormGroup`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "Which `FormArray` method adds a control at the end?",
+  "options": [
+   "`add`",
+   "`push`",
+   "`append`",
+   "`addControl`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "Which `FormArray` method removes the control at an index?",
+  "options": [
+   "`remove(i)`",
+   "`removeAt(i)`",
+   "`delete(i)`",
+   "`splice(i, 1)`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "32",
+  "question": "What is `valueChanges`?",
+  "options": [
+   "A promise that resolves when the form submits",
+   "An observable that emits each new value",
+   "A method that runs all validators of the form",
+   "A property that holds the previous value"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "Which list shows the possible values of `status`?",
+  "options": [
+   "`DIRTY, PRISTINE, TOUCHED, UNTOUCHED`",
+   "`ACTIVE, LOADING, ERROR, HIDDEN`",
+   "`OK, FAILED, WAITING, OFF`",
+   "`VALID, INVALID, PENDING, DISABLED`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "34",
+  "question": "What happens to the group value when you call `control.disable()`?",
+  "options": [
+   "The control is left out of the group value",
+   "The control value is set to null",
+   "The control is removed from the DOM by Angular",
+   "The control becomes not valid"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "35",
+  "question": "How do you create a disabled control with the start value `x`?",
+  "options": [
+   "`new FormControl('x', { disabled: true, nonNullable: true })`",
+   "`new FormControl('x', Validators.disabled)`",
+   "`new FormControl({ value: 'x', disabled: true })`",
+   "`new FormControl('x', { state: 'disabled' })`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "A button in a form adds a row, but it also submits the form. What is missing?",
+  "options": [
+   "`type=\"reset\"`",
+   "`role=\"button\"`",
+   "`formnovalidate`",
+   "`type=\"button\"`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "37",
+  "question": "A control has `Validators.minLength(3)` and the value `ab`. Which error key is in `errors`?",
+  "options": [
+   "`minlength`",
+   "`min-length`",
+   "`min`",
+   "`tooShort`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "38",
+  "question": "A number input must not be below 18. Which validator do you use?",
+  "options": [
+   "`Validators.max(18)`",
+   "`Validators.minLength(18)`",
+   "`Validators.pattern(18)`",
+   "`Validators.min(18)`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "What is a `ControlValueAccessor`?",
+  "options": [
+   "An interface for custom form inputs",
+   "A service that stores all values of a form",
+   "A pipe that formats the value of a control",
+   "A validator class for custom input fields"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "The value is `ab`. The validators are `minLength(3)` and `pattern('[0-9]+')`. What does `errors` contain?",
+  "options": [
+   "Only the `minlength` error",
+   "Both a `minlength` and a `pattern` error",
+   "Only the `pattern` error",
+   "Only the first error and an `invalid` flag"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "41",
+  "question": "In `fb.group({ email: ['', sync, async] })`, what is the third item?",
+  "options": [
+   "The `updateOn` option",
+   "The async validators",
+   "The disabled state",
+   "The start value"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "42",
+  "question": "What is the default value of `updateOn`?",
+  "options": [
+   "`'blur'`",
+   "`'submit'`",
+   "`'input'`",
+   "`'change'`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "A user submits an empty form, but no error shows. Which call makes the errors show?",
+  "options": [
+   "`form.markAsPristine()`",
+   "`form.reset()`",
+   "`form.markAllAsTouched()`",
+   "`form.markAsPending()`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "How do you disable a submit button while the form is not valid?",
+  "options": [
+   "`[disabled]=\"form.pristine\"`",
+   "`[disabled]=\"form.touched\"`",
+   "`[disabled]=\"form.invalid\"`",
+   "`[disabled]=\"form.valid\"`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "Why is the default type `FormControl<string | null>`?",
+  "options": [
+   "Because HTML inputs return `undefined` when empty",
+   "Because validators return `null`",
+   "Because `reset()` sets the value to null",
+   "Because `string` is optional in forms"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "46",
+  "question": "What does `nonNullable: true` change for a control?",
+  "options": [
+   "No null in the type, and `reset` uses the start value",
+   "The control becomes required, and an empty value is not valid",
+   "The control cannot be empty in the UI",
+   "The `reset` call marks the control as dirty"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "47",
+  "question": "What does `form.get('email')` return in a typed form?",
+  "options": [
+   "`FormControl<string>`",
+   "`AbstractControl | null`",
+   "`string | null`",
+   "`Observable<string>`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "48",
+  "question": "What is `AbstractControl`?",
+  "options": [
+   "The base class of controls, groups and arrays",
+   "A directive that you add to the form element",
+   "An interface that each HTML input element must have",
+   "A service that holds all the validators"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "49",
+  "question": "A checkbox must be checked to continue. Which validator do you use?",
+  "options": [
+   "`Validators.required`",
+   "`Validators.checked`",
+   "`Validators.requiredTrue`",
+   "`Validators.pattern(true)`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "50",
+  "question": "Why does Angular add `novalidate` to a form element?",
+  "options": [
+   "To turn off native browser validation",
+   "To turn off all Angular validators of the form",
+   "To allow submit with invalid data",
+   "To skip the `ngSubmit` event on submit"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "51",
+  "question": "A template shows: Can't bind to 'formGroup' since it isn't a known property of 'form'. What is the cause?",
+  "options": [
+   "The component does not import `ReactiveFormsModule`",
+   "The `FormBuilder` is not injected in the class constructor",
+   "The form has no `ngSubmit` handler in the template",
+   "The group has no validators in the class"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "52",
+  "question": "Angular throws: Cannot find control with name: 'email'. What is the most likely cause?",
+  "options": [
+   "The control `email` has no validators in the group",
+   "The control `email` is disabled in the group",
+   "The form has no `ngSubmit` handler in the class",
+   "The group has no control with the key `email`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "53",
+  "question": "A script calls `control.setValue('x')`. What happens to `dirty`?",
+  "options": [
+   "It becomes true",
+   "It becomes true after the next blur",
+   "It stays false",
+   "It becomes true only if the value is valid"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "54",
+  "question": "A disabled field is missing in `form.value`. How do you get all values?",
+  "options": [
+   "`form.getValue()`",
+   "`form.toJSON()`",
+   "`form.getRawValue()`",
+   "`form.enable()`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "55",
+  "question": "Why is `form.value.name` typed as `string | null | undefined` in a typed form?",
+  "options": [
+   "Disabled controls are left out, so it is `Partial`",
+   "The template can remove any control at run time, so Angular adds it",
+   "Validators can change the type of the value at run time",
+   "The strict flag adds `undefined` to every field"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "A form must compare `password` and `confirm`. Where do you put the validator?",
+  "options": [
+   "On the `confirm` control only",
+   "On the `FormBuilder` service",
+   "In the `ngSubmit` handler only",
+   "On the parent `FormGroup`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "57",
+  "question": "A group validator returns `{ mismatch: true }`. Where do you read this error?",
+  "options": [
+   "`form.errors`",
+   "`form.controls.confirm.errors`",
+   "`form.controls.password.errors`",
+   "`form.status`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "58",
+  "question": "When does Angular run the async validators of a control?",
+  "options": [
+   "Before the sync validators",
+   "After all sync validators pass",
+   "At the same time as the sync validators",
+   "Only when the form is submitted"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "59",
+  "question": "An async email check calls the server on every key press. Which change reduces the calls?",
+  "options": [
+   "Move the check to a sync validator",
+   "Set `emitEvent: false` on the control",
+   "Set `updateOn: 'blur'` on the control",
+   "Call `markAsPristine` after each key"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "60",
+  "question": "What does `updateOn: 'submit'` do?",
+  "options": [
+   "The form submits when the control changes",
+   "The control updates only after a blur",
+   "The control updates only on form submit",
+   "The control updates only when valid"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "61",
+  "question": "What does `setValue(v, { emitEvent: false })` do?",
+  "options": [
+   "It sets the value but skips the validators",
+   "It sets the value only in the DOM",
+   "It sets the value without change events",
+   "It sets the value and marks it dirty"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "62",
+  "question": "This code is in a component: `ctrl.valueChanges.subscribe(v => ctrl.setValue(v.trim()))`. What is the risk?",
+  "options": [
+   "A memory leak after the component ends",
+   "The value never changes after the first call",
+   "A type error when the value is a number",
+   "An endless loop: `setValue` emits again"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "63",
+  "question": "A `valueChanges` subscriber needs the current value at subscribe time. What do you add to the pipe?",
+  "options": [
+   "`take(1)`",
+   "`startWith(control.value)`",
+   "`distinctUntilChanged()`",
+   "`debounceTime(0)`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "64",
+  "question": "After `setValidators(Validators.required)`, an empty control still shows VALID. Why?",
+  "options": [
+   "`setValidators` works only on groups, not on single controls",
+   "Validators can only be set in the constructor",
+   "Validity updates only after `updateValueAndValidity()`",
+   "The control must be touched first"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "65",
+  "question": "How do you add a control to an existing `FormGroup` at run time?",
+  "options": [
+   "`form.controls.phone = ctrl`",
+   "`form.addControl('phone', ctrl)`",
+   "`form.push(ctrl)`",
+   "`form.append('phone', ctrl)`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "66",
+  "question": "How do you loop over a `FormArray` in a template to bind each item?",
+  "options": [
+   "Loop over `items.value`",
+   "Loop over `items.controls`",
+   "Loop over `items.keys`",
+   "Loop over `items.values()`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "67",
+  "question": "A group has dynamic keys. All controls are `FormControl<boolean>`. Which class fits the typed model?",
+  "options": [
+   "`FormArray`",
+   "`FormGroup<{}>`",
+   "`UntypedFormControl`",
+   "`FormRecord`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "68",
+  "question": "How do reactive forms and template-driven forms differ in model updates?",
+  "options": [
+   "Reactive forms are asynchronous, and template-driven forms are synchronous",
+   "Both kinds of forms are asynchronous",
+   "Both kinds of forms are synchronous",
+   "Reactive forms are synchronous; template-driven forms are asynchronous"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "69",
+  "question": "In a template-driven form, `NgForm.controls` is empty in `ngOnInit`. Why?",
+  "options": [
+   "The directives register the controls asynchronously",
+   "The form needs `ReactiveFormsModule` to create controls",
+   "The controls exist only after the form is submitted",
+   "The controls live in the parent component class"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "70",
+  "question": "Which `ControlValueAccessor` method gives a new model value to the component?",
+  "options": [
+   "`registerOnChange`",
+   "`registerOnTouched`",
+   "`writeValue`",
+   "`setDisabledState`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "71",
+  "question": "A custom control must tell the form that the user picked a new value. What does it do?",
+  "options": [
+   "Call `writeValue` with the value",
+   "Call the function from `registerOnChange`",
+   "Call the function from `registerOnTouched`",
+   "Emit an `@Output` named `valueChange`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "72",
+  "question": "Which token do you provide to register a custom `ControlValueAccessor`?",
+  "options": [
+   "`NG_VALIDATORS`",
+   "`NG_VALUE_ACCESSOR`",
+   "`NG_ASYNC_VALIDATORS`",
+   "`NgControl`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "73",
+  "question": "A form calls `control.disable()`. Which method of the custom accessor does Angular call?",
+  "options": [
+   "`writeValue(null)`",
+   "`registerOnDisabled(fn)`",
+   "`setDisabledState(true)`",
+   "`ngOnDisable()`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "74",
+  "question": "In a TestBed test, `input.value = 'a'` does not change the control value. What is missing?",
+  "options": [
+   "A dispatched `input` event",
+   "A call to `control.markAsDirty()`",
+   "A call to `control.updateValueAndValidity()`",
+   "A call to `form.markAllAsTouched()`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "How do you test an async validator that waits with `timer(300)`?",
+  "options": [
+   "Call `fixture.detectChanges()` three times",
+   "Use `fakeAsync` and call `tick(300)`",
+   "Set `updateOn` to `'submit'` in the test",
+   "Use a spy for `FormControl`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "76",
+  "question": "Which flag tells the template that the user already tried to submit?",
+  "options": [
+   "The `submitted` flag of the `FormGroup`",
+   "The `touched` flag of the form",
+   "The `dirty` flag of the form",
+   "The `submitted` flag of `FormGroupDirective`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "77",
+  "question": "A `<select>` has object options. The control must hold the object. Which binding do you use on `<option>`?",
+  "options": [
+   "`[ngValue]`",
+   "`[value]`",
+   "`[selected]`",
+   "`[label]`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "78",
+  "question": "Why does `Validators.required` accept three spaces?",
+  "options": [
+   "It checks only null, empty string and empty array",
+   "It trims the text only after the field blur",
+   "It runs only after the control is touched",
+   "It checks the DOM text, not the model value"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "79",
+  "question": "An optional field has `Validators.minLength(5)`. The user leaves it empty. What is the status?",
+  "options": [
+   "INVALID with a `minlength` error",
+   "INVALID with a `required` error",
+   "PENDING",
+   "VALID"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "80",
+  "question": "Which property gives one stream of value, status, touched and pristine events?",
+  "options": [
+   "`control.changes`",
+   "`control.stateChanges`",
+   "`control.updates`",
+   "`control.events`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "81",
+  "question": "In `controls.a.valueChanges`, the code reads `form.value`. It shows the old value of `a`. Why?",
+  "options": [
+   "The child emits before it updates its own value",
+   "The parent updates its value after the child emits",
+   "The group keeps its value until the next blur",
+   "Angular delays the group by one tick"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "82",
+  "question": "A group has three controls. Code calls `form.patchValue({ a: 1, b: 2, c: 3 })`. How many times does `form.valueChanges` emit?",
+  "options": [
+   "One time",
+   "Three times",
+   "Four times",
+   "Zero times"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "83",
+  "question": "A user types fast. Each key starts an async validator HTTP call. What does Angular do with the older call?",
+  "options": [
+   "It waits for all calls and merges the errors",
+   "It unsubscribes from the older validator observable",
+   "It keeps all calls and uses the last one that ends",
+   "It blocks new input until the call ends"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "84",
+  "question": "A server returns an error inside an async validator. What should the validator do?",
+  "options": [
+   "Throw the error so Angular marks the control not valid",
+   "Use `catchError` and return `of(null)` or an error object",
+   "Return the boolean value `false`",
+   "Do nothing, because Angular retries the call"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "85",
+  "question": "A validator on `confirm` reads `control.parent.get('password')`. It does not run when `password` changes. What is the fix?",
+  "options": [
+   "Mark `password` as touched",
+   "Set `updateOn: 'blur'` on `confirm`",
+   "Set `emitEvent: false` on `password`",
+   "Move the validator to the parent group"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "86",
+  "question": "A component uses `OnPush`. An async validator ends, but the error text shows only after the next click. What is a fix?",
+  "options": [
+   "Set `updateOn: 'blur'` on the control",
+   "Call `markAsTouched` in the validator",
+   "Change the validator to a sync function",
+   "Call `markForCheck` on `statusChanges`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "A custom `ControlValueAccessor` uses `OnPush`. The form calls `setValue`, but the view does not update. What is missing?",
+  "options": [
+   "A `markForCheck` call in `writeValue`",
+   "A call to `registerOnChange` in the constructor",
+   "A call to `onTouched` in `writeValue`",
+   "The flag `multi: true` in the provider"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "Why do some custom controls inject `NgControl` instead of only providing `NG_VALUE_ACCESSOR`?",
+  "options": [
+   "To skip the `writeValue` method of the accessor",
+   "To run the validators of the parent group",
+   "To read the control state, such as errors",
+   "To work without `ReactiveFormsModule` in the app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "A child component shows `formGroupName` inputs of the parent form, with no input property. What makes it work?",
+  "options": [
+   "`ControlContainer` for `FormGroupDirective` in `viewProviders`",
+   "`NG_VALUE_ACCESSOR` with `multi: true` in `providers`",
+   "`NgForm` mapped to `FormGroup` in `viewProviders`",
+   "`FormBuilder` listed in `viewProviders` of the child"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "90",
+  "question": "A form has 200 controls and an expensive group validator. Typing is slow. What is the best first fix?",
+  "options": [
+   "Move the validator to the smallest needed sub-group",
+   "Use `Validators.compose` on the root group validator",
+   "Set `emitEvent: false` on every control update",
+   "Change the root `FormGroup` to a `FormArray`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "Find the bug:\n`for (let i = 0; i < rows.length; i++) {`\n`  if (sel[i]) rows.removeAt(i);`\n`}`",
+  "options": [
+   "`removeAt` does not update `length`",
+   "`length` is a function, not a number",
+   "The loop skips the row after each removed row",
+   "`removeAt` needs `emitEvent: false` in a loop"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "92",
+  "question": "All controls of a group are disabled. What are `form.status` and `form.valid`?",
+  "options": [
+   "Status VALID, and `valid` is `true`",
+   "Status DISABLED, and `valid` is `true`",
+   "Status DISABLED, and `valid` is `false`",
+   "Status INVALID, and `invalid` is `true` for the group"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "93",
+  "question": "A group has `updateOn: 'blur'`. One child sets `updateOn: 'change'`. Which rule applies to that child?",
+  "options": [
+   "The child uses the `'blur'` setting of the group",
+   "Angular throws a configuration error",
+   "The child uses the `'submit'` setting",
+   "The child uses its own `'change'` setting"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "94",
+  "question": "A component subscribes to `valueChanges` of a control in a root service. It never unsubscribes. What is the problem?",
+  "options": [
+   "The control stops emitting for other users",
+   "Each new component adds a live subscription",
+   "The service control becomes disabled",
+   "The subscription ends at the next check"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "`new FormControl(null)` gets the type `FormControl<null>`, and `setValue('a')` fails. What is the fix?",
+  "options": [
+   "Use `patchValue` instead of `setValue`",
+   "Add `nonNullable: true` to the options",
+   "Write `new FormControl<string | null>(null)`",
+   "Call `reset('a')` instead of `setValue`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "96",
+  "question": "In a typed `FormGroup`, `removeControl('name')` gives a compile error. What is the reason?",
+  "options": [
+   "`removeControl` exists only on `FormArray`",
+   "The control `name` has validators",
+   "The key `name` is required in the group type",
+   "The control `name` is not touched"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "A `computed()` reads `form.value` of a reactive form. It does not update when the user types. Why?",
+  "options": [
+   "The form state is not stored in signals",
+   "`computed` runs only once for each component",
+   "`form.value` returns a frozen copy",
+   "`computed` needs `OnPush` to track forms"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "98",
+  "question": "`ngAfterViewInit` calls `control.setValue('x')`, and the template shows `control.valid`. Dev mode throws NG0100. Why?",
+  "options": [
+   "`ngAfterViewInit` runs before the form exists",
+   "`setValue` is async in dev mode",
+   "NG0100 means that the control is missing",
+   "The value changes after Angular checks the view"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "99",
+  "question": "A hidden field with `Validators.required` makes the form invalid, but the user cannot see it. What is the best fix?",
+  "options": [
+   "Hide the field only with CSS",
+   "Clear its validators and never restore them",
+   "Set `emitEvent: false` on the form",
+   "Disable the control while it is hidden"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "The code calls `control.setErrors({ server: true })` after a failed save. The error goes away when the user types. Why?",
+  "options": [
+   "`setErrors` works for one change event only",
+   "A new validation run replaces the errors",
+   "The error expires after the next blur",
+   "`setErrors` works only on `FormGroup`"
+  ],
+  "correct_index": 1
+ }
+]

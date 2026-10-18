@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What does RUM mean in web performance work?",
+    "options": [
+      "Remote Unit Measurement",
+      "Rendered UI Metrics",
+      "Runtime Usage Management",
+      "Real User Monitoring"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "2",
+    "question": "Where does RUM get its data?",
+    "options": [
+      "From the browsers of real visitors during real sessions",
+      "From scripted bots in a test lab that run on a fixed schedule",
+      "From the CPU counters of the web server only",
+      "From the build tool during each deploy to staging"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "3",
+    "question": "What does synthetic monitoring do?",
+    "options": [
+      "It records the load time of every real visitor",
+      "It reads the public data of all Chrome users",
+      "It counts the errors in the server log each day",
+      "It runs scripted tests from set locations on a schedule"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "4",
+    "question": "What is the main strength of RUM compared with synthetic tests?",
+    "options": [
+      "It needs no script on the page of the site",
+      "It gives the same result on each run of the test",
+      "It finds problems before the first user visits",
+      "It shows the real range of devices, networks, and places"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "5",
+    "question": "What is the main strength of synthetic tests compared with RUM?",
+    "options": [
+      "The data comes from the devices of real users",
+      "The test shows the result for every user country",
+      "The test conditions are the same on each run",
+      "The test needs no control of the network speed"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "6",
+    "question": "Which browser API gives you performance entries as they happen?",
+    "options": [
+      "MutationObserver",
+      "PerformanceObserver",
+      "IntersectionObserver",
+      "ResizeObserver"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "7",
+    "question": "What does the Navigation Timing API describe?",
+    "options": [
+      "The timing of each image in the page",
+      "The time of each click of the user",
+      "The timing phases of the page document load",
+      "The time of each frame in an animation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "8",
+    "question": "What does the Resource Timing API describe?",
+    "options": [
+      "The timing of the main page document load and its redirects only",
+      "The timing of each loaded file, such as an image",
+      "The time that the user spends on the page",
+      "The time of each JavaScript error in the page"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "9",
+    "question": "What does `performance.now()` return?",
+    "options": [
+      "The Unix time in seconds from the year 1970",
+      "A high-resolution time in milliseconds from the time origin",
+      "The time of day in the time zone of the user",
+      "The time in milliseconds from the last click of the user on the page"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "10",
+    "question": "What is the `web-vitals` library used for?",
+    "options": [
+      "To run Lighthouse tests in a CI pipeline",
+      "To store performance data in a database",
+      "To measure Core Web Vitals in the browser with small functions",
+      "To compress images before the browser loads them"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "11",
+    "question": "You call `onLCP(console.log)`. What does the callback receive?",
+    "options": [
+      "A plain number with the LCP time in seconds",
+      "A promise that resolves with the metric after the page is idle",
+      "A list of all DOM nodes that the browser painted",
+      "A metric object with fields such as name, value, and rating"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "12",
+    "question": "Which three values can the `rating` field of a web-vitals metric have?",
+    "options": [
+      "fast, needs-improvement, very-slow",
+      "pass, needs-improvement, fail",
+      "good, needs-improvement, poor",
+      "green, orange, red"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "13",
+    "question": "Which browser method is made to send analytics data when the page closes?",
+    "options": [
+      "XMLHttpRequest with a sync flag",
+      "document.write",
+      "window.postMessage",
+      "navigator.sendBeacon"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "14",
+    "question": "Why is a sync XHR in an unload handler a bad choice?",
+    "options": [
+      "It cannot send a request body to the server",
+      "It sends the data twice to the server",
+      "It works only for requests to the same origin",
+      "It blocks the page exit and browsers can ignore it"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "15",
+    "question": "Which event is the best time to send the final RUM data?",
+    "options": [
+      "visibilitychange, when the state becomes hidden",
+      "DOMContentLoaded, when the HTML is parsed",
+      "load, when all files finish loading",
+      "scroll, when the user moves down the page"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "16",
+    "question": "Why do engineers avoid the `unload` event for sending data?",
+    "options": [
+      "It fires too often during the whole life of a page in the browser",
+      "It does not give access to the page URL",
+      "It is not reliable, mostly on mobile, and it blocks the bfcache",
+      "It works only in browsers on desktop computers"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "17",
+    "question": "What is sampling in RUM?",
+    "options": [
+      "You test the page on a small sample of devices in a lab",
+      "You collect data from only a part of the sessions",
+      "You round each metric to the nearest second",
+      "You measure only the first page of each session"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "18",
+    "question": "Why do teams sample RUM data?",
+    "options": [
+      "To make the metrics in the browser more accurate",
+      "To lower the cost of network traffic and data storage",
+      "To hide the slow sessions from the dashboard",
+      "To avoid the need for a consent banner"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "19",
+    "question": "What does p75 mean for a metric?",
+    "options": [
+      "The average of the best 75 values in the data",
+      "The value that 75 percent of users never see",
+      "The value that is 75 percent of the maximum",
+      "75 percent of the measured values are at or below it"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "20",
+    "question": "Why does Google use the 75th percentile to assess Core Web Vitals of a page?",
+    "options": [
+      "It is the same number as the average of all values in the data set",
+      "It uses only the data of the 75 fastest users",
+      "It shows what most users get and ignores a few extreme outliers",
+      "It is the fastest value that a lab test can get"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "21",
+    "question": "Why can an average mislead in RUM data?",
+    "options": [
+      "A few very slow loads can hide in a skewed distribution",
+      "The average cannot be calculated for time values",
+      "The average always shows a value that is lower than the median",
+      "The browser rounds all values before it sends them"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "22",
+    "question": "What is the median of a metric?",
+    "options": [
+      "The largest value in the data set",
+      "The most common value in the data set",
+      "The sum of all values divided by the count",
+      "The p50 value, with half of the data below it"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "23",
+    "question": "What does segmentation mean in RUM analysis?",
+    "options": [
+      "You split the page into smaller JavaScript files",
+      "You split the data by device, network, country, and so on",
+      "You split the beacon into several small requests",
+      "You split the users into test and control groups"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "24",
+    "question": "Why should you look at mobile and desktop users in separate groups?",
+    "options": [
+      "Phones have slower CPUs and networks, so a joint number hides this",
+      "Desktop browsers cannot send data to a beacon endpoint on a CDN host",
+      "Mobile browsers do not support any performance API",
+      "Each device type needs its own RUM vendor"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "25",
+    "question": "What is CrUX?",
+    "options": [
+      "A Lighthouse plugin that runs lab tests on a page with a slow network",
+      "A browser API that lists the long tasks on a page",
+      "A public set of real-user data from opted-in Chrome users",
+      "A CDN setting that speeds up the first byte"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "26",
+    "question": "Do you need to add a script to your site to see its data in CrUX?",
+    "options": [
+      "Yes, you must add the CrUX script to each page",
+      "Yes, but only on pages with a high traffic count",
+      "No, Chrome collects the data from opted-in users",
+      "No, but you must enable CrUX in the server headers"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "27",
+    "question": "Which tool below gives lab data, not field data?",
+    "options": [
+      "Datadog RUM",
+      "Lighthouse",
+      "SpeedCurve LUX",
+      "Sentry Performance"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "28",
+    "question": "What is the difference between lab data and field data?",
+    "options": [
+      "Lab data comes from a test setup, and field data comes from real users",
+      "Lab data is always more accurate than field data",
+      "Lab data comes from the origin server, and field data comes from the CDN edge",
+      "Lab data has no metrics for loading speed"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "29",
+    "question": "What does attribution data tell you in RUM?",
+    "options": [
+      "Which element or script caused the value of a metric",
+      "Which team in the company owns the page and fixes its slow code",
+      "Which marketing campaign brought the user",
+      "Which author wrote the code of the page"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "30",
+    "question": "Which web-vitals build adds attribution details to each metric?",
+    "options": [
+      "The polyfill build for older browsers, imported from web-vitals/polyfill",
+      "The attribution build, imported from web-vitals/attribution",
+      "The legacy build, imported from web-vitals/legacy",
+      "The debug build, imported from web-vitals/debug"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "31",
+    "question": "Which fields help you to segment a beacon later?",
+    "options": [
+      "Only the metric name and the user name",
+      "Metric name, value, page path, and device type",
+      "Only the time when the server got the beacon",
+      "The full HTML of the page and the cookies"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "32",
+    "question": "Why should a RUM beacon stay small?",
+    "options": [
+      "It makes the metric values more exact in the browser and on the server",
+      "It lets the beacon skip the network queue",
+      "It saves user data and fits the size limit of browser beacons",
+      "It stops the server from storing the data"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "33",
+    "question": "What does `navigator.sendBeacon(url, data)` return?",
+    "options": [
+      "A promise with the response body of the server",
+      "A boolean that says if the browser queued the request",
+      "The number of bytes that the browser sent",
+      "The HTTP status code of the response"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "34",
+    "question": "Which HTTP method does `sendBeacon` use?",
+    "options": [
+      "GET",
+      "PUT",
+      "PATCH",
+      "POST"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "35",
+    "question": "What is a session in RUM?",
+    "options": [
+      "The time that the server needs to answer",
+      "A single request from the browser to the server",
+      "A group of page views from one visit",
+      "A list of all pages in the site"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "36",
+    "question": "Why is the first page load not enough to measure a single-page application (SPA)?",
+    "options": [
+      "An SPA never fires the load event in any browser during the visit",
+      "An SPA does not use the network after it starts",
+      "Route changes later in the visit do not make a new page load",
+      "An SPA cannot be measured by any browser API"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "37",
+    "question": "What is a soft navigation?",
+    "options": [
+      "A URL change in an SPA without a full page load",
+      "A page load that comes from the HTTP cache",
+      "A redirect from HTTP to HTTPS",
+      "A page load in a background tab"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "38",
+    "question": "A visitor has the email address in a URL query string. What is the risk if RUM stores the full URL?",
+    "options": [
+      "The beacon is too long for the browser to send",
+      "The RUM script stops to measure the page",
+      "You store personal data without a need",
+      "The URL is not valid for the Resource Timing API"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "39",
+    "question": "What is the privacy rule for the data in a beacon?",
+    "options": [
+      "Collect all data now and remove it after one year if nobody uses it",
+      "Collect only what you need, and do not collect personal data",
+      "Collect personal data if the page has HTTPS",
+      "Collect personal data if the user is on a mobile device"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "40",
+    "question": "A user rejects tracking in the consent banner. What should your RUM code do?",
+    "options": [
+      "Ignore the choice because RUM is only technical data",
+      "Respect the choice and do not store a user identifier",
+      "Store the identifier in localStorage instead of a cookie",
+      "Send the data later when the user returns"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "41",
+    "question": "Which alert rule is best for a RUM metric?",
+    "options": [
+      "p75 stays above the limit for some minutes with enough samples",
+      "One single slow value goes above the limit in the data of one user",
+      "The average goes above the limit for one second",
+      "The count of beacons goes down by one"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "42",
+    "question": "Which chart is better for a RUM dashboard?",
+    "options": [
+      "A percentile line over time, split by segment",
+      "A table of raw values of the last 10 users",
+      "A pie chart with the count of page views",
+      "A single big number with the average"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "43",
+    "question": "What does a histogram show for a metric?",
+    "options": [
+      "The average value for each hour",
+      "How many measurements fall into each value range",
+      "The slowest value on each page",
+      "The order of the requests in a page load"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "44",
+    "question": "Why must you watch the number of samples behind a percentile?",
+    "options": [
+      "More samples make the percentile always larger",
+      "A percentile needs exactly 100 samples",
+      "The number of samples changes the unit of the metric",
+      "Few samples make a percentile noisy and not reliable"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "45",
+    "question": "Which Navigation Timing field marks the time of the first byte of the response?",
+    "options": [
+      "responseStart",
+      "domInteractive",
+      "requestStart",
+      "loadEventEnd"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "46",
+    "question": "What does `buffered: true` do in `observer.observe({type: 'resource', buffered: true})`?",
+    "options": [
+      "It also returns entries made before the observer started",
+      "It holds all entries in memory until the page closes and then sends them",
+      "It groups the entries into one array each second",
+      "It stores the entries in localStorage"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "47",
+    "question": "Which entry type do you use for the timing of an image file?",
+    "options": [
+      "mark",
+      "navigation",
+      "paint",
+      "resource"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "48",
+    "question": "Which HTTP header must a cross-origin server send to show full Resource Timing details?",
+    "options": [
+      "Timing-Allow-Origin",
+      "Access-Control-Allow-Origin",
+      "Cross-Origin-Resource-Policy",
+      "Server-Timing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "49",
+    "question": "How should you load a RUM script so it does not slow the page?",
+    "options": [
+      "In the head as a normal blocking script",
+      "With a sync XHR that runs at the start",
+      "In an inline script that runs before the first byte",
+      "With the async attribute, so it does not block the parsing"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "50",
+    "question": "What does `navigator.connection.effectiveType` show in Chromium browsers?",
+    "options": [
+      "A network quality class such as 4g or 3g",
+      "The exact download speed in megabits per second",
+      "The name of the Wi-Fi network of the user",
+      "The type of the SSL certificate of the site"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "51",
+    "question": "A synthetic test shows an LCP of 1.8 s, but RUM p75 shows 3.5 s. What is the most likely reason?",
+    "options": [
+      "The test uses a fast device and network, and real users are slower",
+      "RUM counts the time to the first byte two times in each load of the page",
+      "The synthetic test measures the wrong element",
+      "RUM p75 is always twice the synthetic value"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "52",
+    "question": "A teammate writes this code:\n`addEventListener('unload', () => fetch('/rum', {method:'POST', body}))`\nWhat is the risk?",
+    "options": [
+      "The browser can cancel the request, so data is lost",
+      "The request is sent two times to the server",
+      "The request is blocked by the same-origin policy",
+      "The request changes the metric values"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "53",
+    "question": "What does the option `keepalive: true` do in `fetch`?",
+    "options": [
+      "It keeps the TCP connection open for one hour",
+      "It lets the request finish after the page is closed",
+      "It sends the request again if it fails",
+      "It caches the response for the next page"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "54",
+    "question": "Why do many tools send CLS and INP only when the page becomes hidden?",
+    "options": [
+      "The values are not available while the user sees the page",
+      "The browser blocks beacons while the page is visible",
+      "The values can change during the whole life of the page",
+      "The values are always zero until the page closes"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "55",
+    "question": "What does the `reportAllChanges` option of web-vitals do?",
+    "options": [
+      "It sends the metric to all the RUM vendors of the site at once",
+      "It calls the callback at each change, not only at the end",
+      "It resets the metric when the user changes the route",
+      "It reports the metrics of all frames in the page"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "56",
+    "question": "Why should the sampling decision be made once per session?",
+    "options": [
+      "All page views of one session stay together in the data",
+      "A per-session decision gives a higher sample rate",
+      "A random decision per beacon is not allowed by browsers",
+      "A per-session decision removes the need for a user ID"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "57",
+    "question": "A team collects RUM data only from users who stay longer than 10 seconds. What is the problem?",
+    "options": [
+      "Quick exits, which are often slow pages, are missing",
+      "The percentiles cannot be calculated",
+      "The data is split by device in a wrong way",
+      "The beacons are too large for the browser"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "58",
+    "question": "RUM only sees users whose page loaded enough to run the script. What is this bias called?",
+    "options": [
+      "Selection of the median",
+      "Clock skew",
+      "Sampling drift",
+      "Survivorship bias"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "59",
+    "question": "When do you look at p95 and not only p75?",
+    "options": [
+      "When you compare lab and field data",
+      "When you need to find the fastest users",
+      "When the sample count is very low",
+      "When you want to see the slow tail of the user experience"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "60",
+    "question": "You have the p75 value per hour from 24 servers. Can you average them to get the daily p75?",
+    "options": [
+      "Yes, the average of percentiles is the daily percentile",
+      "Yes, but only if all hours have the same number of samples",
+      "No, the daily p75 is always the maximum of the hourly values",
+      "No, merge the histograms or raw data and calculate again"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "61",
+    "question": "Why should you filter bots from RUM data?",
+    "options": [
+      "Bots cannot run any JavaScript in the page, so they send no beacons",
+      "Bots often have extreme timings that skew the percentiles",
+      "Bots always send beacons two times",
+      "Bots change the user language of the session"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "62",
+    "question": "An ad blocker blocks your third-party RUM domain. What is the best fix?",
+    "options": [
+      "Use a bigger payload so the blocker skips it",
+      "Send the beacons more often with a shorter delay",
+      "Add a random query string to each beacon URL",
+      "Send the beacons to an endpoint on your own domain"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "63",
+    "question": "In web-vitals, which `navigationType` value shows that the user restored the page from the bfcache?",
+    "options": [
+      "reload",
+      "back-forward",
+      "restore",
+      "back-forward-cache"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "64",
+    "question": "A page is prerendered before the user opens it. Which Navigation Timing field helps you to measure from the real page view?",
+    "options": [
+      "fetchStart",
+      "activationStart",
+      "redirectStart",
+      "domContentLoadedEventEnd"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "65",
+    "question": "How do you measure a route change in an SPA with standard APIs?",
+    "options": [
+      "Read `performance.timing.loadEventEnd` again after each route change",
+      "Use `PerformanceObserver` with the type `route`",
+      "Listen to the `load` event on each route",
+      "Use `performance.mark` at the start and the end of the change"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "66",
+    "question": "What does `performance.measure('route', 'start', 'end')` do?",
+    "options": [
+      "It starts a timer that stops at the next click",
+      "It sends the two marks to the server",
+      "It creates an entry with the time between two marks",
+      "It deletes the marks after the calculation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "67",
+    "question": "Which Chromium API gives script details for slow frames that hurt responsiveness?",
+    "options": [
+      "Layout Instability (the `layout-shift` entry type with the shift sources)",
+      "Resource Timing (the `resource` entry type)",
+      "Long Animation Frames (the `long-animation-frame` entry type)",
+      "Paint Timing (the `paint` entry type)"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "68",
+    "question": "The LCP attribution shows that most of the time is the time to first byte. Where do you look first?",
+    "options": [
+      "The size of the image file",
+      "The CSS of the page",
+      "The server, the CDN, and the redirects",
+      "The JavaScript bundle size"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "69",
+    "question": "The LCP attribution shows a large resource load delay for the hero image. What is a likely fix?",
+    "options": [
+      "Make the image file smaller with a better codec and a lower quality",
+      "Move the server near the user",
+      "Let the browser find the image earlier, with a preload",
+      "Remove the render-blocking CSS"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "70",
+    "question": "A RUM tool offers session replay. Which setting protects the privacy of users best?",
+    "options": [
+      "Record all text and inputs first, then remove the names later in the dashboard",
+      "Mask all text and form inputs by default, and unmask only safe parts",
+      "Record only the sessions of users who use a mobile device",
+      "Store the replay in the browser of each user for one year"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "71",
+    "question": "p75 INP grew only on Android after a release. What is the best next step?",
+    "options": [
+      "Roll back all the releases of the last month and test each one again",
+      "Raise the alert limit for Android users",
+      "Split the data by release and device, and compare the groups",
+      "Increase the sample rate for desktop users"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "72",
+    "question": "A beacon includes the IP address of the user. What should the collector do?",
+    "options": [
+      "Remove or shorten the IP address before it saves the data",
+      "Hash the IP address with a public hash and keep it",
+      "Save the full IP address for debugging",
+      "Send the IP address to each vendor"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "73",
+    "question": "Why do RUM tools group `/product/123` and `/product/456` into `/product/:id`?",
+    "options": [
+      "To make the URL shorter for the beacon and for the server log file",
+      "To get a few useful page groups with enough samples for each",
+      "To fix a bug in the Resource Timing API",
+      "To hide the product names from the server"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "74",
+    "question": "A team adds the user ID as a label to each metric in a time-series database. What is the problem?",
+    "options": [
+      "High cardinality makes storage and queries slow and costly",
+      "The metric names become longer than the name limit of the database",
+      "The database cannot store a string label",
+      "The user ID changes the metric value"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "75",
+    "question": "You fix a slow page today. Why does CrUX show the change slowly?",
+    "options": [
+      "CrUX updates only once each year",
+      "CrUX takes data only from lab tests",
+      "CrUX needs a new origin for each fix",
+      "CrUX uses a rolling window of 28 days"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "76",
+    "question": "Why do many RUM scripts send several metrics in one beacon?",
+    "options": [
+      "It lets the server skip the data validation",
+      "It makes each metric value more exact",
+      "It makes fewer requests and uses less network and CPU",
+      "It avoids the size limit of the browser"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "77",
+    "question": "Which API replaces the old `performance.timing` object?",
+    "options": [
+      "`performance.getEntriesByType('document')[0]`",
+      "`performance.getEntriesByType('navigation')[0]`",
+      "`performance.toJSON()`",
+      "`performance.memory`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "78",
+    "question": "A third-party image has no `Timing-Allow-Origin` header. Which Resource Timing values do you still get?",
+    "options": [
+      "The start time and the total duration",
+      "The DNS time and the connect time",
+      "The time to first byte of that file",
+      "The size of the response body"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "79",
+    "question": "A page has too few visits, and CrUX shows no data for it. What is the best action?",
+    "options": [
+      "Run Lighthouse one time and use the score",
+      "Collect data with your own RUM script",
+      "Wait for one year for CrUX to add the page",
+      "Use the data of a bigger site as a replacement"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "80",
+    "question": "How can you measure the time of a `fetch` call in RUM without a custom code in each call?",
+    "options": [
+      "Read `resource` entries with `initiatorType` of `fetch`",
+      "Read the `paint` entries after each call",
+      "Read the `navigation` entry of the page after the last call",
+      "Read the `longtask` entries after each call"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "81",
+    "question": "A page loads 400 files. A script reads `getEntriesByType('resource')` at the end and misses some files. What is the cause and the fix?",
+    "options": [
+      "The browser hides cross-origin files, so use a proxy",
+      "The default buffer is full, so use an observer from the start",
+      "The entries expire after 30 seconds in the buffer, so read them sooner",
+      "The page uses HTTP/2, so use the navigation entry"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "82",
+    "question": "Why do large RUM systems store histograms and not raw values for percentiles?",
+    "options": [
+      "Histograms use fixed memory and can merge, with a small bucket error",
+      "Raw values cannot be stored in a database",
+      "Histograms give exact percentiles for any data size and any bucket width",
+      "Histograms remove the need for a sample rate"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "83",
+    "question": "A route has 200 samples each day. Why is its p99 not reliable?",
+    "options": [
+      "The p99 needs at least one million samples by definition",
+      "The p99 is always equal to the median for small data",
+      "The p99 depends on only two values, so it changes a lot",
+      "The browser cuts the top one percent of values"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "84",
+    "question": "The overall p75 improves, but p75 in each segment gets worse. What is the likely cause?",
+    "options": [
+      "The percentile function has a bug that mixes the segment values",
+      "The sample rate went down in all segments",
+      "The traffic mix changed, with more users in a fast segment",
+      "The browser changed the unit of the metric"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "85",
+    "question": "You keep all poor sessions and only 10 percent of good sessions. How do you calculate the true share of poor sessions?",
+    "options": [
+      "Count the kept sessions as they are, and divide by all the sessions",
+      "Multiply the share of poor sessions by 10",
+      "Remove the poor sessions that have no good partner",
+      "Give each sample a weight of one divided by its sampling rate"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "86",
+    "question": "`sendBeacon` returns `false`. What does this mean?",
+    "options": [
+      "The server answered with an error code",
+      "The user is offline, and the browser will retry later",
+      "The request was queued, but the page closed before the browser sent it",
+      "The browser did not queue the request, for example it was too big"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "87",
+    "question": "A cross-origin `sendBeacon` with a JSON blob fails in a CORS preflight. Which content type avoids the preflight?",
+    "options": [
+      "application/json",
+      "text/plain",
+      "application/octet-stream",
+      "application/x-protobuf"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "88",
+    "question": "Why use `performance.now()` and not `Date.now()` to measure durations in RUM?",
+    "options": [
+      "It is monotonic, and the system clock changes do not affect it",
+      "It has a lower cost than any other timer in the browser or on a server",
+      "It returns the time in the time zone of the server",
+      "It works in the HTTP header of the response"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "89",
+    "question": "Why do RUM libraries drop metrics when the page was hidden at the start, for example in a background tab?",
+    "options": [
+      "Browsers do not run any scripts in a hidden tab, so no data exists",
+      "The values do not show what a user sees, because of throttling",
+      "Hidden pages always have a zero value",
+      "The beacon cannot be sent from a hidden tab"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "90",
+    "question": "In an SPA, the user goes from `/home` to `/cart`. A script reads `location.href` when it sends the CLS value. What is wrong?",
+    "options": [
+      "The CLS value is always zero after a route change in an SPA page",
+      "The script sends the CLS value two times",
+      "The browser does not allow a read of `location.href`",
+      "The shifts may come from `/home`, but the tag says `/cart`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "91",
+    "question": "How can a RUM beacon include the backend time of the HTML request?",
+    "options": [
+      "Read `serverTiming` from the navigation entry (`Server-Timing` header)",
+      "Read the response body of the document request",
+      "Read `serverTiming` from the paint entry, with a custom `X-Server-Time` header",
+      "Read the `Date` header and subtract the local time"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "92",
+    "question": "You add a `traceparent` header to cross-origin `fetch` calls. Why does the API server need a change?",
+    "options": [
+      "The header is blocked in all cross-origin calls by every browser engine",
+      "The header makes the response uncacheable in the browser",
+      "The header causes a CORS preflight, and the server must allow it",
+      "The header needs a TLS client certificate"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "93",
+    "question": "Which design reduces the privacy risk most when the user did not agree to tracking?",
+    "options": [
+      "Send the data only from the desktop browsers",
+      "Hash the user ID with SHA-256 and keep the cookie for later visits",
+      "Store the session ID in localStorage, not in a cookie",
+      "Send aggregate metrics with no cookie, no ID, and no IP storage"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "94",
+    "question": "Your site has a few busy routes and many quiet routes. How do you set the sample rate to keep useful data for all routes?",
+    "options": [
+      "Use a rate for each route: high for quiet routes, low for busy ones",
+      "Use one low rate for all routes, so the load on the server stays low",
+      "Sample only the busiest route",
+      "Sample by user ID range for all routes"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "95",
+    "question": "Traffic mix changes each day. How do you check that a release caused a regression?",
+    "options": [
+      "Compare the average of all pages before and after the release",
+      "Compare the p75 of today with the p75 of last week for all pages",
+      "Compare the lab score before and after the release",
+      "Compare the same segments by release tag, ideally in a canary"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "96",
+    "question": "Why should the collector use its own receive time and not the client clock as the event time?",
+    "options": [
+      "The client clock cannot be read by JavaScript",
+      "The server time is always more exact than a timer",
+      "Client clocks can be wrong or in a different time zone",
+      "Browsers hide the client time for privacy reasons"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "97",
+    "question": "A resource entry has `transferSize` equal to 0 and `decodedBodySize` greater than 0. What does it show?",
+    "options": [
+      "The server sent an empty response",
+      "The file has a wrong content type",
+      "The browser served the file from a cache",
+      "The request failed in the network"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "98",
+    "question": "Why do many libraries listen to both `visibilitychange` and `pagehide`?",
+    "options": [
+      "Both events are needed to read the value of the metric in the page",
+      "Some browsers do not fire `visibilitychange` in every page exit",
+      "The `pagehide` event gives a more exact time",
+      "Browsers fire only one event for each page"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "99",
+    "question": "A report shows that slow pages have a lower conversion rate. What is the limit of this result?",
+    "options": [
+      "It proves that speed alone causes the lower conversion on the page",
+      "It shows a link, but slow users may differ in device or intent",
+      "It is not valid because RUM has no business data",
+      "It is valid only for the p50 value"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "100",
+    "question": "Why should a beacon collector answer fast with 204 and put the data in a queue?",
+    "options": [
+      "Beacons cannot be retried, and a queue handles traffic spikes",
+      "A queue gives the client a final confirmation",
+      "A database cannot receive more than one request",
+      "A 204 status makes the browser send the data again after a delay"
+    ],
+    "correct_index": 0
+  }
+]

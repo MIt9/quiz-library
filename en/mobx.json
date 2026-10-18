@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What does `observable` do in MobX?",
+  "options": [
+   "It makes state that MobX tracks, so a change can start updates",
+   "It freezes the state so that no code can change it later",
+   "It copies the state to a new object on every read",
+   "It saves the state in the local storage after each change of it"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "2",
+  "question": "What is a `computed` value in MobX?",
+  "options": [
+   "A value that you must set by hand inside an action",
+   "A function that runs after each change to any state",
+   "A copy of the state that React keeps in its own memory for later",
+   "A value that MobX derives from other observables and caches"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "3",
+  "question": "What is the main job of an `action` in MobX?",
+  "options": [
+   "To read observable state without any tracking of it at all times",
+   "To make a React component render again at once",
+   "To change observable state in one clear and batched place",
+   "To send the state to the server after each change"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "4",
+  "question": "What must you do when you use `makeObservable` in a class?",
+  "options": [
+   "Call `observer` on the class so MobX can find the fields",
+   "Mark all class members as `private` so that MobX can see each of them",
+   "Return the class instance from the constructor",
+   "Give an annotation for each member, such as `count: observable`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "5",
+  "question": "What does `makeAutoObservable(this)` do in a constructor?",
+  "options": [
+   "It marks all fields as observable and leaves getters as normal code",
+   "It marks only the fields that have a decorator as observable",
+   "Fields become observable, getters computed, functions actions",
+   "It turns the class into a React component that tracks its state"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "6",
+  "question": "What does the `observer` wrapper from `mobx-react-lite` do?",
+  "options": [
+   "It renders the component again when an observable it reads changes",
+   "It copies the props of the component into an observable object",
+   "It stops the component from rendering more than one time",
+   "It moves the state of the component to a global store"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "7",
+  "question": "What does `autorun(() => console.log(store.count))` do?",
+  "options": [
+   "It runs after the first change of `store.count`, then on each change",
+   "It runs one time and then stops by itself",
+   "It runs on each tick of the event loop",
+   "It runs at once, and runs again each time `store.count` changes"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "What are the two main functions that you give to `reaction`?",
+  "options": [
+   "A data function that is tracked, and an effect that gets its result",
+   "A setter that changes state, and a getter that reads the state",
+   "A start function and a stop function for the observer",
+   "An action and a computed value that depend on each other"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "9",
+  "question": "What does `when(() => store.ready, () => run())` do?",
+  "options": [
+   "It runs `run` one time when the predicate becomes true",
+   "It runs `run` again each time the predicate becomes false",
+   "It runs `run` after a fixed delay in milliseconds",
+   "It blocks the code until `store.ready` is true"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "10",
+  "question": "In MobX 6, what is the default value of `enforceActions`?",
+  "options": [
+   "`\"never\"`: MobX does not check where state changes",
+   "`\"observed\"`: a warning shows when observed state changes outside an action",
+   "`\"always\"`: a warning shows for each change outside an action",
+   "`\"strict\"`: MobX throws an error when state changes outside an action"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "11",
+  "question": "What is `runInAction` used for?",
+  "options": [
+   "To run an action again each time a reaction stops or starts",
+   "To start an action in a separate worker thread",
+   "To run a block of code as an action without a named method",
+   "To run an action only when no component reads the state"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "12",
+  "question": "`const stop = autorun(() => {})`. What is `stop`?",
+  "options": [
+   "A boolean that tells if the autorun is still running",
+   "A promise that resolves after the first run",
+   "A function that you call to dispose the autorun",
+   "The last value that the autorun function returned"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "13",
+  "question": "You use `const n = observable.box(1)`. How do you read the value?",
+  "options": [
+   "`n.value`",
+   "`n()`",
+   "`n.get()`",
+   "`n.current`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "14",
+  "question": "A project uses only function components with React. Which MobX package gives the `observer` function with the smallest size?",
+  "options": [
+   "`mobx-react-lite`",
+   "`mobx-react-devtools`",
+   "`mobx-state-tree`",
+   "`mobx-utils`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "15",
+  "question": "In a class with `makeAutoObservable`, what does `get total() { return this.a + this.b }` become?",
+  "options": [
+   "A computed value",
+   "An action",
+   "A plain method that MobX ignores",
+   "An observable field with a copy of the sum"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "A store has `items = []` marked as observable. What happens when code calls `items.push(1)` in an action?",
+  "options": [
+   "Nothing, because you must replace the whole array",
+   "MobX throws an error for arrays",
+   "Observers of the array update",
+   "Only computed values update, and observers do not"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "17",
+  "question": "What is the `flow` function in MobX used for?",
+  "options": [
+   "To connect two stores so they share the same state",
+   "To run many reactions in a fixed order that you can set by hand",
+   "To pass state from a parent component to a child",
+   "To write async actions with a generator function and `yield`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "18",
+  "question": "What does `toJS(store.user)` return?",
+  "options": [
+   "A plain JavaScript copy of the observable data",
+   "The same observable object, but with a new name inside",
+   "A promise that resolves when the user changes",
+   "A frozen object that MobX still tracks"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "What do you call to set a global MobX option such as `enforceActions`?",
+  "options": [
+   "`mobx.settings.enforceActions = \"always\"`",
+   "`configure({ enforceActions: \"always\" })`",
+   "`makeObservable(mobx, { enforceActions: true })`",
+   "`observable.config({ enforceActions: \"always\" })`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "When is `observable.map()` better than a plain object?",
+  "options": [
+   "When you need deep tracking, which a plain object cannot give",
+   "When you want MobX to skip tracking of the values",
+   "When you must store only a small number of fixed keys",
+   "When you add and remove keys at run time, or use keys that are not strings"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "What does the `observable.ref` annotation do?",
+  "options": [
+   "It makes a reference to another store in the same tree",
+   "It tracks all nested values and keeps the old reference",
+   "It creates a reference that React can pass to a child",
+   "It tracks only the change of the reference, not the inside of the value"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "A handler `onClick={store.inc}` loses `this`. Which annotation fixes this in `makeObservable`?",
+  "options": [
+   "`inc: action.static`",
+   "`inc: computed.bound`",
+   "`inc: action.bound`",
+   "`inc: observable.bound`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "23",
+  "question": "In MobX 6, how does `observable` track a plain object?",
+  "options": [
+   "It replaces each key with a getter and a setter only",
+   "It uses a JavaScript `Proxy` by default",
+   "It checks the object with a timer on each frame",
+   "It copies the object into a database table"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "24",
+  "question": "Where do you usually call `makeAutoObservable(this)` in a store class?",
+  "options": [
+   "Inside each action, before the change",
+   "In a `useEffect` hook of the root component",
+   "After the class instance is passed to `observer`",
+   "In the constructor"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "25",
+  "question": "What is the main difference in how Redux and MobX change state?",
+  "options": [
+   "Redux changes state in place, MobX returns a new copy each time",
+   "Redux tracks reads of state in each component, MobX needs selector lists",
+   "Redux needs actions only in React, MobX needs them in all code",
+   "Reducers return new state in Redux, MobX changes it in place"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "In strict mode, what is the risk of `store.count++` in a click handler, outside an action?",
+  "options": [
+   "The change is lost, because MobX ignores it",
+   "The change runs twice, because MobX repeats the whole click handler",
+   "MobX shows a warning, because state changes outside an action",
+   "The component cannot read `store.count` again"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "27",
+  "question": "Can you use `makeAutoObservable` in a class that has a subclass?",
+  "options": [
+   "Yes, but only if the subclass is an abstract class",
+   "No, it does not work with `super` or subclasses, so use `makeObservable`",
+   "Yes, it marks the members of the subclass in the same way",
+   "No, because MobX supports only classes that have no fields"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "28",
+  "question": "What does `useLocalObservable` do in a function component?",
+  "options": [
+   "It reads a store from the nearest React context",
+   "It creates an observable store for the life of the component",
+   "It saves the store to local storage between two page loads of the app",
+   "It makes the props of the component observable"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "29",
+  "question": "How do you usually share one MobX store with many React components?",
+  "options": [
+   "Put it in a React context, or import a shared instance",
+   "Pass it as a prop through every level of the component tree",
+   "Save it in `window` and read it in each render",
+   "Wrap each component in `autorun` and pass the store"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "30",
+  "question": "A component wrapped with `observer` gets the same props again. Does it render again?",
+  "options": [
+   "Yes, because `observer` forces a render on every parent render",
+   "No, because `observer` also memoizes the component like `React.memo`",
+   "Yes, because MobX compares the props with a deep check",
+   "No, but only if the component has no hooks"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "`autorun(() => { console.log(\"hi\") })` reads no observable. How many times does it run?",
+  "options": [
+   "One time",
+   "Each time any observable changes",
+   "Never, because it has no dependency",
+   "Each time the page renders"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "32",
+  "question": "In MobX 6, you use the `@observable` decorator. What else is needed in the constructor?",
+  "options": [
+   "A call to `observer(this)`",
+   "A call to `configure({ decorators: true })`",
+   "A call to `Object.freeze(this)`",
+   "A call to `makeObservable(this)`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "33",
+  "question": "`todos` is a deep observable array of objects. What happens on `todos[0].done = true` in an action?",
+  "options": [
+   "Observers that read `done` of that item update",
+   "Nothing happens, because the array itself did not change",
+   "Only observers of the array length update",
+   "MobX throws, because items are read-only"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "34",
+  "question": "Does MobX require you to keep state immutable?",
+  "options": [
+   "Yes, you must always create a new object",
+   "Yes, but only for the state in arrays and in maps",
+   "No, you can change observable state in place",
+   "No, but only for state in class instances"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "An `observer` component reads `store.count` only inside an `onClick` handler. What happens when `count` changes?",
+  "options": [
+   "The component renders again, because it uses the store",
+   "The handler throws an error at the next click",
+   "The parent component renders again in its place",
+   "The component does not render again, as the read is not in render"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "36",
+  "question": "Which task fits a `reaction` best?",
+  "options": [
+   "Calculate the total price from a list of items in the cart",
+   "Save the user settings to local storage when they change",
+   "Change the state when a button is clicked",
+   "Create the first value of an observable field"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "37",
+  "question": "A function changes three observables inside one `action`. When do reactions run?",
+  "options": [
+   "After each one of the three changes",
+   "Before the action starts",
+   "After the action ends, one time",
+   "At the next animation frame"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "38",
+  "question": "Where should a store keep the code that loads data from an API?",
+  "options": [
+   "In a computed getter of the store",
+   "In an action or a `flow` method of the store",
+   "In the constructor of each component that shows data",
+   "In the data function of a `reaction`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "39",
+  "question": "`const p = observable({ count: 0 })`. How do you change `count` in a way that MobX accepts?",
+  "options": [
+   "Inside an action, with `p.count++`",
+   "With `p.count.set(1)` in any function",
+   "With `Object.assign({}, p, { count: 1 })`",
+   "With `p = observable({ count: 1 })`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "What does \"derived state\" mean in MobX?",
+  "options": [
+   "A value that a child store gets from its parent store",
+   "A value that you calculate from other state and do not store again",
+   "A value that you save in the browser to read it later",
+   "A value that you get by copying a snapshot of the store"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "41",
+  "question": "Why is it bad to store `fullName` as a separate observable field with `firstName` and `lastName`?",
+  "options": [
+   "MobX cannot track two strings that depend on each other well",
+   "The values can get out of sync, so a `computed` is better",
+   "Observable fields cannot hold a string with a space",
+   "Computed values are faster to write than fields"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "42",
+  "question": "An `observer` component reads `store.count` in its render. What happens when `count` changes?",
+  "options": [
+   "Only the parent component renders again",
+   "The page reloads",
+   "Nothing, until the next prop change",
+   "The component renders again"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "A parent is an `observer`. A child component reads observables but has no `observer`. What is the result?",
+  "options": [
+   "The child updates, because the parent tracks all of its children",
+   "MobX throws an error when the child renders",
+   "The child does not update when those observables change",
+   "The child updates, but only one time"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "What is a \"store\" in a MobX app?",
+  "options": [
+   "A database table where MobX saves each action",
+   "A special React component that wraps the whole app",
+   "A class or object that holds observable state, computed values, and actions",
+   "A function that returns a new copy of the state"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "Why use MobX state instead of many `useState` hooks in a big app?",
+  "options": [
+   "Many components can share and read the same state without prop drilling",
+   "MobX state makes React skip all renders of the parent",
+   "`useState` cannot hold objects and arrays",
+   "MobX state loads faster than the React runtime"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "What is the `mobx` package, compared to `mobx-react-lite`?",
+  "options": [
+   "A React hook library for forms and routing",
+   "A tool for unit tests that mocks the stores of a React app",
+   "A browser extension that shows the state",
+   "The core state library, which does not depend on React"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "47",
+  "question": "What does the third argument of `reaction` hold?",
+  "options": [
+   "A list of observables that the reaction must ignore",
+   "Options such as `fireImmediately` and `delay`",
+   "The disposer function that stops the reaction later",
+   "A store name that shows in the debug tools"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "48",
+  "question": "In `makeAutoObservable`, a function becomes an `autoAction`. What does that mean?",
+  "options": [
+   "It runs again by itself each time an observable field changes",
+   "It acts as an action, except when a derivation calls it",
+   "It is bound to the class and cannot be used with `call` or `apply`",
+   "It works as an action only when `async` is in its function name"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "49",
+  "question": "How do you turn a plain function `fn` into an action without a class?",
+  "options": [
+   "`computed(fn)`",
+   "`action(fn)`",
+   "`reaction(fn)`",
+   "`observer(fn)`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "50",
+  "question": "Which Redux idea is the closest to a MobX `computed`?",
+  "options": [
+   "A memoized selector, for example from `reselect`",
+   "A reducer function",
+   "A middleware such as `thunk`",
+   "The `dispatch` function of the store that sends actions"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "51",
+  "question": "A teammate writes `const name = store.user.name` outside, then `autorun(() => log(name))`. Why does it not run again?",
+  "options": [
+   "Autorun cannot read strings, only numbers and objects",
+   "The observable is read outside the autorun, so the autorun has no dependency",
+   "Autorun runs again only when `store.user` is an array",
+   "The autorun stops after the first run when it logs a string"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "A class uses `makeAutoObservable`. A method later does `this.extra = 5`, but `extra` was not in the constructor. What is the result?",
+  "options": [
+   "`extra` is a plain field, so changes are not tracked",
+   "`extra` becomes observable at the first assignment",
+   "MobX throws an error because the new field is not known",
+   "`extra` becomes a computed value"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "53",
+  "question": "`reaction(() => store.a + store.b, sum => log(sum))`. `a` goes up by 1 and `b` goes down by 1. What happens?",
+  "options": [
+   "The effect does not run, because the sum did not change",
+   "The effect runs two times, one time for each of the changes",
+   "The effect runs one time with the old sum",
+   "The effect runs, because both dependencies changed"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "54",
+  "question": "An async method does `await fetch()` and then `this.items = data`. MobX shows a warning. Why?",
+  "options": [
+   "Async methods cannot change observable fields",
+   "The code after `await` is not inside the action anymore",
+   "The `fetch` call changes the state in a hidden way for MobX",
+   "The array `items` is read-only after `await`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "55",
+  "question": "A component reads `store.count` but does not update when it changes. What is the most likely cause?",
+  "options": [
+   "The `count` field is a number and MobX skips numbers",
+   "The store is created in the `useEffect` hook",
+   "The component is not wrapped with `observer`",
+   "The component has no `key` prop"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "56",
+  "question": "What is the main difference between `computed` and `autorun`?",
+  "options": [
+   "`computed` returns a cached value, `autorun` runs a side effect",
+   "`computed` runs side effects, `autorun` returns a value",
+   "`computed` runs at once, `autorun` runs only when some code reads it",
+   "`computed` works with React only, `autorun` works without React"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "57",
+  "question": "Three observer components read the same `computed` value. No dependency changes. How many times does MobX calculate it?",
+  "options": [
+   "Three times, one for each component",
+   "One time, and the three components use the cached result",
+   "Zero times, because computed values need an action to run first",
+   "One time for each render of the parent"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "58",
+  "question": "You call `observable({ a: { b: 1 } })`. What is true about `a.b`?",
+  "options": [
+   "It is not tracked, because only top-level keys are observable",
+   "It is tracked only after you call `toJS`",
+   "It is tracked only if `a` is an array",
+   "It is tracked, because observable is deep by default"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "59",
+  "question": "An API returns a big list of read-only objects. You replace the whole list on each load. Which annotation is the best fit?",
+  "options": [
+   "`observable.ref`, to skip the cost of deep conversion",
+   "`observable.deep`, to track each field of each item in it",
+   "`computed`, to cache the list",
+   "`action.bound`, to keep `this` for the list"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "60",
+  "question": "A store uses `makeAutoObservable(this)`. A child gets `onClick={store.save}` and `this` is `undefined`. What is a simple fix?",
+  "options": [
+   "Wrap the child component with `observer` from `mobx-react-lite`",
+   "Mark `save` as `computed`",
+   "Call `makeAutoObservable` again in the child",
+   "Use `makeAutoObservable(this, {}, { autoBind: true })`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "What is one real advantage of Redux over MobX for debugging?",
+  "options": [
+   "Each action and state is a plain object, so tools can replay and inspect them",
+   "Redux has no need for actions, so there is less code",
+   "Redux tracks only the changed fields and hides the rest",
+   "Redux updates the state in place, so it is faster to log"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "62",
+  "question": "You store users by a dynamic id and add or remove them often. Which structure is the best?",
+  "options": [
+   "A plain array, because arrays keep the order of the ids",
+   "An `observable.map`, because added keys are tracked",
+   "A `computed` object, because it adds new keys by itself",
+   "A frozen object, because MobX tracks all frozen keys"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "63",
+  "question": "What does `await when(() => store.ready)` do in MobX 6?",
+  "options": [
+   "It waits until the predicate becomes true, then continues",
+   "It throws an error if the predicate is false at the very start",
+   "It returns the value of `store.ready` after one tick",
+   "It runs the predicate again after a fixed time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "64",
+  "question": "You need a `reaction` to run its effect for the first time at once. Which option do you set?",
+  "options": [
+   "`fireImmediately: true`",
+   "`runFirst: true, delay: 0`",
+   "`delay: 0`",
+   "`immediate: \"always\"`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "`reaction(() => store.items.filter(i => i.done), cb)` runs `cb` even when the filtered items are the same. How do you fix this?",
+  "options": [
+   "Use `observable.ref` for the filter result",
+   "Use `equals: comparer.structural` in the options",
+   "Wrap the filter call in `runInAction` in the data function",
+   "Use `autorun` in place of `reaction`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "66",
+  "question": "What is the difference between `enforceActions: \"always\"` and `\"observed\"`?",
+  "options": [
+   "`always` warns for any change outside an action, `observed` only for observed state",
+   "`always` throws an error, `observed` only logs a message",
+   "`always` checks only computed values, `observed` checks fields",
+   "`always` applies to classes, `observed` applies to plain objects"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "67",
+  "question": "A `computed` getter changes an observable that components read. What does MobX do?",
+  "options": [
+   "It runs the change and updates the components that read it",
+   "It ignores the change and keeps the old value of the field",
+   "It throws an error, because computed values must be pure",
+   "It delays the change until the next action in the store runs"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "68",
+  "question": "A component uses `useLocalObservable(() => ({ n: props.n }))`. The prop changes later. What is the result?",
+  "options": [
+   "The store gets the new value at each render",
+   "MobX throws an error about the changed prop",
+   "The store keeps the first value, because the initializer runs one time",
+   "The store resets and runs the initializer again"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "69",
+  "question": "A non-observer component needs to show one observable in its JSX. What is a small solution?",
+  "options": [
+   "Call `autorun` in the body of the component, in each render",
+   "Use the `<Observer>` component around that part of the JSX",
+   "Wrap the value with `toJS`",
+   "Mark the component as `async`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "A parent passes `todos` to a child. The child is not an `observer` and does `todos.map(...)`. A todo is added. What happens?",
+  "options": [
+   "The child updates, because the array is passed down as a prop",
+   "The child updates only if the `key` prop of the child changes",
+   "MobX throws an error, because the child reads a tracked array",
+   "The child stays the same, as no observer tracks the array"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "How do you run a side effect in a component when an observable changes, and clean up on unmount?",
+  "options": [
+   "Call `autorun` in the body of the component on each render",
+   "Put the observable in the `useEffect` dependency array only",
+   "Wrap `useEffect` with `action`",
+   "Create a `reaction` in `useEffect` and return its disposer"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "72",
+  "question": "Your app uses MobX with SSR. Why should you create the store per request, not at module level?",
+  "options": [
+   "A module-level store cannot be observable",
+   "MobX cannot run in Node.js with module-level state",
+   "A module-level store is shared by all users on the server",
+   "A per-request store is the only way to use the `observer` wrapper"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "A component re-renders and you do not know why. Which MobX helper shows the dependencies?",
+  "options": [
+   "`mobx.debug()` at the top of the file",
+   "`observer.log()` on the component",
+   "`toJS()` on the whole store, in the render of each component",
+   "`trace()` inside the render, autorun, or computed"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "74",
+  "question": "`reaction(() => store.items, cb)` does not run when you call `store.items.push(x)`. Why?",
+  "options": [
+   "Reactions cannot track arrays, only maps and plain objects",
+   "It reads only the reference, not the array content",
+   "The `push` method is not an action, so it is not tracked",
+   "The effect runs only when you set `fireImmediately: true`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "75",
+  "question": "A store has a field `id` that must not be observable. How do you exclude it with `makeAutoObservable`?",
+  "options": [
+   "`makeAutoObservable(this, { id: skip })`",
+   "`makeAutoObservable(this, { id: computed })`",
+   "`makeAutoObservable(this, { id: false })`",
+   "`makeAutoObservable(this, { exclude: [\"id\"] })`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "A store creates `autorun(...)` in its constructor. The store is created many times and never disposed. What is the risk?",
+  "options": [
+   "An error, because autorun can work only one time per store",
+   "Wrong values, because autorun skips the second store",
+   "A memory leak, because the autorun keeps the store alive",
+   "A slow compile, because MobX checks all stores"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "77",
+  "question": "An action uses `flow` and starts a request. The user leaves the page. What can you do with the returned promise?",
+  "options": [
+   "Call `.abort()` on it to cancel the `fetch` call",
+   "Call `.dispose()` to remove the flow from the store",
+   "Call `.cancel()` on it to stop the generator",
+   "Nothing, because a `flow` always runs to the end"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "78",
+  "question": "You want a list of items where array changes are tracked, but not changes inside each item. Which annotation do you use?",
+  "options": [
+   "`observable.ref`",
+   "`observable.shallow`",
+   "`observable.structural`",
+   "`computed.struct`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "A subclass overrides an action of its parent class. What does MobX 6 need in the subclass?",
+  "options": [
+   "A call to `super.makeAutoObservable()`",
+   "The `observer` wrapper on the subclass",
+   "Nothing, because annotations are inherited from the parent class",
+   "The `override` annotation, and a call to `makeObservable`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "80",
+  "question": "A computed getter reads a field, and the field throws an error. Where does the error show?",
+  "options": [
+   "Where the code changes the observable",
+   "Only in the console, and the code that reads it gets `undefined`",
+   "At the time the store is created",
+   "Where the code reads the computed, for example in the render"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "81",
+  "question": "A computed is read in an event handler, not in any observer, inside a loop with many items. What is the cost?",
+  "options": [
+   "MobX caches the result until the end of the loop in the handler",
+   "MobX throws an error, because it is read outside of a reaction",
+   "MobX calculates it one time and then tracks the whole loop body",
+   "MobX recalculates it on each read, as nothing observes it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "82",
+  "question": "A field changes, but the value of an inner computed stays the same. What does MobX do with an `autorun` that reads the outer computed?",
+  "options": [
+   "It runs the autorun at once, because a field changed",
+   "It checks the inner value first, and the autorun does not run if nothing changed",
+   "It runs the autorun two times, one for each computed",
+   "It marks the outer computed as an error until the next read"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "How does `observer` know which observables a component uses?",
+  "options": [
+   "It runs the render inside a tracked reaction and records each read",
+   "It parses the source code of the component at build time",
+   "It compares the props and the state with a deep check",
+   "It reads a list of fields that you give in options"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "`autorun(() => { if (a.get()) b.get() })`. `a` is false. What happens when `b` changes?",
+  "options": [
+   "The autorun runs, because MobX knows all fields of the closure",
+   "The autorun runs, because `b` was read before in another run",
+   "The autorun throws an error for the unread `b`",
+   "The autorun does not run, because it did not read `b` in the last run"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "What is the `keepAlive` option of `computed` for?",
+  "options": [
+   "It keeps the cached value even when no reaction observes it",
+   "It stops the computed from recalculating after the first read",
+   "It makes the computed run as a reaction after each change",
+   "It saves the computed value in local storage between page loads"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "86",
+  "question": "You must support an old browser without `Proxy`. You set `useProxies: \"never\"`. What changes for observable objects?",
+  "options": [
+   "All properties of the object become read-only after creation",
+   "New properties are not detected, so use `set` and `remove`",
+   "Computed values stop caching their results between two reads",
+   "Actions run in a separate thread, away from the main thread"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "87",
+  "question": "A list shows 5000 rows, and one row changes often. How do you keep the render cost low?",
+  "options": [
+   "Wrap the list in `observer` and read all row fields in it",
+   "Call `toJS` on the list in the parent on each render",
+   "Make each row its own `observer` component that reads its own data",
+   "Use one `autorun` that sets React state for the list"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "88",
+  "question": "Action `A` calls action `B`, and `B` changes `x` two times. When do reactions run?",
+  "options": [
+   "After each change in `B`",
+   "After `B` ends, before `A` continues",
+   "After the outermost action `A` ends",
+   "At the start of `A`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "An `autorun` calls `store.load()`, which is an action and reads `store.page`. Does the autorun depend on `page`?",
+  "options": [
+   "No, because actions run untracked",
+   "Yes, because any read inside the call is tracked",
+   "Yes, but only if `page` is a computed value",
+   "No, because `load` is an async function"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "90",
+  "question": "A computed needs an argument, for example `getUser(id)`. What is a good way to cache the result by argument?",
+  "options": [
+   "Pass the argument to a getter with `get user(id)`",
+   "Use `computedFn` from `mobx-utils`",
+   "Mark the method as `computed.bound`",
+   "Use `observable.box` for each argument"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "91",
+  "question": "What happens when a `reaction` effect changes the same observable that its data function reads, with a new value each time?",
+  "options": [
+   "MobX runs it forever and blocks the page",
+   "MobX runs it one time and ignores later changes",
+   "MobX merges all runs into one run",
+   "MobX stops after 100 runs and throws an error"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "92",
+  "question": "When is the Redux model a better choice than MobX for a large team?",
+  "options": [
+   "When you need strict, serializable actions for audit, replay, and time travel",
+   "When you need less code to change nested state",
+   "When you need automatic tracking of what a component reads",
+   "When you want to change state in place without reducers"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "Several stores need to read each other. Many teams use a `RootStore` with a reference in each child store. What is the trade-off?",
+  "options": [
+   "It is slow, because MobX copies the data between stores",
+   "It is not possible, because stores cannot hold references",
+   "It is easy to access, but the stores are coupled and hard to test alone",
+   "It makes each store a computed value of the root"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "94",
+  "question": "`store.user = plainObj` with a deep observable field. What is `store.user === plainObj`?",
+  "options": [
+   "`true`, because MobX changes the same object in place",
+   "`true`, but only for objects without nested values",
+   "`false`, because MobX freezes the original object",
+   "`false`, because MobX makes a new observable copy of the plain object"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "95",
+  "question": "You assign a class instance to a deep observable field, for example `store.service = new Api()`. What does MobX do with it?",
+  "options": [
+   "It copies all fields into a new plain observable object",
+   "It makes all methods of the instance actions",
+   "It keeps the instance as it is and does not make it observable",
+   "It throws an error, because only plain objects are allowed"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "96",
+  "question": "In an SSR app, what does `enableStaticRendering(true)` do for `observer` components?",
+  "options": [
+   "It makes the server wait for all actions to end",
+   "It saves the store state into the HTML",
+   "It stops reaction tracking on the server, so no memory builds up",
+   "It turns off `observer` on the client"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "A computed returns a new array with the same content each time. How do you stop later computed values and reactions from running without need?",
+  "options": [
+   "Wrap the array in `observable.ref` before the getter returns it",
+   "Set `computed.struct`, or `equals: comparer.structural`",
+   "Mark the getter as `action`",
+   "Call `toJS` in the data function of each reaction"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "You need to read an observable in an autorun without making it a dependency. Which tool do you use?",
+  "options": [
+   "`runInAction(() => store.value)`",
+   "`untracked(() => store.value)`",
+   "`computed(() => store.value)`",
+   "`flow(() => store.value)`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "99",
+  "question": "A TypeScript class has `private _count = 0`. `makeObservable(this, { _count: observable })` shows a type error. What is the fix?",
+  "options": [
+   "Pass generics: `makeObservable<Store, \"_count\">(this, { _count: observable })`",
+   "Remove `private` and use a native `#` field, because MobX can see `#` fields",
+   "Cast `this` to `any` in the call and keep the `private` modifier on the field",
+   "Change the annotation to `{ _count: observable.ref }`, which accepts private names"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "100",
+  "question": "What is a reason to avoid very large computed chains that all depend on one frequently changing observable?",
+  "options": [
+   "MobX stores every old value of each computed value forever in memory",
+   "The `observer` wrapper cannot read more than three computed values",
+   "Computed values run in the order of creation, so they block the render",
+   "One change makes many observed computed values recalculate"
+  ],
+  "correct_index": 3
+ }
+]

@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What is \"state\" in a frontend application?",
+    "options": [
+      "Data that can change over time and decide what the UI shows",
+      "A fixed set of constants that the build tool writes into the bundle",
+      "The CSS rules that the browser applies to each element on the page",
+      "The list of all routes that the application can open for a user"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "2",
+    "question": "What is local state?",
+    "options": [
+      "State that one component owns and uses only in that component and its children",
+      "State that the server keeps for each user session between two requests",
+      "State that every component in the application can change by a direct write",
+      "State that the browser saves in a cookie so that all open tabs of the site can read it and write it"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "3",
+    "question": "What is global state?",
+    "options": [
+      "State that many unrelated parts of the application need to read or change",
+      "State that the server sends once and the client can never change later",
+      "State that only the root component can read, but all components can write",
+      "State that the browser deletes from memory after each render of the page"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "4",
+    "question": "What is server state?",
+    "options": [
+      "Data that the client creates and that the server never sees or stores",
+      "Data that lives only in the local variables of one single component",
+      "Data that the build tool puts into the bundle during the production build",
+      "Data that the server owns and that the client keeps only as a copy"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "5",
+    "question": "Which item is an example of client state?",
+    "options": [
+      "A list of products that the application loads from the database",
+      "The profile of the logged-in user that the API returns to the client",
+      "A flag that shows if a dropdown menu is open",
+      "The order history of a customer that the server keeps in storage"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "6",
+    "question": "What does \"single source of truth\" mean for application state?",
+    "options": [
+      "One developer must approve every change that touches the state of the app",
+      "The application has only one component, so the data cannot be in conflict",
+      "Each piece of data lives in one place and other code reads it from there",
+      "Each component keeps its own copy of the data to make reads faster"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "7",
+    "question": "What is derived state?",
+    "options": [
+      "A value that you copy from props into a second store to keep it safe",
+      "A value that you calculate from other state instead of storing it again",
+      "A value that you keep in two places and update in both by hand",
+      "A value that the server calculates and the client is not able to read"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "8",
+    "question": "What is a \"mutation\" in the context of server data?",
+    "options": [
+      "A request that only reads data and puts the result in the cache",
+      "A request that creates, updates, or deletes data on the server",
+      "A change of a local variable inside one component of the client",
+      "A copy of the cache that the browser makes when the user goes offline"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "9",
+    "question": "What is a selector?",
+    "options": [
+      "A function that changes the state in place and returns nothing",
+      "A CSS rule that picks the DOM elements which get a given style",
+      "A function that sends the whole state to the server after each change",
+      "A function that reads a part of the state or calculates a value from it"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "10",
+    "question": "What does immutability mean in state management?",
+    "options": [
+      "You never change the state after the first render of the application, and every later update must reload the page",
+      "You do not change existing data; you make a new copy that has the change",
+      "You freeze the DOM so that the user cannot edit the page content",
+      "You change the data in place, but only inside one special function"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "11",
+    "question": "A teammate writes `state.items.push(x)` on the current state. What is the main risk?",
+    "options": [
+      "The method push is not allowed in strict mode, so the engine throws an error when the code runs",
+      "The array becomes read-only after the call and no one can add items",
+      "The browser copies the array and loses the new item x in the copy",
+      "The reference stays the same, so change detection can miss the update"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "12",
+    "question": "What is unidirectional data flow?",
+    "options": [
+      "Data goes down from state to the UI, and events go up to change the state",
+      "Data goes from the UI straight to the database without any middle layer",
+      "Data moves between the components in both directions at the same time, so each component can change its parent",
+      "Data flows only one time, when the application starts for the first time"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "13",
+    "question": "What does \"lifting state up\" mean?",
+    "options": [
+      "You move the state from a component into the localStorage of the browser",
+      "You move the state to the nearest common parent of the components that need it",
+      "You move the state to the server so that all users of the application can share the same value",
+      "You move the state to the root component in every case, with no exception"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "14",
+    "question": "Two sibling components must show the same value. Where do you keep the value?",
+    "options": [
+      "In their closest common parent, which passes it to both siblings",
+      "In each sibling, and you copy the value between them with custom events",
+      "In a global variable on the window object that both can read and write",
+      "In the sibling that renders first, because it then owns the value for both"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "15",
+    "question": "What is prop drilling?",
+    "options": [
+      "You read props inside a deep child component with a special hook, without any parent passing them",
+      "You pass data through many layers of components that do not use it",
+      "You check the types of the props at run time before each render",
+      "You copy the props into the local state of every child component"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "16",
+    "question": "Which solution helps to remove prop drilling in a deep component tree?",
+    "options": [
+      "A context or a store that gives the data to deep components directly",
+      "Pass the same data as a prop through every layer, but check the type of each prop",
+      "Move all components into one large component so that no props are needed between them any more",
+      "Save the data in a cookie and read it again in every component"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "17",
+    "question": "What is normalization of state?",
+    "options": [
+      "You round all numbers in the state to two digits after the dot",
+      "You store entities by id in flat tables and refer to them by id",
+      "You store a full deep copy of an entity inside every parent object",
+      "You convert all strings in the state to lower case before you save"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "18",
+    "question": "Why do teams normalize state that has many linked entities?",
+    "options": [
+      "It stops the UI from re-rendering when any entity in the store changes",
+      "It makes the state smaller than the server response in every case, because it removes all repeated text",
+      "It removes the need for any selector in the rest of the application",
+      "One entity exists in one place, so an update shows everywhere at once"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "19",
+    "question": "Why can the URL be a good place for filter and page number of a list?",
+    "options": [
+      "Users can share the link, use the back button, and reload the page",
+      "URL state is always faster to read than state that lives in memory",
+      "URL state makes the application work when the network is offline",
+      "URL state hides the filter values from other users of the same device"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "20",
+    "question": "Which state fits best in the URL?",
+    "options": [
+      "The search text, sort order, and page number of a product list",
+      "The position of the mouse pointer on the screen in pixels",
+      "The access token that the server gave to the user at login",
+      "The password that the user types in a login form on the page"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "21",
+    "question": "What is form state?",
+    "options": [
+      "The HTTP status code that the endpoint of the form returns to the client",
+      "The CSS style that the browser applies to the form and its fields",
+      "The values, the errors, and the touched flags of the fields in a form",
+      "The list of all forms that exist in the application source code"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "22",
+    "question": "What is a controlled input?",
+    "options": [
+      "An input that the browser validates alone, with no code from the developer",
+      "An input whose value comes from state and changes through an event handler",
+      "An input that stays disabled until the user clicks the submit button",
+      "An input that reads its value from the DOM only when the form is sent"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "23",
+    "question": "What is an optimistic update?",
+    "options": [
+      "The UI waits for the server before it shows any change to the user",
+      "The UI saves the change only in the local storage of the browser",
+      "The UI hides all errors that the server sends back after a change",
+      "The UI shows the expected result before the server confirms the change"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "24",
+    "question": "An optimistic update fails on the server. What must the UI do?",
+    "options": [
+      "Keep the new value on screen and ignore the error from the server",
+      "Reload the whole page at once, so that the state is clean, with no message for the user",
+      "Go back to the previous state and show an error message to the user",
+      "Retry the request without end and never show a message to the user"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "25",
+    "question": "What is cache invalidation?",
+    "options": [
+      "You mark cached data as old so that the application fetches it again",
+      "You compress the cached data to save memory in the browser",
+      "You make the server cache the HTML of each page for faster replies",
+      "You delete all cookies of the user when the session ends on the server"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "26",
+    "question": "When must you invalidate cached server data?",
+    "options": [
+      "Before every render of every component that reads the cache",
+      "After the user moves the mouse over a list of items on the screen",
+      "Only when the user closes the browser and opens it again later",
+      "After a mutation that changes the same data on the server"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "27",
+    "question": "What is a state machine?",
+    "options": [
+      "A server that stores the state of all users in one central database",
+      "A tool that compiles the state of the application into binary code",
+      "A model with a fixed set of states and allowed transitions between them",
+      "A loop that checks all the state values of the application each second"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "28",
+    "question": "Why use a state machine for a request, not separate booleans?",
+    "options": [
+      "It makes the network request itself faster than a plain fetch call, because it skips the queue",
+      "It caches the response of the request without any extra code",
+      "It removes the need to handle errors from the server in the UI",
+      "It stops impossible combinations, such as loading and error at the same time"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "29",
+    "question": "Which set of states is typical for a data request?",
+    "options": [
+      "pending, running, paused, stopped",
+      "draft, review, approved, published",
+      "mounted, updating, unmounted, hidden",
+      "idle, loading, success, error"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "30",
+    "question": "What is persistence of state?",
+    "options": [
+      "You keep the state in a closure so that other code cannot read it",
+      "You save the state in storage so that it survives a page reload",
+      "You pass the state to a child component through its props",
+      "You make the state immutable so that no code can change its values"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "31",
+    "question": "Which browser API can persist small client state between page reloads?",
+    "options": [
+      "A module-level variable that the bundle creates when the page loads the code",
+      "The localStorage API, which keeps string values for the same origin",
+      "A variable inside a component function that React or another library calls",
+      "A closure that the page creates at start and keeps in memory"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "32",
+    "question": "Which data should you not save in localStorage?",
+    "options": [
+      "The color theme that the user selected in the settings page",
+      "The flag that shows if the sidebar is open or closed",
+      "An access token that a script from an XSS attack could read",
+      "The last sort order that the user chose in a table"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "33",
+    "question": "Why should you not put every piece of state in the global store?",
+    "options": [
+      "Local state is always faster to read than global state in every case",
+      "The store cannot hold boolean values or short text values in its keys, only objects and arrays",
+      "Small UI details make the store large and cause extra updates and coupling",
+      "The browser limits the size of any store to one megabyte of memory"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "What is the main benefit of keeping state close to the place where it is used?",
+    "options": [
+      "The state becomes available to all components of the application, even to those that never use it",
+      "The code is easier to read, and fewer components update when it changes",
+      "The state is saved on the server without any extra request",
+      "The state does not need an initial value when the component starts"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "35",
+    "question": "What is a side effect in state logic?",
+    "options": [
+      "An action outside the state change, such as an API call or a timer",
+      "A copy of the state that a second store keeps for backup",
+      "A new value that a selector calculates from the state without any change to it",
+      "A bug that comes from a wrong CSS class on one element of the page"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "36",
+    "question": "What is a pure function in state update logic?",
+    "options": [
+      "It reads the current time and uses it to make the result of the call",
+      "It changes its argument in place and returns nothing to the caller",
+      "It writes the result to the console and then returns the same value",
+      "It gives the same output for the same input and changes nothing outside"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "37",
+    "question": "How do you test a pure state update function?",
+    "options": [
+      "Open a real browser and click each button of the page by hand",
+      "Mock the whole DOM and render the full application with a real router for each test of the logic",
+      "Call it with an input state and an action, then check the returned state",
+      "Wait for the server and compare the HTML with a saved copy"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "38",
+    "question": "What is stale data?",
+    "options": [
+      "Cached data that no longer matches the data on the server",
+      "Data that the server has not created yet for the current user",
+      "Data with an invalid JSON format that the parser cannot read",
+      "Data that the user typed in a form but did not save yet"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "39",
+    "question": "What is a loading state used for?",
+    "options": [
+      "It stops the server from sending data to the client for a while",
+      "It shows the user that a request is still in progress",
+      "It saves the data of the request in the cache for the next visit",
+      "It blocks all later requests until the user reloads the page"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "40",
+    "question": "Why do teams keep server data separate from UI state?",
+    "options": [
+      "Server data is always smaller than UI state, so it needs its own place",
+      "Server data needs caching, refetching, and sync; UI state does not",
+      "UI state cannot be a number or a boolean, so it needs a store",
+      "Server data must never show in the UI, so the code hides it"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "41",
+    "question": "Where do you keep the open flag of a simple confirm dialog?",
+    "options": [
+      "In the local state of the component that shows the dialog",
+      "In the database, with one row for each user of the application",
+      "In the cache of the server, so that other users can see the flag",
+      "In a cookie, so that the dialog stays open after a new login"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "42",
+    "question": "What is a \"store\" in state management?",
+    "options": [
+      "A function that renders the UI from a list of props and children",
+      "A table in the database of the server that keeps the user data",
+      "An object that holds the state and lets code read and update it",
+      "A CSS file that holds the theme colors of the application"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "43",
+    "question": "What is context in a UI framework, in general terms?",
+    "options": [
+      "A way to run code on the server before the page goes to the user, so the first render is fast",
+      "A way to save a value in the browser after the page closes",
+      "A way to copy the props of a parent into all its child components",
+      "A way to give a value to a whole subtree without props at each level"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "44",
+    "question": "What is a subscription to a store?",
+    "options": [
+      "Code that runs when the state changes, so that the UI can update",
+      "A one-time read of the state that happens when the app starts",
+      "A paid plan that gives access to the tools of a state library",
+      "A copy of the store that the application makes for each user"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "45",
+    "question": "What is a shallow copy of an object?",
+    "options": [
+      "A copy that the browser makes by itself after a page reload",
+      "A copy where all nested objects are also new objects in memory, so no reference is shared with the original",
+      "A copy that has no values and only the names of the keys",
+      "A copy where nested objects still share references with the original"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "46",
+    "question": "You copy `const c = {...user}` and then set `c.address.city = \"Kyiv\"`. What happens to `user`?",
+    "options": [
+      "Nothing changes, because the spread syntax makes a deep copy",
+      "An error occurs, because the copy is frozen by the spread syntax",
+      "The original changes only after the next render of the component",
+      "The original `user` changes too, because `address` is shared"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "47",
+    "question": "What does a function with the form `(state, action) => newState` do?",
+    "options": [
+      "It sends the action to the server and waits for the new state",
+      "It gets the old state and an action, and it returns the new state",
+      "It changes the old state in place and returns nothing to the caller",
+      "It reads the new state and then it creates an action from it"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "48",
+    "question": "Why do teams give names to actions or events, such as \"item added\"?",
+    "options": [
+      "The browser needs the names to run the update code in the right order",
+      "Names make the state smaller in memory after each update call",
+      "The change has a clear meaning, which helps with debugging and logs",
+      "Names stop other code from reading the state of the application"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "49",
+    "question": "Why store only the id of the selected item, not the whole object?",
+    "options": [
+      "Objects cannot be saved in state at all, but strings and numbers can be saved in it without problems",
+      "The list then does not need keys when it renders its items",
+      "The object can change in the list, and the id always points to current data",
+      "An id uses less network traffic than an object in every request"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "50",
+    "question": "When can form state stay local to the form component?",
+    "options": [
+      "When the data of the form comes from the server at the start",
+      "When the form has more than one field for the user to fill",
+      "When no other part of the application needs the unsent values",
+      "When the user can undo the change after the form is sent"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "51",
+    "question": "A page keeps `isLoading`, `isError`, and `data` as separate flags. Which bug can appear?",
+    "options": [
+      "The data is always null after a successful request to the server, because the flags run in parallel",
+      "The UI re-renders two times for each request that the page sends",
+      "isLoading and isError are both true, which is a state that makes no sense",
+      "The request goes to the server two times for each user action"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "52",
+    "question": "Why does server state need refetch, but client state does not?",
+    "options": [
+      "The browser clears memory each time the user changes the tab",
+      "The network drops cached values after one minute without any rule, so the client must always ask again",
+      "Other users or systems can change it, so the local copy gets old",
+      "The server removes the data that the client reads after a response"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "53",
+    "question": "What does \"stale-while-revalidate\" mean?",
+    "options": [
+      "Show cached data at once, then fetch fresh data and update the UI",
+      "Delete the cache first, then show a spinner until the new data comes",
+      "Show cached data and never fetch the data from the server again",
+      "Fetch fresh data first and ignore the cache until the fetch ends"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "54",
+    "question": "Two components need the same API data at the same time. What should the data layer do?",
+    "options": [
+      "Send two requests, one for each component, to keep them separate",
+      "Share one request and one cache entry between both components",
+      "Let the first component own the data and block the second one",
+      "Copy the response into the local state of each component"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "55",
+    "question": "A search box sends a request on each key press. An old response arrives after a new one. What is the problem and the fix?",
+    "options": [
+      "A memory leak; unsubscribe from the store and subscribe again on every key press of the user, before each request",
+      "A cache miss; increase the cache time for all search requests in the app",
+      "A race condition; cancel old requests or ignore responses that are not the latest",
+      "An infinite loop; remove the state update from the response handler"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "56",
+    "question": "In React, a context value changes every second. What is the risk?",
+    "options": [
+      "The provider stops the children from reading the value after one minute",
+      "The context object loses its other keys after the first update of a value, so later reads return nothing",
+      "All consumers of the context re-render on each change, even if they use a small part",
+      "The browser saves each new value in the history of the page"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "57",
+    "question": "In React, a component runs `const [name] = useState(props.name)`. What breaks when the prop changes?",
+    "options": [
+      "The prop becomes read-only, so the parent cannot pass a new value to the child any more after mount",
+      "The state does not update, because the prop is used only at the first render",
+      "The component renders only one time and then it stops for good",
+      "React throws an error on the second render of the component"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "58",
+    "question": "What is the purpose of memoizing a selector?",
+    "options": [
+      "It saves the result of the selector in the database of the server",
+      "It makes the selector run on the server instead of the client, so the browser does no work for it",
+      "It returns the same result when the inputs did not change, so it skips extra work",
+      "It changes the inputs of the selector after each call to it"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "59",
+    "question": "A selector returns `state.items.filter(fn)`, a new array at each call. What is the risk?",
+    "options": [
+      "The original items array loses some of its data after each call, because filter removes items in place",
+      "Subscribers see a new reference each time and can re-render without need",
+      "The filter runs only one time and then the result never changes",
+      "The selector can no longer read the nested parts of the state"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "60",
+    "question": "A \"like\" button uses an optimistic update. A user clicks twice fast, and the first request fails. What is the risk?",
+    "options": [
+      "A rollback to an old snapshot can erase the second click, so you must handle the order",
+      "The UI shows the like two times for each click until the next reload",
+      "The failed request retries by itself with no limit, and the retry blocks the second click until the user reloads the page",
+      "The server saves two likes for the first click, so the count is wrong"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "61",
+    "question": "After a create-item mutation, how do you refresh a cached list in a good way?",
+    "options": [
+      "Wait until the user opens a new tab, and then read the list again",
+      "Reload the full page in all cases, so that the list always has fresh data from the server and no cache",
+      "Mutate the cached list array in place and skip the notification",
+      "Invalidate the list cache, or update it with the response from the server"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "62",
+    "question": "Why is a normalized store hard to read without selectors?",
+    "options": [
+      "Each entity loses its id when the store saves it in a flat table, so no code can find it again",
+      "The store has no fixed order for any entity that it holds",
+      "The store keeps every entity as one long string of text",
+      "Related data is spread over tables, so you must join entities by id"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "63",
+    "question": "What is the main trade-off of normalized state?",
+    "options": [
+      "The store gets bigger, because of the copies of each entity",
+      "Reads are simple, but updates need extra code in each parent object",
+      "Updates are simple, but reads need extra code to rebuild nested shapes",
+      "The store cannot hold arrays or lists of ids in any of its tables"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "64",
+    "question": "When is prop drilling acceptable?",
+    "options": [
+      "For two or three levels, where the data flow stays clear and easy to trace",
+      "For any application that has more than ten components in its tree",
+      "For values that change many times per second in a large list",
+      "For data that many unrelated pages of the application need"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "65",
+    "question": "A team puts server data in a global client store and refetches it by hand. What is the main drawback?",
+    "options": [
+      "The team must write the code for caching, deduplication, retry, and invalidation",
+      "Global stores cannot hold any data that comes from the network, because that data is out of date at once after the response",
+      "The data becomes read-only in the UI after the first fetch",
+      "The server blocks the requests that come from a client store"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "66",
+    "question": "A user must keep the selected tab after a reload, and share it by link. Where should the tab state live?",
+    "options": [
+      "In a global variable that the browser resets on each reload",
+      "In a closure of the tab component that the page creates at start",
+      "In the cache of the server, shared by all users of the application",
+      "In the URL, for example as a query parameter"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "67",
+    "question": "Why is a state machine good for a multi-step checkout?",
+    "options": [
+      "Only valid steps can follow each other, so the flow cannot reach a broken step",
+      "It removes the need to validate the fields in each step of the flow, because the machine checks them all",
+      "It saves the order on the server without any request from the client",
+      "It makes each step of the checkout load faster than before"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "68",
+    "question": "A form saves a draft to localStorage on each key press. What is a possible issue?",
+    "options": [
+      "localStorage deletes the old draft at once after each new write",
+      "Browsers block more than one write to storage for each page, so the later writes are lost without a message",
+      "Frequent synchronous writes can slow the UI, so you should debounce the save",
+      "The draft goes to the server without any request from the code"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "69",
+    "question": "You persist state in storage, and a new release changes the shape of the state. What do you need?",
+    "options": [
+      "Nothing, because the browser upgrades the saved data by itself",
+      "A new storage key for each user session of the application",
+      "A bigger storage limit for the browser in the new release",
+      "A version number and a migration step for the old saved data"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "70",
+    "question": "Why should you not put a derived value in the persisted state?",
+    "options": [
+      "Derived values take more bytes than raw values in every storage",
+      "Storage cannot save numbers that come from a calculation",
+      "The browser encrypts derived values and the app cannot read them",
+      "It can be old after a reload or after a change of the logic in the code"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "71",
+    "question": "How do you test a component that reads global state?",
+    "options": [
+      "Read the private fields of the store from inside the component and compare them with the DOM text",
+      "Give it a store with a known initial state and check what the user sees",
+      "Check only how many times the component renders in the test",
+      "Replace the browser with a mock of the processor of the computer"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "72",
+    "question": "Which kind of test is more stable for state logic?",
+    "options": [
+      "A test that checks that each internal helper runs in a fixed order and with the exact same arguments each time",
+      "A test of behavior: input actions and output state, not the internal call order",
+      "A test that checks the exact time of each render of the page",
+      "A test that checks the names of the private variables in the module"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "73",
+    "question": "A global store holds `user`, `cart`, `theme`, `modalOpen`, and `inputText`. What is the code smell?",
+    "options": [
+      "Short-lived UI state, such as `inputText` and `modalOpen`, does not belong in global state",
+      "The `user` object should be in local state of each page that uses it",
+      "The `theme` value must always be in the URL, not in the store",
+      "The store has more than three keys, so it is too large for one application and the team must split it at once"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "74",
+    "question": "What is a risk of two-way binding compared with unidirectional flow?",
+    "options": [
+      "The data can move only one time, so the UI cannot get later updates",
+      "Many places can change the same value, so it is hard to find the cause of a change",
+      "The UI cannot show the data, because the binding blocks all reads",
+      "The state is always copied two times, so memory use grows fast"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "75",
+    "question": "What is \"colocation\" of state?",
+    "options": [
+      "You keep state as close as possible to the code that uses it",
+      "You keep the state and the styles in the same CSS class",
+      "You keep all the state of the application in one single file",
+      "You keep the state in two stores so that you have a backup"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "76",
+    "question": "When is lifting state up a bad idea?",
+    "options": [
+      "When two sibling components need to read the same value at once and no other part of the app uses it",
+      "When the parent re-renders a large tree for each small change in the state",
+      "When the state is a string and not an object or an array",
+      "When the parent is a function component and not a class component"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "77",
+    "question": "A form has 50 fields, and each key press re-renders the whole form. Which fix is best?",
+    "options": [
+      "Keep field values in the fields (uncontrolled or local) and read them on submit or blur",
+      "Copy all the values to localStorage at each key press of the user",
+      "Send all the values to the server at each key press of the user and render only the response of the server",
+      "Add a loading state that changes at each key press of the user"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "78",
+    "question": "Two lists load with filters `{a:1}` and `{a:2}`. Why must the filter be in the cache key?",
+    "options": [
+      "The cache needs the filter to compress the data in a smaller size and to save space in the memory of the client",
+      "Keys that contain filters are faster to read than plain keys",
+      "The server needs the key to sort the list in the right order",
+      "Otherwise both requests share one entry, and the UI can show wrong data"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "79",
+    "question": "A user logs out. What must you do with the cached server data?",
+    "options": [
+      "Keep it, to make the next login of any user faster than before",
+      "Clear it, so that the next user does not see the data of the first user",
+      "Move it to localStorage, so that the app can restore it later",
+      "Keep it, but mark it as stale and show it until a new fetch ends"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "80",
+    "question": "An app has one shared theme value. Which approach fits best?",
+    "options": [
+      "A full store with middleware, devtools, and a separate file for actions and reducers, for this one value",
+      "A table on the server with one row for each user of the app",
+      "A state machine with ten states and many transitions",
+      "Context or a small shared module, because a state library adds more cost than value"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "81",
+    "question": "A websocket updates a normalized cache while a user edits an item in a form. What is the best design?",
+    "options": [
+      "Write the form edits into the cache at each key press, so that only one copy of the item exists in the app",
+      "Ignore all events from the server while the page stays open",
+      "Replace the draft of the user with the server value at each event",
+      "Keep the draft of the user apart from the cache, and merge or warn on a conflict"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "82",
+    "question": "With concurrent rendering and an external store, what is \"tearing\"?",
+    "options": [
+      "A crash that happens when the store has a circular reference in its state and cannot be serialized",
+      "A repeated render that never ends, because of a state loop",
+      "A memory leak that stays after a component unsubscribes",
+      "Different components show different versions of the same state in one render pass"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "83",
+    "question": "Why must a store snapshot keep the same reference when the data did not change?",
+    "options": [
+      "The browser freezes objects that the code reads two times in a row, so a new reference would throw an error",
+      "A new reference looks like a change, so it causes extra renders or even loops",
+      "A stable snapshot is a must to serialize the state to JSON",
+      "The garbage collector removes any snapshot that is not stable"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "84",
+    "question": "An optimistic POST fails after a network loss, and the client retries. What is the risk and the fix?",
+    "options": [
+      "The cache may delete the item after the failure; use a longer cache time for the data of that list",
+      "The UI may show two spinners; use one shared loading flag instead",
+      "The server may create the item two times; send an idempotency key with the request",
+      "The form may reset on retry; use a controlled input for each field"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "85",
+    "question": "What is the trade-off of keeping large objects in the URL?",
+    "options": [
+      "Each URL change must reload the whole app and lose memory state",
+      "URL state cannot work with the back button of the browser, because each change replaces the whole history entry",
+      "URLs have length limits and show in logs and history, so they suit small, non-secret state",
+      "The browser blocks the code from reading any query value after a reload"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "86",
+    "question": "Which design makes undo and redo simple?",
+    "options": [
+      "One mutable object with a copy of only the last value that changed, which you restore on undo",
+      "Direct edits of the DOM with a saved copy of the HTML string",
+      "Immutable snapshots or a log of actions, so you can go back to an earlier state",
+      "A server call that reverses each change in the database"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "87",
+    "question": "Why does structural sharing matter for immutable updates?",
+    "options": [
+      "Unchanged parts keep the same reference, so copies are cheap and change checks are fast",
+      "It merges the old and the new state into one single object",
+      "It deep freezes all objects by default, so no code can change them and no memory is spent on copies",
+      "It lets two separate stores share the same block of memory"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "88",
+    "question": "What is the trade-off between reference equality and deep equality for state subscriptions?",
+    "options": [
+      "Deep checks are cheaper, but they miss changes in nested data",
+      "Reference checks work well with in-place mutation of the data",
+      "Reference checks are cheap but need immutable updates; deep checks cost more on large data",
+      "Both cost the same, so only the code style makes a difference, and you can choose either one freely"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "89",
+    "question": "One mutation changes data that appears in many cached lists and counters. Which invalidation strategy is best?",
+    "options": [
+      "Delete the whole cache on each mutation and refetch everything at once, also the data on other pages",
+      "Invalidate by a group of keys and refetch only the lists that are on screen",
+      "Patch each cached list by hand in the handler of each mutation",
+      "Set the cache time to zero for all data in the application"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "90",
+    "question": "Many features write to one big global slice. What is the typical failure mode as the app grows?",
+    "options": [
+      "The store runs out of memory when it holds more than 100 keys, and the browser then closes the tab",
+      "The store loses the order of the actions that it receives",
+      "Hidden coupling: a change in one feature breaks another that reads the same slice",
+      "The store blocks all reads while one write is in progress"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "91",
+    "question": "What is the advantage of statecharts over flat state machines?",
+    "options": [
+      "They remove the need for events, because transitions happen alone",
+      "Nested and parallel states avoid a state explosion in complex flows",
+      "They keep a history of the state of the server for the client",
+      "They run faster, because they skip the checks of each transition and the guards of the events"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "92",
+    "question": "An SSR app reads a saved theme from localStorage in the first client render. What is the risk?",
+    "options": [
+      "The theme value is encrypted, so the client cannot read it back",
+      "The server cannot read the cookies of the user during rendering, so the page always shows the default theme",
+      "The client always drops the server state and starts again from zero",
+      "The first client render differs from the server HTML, so hydration shows a mismatch"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "93",
+    "question": "An offline-first app uses optimistic updates. Which strategy handles sync conflicts best?",
+    "options": [
+      "Keep a queue of versioned changes and resolve conflicts with a rule, such as merge",
+      "Always keep the server value and drop the local edits of the user",
+      "Block all edits of the user until the network comes back again, and show a message on the whole screen",
+      "Save only the final state and discard the log of the changes"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "94",
+    "question": "A component subscribes to a store in a mount hook and never unsubscribes. What happens?",
+    "options": [
+      "The store removes the callback after the first update that it sends, so the component never gets a second one",
+      "The component mounts again at each change of the store state",
+      "The store stops the callbacks of all other subscribers of the state",
+      "The store keeps the callback, which can update an unmounted component and leak memory"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "95",
+    "question": "A store has a list of 10,000 items, and each item component subscribes to the whole list. What is the best fix?",
+    "options": [
+      "Subscribe each item by its id, so it reads only its own entity",
+      "Move the list into a cookie and read it in each item component",
+      "Add a debounce to every click handler in the list of items",
+      "Copy the list into the local state of each item component"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "96",
+    "question": "A new item gets a temporary id in an optimistic update. What must you do when the response arrives?",
+    "options": [
+      "Keep the temporary id forever, because the server accepts it as final",
+      "Hide the item from the UI until the cache drops the temporary id and the server sends the full list again",
+      "Reject the response, because the cache cannot hold two ids",
+      "Replace the temporary id with the server id in all places that refer to it"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "97",
+    "question": "An effect sets state, which triggers another effect that sets more state. What is the risk?",
+    "options": [
+      "Cascades that are hard to trace, with extra renders and possible loops",
+      "The effects run in a random order each time the page loads, so the final state is different for each user",
+      "The state stops updating after the third change in the chain",
+      "The browser limits the effects to one for each second of time"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "98",
+    "question": "Data comes from an API, is shared across pages, and needs refresh. Which model fits best?",
+    "options": [
+      "A global store that has one loading flag for each request",
+      "A server-state cache with keys, stale time, and invalidation, not a hand-made store",
+      "Props that the root passes down to every page of the app",
+      "localStorage that the app reads again at every render"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "99",
+    "question": "How do you test async state logic that uses debounce and retry?",
+    "options": [
+      "Use fake timers or an injected clock, so the tests are fast and not flaky",
+      "Add a real sleep that is longer than the delay in the code",
+      "Run each test ten times and take the average of the results",
+      "Skip the timers and check only the final DOM of the page"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "100",
+    "question": "What is the main trade-off between one global store and several small stores?",
+    "options": [
+      "Many stores are always faster, because each one uses its own thread, its own memory, and its own copy of the code",
+      "One store is easier to debug as a whole; many stores lower coupling but make consistency harder",
+      "One store cannot be tested without a real browser window",
+      "One store removes the need for selectors in all components"
+    ],
+    "correct_index": 1
+  }
+]

@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "Which StoreKit 2 type represents a product that you sell, with a name and a price?",
+    "options": [
+      "`Transaction`",
+      "`Product`",
+      "`AppTransaction`",
+      "`SKProduct`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "2",
+    "question": "Which call gets product information from the App Store in StoreKit 2?",
+    "options": [
+      "`Transaction.products(for: ids)`",
+      "`Product.fetch(ids: ids)`",
+      "`Product.products(for: ids)`",
+      "`AppStore.products(matching: ids)`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "3",
+    "question": "Which `Product` property gives a price text that is ready to show to the user?",
+    "options": [
+      "`displayPrice`",
+      "`priceText`",
+      "`price`",
+      "`localizedPrice`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "4",
+    "question": "What does `product.purchase()` return in StoreKit 2?",
+    "options": [
+      "An `SKPayment` for the payment queue",
+      "A Boolean that shows if the payment worked",
+      "A `Product.PurchaseResult` value",
+      "A `Transaction` that is ready to use"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "5",
+    "question": "Which three cases does `Product.PurchaseResult` have?",
+    "options": [
+      "`success`, `userCancelled`, `expired`",
+      "`success`, `failed`, `userCancelled`",
+      "`purchased`, `restored`, `deferred`, `failed`",
+      "`success`, `userCancelled`, `pending`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "6",
+    "question": "When does `purchase()` return the `.pending` result?",
+    "options": [
+      "The App Store server is offline, so the app must retry the call later",
+      "The product ID is not set up in App Store Connect for this app",
+      "The purchase waits for approval, for example Ask to Buy",
+      "The Apple ID has no payment method on file for the purchase"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "7",
+    "question": "What does the `.userCancelled` result mean?",
+    "options": [
+      "The user asked for a refund after the payment was made",
+      "The App Store refused the card and the user can try again",
+      "The user closed the purchase sheet and no charge was made",
+      "The purchase waits for a parent to give approval"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "8",
+    "question": "What does a `VerificationResult` hold in StoreKit 2?",
+    "options": [
+      "A list of errors that the purchase sheet found during the payment",
+      "A receipt string that your server must decode and then check",
+      "A Boolean that shows if the payment is valid or not valid",
+      "A signed value that is `.verified` or `.unverified`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "9",
+    "question": "Which `Transaction` method tells the App Store that your app delivered the content?",
+    "options": [
+      "`consume()`",
+      "`complete()`",
+      "`acknowledge()`",
+      "`finish()`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "10",
+    "question": "Why must you finish a consumable transaction after you deliver the item?",
+    "options": [
+      "Without it, the price of the product stays locked in the store",
+      "Without it, the App Store does not charge the user for the item",
+      "Without it, the transaction becomes a refund for the user",
+      "Without it, the App Store sends the same transaction again"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "11",
+    "question": "What is `Transaction.updates`?",
+    "options": [
+      "An async sequence of transactions from outside `purchase()`",
+      "A list of all products that changed price in the store this month",
+      "A callback that runs only when the App Store sends a refund to the app",
+      "A method that checks with the App Store if a new app version is ready"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "12",
+    "question": "When should the app start to listen to `Transaction.updates`?",
+    "options": [
+      "Only after the user signs in to the app",
+      "Only after the user taps the Buy button",
+      "At app launch, and keep the task alive",
+      "Only on the screen that shows the store"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "13",
+    "question": "Which API gives the items that the user owns now, such as active subscriptions?",
+    "options": [
+      "`Transaction.unfinished`",
+      "`Product.currentEntitlementItems`",
+      "`Transaction.allPurchasedItems`",
+      "`Transaction.currentEntitlements`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "14",
+    "question": "Which product type does `Transaction.currentEntitlements` not include?",
+    "options": [
+      "Non-renewing subscription",
+      "Non-consumable",
+      "Consumable",
+      "Auto-renewable subscription"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "15",
+    "question": "Which product type fits a coin pack that the user can buy again and again?",
+    "options": [
+      "Non-renewing subscription",
+      "Consumable",
+      "Non-consumable",
+      "Auto-renewable subscription"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "16",
+    "question": "Which product type fits a one-time purchase that removes ads for ever?",
+    "options": [
+      "Non-renewing subscription",
+      "Non-consumable",
+      "Consumable",
+      "Auto-renewable subscription"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "17",
+    "question": "Who must calculate the end date of a non-renewing subscription?",
+    "options": [
+      "The App Store, which renews it",
+      "The Apple ID of the user",
+      "The subscription group",
+      "Your app or your server"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "18",
+    "question": "What is a subscription group?",
+    "options": [
+      "A set of products that Family Sharing makes visible to every family member",
+      "A set of offers that all products in the app share at the same price",
+      "A set of users who pay one shared bill together in Family Sharing",
+      "A set of subscriptions where the user can have only one active"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "19",
+    "question": "A user changes from a monthly plan to a yearly plan in the same group. How many active plans does the user have?",
+    "options": [
+      "One",
+      "Two",
+      "Zero until the next renewal",
+      "One for each device"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "20",
+    "question": "Which StoreKit 2 call restores purchases from the App Store?",
+    "options": [
+      "`AppStore.sync()`",
+      "`Product.restorePurchases()`",
+      "`Transaction.refresh()`",
+      "`Transaction.restore()`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "21",
+    "question": "When should you call `AppStore.sync()`?",
+    "options": [
+      "At each start of the app, to refresh the data of the user",
+      "When the user taps a Restore Purchases button",
+      "Before each call of `purchase()`, to be sure that the user is signed in",
+      "Inside the `Transaction.updates` loop, for each new transaction"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "22",
+    "question": "What does `AppStore.sync()` ask the user to do?",
+    "options": [
+      "Enter the password of the app account",
+      "Sign in with the Apple ID",
+      "Choose the product to restore",
+      "Allow push notifications"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "23",
+    "question": "In StoreKit 1, which object receives the transaction state changes?",
+    "options": [
+      "A `SKStoreProductViewControllerDelegate` set on the store screen of the app",
+      "A `SKRequestDelegate` set on the product",
+      "A `SKPaymentTransactionObserver` added to `SKPaymentQueue`",
+      "A `SKProductsRequestDelegate` set on the request"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "24",
+    "question": "In StoreKit 1, which transaction state shows a payment that waits for Ask to Buy approval?",
+    "options": [
+      "`.deferred`",
+      "`.restored`",
+      "`.failed`",
+      "`.purchasing`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "25",
+    "question": "In StoreKit 1, which call finishes a transaction?",
+    "options": [
+      "`SKPaymentQueue.default().completeTransaction(_:)`",
+      "`SKPaymentQueue.default().finishTransaction(_:)`",
+      "`SKPayment.finish()`",
+      "`transaction.finish()`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "26",
+    "question": "Which StoreKit 2 API returns the transactions that your app did not finish yet?",
+    "options": [
+      "`Transaction.unfinished`",
+      "`Transaction.pendingQueue`",
+      "`Transaction.notDelivered`",
+      "`Transaction.unprocessedHistory`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "27",
+    "question": "What is a StoreKit configuration file used for?",
+    "options": [
+      "To keep the signing key that your server uses to check purchases",
+      "To send product data to App Store Connect when you upload a build",
+      "To test purchases in Xcode without App Store Connect products",
+      "To set the price tiers of the production app"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "28",
+    "question": "Which file extension does a StoreKit configuration file have?",
+    "options": [
+      "`.storekit`",
+      "`.skconfig`",
+      "`.iapkit`",
+      "`.storeconfig`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "29",
+    "question": "Which Xcode tool lets you refund a purchase or approve Ask to Buy in a local test?",
+    "options": [
+      "The Debug Memory Graph tool",
+      "The Test Plan editor tool",
+      "The Organizer window",
+      "The Transaction Manager"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "30",
+    "question": "How do you tell Xcode to use a StoreKit configuration file?",
+    "options": [
+      "Add the file path to the Info.plist of the app target",
+      "Select it in the Run options of the scheme",
+      "Set a build flag in the build settings of the project",
+      "Turn on a capability in the Signing and Capabilities tab"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "31",
+    "question": "What is a Sandbox Apple Account?",
+    "options": [
+      "A test account from App Store Connect for free test purchases",
+      "A family account that you use to test Family Sharing",
+      "A developer account that can publish apps to the store and read reports",
+      "An account that Xcode makes for local StoreKit tests"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "32",
+    "question": "In the sandbox, how long is one month of a subscription?",
+    "options": [
+      "5 minutes",
+      "15 minutes",
+      "1 hour",
+      "3 minutes"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "33",
+    "question": "What is an introductory offer?",
+    "options": [
+      "A discount code that the user enters in the Settings app of the device",
+      "A special price or free period for new subscribers of a group",
+      "A lower price for users who cancelled in the past",
+      "A discount for the members of a Family Sharing group who share one plan"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "34",
+    "question": "Which `PaymentMode` value means the user pays nothing in the offer period?",
+    "options": [
+      "`.payUpFront`",
+      "`.freeTrial`",
+      "`.discount`",
+      "`.payAsYouGo`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "35",
+    "question": "Which property checks if a user can get an introductory offer?",
+    "options": [
+      "`subscription.isEligibleForIntroOffer`",
+      "`product.hasIntroductoryOfferAvailable`",
+      "`AppStore.introductoryOfferStatus`",
+      "`Transaction.isTrialPeriodAvailable`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "36",
+    "question": "Which type of offer needs a signature that your server creates?",
+    "options": [
+      "Offer code",
+      "Introductory offer",
+      "Pay-up-front offer",
+      "Promotional offer"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "37",
+    "question": "What is `appAccountToken` in a purchase?",
+    "options": [
+      "A token that shows the Apple ID of the user to your own server",
+      "A UUID that you set to link the transaction to your user",
+      "A key that decrypts the signed transaction on your server",
+      "A token that Apple makes for you to sign your App Store API calls"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "38",
+    "question": "A transaction has a `revocationDate` that is not nil. What does this mean?",
+    "options": [
+      "The user turned off auto-renew for the plan in the Settings app",
+      "The App Store refunded the purchase or removed access",
+      "The app did not finish the transaction",
+      "The subscription will end at the next renewal"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "39",
+    "question": "Which StoreKit 2 method starts a refund request from inside the app?",
+    "options": [
+      "`Product.cancel(id:)`",
+      "`Transaction.refund()`",
+      "`beginRefundRequest`",
+      "`AppStore.requestRefund(for:)`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "40",
+    "question": "Who approves a purchase when Ask to Buy is on?",
+    "options": [
+      "The sandbox tester",
+      "The family organizer",
+      "The developer in App Store Connect",
+      "The App Review team"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "41",
+    "question": "Which SwiftUI view shows a list of products with Buy buttons from a list of product IDs?",
+    "options": [
+      "`StoreView`",
+      "`ProductView`",
+      "`PaywallView`",
+      "`StoreFront`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "42",
+    "question": "Which SwiftUI view is a ready paywall for one subscription group?",
+    "options": [
+      "`SubscriptionPaywallView`",
+      "`SubscriptionView`",
+      "`SubscriptionGroupStoreView`",
+      "`SubscriptionStoreView`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "43",
+    "question": "Which SwiftUI modifier shows the system screen where the user manages subscriptions?",
+    "options": [
+      "`.accountSheet(isPresented:)`",
+      "`.manageStoreSubscriptionsSheet(isPresented:)`",
+      "`.subscriptionSettingsSheet(isPresented:)`",
+      "`.manageSubscriptionsSheet(isPresented:)`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "44",
+    "question": "Why must you not hardcode a price text such as \"$4.99\" in the UI?",
+    "options": [
+      "It ignores the user currency, so it can differ from the real charge",
+      "It is slower to draw on screen than the text from `displayPrice`",
+      "It breaks the VoiceOver label that reads the price on the buy button",
+      "It stops the purchase sheet from opening when the price is different"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "45",
+    "question": "What does `Transaction.id` identify?",
+    "options": [
+      "The Apple ID of the user",
+      "The subscription across all renewals",
+      "One single purchase or one renewal",
+      "The product in App Store Connect"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "46",
+    "question": "Which `Transaction` property shows when the current subscription period ends?",
+    "options": [
+      "`originalPurchaseDate`",
+      "`revocationDate`",
+      "`expirationDate`",
+      "`purchaseDate`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "47",
+    "question": "Which value shows if a subscription will renew at the end of the period?",
+    "options": [
+      "`RenewalInfo.willAutoRenew`",
+      "`Status.autoRenewEnabled`",
+      "`Product.renewsNextPeriod`",
+      "`Transaction.isAutoRenewing`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "48",
+    "question": "The app crashes after it delivers an item but before it calls `finish()`. What happens?",
+    "options": [
+      "The App Store finishes it by itself after one hour",
+      "StoreKit delivers the transaction again at a later launch",
+      "The transaction is lost and the user must pay again",
+      "The App Store refunds the purchase to the user"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "49",
+    "question": "Which StoreKit 2 API gives data about the app purchase, such as the first version the user got?",
+    "options": [
+      "`Bundle.main.appStoreReceiptURL`",
+      "`Transaction.app`",
+      "`AppTransaction.shared`",
+      "`AppStore.currentAppReceipt`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "50",
+    "question": "A tester installs your app from TestFlight and buys a product. What happens?",
+    "options": [
+      "The purchase works only for non-consumable products",
+      "The purchase fails because TestFlight blocks the store",
+      "The purchase uses production and the card of the user is charged",
+      "The purchase uses the sandbox, so no real money moves"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "51",
+    "question": "Find the risk:\n`let r = try await product.purchase()`\n`if case .success = r { unlock() }`",
+    "options": [
+      "The `if case` pattern cannot match a `success` value, so the unlock call never runs",
+      "The code skips the `VerificationResult` check, so unverified data can unlock content",
+      "The `try await` blocks the main thread until the payment ends, so the UI freezes",
+      "The code does not handle `.pending`, so the app crashes at run time when Ask to Buy is on"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "52",
+    "question": "Which `RenewalState` value shows a subscription in the billing retry period?",
+    "options": [
+      "`.inBillingRetryPeriod`",
+      "`.inGracePeriod`",
+      "`.billingFailedAfterGrace`",
+      "`.revokedByBillingError`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "53",
+    "question": "When must you call `finish()` for a consumable transaction?",
+    "options": [
+      "Right after `purchase()` returns, before delivery",
+      "Before you check the `VerificationResult`",
+      "Only when the user taps Restore Purchases",
+      "After you deliver and save the content"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "54",
+    "question": "You finish a non-consumable transaction. Does it stay in `currentEntitlements`?",
+    "options": [
+      "No, only the unfinished transactions stay in that list",
+      "Yes, but only for the first 24 hours",
+      "No, it moves to `Transaction.all` only",
+      "Yes, finishing does not remove the ownership"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "55",
+    "question": "A subscription expires. What does `currentEntitlements` show for it?",
+    "options": [
+      "The subscription has `isUpgraded` set to true",
+      "The subscription stays until the user restores",
+      "The subscription is not in the list",
+      "The subscription has a `revocationDate`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "56",
+    "question": "What is the difference between `Transaction.all` and `Transaction.currentEntitlements`?",
+    "options": [
+      "`all` has only the transactions that the app did not finish yet",
+      "`all` has products from all apps of the same developer",
+      "`all` has the full history, with expired and refunded items",
+      "`all` has only consumable transactions"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "57",
+    "question": "How does the app detect that a purchase comes from Family Sharing?",
+    "options": [
+      "`transaction.environment == .production`",
+      "`transaction.subscriptionStatus == .familyShared`",
+      "`transaction.appAccountToken == nil`",
+      "`transaction.ownershipType == .familyShared`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "58",
+    "question": "A subscription is in the billing retry period and has no grace period. What should the app do?",
+    "options": [
+      "Keep access only for the family members of the user in the group",
+      "Remove access, because the App Store still tries to charge",
+      "Keep access for 60 days until the retry ends",
+      "Keep access until the user cancels the plan"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "59",
+    "question": "What is the purpose of a billing grace period?",
+    "options": [
+      "To give new users free days before the first charge starts",
+      "To delay a price increase for the current subscribers by one cycle",
+      "To keep access while the App Store retries a failed payment",
+      "To give the user extra days after a refund"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "60",
+    "question": "A user moves to a lower-level plan in the same group. When does the change start?",
+    "options": [
+      "After seven days",
+      "At once, without a refund",
+      "At once, with a full refund",
+      "At the next renewal date"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "61",
+    "question": "What does `Transaction.isUpgraded` show?",
+    "options": [
+      "The app has a newer version than the one at the purchase time",
+      "The user bought a bigger pack of a consumable product",
+      "The user moved to a higher plan in the same group",
+      "The transaction is on a newer device"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "62",
+    "question": "A user used a free trial on the monthly plan. Can the user get an introductory offer on the yearly plan of the same group?",
+    "options": [
+      "Yes, after 12 months have passed since the end of the trial",
+      "No, the offer is once for each group and Apple ID",
+      "No, but only on the same device",
+      "Yes, each product has its own offer right"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "63",
+    "question": "How does the app choose between the button texts \"Start free trial\" and \"Subscribe\"?",
+    "options": [
+      "It checks only that `introductoryOffer` is not nil on the loaded product",
+      "It checks `isEligibleForIntroOffer`, not only that an offer exists",
+      "It checks the last date in `Transaction.all`",
+      "It checks the `Locale` of the device"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "64",
+    "question": "Where do you create the signature for a promotional offer?",
+    "options": [
+      "On your server, with a private key from App Store Connect",
+      "In the app, with the shared secret of the app from App Store Connect",
+      "In the app, with the bundle ID as a key",
+      "Apple creates it by itself on the device"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "65",
+    "question": "Which type do you use in a unit test to control StoreKit purchases?",
+    "options": [
+      "`XCTStoreSession`",
+      "`SKTestSession`",
+      "`SKPaymentTester`",
+      "`StoreTestSession`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "66",
+    "question": "A user gets a refund. How does the app learn this with StoreKit 2?",
+    "options": [
+      "The app must call `AppStore.sync()` every hour to find new refunds",
+      "`Transaction.updates` sends the transaction with a `revocationDate`",
+      "`purchase()` throws an error at the next purchase",
+      "`currentEntitlements` sends a push to the app at once after the refund"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "67",
+    "question": "How do you sign the token for the App Store Server API?",
+    "options": [
+      "An OAuth token from the Apple ID of the user",
+      "A JWT signed with ES256 and your In-App Purchase key",
+      "A JWT signed with RS256 and the app signing certificate",
+      "A shared secret string in a request header"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "68",
+    "question": "Which JWT claim sets the bundle ID of the app for the App Store Server API?",
+    "options": [
+      "`aud`",
+      "`sub`",
+      "`bid`",
+      "`kid`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "69",
+    "question": "What does the body of an App Store Server Notification V2 contain?",
+    "options": [
+      "A `signedPayload` string that is a JWS",
+      "An encrypted blob that uses your shared key",
+      "A base64 receipt for `verifyReceipt`",
+      "A plain JSON object with `receipt-data`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "70",
+    "question": "Your server cannot process a notification now. What is the correct response?",
+    "options": [
+      "A status other than 200, so Apple sends it again later",
+      "HTTP 200, and you discard the event because Apple keeps it",
+      "HTTP 200 with an error text in the body",
+      "HTTP 200, and you ask the user to restore the purchase in the app"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "71",
+    "question": "Notifications can arrive two times. Which value helps you to ignore the copy?",
+    "options": [
+      "`notificationUUID`",
+      "`originalTransactionId`",
+      "`signedDate`",
+      "`bundleId`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "72",
+    "question": "Which server value identifies one subscription across all renewals?",
+    "options": [
+      "`originalTransactionId`",
+      "`notificationUUID`",
+      "`transactionId`",
+      "`subscriptionGroupIdentifier`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "73",
+    "question": "The app sends a purchase to your server. What should it send?",
+    "options": [
+      "The `jwsRepresentation` string, so the server checks the signature",
+      "The fields of the `Transaction` as JSON from the app",
+      "The file at `appStoreReceiptURL` with the shared secret",
+      "The `jsonRepresentation` data, because the server can trust the JSON"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "74",
+    "question": "Why does a server verify a transaction when StoreKit 2 already verifies it on the device?",
+    "options": [
+      "The local check does not test the signature",
+      "The local check works only on iOS 17 or newer versions of the system",
+      "A hacked app can skip the local check, but not your server",
+      "The local check cannot read the product ID"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "75",
+    "question": "What must you check in the `x5c` certificate chain of a signed transaction?",
+    "options": [
+      "That the header `alg` has the value `none` for all signed data",
+      "That the chain has the same domain name as your own server",
+      "That your own key signed the leaf certificate",
+      "That the chain ends at the Apple root certificate"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "76",
+    "question": "Which Apple tool helps a server to verify signed transactions and notifications?",
+    "options": [
+      "The Apple Pay JS library",
+      "The StoreKitTest framework from Xcode",
+      "The CloudKit server SDK",
+      "The App Store Server Library"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "77",
+    "question": "What is the status of the `verifyReceipt` endpoint?",
+    "options": [
+      "Apple requires it for each StoreKit 2 purchase made on a device",
+      "Apple removed it and it returns an error for each call from a server",
+      "Apple limits it to sandbox receipts only",
+      "Apple deprecated it, and you should use the App Store Server API"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "78",
+    "question": "The legacy `verifyReceipt` endpoint returns status 21007. What does it mean?",
+    "options": [
+      "The shared secret of the app is wrong or is not set",
+      "A sandbox receipt went to the production URL",
+      "The receipt belongs to a different app",
+      "The receipt is too old to be checked"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "79",
+    "question": "How do you start a purchase in SwiftUI on iOS 17 and newer?",
+    "options": [
+      "Read `@Environment(\\.purchase)` and call it with the product",
+      "Use a `@StateObject` of `SKPaymentQueue` and call `add`",
+      "Call `product.purchase()` and pass a `UIWindowScene` from the active scene",
+      "Read `@Environment(\\.store)` and call `buy` with the product"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "80",
+    "question": "The `purchase()` call returns `.pending`. What should the app do?",
+    "options": [
+      "Unlock the content for a short trial time until the approval comes",
+      "Call `finish()` on the pending transaction to clear the queue",
+      "Show a waiting message and keep the `Transaction.updates` loop",
+      "Show an error message and ask the user to try the purchase again"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "81",
+    "question": "A crash can happen between delivery and `finish()`. How do you avoid a double delivery?",
+    "options": [
+      "Add a `Task.sleep` before each delivery to wait for the sync",
+      "Save the transaction `id` and make the delivery idempotent",
+      "Skip the `Transaction.updates` loop and use only the purchase result",
+      "Call `finish()` before you deliver the content"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "82",
+    "question": "A user spends coins and then gets a refund for the consumable pack. What do you need?",
+    "options": [
+      "Check `currentEntitlements`, which marks the pack as revoked",
+      "Handle the refund event and reduce the balance on your side",
+      "Nothing, because StoreKit removes the coins by itself",
+      "Nothing, because Apple does not refund consumables"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "83",
+    "question": "Notifications can arrive out of order, for example `DID_RENEW` before `SUBSCRIBED`. What is the safe design?",
+    "options": [
+      "Reject each event until `SUBSCRIBED` is received",
+      "Trust the order in which the events arrive at your server",
+      "Use the time when your server got the event",
+      "Store the latest dates for each `originalTransactionId`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "84",
+    "question": "Your server was down for a day and missed notifications. How do you recover?",
+    "options": [
+      "Call the Get Notification History endpoint for that time window",
+      "Wait, because Apple sends all missed events at the next successful response from your server",
+      "Use `verifyReceipt` for all users",
+      "Call `AppStore.sync()` on the server"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "85",
+    "question": "Apple sends a `CONSUMPTION_REQUEST` notification. What can your server do?",
+    "options": [
+      "Answer with HTTP 200 to approve the refund that the user asked for",
+      "Block the refund with a call to the API",
+      "Delete the transaction from the history",
+      "Send consumption data through the API to help Apple decide"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "86",
+    "question": "App Review tests your app in the sandbox, but the app calls your production server. What must the server do?",
+    "options": [
+      "Read `environment` in the signed data and use the sandbox API",
+      "Reject all sandbox transactions with an error to the app",
+      "Treat them as normal production purchases and give full access",
+      "Ask the app to buy the product again in production mode"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "87",
+    "question": "Why does `Product.SubscriptionInfo.status(for:)` return an array?",
+    "options": [
+      "It has one status for each storefront where the user bought a plan",
+      "It has one status for each device where the user signed in to the App Store",
+      "One user can have several statuses, for example own and family-shared",
+      "It has one status for each renewal in the history of the group"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "88",
+    "question": "Why does a promotional offer signature include a nonce and a timestamp?",
+    "options": [
+      "To stop the reuse of the signature by other users or later",
+      "To round the offer price to the price tier",
+      "To link the offer to the device identifier",
+      "To make Apple cache the offer price on the device of the user"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "89",
+    "question": "Which test can you do with a sandbox but not with a local StoreKit configuration file?",
+    "options": [
+      "Test a refund of a consumable purchase from the Xcode window",
+      "Test a subscription renewal at a fast speed with a set rate",
+      "Test your server with transactions that Apple signs",
+      "Test the Ask to Buy flow for a purchase with a family member"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "90",
+    "question": "A subscription renews while the app is closed. How does the app learn about it?",
+    "options": [
+      "`purchase()` returns the renewal at the next launch of the app",
+      "StoreKit wakes the app in the background with a silent push",
+      "A background `AppStore.sync()` call finds it and starts the app",
+      "`Transaction.updates` delivers it when the app runs again"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "91",
+    "question": "Each SwiftUI view runs its own `for await` loop over `currentEntitlements`. What is the risk?",
+    "options": [
+      "It repeats store work and views can show different states",
+      "It makes the App Store charge the user for each loop",
+      "It stops after 10 views because of a system limit",
+      "It ends the loop of `Transaction.updates` in the rest of the app"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "92",
+    "question": "You write `for await t in Transaction.updates { ... }` and then more code after the loop. The code never runs. Why?",
+    "options": [
+      "The sequence ends when the app goes to the background",
+      "The loop ends after one event is received",
+      "The loop ends at the first unverified transaction",
+      "The sequence has no end, so the loop does not finish"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "93",
+    "question": "The app is on iOS, Android, and web. Which design for subscription access is the most robust?",
+    "options": [
+      "Each client reads the state from its own store, without a server",
+      "Your server keeps the state from Apple notifications and API calls",
+      "The web client calls `AppStore.sync()` on behalf of the Apple ID of the user",
+      "Each app keeps the access flag in local storage and syncs it"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "94",
+    "question": "You enable Family Sharing for a non-consumable product in App Store Connect. What is true?",
+    "options": [
+      "You can turn it off only before the first App Review of the app",
+      "You can turn it off only for new buyers",
+      "You cannot turn it off later for that product",
+      "You can turn it off at any time"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "95",
+    "question": "Which offer type, new in iOS 18, is made for users who cancelled a subscription in the past?",
+    "options": [
+      "Retention offer",
+      "Win-back offer",
+      "Resubscribe offer",
+      "Comeback offer"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "96",
+    "question": "An app has a StoreKit 1 queue observer and a StoreKit 2 listener. What is the risk?",
+    "options": [
+      "StoreKit 1 cannot see the StoreKit 2 transactions, so it misses some",
+      "StoreKit 2 blocks the observer from all events",
+      "Apple does not allow the two APIs in one app, so review fails",
+      "Both can see the same transaction, so you can deliver it two times"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "97",
+    "question": "A user moves to a cheaper plan. Which `RenewalInfo` value shows the plan that starts at the next renewal?",
+    "options": [
+      "`autoRenewPreference`",
+      "`currentProductID`",
+      "`originalProductID`",
+      "`nextRenewalProductID`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "98",
+    "question": "A subscription expired because the payment failed. Which `expirationReason` shows this?",
+    "options": [
+      "`.autoRenewDisabled`",
+      "`.didNotConsentToPriceIncrease`",
+      "`.billingError`",
+      "`.productUnavailable`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "99",
+    "question": "A teammate saves `isPremium = true` in UserDefaults after a purchase and never checks again. What is the failure mode?",
+    "options": [
+      "The App Store charges the user again at each launch of the app",
+      "Expiry, refund, and family changes never remove the access",
+      "The flag is lost each time the app is updated",
+      "The flag blocks `Transaction.updates` from running"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "100",
+    "question": "The App Store Server API returns 401 and your server clock is two hours ahead. What is the likely cause?",
+    "options": [
+      "The user did not finish the transaction in the app",
+      "The product is not cleared for sale in the storefront of the user",
+      "The `iat` of the JWT is in the future, so Apple rejects it",
+      "The In-App Purchase key has expired after one hour"
+    ],
+    "correct_index": 2
+  }
+]

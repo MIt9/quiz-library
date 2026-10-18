@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What is Recoil?",
+  "options": [
+   "A routing library for React that maps each URL to a component and a layout",
+   "A state management library for React, built around atoms, selectors, and hooks",
+   "A data fetching library for React that caches server responses by a query key",
+   "A testing library for React that renders components in a simulated browser"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "What is an atom in Recoil?",
+  "options": [
+   "A React component that wraps its children and passes props to them",
+   "A pure function that builds new values from other pieces of state",
+   "A unit of shared state that components can read, write, and subscribe to",
+   "A hook that runs a side effect after each render of a component"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "3",
+  "question": "What does a Recoil selector do?",
+  "options": [
+   "It stores a plain value that components change with a setter function",
+   "It computes derived state from atoms or from other selectors",
+   "It selects the DOM node that React uses for the next render pass",
+   "It sends the current state to a server after every change of an atom"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "4",
+  "question": "What is the job of the `RecoilRoot` component?",
+  "options": [
+   "It loads the atom definitions from a server before the first render",
+   "It connects each atom to a database table through a schema file",
+   "It creates the store that holds the atom values for its children",
+   "It turns every atom into a global variable that any script can read"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "5",
+  "question": "Where must you place `RecoilRoot` in an app?",
+  "options": [
+   "Above every component that uses a Recoil hook, usually at the root of the app",
+   "Inside each component that reads an atom, right next to the hook call",
+   "Below the components that use Recoil hooks, as the last child of the tree",
+   "In the HTML file, as a script tag placed before the React bundle loads"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "6",
+  "question": "Why does every atom need a unique `key`?",
+  "options": [
+   "React uses the key to decide the render order of the atoms",
+   "The browser uses the key to save the atom in a cookie",
+   "TypeScript uses the key to find the type of the atom value",
+   "Recoil uses the key to identify the atom inside the store"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "7",
+  "question": "Which hook gives a component both the value of an atom and a setter?",
+  "options": [
+   "useRecoilState",
+   "useRecoilValue",
+   "useSetRecoilState",
+   "useRecoilCallback"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "8",
+  "question": "Which hook only reads a value and gives no setter?",
+  "options": [
+   "useRecoilState",
+   "useRecoilValue",
+   "useResetRecoilState",
+   "useRecoilSnapshot"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "9",
+  "question": "What is the main benefit of `useSetRecoilState` in a component?",
+  "options": [
+   "The component re-renders more often, so the UI stays fresh and up to date",
+   "The component gets the old value together with the new value on every call",
+   "The component can update the atom without a subscription to it, so it skips re-renders",
+   "The component can write to selectors that have no set function at all"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "A component reads an atom that no code wrote to. What value does it get?",
+  "options": [
+   "undefined, until some code writes a first value",
+   "null, because the store has no entry for the key",
+   "The default value that you set in the atom definition",
+   "The value of the last atom that the app created"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "11",
+  "question": "Inside a selector, what does the call `get(someAtom)` do?",
+  "options": [
+   "It reads the atom value but does not track any dependency",
+   "It sets the atom to its default value and returns the old one",
+   "It creates a copy of the atom with a new key",
+   "It reads the atom value and adds the atom as a dependency"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "12",
+  "question": "A component uses `useRecoilState` but has no `RecoilRoot` above it. What happens?",
+  "options": [
+   "Recoil makes a hidden root and the code works as normal",
+   "The hook returns the default value and ignores the setter",
+   "React shows a warning, but the atom works as local state",
+   "Recoil throws an error because it finds no store above the component"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "13",
+  "question": "What does the function from `useResetRecoilState` do?",
+  "options": [
+   "It deletes the atom from the store for good",
+   "It sets the atom to null and clears its key",
+   "It sets the atom back to the default value of its definition",
+   "It reloads the page and starts the app again"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "14",
+  "question": "An atom changes. Which components re-render?",
+  "options": [
+   "Components that subscribe to it, directly or through a selector it feeds",
+   "Every component that sits anywhere under the same `RecoilRoot` component",
+   "Only the one component that called the setter function for this atom",
+   "Only the components that are direct children of the `RecoilRoot` component"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "15",
+  "question": "What does this setter call do?\nsetCount(c => c + 1)",
+  "options": [
+   "It gets the current value, adds one, and stores the result",
+   "It adds one to the value from the last render only, and ignores other updates",
+   "It replaces the value with the function itself, without calling it",
+   "It runs the function after the next render has finished, then stores it"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "Why is a selector a good place for a filtered list?",
+  "options": [
+   "The selector can change the source atoms without any setter function",
+   "The selector sends the filter to the server and returns the new list",
+   "The selector stops the list from re-rendering when the source changes",
+   "The result follows its source atoms and Recoil caches it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "17",
+  "question": "What does the `set` function of a writable selector usually do?",
+  "options": [
+   "It saves the selector result in the browser cache",
+   "It updates one or more atoms from the new value",
+   "It replaces the `get` function with the new value",
+   "It changes the key of the selector at run time"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "18",
+  "question": "What does `atomFamily` do?",
+  "options": [
+   "It creates a set of atoms, one for each parameter value",
+   "It creates one atom that holds an array of child atoms",
+   "It groups atoms by a key prefix so that they reset together",
+   "It makes an atom that copies its value to child roots"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "When do you use `selectorFamily`?",
+  "options": [
+   "When a selector must read more than one atom at the same time",
+   "When a selector needs a parameter, such as an item id, to look up one item",
+   "When a selector must run in a different `RecoilRoot` than its atoms",
+   "When a selector must be writable by many components at once"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "What can the `get` function of a selector return to make the selector async?",
+  "options": [
+   "A callback function",
+   "An async generator with one result per step",
+   "An observable stream",
+   "A Promise, for example from an async function"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "A component reads a selector that is still loading. What does Recoil do?",
+  "options": [
+   "The hook returns undefined, so the component renders without any data yet",
+   "The hook returns null first and then re-renders after a short delay",
+   "The hook throws a loading error to the nearest error boundary above it",
+   "The component suspends and the nearest `Suspense` shows its fallback"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "Where do you catch an error that an async selector throws?",
+  "options": [
+   "In a `try`/`catch` block that wraps the `useRecoilValue` call in render",
+   "In an error boundary above the component that reads the selector value",
+   "In the `onError` option that you pass to the `RecoilRoot` component",
+   "In a `Suspense` boundary, with the error fallback prop of that boundary"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "23",
+  "question": "What does `useRecoilValueLoadable` return?",
+  "options": [
+   "A tuple with the value and a boolean that shows loading",
+   "A Promise that resolves when the selector has a value",
+   "The value, and it suspends the component while the selector loads",
+   "An object with a state, and the value or the error in `contents`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "Which list shows the possible `state` values of a Recoil Loadable?",
+  "options": [
+   "hasValue, loading, hasError",
+   "ready, pending, failed",
+   "idle, loading, success",
+   "value, waiting, error"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "25",
+  "question": "What is an atom effect?",
+  "options": [
+   "A hook that React calls when an atom leaves the memory of the store",
+   "A selector that changes the atom value each time the page loads in a browser",
+   "A CSS animation that plays on screen when the atom value changes",
+   "A function in the atom definition that runs side effects"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "In an atom effect, what does `onSet` do?",
+  "options": [
+   "It sets the first value of the atom when the effect starts",
+   "It runs a callback each time the atom value changes after a write",
+   "It runs a callback one time when the atom is first read",
+   "It blocks changes of the atom until the callback ends"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "27",
+  "question": "In an atom effect, which function sets the initial value of the atom?",
+  "options": [
+   "onSet",
+   "resetSelf",
+   "setSelf",
+   "getPromise"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "How do you give start values to atoms in a test or on the server?",
+  "options": [
+   "Pass an `initializeState` function to the `RecoilRoot` component",
+   "Pass an `initialValues` object to every `atom` call",
+   "Call `set` on the atoms before you render `RecoilRoot`",
+   "Write the values to `window` before React starts"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "29",
+  "question": "Where should you define atoms and selectors?",
+  "options": [
+   "Inside the component body, before the hooks",
+   "Inside `useEffect`, so that they exist after the mount",
+   "Inside `RecoilRoot`, as props of the component",
+   "At module level, in the file scope outside of every component"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "Two atoms use the same `key`. What does Recoil do in development?",
+  "options": [
+   "It merges both atoms and gives them the same value",
+   "It reports the duplicate key in the console",
+   "It renames the second key with a number suffix",
+   "It stops the app and shows a build error"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "You change an object from an atom: `user.name = 'A'`. What happens in development?",
+  "options": [
+   "The atom updates and all subscribed components re-render",
+   "The object changes, but no component re-renders",
+   "The write fails, because Recoil freezes the object",
+   "Recoil copies the object and keeps the old value"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "Two `RecoilRoot` components are siblings. How do their atoms relate?",
+  "options": [
+   "They share one store, so the atom has one common value in both roots",
+   "Each root has its own store, so one atom has separate values in each",
+   "The first root owns the atoms and the second root only reads them",
+   "Recoil merges both stores when the two roots mount in the page"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "Why does `useRecoilState` fail for a selector that has no `set`?",
+  "options": [
+   "The selector has no key, so Recoil cannot find it in the store",
+   "The selector is async by default, so state hooks cannot read it at all",
+   "The selector needs a `RecoilRoot` of its own to hold the value",
+   "The selector is read-only, so there is no way to write a value"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "34",
+  "question": "What is the status of the Recoil GitHub repository?",
+  "options": [
+   "It is active, and Meta ships a new major version every year without fail",
+   "It moved to the React organization on GitHub and has a new name",
+   "Meta archived it, so it is read-only and gets no new releases or fixes",
+   "It is in a feature freeze, but it still gets security patches each month"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "Why do you derive a value in a selector instead of copying it into a second atom?",
+  "options": [
+   "A selector is faster to read than an atom because it skips the store",
+   "Atoms cannot hold values that come from other atoms in React",
+   "The selector updates by itself when its source atoms change",
+   "Recoil allows only one atom for each component in the tree"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "Which library has atoms and derived atoms, so it is close to Recoil?",
+  "options": [
+   "Jotai",
+   "Redux",
+   "MobX",
+   "XState"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "37",
+  "question": "Why do many teams choose Recoil atoms over React Context for shared state?",
+  "options": [
+   "Only subscribed components re-render when one atom changes",
+   "Context cannot hold objects, but atoms can hold any value",
+   "Context needs a server, but atoms work in the browser only",
+   "Atoms are always faster than local `useState` in a component"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "38",
+  "question": "Which code types an atom that holds a string in TypeScript?",
+  "options": [
+   "atom({ key: 'name', type: string, default: '' })",
+   "atom<string>({ key: 'name', default: '' })",
+   "atom: string({ key: 'name', default: '' })",
+   "atom({ key: 'name' }) as string"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "39",
+  "question": "What is `useRecoilCallback` good for?",
+  "options": [
+   "To call a selector again each time the network request fails or times out",
+   "To run a cleanup function after the component unmounts from the tree",
+   "To read or write state inside an event handler without a subscription",
+   "To make a function wait until all atoms in the store have loaded values"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "40",
+  "question": "What is a Recoil `Snapshot`?",
+  "options": [
+   "A screenshot of the rendered components that visual tests compare",
+   "A selector that stores the last known value of every atom in the app",
+   "A log file of every error and warning that Recoil found at run time",
+   "An immutable view of the state of all atoms at one moment"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "41",
+  "question": "Can you call `useRecoilValue` inside an `if` block or a click handler?",
+  "options": [
+   "Yes, in a click handler, because handlers run after the render ends",
+   "Yes, if the `if` block has the same result on each render of the component",
+   "No, it is a hook, so call it at the top level of a component function",
+   "Yes, Recoil hooks are free from the rules of hooks that React sets"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "42",
+  "question": "How do you test a component that uses Recoil hooks?",
+  "options": [
+   "Mock all Recoil hooks with `jest.fn` and return fixed values for each test",
+   "Wrap it in `RecoilRoot`, with `initializeState` for start values",
+   "Call the atoms as functions and pass the result to the component as props",
+   "Render it with a global store that you import from the Recoil package"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "43",
+  "question": "How do you save an atom value in `localStorage`?",
+  "options": [
+   "Add an atom effect that reads on start and writes in `onSet`",
+   "Pass `persist: true` in the options of the atom definition",
+   "Wrap the atom in a selector that reads and writes the same storage key",
+   "Call `localStorage.setItem` inside the `default` field of the atom"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "44",
+  "question": "In the Next.js App Router, why does the file with `RecoilRoot` need `'use client'`?",
+  "options": [
+   "RecoilRoot reads cookies from the request, so it must run in the browser",
+   "Server components cannot import any package from npm",
+   "RecoilRoot uses context and hooks, which need client components",
+   "The directive tells Next.js to create atoms at build time"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "Can a selector `get` function read another selector?",
+  "options": [
+   "Yes, with `get(otherSelector)`, which adds it as a dependency",
+   "No, a selector can read atoms only, never another selector",
+   "Yes, but only if the other selector is async and has a key",
+   "No, selectors link to each other only with `selectorFamily`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "What happens to a selector result when its dependencies do not change?",
+  "options": [
+   "Recoil returns the cached result and does not run `get` again",
+   "Recoil runs `get` again on each render to check the result",
+   "Recoil clears the result after each render and computes it again",
+   "Recoil runs `get` again each time a component mounts"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "47",
+  "question": "What does `useRecoilValue(itemFamily('a'))` read?",
+  "options": [
+   "The first atom of the family, where the parameter only filters",
+   "An array with every atom that the family made",
+   "The default value of the family, with 'a' as the key",
+   "The atom for the parameter 'a', made when it does not exist"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "48",
+  "question": "Which values can an atom use as its `default`?",
+  "options": [
+   "Only a plain value, because a Promise needs a selector",
+   "A plain value, a Promise, or another atom or selector",
+   "A plain value or a function that returns a plain value",
+   "Only a value of a type that JSON can hold"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "49",
+  "question": "Which sentence describes the Recoil data-flow model?",
+  "options": [
+   "State flows from atoms through selectors to components",
+   "All state sits in one object and reducers change it",
+   "State lives in components and flows up through props",
+   "State lives in the URL and components read it from there"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "What does the setter from `useRecoilState` accept?",
+  "options": [
+   "Only a new value, because an updater function is not allowed",
+   "A new value, or an updater function that gets the old value and returns a new one",
+   "Only an updater function that returns the new value",
+   "A new value and a callback that runs on the next render"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "51",
+  "question": "A selector reads `get(a)`. It reads `get(b)` only if `a` is true. What are its dependencies?",
+  "options": [
+   "It always depends on both `a` and `b`, in every run of the selector",
+   "It depends on `a`, and on `b` only in runs where it read `b`",
+   "It depends on `a` only, because Recoil ignores reads in an `if` block",
+   "It depends on none of them until the first component mounts and reads it"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "In a `useRecoilCallback` handler, which call gives you the final value of an async selector?",
+  "options": [
+   "`await snapshot.getPromise(sel)` inside the async callback",
+   "`snapshot.getValue(sel)`, which blocks until the value is ready",
+   "`useRecoilValue(sel)`, called inside the callback body",
+   "`snapshot.getNodes_UNSTABLE(sel)`, which returns the value of the selector"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "53",
+  "question": "A developer calls `atom({ key: 'x', default: 0 })` in a component body. What is the problem?",
+  "options": [
+   "The atom is local to the component, so it works but wastes some memory",
+   "Each render makes a new atom with the same key, which Recoil reports",
+   "Recoil throws a type error because atoms need a module scope to exist",
+   "The atom is made one time only, so the extra call is only a bit slower"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "54",
+  "question": "Which parameter is safe for `atomFamily`?",
+  "options": [
+   "Any value at all, including a function, a Promise, or a class instance",
+   "Only a string or a number, because Recoil does not allow object parameters",
+   "A serializable value, such as a string, a number, or a plain object",
+   "Only an object that has a `key` property, because Recoil reads that property"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "55",
+  "question": "A `selectorFamily` gets the same `id` in two components. How often does `get` run for the same dependencies?",
+  "options": [
+   "Twice, one time for each component that reads the selector family",
+   "Once for each render of each component that reads the family",
+   "Never, because families run `get` only after a write to an atom",
+   "Once, because Recoil caches the result for that parameter and its dependencies"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "56",
+  "question": "A writable selector gets reset by `useResetRecoilState`. What does its `set` receive?",
+  "options": [
+   "The value undefined",
+   "The value null",
+   "An instance of `DefaultValue`",
+   "The default value of the first atom it reads"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "An async selector fetches a user list and Recoil caches it. How do you load fresh data?",
+  "options": [
+   "Call the `get` function of the selector again by hand",
+   "Change the `key` of the selector at run time to bypass its cache",
+   "Unmount `RecoilRoot` for one second and mount it again",
+   "Use `useRecoilRefresher_UNSTABLE` for that selector"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "58",
+  "question": "An async selector rejects and no error boundary exists. What happens?",
+  "options": [
+   "The error goes up through React and unmounts the component tree",
+   "Recoil catches it quietly and the hook returns undefined to the caller",
+   "The selector tries three times and then returns the last cached value",
+   "The component shows the `Suspense` fallback for ever and logs a warning"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "59",
+  "question": "What does `noWait(selector)` do when you read it?",
+  "options": [
+   "It waits until the selector has a value, and then returns that value",
+   "It returns the last cached value and starts no new request at all",
+   "It cancels the request of the selector and then returns null at once",
+   "It returns a Loadable at once, so the component does not suspend"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "60",
+  "question": "A click handler must read an atom, but the component must not re-render for changes. What do you use?",
+  "options": [
+   "useRecoilValue, called in the body of the handler function",
+   "useRecoilState, and ignore the value that it returns",
+   "useRecoilValueLoadable, with the `noWait` modifier on it",
+   "useRecoilCallback, with `snapshot.getLoadable` inside the callback"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "In `useRecoilCallback`, you call `set` for three atoms. How does Recoil apply the updates?",
+  "options": [
+   "It renders three times, one time for each call of `set`",
+   "It batches them into one state change for subscribed components",
+   "It waits for a separate `commit` call and then applies all",
+   "It renders one time for each component and one more for each atom"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "62",
+  "question": "How does an atom effect clean up, for example remove an event listener?",
+  "options": [
+   "It calls `resetSelf` at the end of the effect",
+   "It uses a `finally` block around the `onSet` call",
+   "It sets `cleanup: true` in the atom options",
+   "It returns a cleanup function from the effect, and Recoil calls it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "63",
+  "question": "In an atom effect, what does the `trigger` argument tell you?",
+  "options": [
+   "Which component calls the effect for the first time in the tree",
+   "How many times the user changed the atom since the page loaded",
+   "Whether the effect runs on the server or on the client side",
+   "Whether the atom is first read ('get') or first set ('set')"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "64",
+  "question": "An effect saves the atom in `onSet`. After a reset, the app keeps the old stored value. What is missing?",
+  "options": [
+   "A check of the `isReset` argument of `onSet`, to remove the stored item",
+   "A call of `setSelf` after each reset of the atom in the effect",
+   "A `trigger` value of 'set' in the effect, to run on writes",
+   "A `key` with the storage prefix that matches the stored item"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "An effect calls `setSelf` inside `onSet` to fix a value. Does it start `onSet` again?",
+  "options": [
+   "No, `onSet` does not run for changes made by `setSelf` in the same effect",
+   "Yes, so an infinite loop is likely, unless the value stays equal",
+   "Yes, but only one time for each render of the component",
+   "No, because `setSelf` works only before the first render ends"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "A list has 1000 rows in one array atom, and each edit re-renders all rows. What is a fix?",
+  "options": [
+   "Use `useSetRecoilState` in each row to skip all renders of the rows",
+   "Move the array into a selector with a `get` function that returns rows",
+   "Use `atomFamily`, so each row has its own atom, and read it by id",
+   "Put `React.memo` on the list component, which then blocks all updates of rows"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "A component calls a setter directly in the render body. What is the risk?",
+  "options": [
+   "The setter runs only on the server side, so the UI on the client stays old",
+   "It updates state during render, which causes warnings or a render loop",
+   "The setter is ignored until the component mounts, then it works as normal",
+   "Recoil queues the update and runs it after the next user event in the page"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "68",
+  "question": "What does `<RecoilRoot override={false}>` do inside another `RecoilRoot`?",
+  "options": [
+   "It makes a new store and copies all the atom values of the parent root",
+   "It uses the store of the parent root and does not make a new one",
+   "It makes the atoms of the parent read-only for all of its child components",
+   "It resets the whole state of the parent store when the child root mounts"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "Why must a selector `get` function be pure?",
+  "options": [
+   "React runs it twice in each render, also in production builds",
+   "Recoil can cache it and run it at any time, in any order, many times",
+   "Recoil sends its result to a server so that a service can check it",
+   "It runs one time only per root, so side effects would not repeat"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "An atom has a selector as its `default`. Then a user sets the atom. What happens?",
+  "options": [
+   "The atom still follows the selector and the new set call is ignored",
+   "The atom merges the new value with the value of the selector default",
+   "Recoil deletes the selector from the store and keeps only the atom",
+   "The atom keeps the new value and stops following the selector"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "What does `useGotoRecoilSnapshot` do?",
+  "options": [
+   "It opens a page in the browser that shows the snapshot",
+   "It sets the whole store to the state that is stored in a snapshot",
+   "It compares two snapshots and returns the differences",
+   "It copies the snapshot to the clipboard as JSON"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "72",
+  "question": "What does `waitForAll([a, b])` return?",
+  "options": [
+   "A selector that gives an array of both values when both are ready",
+   "A Promise that gives only the value of the first atom that is ready",
+   "A selector that gives the values of both atoms and ignores all errors",
+   "An array of two hooks that you must call in the same order each time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "73",
+  "question": "What does `dangerouslyAllowMutability: true` do on an atom?",
+  "options": [
+   "It lets components write to the atom value without a setter function",
+   "It lets two roots share the atom value without a bridge component",
+   "It stops Recoil from freezing the value in development",
+   "It turns off the cache of all the selectors that read the atom"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "74",
+  "question": "You move a Recoil atom to Jotai. What do you remove from the definition?",
+  "options": [
+   "The `key`, because Jotai atoms need no string key to identify them",
+   "The `default`, because Jotai atoms start empty",
+   "The initial value, because Jotai reads it from storage",
+   "The atom itself, because Jotai uses reducers only"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "What replaces a Recoil read-only `selector` in Jotai?",
+  "options": [
+   "A store method: `store.derive(a, x => x * 2)`",
+   "A hook: `useSelector(a, x => x * 2)`",
+   "A derived atom: `atom(get => get(a) * 2)`",
+   "A reducer: `atomReducer(a, x => x * 2)`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "How does a Zustand component read only one field, like a Recoil atom?",
+  "options": [
+   "With a selector function: `useStore(s => s.count)`, which picks one field",
+   "With a string key and a path: `useStore('count')`",
+   "With an atom object: `useStore(countAtom)` from the store",
+   "With a family call: `useStore.family('count')` for the field"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "77",
+  "question": "An app has 200 Recoil atoms. What is the safest way to move to another library?",
+  "options": [
+   "Rewrite all 200 atoms in one release and delete Recoil from the package at once",
+   "Freeze the app for months and rewrite all atoms in one long-lived branch",
+   "Move one feature at a time and keep both libraries until the end",
+   "Add an adapter for each atom and never remove Recoil from the project"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "78",
+  "question": "Why does Jotai not need a `RecoilRoot` like component?",
+  "options": [
+   "It keeps atoms in `window`, so React does not need a root",
+   "It stores atoms in each component, so no root is needed",
+   "It has a default store, so a `Provider` is optional",
+   "It needs a root, but a build plugin adds it"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "79",
+  "question": "A selector reads `get(itemFamily(get(selectedIdAtom)))`. Is this allowed?",
+  "options": [
+   "Yes, the parameter can come from an atom, and both are tracked",
+   "No, a family parameter must be a fixed value that you know at build time",
+   "Yes, but the selector then tracks only the family and not the atom",
+   "No, a selector cannot call a family function inside its `get` function"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "80",
+  "question": "A team wants to leave Recoil, and its state is mostly derived values. Which target fits best?",
+  "options": [
+   "Zustand, because its store computes and caches derived values for you",
+   "Jotai, because derived atoms work like Recoil selectors",
+   "Redux, because reducers cache derived values by key",
+   "React Context, because it tracks the dependencies of derived values"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "81",
+  "question": "An async selector calls `get(userSel)` and then `get(ordersSel)`, both async. Why is it slow?",
+  "options": [
+   "Recoil runs each `get` in a new worker thread, which costs a lot of time at start",
+   "Recoil sends all requests at once but sorts the results by their key at the end",
+   "Each pending `get` pauses the selector, so the requests run in sequence",
+   "The second `get` clears the cache of the first selector, so it loads again"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "82",
+  "question": "A long session uses `atomFamily` with thousands of ids. What is the risk?",
+  "options": [
+   "Recoil limits a family to 100 atoms and drops the oldest atom first",
+   "Each used parameter makes an atom that Recoil keeps, so memory can grow",
+   "Recoil removes atoms at once when no component reads them, so there is no risk",
+   "Each atom copies all other atoms of the same family, so the CPU use grows a lot"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "A library renders children in a second React root. Atoms fail with 'must be used inside RecoilRoot'. What is the fix?",
+  "options": [
+   "Use `useRecoilBridgeAcrossReactRoots_UNSTABLE` to bridge the roots",
+   "Add a second `RecoilRoot` inside the other root and share one key map between them",
+   "Pass `override={false}` to the first `RecoilRoot` so it spans all roots",
+   "Move all atoms into one big selector that both React roots can read"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "A `selectorFamily` gets thousands of changing parameters. Which option limits the memory of its cache?",
+  "options": [
+   "`dangerouslyAllowMutability` with a `maxSize` number of cache entries",
+   "`retainedBy_UNSTABLE` with a `maxAge` in seconds for each cache entry",
+   "`cachePolicy_UNSTABLE` with `eviction: 'fifo'` and a `maxSize` number",
+   "`cachePolicy_UNSTABLE` with `eviction: 'lru'` and a `maxSize`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "Why is an archived repository a risk when React ships a new major version?",
+  "options": [
+   "The npm registry blocks installs of archived packages with new peer ranges",
+   "The old version stops working because React checks the package date",
+   "No maintainer fixes compatibility bugs, so you must patch or fork",
+   "Meta removes the package from the registry after one year"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "86",
+  "question": "Selector A reads async selector B. B can fail, but A must still return a value. What does A do?",
+  "options": [
+   "It sets `catchErrors: true` in the options of selector A",
+   "It calls `useRecoilValueLoadable(B)` inside the `get` function of selector A",
+   "It returns `B` as a Promise, and `RecoilRoot` hides the error",
+   "It reads `get(noWait(B))` and checks the `state` of the Loadable"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "A writable selector sets two atoms in `set`. Can a component render with only one of them changed?",
+  "options": [
+   "Yes, the first write renders at once before the second write starts",
+   "Yes, if the two atoms are defined in different files of the project",
+   "No, Recoil applies both writes as one batch, so renders see both new values",
+   "No, but only if you call `startTransition` before the first write call"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "88",
+  "question": "An atom effect reads `localStorage` with `setSelf` on the first render in Next.js. What is the risk?",
+  "options": [
+   "The server crashes because `setSelf` is not available there",
+   "The atom value stays empty because effects never run in the browser",
+   "The browser blocks `localStorage` after the first atom read",
+   "The first client render differs from the server HTML, so hydration can fail"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "89",
+  "question": "A team caches REST responses in async selectors. Which feature of a server-state library do they miss?",
+  "options": [
+   "Typed hooks, because selectors have no support for TypeScript types in `get`",
+   "Stale time, background refetch, and retry rules without custom code",
+   "Suspense, because async selectors cannot suspend a component that reads them",
+   "A shared cache, because selectors work in the one component that made them"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "90",
+  "question": "After a new evaluation, a selector returns a new object with equal content. What happens to its subscribers?",
+  "options": [
+   "They re-render, because Recoil compares the result by reference",
+   "They do not re-render, because Recoil compares the content deeply",
+   "They re-render only if the object has a new key",
+   "They do not re-render until the next change of an atom"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "In Next.js you move to Jotai and use its default store on the server. What is the risk?",
+  "options": [
+   "The default store is read-only on the server, so all writes fail",
+   "The default store needs a `RecoilRoot` around it, so the app crashes",
+   "The default store clears itself after every render on the server",
+   "State can leak between requests, because they share one store"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "92",
+  "question": "You move an async selector to Zustand. What do you add yourself?",
+  "options": [
+   "State for loading and error, because the store has no async state",
+   "A cache key for each call, because the store has no cache of its own",
+   "A provider with a fallback, because the store throws promises to React",
+   "A `get` function with dependencies, because the store tracks none for you"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "How can one Zustand store replace an `atomFamily` of items?",
+  "options": [
+   "Create a new store with `create` in each render of each row component",
+   "Keep a record by id in the store, and select `s.items[id]`",
+   "Add a new key to the store with `set` for each hook call of a row",
+   "Use `useStore.family(id)` to make a small store for each item id"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "94",
+  "question": "How do you get all items that an `atomFamily` created?",
+  "options": [
+   "Call `atomFamily.getAll()` to get every atom that the family made",
+   "Keep an atom with the list of ids, and read each item by id",
+   "Read the family without a parameter to get an array of its atoms",
+   "Use `useRecoilValue(family)` with the wildcard '*' as the parameter"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "A team uses `useRecoilSnapshot` for undo history. What changes after a move to Zustand?",
+  "options": [
+   "There is no snapshot API, so you store past states yourself",
+   "Zustand has the same `useSnapshot` hook, so the code works as before",
+   "Zustand keeps history by default and you call `undo()` on the store",
+   "The `persist` middleware stores all past states for undo in memory"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "96",
+  "question": "When does an atom effect first run?",
+  "options": [
+   "When the module that defines the atom is imported",
+   "When `RecoilRoot` mounts, for all atoms at once",
+   "When the atom is first used inside a `RecoilRoot`, not at import",
+   "After the first change of the atom by a setter"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "In `useRecoilCallback`, you call `set(a, 5)` and then read `a` with `snapshot.getLoadable(a)`. What do you get?",
+  "options": [
+   "The value 5, because `set` updates the snapshot at once for later reads",
+   "The old value, because the snapshot is from before the callback",
+   "A loading state, until React finishes the next render of the root",
+   "An error, because you cannot read an atom after you write to it"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "A family gets `{ a: 1, b: 2 }` in one file and `{ b: 2, a: 1 }` in another. How many atoms exist?",
+  "options": [
+   "One, but only when the keys sit in alphabetical order in both files",
+   "Two, because the key order is different in the two files of the app",
+   "One, because Recoil sorts object keys when it builds the cache key",
+   "Two, but Recoil merges their values when both atoms exist in a root"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "What does the separate `recoil-sync` package add?",
+  "options": [
+   "It syncs two `RecoilRoot` stores that live in different tabs",
+   "It syncs atoms with the state of class components in the tree",
+   "It syncs selectors with a GraphQL server by default setup",
+   "It syncs atoms with external stores, such as the URL or storage"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "A small stable app uses Recoil and has no known bugs. What is a sound decision?",
+  "options": [
+   "Pin the version, add tests, and move to a maintained library step by step",
+   "Upgrade Recoil to the newest major version each month to get all the fixes",
+   "Rewrite the whole state layer at once, because archived code always breaks soon",
+   "Fork Recoil into the company repo and add all the new features yourself later"
+  ],
+  "correct_index": 0
+ }
+]

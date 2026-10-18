@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What does 'bundle size' mean for a web application?",
+    "options": [
+      "The number of source files that the build tool reads",
+      "The memory that the JavaScript uses while the page runs",
+      "The size of the JavaScript files that the browser downloads",
+      "The disk space that the build tool and its plugins use"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "2",
+    "question": "Why does a large JavaScript bundle hurt users on slow networks?",
+    "options": [
+      "The browser must download and run more code first",
+      "The server must compile the code again for each new user",
+      "The browser refuses to cache files that are larger than 100 KB",
+      "The CDN rejects JavaScript files that are larger than 1 MB"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "3",
+    "question": "What is code splitting?",
+    "options": [
+      "Dividing the source code into separate repositories for each team",
+      "Removing the comments and white space from the code before release",
+      "Moving the JavaScript execution from the browser to the server",
+      "Dividing a bundle into smaller chunks that load when needed"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "4",
+    "question": "What does lazy loading a route mean?",
+    "options": [
+      "The code for the route loads after the other routes",
+      "The code for the route loads on the server, not in the browser",
+      "The code for the route loads only when the user opens it",
+      "The code for the route stays in the cache after the first visit"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "5",
+    "question": "What does tree shaking do?",
+    "options": [
+      "It sorts the modules in the bundle by their file size",
+      "It removes all the comments from the source files before the build",
+      "It removes exports that no code uses from the final bundle",
+      "It creates one separate chunk for each module in the project"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "6",
+    "question": "Which module syntax gives the best results for tree shaking?",
+    "options": [
+      "CommonJS with require and module.exports",
+      "AMD with define and require callbacks",
+      "UMD wrappers with a global fallback",
+      "ES modules with import and export"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "7",
+    "question": "Why is tree shaking hard for CommonJS modules?",
+    "options": [
+      "The bundler cannot parse the module.exports syntax of a file",
+      "The require calls can run at any time, so tools cannot know the used exports",
+      "CommonJS files are always larger than the same ES module files",
+      "Node.js blocks CommonJS modules in production builds of an app"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "8",
+    "question": "What does `import('./chart.js')` return?",
+    "options": [
+      "The module object, right away",
+      "A function that loads the module later",
+      "An iterator over the exports of the module",
+      "A Promise that resolves to the module"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "9",
+    "question": "What does a minifier do?",
+    "options": [
+      "It converts the code to an older JavaScript version for old browsers",
+      "It makes the code smaller, for example with shorter names",
+      "It joins all files into one file and keeps all names",
+      "It checks the code for style errors and bad patterns"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "10",
+    "question": "What does gzip do to a JavaScript file that the server sends?",
+    "options": [
+      "It removes the code that the page does not use",
+      "It compresses the response, so fewer bytes go over the network",
+      "It changes the code to a form that the parser reads faster",
+      "It makes the file smaller in the cache of the browser"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "11",
+    "question": "Which request header tells the server which compression the browser supports?",
+    "options": [
+      "`Content-Encoding`",
+      "`Accept-Ranges`",
+      "`Accept-Encoding`",
+      "`Content-Length`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "12",
+    "question": "Which response header shows that the server used Brotli?",
+    "options": [
+      "`Accept-Encoding: br`",
+      "`Content-Encoding: br`",
+      "`Transfer-Encoding: br`",
+      "`Content-Type: br`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "13",
+    "question": "Which statement about Brotli and gzip is true for text files such as JavaScript?",
+    "options": [
+      "Brotli usually gives smaller text files than gzip does",
+      "Gzip usually gives smaller text files than Brotli does",
+      "Brotli works only for fonts and images, not for text files",
+      "Gzip works in browsers only over HTTP/1.1 connections"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "14",
+    "question": "What does `webpack-bundle-analyzer` show?",
+    "options": [
+      "A list of the npm packages that have known security problems in them",
+      "The time that each module needs to run in the browser of a user",
+      "A graph of the Git commits that changed the bundle",
+      "An interactive treemap of the modules in each bundle and their size"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "15",
+    "question": "What does `\"sideEffects\": false` in package.json tell the bundler?",
+    "options": [
+      "Unused modules of the package are safe to remove",
+      "The package does not use the network or the file system",
+      "The package must load before all other code in the app",
+      "The package must not be minified by the build tool"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "16",
+    "question": "What is a polyfill?",
+    "options": [
+      "A tool that turns TypeScript code into plain JavaScript",
+      "A rule that blocks unsafe browser features on a page",
+      "Code that adds a missing feature to an old browser",
+      "A cache that keeps the results of API calls"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "17",
+    "question": "What does the `browserslist` setting define?",
+    "options": [
+      "The browsers that can open the analytics reports",
+      "The browsers that the end-to-end tests use only",
+      "The largest bundle size allowed for each browser",
+      "The browsers that the build tools must support"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "18",
+    "question": "What is a duplicate package in a bundle?",
+    "options": [
+      "A package that two apps in the same repository both use as a dependency",
+      "The same library included more than once, often in different versions",
+      "A package that has the same name as a local source file in the app",
+      "A package that appears in both dependencies and devDependencies"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "19",
+    "question": "Which command shows why a package is in the dependency tree?",
+    "options": [
+      "`npm audit <package>`",
+      "`npm outdated <package>`",
+      "`npm ls <package>`",
+      "`npm prune <package>`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "20",
+    "question": "What is a chunk in a bundler?",
+    "options": [
+      "A single function inside one module of the source",
+      "A part of the source map file for one module",
+      "An output file that contains a group of modules",
+      "An entry in the cache of the development server"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "21",
+    "question": "A teammate writes `import _ from 'lodash'` to use one function. What is the risk?",
+    "options": [
+      "The function runs slower at run time",
+      "The whole library can go into the bundle",
+      "The build fails because of a missing named export",
+      "The import is blocked in strict mode"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "22",
+    "question": "What does Bundlephobia show?",
+    "options": [
+      "The number of downloads of a package for each day",
+      "The size of an npm package before you install it",
+      "The known security problems in a package",
+      "The license of each dependency of a package"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "23",
+    "question": "Which plugin shows a visual size map of a Vite production build?",
+    "options": [
+      "`vite-plugin-inspect`",
+      "`@vitejs/plugin-react`",
+      "`vite-plugin-pwa`",
+      "`rollup-plugin-visualizer`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "24",
+    "question": "Which React function loads a component only when React must render it?",
+    "options": [
+      "`React.lazy`",
+      "`React.memo`",
+      "`React.forwardRef`",
+      "`React.cloneElement`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "25",
+    "question": "What must wrap a `React.lazy` component to show a loading state?",
+    "options": [
+      "`Suspense`",
+      "`StrictMode`",
+      "`Fragment`",
+      "`Profiler`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "26",
+    "question": "What is dead code in a bundle?",
+    "options": [
+      "Code that throws an error when the page runs in a browser",
+      "Code that the unit tests of the project do not cover",
+      "Code that the application never uses or never runs",
+      "Code that uses an old language syntax from before ES2015"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "27",
+    "question": "Which webpack setting turns on minification by default?",
+    "options": [
+      "`mode: 'development'`",
+      "`devtool: 'source-map'`",
+      "`mode: 'production'`",
+      "`target: 'web'`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "28",
+    "question": "What is the purpose of a source map?",
+    "options": [
+      "It lists the modules that tree shaking removed",
+      "It makes the minified code run faster in the browser",
+      "It shows the order in which the chunks load",
+      "It links minified code to the original source for debugging"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "29",
+    "question": "Why do build tools add a content hash to file names?",
+    "options": [
+      "The hash makes the file smaller after the server compresses it",
+      "The hash tells the server that it must compress the file",
+      "Files can be cached for long and still update after a change",
+      "The hash hides the original source code from the users"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "30",
+    "question": "Which header lets the browser keep a hashed JavaScript file for one year?",
+    "options": [
+      "`Cache-Control: no-cache, must-revalidate, max-age=0`",
+      "`Cache-Control: no-store, private`",
+      "`Cache-Control: public, max-age=31536000, immutable`",
+      "`Cache-Control: private, must-revalidate`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "31",
+    "question": "Why use `lodash-es` and not `lodash` in a bundled app?",
+    "options": [
+      "It has fewer functions than the main lodash package",
+      "It adds a polyfill for each function in the package",
+      "Its functions run faster than the CommonJS functions",
+      "Its ES modules let the bundler remove unused functions"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "32",
+    "question": "What is a vendor chunk?",
+    "options": [
+      "A chunk with the code of the main app only",
+      "A chunk with the libraries from node_modules",
+      "A chunk with the CSS files of the project only",
+      "A chunk with the code of the service worker"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "33",
+    "question": "Why do teams put libraries in a separate vendor chunk?",
+    "options": [
+      "Libraries run faster on the CPU when they are in a separate chunk",
+      "Libraries change less often, so the browser keeps the cached chunk longer",
+      "The bundler can then skip the minification of the libraries",
+      "Ad blockers cannot block a separate vendor chunk of libraries"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "34",
+    "question": "What is a barrel file?",
+    "options": [
+      "A file that stores all the environment variables of the app",
+      "An index file that re-exports modules from a folder",
+      "A file that lists all the lazy loaded routes",
+      "A file that merges all the CSS into one file"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "35",
+    "question": "What does a tool such as PurgeCSS do?",
+    "options": [
+      "It joins all the CSS files into one request",
+      "It converts CSS rules to inline JavaScript styles",
+      "It removes CSS rules that no page uses",
+      "It adds vendor prefixes for old browsers"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "36",
+    "question": "What does a minifier do when it mangles names?",
+    "options": [
+      "It replaces local variable names with short names",
+      "It removes all the variables that the code never reads",
+      "It sorts the keys of each object by name",
+      "It replaces every string in the code with a number"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "37",
+    "question": "Which Terser option removes `console.log` calls from a production build?",
+    "options": [
+      "`mangle_console`",
+      "`strip_logs`",
+      "`dead_console`",
+      "`drop_console`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "38",
+    "question": "What does `@babel/preset-env` do?",
+    "options": [
+      "It compiles JSX syntax into plain function calls for React",
+      "It adds static type checks to the code during the build",
+      "It compiles only the syntax that the target browsers need",
+      "It joins all the modules into one single file"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "39",
+    "question": "What does `useBuiltIns: 'usage'` do in `@babel/preset-env`?",
+    "options": [
+      "It adds polyfills only for the features that the code uses",
+      "It adds every available polyfill to every file in the project",
+      "It removes at run time the polyfills that the browser has",
+      "It checks the polyfills for known security problems"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "40",
+    "question": "What is `core-js`?",
+    "options": [
+      "A framework for server side rendering of React apps",
+      "A tool that analyzes the size of a bundle",
+      "A package manager for browser code",
+      "A library with polyfills for many ECMAScript features"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "41",
+    "question": "Why can a modern-only build make a smaller bundle?",
+    "options": [
+      "Modern browsers need less transpiled code and fewer polyfills",
+      "Modern browsers do not need minified code to run fast",
+      "Modern syntax always uses shorter names than old syntax",
+      "Modern browsers read a different compression format"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "42",
+    "question": "Which script tag type loads code only in browsers that support ES modules?",
+    "options": [
+      "`type=\"text/javascript\"`",
+      "`type=\"text/babel\"`",
+      "`type=\"module\"`",
+      "`type=\"application/ecmascript\"`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "43",
+    "question": "Which library offers a small alternative to React with a compatible API?",
+    "options": [
+      "Preact",
+      "Angular",
+      "Ember",
+      "Svelte"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "44",
+    "question": "What is a bundle size budget in CI?",
+    "options": [
+      "A limit on the number of npm packages in the repository",
+      "A fixed number of builds that a team can run each month",
+      "A size limit that fails the CI build when exceeded",
+      "A limit on the time that the minifier can use"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "45",
+    "question": "Which webpack option shows a warning when an asset is too large?",
+    "options": [
+      "`optimization.minimize`",
+      "`output.clean`",
+      "`performance.hints`",
+      "`resolve.alias`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "46",
+    "question": "A server uses gzip. Is minification still useful?",
+    "options": [
+      "No, gzip removes the same data as a minifier",
+      "Yes, minified code is still smaller after gzip",
+      "No, minified code does not compress with gzip",
+      "Yes, but only for CSS files and not for JavaScript"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "47",
+    "question": "Which files gain the most from gzip or Brotli?",
+    "options": [
+      "Text files such as JavaScript, CSS, and HTML",
+      "Images in formats such as JPEG, PNG, and WebP",
+      "Fonts in the WOFF2 format, which are already compressed",
+      "Video files such as MP4 or WebM"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "48",
+    "question": "Which link hint asks the browser to fetch a future route chunk when it is idle?",
+    "options": [
+      "`rel=\"preload\"`",
+      "`rel=\"preconnect\"`",
+      "`rel=\"prefetch\"`",
+      "`rel=\"dns-prefetch\"`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "49",
+    "question": "What does the comment `/* webpackChunkName: \"chart\" */` in `import()` do?",
+    "options": [
+      "It stops webpack from minifying the chunk",
+      "It marks the chunk as the first to load",
+      "It sets the cache time for the chunk",
+      "It sets the name of the generated chunk"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "50",
+    "question": "Which tool finds npm packages that the project does not use?",
+    "options": [
+      "`depcheck`",
+      "`npm audit`",
+      "`npm dedupe`",
+      "`npm outdated`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "51",
+    "question": "A module has `export default { a, b, c }`. Only `a` is used. What is the problem for tree shaking?",
+    "options": [
+      "The bundler removes the object and breaks the import",
+      "The bundler usually keeps the whole object",
+      "The bundler keeps only `a` but renames the key",
+      "The bundler cannot minify the object in the file"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "52",
+    "question": "Tree shaking does not work. The Babel config has `modules: 'commonjs'`. What is the cause?",
+    "options": [
+      "Babel removes the `sideEffects` field from the package.json file of the app",
+      "Babel changes import and export to require before the bundler reads them",
+      "Babel adds all the polyfills to every module",
+      "Babel makes the source maps too large for the bundler"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "53",
+    "question": "A package has `sideEffects: false`. A file only runs `import './theme.css'`. What can happen?",
+    "options": [
+      "The bundler loads the CSS two times",
+      "The bundler moves the CSS to a lazy chunk",
+      "The build fails with a parse error on the CSS file",
+      "The bundler can drop the CSS import"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "54",
+    "question": "A team uses `preload` for the chunks of every route. What is the risk?",
+    "options": [
+      "The browser runs the code of each chunk before the page fully loads",
+      "The browser ignores the links and loads nothing at all",
+      "Unneeded chunks compete with critical resources for bandwidth",
+      "The server compresses the chunks two times each"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "55",
+    "question": "A team lazy loads the hero component at the top of the page. What is the likely result?",
+    "options": [
+      "The component loads faster from the cache",
+      "An extra request delays the first paint",
+      "The bundle grows because of the Suspense code",
+      "The component renders two times on every visit"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "56",
+    "question": "After a deploy, some users see 'Loading chunk 12 failed'. What is the likely cause?",
+    "options": [
+      "The browser of the user does not support Brotli",
+      "The new chunk files have a content hash in their names",
+      "Old pages request chunks that the new deploy removed",
+      "The chunk names are longer than the URL limit allows"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "57",
+    "question": "In webpack 5, what does the default `splitChunks.chunks: 'async'` mean?",
+    "options": [
+      "All chunks are split, including the initial entry chunks",
+      "Chunks are split only when the page is idle",
+      "Chunks load in parallel and not in order",
+      "Only chunks from dynamic imports are split by default"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "58",
+    "question": "`npm ls lodash` shows versions 3 and 4. Which action can make the bundle use one version?",
+    "options": [
+      "Add `sideEffects: false` to the package.json of the app itself",
+      "Use `npm dedupe` or `overrides` to align the versions",
+      "Change the webpack mode to production for the build",
+      "Turn on Brotli for the lodash files on the server"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "59",
+    "question": "The bundle has all the Moment.js locales. Which webpack plugin removes the unused ones?",
+    "options": [
+      "`DefinePlugin`",
+      "`ProvidePlugin`",
+      "`IgnorePlugin`",
+      "`HotModuleReplacementPlugin`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "60",
+    "question": "Why do bundlers replace `process.env.NODE_ENV` with `\"production\"`?",
+    "options": [
+      "The minifier can remove the development-only branches",
+      "The browser can then switch modes after the page loads",
+      "The environment variables become safe to read at run time",
+      "The source maps can then be added to the build"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "61",
+    "question": "A server compresses each JS response with Brotli level 11. What is the problem?",
+    "options": [
+      "Level 11 makes the files larger than gzip does",
+      "Browsers cannot decode level 11 data",
+      "The cache stops working for compressed files",
+      "High CPU use slows the response; precompress at build time instead"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "62",
+    "question": "Which size shows the network cost of a JavaScript file best?",
+    "options": [
+      "The size of the source file before the build",
+      "The size after the build and before compression",
+      "The size of the source map file for the bundle",
+      "The size after gzip or Brotli compression"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "63",
+    "question": "In webpack, a teammate writes `import('./pages/' + name)`. What does the bundler do?",
+    "options": [
+      "It makes a chunk for each file in that folder",
+      "It fails because the path is not a plain string",
+      "It loads the files from the server at build time",
+      "It adds all the files of the folder to the main bundle"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "64",
+    "question": "What does scope hoisting do in a production build?",
+    "options": [
+      "It moves all the variables to the global scope",
+      "It joins modules into one scope and removes wrapper functions",
+      "It moves the imports to the top of the HTML file",
+      "It loads the modules in a parallel order"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "65",
+    "question": "The app targets modern browsers, but the bundle has 80 KB of `core-js`. What do you check first?",
+    "options": [
+      "The gzip level that the server uses for the file",
+      "The `browserslist` targets and the preset-env settings",
+      "The version of the source map format",
+      "The number of lazy loaded routes in the router configuration"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "66",
+    "question": "Why can `last 10 versions` in `browserslist` make a bundle larger?",
+    "options": [
+      "It includes old browsers, so Babel adds more transforms and polyfills",
+      "It makes the bundler include 10 copies of each file",
+      "It turns off tree shaking for the old versions",
+      "It stops the minifier from mangling the names"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "67",
+    "question": "The production bundle is three times larger than expected. Its last line is a `sourceMappingURL=data:` comment. What is the cause?",
+    "options": [
+      "The minifier is off",
+      "Inline source maps are on",
+      "Brotli data is inside the file",
+      "Tree shaking is off"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "68",
+    "question": "A library ships CJS and ESM. Which `exports` condition lets bundlers pick the ESM file?",
+    "options": [
+      "`require`",
+      "`import`",
+      "`node`",
+      "`types`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "69",
+    "question": "The analyzer shows a 400 KB chart library used on one admin page. What is the best first step?",
+    "options": [
+      "Move the library to a separate vendor chunk in the config",
+      "Move the library to `devDependencies`",
+      "Turn on source maps for the library",
+      "Load that page or component with a dynamic import"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "70",
+    "question": "`lazy(() => import('./Chart'))` fails. `Chart.js` has only a named export `Chart`. What is the fix?",
+    "options": [
+      "Wrap the import call in another `Suspense` component",
+      "Use `require` and not `import` for the file",
+      "Return `{ default: m.Chart }` from the import promise",
+      "Rename the file to `Chart.lazy.js` so React finds it"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "71",
+    "question": "What is a risk of too many tiny chunks?",
+    "options": [
+      "The browser cannot cache so many small chunk files",
+      "More requests and less gain from compression",
+      "The chunks cannot use content hashes",
+      "Tree shaking stops working"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "72",
+    "question": "What does `/*#__PURE__*/` before a function call tell the minifier?",
+    "options": [
+      "The call has no side effects and can go if unused",
+      "The call must run before all the other code in the file",
+      "The call is safe to run in a web worker",
+      "The call always returns the same result"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "73",
+    "question": "A barrel file re-exports 200 modules. Why can importing one name cost much?",
+    "options": [
+      "The barrel file turns off minification for the project",
+      "Each re-export makes a new HTTP request in the browser",
+      "The barrel file forces CommonJS output in the bundle",
+      "Tools may load and keep all modules because of possible side effects"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "74",
+    "question": "Why do some teams use esbuild to minify and not Terser?",
+    "options": [
+      "It is much faster, but its output is often larger",
+      "It gives smaller output than Terser in all cases",
+      "It is the only tool that can mangle names",
+      "It also does type checks while it minifies"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "75",
+    "question": "Where should an app call `import()` for a PDF export library?",
+    "options": [
+      "At the top of the main entry file",
+      "Inside the render function of the root component",
+      "In the HTML head before the app starts",
+      "Inside the click handler of the export button"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "76",
+    "question": "A CDN has Brotli and gzip files for one URL. Which header must the cache vary on?",
+    "options": [
+      "`Vary: Accept-Language`",
+      "`Vary: Accept-Encoding`",
+      "`Vary: Content-Encoding`",
+      "`Vary: Cache-Control`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "77",
+    "question": "The analyzer shows stat, parsed, and gzip sizes. Which one is the size after minification and before compression?",
+    "options": [
+      "Parsed size",
+      "Stat size",
+      "Gzip size",
+      "Download size"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "78",
+    "question": "What does `optimization.usedExports` do in webpack?",
+    "options": [
+      "It only lists the exports in the stats file",
+      "It marks unused exports so the minifier can remove them",
+      "It makes all exports available to dynamic imports",
+      "It renames the exports to short names"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "79",
+    "question": "You need an HTTP client in a modern browser app. What is the bundle benefit of native `fetch`?",
+    "options": [
+      "Fetch requests use a smaller compression format",
+      "Fetch removes the need for a polyfill in all browsers",
+      "No client library code goes into the bundle",
+      "Tree shaking removes the fetch code from the bundle"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "80",
+    "question": "How can an app load a polyfill only in browsers that need it?",
+    "options": [
+      "Test for the feature, then use a dynamic import for the polyfill",
+      "Add the polyfill to every page and hide it with CSS",
+      "Set `sideEffects: false` for the polyfill package",
+      "Put the polyfill in the vendor chunk of the app"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "81",
+    "question": "A library has `sideEffects: false`, but its entry file sets `window.myLib = {}`. What failure can happen?",
+    "options": [
+      "The development build fails with a syntax error",
+      "The production build removes that code, so the app fails only there",
+      "The bundler adds the code two times to the output",
+      "The minifier renames `window` in the file"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "82",
+    "question": "A class has `Foo.registry = new Map()` after its definition. Nothing uses it. Why may the bundler keep it?",
+    "options": [
+      "The assignment can have a side effect, so removal is unsafe",
+      "Classes can never be tree shaken by any bundler in any mode",
+      "Map objects are exported by default in every module",
+      "The bundler keeps all the code after a class"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "83",
+    "question": "One `vendors` chunk holds all node_modules. A patch update changes one small package. What happens to users?",
+    "options": [
+      "Only the changed package downloads again",
+      "The browser keeps the old chunk, which now has stale code",
+      "The service worker updates the package in place",
+      "The hash of the whole chunk changes, so users download all of it again"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "84",
+    "question": "What does `optimization.runtimeChunk: 'single'` do in webpack?",
+    "options": [
+      "It joins all the chunks into one file together with the runtime",
+      "It removes the runtime from the production build",
+      "It moves the runtime to its own file so hashes stay stable",
+      "It loads the runtime only when a dynamic import runs"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "85",
+    "question": "Two bundles have the same gzip size. Bundle A has more uncompressed code. Which cost is higher for A?",
+    "options": [
+      "Network transfer time",
+      "Storage on the CDN",
+      "Parse and compile time on the device",
+      "Compression time on the server at run time"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "86",
+    "question": "In a monorepo, the bundle has two copies of React. What is the likely cause?",
+    "options": [
+      "Two packages resolve React from different `node_modules` folders",
+      "Tree shaking keeps a separate copy for each entry point",
+      "The minifier copies React into each chunk that uses it",
+      "Dynamic imports always make a duplicate of each shared library"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "87",
+    "question": "Two micro frontends each bundle their own library copy. Which feature shares one copy at run time?",
+    "options": [
+      "Module Federation `shared` dependencies",
+      "Rollup `treeshake` options for the shared libraries",
+      "Babel `transform-runtime` for the shared helpers",
+      "Terser `toplevel` option for the shared code"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "88",
+    "question": "A route chunk renders and then starts a lazy import for a child, so requests run in sequence. What is a fix?",
+    "options": [
+      "Start loading the child chunk at route match",
+      "Turn off the content hashes for the child chunk files",
+      "Increase the gzip level of the child chunk on the server",
+      "Wrap the child component in `React.memo` before it renders"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "89",
+    "question": "Why is a polyfill `<script>` from a third-party CDN risky?",
+    "options": [
+      "The script blocks the browser from using HTTP caching at all",
+      "The script cannot work with ES modules",
+      "The remote owner can change it and run code in your page",
+      "The script runs two times in strict mode"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "90",
+    "question": "In webpack 5 production defaults, two async chunks import the same 5 KB module. What happens?",
+    "options": [
+      "The module is copied into both chunks because of `minSize`",
+      "The module goes into a new shared chunk that both chunks load",
+      "The module goes into the main bundle that loads at first",
+      "The build fails with a warning about the duplicate module"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "91",
+    "question": "A team turns on aggressive property mangling. What failure can happen?",
+    "options": [
+      "Code breaks when it reads property names from JSON or APIs",
+      "The source maps stop working in Chrome and other browsers",
+      "The bundle grows because the names become longer than before",
+      "Tree shaking removes all the object properties from the code"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "92",
+    "question": "How do React Server Components reduce the client bundle?",
+    "options": [
+      "They compress all the client code with Brotli at build time",
+      "They load all client code lazily with polyfills",
+      "They remove the need to hydrate any component",
+      "Server component code and its libraries stay on the server"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "93",
+    "question": "Every file has its own copy of the Babel helper functions. Which tool shares them?",
+    "options": [
+      "`@babel/plugin-transform-react-jsx`",
+      "`@babel/plugin-syntax-jsx`",
+      "`@babel/preset-typescript`",
+      "`@babel/plugin-transform-runtime`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "94",
+    "question": "Code uses `import * as ns from './m'` and then reads `ns[name]`. What happens to tree shaking?",
+    "options": [
+      "The bundler must keep all exports of the module",
+      "The bundler keeps only the exports named `name`",
+      "The bundler keeps only the default export",
+      "The bundler throws an error at build time"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "95",
+    "question": "A service worker precaches all lazy chunks at install. What is the effect?",
+    "options": [
+      "The browser skips the HTTP cache for all of the chunks",
+      "The chunks load more slowly on all later visits",
+      "The service worker blocks dynamic import() calls in the browser",
+      "The first visit downloads all chunks, so lazy loading gains little"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "96",
+    "question": "Which `sideEffects` value in package.json says that only CSS files have side effects?",
+    "options": [
+      "`\"css\"`",
+      "`[\"*.css\"]`",
+      "`{ \"css\": true }`",
+      "`[\"!*.css\"]`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "97",
+    "question": "Vite loads an async chunk `a` that imports chunk `b`. What does Vite add to avoid a waterfall?",
+    "options": [
+      "`prefetch` hints in the HTML file",
+      "A service worker precache for chunk `b`",
+      "An `async` script tag for chunk `b`",
+      "`modulepreload` links for chunk `b`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "98",
+    "question": "A dynamic import fails with a network error in production. What is good handling?",
+    "options": [
+      "Ignore the error because the browser always retries the chunk",
+      "Use `try/catch` around `import()` without `await`",
+      "Switch to a static import at run time",
+      "Catch the rejection, then retry or reload the page"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "99",
+    "question": "A package publishes both ESM and CJS builds. What is the dual package hazard?",
+    "options": [
+      "The bundler always picks the CJS build and ignores the ESM build",
+      "The two builds share one cache and break each other",
+      "Node.js refuses to load a package with two builds",
+      "The app can load both builds, so library state and bundle size double"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "100",
+    "question": "Terser runs with `toplevel: true` on a classic script, not a module. What is the risk?",
+    "options": [
+      "The script runs in strict mode and breaks `eval`",
+      "Global names that other scripts use can go",
+      "The script loads after the DOM and misses events",
+      "The source map no longer works in the browser tools"
+    ],
+    "correct_index": 1
+  }
+]

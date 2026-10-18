@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What is a native mobile app?",
+  "options": [
+   "An app written in the official language and SDK of one platform",
+   "An app that runs in a browser tab and needs no install on the device, such as a PWA",
+   "An app that one codebase builds for all platforms and shows inside a web view",
+   "An app that the store builds from a website without any developer work"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "2",
+  "question": "What is a hybrid mobile app?",
+  "options": [
+   "An app that uses only native UI widgets from the platform SDK",
+   "An app that runs on a server and streams the screen to the device as video",
+   "An app with two native codebases for one product",
+   "A web app that runs inside a native shell with a web view"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "3",
+  "question": "What is a PWA?",
+  "options": [
+   "A native app that the store checks with a stricter review process than for other apps",
+   "A cross-platform app that compiles to machine code for each device it supports",
+   "A web app that users can install and that can work offline through a service worker",
+   "A web page that always needs a network to show any content to the user"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "4",
+  "question": "What is the main benefit of a cross-platform framework?",
+  "options": [
+   "The app always runs faster than the same app written natively",
+   "The team shares most of the code between the iOS and Android versions",
+   "The app can use each new platform API on the day of its release",
+   "The app does not need a store review before each new release"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "5",
+  "question": "When is a fully native app the best choice?",
+  "options": [
+   "One small team must write and keep all the code in one language only",
+   "You need new platform APIs and the best platform UI feel",
+   "You want to skip the store review process for each update of the app",
+   "You want the shortest build time for all platforms taken together"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "6",
+  "question": "What does the app lifecycle describe?",
+  "options": [
+   "The states of an app, such as foreground, background, and terminated",
+   "The steps from a code commit to the release of the build in the store of the platform",
+   "The time between the app install and the first purchase of the user",
+   "The order in which the OS loads the native libraries at start"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "7",
+  "question": "An app moves to the background. What should it do first?",
+  "options": [
+   "Start a full data sync with the server at once and hold the app awake",
+   "Keep the camera and GPS on to hold the user session alive",
+   "Delete the local cache to free some memory for other apps",
+   "Save the user state, stop heavy work, and release resources"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "Why does the OS limit background work of apps?",
+  "options": [
+   "To reduce the load on the servers of the app developers",
+   "To force users to open each app more often during the day",
+   "To save battery and memory of the device, because background work uses both",
+   "To stop apps from reading the files of other installed apps"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "9",
+  "question": "What does offline-first mean?",
+  "options": [
+   "The app shows an error screen as soon as the network connection is lost",
+   "The app loads all the server data again at each start of the app, without any cache",
+   "The app uses local data first and syncs when a network is available",
+   "The app works only when the device is in airplane mode and has no radio on"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "What is a push notification?",
+  "options": [
+   "A message that the app sends to itself after a local timer ends, without any server involved",
+   "A message that a server sends to a device through the push service of the platform",
+   "A message that the user sends to the store to report a bug in the app",
+   "A message that the device sends to other devices over Bluetooth"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "11",
+  "question": "Which services deliver push messages to devices?",
+  "options": [
+   "APNs for iOS and FCM for Android",
+   "SMTP for iOS and SNMP for Android",
+   "APNs for Android and FCM for iOS",
+   "WebSocket for iOS and FTP for Android"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "12",
+  "question": "What is a device push token?",
+  "options": [
+   "A password that the user types to log in to the app on the device",
+   "A key that signs the app before the developer uploads it to the store",
+   "A code that the store gives to each paid app after the purchase",
+   "A unique ID that the push service gives to one app install on one device"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "13",
+  "question": "What is a deep link?",
+  "options": [
+   "A link that always opens the store page of the app on any device",
+   "A link that downloads the full app binary to the device at once",
+   "A link that hides the real URL from the user in the browser",
+   "A link that opens a specific screen inside the app"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "14",
+  "question": "What is a universal link on iOS, or an app link on Android?",
+  "options": [
+   "A custom scheme link that works only inside the app and nowhere else on the device or in the browser",
+   "A link that works only in the store app of the platform",
+   "An HTTPS link that opens the app if it is installed and the website if it is not",
+   "A link that asks the user to pick a browser each time"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "15",
+  "question": "What is a risk of a custom URL scheme compared with an HTTPS link?",
+  "options": [
+   "A custom scheme cannot carry any parameters in the link",
+   "Another app can claim the same custom scheme and receive the links",
+   "A custom scheme works only on tablets and not on phones, because of the OS rules",
+   "A custom scheme needs a paid certificate for each link"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "16",
+  "question": "What is a cold start of an app?",
+  "options": [
+   "A launch when the OS must create a new process for the app because none is in memory",
+   "A launch when the app process still lives in memory and only resumes",
+   "A launch right after the user switches back from the background",
+   "A launch that happens only after a reboot of the device with no network"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "17",
+  "question": "Which metric shows that the app starts slowly?",
+  "options": [
+   "Time to the first usable screen",
+   "The crash-free users rate of the last release",
+   "The size of the install package in the store",
+   "The number of ratings in the store each month"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "18",
+  "question": "Why is it bad to block the main (UI) thread?",
+  "options": [
+   "The app loses its saved login session at once",
+   "The OS rejects all network calls of the app until the block ends",
+   "The app restarts and loses all of its cache files",
+   "The UI freezes and the app does not answer to touch"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "19",
+  "question": "What is a memory leak in a mobile app?",
+  "options": [
+   "Memory that the OS takes back from the app when it is idle for a long time",
+   "Data that goes from the app to the server by mistake",
+   "Memory that the app does not use any more but still holds",
+   "Memory that the GPU uses to show the images on the screen"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "20",
+  "question": "An app uses too much battery. Which is a common cause?",
+  "options": [
+   "The use of a dark theme in the app",
+   "Frequent network calls and constant location updates",
+   "Saving small files in the local storage of the app",
+   "The use of vector icons instead of bitmap images"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "21",
+  "question": "What does an OOM kill mean?",
+  "options": [
+   "The user closes the app with a swipe in the task switcher",
+   "The OS ends the app because the device is out of memory",
+   "The app ends itself after it sends a crash report to the server",
+   "The store removes the app from the device after a bad review"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "22",
+  "question": "What is an app store review?",
+  "options": [
+   "A check of the app by Apple or Google against the store rules before release",
+   "A rating that users give to the app after they install it",
+   "A test that the developer runs on the build before each commit to the repository of the app",
+   "A scan that the mobile carrier runs on the app traffic"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "23",
+  "question": "Which reason can make an app store reject an app?",
+  "options": [
+   "The app has a login screen without a social sign-in option",
+   "The app uses a third-party analytics service for its events",
+   "The app has more than ten screens in the navigation",
+   "The app crashes at launch or breaks the store guidelines"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "What is a staged rollout?",
+  "options": [
+   "A release to all users at the same time on all platforms",
+   "A release only to testers inside the company before the store",
+   "A release to a small percent of users first, then to more users",
+   "A release of one platform each month in turn"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "25",
+  "question": "What is the difference between the version name and the build number?",
+  "options": [
+   "The version name is for the store and the build number is for users of the app",
+   "Both values must always be the same number in each release of the app on both stores",
+   "The version name is for users, and the build number marks each uploaded binary",
+   "The build number is shown to users and the version name is internal to the store"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "26",
+  "question": "Why do apps need a forced update feature?",
+  "options": [
+   "To make users pay for each new version of the app that the team ships to the store",
+   "To block old versions that have a bug or use an old API",
+   "To make the store review of each new version faster",
+   "To remove the need for a backend in the product"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "27",
+  "question": "How can an app know that it needs a forced update?",
+  "options": [
+   "It compares its version with a minimum version that the backend sends",
+   "It asks the OS to list all installed apps and their versions",
+   "It checks the date of the last login of the user on the device and on the server",
+   "It counts how many crashes happened on the device today"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "28",
+  "question": "Where should an app store an access token on the device?",
+  "options": [
+   "In a plain text file in the documents folder of the app",
+   "In UserDefaults or SharedPreferences as a plain value",
+   "In a constant string inside the app code",
+   "In the Keychain on iOS or in Keystore-backed storage on Android"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "29",
+  "question": "Why should you not hard-code an API secret in the app?",
+  "options": [
+   "The store rejects any app that contains a string with a secret key",
+   "The OS deletes embedded strings when the app updates",
+   "A secret in the code stops the app from using HTTPS",
+   "Anyone can read the strings in the app binary"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "What is certificate pinning?",
+  "options": [
+   "The app saves the user certificate on the home screen of the device for later use",
+   "The app trusts each certificate that the OS trusts",
+   "The app accepts only a known server certificate or public key",
+   "The app asks the user to accept each new certificate"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "31",
+  "question": "What is a risk of certificate pinning?",
+  "options": [
+   "The app cannot use HTTPS any more after the pin is set, until the user updates the OS",
+   "If the server certificate changes, an old app version cannot connect",
+   "The app uses more battery for each request to the server",
+   "The app cannot receive push messages from the platform"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "32",
+  "question": "What does a crash report contain?",
+  "options": [
+   "Data about a crash, such as the stack trace and the device model",
+   "A list of user complaints from the store about the crash",
+   "A report of the server CPU use during the crash",
+   "A video of the user screen before the crash"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "33",
+  "question": "What do you need to read stack traces from a release build?",
+  "options": [
+   "The symbol files, such as dSYM (iOS) or the mapping file (Android)",
+   "The password of the user account that had the crash, to open the session data",
+   "The source code of the OS version that ran on the device that had the crash",
+   "The review notes that the store gave for the build when the team submitted it"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "34",
+  "question": "What is an analytics event?",
+  "options": [
+   "A message that the OS sends to the app when the battery of the device is low",
+   "A change of the UI code in a new version of the app",
+   "A test run of the CI system after a commit",
+   "A record of a user action, such as a tap or a screen view"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "35",
+  "question": "What must an app do before it tracks a user?",
+  "options": [
+   "Hide the tracking from the privacy policy of the app",
+   "Collect the data first and ask for consent after one week",
+   "Get consent where the law or the platform rules require it",
+   "Use the advertising ID of the device without any check of the user setting"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "What does accessibility mean for a mobile app?",
+  "options": [
+   "The app loads fast on slow networks and on old devices with little memory",
+   "The app is usable for people with disabilities, for example with a screen reader",
+   "The app works on old devices only, with the lowest OS version that the store allows",
+   "The app is available in all countries and in all store languages"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "37",
+  "question": "A button shows only an icon. What does a screen reader need?",
+  "options": [
+   "A higher color contrast between the icon and the background",
+   "A text label that describes the action",
+   "A tap sound that plays when the user presses the button",
+   "A bigger touch area around the icon on the screen"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "38",
+  "question": "What touch target size do the platform guides recommend?",
+  "options": [
+   "At least 44 points on iOS and 48 dp on Android",
+   "About 24 points on iOS and 28 dp on Android, for dense screens",
+   "About 12 points on iOS and 16 dp on Android",
+   "About 60 points on iOS and 64 dp on Android"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "39",
+  "question": "Why should an app support dynamic text size?",
+  "options": [
+   "It lets the app skip the dark mode and use one theme only for all the screens of the app",
+   "It reduces the size of the app binary in the store",
+   "It makes the images in the app load faster",
+   "Users with low vision set a larger system font and need the app to follow it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "40",
+  "question": "What is device fragmentation?",
+  "options": [
+   "The split of one app into many small binaries for the store",
+   "The storage of one data file in many database tables",
+   "Many different devices, OS versions, and screen sizes that the app must support",
+   "The break of the app code into many separate modules"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "41",
+  "question": "How do teams usually handle device fragmentation?",
+  "options": [
+   "They test only on the newest flagship phone of each platform and ignore the rest",
+   "They ship a different app for each screen size of the devices on the market",
+   "They set a minimum OS version and test on devices chosen by usage data",
+   "They ask users to update the phone before they install the app from the store"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "42",
+  "question": "What does the crash-free users rate show?",
+  "options": [
+   "The percent of code that has automated tests",
+   "The percent of users who had no crash in a period",
+   "The percent of crashes that the team fixed in the period",
+   "The percent of devices that the app supports"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "43",
+  "question": "What is a runtime permission?",
+  "options": [
+   "A permission that the app asks from the user at the time of use, such as the camera",
+   "A permission that the store gives during the review of the app",
+   "A permission that the developer sets on the server of the app for each user account and each app version",
+   "A permission that the OS gives to each app silently at install"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "44",
+  "question": "When should an app ask for a permission?",
+  "options": [
+   "For all permissions at the first launch of the app",
+   "Again at each launch after the user denies it",
+   "Only through a web page of the company",
+   "When a feature needs it, with a short reason for the user"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "45",
+  "question": "Which storage fits structured data for an offline app?",
+  "options": [
+   "A single JSON file that the app rewrites at each change",
+   "The Keychain or Keystore, because it is built for large data sets",
+   "The payload of the push notifications that the app receives",
+   "A local database such as SQLite"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "46",
+  "question": "What does optimistic UI do?",
+  "options": [
+   "It hides all errors from the user to keep the screen clean and the flow smooth",
+   "It waits for the server before any change on the screen",
+   "It shows the result of an action at once, before the server confirms",
+   "It keeps the images only in memory and never on disk"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "47",
+  "question": "Why is it good to keep the app size small?",
+  "options": [
+   "The store blocks each app that is larger than a fixed limit of 10 MB on cellular networks",
+   "Large apps have lower install rates and use more storage and mobile data",
+   "Large apps lose their runtime permissions after each update",
+   "Large apps need a separate store account for each country"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "48",
+  "question": "Why do teams run an internal beta before a store release?",
+  "options": [
+   "Testers find bugs on real devices before all users get the build",
+   "The store requires a beta of 30 days for each new version",
+   "A beta build skips the review of the store for the final release",
+   "A beta build gives the app a higher rank in the store search"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "49",
+  "question": "What is a silent (data) push used for?",
+  "options": [
+   "To wake the app to fetch data without a visible message",
+   "To mute all other apps on the device for a short time while the app runs a task",
+   "To show a message that has no title in the notification list of the device",
+   "To send a push without a device token to all users of the app at once"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "Why should a mobile app use HTTPS for all traffic?",
+  "options": [
+   "It makes the app work offline when there is no connection or a poor signal on the road",
+   "It removes the need for a user login in the app",
+   "It makes the delivery of push messages faster",
+   "It protects the data from being read or changed on the network"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "51",
+  "question": "A content app needs no camera or Bluetooth, and the team knows web. Which option fits first?",
+  "options": [
+   "Two native apps, because only native apps can cache content offline",
+   "A hybrid app, because a PWA cannot be installed on Android devices",
+   "A PWA, because it can update without a store release",
+   "A game engine, because lists need a renderer"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "52",
+  "question": "How do cross-platform frameworks with own rendering differ from frameworks with native widgets?",
+  "options": [
+   "They compile the web page into one native widget for the screen",
+   "They draw each pixel with their own engine and do not use the platform widgets",
+   "They run the UI on the server and send images to the device",
+   "They use only the system web view for the whole UI"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "53",
+  "question": "On iOS, a timer in the app stops a short time after the user goes to the background. Why?",
+  "options": [
+   "iOS deletes the timer object as soon as the screen changes",
+   "The OS suspends the app process to save resources",
+   "The timer works only while the app shows its main screen",
+   "The app needs a push token to run timers in the background"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "54",
+  "question": "Which API schedules deferrable background work that follows the OS limits?",
+  "options": [
+   "A job scheduler, such as WorkManager on Android or BGTaskScheduler on iOS",
+   "A loop with a sleep call inside a background service that restarts itself after a kill",
+   "An exact alarm that fires each minute for the whole day",
+   "A hidden web view with a JavaScript timer"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "55",
+  "question": "Two devices edit the same record offline. Which sync strategy is correct?",
+  "options": [
+   "Block the second device from editing for ever",
+   "Let the server pick one version at random each time, and tell no user about it",
+   "Delete the record on both devices and ask the users",
+   "Define a conflict rule, such as field merge or last write wins"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "56",
+  "question": "Why is last write wins by the device clock risky?",
+  "options": [
+   "The clock stops when the app is in the background",
+   "Timestamps use too much storage on the device",
+   "The clock of a device can be wrong or changed by the user",
+   "The server cannot store timestamps from clients"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "The app retries a queued create-order request after a timeout. How do you avoid duplicate orders?",
+  "options": [
+   "Retry faster so the server forgets the first request",
+   "Remove the request from the queue after the first attempt",
+   "Send a client-made idempotency key with the request",
+   "Use GET instead of POST to create the order, because GET is safe to repeat"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "58",
+  "question": "On Android, push messages stop after the user force-stops the app. Why?",
+  "options": [
+   "FCM sends push only to apps that run in the foreground, and not to apps in the background",
+   "The OS blocks messages to a force-stopped app until the user opens it again",
+   "The notification channel of the app is deleted at force stop",
+   "The APNs service replaces FCM after a force stop"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "59",
+  "question": "When should the app send the push token to the server?",
+  "options": [
+   "At each launch and when the token changes",
+   "Only once at the install of the app",
+   "Only when the user logs out of the app",
+   "Only after three failed pushes to the device"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "60",
+  "question": "An iOS user denied the notification permission. What can the app do?",
+  "options": [
+   "Show the system prompt again at each launch",
+   "Send pushes through APNs without the permission",
+   "Reset the permission with a method call",
+   "Show a screen that sends the user to the system settings"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "A user taps a deep link but is not logged in. Which behavior is best?",
+  "options": [
+   "Open the home screen and drop the link, because the user is not logged in",
+   "Show an error and close the app, because the link needs an account",
+   "Skip the login and show the private data, because the link is valid",
+   "Keep the target, show the login, then open the target"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "62",
+  "question": "An HTTPS link opens the browser and not the app. What is a common cause?",
+  "options": [
+   "The link has a query string that is too long for the OS to pass to the app",
+   "The app has no splash screen at launch",
+   "The domain association file is missing or wrong on the server",
+   "The user chose a dark theme in the system settings"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "63",
+  "question": "What does a deferred deep link do?",
+  "options": [
+   "It opens the link in a web view first and opens the app after a delay",
+   "It keeps the link data through the install so the new app opens the right screen",
+   "It redirects an old link to a new URL on the server with a 301 code",
+   "It blocks the link until the user signs in to the store and accepts the terms of the app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "64",
+  "question": "A deep link has a redirect parameter, and the app opens it in a web view. What is the risk?",
+  "options": [
+   "An attacker can send the user to a malicious page, so you must allow-list targets",
+   "There is no risk, because the OS blocks such links in web views",
+   "The only risk is a higher battery use while the web view loads the page",
+   "Web views cannot open HTTPS pages from a deep link on current OS versions"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "The cold start of an app is slow. Which fix is usually the most effective first?",
+  "options": [
+   "Load non-essential init work lazily, out of the launch path",
+   "Make the image of the splash screen larger to hide the slow launch",
+   "Start all SDKs on the main thread at launch to finish the init at once",
+   "Add a longer splash animation to hide the delay from the user"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "A long list drops frames when the user scrolls. Which fix helps?",
+  "options": [
+   "Render all rows at once at the start of the screen",
+   "Decode full-size images on the main thread when a row shows on the screen",
+   "Use more nested views in each row of the list",
+   "Reuse rows and decode images at the needed size off the main thread"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "67",
+  "question": "An app decodes a 4000x3000 photo to show a 100x100 thumbnail. What is the problem?",
+  "options": [
+   "PNG files cannot be shown in a small size, so the app must convert them to JPEG first",
+   "The photo file is deleted from the device after the decode",
+   "The decoded bitmap uses a lot of memory, about width times height times 4 bytes",
+   "Only the network use of the app goes up"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "68",
+  "question": "Location tracking drains the battery. Which fix is good?",
+  "options": [
+   "Request the highest accuracy all the time for safety of the data",
+   "Use lower accuracy or significant-change updates, and stop when not needed",
+   "Poll the location each second with a timer in the app",
+   "Keep the location on after the user logs out of the app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "Why is it good to batch network requests on mobile?",
+  "options": [
+   "Cellular networks reject small requests from mobile apps and ask for retries",
+   "Each request keeps the radio in a high power state for a while",
+   "Batching removes the need for HTTPS on the connection of the app",
+   "The OS limits an app to 10 requests each hour in the background"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "A critical bug is in production, and the store review takes days. Which earlier practice reduces the risk?",
+  "options": [
+   "Feature flags or remote config to turn off the feature without a new build",
+   "Skipping tests for small changes so that the team can ship each fix much faster",
+   "A release to 100 percent of users at once",
+   "A request to users to go back to the old version"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "71",
+  "question": "A staged rollout at 10 percent shows a drop in the crash-free rate. What do you do?",
+  "options": [
+   "Raise the rollout to 100 percent to get more data about the crash",
+   "Remove the app from the store until the bug is fixed",
+   "Wait until the users stop to complain",
+   "Halt the rollout, fix the bug, and release a new build"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "72",
+  "question": "Why must the backend support old app versions?",
+  "options": [
+   "The store forces all users to update at the same time",
+   "The OS blocks old versions after one week",
+   "Users do not update at the same time, so old versions stay in use",
+   "The store deletes old builds from the devices"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "When is a soft update prompt better than a forced update?",
+  "options": [
+   "When the server removes the old API in the next release of the backend",
+   "When a security hole is open in the old version of the app",
+   "When the new version has no breaking change",
+   "When the old version crashes at start on most of the devices"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "74",
+  "question": "Why use a short-lived access token together with a refresh token?",
+  "options": [
+   "The user never has to log in again on any device, even after a password change",
+   "A stolen access token expires soon, and a refresh token can be revoked",
+   "The refresh token can be sent on each request in place of the access token",
+   "Two tokens make the network requests of the app faster"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "75",
+  "question": "What is a good practice for certificate pinning to reduce outage risk?",
+  "options": [
+   "Pin more than one key, include a backup key, and plan the rotation",
+   "Pin only the leaf certificate with a short life, and replace it with each release",
+   "Turn off pinning in the release build",
+   "Pin the IP address of the server"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "76",
+  "question": "Is root or jailbreak detection a full protection for an app?",
+  "options": [
+   "Yes, it blocks all attacks on the app",
+   "Yes, if the app checks it once at install",
+   "No, because the OS always hides the root state from apps",
+   "No, an attacker can bypass it, so it only raises the cost"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "77",
+  "question": "The crash-free session rate is 99.9 percent, but users report freezes. What is missing in the monitoring?",
+  "options": [
+   "More symbol files for the crash reports of the release builds",
+   "A larger sample of test devices in the lab of the QA team",
+   "A faster rollout of each release to all of the store users",
+   "Tracking of hangs (ANR), since a freeze is not a crash"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "78",
+  "question": "A custom view made of many layers is not read by the screen reader. What is the fix?",
+  "options": [
+   "Make the font of the view larger and the text easier to read",
+   "Increase only the color contrast of the view and keep the layers as they are",
+   "Expose it with an accessibility label and role, and group its elements",
+   "Turn off the screen reader for that screen"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "79",
+  "question": "An app shows an error only with a red color. What is the problem?",
+  "options": [
+   "The store blocks the red color in the UI of apps in some regions and countries",
+   "Users with color blindness may not see it, so add text or an icon",
+   "Red uses more battery on LCD screens",
+   "Dark mode always hides red"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "80",
+  "question": "A user changes the language of the phone. What should the app use for text and date formats?",
+  "options": [
+   "The locale of the system, with localized resources and formatters",
+   "The language of the first install, saved in a file",
+   "The country of the IP address of the device",
+   "One fixed format that the team chose for all users"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "81",
+  "question": "You design sync for users who stay offline for long. Why use a change log with versions instead of full state upload?",
+  "options": [
+   "It sends only changes and lets the server find conflicts",
+   "It removes the need for the server to authenticate users of the app",
+   "It makes all edits conflict-free in an automatic way for all users",
+   "It removes the need for a local database on the device of the user"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "82",
+  "question": "What property do CRDTs give for offline editing?",
+  "options": [
+   "The server always wins each conflict, because it holds the last version of the data",
+   "Edits are kept in the exact time order of the devices",
+   "The metadata never grows",
+   "Replicas merge in any order and reach the same state without a central rule"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "83",
+  "question": "A delta sync uses an updated_at cursor. A record is deleted on the server. What breaks?",
+  "options": [
+   "The client sees the record as new, because the cursor has no match for it",
+   "The cursor moves back in time after the delete, so old records show again",
+   "The client never sees the deletion unless the server keeps tombstones",
+   "The server sends the record twice"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "84",
+  "question": "The OS ends the app process in the background. The user returns to the screen. What must the app do?",
+  "options": [
+   "Nothing, because the OS keeps the memory of the process",
+   "Restore the UI state from saved state, because the process starts new",
+   "Ask the user to restart the app",
+   "Keep the state only in static variables"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "85",
+  "question": "Why can an app not rely on a background task to run at an exact time?",
+  "options": [
+   "The compiler removes timers from release builds of the app on both platforms",
+   "The OS picks the time using battery, usage, and network",
+   "Background tasks run only at midnight when the device charges",
+   "The OS gives each task a fixed slot of one hour on each day"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "86",
+  "question": "Why should push not be the only way to deliver critical data?",
+  "options": [
+   "Delivery is best-effort: messages can be delayed, dropped, or throttled",
+   "Push payloads are encrypted, so apps cannot read them without a key from the server",
+   "A server can send only one push each day per app",
+   "Push works only when the app is in the foreground"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "87",
+  "question": "A server sends many pushes with the same collapse key while the device is offline. What happens?",
+  "options": [
+   "All pushes are delivered in the same order that the server sent them, one by one",
+   "No push is delivered",
+   "Only the first push is kept",
+   "The service keeps only the latest push and delivers it later"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "88",
+  "question": "Two parallel requests use the same refresh token, and the second fails, so the user logs out. What is the fix?",
+  "options": [
+   "Make the access token live for years",
+   "Retry the refresh on each request without a limit",
+   "Share one in-flight refresh in the client for all waiting calls",
+   "Copy the refresh token into the header of each request"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "Why does certificate pinning not stop an attacker who controls the device?",
+  "options": [
+   "Pinning applies only to plain HTTP traffic and not to HTTPS traffic",
+   "The OS ignores pinning rules in release builds on rooted devices",
+   "The attacker can patch the app at runtime to skip the check",
+   "The attacker can easily change the certificate of the real server"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "90",
+  "question": "Why do teams track the p95 start time, not only the average?",
+  "options": [
+   "The p95 value shows the fastest start of the app among all users",
+   "The average hides the slow starts of users with low-end devices",
+   "The store does not allow an average value in its reports",
+   "The p95 value counts only crashes"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "91",
+  "question": "Which technique reduces the install size for each device on the stores?",
+  "options": [
+   "App bundles or app thinning, which deliver only the resources the device needs",
+   "Zip compression of the package two times before the upload, to cut the size for each device",
+   "Removal of all native libraries from the package of the app",
+   "One file that holds all languages of the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "92",
+  "question": "A cross-platform app updates its interpreted code over the air. What is a key limit?",
+  "options": [
+   "It can replace the native binary of the app, if the new code is signed",
+   "It does not need to follow any store policy, because the code is not a binary",
+   "It works only if the user is on Wi-Fi and the app is in the foreground",
+   "It changes only the interpreted layer, not native code, and must follow store policy"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "93",
+  "question": "The app gets memory warnings and is killed first in the background. Which practice lowers the chance of a kill?",
+  "options": [
+   "Allocate more memory when the app goes to the background",
+   "Keep all images decoded in memory for a faster return to the screen",
+   "Start a long task with no user value to keep the process alive",
+   "Release caches and large objects in the background"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "94",
+  "question": "Why should an app sample and limit the analytics events?",
+  "options": [
+   "The store limits an app to 100 events for each session, and rejects more events",
+   "SDKs refuse more than one event each second",
+   "Each event costs battery, data, and storage, and it can leak personal data",
+   "Events cannot be sent in the background"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "95",
+  "question": "A user asks to delete the account. What do store policies require from an app that allows account creation?",
+  "options": [
+   "Only a support email address for requests, which the user must find in the store",
+   "An in-app way to start the account deletion",
+   "The deletion of the local cache only",
+   "A web page that the user finds by search"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "96",
+  "question": "What is a main long-term risk of a cross-platform framework?",
+  "options": [
+   "New OS features can arrive late in the framework, so you may need native bridge code",
+   "The app cannot be sent to the store, because the stores accept only native code",
+   "The app cannot use HTTPS, because the framework has no network layer for it",
+   "The app cannot have more than one screen without a native navigation module"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "97",
+  "question": "A hybrid app feels slower than a native app in scroll and gestures. What is the main reason?",
+  "options": [
+   "The UI runs in a web engine, not in native widgets",
+   "Web views cannot use the GPU for drawing on current devices",
+   "JavaScript cannot run fast enough on any mobile CPU of today",
+   "The store limits the frame rate of hybrid apps to 30 frames"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "98",
+  "question": "A remote config changes the behavior for all app versions with no test. What is the risk?",
+  "options": [
+   "Remote config values are blocked by the store during the review of the app",
+   "Remote config needs a new build to be read",
+   "Remote config values can only be boolean",
+   "Old versions may not support the new value and can crash"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "99",
+  "question": "Why should you test on real devices and not only on emulators?",
+  "options": [
+   "Emulators cannot run UI tests of the app on any OS version",
+   "Real devices skip the store checks and the review of the build, so tests pass faster",
+   "Real devices show real speed, sensors, OEM changes, and battery use",
+   "Emulators have no network"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "100",
+  "question": "The OS backs up app data to the cloud. How do you lower the risk for tokens?",
+  "options": [
+   "Encrypt them with a key stored next to the data in the same file, so the backup is safe",
+   "Exclude the secrets from the backup or keep them in a hardware-backed store for this device only",
+   "Rename the file so that it is hard to find",
+   "Compress the file before the backup"
+  ],
+  "correct_index": 1
+ }
+]

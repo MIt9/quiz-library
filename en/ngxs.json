@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What does NGXS give to an Angular application?",
+  "options": [
+   "A router that loads lazy modules and changes the URL",
+   "A state management library that uses classes and decorators",
+   "A form library that checks user input with decorators",
+   "A HTTP client that keeps each response in a cache"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "Which decorator marks a class as an NGXS state?",
+  "options": [
+   "@Store",
+   "@Reducer",
+   "@State",
+   "@Feature"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "3",
+  "question": "Which option of `@State` sets the initial value of the state?",
+  "options": [
+   "initialState",
+   "defaults",
+   "initial",
+   "seed"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "4",
+  "question": "Which decorator marks a method as an action handler?",
+  "options": [
+   "@Effect",
+   "@Handler",
+   "@Action",
+   "@Reducer"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "5",
+  "question": "What does the first argument of an `@Action` method give to you?",
+  "options": [
+   "A StateContext object to read and update the state slice",
+   "The full application state as a read-only object",
+   "The Angular injector that created the state class",
+   "The Observable of all actions that the store dispatches"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "6",
+  "question": "What is the second argument of an action handler method?",
+  "options": [
+   "The state value from before the last update",
+   "The type string of the action as plain text",
+   "The list of all state classes in the store",
+   "The action instance that the store dispatches"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "7",
+  "question": "How do you send an action to the NGXS store?",
+  "options": [
+   "Call `store.dispatch(new MyAction())`",
+   "Call `store.emit(new MyAction())`",
+   "Call `store.send(MyAction)`",
+   "Call `store.next('MyAction')`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "8",
+  "question": "What must an NGXS action class define so that the store can find handlers?",
+  "options": [
+   "A `reduce` method that returns the new state",
+   "A static readonly `type` string property",
+   "A decorator named @Action on the class",
+   "A constructor without any arguments"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "9",
+  "question": "An action has the type `[Todo] Add`. What does the text in brackets usually show?",
+  "options": [
+   "The HTTP method of the related request",
+   "The state name in the global store",
+   "The feature or source that owns the action",
+   "The Angular module that handles the action"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "Which method reads the current state slice inside an action handler?",
+  "options": [
+   "ctx.snapshot()",
+   "ctx.current()",
+   "ctx.getState()",
+   "ctx.select()"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "11",
+  "question": "Which method merges a partial object into the current state slice?",
+  "options": [
+   "ctx.mergeState()",
+   "ctx.updateState()",
+   "ctx.assignState()",
+   "ctx.patchState()"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "12",
+  "question": "What does `ctx.setState` do?",
+  "options": [
+   "It merges only the keys that changed into the current state slice",
+   "It renames the state slice and then updates all the selectors",
+   "It sends a state update action to every plugin in the store",
+   "It replaces the state slice with a new value or a function result"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "13",
+  "question": "Which decorator creates a function that reads a value from the state?",
+  "options": [
+   "@Query",
+   "@Getter",
+   "@Selector",
+   "@Reader"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "14",
+  "question": "How does a component get an Observable from a selector?",
+  "options": [
+   "Call `store.select(TodoState.items)`",
+   "Call `store.get(TodoState.items)`",
+   "Call `store.read(TodoState.items)`",
+   "Call `store.watch(TodoState.items)`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "15",
+  "question": "Which method returns the selected value at once, as a plain value?",
+  "options": [
+   "store.selectSnapshot()",
+   "store.selectOnce()",
+   "store.peek()",
+   "store.value()"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "What does `store.selectOnce(selector)` return?",
+  "options": [
+   "A plain value read from the current state slice",
+   "A Promise that rejects when the state changes later",
+   "A Signal that never gets updates from the store",
+   "An Observable that emits one value and completes"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "17",
+  "question": "How do you register root states in an NgModule application?",
+  "options": [
+   "Use `NgxsModule.forChild([TodoState])` in the root module",
+   "Use `NgxsModule.forRoot([TodoState])` in the root module",
+   "Use `NgxsModule.register(TodoState)` in the providers",
+   "Use `StoreModule.forRoot({ todo: TodoState })` in the module"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "18",
+  "question": "Which function registers the store in a standalone Angular application?",
+  "options": [
+   "provideStore([TodoState]) in the application config",
+   "provideNgxs([TodoState]) in the application config",
+   "provideState(TodoState) in the application config",
+   "importProvidersFrom(Store) in the application config"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "Which call registers a state of a lazy module?",
+  "options": [
+   "NgxsModule.forLazy([FeatureState])",
+   "NgxsModule.forFeature([FeatureState])",
+   "NgxsModule.forChild([FeatureState])",
+   "NgxsModule.forRoot([FeatureState])"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "Which Angular decorator do you add to a state class together with `@State`?",
+  "options": [
+   "@Component()",
+   "@NgModule()",
+   "@Directive()",
+   "@Injectable()"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "What is the state name in `@State({ name: 'todo' })` used for?",
+  "options": [
+   "It is the CSS class that Angular adds to the host element",
+   "It is the selector of the router outlet in the template",
+   "It is the file name that the storage plugin uses",
+   "It is the key of the slice in the global state object"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "Which package writes the state to `localStorage`?",
+  "options": [
+   "@ngxs/persist-plugin",
+   "@ngxs/storage-plugin",
+   "@ngxs/local-plugin",
+   "@ngxs/cache-plugin"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "23",
+  "question": "Which plugin prints each action and state change in the browser console?",
+  "options": [
+   "The devtools plugin",
+   "The router plugin",
+   "The form plugin",
+   "The logger plugin"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "Which plugin connects the store to the Redux DevTools browser extension?",
+  "options": [
+   "The devtools plugin",
+   "The logger plugin",
+   "The storage plugin",
+   "The websocket plugin"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "25",
+  "question": "Which plugin keeps the Angular router and the NGXS store in sync?",
+  "options": [
+   "The form plugin",
+   "The storage plugin",
+   "The websocket plugin",
+   "The router plugin"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "Which plugin binds a reactive form to a part of the state with the `ngxsForm` directive?",
+  "options": [
+   "The router plugin",
+   "The form plugin",
+   "The logger plugin",
+   "The storage plugin"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "27",
+  "question": "Why must you not mutate the state in an NGXS handler?",
+  "options": [
+   "Angular does not allow the `push` method in a class method",
+   "JSON cannot keep a reference to the old array value",
+   "The store checks changes by reference, so you must make new objects",
+   "A state class must be a pure function with no side effects"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "What does NGXS do with the state when `developmentMode` is true?",
+  "options": [
+   "It freezes the state, so a mutation throws an error",
+   "It writes every action to the browser console",
+   "It saves the state to the local storage",
+   "It sends the state to Redux DevTools only"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "29",
+  "question": "Which code adds an item to the state array without a mutation?",
+  "options": [
+   "ctx.getState().items = [...ctx.getState().items, item];",
+   "ctx.patchState({ items: ctx.getState().items.push(item) })",
+   "ctx.getState().items.push(item); ctx.setState(ctx.getState())",
+   "ctx.patchState({ items: [...ctx.getState().items, item] })"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "What does `store.dispatch()` return?",
+  "options": [
+   "A Promise that holds only the new state after the handlers",
+   "An Observable that completes when the handlers finish",
+   "The action instance, so that you can chain more calls",
+   "Nothing, because the method returns void and ends at once"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "Do you need to subscribe to `store.dispatch()` to run the handlers?",
+  "options": [
+   "Yes, the action waits until a subscriber exists",
+   "Yes, but only for handlers that are async",
+   "No, the store starts the handlers at once",
+   "No, but only inside the root component"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "What can an async action handler return?",
+  "options": [
+   "Only a Promise object",
+   "An Observable or a Promise",
+   "Only a new state object",
+   "A Subscription from `subscribe`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "What does `@Action([AddTodo, RemoveTodo])` mean?",
+  "options": [
+   "The method runs when both actions come together",
+   "The second action runs after the first one",
+   "The array sets the order of two states",
+   "One method handles both action types"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "34",
+  "question": "Two state classes have a handler for the same action. What happens on dispatch?",
+  "options": [
+   "The store throws a duplicate handler error",
+   "Only the first registered state runs its handler",
+   "Each state runs its own handler",
+   "Only the parent state runs its handler"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "How do you pass data, such as a todo title, with an NGXS action?",
+  "options": [
+   "Pass it as the second argument of `store.dispatch`",
+   "Write it to a global variable before the dispatch",
+   "Use constructor parameters of the action class",
+   "Add it to the `defaults` object of the state"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "Which interface makes NGXS call a method when a state initializes?",
+  "options": [
+   "NgxsOnInit",
+   "NgxsOnStart",
+   "NgxsOnCreate",
+   "NgxsOnLoad"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "37",
+  "question": "How do you show a `store.select` result in a template?",
+  "options": [
+   "Keep the Observable in a property and use the `async` pipe",
+   "Call `store.selectSnapshot` in the template on each cycle",
+   "Subscribe in the constructor and never unsubscribe",
+   "Copy the state in `ngOnChanges` to a plain field"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "38",
+  "question": "What does `store.selectSignal(selector)` return in current NGXS versions?",
+  "options": [
+   "An Observable",
+   "An Angular Signal",
+   "A Promise",
+   "A plain value"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "39",
+  "question": "From which import path do you get the `patch` and `append` helpers?",
+  "options": [
+   "@ngxs/operators",
+   "@ngxs/store/helpers",
+   "@ngxs/store/operators",
+   "@ngxs/utils"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "40",
+  "question": "What does the state operator `patch({ count: 1 })` do?",
+  "options": [
+   "It replaces the whole state with the object",
+   "It sends a PATCH request to the server",
+   "It changes the type of `count` to number",
+   "It sets `count` and keeps the other fields"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "41",
+  "question": "What is the first argument of a `@Selector()` method in a state class?",
+  "options": [
+   "The store instance",
+   "The action that ran last",
+   "The StateContext object",
+   "The state slice of that class"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "42",
+  "question": "What does the generic type in `@State<TodoStateModel>()` describe?",
+  "options": [
+   "The list of actions that the state can handle",
+   "The shape of the state slice that the class owns",
+   "The Angular module that provides the state class",
+   "The type of the plugin that the state needs"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "43",
+  "question": "Which action does the router plugin provide to go to a URL?",
+  "options": [
+   "Navigate",
+   "GoTo",
+   "Redirect",
+   "RouterGo"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "44",
+  "question": "What does `store.reset(state)` do?",
+  "options": [
+   "It resets only the router state to the start URL value",
+   "It clears the keys in the local storage and nothing else",
+   "It replaces the whole store state with the given value",
+   "It dispatches the init action again and keeps old values"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "Which service gives a stream of all dispatched actions?",
+  "options": [
+   "Actions",
+   "ActionStream",
+   "Dispatcher",
+   "StateStream"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "What does `ofActionSuccessful(SaveTodo)` do in an `Actions` pipe?",
+  "options": [
+   "It emits when the handlers of SaveTodo finish without an error",
+   "It emits when SaveTodo is dispatched, before the handlers run",
+   "It emits when a handler of SaveTodo gets canceled",
+   "It emits for every action that the store processes"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "47",
+  "question": "How many stores does an NGXS application have?",
+  "options": [
+   "One store for each state class in the application",
+   "One store for each lazy module that the router loads",
+   "One store for each component tree in the application",
+   "One global store with one state object"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "48",
+  "question": "Where do you usually call an HTTP service for an action?",
+  "options": [
+   "In the `@Selector` method of the state class itself",
+   "In the constructor of the action class that you dispatch",
+   "In the action handler, with an injected service",
+   "In the `defaults` object of the `@State` decorator"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "49",
+  "question": "How does a state class get an Angular service?",
+  "options": [
+   "With constructor injection, as in any service",
+   "With the `ctx.inject(Service)` method inside a handler",
+   "With a static property that the action class defines",
+   "With the options object of the `@State` decorator"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "What does `store.dispatch([ActionA, ActionB])` do?",
+  "options": [
+   "It dispatches ActionB only after ActionA has completed first",
+   "It dispatches both actions and completes when both finish",
+   "It dispatches only the first action and ignores the others",
+   "It throws an error because the method needs one action only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "51",
+  "question": "A handler calls `api.load().subscribe(items => ctx.patchState({ items }))` and returns nothing. What is the risk?",
+  "options": [
+   "The handler runs two times for each action that the store gets",
+   "The dispatch ends before the data arrives, and errors stay hidden",
+   "The state is not frozen in development mode after this update",
+   "The logger plugin skips this action and does not print it ever"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "What does `@Action(Load, { cancelUncompleted: true })` do?",
+  "options": [
+   "It cancels the running handler when the same action comes again",
+   "It cancels the new action when an older handler still runs now",
+   "It cancels the handlers of all other action types in the store",
+   "It cancels the Observable of the action after the first value"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "53",
+  "question": "A state must load data at start. Where do you dispatch the first load action?",
+  "options": [
+   "In the `defaults` function of the `@State` options",
+   "In `ngxsOnInit(ctx)` with `ctx.dispatch(new Load())`",
+   "In the `onInit` option of the `@State` decorator",
+   "In the constructor of the Load action class"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "54",
+  "question": "A user clicks twice and the app dispatches the same async action two times. What is the default result?",
+  "options": [
+   "The second handler waits for the first to finish",
+   "The store cancels the second handler",
+   "Both handlers run at the same time",
+   "The store cancels the first handler"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "55",
+  "question": "Which `Actions` operator tells you that a handler ended with an error?",
+  "options": [
+   "ofActionFailed",
+   "ofActionRejected",
+   "ofActionCanceled",
+   "ofActionErrored"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "56",
+  "question": "What does `ofActionCompleted` emit?",
+  "options": [
+   "Only the actions that end with success in the handlers",
+   "The full state of the store after each action finishes",
+   "An object for success, cancel, or error of the action",
+   "Only the actions that belong to the lazy loaded states"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "A component must stop a subscription to `store.select` when it is destroyed. What is a good way?",
+  "options": [
+   "Call `store.reset()` in `ngOnDestroy`",
+   "Use `selectSnapshot` in place of `select`",
+   "Set `cancelUncompleted` on the selector",
+   "Use `takeUntilDestroyed()` before `subscribe`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "58",
+  "question": "When does a memoized selector run its function again?",
+  "options": [
+   "When an input argument changes by reference",
+   "After each action that the store dispatches to the states",
+   "After each change detection cycle in the application",
+   "When the name of the selector method changes at run time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "59",
+  "question": "What do the entries in `@Selector([TodoState.items, FilterState.filter])` do?",
+  "options": [
+   "They are states that the selector is able to change later",
+   "They are actions that start a new calculation each time",
+   "They are plugins that keep the result in a cache for it",
+   "They are input selectors that give the arguments in order"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "60",
+  "question": "A state has `static byId(id)` that returns `createSelector(...)`. What is a good practice?",
+  "options": [
+   "Call `byId` in the template, so that it runs on every cycle",
+   "Declare `byId` as an instance method of the state class",
+   "Call `byId` with `selectSnapshot` at each button click event",
+   "Create the selector once in the component and reuse it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "The state has `user: { name, age }`. A handler calls `patchState({ user: { name: 'Ann' } })`. What is the result?",
+  "options": [
+   "The `user` object is merged, so `age` stays in the state",
+   "The `user` object is replaced, so `age` is lost",
+   "NGXS throws a type error at run time for the nested value",
+   "NGXS ignores the patch for nested objects in the slice"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "62",
+  "question": "Which code changes only `user.name` and keeps the other fields of `user`?",
+  "options": [
+   "ctx.patchState({ 'user.name': 'Ann' }, { deep: true });",
+   "ctx.getState().user.name = 'Ann'; ctx.patchState({});",
+   "ctx.patchState('user.name', 'Ann', { merge: true })",
+   "ctx.setState(patch({ user: patch({ name: 'Ann' }) }))"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "63",
+  "question": "Which operator changes one item of an array when a condition is true?",
+  "options": [
+   "patchItem",
+   "replaceItem",
+   "modifyItem",
+   "updateItem"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "64",
+  "question": "What is the idea of the `handle` method of an NGXS plugin?",
+  "options": [
+   "It gets state, action, and `next`, and it must call `next`",
+   "It gets only the action and it returns void to the store",
+   "It gets the context and it returns the new state value only",
+   "It gets the store and it runs after each handler has ended"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "How do you register a custom plugin?",
+  "options": [
+   "Provide the class with the `NGXS_PLUGINS` token and `multi: true`",
+   "Add the class to the `plugins` array of the `@State` decorator options",
+   "Call `store.use(MyPlugin)` in the constructor of the root component",
+   "Add the class to the `declarations` array of the root module file"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "How do you save only the `auth` state with the storage plugin?",
+  "options": [
+   "Set `include: ['auth']` in the plugin options",
+   "Set `states: ['auth']` in the plugin options",
+   "Set `keys: ['auth']` in the plugin options",
+   "Add a `@Persist()` decorator to the AuthState class"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "You add a new field to a persisted state. Old users have stored data without it. What do you use?",
+  "options": [
+   "The `merge` option of the `@State` decorator in each state class",
+   "The `migrations` option of the storage plugin, with a `version`",
+   "A new storage key for the plugin, so users start with fresh data",
+   "A call of `store.reset` in each component that reads the state"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "68",
+  "question": "How do you use `sessionStorage` in the storage plugin?",
+  "options": [
+   "Set `engine: 'session'` in the plugin options of the store",
+   "Set `storage: StorageOption.SessionStorage` in the plugin options",
+   "Set `type: sessionStorage` in the plugin options of the store",
+   "Set `useSession: true` in the plugin options of the store"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "Which action does the router plugin dispatch after a successful navigation?",
+  "options": [
+   "RouterStateChanged",
+   "RouterNavigation",
+   "NavigationEnd",
+   "RouterUrlUpdated"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "How do you test a state with TestBed?",
+  "options": [
+   "Import `NgxsModule.forRoot([])`, then call the handler methods with `Store.invoke`",
+   "Create the store with `new Store()` and call `reset` one time, then call `dispatch`",
+   "Mock the Actions stream in the test and check only the DOM output of the view",
+   "Import `NgxsModule.forRoot([TodoState])`, dispatch, then read with `selectSnapshot`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "How do you set a known start state in a unit test?",
+  "options": [
+   "Call `store.set({ todo: { items: [] } })`",
+   "Call `TestBed.setState({ todo: { items: [] } })`",
+   "Call `store.reset({ todo: { items: [] } })`",
+   "Dispatch `new Init({ items: [] })`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "72",
+  "question": "When does the `defaults` value of a lazy feature state appear in the global state?",
+  "options": [
+   "When the lazy module loads and registers the state",
+   "When the application starts, together with all root states",
+   "When a component selects the state for the first time",
+   "After the first action for that state reaches the store"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "73",
+  "question": "A handler returns an Observable that throws an error. What happens to the dispatch Observable?",
+  "options": [
+   "It completes and hides the error from the caller code",
+   "It retries the handler one time before it reports the error",
+   "It errors, and the caller can use `catchError` on it",
+   "It resets the state to the defaults and then it completes"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "74",
+  "question": "What is a good way to handle a failed HTTP call in a handler?",
+  "options": [
+   "Use `catchError` in the handler and dispatch a failure action",
+   "Throw the error and let the logger plugin catch and handle it",
+   "Write `ctx.getState().error = err` in the handler, then return",
+   "Wrap the whole handler body in `try/catch` and ignore all errors"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "A handler calls `ctx.dispatch(new Other())`. How does the first dispatch wait for Other?",
+  "options": [
+   "Call `subscribe` on it and ignore the result",
+   "Set `waitFor: true` in the options of `@Action`",
+   "Return the Observable that `ctx.dispatch` gives",
+   "Use `setTimeout` to delay the end of the handler"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "Where do side effects usually go in NGXS, compared to NgRx?",
+  "options": [
+   "In action handlers of the state class, not in Effects classes",
+   "In pure reducers that call the services of the application",
+   "In selectors that run when the state changes in the store",
+   "In separate Effects classes, the same way as in NgRx apps"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "77",
+  "question": "What is a main style difference between NGXS and NgRx actions?",
+  "options": [
+   "NGXS actions are plain strings, and NgRx actions are classes",
+   "NGXS actions are functions, and NgRx actions are plain classes",
+   "NGXS actions are classes with a `type`; NgRx uses `createAction`",
+   "NGXS has no actions, and it calls the state methods directly"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "78",
+  "question": "In Akita, which class do you use to read the state?",
+  "options": [
+   "Selector",
+   "Getter",
+   "Query",
+   "Reader"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "79",
+  "question": "How do you change the state in Akita?",
+  "options": [
+   "Call `store.update()` or `store.set()`, often from a service",
+   "Dispatch an action that a reducer handles and returns new state",
+   "Call `ctx.patchState()` in an action handler of a state class",
+   "Use an `@Action` method in a state class that has `defaults`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "80",
+  "question": "In a production build, a handler does `const s = ctx.getState(); s.items.push(x); ctx.setState(s);`. Why does the view not update?",
+  "options": [
+   "The `setState` method accepts only a function, not a plain state object",
+   "The object has the same reference, so the selectors see no change",
+   "The state cannot have an `items` key, because the name is reserved",
+   "Signals ignore all array values, so the view does not get updates"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "81",
+  "question": "A memoized selector gets the input values A, B, then A again. How many times does it run its function?",
+  "options": [
+   "Two times, because it keeps all the results of earlier calls",
+   "One time, because it keeps only the first result it makes",
+   "Three times, because it keeps only the last arguments",
+   "Two times, because it keeps the last two results of calls"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "82",
+  "question": "A plugin does not call `next` for an action. What is the effect?",
+  "options": [
+   "The handlers run later, after a short delay of one tick",
+   "The handlers do not run, and the state stays the same",
+   "The store sends the same action to all plugins two times",
+   "The store throws an error at once, when you dispatch it"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "Two states handle one action. One handler is sync, and one returns a slow Observable. When does the dispatch complete?",
+  "options": [
+   "When all the returned Observables complete",
+   "When the sync handler finishes its work",
+   "When the first returned Observable emits a value",
+   "After the next Zone stable event in the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "A new dispatch cancels an old handler with `cancelUncompleted`. Which Actions stream shows this for the old action?",
+  "options": [
+   "ofActionErrored",
+   "ofActionSuccessful",
+   "ofActionDispatched",
+   "ofActionCanceled"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "NGXS has no built-in option like `exhaustMap`. How do you ignore a second dispatch while the first runs?",
+  "options": [
+   "Set the option `exhaust: true` in the options of the `@Action` decorator",
+   "Use `cancelUncompleted` together with an operator named `takeFirst`",
+   "Keep a loading flag in the state and return `EMPTY` if it is set",
+   "Wrap the dispatch call in `Promise.race` and wait for the result"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "86",
+  "question": "A list has 10,000 rows. Each row creates its own `createSelector` for its item. What is the problem?",
+  "options": [
+   "The store throws an error after more than 1,000 selectors exist",
+   "The selectors share one cache, so some rows show wrong items",
+   "The selectors cannot read arrays that are in the state slice",
+   "Each selector has its own cache and runs when the list changes"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "An unrelated action runs. A `store.select` returns the same object reference as before. Does the Observable emit?",
+  "options": [
+   "Yes, because each action makes a new emission of the value",
+   "Yes, but only when the app runs in development mode",
+   "No, because `select` filters equal references",
+   "No, but only with OnPush change detection in the component"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "88",
+  "question": "The state keeps `Date` objects and class instances. The storage plugin saves it. What is the risk?",
+  "options": [
+   "The plugin refuses to save the state and throws an error at once",
+   "The plugin saves each date as a number in all browsers and cases",
+   "The class instances keep all their methods after a restore",
+   "JSON loses the types, so you get strings and plain objects"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "89",
+  "question": "Why do teams turn off the devtools and logger plugins in production?",
+  "options": [
+   "They cannot run when the production build minifies the code of the app",
+   "They store and print every action, which costs memory and shows data",
+   "They block the handlers of async actions and make the HTTP calls slow",
+   "They send the state to the servers of the NGXS team for each build"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "90",
+  "question": "The state is large, and the storage plugin saves it. What is a risk?",
+  "options": [
+   "Each write is a sync JSON write that can block the main thread",
+   "The plugin writes the state only when the browser window closes",
+   "The plugin writes in a web worker, so the main thread is safe",
+   "The plugin compresses the data, so the size does not matter much"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "Why does a state mutation break time travel in Redux DevTools?",
+  "options": [
+   "DevTools remove each action that has a mutation from the history",
+   "DevTools copy the state in a deep way before each new action runs",
+   "DevTools run the handlers again for each jump in the history",
+   "DevTools keep old states by reference, so a mutation changes them"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "92",
+  "question": "An async handler reads `const s = ctx.getState()`, calls HTTP, and then runs `ctx.setState({ ...s, items })`. What is the risk?",
+  "options": [
+   "The write can erase changes that other actions made during the call",
+   "The spread operator makes a deep copy of the state in a wrong way",
+   "The state is frozen in development mode, so the write always fails",
+   "The HTTP call runs two times because of the extra state read"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "Two action classes in two files have the same `type` string. What happens?",
+  "options": [
+   "The store throws an error at app start, with the duplicate type name inside it",
+   "Handlers of both classes run for either action, because of the type string",
+   "Only the handlers of the first registered class run, and the other class has none",
+   "The second class replaces the first one in the internal registry of the store"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "94",
+  "question": "A team uses `static type = AddTodo.name` and builds with minification. What is the risk?",
+  "options": [
+   "The decorator @Action cannot read the name of a minified class",
+   "The class name changes or collides, so the type is not stable",
+   "The Redux DevTools plugin cannot show the name of this action",
+   "The action loses all its constructor arguments after the build"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "A selector calls `store.dispatch` to set a default value. Why is this bad?",
+  "options": [
+   "A selector must be pure, and it can run many times",
+   "Selectors cannot use the store because they are static methods",
+   "The dispatch returns a Promise when a selector calls it",
+   "The compiler blocks the call inside static methods of classes"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "96",
+  "question": "Which state operator expression removes the item with id 2 from `items`?",
+  "options": [
+   "patch({ items: filterItem<Item>(i => i.id !== 2) })",
+   "patch({ items: dropItem<Item>(i => i.id === 2) })",
+   "patch({ items: removeItem<Item>(i => i.id === 2) })",
+   "patch({ items: deleteItem<Item>(2) })"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "What does `createPropertySelectors` do?",
+  "options": [
+   "It builds one action class for each property of the state model",
+   "It makes one selector for each property of a parent selector result",
+   "It adds a property to the state slice when a selector first runs",
+   "It copies each property of the state into the local storage key"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "Which lifecycle hook of a state runs after the Angular application bootstraps?",
+  "options": [
+   "ngxsOnBootstrap",
+   "ngxsAfterInit",
+   "ngxsAfterBootstrap",
+   "ngxsOnReady"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "What does the `ngxsOnChanges` hook of a state receive?",
+  "options": [
+   "The action and a context that can dispatch more actions later",
+   "The Angular `SimpleChanges` object of the component inputs",
+   "The list of the plugins that changed the state in this run of the action",
+   "An object with the previous and current value of the state"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "A selector reads only `state.a`, but `state.b` changes. Does the selector run again?",
+  "options": [
+   "Yes, because it gets the whole slice, which has a new reference",
+   "No, because it reads only the field `a` of the state slice object",
+   "No, because the store compares each field of the whole state slice",
+   "Yes, but only when the field `b` is an object or an array value now"
+  ],
+  "correct_index": 0
+ }
+]

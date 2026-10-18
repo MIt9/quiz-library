@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What is an Angular component?",
+  "options": [
+   "A class that only sends HTTP requests to a server and keeps the results",
+   "A class with a template that controls part of the screen",
+   "A function that changes the values inside a template",
+   "A file that sets the build options of the project"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "Which decorator marks a class as a service that Angular can inject?",
+  "options": [
+   "@Component",
+   "@Service",
+   "@Injectable",
+   "@ServiceProvider"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "3",
+  "question": "What does `{{ title }}` do in a template?",
+  "options": [
+   "It declares a new variable named title",
+   "It shows the value of `title` as text",
+   "It binds an event to the title property",
+   "It imports the title from another file"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "4",
+  "question": "Which syntax binds the `url` property to the `src` of an image?",
+  "options": [
+   "<img (src)=\"url\">",
+   "<img #src=\"url\">",
+   "<img [src]=\"url\">",
+   "<img *src=\"url\">"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "5",
+  "question": "Which syntax calls `save()` when the user clicks a button?",
+  "options": [
+   "<button (click)=\"save()\">",
+   "<button [click]=\"save()\">",
+   "<button {click}=\"save()\">",
+   "<button @click=\"save()\" type=\"button\">"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "6",
+  "question": "What does the `[(ngModel)]` syntax do?",
+  "options": [
+   "It makes a one-way binding from the template to the class",
+   "It creates a new form group for a reactive form",
+   "It subscribes to an Observable and shows the last value",
+   "It binds a field and a form control in both directions"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "7",
+  "question": "What does the command `ng generate component card` do?",
+  "options": [
+   "It creates the files for a new component named card",
+   "It installs a package named card from the npm registry",
+   "It builds a production bundle with a card entry point",
+   "It starts a server that shows the card page only"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "8",
+  "question": "What does the `@if` block do in Angular 17 and later?",
+  "options": [
+   "It repeats a part of the template for each list item",
+   "It shows a part of the template if a condition is true",
+   "It loads a part of the template after a short delay",
+   "It sets a CSS class on an element if a condition is true"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "9",
+  "question": "What is the `track` expression in an `@for` block used for?",
+  "options": [
+   "It counts the items that the list shows on the screen",
+   "It sorts the items by their identity before Angular shows them in the list",
+   "It gives each item an identity so Angular can reuse DOM nodes",
+   "It stops the loop after a fixed number of list items"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "Which older structural directive repeats an element for each item of a list?",
+  "options": [
+   "*ngLoop",
+   "*ngRepeat",
+   "*ngFor",
+   "*ngEach"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "11",
+  "question": "What is dependency injection in Angular?",
+  "options": [
+   "A class creates all of its own helper objects with the `new` keyword",
+   "A tool that copies the code of one component into another one when the build runs",
+   "A method that loads a module only when the user needs that module",
+   "Angular gives a class the objects it needs, so the class does not make them"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "12",
+  "question": "What does `providedIn: 'root'` mean for a service?",
+  "options": [
+   "Angular makes a new instance for each component that asks for it",
+   "The service works only inside the root component of the application",
+   "The service loads only after the first route change of the user",
+   "Angular makes one shared instance for the whole application"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "13",
+  "question": "What does a standalone component not need?",
+  "options": [
+   "A template or a template file",
+   "A selector name in the decorator",
+   "A declaration in an NgModule",
+   "A class with the @Component decorator"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "14",
+  "question": "What does the `imports` array of a standalone component contain?",
+  "options": [
+   "The components, directives and pipes that its template uses",
+   "The services that the component injects in its constructor and its methods",
+   "The routes that the component is able to open",
+   "The style files that the component needs to load"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "15",
+  "question": "What is the main purpose of an NgModule in older Angular code?",
+  "options": [
+   "To group declarations, imports and providers that belong together",
+   "To store the global state of the whole application in one single place for all users",
+   "To send HTTP requests for all services of the application",
+   "To start the development server with the correct options"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "When does Angular call `ngOnInit`?",
+  "options": [
+   "Before Angular creates the class instance of the component and its template",
+   "Each time the user clicks anywhere inside the component",
+   "Only when Angular removes the component from the page",
+   "After Angular sets the first input values of the component"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "17",
+  "question": "What is `ngOnDestroy` mostly used for?",
+  "options": [
+   "To set the first values of the inputs of the component",
+   "To remove timers and subscriptions of the component",
+   "To start the first HTTP request that the component needs",
+   "To read the size of the child elements after rendering"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "18",
+  "question": "When does Angular call `ngOnChanges`?",
+  "options": [
+   "When the value of an `@Input` property changes",
+   "When the user types in any input field",
+   "When the component template finishes the first render",
+   "When a service in the component changes"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "What does the `@Input()` decorator do?",
+  "options": [
+   "It lets a child component send events and data back to its parent component",
+   "It lets a parent component send data to a child component",
+   "It reads the current value of a form field",
+   "It makes a service available inside the template"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "How does a child component send an event to its parent in the classic API?",
+  "options": [
+   "It uses an `@Input()` property with a callback",
+   "It changes a property of the parent class directly through a reference",
+   "It calls `ngOnChanges` of the parent component",
+   "It uses an `@Output()` property with an `EventEmitter`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "What type of value does the `input()` function return in a component?",
+  "options": [
+   "A writable signal",
+   "An Observable",
+   "A plain property of the class",
+   "A read-only signal"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "A signal is `const count = signal(0);`. How do you read its value?",
+  "options": [
+   "count.value",
+   "count()",
+   "count.get",
+   "count.read"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "23",
+  "question": "What does `computed()` do?",
+  "options": [
+   "It makes a signal that code can set from outside the class",
+   "It runs a side effect each time a signal changes its value",
+   "It converts an Observable to a signal for the template",
+   "It makes a read-only signal from other signals"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "What is `effect()` mostly used for?",
+  "options": [
+   "To run a side effect when the signals it reads change",
+   "To make a derived value from one or more other signals",
+   "To send a value from a child component to its parent",
+   "To start the change detection of a component by hand"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "25",
+  "question": "What does the `async` pipe do with an Observable?",
+  "options": [
+   "It waits for the first value, shows it and then stops the Observable",
+   "It converts the Observable to a Promise that the class can wait for",
+   "It repeats the last value after each click inside the template view",
+   "It subscribes, shows the last value and unsubscribes on destroy"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "What is a pipe in an Angular template?",
+  "options": [
+   "A tool that sends a value from a parent to a child component",
+   "A tool that changes a value for display, for example `date`",
+   "A tool that connects two services in the injector tree",
+   "A tool that loads the code of a module only on demand"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "27",
+  "question": "How do you enable `HttpClient` in a standalone application?",
+  "options": [
+   "Add `HttpClient` to the declarations of a component",
+   "Import `HttpClientModule` in `main.ts` only",
+   "Add `provideHttpClient()` to the providers",
+   "Write `providedIn: 'http'` in the service"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "What does `http.get('/api/items')` return?",
+  "options": [
+   "An Observable",
+   "A Promise",
+   "An array of items",
+   "A Response object"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "29",
+  "question": "When does an HTTP request from `HttpClient` start?",
+  "options": [
+   "When code calls the `get` method of the HttpClient",
+   "When the component template renders for the first time",
+   "When Angular finishes the bootstrap of the application",
+   "When code subscribes to the returned Observable"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "What is an HTTP interceptor used for?",
+  "options": [
+   "To keep the compiled templates of all components in a cache",
+   "To change requests or responses in one place",
+   "To stop the user from leaving a page with unsaved data",
+   "To load the code of a route only when the user needs it"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "What does the `<router-outlet>` element do?",
+  "options": [
+   "It makes a link to another route",
+   "It checks if the user can open a route",
+   "It shows the component of the active route",
+   "It stores the history of the browser for the back button"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "What does the `routerLink` directive do on a link?",
+  "options": [
+   "It reloads the full page from the server",
+   "It changes the route without a full page reload",
+   "It opens the link in a new browser tab of the user",
+   "It checks the link before the user clicks"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "Which route definition has a path parameter named `id`?",
+  "options": [
+   "{ path: 'user/{id}', component: UserComponent }",
+   "{ path: 'user?id', component: UserComponent }",
+   "{ path: 'user/#id', component: UserComponent }",
+   "{ path: 'user/:id', component: UserComponent }"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "34",
+  "question": "What does the route path `**` match?",
+  "options": [
+   "Only the empty URL of the application",
+   "Only URLs that have query parameters in them after the path",
+   "Any URL that no earlier route matched",
+   "Only URLs that have two segments"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "What does a `canActivate` guard decide?",
+  "options": [
+   "If the router can leave a route",
+   "If the router must load data before a route",
+   "If the router can open a route",
+   "If the router can load the code of a route"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "Which route property loads a standalone component only when the user needs it?",
+  "options": [
+   "loadComponent",
+   "lazyComponent",
+   "importComponent",
+   "deferComponent"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "37",
+  "question": "What does the `ng serve` command do?",
+  "options": [
+   "It starts a development server that reloads when files change",
+   "It builds the files of the project for production use with full optimization",
+   "It runs the unit tests of the project in watch mode",
+   "It creates a new Angular project in the current folder"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "38",
+  "question": "Which function starts a standalone Angular application in `main.ts`?",
+  "options": [
+   "startApplication",
+   "bootstrapApplication",
+   "createApplication",
+   "startStandaloneApplication"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "39",
+  "question": "What is `<ng-content>` used for?",
+  "options": [
+   "To load the content of a component from a remote server at run time",
+   "To repeat one element for each item of a list of data",
+   "To show content that a parent puts inside the component tags",
+   "To show a message when a list has no items to show"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "40",
+  "question": "What does the `@ViewChild` decorator do?",
+  "options": [
+   "It gets the parent component of the current class",
+   "It gets a parameter value from the active route of the application",
+   "It gets a service instance from the root injector",
+   "It gets a child element or component from the template"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "41",
+  "question": "What is `#box` in `<input #box>` called?",
+  "options": [
+   "A structural directive that adds the element",
+   "An output binding",
+   "A template reference variable",
+   "A pipe argument"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "42",
+  "question": "What does `[class.active]=\"isActive\"` do?",
+  "options": [
+   "It sets the id of the element to `active`",
+   "It adds the class `active` when `isActive` is true",
+   "It calls the method `isActive` on click",
+   "It removes all other classes from the element when the value changes"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "43",
+  "question": "When does the `@empty` block of an `@for` loop show its content?",
+  "options": [
+   "When the list has no items",
+   "When the list has only one item",
+   "When the loop finishes the last item",
+   "When an item in the list is null"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "44",
+  "question": "What does an `@defer` block do?",
+  "options": [
+   "It stops a template from rendering on the server",
+   "It delays an HTTP request by a set time",
+   "It loads a part of the template and its code later",
+   "It saves the template in the cache of the browser for the next visit"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "What is `ChangeDetectionStrategy.OnPush` used for?",
+  "options": [
+   "To make Angular check a component less often",
+   "To send data to a server in the background of the app",
+   "To update the component on every mouse move",
+   "To disable data binding in the component"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "What is the main job of zone.js in a classic Angular application?",
+  "options": [
+   "It tells Angular when an async task ends, so Angular can check",
+   "It loads the lazy modules of the application when they are needed",
+   "It compiles the templates of the components in the browser",
+   "It stores the current state of the router for each user"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "47",
+  "question": "What does the `inject()` function do?",
+  "options": [
+   "It adds a new provider to the root injector of the application",
+   "It creates a new instance of a component in the template",
+   "It sends a value from a child component to its parent",
+   "It gets a dependency from the injector without a constructor"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "48",
+  "question": "What is server-side rendering (SSR) in Angular?",
+  "options": [
+   "The browser compiles the templates of the page in a web worker thread",
+   "The server makes the HTML of a page before the browser gets it",
+   "The server runs only the unit tests of the application",
+   "The server stores the state of every user in memory"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "49",
+  "question": "What does hydration do in an SSR application?",
+  "options": [
+   "The browser reuses the HTML from the server and makes it interactive",
+   "The server sends the full page again after each click of the user",
+   "The browser deletes the server HTML and builds the page again from nothing",
+   "The server compresses the HTML before it sends it to the browser"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "Which service lets code open another route, for example after a form is saved?",
+  "options": [
+   "Location",
+   "Router",
+   "ActivatedRoute",
+   "RouterOutlet"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "51",
+  "question": "A component uses Default change detection. What does Angular check after an async event, such as a click?",
+  "options": [
+   "Only the component that got the event",
+   "The whole component tree, from the root down",
+   "Only the components with changed inputs",
+   "Only the components that use the async pipe"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "A parent changes `user.name` in place. The child has OnPush and the input `user`. The child view does not update. Why?",
+  "options": [
+   "The input reference did not change",
+   "OnPush components never read object properties",
+   "Zone.js does not see changes in objects",
+   "The child must use `ngOnChanges` to show data"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "53",
+  "question": "An OnPush component changes a plain field in a `setInterval` callback. What happens to its view?",
+  "options": [
+   "It updates, because zone.js always checks every component",
+   "It does not update, because nothing marks the component dirty",
+   "It updates only after the next route change of the user",
+   "It throws an error in production mode after the first tick"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "54",
+  "question": "What does `ChangeDetectorRef.markForCheck()` do?",
+  "options": [
+   "It runs change detection at once for this component only",
+   "It stops change detection for this component and its children",
+   "It marks the component and its ancestors for the next check",
+   "It checks all components of the application one more time"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "55",
+  "question": "Which error appears in development mode when a child changes a parent binding in `ngAfterViewInit`?",
+  "options": [
+   "NullInjectorError: No provider for the parent service",
+   "NG0500 hydration mismatch error for the parent view",
+   "RangeError: Maximum call stack size exceeded in the parent",
+   "ExpressionChangedAfterItHasBeenCheckedError"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "56",
+  "question": "A developer reads an `@Input` value in the constructor and gets `undefined`. What is the reason?",
+  "options": [
+   "The input needs the `async` pipe to give its value",
+   "Inputs work only in the template of the component",
+   "Angular sets the inputs after it creates the instance",
+   "The constructor runs after `ngOnInit` in the lifecycle"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "A component lists a service in its own `providers` array. What is the result?",
+  "options": [
+   "All components in the application share one instance of the service",
+   "Angular ignores the list if the service has a `providedIn` value",
+   "The service works only in the template of that component",
+   "Each instance of the component gets its own instance of the service"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "58",
+  "question": "What does `inject(Logger, { optional: true })` return when no provider for `Logger` exists?",
+  "options": [
+   "undefined",
+   "null",
+   "An empty object",
+   "It throws NullInjectorError"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "59",
+  "question": "When do you use an `InjectionToken`?",
+  "options": [
+   "To mark a class so that the compiler removes it from the bundle",
+   "To store a login token in the memory of the browser for requests",
+   "To pass a token from the router to a lazy route when it loads",
+   "To inject a value that has no class, such as a config object"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "60",
+  "question": "How do you replace `ApiService` with a mock class in a test?",
+  "options": [
+   "Use `{ replace: ApiService, with: MockApiService }`",
+   "Add `MockApiService` to the declarations",
+   "Use `{ provide: MockApiService, useValue: ApiService }`",
+   "Use `{ provide: ApiService, useClass: MockApiService }`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "Angular looks for a provider. Where does the search start?",
+  "options": [
+   "In the root injector first, then down to the requesting component",
+   "In the injector of the component, then up through its parents",
+   "In the injector of the first lazy route that the user opened",
+   "In a global list that holds the providers of all modules"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "62",
+  "question": "A functional guard returns a `UrlTree`. What does the router do?",
+  "options": [
+   "It opens the route and shows a warning message to the user",
+   "It waits a moment and then calls the same guard again",
+   "It reloads the current page and keeps the old URL",
+   "It cancels the current navigation and goes to the new URL"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "63",
+  "question": "An interceptor wants to add a header to a request. Why does `req.headers.set(...)` not work?",
+  "options": [
+   "Headers cannot change after the application sends a first request",
+   "Interceptors can change only the responses and never the requests",
+   "The `set` method of headers works only inside route guards",
+   "The request object is immutable, so the code must use `req.clone()`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "64",
+  "question": "How do you register a functional interceptor in a standalone application?",
+  "options": [
+   "Use `provideHttpClient(withInterceptors([myInterceptor]))`",
+   "Add the function to the `imports` of the root component",
+   "Use `provideInterceptors([myInterceptor])` in the providers",
+   "Add the function to the `routes` array of the application"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "What does a route resolver do?",
+  "options": [
+   "It gets data before the router opens the route",
+   "It checks if the user can leave the current route",
+   "It loads the code of the route when the user needs it",
+   "It changes the URL after the user clicks a link"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "The URL changes from `/user/1` to `/user/2` with the same route. What happens to the component?",
+  "options": [
+   "Angular creates a new instance and calls `ngOnInit` again",
+   "Angular shows an error because the route is the same one",
+   "Angular reuses the instance and does not call `ngOnInit` again",
+   "Angular reloads the full page to get the new parameter"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "What does `withComponentInputBinding()` do in the router setup?",
+  "options": [
+   "It binds the router outlet to a service of the application",
+   "It makes the inputs of all components in the route required",
+   "It sends route params to the component inputs with the same names",
+   "It sends the query params of the URL to the server"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "68",
+  "question": "A list reorders often. Why is `track item.id` better than `track $index`?",
+  "options": [
+   "It makes the list sort faster when the data comes from the server",
+   "Angular can move the DOM nodes of items instead of changing them",
+   "It stops the list from changing when the data is the same",
+   "It lets the list render without any template for the items"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "When does `@defer (on viewport)` load the deferred content?",
+  "options": [
+   "When the user clicks on the placeholder with the mouse",
+   "When the placeholder enters the visible area of the screen",
+   "When the browser is idle for a short time after the load",
+   "When the router finishes its current navigation to the page"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "In which hook is a `@ViewChild` element safe to use?",
+  "options": [
+   "constructor",
+   "ngOnInit",
+   "ngOnChanges",
+   "ngAfterViewInit"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "Which hook runs after Angular puts projected content into the component?",
+  "options": [
+   "ngAfterViewInit",
+   "ngDoCheck",
+   "ngAfterContentInit",
+   "ngOnInit"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "72",
+  "question": "A developer uses `effect()` only to copy a value from one signal to another. What is better?",
+  "options": [
+   "Use `computed()` to derive the value",
+   "Use `ngOnChanges` to copy the value",
+   "Use `setTimeout` to copy the value",
+   "Use a second `effect()` to read the value"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "73",
+  "question": "A developer calls `toSignal(obs$)` inside `ngOnInit` and gets an error. What is the reason?",
+  "options": [
+   "The Observable must be a Promise first",
+   "Signals work only in templates",
+   "The function needs an injection context",
+   "The function works only in services"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "74",
+  "question": "A component reads `window.innerWidth` in its constructor. The SSR build fails. Why?",
+  "options": [
+   "The server runs in Node.js and has no `window` object",
+   "The constructor does not run at all when the server renders",
+   "The `window` object is private in the Angular framework",
+   "SSR blocks all browser APIs for security by default"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "Hydration shows a mismatch error. Which code is a common cause?",
+  "options": [
+   "Use of the `async` pipe in a template of the component",
+   "Use of the `@if` block in a template of the component",
+   "Code that changes the DOM directly, for example with `innerHTML`",
+   "Use of OnPush change detection in a component of the page"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "What is the difference between a pure pipe and an impure pipe?",
+  "options": [
+   "A pure pipe runs again only when its input reference changes",
+   "A pure pipe runs again on every mouse event in the page",
+   "An impure pipe cannot take an argument in the template",
+   "An impure pipe runs only when the server renders the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "77",
+  "question": "What happens when `http.get()` gets a 404 response?",
+  "options": [
+   "The Observable sends a normal value that has status 404",
+   "The Observable completes with no value and no error",
+   "The request retries three times before it stops",
+   "The Observable sends an error with an `HttpErrorResponse`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "78",
+  "question": "How do you get the status code and headers of a response from `HttpClient`?",
+  "options": [
+   "Use the option `responseType: 'full'`",
+   "Read the property `http.lastResponse`",
+   "Use the option `observe: 'response'`",
+   "Use the option `withHeaders: true`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "79",
+  "question": "An OnPush component reads a signal in its template. The signal changes. What happens?",
+  "options": [
+   "Angular marks the component for check and updates the view",
+   "Nothing changes until the parent input changes",
+   "Angular reloads the full page",
+   "Angular updates the view only after `detectChanges()` call"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "80",
+  "question": "A component calls `subscribe` on `interval(1000)` in `ngOnInit` and never stops it. What is the result?",
+  "options": [
+   "Angular stops the timer when the component is destroyed",
+   "The subscription keeps running after the component is gone",
+   "The component cannot render at all",
+   "Angular throws an error at the second tick"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "81",
+  "question": "A `mousemove` listener in a classic zone app does nothing visible but slows the page. What is a good fix?",
+  "options": [
+   "Add the listener inside the `ngOnDestroy` hook only",
+   "Change the component to Default change detection",
+   "Add the listener inside `NgZone.runOutsideAngular()`",
+   "Move the listener code into a pure pipe function"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "82",
+  "question": "In a zoneless Angular application, which action makes Angular schedule change detection?",
+  "options": [
+   "A change of a plain field in a timer callback",
+   "A signal update that the template reads",
+   "A `setTimeout` call in any service",
+   "A resolved Promise in the constructor"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "A `computed` signal depends on signal `a`. Nobody reads the computed signal after `a` changes. What happens?",
+  "options": [
+   "The function does not run until some code reads the computed signal",
+   "The function runs at once after each change of the signal `a`",
+   "The function runs one time each second in the background",
+   "The function runs in the next change detection cycle only"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "A `computed` reads `flag()` and then reads `a()` only if `flag()` is true. When `flag()` is false, what does it track?",
+  "options": [
+   "Both `flag` and `a`, because both of them appear in the code",
+   "Only `a`, because it holds the value that the code would use",
+   "No signals, because the branch of the code does not run at all",
+   "Only `flag`, because Angular tracks the signals read in the last run"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "A developer changes an object inside a signal and then calls `set(sameObject)`. Why do consumers not update?",
+  "options": [
+   "Signals cannot hold objects, only simple values",
+   "The `set` method needs a second argument for objects",
+   "The default equality check sees the same reference",
+   "The consumers must use the `async` pipe to see changes"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "86",
+  "question": "Why is a service with `providedIn: 'root'` better for bundle size than one in `NgModule.providers`?",
+  "options": [
+   "Root services load faster over the network than module services",
+   "Root services are not compiled by the Angular compiler",
+   "Module services need a second compiler step at build time",
+   "Unused services can be removed from the bundle by tree-shaking"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "A lazy route has `providers: [CartService]`. The root also provides `CartService`. What do components in that route get?",
+  "options": [
+   "The root instance, because the root is the first injector",
+   "Both instances in an array, in the order of the providers",
+   "The instance from the route injector, not the root instance",
+   "An error because the two providers use the same token"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "88",
+  "question": "A component needs the instance of a token from its parent injector, not its own. Which call does this?",
+  "options": [
+   "`inject(Token, { host: true })`",
+   "`inject(Token, { optional: true })`",
+   "`inject(Token, { self: true })`",
+   "`inject(Token, { skipSelf: true })`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "89",
+  "question": "What does `multi: true` do in a provider definition?",
+  "options": [
+   "The provider creates a new instance for each injection call",
+   "The token gets an array of all values that providers set",
+   "The last provider replaces all earlier providers of the token",
+   "The provider works in many modules of the application at once"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "90",
+  "question": "An app uses `withInterceptors([a, b])`. In which order do the response events pass the interceptors?",
+  "options": [
+   "b first, then a",
+   "a first, then b",
+   "Both at the same time",
+   "The order is random for each request"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "Many requests get a 401 error at the same time. An interceptor refreshes the token for each one. What is the risk and the fix?",
+  "options": [
+   "The router loops without end; add a `canActivate` guard to each route",
+   "The HTTP cache fills up; clear the whole cache after each 401",
+   "The tokens are too short; use a longer token for each request",
+   "Many refresh calls start; share one refresh request and make the others wait"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "92",
+  "question": "What is `TransferState` used for in an SSR application?",
+  "options": [
+   "To send data from the server to the browser, so it need not ask again",
+   "To save the session of the user in a cookie for later visits",
+   "To move a component between two routes without a reload",
+   "To share signal values between two open tabs of the browser"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "An SSR app has a module-level `const cache = {}` that stores user data. What is the risk?",
+  "options": [
+   "The cache is empty again at the start of each new request",
+   "Different requests share the object, so user data can leak",
+   "The browser cannot read the cache that the server made",
+   "The server deletes the object after it ends one request"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "94",
+  "question": "Why does a guard return a `UrlTree` instead of calling `router.navigate()` inside the guard?",
+  "options": [
+   "`navigate()` does not work inside route guards at all, in any case",
+   "The router handles the redirect as part of the current navigation",
+   "`UrlTree` runs faster than `navigate()` in all of the cases",
+   "`navigate()` skips the other guards that the route has defined"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "A user clicks two different links very fast. The first navigation has a slow resolver. What does the router do?",
+  "options": [
+   "It cancels the first navigation and runs the second one",
+   "It finishes the first one and then runs the second",
+   "It runs both and shows the last one that ends",
+   "It shows an error and stays on the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "96",
+  "question": "What does `ChangeDetectorRef.detach()` do?",
+  "options": [
+   "It deletes the component from the DOM and calls `ngOnDestroy`",
+   "It stops all signals that the component reads in its template",
+   "It removes the view from change detection until `detectChanges()` runs",
+   "It makes the component use Default change detection again"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "In Angular 19, on which platform do `afterNextRender` callbacks run?",
+  "options": [
+   "Only on the server",
+   "Only in the browser",
+   "On the server and the browser",
+   "Only in unit tests"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "An `@for` loop uses `track item`. The app loads new data, and each item is a new object. What happens to the DOM?",
+  "options": [
+   "Angular reuses all nodes and updates the text",
+   "Angular reuses nodes that have the same index",
+   "Angular destroys and creates all item nodes again",
+   "Angular throws an error for new objects"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "An `effect` starts a timer. How do you stop the timer before the next run of the effect?",
+  "options": [
+   "Call `clearInterval` in the `ngOnDestroy` hook of the component only",
+   "Call `effect.stop()` before the effect starts the timer again",
+   "Set the signal to `null` in the same effect function body",
+   "Call `onCleanup(() => clearInterval(id))` from the effect function argument"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "An app initializer function returns a Promise. What does Angular do?",
+  "options": [
+   "It waits for the Promise to resolve before the application is ready",
+   "It starts the application and ignores the returned Promise",
+   "It runs the Promise after the first route loads its component",
+   "It throws an error because async work is not allowed there"
+  ],
+  "correct_index": 0
+ }
+]

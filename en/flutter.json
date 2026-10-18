@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What is Flutter?",
+  "options": [
+   "A package manager that installs Dart libraries into projects",
+   "A cross-platform UI toolkit",
+   "A native Android framework that is written in Java",
+   "A programming language that targets mobile apps only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "Which programming language do you use to write Flutter apps?",
+  "options": [
+   "Kotlin",
+   "Dart",
+   "Swift",
+   "JavaScript"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "In Flutter, what is a widget?",
+  "options": [
+   "A native view that the operating system owns and draws",
+   "A file that stores the settings of the app",
+   "A background task that loads data",
+   "A description of one part of the user interface"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "4",
+  "question": "Which statement describes a StatelessWidget?",
+  "options": [
+   "It holds no changing state",
+   "It must be created with the const keyword",
+   "It cannot contain other widgets",
+   "It never rebuilds after it first appears"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "5",
+  "question": "A developer changes a field in a State class and wants the screen to update. Which call do they use?",
+  "options": [
+   "createState",
+   "didUpdateWidget",
+   "setState",
+   "initState"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "6",
+  "question": "What does the build method of a widget return?",
+  "options": [
+   "A render object",
+   "A widget",
+   "A future of a widget",
+   "An element"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "7",
+  "question": "Where do you put one-time setup code in a State class?",
+  "options": [
+   "In build",
+   "In initState",
+   "In createState",
+   "In dispose"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "8",
+  "question": "Where do you release a TextEditingController in a State class?",
+  "options": [
+   "In createState",
+   "In dispose",
+   "In build",
+   "In initState"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "9",
+  "question": "Which command starts a Flutter app on a connected device?",
+  "options": [
+   "flutter serve",
+   "flutter start",
+   "flutter run",
+   "flutter launch"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "What is the main difference between hot restart and hot reload?",
+  "options": [
+   "Hot restart only updates the asset files",
+   "Hot restart resets the app state, but hot reload keeps it",
+   "Hot reload resets the app state, but hot restart keeps it",
+   "Hot reload rebuilds the native code and keeps the app state"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "11",
+  "question": "Which widget puts its children in a vertical line?",
+  "options": [
+   "Row",
+   "Stack",
+   "Column",
+   "Align"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "12",
+  "question": "Which widget puts its children on top of each other?",
+  "options": [
+   "Stack",
+   "Flex",
+   "Table",
+   "Column"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "13",
+  "question": "What does the Scaffold widget give you?",
+  "options": [
+   "The storage for the state of the whole app",
+   "A page frame with app bar and body",
+   "Only the background colour of a single page",
+   "The navigation stack of the whole app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "14",
+  "question": "What is the purpose of the pubspec.yaml file?",
+  "options": [
+   "It contains the main function that starts the app",
+   "It lists the dependencies, assets, and metadata",
+   "It stores the compiled code of the whole app",
+   "It sets the permissions of the Android app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "15",
+  "question": "How do you add a new package to a Flutter project?",
+  "options": [
+   "Add it to pubspec.yaml and run flutter pub get",
+   "Edit only the build.gradle file of the Android app",
+   "Copy the package files into the lib folder",
+   "Run flutter build with the package name"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "What does the runApp function do?",
+  "options": [
+   "It creates a new isolate for the whole UI of the app",
+   "It makes the given widget the root and shows it",
+   "It builds the APK file of the app for Android",
+   "It starts the Dart virtual machine of the app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "17",
+  "question": "What does the MaterialApp widget set up?",
+  "options": [
+   "Only the Android-style buttons and the status bar of the app",
+   "The connection to the native platform code of the app",
+   "App-level features such as theme, routes, and navigation",
+   "The build process of the release version of the app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "18",
+  "question": "A page is too tall for the screen. Which widget lets the user scroll its child?",
+  "options": [
+   "SingleChildScrollView",
+   "IntrinsicHeight",
+   "ConstrainedBox",
+   "FractionallySizedBox"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "What does the type `String?` mean in Dart?",
+  "options": [
+   "The value can be a string or null",
+   "The value must be a non-empty string",
+   "The value is set later, before the first read",
+   "The value is a string that cannot change"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "20",
+  "question": "What does the `late` keyword do for a variable?",
+  "options": [
+   "It lets the variable hold the null value",
+   "It runs the initializer in a new isolate",
+   "It makes the variable a compile-time constant",
+   "It runs the initializer lazily"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "What is the difference between `final` and `const` variables in Dart?",
+  "options": [
+   "A final value is known at compile time, but a const value is set once at run time",
+   "A final variable must be null at the start, but a const variable cannot be",
+   "A const variable can change later, but a final variable cannot",
+   "A const value is known at compile time, but a final value is set once at run time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "What is a Future in Dart?",
+  "options": [
+   "A separate thread of the operating system",
+   "A queue of callbacks for the UI",
+   "An object for a value that is not ready yet",
+   "A sequence of many values over time"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "23",
+  "question": "Which keyword must you add to a function body to use `await` inside it?",
+  "options": [
+   "yield",
+   "static",
+   "sync",
+   "async"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "What does a function marked with `async` return?",
+  "options": [
+   "The raw value",
+   "An Isolate",
+   "A Future",
+   "A Stream"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "25",
+  "question": "Which type fits a sequence of GPS location updates that come over time?",
+  "options": [
+   "Isolate",
+   "Future",
+   "Stream",
+   "Completer"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "26",
+  "question": "Why do developers use ListView.builder for a long list?",
+  "options": [
+   "It builds only the items that are visible",
+   "It runs the item builders in a separate isolate",
+   "It turns off scrolling to save memory",
+   "It loads all items into memory first"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "27",
+  "question": "What does Navigator.pop(context) do?",
+  "options": [
+   "It replaces all routes with the first route of the app",
+   "It closes the whole app and returns to the home screen",
+   "It removes the top route",
+   "It pushes the previous route again on top of the stack"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "What can the Container widget do for its child?",
+  "options": [
+   "Add padding, margin, size, and a decoration",
+   "Make the child scroll in two directions",
+   "Load the child from the network",
+   "Run the child in a separate layer"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "29",
+  "question": "A Row has an Expanded child. What does Expanded do?",
+  "options": [
+   "It makes the child fill the free space",
+   "It makes the child as small as possible",
+   "It moves the child to the centre of the row",
+   "It lets the child scroll in the row"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "30",
+  "question": "What is the SizedBox widget often used for?",
+  "options": [
+   "To make a scrollable list of boxes",
+   "To make a child as large as its parent",
+   "To make a box with a fixed size or a fixed gap",
+   "To draw a border around a child"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "31",
+  "question": "What is a BuildContext?",
+  "options": [
+   "A global store for the state of the whole app",
+   "A handle to a widget's place in the tree",
+   "The object that holds the state of a widget",
+   "The object that holds the size of the screen"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "32",
+  "question": "What does `Theme.of(context)` return?",
+  "options": [
+   "The theme that the root widget uses",
+   "The nearest theme data above the widget in the tree",
+   "The theme that the app saved on disk",
+   "The default theme of the operating system"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "What is a TextEditingController used for?",
+  "options": [
+   "To check all fields of a form at once",
+   "To save the text of a field in a database",
+   "To read and change the text of a TextField",
+   "To move the focus to the next field"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "34",
+  "question": "How do you run all the validators of the fields in a Form?",
+  "options": [
+   "Call submit() on the Form widget",
+   "Call build() on the Form widget",
+   "Call check() on each TextEditingController",
+   "Call validate() on the FormState"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "35",
+  "question": "What does the `flutter doctor` command do?",
+  "options": [
+   "It checks your setup and shows missing tools",
+   "It deletes the build folder of the project and the cache",
+   "It runs all the tests of the project",
+   "It builds the release version of the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "36",
+  "question": "What does the `flutter clean` command do?",
+  "options": [
+   "It removes unused packages from pubspec.yaml",
+   "It fixes the errors that the analyzer finds",
+   "It deletes the build files and the cache",
+   "It formats the Dart code of the project"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "37",
+  "question": "How do you show a short message at the bottom of a screen?",
+  "options": [
+   "Use a BottomNavigationBar with a text item",
+   "Use a Drawer with a text child",
+   "Use a SnackBar with ScaffoldMessenger",
+   "Use an AlertDialog with showDialog"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "38",
+  "question": "What does the FutureBuilder widget do?",
+  "options": [
+   "It saves the result of a Future on the disk of the device",
+   "It replaces setState for all widgets",
+   "It runs a Future in a separate isolate",
+   "It builds a widget from the state of a Future"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "What does the expression `user?.name` return when `user` is null?",
+  "options": [
+   "The string \"null\"",
+   "null",
+   "An empty string",
+   "A runtime error"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "40",
+  "question": "Where do you declare image files so that Image.asset can load them?",
+  "options": [
+   "In the analysis_options.yaml file of the project",
+   "Under flutter: assets: in pubspec.yaml",
+   "In the AndroidManifest.xml file",
+   "In the imports of main.dart"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "41",
+  "question": "What is a Key used for in Flutter?",
+  "options": [
+   "It identifies widgets between rebuilds",
+   "It gives a widget direct access to its parent",
+   "It encrypts the data that a widget holds",
+   "It sets the unique route name of a page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "42",
+  "question": "What is the Provider package?",
+  "options": [
+   "A tool that loads native plugins into the app",
+   "A library for page navigation and deep links",
+   "A library for HTTP requests and JSON parsing",
+   "A state library built on InheritedWidget"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "In the Bloc pattern, what does a Bloc receive and what does it emit?",
+  "options": [
+   "It receives widgets and emits routes",
+   "It receives states and emits events",
+   "It receives events and emits states",
+   "It receives futures and emits isolates"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "Which widget do you put at the root of an app to use Riverpod?",
+  "options": [
+   "ProviderScope",
+   "RiverpodApp",
+   "ProviderRoot",
+   "ConsumerScope"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "45",
+  "question": "Inside a State class, what does the `widget` property give you?",
+  "options": [
+   "The element of the current widget",
+   "The root widget of the whole app",
+   "The parent widget of the current widget",
+   "The current StatefulWidget with its configuration"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "46",
+  "question": "Which command builds a release app bundle for Android?",
+  "options": [
+   "flutter pack apk",
+   "flutter build appbundle",
+   "flutter export release",
+   "flutter bundle android"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "47",
+  "question": "In which folder does a Flutter project keep unit and widget tests by default?",
+  "options": [
+   "lib/tests",
+   "spec",
+   "android/test",
+   "test"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "48",
+  "question": "Which method puts a widget into the test environment in a widget test?",
+  "options": [
+   "tester.runApp",
+   "tester.mount",
+   "tester.buildWidget",
+   "tester.pumpWidget"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "49",
+  "question": "What does the `??` operator do in Dart?",
+  "options": [
+   "It returns the right side if the left side is null",
+   "It returns the left side if the right side is null",
+   "It throws an error if the value is null",
+   "It checks if two values are equal"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "What does the null assertion operator `!` do in Dart?",
+  "options": [
+   "It removes the null check at compile time and run time",
+   "It makes the variable type nullable again",
+   "It asserts the value is not null",
+   "It returns null when the value is null"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "51",
+  "question": "What is the job of an Element in Flutter?",
+  "options": [
+   "It runs the build method on a separate thread",
+   "It is the live instance of a widget",
+   "It stores the layout constraints of a widget",
+   "It draws the pixels of a widget on the screen"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "What is the order of State calls when a StatefulWidget first appears?",
+  "options": [
+   "build, initState, didChangeDependencies",
+   "initState, build, didChangeDependencies",
+   "initState, didChangeDependencies, build",
+   "didChangeDependencies, initState, build"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "53",
+  "question": "A parent rebuilds and makes a new widget with the same type and key at the same place. What does Flutter do with the Element?",
+  "options": [
+   "It removes the Element and creates a new Element for it",
+   "It removes only the render object",
+   "It keeps the Element and gives it the new widget",
+   "It makes a new Element but keeps the State"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "54",
+  "question": "A list of StatefulWidget items changes order, but each State stays at its old position. What is the fix?",
+  "options": [
+   "Use a const constructor for each item",
+   "Wrap the list in a RepaintBoundary",
+   "Call setState two times",
+   "Give each item a unique ValueKey"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "55",
+  "question": "Why is UniqueKey a bad choice for the items of a list?",
+  "options": [
+   "It makes a new key on each build, so the State is lost",
+   "It sorts the list by key in alphabetical order",
+   "It cannot be used on a StatefulWidget",
+   "It is slow because it keeps a global registry of all keys"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "Which rule describes the layout in Flutter?",
+  "options": [
+   "Constraints go down, sizes go up, and the parent sets the position",
+   "Sizes go down, constraints go up, and the child sets the position",
+   "The parent sets the size, and the child sets the constraints",
+   "Constraints go up, positions go down, and the child sets the size"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "57",
+  "question": "A ListView is a direct child of a Column and gives an unbounded height error. What is the usual fix?",
+  "options": [
+   "Wrap the ListView in an Expanded widget",
+   "Add a Key to the ListView",
+   "Wrap the Column in a Center widget",
+   "Set mainAxisSize to max on the Column"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "58",
+  "question": "What is the difference between Flexible and Expanded?",
+  "options": [
+   "Flexible works only in a Row, but Expanded works only in a Column",
+   "Expanded lets the child be smaller than the free space, but Flexible forces it to fill the space",
+   "Expanded can scroll its child, but Flexible cannot",
+   "Flexible lets the child be smaller than the free space, but Expanded forces it to fill the space"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "59",
+  "question": "A widget reads data from an InheritedWidget with context. The data changes. When does the widget rebuild?",
+  "options": [
+   "Only when the widget is a StatefulWidget",
+   "Never, until the parent rebuilds",
+   "Every time, without a check",
+   "When updateShouldNotify returns true"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "60",
+  "question": "In an onPressed callback, you need a Provider value and you do not need to listen to it. Which call is right?",
+  "options": [
+   "context.read<T>()",
+   "Provider.of<T>(context)",
+   "context.select<T, R>()",
+   "context.watch<T>()"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "61",
+  "question": "What is the main difference between a Cubit and a Bloc?",
+  "options": [
+   "A Bloc changes state with method calls, but a Cubit maps events to states",
+   "A Cubit works only with streams, but a Bloc works only with futures",
+   "A Bloc has no state, but a Cubit has state",
+   "A Cubit changes state with method calls, but a Bloc maps events to states"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "62",
+  "question": "In Riverpod, which call in a build method makes the widget rebuild when a provider changes?",
+  "options": [
+   "ref.watch",
+   "ref.listen",
+   "ref.read",
+   "ref.invalidate"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "63",
+  "question": "What happens at compile time with `int? x; print(x.isEven);`?",
+  "options": [
+   "The compiler gives only a warning",
+   "The code compiles and prints false",
+   "The code compiles and throws at run time",
+   "The compiler gives an error"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "64",
+  "question": "Why does a null check not promote a non-final instance field to a non-nullable type?",
+  "options": [
+   "Fields are always nullable in every Dart program",
+   "Promotion works only in async functions",
+   "The compiler cannot read the type of a field",
+   "Other code can change the field after the check"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "65",
+  "question": "What does `await` do inside an async function?",
+  "options": [
+   "It turns the Future into a value without a pause",
+   "It starts a new isolate for the Future",
+   "It blocks the whole thread until the Future completes",
+   "It pauses the function and lets the event loop run"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "66",
+  "question": "Future.microtask and Future(() {}) are both scheduled. Which one runs first?",
+  "options": [
+   "The order is not defined",
+   "They run at the same time",
+   "Future.microtask",
+   "Future(() {})"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "A function calls an async `fetch()` without await inside a try/catch block. Later, fetch() throws. What happens?",
+  "options": [
+   "The catch block does not catch the error",
+   "The compiler rejects the code",
+   "The catch block catches the error",
+   "Dart ignores the error without a message"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "68",
+  "question": "Does a Future from an async function run its code on a separate thread?",
+  "options": [
+   "Yes, but only on Android and iOS devices",
+   "No, it runs on the event loop of the isolate",
+   "Yes, in a thread pool",
+   "Only when the function uses await on another Future"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "The app parses a 10 MB JSON file on the UI isolate and drops frames. What is the fix?",
+  "options": [
+   "Call the parsing inside setState on each frame",
+   "Run the parsing in another isolate",
+   "Wrap the parsing in Future.delayed with zero time",
+   "Mark the parsing function as async and await it"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "Which Navigator method replaces the current route with a new route?",
+  "options": [
+   "pushNamed",
+   "pushReplacement",
+   "restorablePush",
+   "popUntil"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "71",
+  "question": "A State method uses `context` after an `await`. Which check protects against an error?",
+  "options": [
+   "if (!context.isActive) return;",
+   "if (widget.key != null) return;",
+   "if (!mounted) return;",
+   "if (context == null) return;"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "72",
+  "question": "A native MethodChannel handler does heavy work. Which thread runs it on Android by default?",
+  "options": [
+   "A new isolate",
+   "A background thread pool",
+   "The Dart UI thread",
+   "The platform main thread"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "73",
+  "question": "Dart calls invokeMethod and gets a MissingPluginException. What is a likely cause?",
+  "options": [
+   "The method name is longer than the allowed limit",
+   "No native handler exists for that method",
+   "The widget that calls it has no key set",
+   "The Future from invokeMethod was not awaited"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "74",
+  "question": "A widget test with pumpAndSettle times out. The screen shows a spinning CircularProgressIndicator. Why?",
+  "options": [
+   "The spinner needs a tap before it stops moving",
+   "The animation never ends, so it never settles",
+   "The spinner blocks the Dart isolate",
+   "pumpAndSettle works only in unit tests"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "75",
+  "question": "Which type of test runs the full app on a real device or emulator?",
+  "options": [
+   "Integration test",
+   "Golden test",
+   "Unit test",
+   "Widget test"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "76",
+  "question": "What does a golden test check?",
+  "options": [
+   "That a function returns the right value",
+   "That the app uses less memory than the last release",
+   "That the app starts on a real device",
+   "That a widget looks the same as a saved image"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "77",
+  "question": "A parent calls setState. Why does a const child widget help?",
+  "options": [
+   "Flutter skips the rebuild of the child",
+   "Flutter removes the child from the Element tree",
+   "Flutter moves the child to a new isolate",
+   "Flutter caches the pixels of the child on the GPU"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "78",
+  "question": "What does a RepaintBoundary do?",
+  "options": [
+   "It makes the child a const widget in the tree",
+   "It gives the child its own paint layer",
+   "It clips the child when it overflows the parent",
+   "It stops the child from rebuilding in each frame"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "An app calls setState at the root widget for a small counter. What is a better design?",
+  "options": [
+   "Call setState inside initState",
+   "Add a GlobalKey to the root",
+   "Move the state into a small child widget",
+   "Wrap the whole root widget in a RepaintBoundary"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "80",
+  "question": "In which mode do you measure the real performance of a Flutter app?",
+  "options": [
+   "Debug mode with assertions on",
+   "Hot reload mode on a real device",
+   "Profile mode on a real device",
+   "Debug mode on an emulator"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "81",
+  "question": "Why can Flutter rebuild widgets many times without a high cost?",
+  "options": [
+   "Flutter rebuilds only the widgets that have a key",
+   "Widgets are cheap and Elements are reused",
+   "Flutter repaints only the pixels that change",
+   "The GPU caches every widget after the first build"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "82",
+  "question": "What is the order of the work in one frame of Flutter?",
+  "options": [
+   "Build, paint, layout, composite",
+   "Layout, build, paint, composite",
+   "Build, layout, paint, composite",
+   "Paint, build, layout, composite"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "83",
+  "question": "Which two things does Flutter compare to decide if an Element can use a new widget?",
+  "options": [
+   "The runtimeType and the key",
+   "The hashCode and the runtimeType",
+   "The key and the parent widget",
+   "The runtimeType and the constructor arguments"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "Why can deep nesting of IntrinsicHeight make a screen slow?",
+  "options": [
+   "It turns off const for the child widgets",
+   "It adds an extra layout pass for each child",
+   "It forces each child to repaint in every frame",
+   "It runs the layout on another isolate"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "85",
+  "question": "What problem does the Impeller renderer mainly solve compared with the old Skia renderer?",
+  "options": [
+   "High cost of widget rebuilds in large trees",
+   "Slow garbage collection in Dart",
+   "Large size of the app binary",
+   "Shader compilation jank at run time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "86",
+  "question": "Why do Dart isolates not need locks for normal program state?",
+  "options": [
+   "A global lock protects the memory of all isolates",
+   "All isolates run on a single shared thread",
+   "Dart objects are always immutable by design",
+   "Each isolate has its own heap memory"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "You move a stateful widget to a new parent in the same frame and want to keep its State. What do you use?",
+  "options": [
+   "A GlobalKey on the widget",
+   "A UniqueKey on the widget",
+   "A ValueKey on the widget",
+   "An ObjectKey on the widget"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "In Riverpod 2, a provider with `.autoDispose` has no listeners. What happens to its state?",
+  "options": [
+   "The state stays until the app closes",
+   "The state is reset only when the parent provider changes",
+   "The state stays until the next hot restart",
+   "The state is disposed and rebuilt on read"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "89",
+  "question": "A Cubit holds a state and has emitted before. It emits a state equal to the current one. What happens?",
+  "options": [
+   "The new state is ignored by the listeners",
+   "The Cubit closes its stream and stops emitting",
+   "The Cubit throws a StateError in debug builds",
+   "The listeners get the same state again"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "90",
+  "question": "A single-subscription stream gets a second listener. What happens?",
+  "options": [
+   "The second listener gets only the new events",
+   "Dart ignores the second listener",
+   "Both listeners get all the events",
+   "Dart throws a StateError"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "91",
+  "question": "Why can an animated Opacity widget with a big subtree hurt performance?",
+  "options": [
+   "It turns off the raster cache for const widgets",
+   "It rebuilds all the children in each frame",
+   "It can need a saveLayer buffer in each frame",
+   "It forces a layout of all the children"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "92",
+  "question": "A screen puts a Column with 10,000 items in a SingleChildScrollView. What is the main problem?",
+  "options": [
+   "Only the first screen of items is built",
+   "The items cannot be scrolled",
+   "All the children are built and laid out at once",
+   "The setState call does not work"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "93",
+  "question": "Why choose dart:ffi instead of a MethodChannel to call a C library?",
+  "options": [
+   "The call is direct and synchronous",
+   "FFI runs the C code in a new isolate",
+   "FFI converts C++ classes to Dart classes",
+   "FFI also works in every Flutter web app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "94",
+  "question": "You send a custom Dart class through a MethodChannel with the default codec. What happens?",
+  "options": [
+   "The call fails with an encoding error",
+   "The class goes to the native side as an empty map",
+   "The class goes to the native side as a string",
+   "The class converts itself with its toJson method"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "95",
+  "question": "Why do golden tests often fail on CI but pass on a developer laptop?",
+  "options": [
+   "The golden files are encrypted with a key for each machine",
+   "Platforms render fonts in different ways",
+   "The tests load real network images only on the CI server",
+   "CI skips the layout step of pumpWidget in each test"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "96",
+  "question": "You change the start value of a global variable. After a hot reload, the old value stays. Why?",
+  "options": [
+   "The compiler caches the old value on disk for later runs",
+   "Hot reload updates only the asset files",
+   "Hot reload does not run the global initializers again",
+   "Dart ignores global variables in debug mode"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "When does the initializer of `late final x = compute();` run?",
+  "options": [
+   "When the object is created",
+   "When the library loads",
+   "At compile time",
+   "At the first read of x"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "98",
+  "question": "A closure passed to Isolate.run captures a large object. What is the risk?",
+  "options": [
+   "The isolate shares the object and then locks it for all reads",
+   "The closure runs on the UI isolate and blocks the frames",
+   "The data is copied, and some objects cannot be sent",
+   "The object stays locked until the app closes"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "Many widgets rebuild when the keyboard opens. They call MediaQuery.of(context) but need only the screen size. What is better?",
+  "options": [
+   "MediaQuery.paddingOf(context)",
+   "MediaQuery.textScalerOf(context)",
+   "MediaQuery.maybeOf(context)",
+   "MediaQuery.sizeOf(context)"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "Why does a Flutter release build for iOS use AOT compilation and not JIT?",
+  "options": [
+   "AOT is the only compile mode that has hot reload on iOS",
+   "iOS does not allow apps to generate code at run time",
+   "JIT cannot use the Dart garbage collector",
+   "JIT cannot run code with null safety"
+  ],
+  "correct_index": 1
+ }
+]

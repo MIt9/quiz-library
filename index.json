@@ -5,9 +5,339 @@
       "title": "English",
       "quizzes": [
         {
+          "file": "en/android.json",
+          "title": "Android",
+          "questions": 100
+        },
+        {
+          "file": "en/angular-material.json",
+          "title": "Angular Material",
+          "questions": 100
+        },
+        {
+          "file": "en/angular-reactive-forms.json",
+          "title": "Angular Reactive Forms",
+          "questions": 100
+        },
+        {
+          "file": "en/angular.json",
+          "title": "Angular",
+          "questions": 100
+        },
+        {
+          "file": "en/base-ui.json",
+          "title": "Base Ui",
+          "questions": 100
+        },
+        {
+          "file": "en/bootstrap.json",
+          "title": "Bootstrap",
+          "questions": 100
+        },
+        {
+          "file": "en/browser-extensions.json",
+          "title": "Browser Extensions",
+          "questions": 100
+        },
+        {
+          "file": "en/bundle-size-reduction.json",
+          "title": "Bundle Size Reduction",
+          "questions": 100
+        },
+        {
+          "file": "en/canvas.json",
+          "title": "Canvas",
+          "questions": 100
+        },
+        {
+          "file": "en/cls.json",
+          "title": "Cls",
+          "questions": 100
+        },
+        {
+          "file": "en/core-web-vitals.json",
+          "title": "Core Web Vitals",
+          "questions": 100
+        },
+        {
+          "file": "en/cross-browser-compatibility.json",
+          "title": "Cross Browser Compatibility",
+          "questions": 100
+        },
+        {
+          "file": "en/css-modules.json",
+          "title": "Css Modules",
+          "questions": 100
+        },
+        {
+          "file": "en/css.json",
+          "title": "Css",
+          "questions": 100
+        },
+        {
+          "file": "en/d3.json",
+          "title": "D3",
+          "questions": 100
+        },
+        {
+          "file": "en/design-tokens.json",
+          "title": "Design Tokens",
+          "questions": 100
+        },
+        {
+          "file": "en/drag-and-drop-ui.json",
+          "title": "Drag And Drop Ui",
+          "questions": 100
+        },
+        {
+          "file": "en/expo.json",
+          "title": "Expo",
+          "questions": 100
+        },
+        {
+          "file": "en/figma.json",
+          "title": "Figma",
+          "questions": 100
+        },
+        {
+          "file": "en/flutter.json",
+          "title": "Flutter",
+          "questions": 100
+        },
+        {
+          "file": "en/foundation.json",
+          "title": "Foundation",
+          "questions": 100
+        },
+        {
+          "file": "en/graph-visualization.json",
+          "title": "Graph Visualization",
+          "questions": 100
+        },
+        {
+          "file": "en/html.json",
+          "title": "Html",
+          "questions": 100
+        },
+        {
+          "file": "en/i18n.json",
+          "title": "I18N",
+          "questions": 100
+        },
+        {
+          "file": "en/in-app-purchases.json",
+          "title": "In App Purchases",
+          "questions": 100
+        },
+        {
+          "file": "en/inp.json",
+          "title": "Inp",
+          "questions": 100
+        },
+        {
+          "file": "en/ios.json",
+          "title": "Ios",
+          "questions": 100
+        },
+        {
+          "file": "en/jquery.json",
+          "title": "Jquery",
+          "questions": 100
+        },
+        {
+          "file": "en/less.json",
+          "title": "Less",
+          "questions": 100
+        },
+        {
+          "file": "en/mantine.json",
+          "title": "Mantine",
+          "questions": 100
+        },
+        {
+          "file": "en/material-ui.json",
+          "title": "Material Ui",
+          "questions": 100
+        },
+        {
+          "file": "en/materialize.json",
+          "title": "Materialize",
+          "questions": 100
+        },
+        {
+          "file": "en/mobile-apps.json",
+          "title": "Mobile Apps",
+          "questions": 100
+        },
+        {
+          "file": "en/mobx.json",
+          "title": "Mobx",
+          "questions": 100
+        },
+        {
+          "file": "en/motion.json",
+          "title": "Motion",
+          "questions": 100
+        },
+        {
+          "file": "en/nextjs.json",
+          "title": "Nextjs",
+          "questions": 100
+        },
+        {
+          "file": "en/ngxs.json",
+          "title": "Ngxs",
+          "questions": 100
+        },
+        {
+          "file": "en/pagespeed.json",
+          "title": "Pagespeed",
+          "questions": 100
+        },
+        {
+          "file": "en/performance-profiling.json",
+          "title": "Performance Profiling",
+          "questions": 100
+        },
+        {
+          "file": "en/radix-ui.json",
+          "title": "Radix Ui",
+          "questions": 100
+        },
+        {
+          "file": "en/react-native.json",
+          "title": "React Native",
+          "questions": 100
+        },
+        {
+          "file": "en/react.json",
+          "title": "React",
+          "questions": 100
+        },
+        {
+          "file": "en/recharts.json",
+          "title": "Recharts",
+          "questions": 100
+        },
+        {
+          "file": "en/recoil.json",
+          "title": "Recoil",
+          "questions": 100
+        },
+        {
+          "file": "en/redux-toolkit.json",
+          "title": "Redux Toolkit",
+          "questions": 100
+        },
+        {
+          "file": "en/redux.json",
+          "title": "Redux",
+          "questions": 100
+        },
+        {
+          "file": "en/responsive-design.json",
+          "title": "Responsive Design",
+          "questions": 100
+        },
+        {
           "file": "en/rest-api-junior.json",
           "title": "Rest Api Junior",
           "questions": 5
+        },
+        {
+          "file": "en/rum.json",
+          "title": "Rum",
+          "questions": 100
+        },
+        {
+          "file": "en/rxjs.json",
+          "title": "Rxjs",
+          "questions": 100
+        },
+        {
+          "file": "en/sass.json",
+          "title": "Sass",
+          "questions": 100
+        },
+        {
+          "file": "en/scss.json",
+          "title": "Scss",
+          "questions": 100
+        },
+        {
+          "file": "en/shadcn-ui.json",
+          "title": "Shadcn Ui",
+          "questions": 100
+        },
+        {
+          "file": "en/ssg.json",
+          "title": "Ssg",
+          "questions": 100
+        },
+        {
+          "file": "en/ssr.json",
+          "title": "Ssr",
+          "questions": 100
+        },
+        {
+          "file": "en/state-management.json",
+          "title": "State Management",
+          "questions": 100
+        },
+        {
+          "file": "en/storekit.json",
+          "title": "Storekit",
+          "questions": 100
+        },
+        {
+          "file": "en/storybook.json",
+          "title": "Storybook",
+          "questions": 100
+        },
+        {
+          "file": "en/tailwind.json",
+          "title": "Tailwind",
+          "questions": 100
+        },
+        {
+          "file": "en/tanstack-query.json",
+          "title": "Tanstack Query",
+          "questions": 100
+        },
+        {
+          "file": "en/three-js.json",
+          "title": "Three Js",
+          "questions": 100
+        },
+        {
+          "file": "en/vue.json",
+          "title": "Vue",
+          "questions": 100
+        },
+        {
+          "file": "en/web-performance.json",
+          "title": "Web Performance",
+          "questions": 100
+        },
+        {
+          "file": "en/webassembly.json",
+          "title": "Webassembly",
+          "questions": 100
+        },
+        {
+          "file": "en/webgl.json",
+          "title": "Webgl",
+          "questions": 100
+        },
+        {
+          "file": "en/webgpu.json",
+          "title": "Webgpu",
+          "questions": 100
+        },
+        {
+          "file": "en/zustand.json",
+          "title": "Zustand",
+          "questions": 100
         }
       ]
     },

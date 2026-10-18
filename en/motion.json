@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What does the Motion library provide?",
+    "options": [
+      "A database client",
+      "A required React router",
+      "A CSS preprocessor",
+      "Animation tools for UI"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "2",
+    "question": "Which import provides Motion React components?",
+    "options": [
+      "react/motion-core",
+      "motion/react",
+      "@mui/motion",
+      "@angular/animations"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "3",
+    "question": "What does Motion's motion.div render?",
+    "options": [
+      "A canvas-only layer",
+      "An animatable div",
+      "A shadow-root host",
+      "A new React root"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "4",
+    "question": "What does Motion's animate prop describe?",
+    "options": [
+      "Target visual values",
+      "Initial route data",
+      "Server request options",
+      "Component identity"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "5",
+    "question": "What does Motion's initial prop describe?",
+    "options": [
+      "A server cache policy",
+      "Starting values",
+      "The React parent key",
+      "The final DOM order"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "6",
+    "question": "What does Motion's transition configure?",
+    "options": [
+      "Component route matching",
+      "DOM event propagation",
+      "Server request retries",
+      "Timing behavior"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "7",
+    "question": "What does Motion's exit prop describe?",
+    "options": [
+      "Exit targets",
+      "The next route URL",
+      "A form submit result",
+      "A CSS Module export"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "8",
+    "question": "What does Motion's whileHover express?",
+    "options": [
+      "An automatic tooltip",
+      "A keyboard shortcut",
+      "A required pointer listener",
+      "A hover animation target"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "9",
+    "question": "What does Motion's whileTap express?",
+    "options": [
+      "A persistent selection value",
+      "A pressed animation target",
+      "A page loading state",
+      "A form validation rule"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "10",
+    "question": "What does Motion's whileFocus express?",
+    "options": [
+      "Focus target",
+      "A mandatory tab order",
+      "An automatic input label",
+      "A global focus trap"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "11",
+    "question": "What does Motion's whileInView express?",
+    "options": [
+      "A component export mode",
+      "A server visibility check",
+      "In-view target",
+      "A route hydration rule"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "12",
+    "question": "What does Motion's viewport once option request?",
+    "options": [
+      "One viewport size only",
+      "One React render only",
+      "One animation frame only",
+      "A single in-view activation"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "13",
+    "question": "What do Motion variants name?",
+    "options": [
+      "Reusable animation states",
+      "Browser storage records",
+      "React component instances",
+      "Database schema versions"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "14",
+    "question": "What does a Motion variants object map?",
+    "options": [
+      "Routes to server handlers",
+      "Keys to DOM parent nodes",
+      "Labels to animation definitions",
+      "Selectors to event listeners"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "15",
+    "question": "What does Motion's AnimatePresence support?",
+    "options": [
+      "Automatic route fetching",
+      "Exit animations on removal",
+      "Permanent hidden DOM nodes",
+      "CSS file compilation"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "16",
+    "question": "What identifies children for Motion presence tracking?",
+    "options": [
+      "Their DOM tag names",
+      "Their React keys",
+      "Their text length",
+      "Their inline colors"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "17",
+    "question": "What does Motion's layout prop enable?",
+    "options": [
+      "Browser route transitions",
+      "Layout-change animation",
+      "A required grid system",
+      "Automatic responsive design"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "18",
+    "question": "What does Motion's layoutId associate?",
+    "options": [
+      "Shared layout elements",
+      "A form control name",
+      "A source stylesheet name",
+      "A database primary key"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "19",
+    "question": "What does Motion's LayoutGroup coordinate?",
+    "options": [
+      "Related layout animations",
+      "Application route guards",
+      "Form validation messages",
+      "Server cache entries"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "20",
+    "question": "What is a Motion motion value?",
+    "options": [
+      "A DOM element wrapper",
+      "An observable animated value",
+      "A CSS selector hash",
+      "A required React state variable"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "21",
+    "question": "Which Motion hook creates a motion value?",
+    "options": [
+      "useReducedMotion",
+      "useMotionTemplate",
+      "useAnimationFrame",
+      "useMotionValue"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "22",
+    "question": "What does Motion's useTransform derive?",
+    "options": [
+      "A CSS Module filename",
+      "A server response schema",
+      "A value from other values",
+      "A new React component"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "23",
+    "question": "What does Motion's useSpring produce?",
+    "options": [
+      "A spring-following value",
+      "A form validation result",
+      "A DOM measurement cache",
+      "A route loading promise"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "24",
+    "question": "What does Motion's useScroll expose?",
+    "options": [
+      "A mandatory page scroll handler",
+      "All server navigation events",
+      "Scroll-related motion values",
+      "All browser history entries"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "25",
+    "question": "What does Motion's scrollYProgress represent?",
+    "options": [
+      "Scroll distance in pixels",
+      "The viewport height",
+      "The page's row count",
+      "Normalized scroll progress"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "26",
+    "question": "What does Motion's useVelocity derive?",
+    "options": [
+      "The React render count",
+      "The element's CSS position",
+      "Rate of value change",
+      "The final target value"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "27",
+    "question": "What does Motion's useMotionTemplate construct?",
+    "options": [
+      "A server-rendered component",
+      "A CSS Module source map",
+      "A string from motion values",
+      "A new HTML template file"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "28",
+    "question": "What does Motion's useReducedMotion report?",
+    "options": [
+      "The current animation speed",
+      "The browser refresh rate",
+      "The component render budget",
+      "The user's motion preference"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "29",
+    "question": "What does MotionConfig share?",
+    "options": [
+      "Application user records",
+      "Database transaction settings",
+      "Route permission rules",
+      "Animation configuration"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "30",
+    "question": "What does Motion's reducedMotion policy address?",
+    "options": [
+      "Asset download caching",
+      "Component naming rules",
+      "Accessibility preferences",
+      "Server rendering order"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "31",
+    "question": "What does a Motion tween animate through?",
+    "options": [
+      "Physical collision simulation",
+      "Server state reconciliation",
+      "Timed interpolation",
+      "DOM tree replacement"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "32",
+    "question": "What does a Motion spring model?",
+    "options": [
+      "Spring-like movement",
+      "A route loading delay",
+      "A required viewport width",
+      "A fixed CSS reset"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "33",
+    "question": "What does Motion spring stiffness affect?",
+    "options": [
+      "Browser event priority",
+      "Spring restoring strength",
+      "Element stacking order",
+      "DOM selector specificity"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "34",
+    "question": "What does Motion spring damping affect?",
+    "options": [
+      "Component tree depth",
+      "Oscillation reduction",
+      "Image decode precision",
+      "CSS property inheritance"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "35",
+    "question": "What does Motion spring mass affect?",
+    "options": [
+      "The server payload size",
+      "The element's DOM weight",
+      "The modeled inertia",
+      "The React key length"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "36",
+    "question": "What does Motion's delay configure?",
+    "options": [
+      "The final target opacity",
+      "Time before animation starts",
+      "The browser storage expiry",
+      "The React mount order"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "37",
+    "question": "What does Motion's repeat configure?",
+    "options": [
+      "Server request retries",
+      "Component duplication",
+      "Animation repetition",
+      "DOM node cloning"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "38",
+    "question": "What does Motion's ease configure for a tween?",
+    "options": [
+      "Its DOM ownership",
+      "Its initial route",
+      "Its timing curve",
+      "Its target selector"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "39",
+    "question": "What does an array of Motion animate values define?",
+    "options": [
+      "Network responses",
+      "CSS breakpoints",
+      "Keyframes",
+      "React children"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "40",
+    "question": "What does Motion's times option describe?",
+    "options": [
+      "Browser cache durations",
+      "Component mount indexes",
+      "Keyframe timing positions",
+      "Absolute server timestamps"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "41",
+    "question": "What does Motion's drag prop enable?",
+    "options": [
+      "Remote data loading",
+      "Native file upload",
+      "Automatic list sorting",
+      "Drag gestures"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "42",
+    "question": "What does Motion's dragConstraints limit?",
+    "options": [
+      "The selected route depth",
+      "The source file size",
+      "The component's child count",
+      "Drag movement bounds"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "43",
+    "question": "What does Motion's dragElastic influence?",
+    "options": [
+      "Movement beyond drag bounds",
+      "The element's text wrapping",
+      "The grid's column width",
+      "The input's validation rule"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "44",
+    "question": "What does Motion's dragMomentum influence?",
+    "options": [
+      "Movement after release",
+      "The initial pointer target",
+      "The element's accessible name",
+      "The browser focus order"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "45",
+    "question": "What does Motion's Reorder.Group coordinate?",
+    "options": [
+      "A database sorting transaction",
+      "All application routes",
+      "All global keyboard shortcuts",
+      "A reorderable item collection"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "46",
+    "question": "What does Motion's Reorder.Item value identify?",
+    "options": [
+      "Its list value",
+      "Its animation duration",
+      "Its viewport breakpoint",
+      "Its shadow elevation"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "47",
+    "question": "What does Motion's LazyMotion help load?",
+    "options": [
+      "Animation feature bundles",
+      "Remote form values",
+      "CSS Module exports",
+      "Application translation files"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "48",
+    "question": "What does Motion's m component support with LazyMotion?",
+    "options": [
+      "A smaller feature-loading setup",
+      "A replacement React event system",
+      "A server-only DOM element",
+      "A mandatory canvas renderer"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "49",
+    "question": "What does Motion's useAnimate provide?",
+    "options": [
+      "A global CSS reset",
+      "A required route effect",
+      "A server response cache",
+      "Scoped imperative animation"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "50",
+    "question": "What does Motion's onAnimationComplete report?",
+    "options": [
+      "Asset decoding completion",
+      "Animation completion",
+      "React hydration completion",
+      "Server mutation completion"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "51",
+    "question": "A Motion component sets animate but needs no entrance animation. Which initial setting fits?",
+    "options": [
+      "initial={false}",
+      "initial=\"exit\"",
+      "initial={null}",
+      "initial=\"inherit\""
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "52",
+    "question": "A Motion exit animation never runs after immediate removal. What wrapper can retain it for exit?",
+    "options": [
+      "React.Fragment only",
+      "MotionConfig only",
+      "LayoutGroup only",
+      "AnimatePresence"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "53",
+    "question": "A Motion list uses changing index keys. What can break on deletion?",
+    "options": [
+      "The source map format",
+      "CSS variable inheritance",
+      "The browser font cache",
+      "Presence identity"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "54",
+    "question": "A Motion parent uses variants. How can matching child variants participate?",
+    "options": [
+      "Copy server state",
+      "Inherit variant labels",
+      "Read parent DOM IDs",
+      "Share a stylesheet name"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "55",
+    "question": "A Motion component controls its own animate prop. What propagation assumption should review question?",
+    "options": [
+      "The ability to use CSS classes",
+      "Automatic inherited variant control",
+      "The need for an accessible name",
+      "The ability to render children"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "56",
+    "question": "A Motion variant uses custom data for each item. What can a variant function receive?",
+    "options": [
+      "The supplied custom value",
+      "The browser extension list",
+      "The server response headers",
+      "The CSS Module export object"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "57",
+    "question": "A Motion tween jumps through unevenly timed keyframes. Which option should the developer inspect?",
+    "options": [
+      "viewport.amount",
+      "dragElastic",
+      "times",
+      "layoutId"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "58",
+    "question": "A Motion spring oscillates too much. Which physical parameter can reduce oscillation?",
+    "options": [
+      "Increase repeat count",
+      "Increase drag bounds",
+      "Increase variant label length",
+      "Increase damping"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "59",
+    "question": "A Motion animation must repeat backward and forward. Which repeatType expresses reversal?",
+    "options": [
+      "spring",
+      "linear",
+      "loop",
+      "reverse"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "60",
+    "question": "A Motion card changes layout after expansion. Which prop targets that transition?",
+    "options": [
+      "layout",
+      "onViewportEnter",
+      "drag",
+      "whileTap"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "61",
+    "question": "A Motion element must animate position but not size. Which layout mode fits?",
+    "options": [
+      "layout=\"none\"",
+      "layout=\"position\"",
+      "layout=\"all\"",
+      "layout=\"static\""
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "62",
+    "question": "A Motion shared transition links a thumbnail and detail image. What must their IDs share?",
+    "options": [
+      "A matching source filename",
+      "A matching React key globally",
+      "A matching DOM tag name",
+      "A matching layoutId"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "63",
+    "question": "A Motion shared layout uses the same ID in unrelated widgets. What can provide local coordination boundaries?",
+    "options": [
+      "A new server route",
+      "A duplicate document ID",
+      "LayoutGroup identifiers",
+      "A global drag constraint"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "64",
+    "question": "A Motion element inside a scrolling container animates from wrong measurements. What layout flag should the developer inspect?",
+    "options": [
+      "initial",
+      "repeatDelay",
+      "layoutScroll",
+      "dragMomentum"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "65",
+    "question": "A Motion layout animation uses fixed-position containers. Which flag can mark a fixed layout root?",
+    "options": [
+      "layoutId",
+      "layoutDependency",
+      "layoutRoot",
+      "layoutScroll"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "66",
+    "question": "A Motion motion value changes each frame. Must React rerender each frame to update a bound style?",
+    "options": [
+      "Only when the component uses a spring",
+      "No, Motion can update the DOM directly",
+      "Only when the value contains a number",
+      "Yes, every value calls setState"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "67",
+    "question": "A Motion useTransform maps progress from 0–1 to opacity. What does its output represent?",
+    "options": [
+      "A new browser scroll event",
+      "A derived motion value",
+      "A permanent CSS class name",
+      "A fixed React prop object"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "68",
+    "question": "A Motion scroll-linked header moves too sharply. What can smooth the derived scroll value?",
+    "options": [
+      "Reorder.Group",
+      "useReducedMotion",
+      "AnimatePresence",
+      "useSpring"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "69",
+    "question": "A Motion drag constraint uses a ref. What should the ref identify?",
+    "options": [
+      "The dragged item value",
+      "The constraint element",
+      "The animation callback",
+      "The server data object"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "70",
+    "question": "A Motion draggable card also contains a link. What should interaction testing inspect?",
+    "options": [
+      "Only the JSX prop order",
+      "Drag versus click activation",
+      "Only the link's font family",
+      "Only the card's image size"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "71",
+    "question": "A Motion exit uses data that changes during removal. Why can AnimatePresence custom data help?",
+    "options": [
+      "Removed children cannot receive normal prop updates",
+      "React keys become unavailable during exit",
+      "Exit always disables every React prop",
+      "Variants cannot contain functions after mount"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "72",
+    "question": "A Motion page should delay the next child until the current exit ends. Which AnimatePresence mode fits?",
+    "options": [
+      "sync",
+      "popLayout",
+      "immediate",
+      "wait"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "73",
+    "question": "A Motion list should remove an exiting item from layout while it animates. Which presence mode fits?",
+    "options": [
+      "sequence",
+      "sync",
+      "popLayout",
+      "wait"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "74",
+    "question": "A custom Motion child uses popLayout. What DOM integration does it need for layout popping?",
+    "options": [
+      "A global document ID on every child",
+      "A new React root for each item",
+      "A forwarded ref to the affected DOM node",
+      "A hidden copy of the previous list"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "75",
+    "question": "A Motion presence wrapper disappears with its child. Why can the exit fail?",
+    "options": [
+      "The wrapper cannot retain the removed subtree",
+      "The animation has too many keyframes",
+      "The target color uses hex notation",
+      "The child lacks a CSS reset"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "76",
+    "question": "A Motion component starts an imperative animation on every render. What should the app define?",
+    "options": [
+      "A random layoutId each render",
+      "Its trigger and cleanup lifecycle",
+      "A global body click handler",
+      "A new variant label each frame"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "77",
+    "question": "A Motion SVG path animates pathLength. What visual effect can that support?",
+    "options": [
+      "A path drawing reveal",
+      "Automatic shape triangulation",
+      "A new SVG viewBox",
+      "A server-side image crop"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "78",
+    "question": "A Motion animation updates width on many elements. What rendering cost can it create?",
+    "options": [
+      "Repeated layout work",
+      "Only font file fetching",
+      "Only network transfer work",
+      "Only source parsing work"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "79",
+    "question": "A Motion hover effect changes scale. What input state still needs a comparable cue?",
+    "options": [
+      "The server cache state",
+      "The route prefetch status",
+      "Keyboard focus",
+      "The image export mode"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "80",
+    "question": "A Motion reduced-motion user disables large movement. What should feedback retain?",
+    "options": [
+      "Every original spring bounce",
+      "Every original repeat count",
+      "Every original displacement",
+      "Useful state information"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "81",
+    "question": "A Motion layout animation visually changes a button's position. What interaction must remain tied to its real control?",
+    "options": [
+      "Focus and activation semantics",
+      "Only the animation label name",
+      "Only the screenshot pixel grid",
+      "Only the source file ordering"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "82",
+    "question": "A Motion layout animation uses scale correction. Why can borders and shadows need special handling?",
+    "options": [
+      "Shadows disable the React renderer",
+      "Borders always require a canvas layer",
+      "Transforms can visually distort those properties",
+      "Transforms remove every computed style"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "83",
+    "question": "A Motion animation combines layout and manual transforms. What must architecture review inspect?",
+    "options": [
+      "Only the package's description field",
+      "Transform ownership and composition",
+      "Only the element's DOM text length",
+      "Only the component's route path"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "84",
+    "question": "A Motion panel animates height from zero to auto. What constraints should performance testing consider?",
+    "options": [
+      "Measurement, layout, and content changes",
+      "Only the generated CSS hash",
+      "Only the source import statement",
+      "Only the easing function name"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "85",
+    "question": "A Motion app mounts hundreds of looping effects. What budget should performance review measure?",
+    "options": [
+      "Only static stylesheet bytes",
+      "Frame work and active animations",
+      "Only route filename lengths",
+      "Only JSX character count"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "86",
+    "question": "Motion's JavaScript animate() sequence combines several segments. What does the at option control?",
+    "options": [
+      "The target's DOM sibling index",
+      "Segment placement on the timeline",
+      "The browser's refresh frequency",
+      "The element's accessibility role"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "87",
+    "question": "A Motion shared element crosses independently coordinated layout groups. What contract must the app define?",
+    "options": [
+      "Shared identity and coordination scope",
+      "Only identical image filenames",
+      "Only equal component display names",
+      "Only the same CSS background"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "88",
+    "question": "A Motion route transition waits for exit before fetching data. What latency trade-off should review consider?",
+    "options": [
+      "Animation duration determines server caching",
+      "Exit always makes network requests faster",
+      "Variants prevent all concurrent work",
+      "Animation sequencing can delay useful content"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "89",
+    "question": "A Motion SSR component chooses different initial values on client and server. What risk follows?",
+    "options": [
+      "A required duplicate React root",
+      "A server-side browser event loop",
+      "Hydration mismatch or a visual jump",
+      "Automatic CSS compilation failure"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "90",
+    "question": "A Motion drag interaction drives a reorderable form list. What must remain stable across visual moves?",
+    "options": [
+      "Only the item's animation delay",
+      "Field identity and submitted data mapping",
+      "Only the dragged node's pixel offset",
+      "Only the item's current array index"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "91",
+    "question": "A Motion custom gesture replaces native button behavior. What accessibility boundary should the app preserve?",
+    "options": [
+      "Keyboard activation and control semantics",
+      "Only the pointer's movement velocity",
+      "Only the current viewport width",
+      "Only the animation's easing curve"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "92",
+    "question": "A Motion useAnimate sequence outlives its component. What should its lifecycle integration ensure?",
+    "options": [
+      "Owned animations stop or clean up",
+      "All global animation state resets",
+      "Every child remains mounted forever",
+      "The route waits for every repeat"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "93",
+    "question": "A Motion exit fades a removed Save button for 500ms. What must its interaction policy define?",
+    "options": [
+      "Whether opacity changes the button label",
+      "Whether exiting controls can still activate",
+      "Whether every exit needs a new React root",
+      "Whether the source file contains keyframes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "94",
+    "question": "A Motion draggable element uses touch gestures. What CSS integration affects browser scroll competition?",
+    "options": [
+      "The image-rendering policy",
+      "The text-transform policy",
+      "The touch-action policy",
+      "The font-variant policy"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "95",
+    "question": "A Motion wrapper animates both parent and child scale. What should visual review detect?",
+    "options": [
+      "A guaranteed new stacking-free layer",
+      "Automatic cancellation of both transforms",
+      "Compounded scaling effects",
+      "A required change to DOM hierarchy"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "96",
+    "question": "A Motion component reduces movement but keeps infinite opacity flashing. Why does reduced movement alone not prove accessibility?",
+    "options": [
+      "Flashing always uses the browser compositor",
+      "Opacity cannot be animated by Motion",
+      "Flashing has separate accessibility risks",
+      "Reduced motion disables every duration"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "97",
+    "question": "A Motion performance change uses will-change everywhere. What trade-off should the team measure?",
+    "options": [
+      "Only the source map size",
+      "Only the variant object's key count",
+      "Only the number of React imports",
+      "Layer memory versus benefit"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "98",
+    "question": "A Motion application needs a stable animation API across widgets. What should the wrapper expose?",
+    "options": [
+      "Every private scheduler detail",
+      "Only current spring defaults",
+      "Only generated transform strings",
+      "Intent and lifecycle contracts"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "99",
+    "question": "A Motion layout transition renders correctly at one size. What senior validation catches hidden failures?",
+    "options": [
+      "Only a longer screenshot at that size",
+      "Only a count of animated components",
+      "Only the package version text",
+      "Resizing, scrolling, and interrupted updates"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "100",
+    "question": "A Motion animation receives new targets before completion. What must interaction design decide?",
+    "options": [
+      "Only the number of source comments",
+      "Only the component import alias",
+      "Only the original transition filename",
+      "Interruption behavior"
+    ],
+    "correct_index": 3
+  }
+]

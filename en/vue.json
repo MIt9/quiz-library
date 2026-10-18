@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What does `ref(0)` return in Vue 3?",
+    "options": [
+      "A function that returns 0 when you call it",
+      "A read-only proxy of the number 0 without `.value`",
+      "The plain number 0 with no wrapper around it",
+      "An object with a `.value` property that holds 0"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "2",
+    "question": "Which `<script>` syntax gives the shortest code for the Composition API in a Vue 3 single-file component?",
+    "options": [
+      "`<script module>`",
+      "`<script compose>`",
+      "`<setup script>`",
+      "`<script setup>`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "3",
+    "question": "What does a `computed` property do?",
+    "options": [
+      "It runs its getter again at every render of the component, and it keeps no cache",
+      "It makes a cached value that updates when its reactive dependencies change",
+      "It runs a side effect each time a dependency changes, and it keeps no cache of the result",
+      "It makes a value that never changes after the first run, even when its dependencies change"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "4",
+    "question": "What does `v-show` do when its value is false?",
+    "options": [
+      "It replaces the element with a comment node",
+      "It removes the element from the DOM tree",
+      "It sets the CSS `display` of the element to `none`",
+      "It unmounts the component and destroys its state"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "5",
+    "question": "Why do you add a `key` to elements in a `v-for` list?",
+    "options": [
+      "Vue uses it to track each item and to reuse or move elements correctly",
+      "Vue uses it to skip the update of the whole list when the keys stay the same",
+      "Vue uses it to sort the items of the list in the same order as the key values",
+      "Vue uses it to add a unique CSS class to each item, so that you can style it"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "6",
+    "question": "For a native text `<input>`, `v-model` is a short form of which two things?",
+    "options": [
+      "Bind the `checked` and listen to the `change` event",
+      "Bind the `value` and listen to the `input` event",
+      "Bind the `value` and listen to the `blur` event",
+      "Bind the `model` and listen to the `update` event"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "7",
+    "question": "In `<script setup>`, how does a child component send an event to its parent?",
+    "options": [
+      "It calls `emit('name', payload)` from `defineEmits`",
+      "It calls `this.$parent.name(payload)` in the child",
+      "It calls `provide('name', payload)` in the child",
+      "It changes the value of a prop from `defineProps`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "8",
+    "question": "Which compiler macro declares the props of a `<script setup>` component?",
+    "options": [
+      "`defineSlots`",
+      "`defineExpose`",
+      "`defineOptions`",
+      "`defineProps`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "9",
+    "question": "A `<script setup>` component is closed by default. What does `defineExpose` do?",
+    "options": [
+      "It makes chosen members available to all components in the app",
+      "It makes all top-level variables available as props of the child",
+      "It makes chosen members available to a parent through a template ref",
+      "It makes the component available for lazy loading by the router"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "10",
+    "question": "Which Composition API hook runs after the component is added to the DOM?",
+    "options": [
+      "`onActivated`",
+      "`onUpdated`",
+      "`onBeforeMount`",
+      "`onMounted`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "11",
+    "question": "Which kind of value can `reactive()` make reactive?",
+    "options": [
+      "Only plain objects, but not arrays",
+      "Only primitive values such as string and number",
+      "Objects, including arrays, `Map` and `Set`",
+      "Only values that you first wrap in a `ref`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "12",
+    "question": "A teammate writes `const { count } = reactive({ count: 0 })`. What is the risk?",
+    "options": [
+      "The template updates, but the script code does not see the changes of `count` later",
+      "`count` is a plain number, and Vue throws an error when the code runs at the first time",
+      "`count` is a plain number, so changes to it do not update the template",
+      "The object becomes read-only after the destructuring, so you can not change `count` at all"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "13",
+    "question": "What does `toRefs(state)` do for a reactive object `state`?",
+    "options": [
+      "It makes a deep copy of each property as an independent ref that has no link to the source",
+      "It makes a ref for each property that stays linked to the source object",
+      "It changes each ref in the object back into a plain value, so Vue stops tracking it",
+      "It makes the object and all of its nested objects read-only for the whole component"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "14",
+    "question": "How does `watchEffect` find the reactive values that it must watch?",
+    "options": [
+      "It tracks the values that its function reads when it runs",
+      "It watches all reactive state of the current component",
+      "It reads the list from the `deps` option of the call",
+      "It uses the list of sources that you give as first argument"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "15",
+    "question": "In a template, how do you show a top-level `ref` named `count` from `<script setup>`?",
+    "options": [
+      "Write `{{ $refs.count }}`, because refs are on the instance",
+      "Write `{{ count.value }}`, because refs always need `.value`",
+      "Write `{{ unref(count) }}`, because refs need a helper",
+      "Write `{{ count }}`, because Vue unwraps top-level refs"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "16",
+    "question": "How do you add 1 to a ref named `count` inside `<script setup>`?",
+    "options": [
+      "`count().value++`",
+      "`count.set(count + 1)`",
+      "`count.value++`",
+      "`count++`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "17",
+    "question": "What is the full form of the shortcut `:title=\"text\"` in a template?",
+    "options": [
+      "`v-on:title=\"text\"`",
+      "`v-bind:title=\"text\"`",
+      "`v-model:title=\"text\"`",
+      "`v-slot:title=\"text\"`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "18",
+    "question": "What is the purpose of `<slot />` in a child component template?",
+    "options": [
+      "It makes a place where the child can add its own event listeners",
+      "It shows the props that the parent passes to the child component",
+      "It shows the content that the parent puts between the component tags",
+      "It makes a copy of the parent template inside the child component"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "19",
+    "question": "In Vue 3, how does a parent put content into a slot named `header`?",
+    "options": [
+      "`<slot :name=\"header\">...</slot>`",
+      "`<template v-name=\"header\">...</template>`",
+      "`<template slot:header>...</template>`",
+      "`<template #header>...</template>`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "20",
+    "question": "What problem do `provide` and `inject` solve?",
+    "options": [
+      "They pass data from an ancestor to deep descendants without props on each level",
+      "They pass data from a child to its parent without the use of events or of callbacks",
+      "They save the data of a component in the browser, so it stays between two page loads",
+      "They share data between two separate apps that run on the same page at the same time"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "21",
+    "question": "Why do you use `<RouterLink>` and not a plain `<a>` for internal links in Vue Router?",
+    "options": [
+      "It navigates without a full page reload",
+      "It sends the request to the server faster",
+      "It stops the browser from saving the history",
+      "It loads all route components at the same time"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "22",
+    "question": "Which Vue Router 4 function gives a component the current route and its params?",
+    "options": [
+      "`inject('route').query`",
+      "`useRoute()`",
+      "`$router.current()`",
+      "`useRouter().params`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "23",
+    "question": "Which Vue Router 4 method do you call to go to a new URL from code?",
+    "options": [
+      "`router.push('/home')`",
+      "`router.resolve('/home')`",
+      "`route.push('/home')`",
+      "`router.navigate('/home')`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "24",
+    "question": "Which Vue Router method adds a guard that runs before every navigation?",
+    "options": [
+      "`router.beforeEach`",
+      "`router.afterEach`",
+      "`router.onReady`",
+      "`router.beforeResolve`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "25",
+    "question": "What is a store in Pinia?",
+    "options": [
+      "A browser database that keeps the state of the app after the page reloads",
+      "A place for shared state, getters and actions outside of components",
+      "A plugin that sends the state of the app to a server when a user leaves",
+      "A component that wraps the app and passes the state to all children as props"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "26",
+    "question": "Which function creates a store in Pinia?",
+    "options": [
+      "`useStore`",
+      "`createStore`",
+      "`defineStore`",
+      "`createPinia`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "27",
+    "question": "Pinia getters are most like which Vue feature?",
+    "options": [
+      "Template refs",
+      "Watchers",
+      "Computed properties",
+      "Lifecycle hooks"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "28",
+    "question": "What does the `<Teleport>` component do?",
+    "options": [
+      "It sends a component to a web worker, so the main thread does not render it",
+      "It loads a component from a different server at run time when the app needs it",
+      "It moves the state of a component into another component that is in the same tree",
+      "It renders its content in a different place in the DOM, such as `body`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "29",
+    "question": "What does the `<Suspense>` component show while async dependencies are not ready?",
+    "options": [
+      "An empty element until all data is ready",
+      "The content of its `#fallback` slot",
+      "The last good state of the default slot",
+      "The content of its `#loading` attribute"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "30",
+    "question": "In Vue, what is a composable?",
+    "options": [
+      "A function that uses the Composition API to reuse logic that has state",
+      "A component that has no template and only a script block with the shared logic",
+      "A custom directive that you can register once and use in many components",
+      "A plugin with an `install` function that you add to the app with `app.use`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "31",
+    "question": "Which name pattern is the common rule for composable functions?",
+    "options": [
+      "A name that starts with `$`, such as `$mouse`",
+      "A name that ends with `Composable`, such as `mouseComposable`",
+      "A name that starts with `with`, such as `withMouse`",
+      "A name that starts with `use`, such as `useMouse`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "32",
+    "question": "Which Vue function loads a component only when the app needs it?",
+    "options": [
+      "`defineLazyProps`",
+      "`defineAsyncComponent`",
+      "`markRaw`",
+      "`createDeferred`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "33",
+    "question": "Which library do most projects use with Vitest to mount Vue components in tests?",
+    "options": [
+      "Enzyme with an adapter",
+      "React Testing Library",
+      "Vue Test Utils",
+      "Jest DOM matchers only"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "What does `mount` from Vue Test Utils do?",
+    "options": [
+      "It replaces all child components with empty stubs and returns the root wrapper",
+      "It starts a dev server and opens the component in a real browser for the test",
+      "It makes a snapshot file and compares it with the old snapshot of the component",
+      "It makes a component instance with its children and returns a wrapper"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "35",
+    "question": "How do you declare a typed prop `title` in `<script setup lang=\"ts\">`?",
+    "options": [
+      "`defineProps<{ title: string }>()`",
+      "`@Prop() title: string`",
+      "`defineProps(title: string)`",
+      "`useProps<{ title: string }>()`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "36",
+    "question": "What is Nuxt?",
+    "options": [
+      "A state library for Vue with stores, getters and actions that many components share",
+      "A UI kit with ready-made components, such as buttons and tables, for Vue apps",
+      "A Vue framework with file-based routing, server-side rendering and auto imports",
+      "A build tool that only bundles Vue single-file components for the browser"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "37",
+    "question": "In Nuxt 3, how do you add the route `/about`?",
+    "options": [
+      "Create the file `pages/about.vue`",
+      "Call `defineRoute('/about')` in `app.vue`",
+      "Create the file `routes/about.vue`",
+      "Add a path entry to `router.js`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "38",
+    "question": "Where must an element with `v-else` be in the template?",
+    "options": [
+      "Directly before the element with `v-if`, so Vue reads it first",
+      "Anywhere in the same parent element, before or after the `v-if` element",
+      "Inside the element that has the `v-if`, as the last child of that element",
+      "Directly after an element with `v-if` or `v-else-if`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "39",
+    "question": "What is the main risk of `v-html` with text that a user typed?",
+    "options": [
+      "A slow update of the full component",
+      "A cross-site scripting (XSS) attack",
+      "A loss of reactivity in the parent",
+      "A memory leak in the virtual DOM"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "40",
+    "question": "In `<script setup>`, you write `const box = ref(null)` and use `ref=\"box\"` on a `<div>`. What is `box.value` after mount?",
+    "options": [
+      "The string `\"box\"`",
+      "The DOM element of the `<div>`",
+      "The text inside the `<div>`",
+      "A virtual node of the `<div>`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "41",
+    "question": "What does `defineModel()` do in Vue 3.4 and later?",
+    "options": [
+      "It makes a two-way link between a prop and a Pinia store in the parent",
+      "It makes a prop and its update event, so a component can support `v-model`",
+      "It makes a store that many components can share and change with `v-model`",
+      "It makes a typed schema of the state of the component for use in the template"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "42",
+    "question": "Where do you remove an event listener that you added in `onMounted`?",
+    "options": [
+      "In the `onUpdated` hook",
+      "In the `onActivated` hook",
+      "In the `onUnmounted` hook",
+      "In the `onBeforeMount` hook"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "43",
+    "question": "What does the `<KeepAlive>` component do?",
+    "options": [
+      "It stops a component from re-rendering for as long as its props stay the same",
+      "It saves the state of a component in `localStorage` for the next page load",
+      "It caches component instances when they are not active, to keep their state",
+      "It keeps the page open when the network goes down and shows the last good data"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "44",
+    "question": "What does Vue pass to the callback in `watch(count, (a, b) => {})`?",
+    "options": [
+      "The ref object as `a` and the DOM element as `b`",
+      "The new value as `a` and the old value as `b`",
+      "The old value as `a` and the new value as `b`",
+      "Only the new value, with no old value"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "45",
+    "question": "How do you add a plugin, such as Pinia, to a Vue 3 app?",
+    "options": [
+      "`app.use(pinia)`",
+      "`Vue.use(pinia)`",
+      "`app.mount(pinia)`",
+      "`app.plugin(pinia)`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "46",
+    "question": "Which function makes the app instance in Vue 3?",
+    "options": [
+      "`createApp`",
+      "`mountApp`",
+      "`new Vue`",
+      "`createVue`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "47",
+    "question": "What does `<style scoped>` do in a single-file component?",
+    "options": [
+      "It applies the CSS only to the elements of the current component",
+      "It applies the CSS to all components that the parent puts inside its template",
+      "It applies the CSS only to the first element of the template of the component",
+      "It applies the CSS only when the component is in the view of the user"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "48",
+    "question": "What does `:class=\"{ active: isActive }\"` do?",
+    "options": [
+      "It sets the class to the value of `isActive`",
+      "It adds the class `active` when `isActive` is true",
+      "It adds the class `active` at the first render only",
+      "It adds the class `isActive` when `active` is true"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "49",
+    "question": "What does `readonly(state)` return in Vue 3?",
+    "options": [
+      "A frozen object that Vue does not track any more after the call returns",
+      "A computed ref that Vue builds from the current values of the object `state`",
+      "A deep copy of `state` that you can not change and that is not linked to `state`",
+      "A proxy of `state` that blocks writes and keeps the link to the source"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "50",
+    "question": "What does the `.lazy` modifier do on `v-model`?",
+    "options": [
+      "It waits one second after the last key before an update",
+      "It loads the input element after the page is ready",
+      "It updates the data only at the first user input",
+      "It updates the data on the `change` event, not on `input`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "51",
+    "question": "When is `watch` a better choice than `watchEffect`?",
+    "options": [
+      "When you want Vue to find the dependencies by itself from the code that it runs",
+      "When you need the callback to run before the first render of the component",
+      "When you need to watch every value that the callback reads without a list",
+      "When you need the old value and want to run only on a named source"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "52",
+    "question": "In `watch(state.count, cb)`, `state` is reactive and `count` is a number. What happens?",
+    "options": [
+      "The callback runs one time with the first value of `count` and then it stops",
+      "Vue warns, because the source is a plain number; use `() => state.count`",
+      "Vue watches all properties of `state` in a deep way and runs the callback",
+      "The callback runs each time `state.count` changes, because `state` is reactive"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "53",
+    "question": "A `ref` holds an object. You write `obj.value.a.b = 2`. Does `watch(obj, cb)` run?",
+    "options": [
+      "Yes, because Vue always watches nested properties of a ref",
+      "Yes, but only after the next tick of the scheduler",
+      "No, and the `deep: true` option has no effect on refs",
+      "No, a ref source is not deep by default; add `deep: true`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "54",
+    "question": "When is `shallowRef` a good choice?",
+    "options": [
+      "For an object that must be read-only in all components that use the object",
+      "For a primitive value that must stay deep and reactive in all child components",
+      "For an object whose nested properties must all be tracked in a deep way",
+      "For a large object where only a new `.value` must start an update"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "55",
+    "question": "A teammate writes `let state = reactive({ a: 1 })` and later `state = reactive({ a: 2 })`. What is the risk?",
+    "options": [
+      "The variable is not reactive, so the template may not show the new object",
+      "Vue throws an error, because the `reactive` function can run only once for a variable",
+      "Vue merges the new object into the old one, and it shows no warning in the console",
+      "The old object stays in memory and still gets all of the new updates"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "56",
+    "question": "A `computed` getter also changes other state. Why is this a bad practice?",
+    "options": [
+      "A getter that changes state can not return a value to the template at all",
+      "A getter must be pure; side effects can cause loops and unclear bugs",
+      "A getter that changes state runs only one time in the life of the app",
+      "A getter that changes state loses its cache, so it runs again at the next read"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "57",
+    "question": "Why do you use `computed` and not a method for a derived value in the template?",
+    "options": [
+      "The result is sent to the server and saved there for the next render",
+      "The result is shared between all instances of the component in the app",
+      "The method runs only one time, but computed runs again at each render",
+      "The result is cached until a dependency changes, but a method runs at each render"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "58",
+    "question": "A panel opens and closes many times in one minute. Which directive is usually better?",
+    "options": [
+      "`v-show`, because it only changes CSS and keeps the DOM",
+      "`v-if`, because it keeps the DOM and changes only CSS",
+      "`v-if`, because it keeps the state of the child components",
+      "`v-show`, because it removes the hidden panel from memory"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "59",
+    "question": "Why is the array index a risky `key` in a list that users reorder or delete from?",
+    "options": [
+      "The index changes for the same item, so Vue may reuse the wrong element and state",
+      "The index makes Vue render the full list again from the start at each change",
+      "The index is always a string, so Vue can not compare the keys of two renders",
+      "The index is not allowed as a key, so Vue ignores it and shows a warning"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "60",
+    "question": "A child component runs `props.items.push(x)` on an array prop. What is the risk?",
+    "options": [
+      "It changes only a local copy that the child owns and the parent does not see it",
+      "It changes the data of the parent, so the data flow is hard to trace",
+      "It stops the parent from updating its template until the next full reload",
+      "Vue blocks the change and throws an error at run time, so nothing is pushed"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "61",
+    "question": "In Vue 3, which prop name must a child use to support `v-model` on the component?",
+    "options": [
+      "`model`, as the option name",
+      "`input`, as the event name",
+      "`modelValue`",
+      "`value`, as in Vue 2"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "62",
+    "question": "What does `v-model:title=\"x\"` bind on a child component in Vue 3?",
+    "options": [
+      "The prop `title` and the event `input`",
+      "The prop `x` and the event `change:title`",
+      "The prop `title` and the event `update:title`",
+      "The prop `modelValue` and the event `update:title`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "63",
+    "question": "What is a scoped slot?",
+    "options": [
+      "A slot whose content gets the CSS scope of the child component only",
+      "A slot where the child passes data to the content that the parent writes",
+      "A slot that renders its content only when the child is in the view",
+      "A slot where the parent passes data to the child through the props"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "64",
+    "question": "A parent runs `provide('n', n)` with a plain number. Later `n` changes. What do the injectors see?",
+    "options": [
+      "The new value, but only after the next tick",
+      "The old value; provide a ref to keep reactivity",
+      "The new value, because provide is reactive by default",
+      "Nothing; Vue shows an error when the number changes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "65",
+    "question": "You change state in a method and then need the new DOM size. What do you use?",
+    "options": [
+      "`onMounted`",
+      "`await nextTick()`",
+      "`onBeforeUpdate`",
+      "`watchEffect` with `flush: 'pre'`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "66",
+    "question": "In `<script setup>`, where does the code that replaces the Options API `created` hook go?",
+    "options": [
+      "In an `onBeforeMount` hook, because it is the first hook that runs",
+      "In a `defineCreated` macro that you call in the script setup block",
+      "Directly in the body of `<script setup>`",
+      "In an `onCreated` hook that you call at the top of the script block"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "67",
+    "question": "In Vue Router 4, what can a `beforeEach` guard return to cancel the navigation?",
+    "options": [
+      "`undefined`",
+      "`true`",
+      "`false`",
+      "A string path such as `'/'`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "68",
+    "question": "A user goes from `/user/1` to `/user/2`. Vue Router reuses the component. How do you react to the change?",
+    "options": [
+      "Use `onBeforeRouteLeave`, because it runs for each change",
+      "Watch `route.params.id` or use `onBeforeRouteUpdate`",
+      "Put the code in `onMounted`, because it runs again",
+      "Do nothing; the router always mounts a new component"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "69",
+    "question": "What does `component: () => import('./Page.vue')` do in a route?",
+    "options": [
+      "It puts the page in a separate chunk that loads when the route is visited",
+      "It loads the page at app start and keeps it in the memory for all later visits",
+      "It makes the page render only on the server side, never in the browser",
+      "It makes the router skip the guards for this route when it loads the page"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "70",
+    "question": "In a Pinia setup store (a function), what plays the role of state?",
+    "options": [
+      "The `function` declarations that the function returns to the caller",
+      "The `ref()` and `reactive()` values that the function returns",
+      "The `computed()` values that the function returns to the caller",
+      "The values that the function passes to `provide()` for the child components"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "71",
+    "question": "A teammate writes `const { count } = useCounterStore()` and loses reactivity. What is the fix?",
+    "options": [
+      "Use `unref(store)` before the destructuring",
+      "Use `toRaw(store)` before the destructuring",
+      "Use `storeToRefs(store)` for the state and getters",
+      "Use `store.$reset()` after the destructuring"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "72",
+    "question": "Vue warns that the target of `<Teleport to=\"#modal\">` is missing. What is the usual cause?",
+    "options": [
+      "The target is allowed only when it is the `body` element of the page",
+      "The target must be an element inside the same component as the Teleport",
+      "The target element is not in the DOM when Teleport mounts",
+      "The target must use a class name and not an id in the `to` value"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "73",
+    "question": "A component uses top-level `await` in `<script setup>`. What does it need to work?",
+    "options": [
+      "A parent `<Suspense>` boundary",
+      "A `<KeepAlive>` wrapper around the component",
+      "A call to `defineAsyncComponent` in the same file",
+      "The `async` attribute on the `<script>` tag"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "74",
+    "question": "In a Vue Test Utils test, a click changes the DOM through state. How do you check the new DOM?",
+    "options": [
+      "Call `wrapper.update()` and then check the DOM",
+      "Call `wrapper.trigger('click')` and check the DOM at once",
+      "`await wrapper.trigger('click')` and then check the DOM",
+      "Use `setTimeout(0)` before you check the DOM"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "75",
+    "question": "How do you replace an imported module with a fake one in Vitest?",
+    "options": [
+      "`vi.mock('./api')`",
+      "`jest.mock('./api')`",
+      "`vi.stubGlobal('./api')`",
+      "`vi.spyOn('./api')`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "76",
+    "question": "In a unit test of a Pinia store, what must you do before you call `useStore()`?",
+    "options": [
+      "Call `mount(Store)` with Vue Test Utils",
+      "Call `app.mount()` on a new app",
+      "Call `await nextTick()` once",
+      "Call `setActivePinia(createPinia())`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "77",
+    "question": "Which code gives type-safe events in `<script setup lang=\"ts\">` (Vue 3.3 and later)?",
+    "options": [
+      "`defineEmits<{ change: [id: number] }>()`",
+      "`defineEmits<number>('change')`",
+      "`emit<number>('change')`",
+      "`defineEmits('change: number')`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "78",
+    "question": "How do you type a template ref for an `<input>` element in TypeScript?",
+    "options": [
+      "`ref<InputEvent>(null)`",
+      "`ref<string>('input')`",
+      "`ref<HTMLElement[]>(null)`",
+      "`ref<HTMLInputElement | null>(null)`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "79",
+    "question": "In a Nuxt 3 page, why use `useFetch` and not `$fetch` for the first data load?",
+    "options": [
+      "It makes the request faster with a special HTTP protocol between the apps",
+      "It runs only on the client and so it avoids the load on the server",
+      "It caches the answer in `localStorage` for the next visits of the user",
+      "It stops the double fetch by sending the server data to the client"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "80",
+    "question": "In Nuxt 3, which folder lets you auto-import a composable?",
+    "options": [
+      "`composables/`",
+      "`plugins/`",
+      "`layouts/`",
+      "`middleware/`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "81",
+    "question": "What is the main tracking difference between Vue 2 and Vue 3 reactivity?",
+    "options": [
+      "Vue 3 uses dirty checking; Vue 2 uses `Proxy` and misses new properties",
+      "Vue 3 uses `Proxy`; Vue 2 uses `Object.defineProperty` and misses new properties",
+      "Vue 3 uses polling at each tick; Vue 2 uses events on each property",
+      "Vue 3 uses `Object.defineProperty`; Vue 2 uses `Proxy` and misses new properties"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "82",
+    "question": "You set `count.value` three times in one synchronous function. How many renders happen?",
+    "options": [
+      "Two, because Vue skips the first write of a batch and renders the others",
+      "Zero, because Vue ignores the writes that do not change the type of the value",
+      "One, because Vue batches updates and flushes them in a microtask",
+      "Three, because each write of the value starts a new render at once"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "83",
+    "question": "What does `flush: 'post'` do for a watcher?",
+    "options": [
+      "It runs the callback after Vue updates the component DOM",
+      "It runs the callback at once when the value changes",
+      "It runs the callback after the component unmounts",
+      "It runs the callback before Vue updates the component DOM"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "84",
+    "question": "Why does `watchEffect(async () => { await load(); use(a.value) })` miss changes of `a`?",
+    "options": [
+      "Vue tracks only the reads that happen before the first `await`",
+      "Vue does not support async functions in `watchEffect` at all",
+      "Vue tracks only the reads that happen after the last `await`",
+      "Vue tracks `a` only when it is a `reactive` object"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "85",
+    "question": "What does `v-memo=\"[item.id]\"` do on an element in a list?",
+    "options": [
+      "It caches the HTML string of the element and reuses it for the next page load",
+      "It memorizes the result of the `v-for` loop for all of the items in the list",
+      "It skips the update of the sub-tree while the values in the array stay the same",
+      "It makes the element update when any property of `item` changes, not only `id`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "86",
+    "question": "What does the Vue 3 compiler do to make the virtual DOM diff faster?",
+    "options": [
+      "It turns the template into plain HTML strings at build time and skips the render",
+      "It marks dynamic parts with patch flags, so the diff skips static content",
+      "It removes the virtual DOM and updates the real DOM by hand at each change",
+      "It saves the full virtual DOM tree to the disk between two renders of the page"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "87",
+    "question": "You put an object from a third-party library in `reactive` state, and it fails. What is a good fix?",
+    "options": [
+      "Use `readonly()` so Vue does not change it",
+      "Use `watch` with `deep: true` so Vue tracks it",
+      "Use `markRaw()` so Vue does not wrap it in a proxy",
+      "Use `toRefs()` so Vue splits it into refs"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "88",
+    "question": "You write `const r = reactive(o)`. Later code changes the raw object `o` directly. What happens in the template?",
+    "options": [
+      "Vue throws an error, because `o` is now locked",
+      "The template updates, because `o` and `r` are the same object",
+      "The template updates after the next tick of the scheduler",
+      "No update; Vue tracks only changes made through the proxy `r`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "89",
+    "question": "Why does `reactive([ref(1)])[0]` need `.value` in Vue 3?",
+    "options": [
+      "Vue unwraps refs only when you call `unref` on the array in the script block",
+      "Vue does not unwrap refs that are inside reactive arrays or `Map` objects",
+      "Vue unwraps refs only when they are at the top level of a template expression",
+      "Vue unwraps refs only inside arrays, but not inside plain object properties"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "90",
+    "question": "A composable creates a `watch` inside a `setTimeout` callback after `setup` ends. What is the risk?",
+    "options": [
+      "The watcher never runs, because Vue blocks all new watchers after `setup` ends",
+      "The watcher runs twice at each change of the source value that it watches",
+      "The watcher is not bound to the component, so it does not stop on unmount",
+      "The watcher stops at once after the first change of the source that it watches"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "91",
+    "question": "In Nuxt, what often causes a hydration mismatch warning?",
+    "options": [
+      "The page uses a `v-for` list without an index as the key of its items",
+      "The page imports a component with a dynamic `import()` call in the script",
+      "The page uses two stores that have the same name in different files",
+      "The server and the client render different content, such as with `Date.now()`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "92",
+    "question": "Which of these hooks does not run during server-side rendering of a Vue 3 component?",
+    "options": [
+      "`onMounted`",
+      "`onServerPrefetch`",
+      "`setup`",
+      "`onBeforeMount`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "93",
+    "question": "Why must an SSR app make a new Pinia instance for each request?",
+    "options": [
+      "A shared instance blocks the server until the request of the user ends",
+      "A shared instance can not be serialized into the HTML that the server sends",
+      "A shared instance makes the hydration on the client fail at the first render",
+      "A shared instance leaks the state of one user to other users"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "94",
+    "question": "A table has 50,000 rows and the page is slow. What is the best fix?",
+    "options": [
+      "Use the row index as `key` so that Vue reuses the row elements more often",
+      "Use virtual scrolling, so the page renders only the rows in view",
+      "Add `v-show` to hide the rows that are outside of the view of the user",
+      "Add `v-once` to the table so that Vue never updates the rows again"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "95",
+    "question": "A parent passes `:opts=\"{ a: 1 }\"` to a child. Why does the child update at each parent render?",
+    "options": [
+      "The inline object has a new identity each time, so the prop looks changed",
+      "Vue compares object props by deep value, which is slow and forces an update",
+      "Vue always re-renders a child component when its parent component renders",
+      "Vue treats object props as not stable and so it skips the equality check"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "96",
+    "question": "A `<KeepAlive :max=\"5\">` already has 5 cached components. Another one is visited. What happens?",
+    "options": [
+      "Vue throws an error and stops the render",
+      "Vue does not cache the new component",
+      "Vue removes the first component that it cached",
+      "Vue removes the least recently used cached instance"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "97",
+    "question": "Why does a stable slot in Vue 3 not force a child update at each parent render?",
+    "options": [
+      "The compiler makes slots into functions, so the child updates only when their dependencies change",
+      "The runtime compares the HTML of the slot with the old HTML to find changes",
+      "The runtime renders slot content in the parent, then it freezes the result",
+      "The compiler copies slot content into the child at build time and never updates it"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "98",
+    "question": "In Vue 3.5, what does `const { title } = defineProps<{ title: string }>()` do in `<script setup>`?",
+    "options": [
+      "It stays reactive only when you wrap the call in `toRefs` in the same line",
+      "It loses reactivity, and Vue shows a warning at build time for the destructuring",
+      "It stays reactive only for objects and arrays, but not for strings",
+      "It stays reactive, because the compiler rewrites it to `props.title`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "99",
+    "question": "Since Vue 3.4, when does a `computed` trigger the effects that depend on it?",
+    "options": [
+      "At each time any of its dependencies is set",
+      "Only when its new value is different from the old value",
+      "Only when you read its value after a change",
+      "At each time the component renders again"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "100",
+    "question": "A test with `shallowMount` passes, but the real app fails when a child emits an event. Why?",
+    "options": [
+      "The `shallowMount` function turns off the reactivity of the props in the test",
+      "The `shallowMount` function ignores all events of the root component in the test",
+      "The child components are stubbed, so their real code does not run in the test",
+      "The `shallowMount` function does not run the `setup` of the root component at all"
+    ],
+    "correct_index": 2
+  }
+]

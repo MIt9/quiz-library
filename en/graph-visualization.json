@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What is another common name for a node in graph theory?",
+  "options": [
+   "Label",
+   "Vertex",
+   "Weight",
+   "Edge"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "What does an edge represent in a graph?",
+  "options": [
+   "A group of nodes with one name",
+   "A link between two nodes",
+   "A position on the screen",
+   "A color rule for a node"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "What is special about the edges in a directed graph?",
+  "options": [
+   "Each edge has a color value",
+   "Each edge has a number as weight",
+   "Each edge has a text label",
+   "Each edge has a direction"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "4",
+  "question": "What does an undirected edge between A and B mean?",
+  "options": [
+   "The link works both ways",
+   "The link is hidden",
+   "The link has a cost",
+   "The link goes only from A to B"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "5",
+  "question": "What is the degree of a node?",
+  "options": [
+   "The number of nodes near the node",
+   "The length of the longest path",
+   "The number of edges at the node",
+   "The size of the node label"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "6",
+  "question": "In a directed graph, what is the in-degree of a node?",
+  "options": [
+   "The number of edges that start at the node",
+   "The number of edges that end at the node",
+   "The number of cycles through the node",
+   "The number of all nodes"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "7",
+  "question": "What does DAG stand for?",
+  "options": [
+   "Dynamic adjacent graph",
+   "Directed acyclic graph",
+   "Directed attributed graph",
+   "Dual acyclic graph"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "8",
+  "question": "Which statement is true for a DAG?",
+  "options": [
+   "Each pair of nodes has at most one edge",
+   "You cannot return to a node by its edges",
+   "All edges in the graph are undirected",
+   "Every node has exactly the same degree"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "9",
+  "question": "Which data is a good example of a DAG?",
+  "options": [
+   "A road map with two-way streets in a city",
+   "Servers that send ping to each other",
+   "Build tasks that depend on other tasks",
+   "A group of friends who know each other"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "What does the weight of an edge usually store?",
+  "options": [
+   "The color or style of the edge line",
+   "A value such as cost or distance",
+   "The name of the source node of the edge",
+   "The layout position of the edge label"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "11",
+  "question": "What does an adjacency list store?",
+  "options": [
+   "A list of the edge colors by node",
+   "A table with one cell for each node pair",
+   "For each node, a list of its neighbors",
+   "A list of the x and y node positions"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "12",
+  "question": "How big is an adjacency matrix for a graph with n nodes?",
+  "options": [
+   "n by n",
+   "2n",
+   "n by log n",
+   "n"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "13",
+  "question": "Which structure uses less memory for a sparse graph?",
+  "options": [
+   "Distance table of all node pairs",
+   "Adjacency list",
+   "Matrix of all possible edges",
+   "Adjacency matrix"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "14",
+  "question": "How do most browser graph libraries take graph data?",
+  "options": [
+   "As one image file that shows the graph",
+   "As a list of nodes and a list of edges",
+   "As a list of all screen pixels",
+   "As a list of the layout force values"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "15",
+  "question": "Why must each node have a unique id?",
+  "options": [
+   "Edges use ids to refer to nodes",
+   "The layout needs it to sort the nodes",
+   "The browser needs it to apply CSS rules",
+   "The GPU needs it to pick the colors"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "What does a force-directed layout do?",
+  "options": [
+   "It places all the nodes on one circle",
+   "It moves nodes with push and pull forces",
+   "It sorts the nodes into rows and columns",
+   "It draws only the edges of the graph"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "17",
+  "question": "In a force-directed layout, what does the edge force do?",
+  "options": [
+   "It pushes connected nodes apart again",
+   "It fixes the size of every node",
+   "It pulls connected nodes closer",
+   "It rotates the whole graph by an angle"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "18",
+  "question": "Which D3 force makes all nodes push each other away?",
+  "options": [
+   "forceManyBody",
+   "forceX",
+   "forceCenter",
+   "forceLink"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "Which D3 force works like a spring on each edge?",
+  "options": [
+   "forceLink",
+   "forceManyBody",
+   "forceCenter",
+   "forceCollide"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "20",
+  "question": "Which layout fits an organization chart best?",
+  "options": [
+   "Circular layout",
+   "Random layout",
+   "Force-directed layout",
+   "Hierarchical layout"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "Where does a circular layout put the nodes?",
+  "options": [
+   "In rows and columns",
+   "At random places",
+   "In a tree with levels",
+   "On the edge of a circle"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "What does a layout algorithm give as output?",
+  "options": [
+   "Colors chosen for each node",
+   "Names given to each node",
+   "Coordinates for each node",
+   "Pixels drawn for each node"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "23",
+  "question": "What is the difference between layout and rendering?",
+  "options": [
+   "Layout sets colors and rendering sets sizes",
+   "Layout loads data and rendering saves it",
+   "Layout draws shapes and rendering finds positions",
+   "Layout finds positions and rendering draws them"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "In an SVG graph, what does each node become?",
+  "options": [
+   "A GPU buffer",
+   "A JavaScript typed array",
+   "A DOM element",
+   "A pixel in a bitmap"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "25",
+  "question": "How does Canvas 2D keep a drawn node?",
+  "options": [
+   "As a DOM element in the tree",
+   "As a CSS class on a tag",
+   "As pixels in a bitmap",
+   "As a shader program on the GPU"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "26",
+  "question": "Which browser API runs shader programs on the GPU to draw many shapes?",
+  "options": [
+   "WebGL",
+   "The DOM",
+   "Canvas 2D",
+   "SVG"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "27",
+  "question": "Which renderer gives CSS styling and DOM events for each node?",
+  "options": [
+   "WebGL",
+   "Canvas 2D",
+   "SVG",
+   "A PNG image"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "Which renderer is best for 100,000 nodes?",
+  "options": [
+   "WebGL",
+   "SVG with one element per node",
+   "Canvas 2D with shadow blur",
+   "HTML divs with absolute position"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "29",
+  "question": "What is Cytoscape.js?",
+  "options": [
+   "A browser library for graph analysis",
+   "A CSS framework for graph pages",
+   "A server that makes graph layouts",
+   "A graph database that runs on a server"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "30",
+  "question": "What is the main goal of Sigma.js?",
+  "options": [
+   "Building forms with draggable nodes",
+   "Storing graphs in a server database",
+   "Fast display of large graphs with WebGL",
+   "Drawing only trees and org charts"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "31",
+  "question": "What is vis-network used for?",
+  "options": [
+   "Storing graph data in a database",
+   "Drawing interactive network diagrams",
+   "Routing network traffic between servers",
+   "Training models on graph data"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "32",
+  "question": "What is React Flow used for?",
+  "options": [
+   "Graph database queries for React",
+   "Node-based editors and diagrams in React",
+   "Server-side layout for React pages",
+   "Fast display of one million nodes"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "What does the d3-force module calculate?",
+  "options": [
+   "Node colors and sizes",
+   "Graph queries on the data",
+   "Node positions only",
+   "SVG paths for the edges"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "34",
+  "question": "What does zoom do in a graph view?",
+  "options": [
+   "It moves the nodes in the data",
+   "It sorts the nodes",
+   "It deletes far nodes",
+   "It changes the scale of the view"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "35",
+  "question": "What does pan do in a graph view?",
+  "options": [
+   "It moves the visible area",
+   "It removes edges",
+   "It changes the node size",
+   "It changes the layout"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "36",
+  "question": "What is a common use of hover on a node?",
+  "options": [
+   "Delete the node from the data",
+   "Save the whole graph to a file",
+   "Show a tooltip or highlight neighbors",
+   "Change the layout type of the graph"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "37",
+  "question": "What does a click on a node usually do in a graph UI?",
+  "options": [
+   "It zooms out",
+   "It reloads the data",
+   "It selects the node",
+   "It deletes the node"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "38",
+  "question": "What happens when a user drags a node?",
+  "options": [
+   "The graph becomes directed",
+   "The node id changes",
+   "The edge weight changes",
+   "The node position changes"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "What does filtering do in a graph view?",
+  "options": [
+   "It joins many nodes into one node",
+   "It hides items that do not match a rule",
+   "It adds new edges between the nodes",
+   "It changes the layout algorithm"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "40",
+  "question": "What does clustering do in a graph view?",
+  "options": [
+   "It changes the direction of every edge",
+   "It groups related nodes into one node",
+   "It sorts the nodes by their name",
+   "It removes all edges between nodes"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "41",
+  "question": "What is a hairball in graph visualization?",
+  "options": [
+   "A dense graph that is hard to read",
+   "A graph that has only one node",
+   "A graph that has no edges at all",
+   "A graph that has only trees in it"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "42",
+  "question": "Why do many graph views show labels only after zoom in?",
+  "options": [
+   "Labels cannot be drawn on a canvas",
+   "Labels change the layout result",
+   "Labels need a special font to load",
+   "Many labels at once cause clutter"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "What is a connected component?",
+  "options": [
+   "A set of edges that have the same weight",
+   "A set of nodes that have the same color",
+   "A set of nodes with paths between them",
+   "A set of nodes that have the same degree"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "What is a cycle in a graph?",
+  "options": [
+   "A path that ends at its start node",
+   "A node that has no edges at all",
+   "An edge that has no weight value",
+   "A path that has only one single node"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "45",
+  "question": "What is a self-loop?",
+  "options": [
+   "A path with two nodes",
+   "An edge with no direction",
+   "A node with no edges",
+   "An edge from a node to itself"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "46",
+  "question": "What is a tree in graph theory?",
+  "options": [
+   "A graph with directed edges only",
+   "A connected graph with no cycles",
+   "A graph with a loop at each node",
+   "A graph with all nodes of degree one"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "47",
+  "question": "Why do teams map node size to degree?",
+  "options": [
+   "To make the layout run faster",
+   "To reduce the memory use of nodes",
+   "To sort the edges in the data",
+   "To show the most connected nodes"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "48",
+  "question": "Why does a directed graph view often draw arrowheads?",
+  "options": [
+   "To show the type of each node",
+   "To show the force in the layout",
+   "To show the weight of each edge",
+   "To show the direction of each edge"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "49",
+  "question": "How does Cytoscape.js set the color of nodes?",
+  "options": [
+   "With a style list that uses selectors",
+   "With inline HTML attributes on nodes",
+   "With a separate CSS file only",
+   "With a Canvas call for each node"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "Which fields must each node object have in React Flow?",
+  "options": [
+   "A source and a target",
+   "A weight and a color",
+   "An id and a position",
+   "A label and a degree"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "51",
+  "question": "A page draws 20,000 nodes as SVG elements and is slow. What is the main reason?",
+  "options": [
+   "SVG blocks the network during a draw",
+   "Each element adds cost to DOM and style work",
+   "SVG uses too much GPU memory for shapes",
+   "SVG cannot draw circles for many nodes"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "A graph uses Canvas 2D. How can you find the node under the mouse?",
+  "options": [
+   "Add a click event to each node object",
+   "Read the node from the DOM tree path",
+   "Compute it in code from mouse coordinates",
+   "Ask the GPU for the name of the shape"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "53",
+  "question": "A force layout freezes the page for several seconds. What is a good fix?",
+  "options": [
+   "Switch all the nodes to SVG elements",
+   "Lower the alpha decay to run longer",
+   "Run the simulation in a Web Worker",
+   "Increase the link distance of all edges"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "54",
+  "question": "A D3 simulation stops moving after some time. Why?",
+  "options": [
+   "The nodes reach the border of the screen",
+   "The browser limits the number of ticks",
+   "The edges become straight over time",
+   "The alpha value falls below alphaMin"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "55",
+  "question": "A user drags a node and the other nodes stay still. What helps in D3 force?",
+  "options": [
+   "Set alphaTarget and restart the simulation",
+   "Call the layout function once more",
+   "Remove all forces from the simulation",
+   "Set the forceCenter strength to zero"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "Nodes overlap in a D3 force graph. Which force helps?",
+  "options": [
+   "forceCollide",
+   "forceCenter",
+   "forceLink",
+   "forceRadial"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "57",
+  "question": "Disconnected parts of a graph fly far away. What helps most?",
+  "options": [
+   "Add forceX and forceY",
+   "Use forceCenter only",
+   "Add more forceLink",
+   "Increase the node size"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "58",
+  "question": "In a layered (Sugiyama) layout, which step reduces edge crossings?",
+  "options": [
+   "Assigning the nodes to the layers",
+   "Removing the cycles from the graph",
+   "Drawing the arrowheads on the edges",
+   "Ordering the nodes inside each layer"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "59",
+  "question": "Which libraries do React Flow guides often use for a layered layout?",
+  "options": [
+   "graphology and three.js",
+   "vis-network and Cytoscape.js",
+   "d3-hierarchy and Sigma.js",
+   "dagre and elkjs"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "60",
+  "question": "In React Flow, all nodes render again on each drag. What is a common fix?",
+  "options": [
+   "Use memo for custom node components",
+   "Make all nodes use SVG elements",
+   "Disable the keys on the nodes",
+   "Use more state in the parent component"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "61",
+  "question": "A React Flow component defines nodeTypes inside the render function. What is the risk?",
+  "options": [
+   "The node types cannot get names",
+   "The edges stop working after render",
+   "The layout changes to a circle",
+   "The object is new on each render"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "62",
+  "question": "Which library holds the graph data for Sigma.js version 2 and later?",
+  "options": [
+   "graphology",
+   "d3-force",
+   "Cytoscape.js",
+   "dagre"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "63",
+  "question": "How do you make a group node in Cytoscape.js?",
+  "options": [
+   "Give the nodes the same color value",
+   "Use the same edge weight for all of them",
+   "Call the layout two times on all of them",
+   "Set the parent field on child nodes"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "64",
+  "question": "What is the default renderer in Cytoscape.js?",
+  "options": [
+   "SVG",
+   "WebGL",
+   "HTML divs",
+   "Canvas"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "65",
+  "question": "In vis-network, a graph keeps moving and uses CPU. What helps?",
+  "options": [
+   "Use more edges between the nodes",
+   "Increase the size of each node a lot",
+   "Use only SVG for the drawing",
+   "Stop physics after the stabilization"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "66",
+  "question": "What is level of detail in a graph view?",
+  "options": [
+   "Show the same detail at all zoom levels",
+   "Show only the first node of the graph",
+   "Show less detail for small or far items",
+   "Show all details from the server only"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "A graph has 5,000 nodes and 500,000 edges. What limits speed most?",
+  "options": [
+   "The number of edges",
+   "The page title length",
+   "The number of node labels",
+   "The color list size"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "68",
+  "question": "How does clustering help with a large graph?",
+  "options": [
+   "It sorts the edges by their weight",
+   "It shows one super-node for each community",
+   "It removes all nodes that have labels",
+   "It changes the whole graph into a tree"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "You want to remove clutter from a large graph. Which simple filter helps?",
+  "options": [
+   "Hide nodes with very long labels",
+   "Hide nodes with a low degree",
+   "Hide the nodes that are the newest",
+   "Hide nodes with a blue color value"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "How do you highlight the neighbors of a hovered node fast?",
+  "options": [
+   "Draw the graph again from the server",
+   "Use an adjacency lookup for that node",
+   "Scan all edges on each mouse move",
+   "Sort the nodes by id"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "71",
+  "question": "A user zooms with the mouse wheel and the view jumps away from the cursor. What is missing?",
+  "options": [
+   "A larger canvas size in pixels",
+   "A new layout run for all the nodes",
+   "A change of the translation offset",
+   "A higher scale value for the canvas"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "72",
+  "question": "A Canvas graph looks blurry on a high-DPI screen. What is the fix?",
+  "options": [
+   "Use fewer nodes in the drawing",
+   "Change the canvas to an SVG element",
+   "Use a larger font for the labels",
+   "Scale the canvas by devicePixelRatio"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "73",
+  "question": "A React app saves node positions in state on every simulation tick. What is the problem?",
+  "options": [
+   "It changes the ids of the nodes",
+   "It causes many render calls",
+   "It stops the simulation at once",
+   "It makes the edges look straight"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "74",
+  "question": "What does edge bundling do?",
+  "options": [
+   "It removes the edges with a low weight",
+   "It groups edges that go the same way",
+   "It sorts the edges by their color",
+   "It adds new edges between hubs"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "75",
+  "question": "D3 gives the error \"node not found: a\" for a link. What is the most likely cause?",
+  "options": [
+   "forceLink uses the index, so set .id()",
+   "The nodes have no color field in them",
+   "The links have no weight field in them",
+   "The simulation has no center force at all"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "76",
+  "question": "After you start a D3 simulation, link.source is an object, not a string. Why?",
+  "options": [
+   "The browser changes the data type itself",
+   "The graph becomes an undirected graph",
+   "The tick function copies the link data",
+   "forceLink replaces the id with the node"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "77",
+  "question": "Which built-in Cytoscape.js layout is force-directed?",
+  "options": [
+   "cose",
+   "breadthfirst",
+   "grid",
+   "circle"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "78",
+  "question": "A library starts a force layout from random positions. How do you get the same view on each load?",
+  "options": [
+   "Use a circular layout instead of it",
+   "Save the final positions and reuse them",
+   "Use a larger browser window size",
+   "Add more edges to the data set"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "A team needs nodes with forms and buttons inside. Which library fits best?",
+  "options": [
+   "A WebGL renderer",
+   "d3-force alone",
+   "React Flow",
+   "Sigma.js"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "80",
+  "question": "In React Flow, the graph has 2,000 nodes and pan is slow. Which option helps?",
+  "options": [
+   "Use inline styles for the nodes",
+   "Use only one edge type for all",
+   "Set onlyRenderVisibleElements",
+   "Set fitView to false on the flow"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "81",
+  "question": "A force layout with 100,000 nodes is slow. What does the Barnes-Hut method change?",
+  "options": [
+   "It stores the edges in a matrix",
+   "It groups far nodes in a quadtree",
+   "It draws only the nodes in the view",
+   "It removes the edge force from the layout"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "82",
+  "question": "In d3 forceManyBody, you raise theta. What is the effect?",
+  "options": [
+   "The layout is slower and more exact",
+   "The nodes get larger on the screen",
+   "The layout is faster and less exact",
+   "The edges get shorter between nodes"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "83",
+  "question": "How can you find the hovered node in a WebGL renderer?",
+  "options": [
+   "Draw ids as colors off screen, or use a spatial index",
+   "Read the DOM event target of the node",
+   "Add a listener to each vertex in the buffer, one by one",
+   "Ask CSS for the hovered shape in the scene"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "A Canvas graph has 50,000 nodes but shows only 500 at one time. What helps?",
+  "options": [
+   "Using more layers of canvas elements",
+   "Viewport culling that skips hidden items",
+   "Drawing each node two times in a frame",
+   "Using a larger line width for edges"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "85",
+  "question": "Why is it slow to draw 1,000,000 edges with one draw call each?",
+  "options": [
+   "The GPU cannot draw thin lines",
+   "WebGL has no line type at all",
+   "The edges need DOM nodes in WebGL",
+   "Each draw call adds CPU cost"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "86",
+  "question": "Why do layered layout tools use heuristics such as barycenter?",
+  "options": [
+   "Edges cannot be sorted by length",
+   "Layers need random numbers to build",
+   "DAGs have no valid node order",
+   "Minimum edge crossing is NP-hard"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "Input for a layered layout has a cycle. What does the algorithm usually do first?",
+  "options": [
+   "It reverses some edges to break cycles",
+   "It changes the graph to a tree first",
+   "It rejects the input as not valid",
+   "It removes the whole component first"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "Why is text hard in WebGL graph renderers?",
+  "options": [
+   "WebGL cannot use more than one color",
+   "Browser fonts do not work on any GPU",
+   "Text needs a render on the server",
+   "There is no native text, so use glyph atlases"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "89",
+  "question": "New nodes arrive in a live graph and the whole layout jumps. What is a good approach?",
+  "options": [
+   "Pin the old nodes and place new nodes near neighbors",
+   "Switch to a circular layout for new nodes only",
+   "Remove the old edges and add them again later",
+   "Run the layout again from random positions"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "90",
+  "question": "Why do WebGL graph libraries store positions in typed arrays such as Float32Array?",
+  "options": [
+   "Browsers require them for all graph data",
+   "They sort the nodes by their id value",
+   "They make the edges directed in the buffer",
+   "They upload to GPU buffers with little copy"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "91",
+  "question": "How does the cost of forceLink grow on each simulation tick?",
+  "options": [
+   "Constant time for any graph size",
+   "Time that grows with the square of the nodes",
+   "Time that grows with the number of edges",
+   "Time that grows with the label length"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "92",
+  "question": "What does the Louvain method try to maximize when it finds clusters?",
+  "options": [
+   "Edge length",
+   "Node degree",
+   "Modularity",
+   "Layout speed"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "93",
+  "question": "You must size 100,000 nodes by a metric on each data load. Which metric is cheapest?",
+  "options": [
+   "Degree",
+   "All-pairs shortest path",
+   "Closeness centrality",
+   "Betweenness centrality"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "94",
+  "question": "A worker sends positions to the main thread each frame. How do you avoid a copy?",
+  "options": [
+   "Transfer the ArrayBuffer",
+   "Save the data in localStorage",
+   "Use a larger buffer for the data",
+   "Send the data as a JSON string"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "95",
+  "question": "In d3-force, what does a higher velocityDecay do?",
+  "options": [
+   "Nodes repel each other with more force",
+   "Nodes lose speed faster and settle sooner",
+   "The simulation runs more ticks in each frame",
+   "The links become longer between the nodes"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "96",
+  "question": "A graph has 2 million nodes on a server. Which design is the most practical?",
+  "options": [
+   "Render the whole graph on the server as SVG",
+   "Send all nodes and let the GPU filter them",
+   "Load the neighbors when the user expands a node",
+   "Ask the user to select 100 nodes first, then load"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "A force layout ends in a tangled shape with edge crossings. What is the cause?",
+  "options": [
+   "The edges have no direction in the data",
+   "The canvas is too small for all the nodes",
+   "The nodes have no labels in the data",
+   "It converged to a local minimum of energy"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "98",
+  "question": "A Canvas graph is the only view of data in the app. What is the accessibility risk?",
+  "options": [
+   "Keyboard users cannot open the page menu",
+   "Browsers block canvas drawing on mobile",
+   "Screen readers cannot read the nodes",
+   "Zoom is turned off for canvas pages"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "Why can many semi-transparent edges slow down a WebGL graph?",
+  "options": [
+   "Transparent edges need extra DOM nodes in WebGL",
+   "Alpha makes the layout run again each frame",
+   "WebGL does not allow alpha values on lines",
+   "Blending adds pixel fill cost where edges overlap"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "You must show 5,000 nodes with rich HTML content and smooth drag. Which choice is best?",
+  "options": [
+   "One WebGL canvas with no DOM nodes at all",
+   "HTML nodes with culling, as in React Flow",
+   "One SVG path for all the nodes together",
+   "Images of the nodes made on a server"
+  ],
+  "correct_index": 1
+ }
+]

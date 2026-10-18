@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What does INP stand for in web performance?",
+  "options": [
+   "Input to Network Payload",
+   "Interaction to Next Paint",
+   "Interaction to Navigation Process",
+   "Input Neutral Performance"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "What does INP measure?",
+  "options": [
+   "Time from the page request to the first byte from the server",
+   "Time from a user action to the next frame",
+   "Time to render the largest element in the viewport",
+   "Sum of all unexpected layout shifts during the page load"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "Which metric did INP replace as a Core Web Vital in March 2024?",
+  "options": [
+   "Largest Contentful Paint (LCP)",
+   "Time to First Byte (TTFB)",
+   "First Input Delay (FID)",
+   "Total Blocking Time (TBT)"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "4",
+  "question": "What INP value does Google rate as good?",
+  "options": [
+   "Up to 100 ms, the same limit as FID",
+   "Up to 200 ms",
+   "Up to 300 ms",
+   "Up to 500 ms, the start of poor"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "5",
+  "question": "A page has an INP of 350 ms. How does Google rate it?",
+  "options": [
+   "Good, it is below the limit",
+   "Needs improvement",
+   "Poor",
+   "Not rated, the value is too rare"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "6",
+  "question": "Which three parts make the total time of one interaction in INP?",
+  "options": [
+   "DNS lookup time, connection time, server response time",
+   "Input delay, processing time, presentation delay",
+   "HTML parse time, style and layout time, paint time",
+   "Queue time, network time, render time on the server"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "7",
+  "question": "What is input delay?",
+  "options": [
+   "Time the event handlers take to run",
+   "Time before the browser draws the next frame",
+   "Time the script needs to download",
+   "Time before the event handlers start to run"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "A click handler runs for 400 ms. Which INP part grows most?",
+  "options": [
+   "Presentation delay",
+   "Input delay",
+   "Processing time",
+   "Network time"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "9",
+  "question": "What is presentation delay?",
+  "options": [
+   "Time between the page request and the first paint",
+   "Time between the user action and the start of handlers",
+   "Time between the end of handlers and the next frame",
+   "Time between two events of the same interaction"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "Which user action counts as an interaction for INP?",
+  "options": [
+   "Hovering the pointer over a button or link",
+   "Scrolling the page with the mouse wheel",
+   "Pressing a key in a text field",
+   "Zooming with a pinch"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "11",
+  "question": "A page visit has 10 interactions. Which one does INP report?",
+  "options": [
+   "The first interaction of the visit",
+   "The average of all interactions",
+   "The slowest interaction",
+   "The median"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "12",
+  "question": "Why did Google replace FID with INP?",
+  "options": [
+   "FID could not be collected from real users in the field",
+   "FID covered only interactions on mobile devices with touch",
+   "FID covered only the first interaction",
+   "FID included the server response time of the page"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "13",
+  "question": "Which parts of an interaction does FID not measure?",
+  "options": [
+   "Input delay and presentation delay of the frame",
+   "Input delay and processing time of the event",
+   "Processing time and presentation delay",
+   "Input delay and the network time of the request"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "14",
+  "question": "A user taps while a 300 ms script runs on the main thread. Which INP part grows?",
+  "options": [
+   "Presentation delay",
+   "Processing time",
+   "Input delay",
+   "Network time"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "15",
+  "question": "How long must a task run on the main thread to be a long task?",
+  "options": [
+   "More than 100 ms",
+   "More than 16 ms",
+   "More than 50 ms",
+   "More than 200 ms"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "16",
+  "question": "Why does a long task hurt INP?",
+  "options": [
+   "The browser can not parse CSS files for the page during it",
+   "The network layer stops all new requests during it",
+   "The main thread can not handle input during it",
+   "The GPU can not draw any frames of animations during it"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "17",
+  "question": "Which work runs on the main thread of the browser?",
+  "options": [
+   "Resolving the DNS name of the server",
+   "Decrypting the TLS traffic of the HTTP response",
+   "Running JavaScript event handlers",
+   "Sending the TCP packets to the server"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "18",
+  "question": "Which data source shows INP from real Chrome users?",
+  "options": [
+   "DevTools Network tab",
+   "Lighthouse default page-load audit",
+   "DevTools Coverage tab",
+   "Chrome UX Report (CrUX)"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "19",
+  "question": "Which small JavaScript library reports INP from real users in the browser?",
+  "options": [
+   "`lighthouse`",
+   "`web-vitals`",
+   "`puppeteer`",
+   "`webpack-bundle-analyzer`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "Which `web-vitals` function do you call to get INP?",
+  "options": [
+   "`watchINP`",
+   "`measureINP`",
+   "`trackINP`",
+   "`onINP`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "Which Chrome DevTools panel do you use to record an interaction and find slow tasks?",
+  "options": [
+   "Application and storage",
+   "Network and its waterfall",
+   "Memory",
+   "Performance"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "What does it mean to yield to the main thread?",
+  "options": [
+   "Move your work to another CPU core to run in parallel",
+   "Cancel the task that runs now and start it again",
+   "Pause your work so the browser can run other tasks",
+   "Run your work in a smaller scope of variables"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "23",
+  "question": "Which code yields to the main thread and then continues your function?",
+  "options": [
+   "`await requestAnimationFrame()`",
+   "`await scheduler.yield()`",
+   "`await queueMicrotask()`",
+   "`await scheduler.sleep()`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "24",
+  "question": "Which code yields to the main thread in a browser without `scheduler.yield`?",
+  "options": [
+   "`await new Promise(r => queueMicrotask(r))`",
+   "`await Promise.all([Promise.resolve()])`",
+   "`await new Promise(r => r(Promise.resolve()))`",
+   "`await new Promise(r => setTimeout(r, 0))`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "25",
+  "question": "When does the browser run a `requestIdleCallback` callback?",
+  "options": [
+   "Before every frame, without exception",
+   "Right after the click event ends",
+   "After exactly one second",
+   "When the browser has idle time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "What does debouncing do to a search input handler?",
+  "options": [
+   "Runs at fixed intervals while the user types",
+   "Runs on every key press inside a Web Worker",
+   "Waits until typing stops, then runs once",
+   "Skips the first call and runs all the others"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "27",
+  "question": "Why can third-party scripts hurt INP?",
+  "options": [
+   "They run on a thread that locks the input device",
+   "They run on the main thread and can block input",
+   "They turn off the event handlers of the page",
+   "They make the CSS of the page larger"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "28",
+  "question": "What is hydration in a server-rendered app?",
+  "options": [
+   "Fetch the page data on the server before the first response",
+   "Attach event handlers and state to server HTML in the browser",
+   "Compile the JavaScript bundle to native code for a faster start",
+   "Compress the server HTML before it goes over the network"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "29",
+  "question": "Why can hydration hurt INP?",
+  "options": [
+   "Hydration turns off all click events until the full page has loaded",
+   "Hydration sends a new network request to the server for every early click",
+   "Hydration deletes the server HTML before it adds new nodes to the page",
+   "Hydration work blocks the main thread, so early clicks wait"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "What does `startTransition` do in React?",
+  "options": [
+   "Delays the state update by one second to save CPU time",
+   "Marks a state update as low priority so input stays fast",
+   "Moves the state update to a Web Worker thread to run it",
+   "Skips the render when the new state equals the old state"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "What does `isPending` from `useTransition` tell you?",
+  "options": [
+   "Whether the page is still hydrating",
+   "Whether a fetch call is still waiting",
+   "Whether the component is hidden",
+   "Whether a transition is still in progress"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "32",
+  "question": "What does `useDeferredValue(query)` return?",
+  "options": [
+   "A value delayed by a fixed time of 300 milliseconds",
+   "A promise that resolves to the latest value later",
+   "A copy of the value that never changes after mount",
+   "A value that can lag behind during urgent updates"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "33",
+  "question": "A click handler does heavy work before it updates the UI. What is the best simple fix?",
+  "options": [
+   "Use a smaller image for the button that is clicked",
+   "Add more event listeners to split the work in parts",
+   "Call the handler a second time to warm up the cache",
+   "Update the UI first, then do the heavy work later"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "34",
+  "question": "A click adds 5,000 DOM nodes to the page. Which INP part grows most?",
+  "options": [
+   "Presentation delay",
+   "Input delay, before the handler runs",
+   "Download time of the new nodes",
+   "Connection time to the server"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "35",
+  "question": "Which browser API gives the event latency entries that INP uses?",
+  "options": [
+   "Navigation Timing API",
+   "Resource Timing API",
+   "User Timing API",
+   "Event Timing API"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "36",
+  "question": "Which API shows the scripts that cause slow frames?",
+  "options": [
+   "Paint Timing API",
+   "Long Animation Frames API",
+   "Layout Instability API",
+   "Server Timing API"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "37",
+  "question": "Why can a good default Lighthouse page-load score hide a bad INP?",
+  "options": [
+   "The default test makes no real user interactions",
+   "Lighthouse measures only the server response time of the page",
+   "Lighthouse ignores all JavaScript that the page loads and runs",
+   "Lighthouse uses only a very slow network and no CPU limit"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "38",
+  "question": "Which lab metric is a good proxy for INP in a page-load test?",
+  "options": [
+   "Speed Index",
+   "Total Blocking Time (TBT)",
+   "First Contentful Paint (FCP)",
+   "Cumulative Layout Shift (CLS)"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "39",
+  "question": "A tap fires `pointerdown`, `pointerup`, and `click`. How does INP count it?",
+  "options": [
+   "As one interaction with the longest event latency",
+   "As three separate interactions, one for each event",
+   "As one interaction with the first event latency only",
+   "As one interaction with the sum of all event latencies"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "What does `content-visibility: auto` do?",
+  "options": [
+   "Loads the scripts of off-screen content at a later time",
+   "Skips rendering work for content that is off-screen",
+   "Compresses the DOM of off-screen content in memory",
+   "Turns off event handlers for off-screen content"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "41",
+  "question": "At which percentile does Google assess INP for a page?",
+  "options": [
+   "50th percentile",
+   "75th percentile",
+   "90th percentile",
+   "99th percentile"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "42",
+  "question": "How does code splitting help INP?",
+  "options": [
+   "The browser caches each user event to run it again later",
+   "The server runs the event handlers for the page instead",
+   "The browser skips the layout step for split chunks",
+   "The page runs less JavaScript at load, so fewer long tasks"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "Which feature lets you run heavy JavaScript calculations off the main thread?",
+  "options": [
+   "`setInterval` callback",
+   "`requestAnimationFrame` callback",
+   "Web Worker",
+   "`Promise.then` callback"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "A click starts a slow request. What helps INP most?",
+  "options": [
+   "Show feedback at once, before the request ends",
+   "Wait for the response and then paint the result once",
+   "Block all other clicks until the data comes back",
+   "Hide the page content until the data comes back"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "45",
+  "question": "Which free Google web tool shows real-user INP for a URL together with a lab run?",
+  "options": [
+   "PageSpeed Insights",
+   "Task Manager",
+   "DevTools Memory panel",
+   "Google Tag Manager preview"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "A user only reads the page and never clicks. What INP does the visit report?",
+  "options": [
+   "0 ms",
+   "200 ms",
+   "The FID value",
+   "No INP value"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "47",
+  "question": "What is a task in the browser event loop?",
+  "options": [
+   "One unit of work that the main thread takes from a queue and runs",
+   "One thread that the browser starts for every open tab of the user",
+   "One request that the browser sends to a server for a single file",
+   "One frame that the GPU draws on the screen for the user to see"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "48",
+  "question": "When does a `requestAnimationFrame` callback run?",
+  "options": [
+   "After the next repaint",
+   "Before the next repaint",
+   "When the main thread is idle",
+   "After 16 ms from a timer"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "49",
+  "question": "What does the attribution build of `web-vitals` add to an INP report?",
+  "options": [
+   "The target element and the phase times",
+   "The server log lines for the same request and user",
+   "The Lighthouse score of the page for the same visit",
+   "A list of code fixes for the slow interaction found"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "At 60 frames per second, how long is one frame?",
+  "options": [
+   "About 16.7 ms",
+   "About 8 ms, half of the frame budget",
+   "About 33 ms, the time of 30 fps",
+   "About 50 ms, the long task limit"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "51",
+  "question": "Each key press in a search box starts a heavy filter. What is the right change?",
+  "options": [
+   "Debounce the filter, but not the input value",
+   "Debounce the input value update by 300 ms, then filter",
+   "Use `setInterval` to read the input value every second",
+   "Run the filter only on `blur` and remove the `input` event"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "52",
+  "question": "Why is `scheduler.yield()` better than `setTimeout(0)` for yielding in a long job?",
+  "options": [
+   "Your code resumes before other queued tasks",
+   "It runs your code in a separate worker",
+   "It stops the browser from painting between chunks",
+   "It works in all old browsers without a polyfill"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "53",
+  "question": "A loop yields after each of 100,000 small items. What is the risk?",
+  "options": [
+   "Many task switches make the total time much longer",
+   "Input waits longer for the loop to finish each item",
+   "The items run in random order after each yield",
+   "The memory of the page leaks after each yield"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "54",
+  "question": "A click handler updates the UI and sends analytics. Where should the analytics code run?",
+  "options": [
+   "Before the UI update, so the data is always safe",
+   "After a yield, so the next paint is not delayed",
+   "In a `requestAnimationFrame` callback before paint",
+   "At the end of the same task as the UI update"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "55",
+  "question": "A list filters on each key press. Which React change keeps typing smooth?",
+  "options": [
+   "Put the input value state update in `startTransition`",
+   "Copy the query to another state in a `useEffect`",
+   "Put the list filter state update in `startTransition`",
+   "Set a random `key` prop on the list on each key press"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "56",
+  "question": "A parent re-renders on each key press. A slow child list does not use that state. What stops the child work?",
+  "options": [
+   "Wrap the child in `React.memo`, with stable props",
+   "Add a `useEffect` in the child to skip the render of the list",
+   "Use `useLayoutEffect` instead of `useEffect` in the parent",
+   "Move the child into a `<Suspense>` boundary in the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "57",
+  "question": "Which change cuts hydration cost most for a mostly static page?",
+  "options": [
+   "Hydrate the whole page two times",
+   "Hydrate only the interactive parts",
+   "Move all state into one global store",
+   "Render everything on the client only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "58",
+  "question": "In React 18, a user clicks a part of the page that is not hydrated yet. What happens?",
+  "options": [
+   "React drops the click and waits for the user to click again",
+   "React reloads the page to hydrate the clicked part first",
+   "React hydrates the whole page again from the root node",
+   "React hydrates that part first and then handles the click"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "59",
+  "question": "A chat widget adds 400 ms tasks while the page is in use. Which fix keeps the feature?",
+  "options": [
+   "Load it on idle time or on first user intent",
+   "Mark the script `async` and keep its position",
+   "Add a `preload` link for the script",
+   "Inline the script in the HTML"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "60",
+  "question": "`items.forEach(el => {\n  el.style.width = box.offsetWidth + 'px';\n});`\nWhat is the performance problem?",
+  "options": [
+   "`forEach` blocks the event loop forever",
+   "`style.width` is a read-only property",
+   "`offsetWidth` returns a promise",
+   "Each read after a write forces a new layout"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "INP shows high input delay and low processing time. What is the likely cause?",
+  "options": [
+   "Other scripts or timers block the main thread",
+   "A slow event handler that runs for a long time",
+   "A large DOM update that needs a costly layout",
+   "A slow server API call that returns late"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "62",
+  "question": "INP shows low input delay, low presentation delay, and 350 ms processing time. What do you do next?",
+  "options": [
+   "Profile the handlers and cut or split their work",
+   "Reduce the size of the DOM before any other change is made",
+   "Remove the third-party scripts from the page load",
+   "Add `defer` to all scripts to move work after load"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "63",
+  "question": "CrUX shows 450 ms INP, but your lab test shows 80 ms. What is the most likely reason?",
+  "options": [
+   "Real users have slower devices and more interactions",
+   "CrUX counts only desktop visits and not mobile ones",
+   "The lab test counts more interactions than CrUX does",
+   "CrUX adds the server response time to the INP value"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "64",
+  "question": "Why does `onINP` often call your callback late, for example when the user leaves the page?",
+  "options": [
+   "INP can change until the page visit ends",
+   "The library batches reports to save speed",
+   "The API needs a full page reload",
+   "Browsers delay all callbacks by 10 seconds"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "What does `{ reportAllChanges: true }` do for `onINP`?",
+  "options": [
+   "Reports every interaction two times",
+   "Reports each time the INP value changes",
+   "Includes scroll events in the value",
+   "Reports only the first interaction"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "66",
+  "question": "Which method sends INP data reliably when the user closes the page?",
+  "options": [
+   "`navigator.sendBeacon()`",
+   "A normal `fetch()` with no options",
+   "`window.postMessage()`",
+   "`setTimeout()` with a long delay"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "67",
+  "question": "In a DevTools Performance recording, which track shows each interaction with its parts?",
+  "options": [
+   "Interactions",
+   "Network, with the request waterfall",
+   "Frames",
+   "Timings, with the web vitals marks"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "68",
+  "question": "Why do you throttle the CPU in DevTools when you test INP?",
+  "options": [
+   "It saves memory so the trace file stays smaller",
+   "It stops the handlers from running two times",
+   "Developer machines are faster than user phones",
+   "It copies the network speed of the typical user"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "69",
+  "question": "Which `scheduler.postTask` priority fits non-urgent analytics work?",
+  "options": [
+   "`'user-blocking'`",
+   "`'background'`",
+   "`'user-visible'`",
+   "`'immediate'`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "Why is `requestIdleCallback` risky for work that must follow a click?",
+  "options": [
+   "It always runs before the click handler can start",
+   "It blocks the next paint until the callback ends",
+   "It runs the callback on a separate worker thread",
+   "It can wait a long time when the page stays busy"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "A transition render is slow and the user types again. What does React do?",
+  "options": [
+   "Finishes the old render and then starts a new one",
+   "Drops the new input until the old render ends",
+   "Runs both renders at the same time on two threads",
+   "Stops the old render and starts a new one"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "72",
+  "question": "A handler calls `JSON.parse` on 20 MB of text inside `startTransition`. Does this fix the long task?",
+  "options": [
+   "Yes, React moves the parse to a worker thread",
+   "Yes, React splits the parse into small time slices",
+   "No, the parse still blocks the main thread",
+   "Yes, but only on mobile devices with a slow CPU"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "A table of 10,000 rows makes every click slow. Which fix is best?",
+  "options": [
+   "Add `will-change: transform` to every row in the table",
+   "Put the table into an `iframe` to isolate its layout",
+   "Set `opacity: 0` on the rows that are not visible",
+   "Virtualize the list so the DOM has only visible rows"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "74",
+  "question": "In a single-page app, which interactions count for INP?",
+  "options": [
+   "Only the interactions before the first route change",
+   "All interactions of the visit, also after route changes",
+   "Only the first interaction after each route change",
+   "Only the interactions that happen during page load"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "75",
+  "question": "A heavy `mousemove` handler runs while the user clicks a button. Is the INP of the click affected?",
+  "options": [
+   "No, `mousemove` never affects the INP of a click",
+   "No, only `click` and `keydown` handlers affect INP",
+   "Yes, the handler tasks add input delay to the click",
+   "Yes, but only if the handler calls `preventDefault`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "What cost can hurt when you send a big object to a Web Worker with `postMessage`?",
+  "options": [
+   "The worker blocks the main thread during the call",
+   "The object must first become a JSON text string",
+   "The main thread makes a structured clone copy",
+   "The browser sends the object over the network first"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "77",
+  "question": "In `web-vitals` v4 attribution, which property names the element of the slow interaction?",
+  "options": [
+   "`eventSource`",
+   "`targetNode`",
+   "`interactionTarget`",
+   "`clickElement`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "78",
+  "question": "Which Long Animation Frames data shows which script made a slow frame?",
+  "options": [
+   "The `renderStart` timestamp",
+   "The `scripts` array with `sourceURL`",
+   "The `firstUIEventTimestamp` value",
+   "The `styleAndLayoutStart` value"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "A teammate puts a 2-second CPU loop in an `async` function. Does this fix the long task?",
+  "options": [
+   "Yes, async functions always run in the background",
+   "Yes, the browser splits async code into 50 ms tasks",
+   "Yes, but only if the function starts with `await`",
+   "No, the loop still blocks the main thread"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "80",
+  "question": "A `pointermove` handler updates a chart on each event. Which fix limits the work and keeps the view current?",
+  "options": [
+   "Debounce it by 500 ms until the move ends",
+   "Remove it and update the chart on `click` only",
+   "Call `preventDefault` in the handler for each event",
+   "Throttle it with `requestAnimationFrame`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "81",
+  "question": "A page visit has 120 interactions. Which interaction does INP report?",
+  "options": [
+   "The slowest interaction",
+   "The second slowest interaction",
+   "The average of the three slowest",
+   "The third slowest interaction"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "82",
+  "question": "A job yields every 40 ms. What is the largest input delay this job alone can cause?",
+  "options": [
+   "About 16 ms, the length of one frame",
+   "About 40 ms, the length of one chunk",
+   "The full time of the job",
+   "Zero, because yield runs input first"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "How does resumability, as in Qwik, lower startup cost compared with hydration?",
+  "options": [
+   "It saves state in the HTML and loads handler code on use",
+   "It hydrates the whole page inside a Web Worker thread",
+   "It compiles the components to WebAssembly at build time",
+   "It replays all the user events at startup in order"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "How do React Server Components help INP at page load?",
+  "options": [
+   "They run the event handlers on the server for the client",
+   "They move the work of the main thread to the GPU",
+   "They remove the need for any client state in the page",
+   "They send no client JavaScript, so hydration is smaller"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "A team debounces a click handler by 300 ms to fix INP. What is the risk?",
+  "options": [
+   "INP looks better, but the user waits longer for the result",
+   "INP becomes worse because of the timer cost",
+   "The browser blocks all clicks for 300 ms",
+   "The handler runs two times on touch screens"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "86",
+  "question": "A click handler changes nothing visible. When does the interaction end for INP?",
+  "options": [
+   "When the handler returns its value to the browser",
+   "At the next frame that the browser presents",
+   "It never ends, because nothing changes on the screen",
+   "At the next time when the network is idle"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "87",
+  "question": "Why can CrUX count slow interactions that your own `web-vitals` code misses?",
+  "options": [
+   "CrUX adds the network time to the INP value of the page",
+   "`web-vitals` ignores all keyboard interactions on the page",
+   "Cross-origin iframe interactions are hidden from your code",
+   "`web-vitals` measures only the first 10 interactions of a visit"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "88",
+  "question": "A loop runs `await Promise.resolve()` one million times. Does this help INP?",
+  "options": [
+   "Yes, each `await` lets the browser handle new input",
+   "Yes, but only in browsers that are based on Chrome",
+   "No, microtasks run before input handling and paint",
+   "No, the loop throws a stack overflow error at once"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "Why can a chain of `setTimeout(fn, 0)` yields slow a long job?",
+  "options": [
+   "After five nested calls, browsers clamp the delay to 4 ms",
+   "Each timeout waits until the browser draws the next frame",
+   "Timers run on a separate thread with a lower priority",
+   "Timer callbacks run only when the browser has idle time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "90",
+  "question": "Handlers run 5 ms, but presentation delay is 250 ms. Which work runs in this phase?",
+  "options": [
+   "Style, layout, paint, and rAF callbacks",
+   "Network requests that the handler starts and waits for",
+   "Parsing of lazy JavaScript chunks that load later",
+   "Only the garbage collection of the old DOM nodes"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "A teammate calls `flushSync` in a handler for each list update. What is the risk?",
+  "options": [
+   "React delays each render until the browser is idle",
+   "React moves each render to a Web Worker thread",
+   "React skips the DOM commit for each list update",
+   "Each call forces a sync render that blocks the thread"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "92",
+  "question": "How can you send a large `ArrayBuffer` to a Web Worker without a copy?",
+  "options": [
+   "Pass it in the transfer list of `postMessage`",
+   "Call `structuredClone` on it first",
+   "Convert it with `JSON.stringify` first",
+   "Send it with `window.postMessage`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "A transition render is split into small slices. Where can the transition still make a long task?",
+  "options": [
+   "In the render phase, which React can not pause",
+   "In the scheduler, which blocks input",
+   "In the commit phase, which React can not split",
+   "In the lane assignment step"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "94",
+  "question": "An analytics script adds a `click` listener on `document` that runs 120 ms. Does it count in INP of the click?",
+  "options": [
+   "No, only the listeners on the target element count",
+   "No, `document` listeners are not part of the INP",
+   "Yes, but only after the click event has finished",
+   "Yes, all listeners of the event add to the time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "95",
+  "question": "From which moment does Chrome start the clock for the INP of a tap?",
+  "options": [
+   "From the start of the first handler",
+   "From the moment the main thread gets the event",
+   "From the time stamp of the input event",
+   "From the moment the `click` event fires"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "96",
+  "question": "What does `TaskController` give you for `scheduler.postTask`?",
+  "options": [
+   "A pool of worker threads that run the tasks",
+   "A guarantee of run order across all open tabs",
+   "A way to abort tasks or change their priority",
+   "A timer that runs the tasks at an exact time"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "Why prefer `useDeferredValue` over a 300 ms debounce for a heavy list?",
+  "options": [
+   "It cuts the number of network calls the page makes",
+   "It has no fixed wait and React can interrupt it",
+   "It runs the render of the list inside a worker",
+   "It makes each render of the list much cheaper"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "You add `content-visibility: auto` to long sections. Why add `contain-intrinsic-size`?",
+  "options": [
+   "It makes the sections that are visible render faster",
+   "Skipped sections need a size so the scroll bar stays stable",
+   "It makes the browser cache the layout of each section",
+   "It stops the section from being hidden by the browser"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "99",
+  "question": "Which Lighthouse mode can measure INP in the lab with scripted interactions?",
+  "options": [
+   "Timespan",
+   "Navigation",
+   "Snapshot",
+   "Default mobile run"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "100",
+  "question": "What does the idle-until-urgent pattern do?",
+  "options": [
+   "Runs work on the first frame after the page load ends",
+   "Splits the work into equal chunks of 50 ms each",
+   "Moves the work to a worker thread when the page is idle",
+   "Runs work at idle time, but at once if the result is needed"
+  ],
+  "correct_index": 3
+ }
+]

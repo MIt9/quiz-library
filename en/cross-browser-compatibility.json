@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What does cross-browser compatibility mean for a website?",
+  "options": [
+   "The site loads in the same time in each browser",
+   "The site works correctly in many different browsers",
+   "The site shows the same ads in each browser",
+   "The site uses the same JavaScript engine everywhere"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "Which method is better to decide if a browser can run a feature?",
+  "options": [
+   "User-agent sniffing",
+   "Feature detection",
+   "Browser name matching",
+   "Screen size matching"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "What does `@supports (display: grid)` do in CSS?",
+  "options": [
+   "It tests how fast the browser draws a grid layout",
+   "It turns on grid support in browsers that do not have it",
+   "It sets display to grid for each element on the page",
+   "It applies the rules only if the browser supports grid"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "4",
+  "question": "What is progressive enhancement?",
+  "options": [
+   "Start with basic working content, then add advanced features",
+   "Build a separate site for each browser version we support",
+   "Start with all features, then remove some for old browsers",
+   "Add new features only after every browser supports them all"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "5",
+  "question": "What is graceful degradation?",
+  "options": [
+   "The site hides all of its content when the browser is old",
+   "The site shows an error page and asks users to update",
+   "The site keeps working in a reduced form in old browsers",
+   "The site slowly removes features as the user scrolls down"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "6",
+  "question": "What is a polyfill?",
+  "options": [
+   "A CSS rule that changes the color of the whole page",
+   "Code that adds a missing feature to an older browser",
+   "A tool that makes the build of the project faster",
+   "A command that checks the version number of the browser"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "7",
+  "question": "What does a transpiler such as Babel do?",
+  "options": [
+   "It adds the needed vendor prefixes to the CSS styles",
+   "It converts new JavaScript syntax to older syntax",
+   "It runs the tests in many browsers at the same time",
+   "It makes the images smaller for faster web loading"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "8",
+  "question": "What is `browserslist`?",
+  "options": [
+   "A list of all browsers that the users have installed",
+   "A shared config that lists the target browsers for tools",
+   "A browser extension that blocks all of the old browsers",
+   "A paid service that gives access to many test devices"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "9",
+  "question": "What does Autoprefixer do?",
+  "options": [
+   "It adds the missing JavaScript methods to old browsers",
+   "It removes unused CSS rules from the final CSS bundle",
+   "It adds vendor prefixes to CSS based on target browsers",
+   "It runs the CSS rules in many browsers to find bugs"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "What is a CSS vendor prefix?",
+  "options": [
+   "A comment that tells the browser to skip the next rule",
+   "A browser-specific start of a name, such as `-webkit-`",
+   "A keyword that sets the CSS version of the stylesheet",
+   "A file name rule for how CSS bundles are named in a build"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "11",
+  "question": "Which website shows which browsers support a given CSS property?",
+  "options": [
+   "w3schools.com",
+   "stackoverflow.com",
+   "caniuse.com",
+   "validator.w3.org"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "12",
+  "question": "Where do you find browser support data on an MDN page?",
+  "options": [
+   "In the browser compatibility table",
+   "In the list of links at the end of the page",
+   "In the title block at the top of the page",
+   "In the edit history of the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "13",
+  "question": "Why do developers use a CSS reset?",
+  "options": [
+   "To restore the default styles of all browsers on the page",
+   "To remove default browser styles and start from one base",
+   "To add vendor prefixes to all of the CSS rules",
+   "To make the CSS file load faster on slow networks"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "14",
+  "question": "How does normalize.css differ from a full CSS reset?",
+  "options": [
+   "It removes all default styles from every element on the page",
+   "It keeps useful defaults and fixes browser differences",
+   "It adds new styles to the page for each browser",
+   "It fixes the styles only for Internet Explorer"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "15",
+  "question": "Which rendering engine does Safari use?",
+  "options": [
+   "WebKit",
+   "Blink",
+   "Gecko",
+   "Trident"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "Which CSS property removes the native look of form controls such as selects and buttons?",
+  "options": [
+   "`resize: none`",
+   "`appearance: none`",
+   "`outline: none`",
+   "`float: none`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "17",
+  "question": "Which tool lets you debug a page that runs in Safari on a connected iPhone?",
+  "options": [
+   "Firefox about:debugging page",
+   "Chrome DevTools remote debugging",
+   "Safari Web Inspector on a Mac",
+   "Edge DevTools network panel"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "18",
+  "question": "In most regions, which engine does Chrome for iPhone use to render pages?",
+  "options": [
+   "WebKit",
+   "Blink",
+   "Gecko",
+   "EdgeHTML"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "What is the purpose of `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">`?",
+  "options": [
+   "It makes the page width follow the device width",
+   "It stops the user from zooming the page on the device",
+   "It sets the language of the page for the device",
+   "It loads a smaller image when the screen is small"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "20",
+  "question": "What can Playwright do for cross-browser testing?",
+  "options": [
+   "Add polyfills to the pages that the tests open",
+   "Convert the source code to an older JavaScript version",
+   "Show which CSS properties each browser supports",
+   "Run the same tests in Chromium, Firefox, and WebKit"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "What does BrowserStack give to a team?",
+  "options": [
+   "A tool that finds and fixes the CSS bugs in old browsers",
+   "A library of polyfills for the old browsers",
+   "A linter for browser-specific code in a project",
+   "Cloud access to real browsers and devices for testing"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "Which HTML element shows fallback content when JavaScript is off?",
+  "options": [
+   "`<fallback>`",
+   "`<template>`",
+   "`<noscript>`",
+   "`<slot>`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "23",
+  "question": "Why write `color: red; color: oklch(60% 0.2 30);` in this order?",
+  "options": [
+   "The order has no effect in any browser",
+   "New browsers use the first line and skip the second",
+   "Both lines mix to make a new color",
+   "Old browsers ignore the second line and keep red"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "What is the `<picture>` element often used for?",
+  "options": [
+   "To make an image load faster with JavaScript code",
+   "To crop the images in the browser before they show",
+   "To offer many image formats so the browser picks one",
+   "To add alt text to all of the background images"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "25",
+  "question": "What does `<script nomodule>` do?",
+  "options": [
+   "It runs only in the browsers that support ES modules",
+   "It stops the script from using the import keyword",
+   "It runs only in browsers that lack ES module support",
+   "It loads the script only after the page has loaded"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "26",
+  "question": "What is a main problem with user-agent sniffing?",
+  "options": [
+   "The string can be false and it changes between versions",
+   "The string is only sent by mobile browsers over HTTP",
+   "The string cannot be read in JavaScript on the page",
+   "The string is too short to contain the browser name"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "27",
+  "question": "What does `if ('IntersectionObserver' in window)` test?",
+  "options": [
+   "If the user scrolled the page to the bottom",
+   "If the page has an element with the name observer in it",
+   "If the browser supports the IntersectionObserver API",
+   "If the window is visible on the screen of the user"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "What does `CSS.supports('display', 'grid')` return?",
+  "options": [
+   "A boolean value",
+   "A string with the browser name",
+   "A number with the version",
+   "A list of grid properties"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "29",
+  "question": "Which tool commonly runs CSS plugins such as Autoprefixer?",
+  "options": [
+   "PostCSS",
+   "ESLint",
+   "Webpack-dev-server",
+   "Prettier"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "30",
+  "question": "What does the core-js library provide?",
+  "options": [
+   "A CSS reset for all of the browsers",
+   "A virtual DOM for fast page updates",
+   "Polyfills for ECMAScript features",
+   "A test runner for many browsers"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "31",
+  "question": "Where can you put browserslist settings in a project?",
+  "options": [
+   "In the `index.html` file of the project",
+   "In `package.json` or a `.browserslistrc` file",
+   "In the `robots.txt` file of the website",
+   "In the `tsconfig.json` file of the project only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "32",
+  "question": "What does the browserslist query `> 0.5%` select?",
+  "options": [
+   "Browsers older than 0.5 years in total age",
+   "Browsers with more than 0.5% of global usage",
+   "Browsers with a version number above 0.5 only",
+   "Browsers that have 0.5% of the known bugs"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "Which line at the top of an HTML file stops quirks mode?",
+  "options": [
+   "`<meta charset=\"utf-8\">`",
+   "`<html lang=\"en\">`",
+   "`<!DOCTYPE html>`",
+   "`<?xml version=\"1.0\"?>`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "34",
+  "question": "You build a layout with flexbox and want to improve it with grid. Where do the grid rules go?",
+  "options": [
+   "In a media query for the width of the screen",
+   "In a separate stylesheet that only Chrome loads",
+   "In a `<noscript>` block above the flexbox rules",
+   "In an `@supports (display: grid)` block after the flexbox rules"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "35",
+  "question": "What problem can `100vh` cause on a mobile browser?",
+  "options": [
+   "The page is too tall while the toolbar is visible",
+   "The page becomes wider than the screen on a small device",
+   "The page shows no scroll bar on any long page",
+   "The page switches to the desktop layout by itself"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "36",
+  "question": "What does the `dvh` unit represent?",
+  "options": [
+   "The default height of a video element in a page",
+   "The height of the device screen in physical pixels",
+   "The viewport height that changes with the toolbars",
+   "The height of the whole document in text lines"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "37",
+  "question": "What does the label Baseline mean for a web feature?",
+  "options": [
+   "The feature needs a polyfill in all of the browsers",
+   "The feature is the oldest one in the whole standard",
+   "The feature works in the latest Chrome, Edge, Firefox, and Safari",
+   "The feature exists in only one browser engine"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "38",
+  "question": "A feature works only in Chrome and has no standard. How should a site use it?",
+  "options": [
+   "As a core feature, because Chrome has most of the market",
+   "As a core feature, and ask users to switch to Chrome",
+   "As a core feature, and detect Chrome with the user-agent",
+   "Only as an optional enhancement, never for core features"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "Which group designs new ECMAScript features?",
+  "options": [
+   "WHATWG",
+   "TC39",
+   "W3C CSS Working Group",
+   "IETF"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "40",
+  "question": "Why is Chrome device emulation not enough to test Safari on iPhone?",
+  "options": [
+   "It cannot change the size of the screen",
+   "It still uses the Blink engine, not WebKit",
+   "It blocks all of the touch events in the page",
+   "It cannot load pages made for mobile devices"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "41",
+  "question": "What does `@supports not (display: grid)` do?",
+  "options": [
+   "It applies the rules only if grid is not supported",
+   "It applies the rules in all of the browsers",
+   "It shows a warning in the console of the browser",
+   "It removes grid from the browsers that support it"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "42",
+  "question": "What is an evergreen browser?",
+  "options": [
+   "A browser that uses very little memory on a device",
+   "A browser that never changes its design or its menus",
+   "A browser that works on all of the old systems",
+   "A browser that updates itself without user action"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "What is the support status of Internet Explorer 11 today?",
+  "options": [
+   "Microsoft still adds new features to it each year",
+   "It is the default browser on all new systems",
+   "Microsoft ended support, so do not target it",
+   "It supports all of the modern CSS features"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "What does a browser without `type=\"date\"` support show for `<input type=\"date\">`?",
+  "options": [
+   "A normal text input",
+   "A calendar made by the server",
+   "No input at all",
+   "A disabled input"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "45",
+  "question": "What does a browser do with an unknown `loading=\"lazy\"` attribute?",
+  "options": [
+   "It stops the image from loading in the whole page",
+   "It shows an error message in the console",
+   "It loads the image two times in a row",
+   "It ignores the attribute and loads the image"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "46",
+  "question": "What does `var(--color, red)` do if `--color` is not defined?",
+  "options": [
+   "It shows an error and stops the style",
+   "It uses red as the fallback value",
+   "It uses black as the value",
+   "It removes the property"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "47",
+  "question": "Where do you list the browsers to test in a Playwright config?",
+  "options": [
+   "In the `browsers.json` file",
+   "In the `webServer` option",
+   "In the `reporter` option",
+   "In the `projects` array"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "48",
+  "question": "A button looks different in Safari and Chrome. What is the most likely cause?",
+  "options": [
+   "Chrome ignores all the CSS rules for buttons",
+   "The server sends different HTML to each browser type",
+   "Safari does not support the button element at all",
+   "Each browser has its own default style for buttons"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "49",
+  "question": "What does the `-moz-` vendor prefix target?",
+  "options": [
+   "Firefox",
+   "Chrome",
+   "Microsoft Edge",
+   "Safari"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "What does the browserslist query `last 2 versions` select?",
+  "options": [
+   "The two newest browsers in the whole world",
+   "The two versions that most users have used",
+   "The two newest versions of each browser",
+   "The last two browsers that the users opened"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "51",
+  "question": "What does `@babel/preset-env` use to decide which transforms to apply?",
+  "options": [
+   "The size of the source files in the project",
+   "The `targets` option or the browserslist config",
+   "The list of imports that are in each file",
+   "The browser that the developer uses to test"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "Your code uses `Promise.allSettled`, and Babel does not change it. Why?",
+  "options": [
+   "Babel only changes CSS and HTML files in a project",
+   "Babel needs a plugin for each call of a function",
+   "Babel changes syntax, but new APIs need polyfills",
+   "Babel cannot read the code of a promise"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "53",
+  "question": "What does `useBuiltIns: 'usage'` do in `@babel/preset-env`?",
+  "options": [
+   "It removes all of the polyfills from the bundle",
+   "It adds all of the core-js polyfills to every file in the bundle",
+   "It adds core-js imports only for the features in use",
+   "It adds polyfills only for the CSS features"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "54",
+  "question": "Why does Autoprefixer not fix a missing `:has()` selector?",
+  "options": [
+   "It works only with JavaScript files of the project",
+   "It needs a paid license to work with new selectors",
+   "It reads only the first rule of each CSS file",
+   "It adds prefixes only and does not make new features"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "55",
+  "question": "What happens to `.a, .b:unknown-pseudo { color: red; }` in a browser?",
+  "options": [
+   "The browser drops the whole rule",
+   "The browser applies red to `.a` only",
+   "The browser applies red to both selectors",
+   "The browser shows a CSS error and stops"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "How can CSS test for support of the `:has()` selector?",
+  "options": [
+   "`@supports selector(:has(a))`",
+   "`@media (selector: :has(a))`",
+   "`@if (selector(:has(a)))`",
+   "`@supports (selector: :has(a))`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "57",
+  "question": "Users report that iOS Safari zooms in when they tap a form field. What is the likely cause?",
+  "options": [
+   "The input font size is below 16px",
+   "The viewport meta tag is missing in the page",
+   "The input has no label in the form",
+   "The input uses a custom font in the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "58",
+  "question": "A site stores a login token in `localStorage`. Safari users lose it after some days. Why?",
+  "options": [
+   "Safari limits `localStorage` to five keys for each site",
+   "Safari clears `localStorage` when the user closes the tab",
+   "Safari does not support `localStorage` on HTTPS pages",
+   "ITP can delete script-written storage after 7 days without user visits"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "59",
+  "question": "Tests pass in Playwright WebKit, but a bug shows in real iPhone Safari. What is a likely reason?",
+  "options": [
+   "Playwright WebKit skips all of the CSS rules",
+   "Playwright WebKit does not run the JavaScript of a page",
+   "Playwright WebKit uses the Blink engine inside",
+   "Playwright WebKit is a separate build, not real Safari"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "60",
+  "question": "A script uses `a?.b` and a user has an old browser. What happens?",
+  "options": [
+   "A SyntaxError stops the whole script",
+   "Only that line fails and the rest runs",
+   "The browser returns undefined for `a?.b`",
+   "The browser shows a warning and continues"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "61",
+  "question": "A developer uses `'ontouchstart' in window` to find phones. What is the risk?",
+  "options": [
+   "Phones do not send touch events to the page",
+   "The test throws an error in the Safari browser on Mac",
+   "The test is slow on pages that are large",
+   "Laptops with touch screens have touch and a mouse"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "62",
+  "question": "Why use `@media (hover: hover)` for hover styles?",
+  "options": [
+   "It stops sticky hover states on touch devices",
+   "It turns off hover on the desktop browsers",
+   "It adds hover support to the old browsers",
+   "It makes the hover effects faster on all devices"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "63",
+  "question": "How do you write a safe fallback for `100dvh`?",
+  "options": [
+   "`height: 100vh !important; height: 100dvh;`",
+   "`height: 100dvh; height: 100vh;`",
+   "`height: max(100vh, 100dvh);`",
+   "`height: 100vh; height: 100dvh;`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "64",
+  "question": "A fixed footer is hidden by the iPhone home indicator. Which CSS helps?",
+  "options": [
+   "`padding-bottom: var(--safe-area-inset-bottom)`",
+   "`margin-bottom: 100dvh + env(notch)`",
+   "`bottom: -env(safe-area-top)`",
+   "`padding-bottom: env(safe-area-inset-bottom)`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "65",
+  "question": "Which order is correct for a prefixed and an unprefixed property?",
+  "options": [
+   "The unprefixed one first, the prefixed one last",
+   "Both in two separate files",
+   "Both in one declaration with a comma",
+   "The prefixed one first, the unprefixed one last"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "66",
+  "question": "What does `@supports (display: grid)` not tell you?",
+  "options": [
+   "If the browser can parse the declaration",
+   "If the property name is known",
+   "If the grid implementation has no bugs",
+   "If the value is valid"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "What does \"partial support\" mean in caniuse?",
+  "options": [
+   "Some parts of the feature are missing or have bugs",
+   "The feature works for half of all the web users",
+   "The feature needs a paid plan to use in a site",
+   "The feature works only in the mobile browsers of phones"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "68",
+  "question": "What does `not dead` in a browserslist query exclude?",
+  "options": [
+   "Browsers with less than 1% of the global usage today",
+   "Browsers with no support or updates for 24 months",
+   "Browsers that are older than one year",
+   "Browsers that block all of the cookies"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "Why do visual regression tests in Playwright need a baseline for each browser?",
+  "options": [
+   "Each browser has a different screen size",
+   "Fonts and anti-aliasing differ between browsers",
+   "Playwright cannot compare images across browsers",
+   "Each browser stores images in a different format"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "What is the idea of module/nomodule differential serving?",
+  "options": [
+   "All browsers get the same bundle, but in two parts",
+   "Modern browsers get a small bundle, old ones get a legacy bundle",
+   "Old browsers get the modern bundle with the polyfills added to it",
+   "The server builds a new bundle for each request made"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "71",
+  "question": "A polyfill is big and only old browsers need it. What is the best way to load it?",
+  "options": [
+   "Include the polyfill in the main bundle for all users",
+   "Load the polyfill after the user closes the page",
+   "Detect the feature and load the polyfill only if needed",
+   "Ask the user to update the browser to a new version"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "72",
+  "question": "A user in the US picks a date in `<input type=\"date\">`. What format does `.value` return?",
+  "options": [
+   "A string that depends on the browser",
+   "`MM/DD/YYYY` based on the user locale",
+   "A timestamp in milliseconds",
+   "`YYYY-MM-DD` in all browsers"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "73",
+  "question": "A script contains the regex literal `/(?<=a)b/` and the browser lacks lookbehind support. What happens?",
+  "options": [
+   "The browser returns false for each match",
+   "The browser throws a SyntaxError at parse time",
+   "The browser ignores the lookbehind part only",
+   "The browser throws an error only when the regex runs"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "74",
+  "question": "The team sets `browserslist` to `last 1 chrome version`. Safari 15 users report broken layout. Why?",
+  "options": [
+   "Safari 15 cannot read the browserslist file",
+   "Tools no longer add prefixes or fixes for Safari",
+   "Chrome rules override all of the Safari rules",
+   "Babel blocks Safari by default in each project"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "75",
+  "question": "How do you give a fallback to browsers without `aspect-ratio`?",
+  "options": [
+   "Use the padding hack inside `@supports not (aspect-ratio: 1)`",
+   "Use `width: auto` and `height: auto` for the element",
+   "Use a JavaScript timer to set the height of the box",
+   "Use `@supports (aspect-ratio: 1)` around the padding hack"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "76",
+  "question": "In Playwright, what does `devices['iPhone 13']` set?",
+  "options": [
+   "Only the width of the screen and its scale for the page",
+   "Only the user agent string of the browser",
+   "A real device that comes from a cloud device farm",
+   "Viewport, user agent, touch support, and the WebKit browser"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "77",
+  "question": "Why is it risky to find Chrome on iPhone with the user-agent string?",
+  "options": [
+   "It says Chrome, but the engine is WebKit",
+   "It has no browser name in the string",
+   "It says Safari, but the real engine is Blink",
+   "It always sends a wrong version number"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "78",
+  "question": "An embedded login widget works in Chrome but fails in Safari. What is a likely reason?",
+  "options": [
+   "Safari blocks all iframes from other sites",
+   "Safari blocks third-party cookies by default",
+   "Safari does not support HTTPS in iframes",
+   "Safari removes all of the cookies at page load"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "How should a team choose which browsers to support?",
+  "options": [
+   "Use the browsers that the developers have",
+   "Use the newest version of one browser only",
+   "Use its own analytics data and business needs",
+   "Use the list in the docs of the oldest framework"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "80",
+  "question": "Which pseudo-element styles scrollbars in Chrome and Safari, but not in Firefox?",
+  "options": [
+   "`::-moz-scrollbar-thumb`",
+   "`::scrollbar-thumb-track`",
+   "`::-webkit-scrollbar`",
+   "`::scroll-marker-group`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "81",
+  "question": "Why is `type=\"module\"` support not a safe check for a \"modern\" browser?",
+  "options": [
+   "It proves support for all of the ES2022 features",
+   "It proves only module support, not newer syntax",
+   "It works only in Chrome and Firefox browsers",
+   "It blocks scripts that use top-level await"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "82",
+  "question": "A library author wants polyfills without changes to global objects. What should the author use?",
+  "options": [
+   "A `<script>` tag that loads the polyfill file",
+   "The global `core-js` bundle with all features",
+   "A pure version such as `core-js-pure`",
+   "A global Babel preset with `useBuiltIns`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "83",
+  "question": "Why use `@babel/plugin-transform-runtime` in a large project?",
+  "options": [
+   "It shares helper code instead of copying it",
+   "It removes the unused CSS from the bundle",
+   "It runs the code of the app in a worker",
+   "It adds all of the polyfills to the global scope"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "Why is `'localStorage' in window` a weak feature test?",
+  "options": [
+   "The property is missing in most browsers",
+   "The property exists, but `setItem` can still throw",
+   "The test throws an error in Firefox always",
+   "The test works only in secure contexts on HTTPS pages"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "85",
+  "question": "A style is inside `@layer base { ... }`. A browser lacks cascade layers support. What happens?",
+  "options": [
+   "The browser applies the rules without a layer",
+   "The browser applies the rules with a low priority",
+   "The browser shows a parse error and stops",
+   "The browser ignores the whole block"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "86",
+  "question": "An async polyfill loads while the app starts. Some users get errors. What is the likely cause?",
+  "options": [
+   "The polyfill uses too much memory on the device",
+   "The polyfill removes some of the app code",
+   "The browser blocks all of the async scripts",
+   "The app code runs before the polyfill is ready"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "A team has little QA time and many browsers. Which strategy is best?",
+  "options": [
+   "Run Playwright on three engines and test top real devices",
+   "Test all of the versions of all browsers by hand",
+   "Test only in the main browser of the lead developer",
+   "Test only in emulators that use one engine"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "A test passes in Chromium and fails in WebKit with a click before the element is ready. What is the best fix?",
+  "options": [
+   "Click the element two times in the test",
+   "Add a fixed `waitForTimeout` of five seconds before click",
+   "Skip the test in the WebKit project",
+   "Use auto-waiting locators and web-first assertions"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "89",
+  "question": "A browser has a flexbox `gap` bug, but `CSS.supports` returns true. How do you detect it?",
+  "options": [
+   "Make a test element and check its real layout",
+   "Use `@supports` with a vendor prefix",
+   "Read the browser version in the user-agent string",
+   "Check the value of `navigator.platform`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "90",
+  "question": "Why are hacks like `@supports (-webkit-touch-callout: none)` risky for iOS targeting?",
+  "options": [
+   "They need a polyfill to run in the browser",
+   "They block the rule in all of the Safari versions on iOS",
+   "They only work in the Chrome DevTools",
+   "They test an engine detail, not the feature itself"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "91",
+  "question": "A page must work if JavaScript fails to load. Which design fits progressive enhancement?",
+  "options": [
+   "Render an empty page and load content with JavaScript",
+   "Show a banner that asks users to enable JavaScript",
+   "Use native forms and links, then add JavaScript",
+   "Use a polyfill for each HTML element in the page"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "92",
+  "question": "A CDN serves AVIF or JPEG from the same URL by `Accept` header. What must the response include?",
+  "options": [
+   "A `Cache-Control: no-store` header",
+   "A `Content-Language` header",
+   "A `Vary: Accept` header",
+   "An `Accept-Ranges` header"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "93",
+  "question": "Chrome reduced the user-agent string. What does this mean for sniffing?",
+  "options": [
+   "Fine version and OS details are not reliable",
+   "The string is removed from all requests",
+   "The string now has more version details",
+   "The string works only on desktop browsers now"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "94",
+  "question": "`--c` holds `oklch(...)` in a browser that does not support it. What does `color: red; color: var(--c);` give?",
+  "options": [
+   "The color is unset, not red",
+   "The color is red",
+   "The color is black",
+   "The browser drops the second line at parse time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "95",
+  "question": "What is required for web push notifications on iPhone from iOS 16.4?",
+  "options": [
+   "The user must use the Chrome app on the iPhone",
+   "The user must add the site to the Home Screen",
+   "The site must use a native app wrapper",
+   "The site must use the desktop mode of Safari"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "96",
+  "question": "What do web-platform-tests give to browser vendors and developers?",
+  "options": [
+   "A list of the browsers that support every feature",
+   "A tool that runs tests on real devices",
+   "A shared test suite for standards in all browsers",
+   "A set of polyfills for new standards"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "Why did browser vendors move from vendor prefixes to flags and origin trials?",
+  "options": [
+   "Prefixes were too long for the CSS parser to handle well",
+   "Prefixes did not work in pages with HTTPS",
+   "Prefixes made the CSS files too large to load",
+   "Sites used prefixed features and locked their behavior"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "98",
+  "question": "Autoprefixer adds too few prefixes in CI, but not locally. What do you check first?",
+  "options": [
+   "If the CI machine has a much faster CPU than the local machine does",
+   "If the CSS file uses tabs or spaces for indents",
+   "If `caniuse-lite` data is old, run `update-browserslist-db`",
+   "If the Git branch has a long name"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "A build uses esbuild with `target: es2015`. What happens to `Array.prototype.at` calls?",
+  "options": [
+   "They become a call to a polyfill in the output code file",
+   "They become a `for` loop in the output",
+   "They cause a build error when esbuild runs the code",
+   "They stay unchanged because esbuild adds no polyfills"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "`customElements.define('x-btn', C, { extends: 'button' })` fails in Safari. Why?",
+  "options": [
+   "Safari does not support custom elements at all in any version",
+   "Safari does not support customized built-in elements",
+   "Safari needs the `is` attribute on the script",
+   "Safari blocks the `button` tag in shadow DOM"
+  ],
+  "correct_index": 1
+ }
+]

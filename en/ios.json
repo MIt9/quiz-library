@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "Which language does Apple recommend for new iOS apps?",
+  "options": [
+   "Objective-C",
+   "Kotlin",
+   "Swift",
+   "Dart"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "2",
+  "question": "What does the type `Int?` mean in Swift?",
+  "options": [
+   "The value is an Int that cannot change",
+   "The value is an Int or nil",
+   "The value is an Int loaded later",
+   "The value is an Int or zero"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "Which code unwraps the optional `name` in a safe way?",
+  "options": [
+   "let n = name!",
+   "let n = name as! String",
+   "let n = try name",
+   "if let name = name { }"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "4",
+  "question": "What happens when code force unwraps an optional with value `nil`?",
+  "options": [
+   "The app crashes at run time",
+   "The result is an empty value",
+   "The result is `nil` again",
+   "The compiler shows a warning only"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "5",
+  "question": "Which statement about a Swift `struct` is correct?",
+  "options": [
+   "It is a reference type, so assignment shares it",
+   "It is a value type, so assignment copies it",
+   "It is a value type, but it supports inheritance",
+   "It is a reference type, but it has no methods"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "6",
+  "question": "Which Swift type can inherit from another type?",
+  "options": [
+   "struct",
+   "enum",
+   "class",
+   "actor"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "7",
+  "question": "What is the difference between `let` and `var` in Swift?",
+  "options": [
+   "`let` makes a variable, `var` makes a read-only constant",
+   "`let` is for classes only, `var` is for structs only",
+   "`let` makes a constant, `var` makes a variable",
+   "`let` is a private name, `var` is a public name"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "8",
+  "question": "What is the main use of a `guard` statement?",
+  "options": [
+   "Exit early when a condition is false",
+   "Run code when a condition is true",
+   "Catch an error from a function",
+   "Lock a value for other threads"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "9",
+  "question": "What does the `??` operator do in Swift?",
+  "options": [
+   "Unwraps the optional and crashes on `nil`",
+   "Checks if two optionals are equal",
+   "Calls a method only when it exists",
+   "Gives a default when the optional is `nil`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "10",
+  "question": "Which attribute marks a closure parameter that can run after the function returns?",
+  "options": [
+   "@autoclosure",
+   "@discardableResult",
+   "@inlinable",
+   "@escaping"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "11",
+  "question": "What is the role of the app delegate in a UIKit app?",
+  "options": [
+   "It receives app-level events such as launch",
+   "It draws the first screen of the app",
+   "It stores all view controllers",
+   "It manages the network layer of the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "12",
+  "question": "Which `UIViewController` method does the system call once, after the view loads into memory?",
+  "options": [
+   "viewWillAppear(_:)",
+   "viewDidAppear(_:)",
+   "viewDidLoad()",
+   "viewDidLayoutSubviews()"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "13",
+  "question": "When does the system call `viewWillAppear(_:)`?",
+  "options": [
+   "Only one time, when the controller first starts",
+   "After the view is fully visible on the screen",
+   "When the app goes to the background state",
+   "Each time before the view shows on screen"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "14",
+  "question": "What does `@State` do in a SwiftUI view?",
+  "options": [
+   "Shares a value with all views in the app",
+   "Saves a value on the disk of the device",
+   "Keeps a local value; the view updates on change",
+   "Makes a view run only on the main thread"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "15",
+  "question": "What does `@Binding` give a child view?",
+  "options": [
+   "A private copy of a value from the parent",
+   "A read-only link to an environment value",
+   "A saved value that stays after app restart",
+   "Read and write access to a value of a parent"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "16",
+  "question": "What does the `@Observable` macro do for a class in iOS 17 and later?",
+  "options": [
+   "It saves the properties to disk automatically",
+   "Views that read its properties update on change",
+   "It makes all properties run on the main thread",
+   "It turns the class into a value type"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "17",
+  "question": "What does `some View` mean as a return type?",
+  "options": [
+   "Any view type that Swift picks at run time",
+   "An optional view that can be empty or `nil`",
+   "A view that the system creates on demand",
+   "One concrete view type known at compile time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "18",
+  "question": "Which SwiftUI container places its child views in a vertical line?",
+  "options": [
+   "VStack",
+   "HStack",
+   "ZStack",
+   "LazyHStack"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "What is UIKit?",
+  "options": [
+   "The imperative UI framework for iOS views",
+   "A SwiftUI library for charts, graphs, and maps",
+   "A tool that tests the UI of an app with scripts",
+   "A web engine that shows HTML pages in an app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "20",
+  "question": "What does Auto Layout do?",
+  "options": [
+   "Draws views faster with the device GPU",
+   "Sets view size and position with constraints",
+   "Changes the app language by the device settings",
+   "Scales all views by the screen resolution"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "21",
+  "question": "What is `UITableView` used for?",
+  "options": [
+   "To show data in a grid with rows and columns",
+   "To store data in a local database on the device",
+   "To show a scrolling list of rows in one column",
+   "To show a form that has only text fields in it"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "22",
+  "question": "Why does `UITableView` reuse cells with `dequeueReusableCell`?",
+  "options": [
+   "To keep all cell data after the app closes",
+   "To save memory and time while the user scrolls",
+   "To make the cells load from the network",
+   "To avoid the need for a data source"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "23",
+  "question": "What is ARC in Swift?",
+  "options": [
+   "A garbage collector that scans memory at intervals",
+   "A tool that checks the code for memory errors",
+   "A system that copies every object on assignment",
+   "Frees an object when no strong reference exists"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "What is a retain cycle?",
+  "options": [
+   "An object calls its own method in a loop without end",
+   "A reference count that goes below zero",
+   "Two objects keep strong references to each other",
+   "A closure that runs on the main thread two times"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "25",
+  "question": "Which capture list helps to avoid a retain cycle with `self` in a closure?",
+  "options": [
+   "[strong self]",
+   "[escaping self]",
+   "[weak self]",
+   "[inout self]"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "26",
+  "question": "A `weak` reference points to an object that ARC frees. What is the value after that?",
+  "options": [
+   "It becomes `nil`",
+   "It keeps the old address",
+   "It becomes the default value",
+   "The app crashes at once"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "27",
+  "question": "What is the purpose of `async` and `await` in Swift?",
+  "options": [
+   "To write async code that reads in order",
+   "To run all of the code on a new thread",
+   "To make a function run much faster",
+   "To remove the need for error handling"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "28",
+  "question": "What does the `await` keyword mark?",
+  "options": [
+   "A line that always runs on the main thread",
+   "A point where the function can pause for a result",
+   "A line that starts a new operating system thread",
+   "A block of code that cannot throw an error"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "29",
+  "question": "What is Grand Central Dispatch (GCD)?",
+  "options": [
+   "A tool that draws views on the GPU",
+   "A framework that sends push notifications",
+   "A library that stores data in the cloud",
+   "An API that runs tasks on managed queues"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "On which thread must an app change UI elements?",
+  "options": [
+   "A background thread",
+   "The main thread",
+   "Any thread with high priority",
+   "The thread that created the data"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "What does `DispatchQueue.main.async { }` do?",
+  "options": [
+   "Runs the block now and waits for it",
+   "Runs the block later on the main queue",
+   "Runs the block on a new background thread",
+   "Runs the block when the app starts"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "32",
+  "question": "What is an `actor` in Swift?",
+  "options": [
+   "A value type that runs code on the main thread",
+   "A reference type that guards its own state",
+   "A class that cannot have any methods",
+   "A protocol for network request types"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "Which class do you use to make HTTP requests in an iOS app?",
+  "options": [
+   "NWPathMonitor",
+   "WKWebView",
+   "NotificationCenter",
+   "URLSession"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "34",
+  "question": "Which protocol do you add to a struct to encode and decode it as JSON?",
+  "options": [
+   "Codable",
+   "Hashable",
+   "Identifiable",
+   "Sendable"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "35",
+  "question": "What does `try JSONDecoder().decode(User.self, from: data)` return?",
+  "options": [
+   "A JSON string made from a `User` value",
+   "An array of `Data` values from the JSON",
+   "A `User` value made from the JSON data",
+   "A dictionary of the JSON keys and values"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "What is `UserDefaults` best for?",
+  "options": [
+   "Large files such as videos",
+   "Passwords and tokens",
+   "Relational data with many tables",
+   "Small user settings and flags"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "37",
+  "question": "Where must an app store a user password or an access token?",
+  "options": [
+   "Keychain",
+   "UserDefaults",
+   "A plist file in Documents",
+   "A text file in the app bundle"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "38",
+  "question": "Which Apple framework uses the `@Model` macro to save objects, in iOS 17 and later?",
+  "options": [
+   "CloudKit",
+   "Combine",
+   "Core Image",
+   "SwiftData"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "Which `Info.plist` key needs a text before the app asks for camera access?",
+  "options": [
+   "NSCameraUsageDescription",
+   "UICameraPermission",
+   "NSCameraEnabled",
+   "UIRequiredDeviceCapabilities"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "A user denies the camera permission alert. What can the app do next?",
+  "options": [
+   "Call the request again to show the alert",
+   "Send the user to Settings to change it",
+   "Reset the permission with a code call",
+   "Wait one day, then the system asks again"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "41",
+  "question": "What is App Store Connect used for?",
+  "options": [
+   "To write and debug the code of the app",
+   "To manage builds, metadata, and release",
+   "To test the app on virtual iOS devices",
+   "To host the backend services of the app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "42",
+  "question": "What is TestFlight?",
+  "options": [
+   "A tool that runs unit tests on each commit",
+   "A simulator for old versions of iOS",
+   "A store for the final app binaries",
+   "An Apple service for beta builds to testers"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "What does a provisioning profile do?",
+  "options": [
+   "Lists the app screens for App Review tests",
+   "Stores the app icons and launch screens",
+   "Links the app ID, certificate, and devices",
+   "Sets the minimum iOS version of the app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "What is `NavigationStack` in SwiftUI?",
+  "options": [
+   "A tab bar with many root views in it",
+   "A modal sheet shown over a view",
+   "A stack that pushes and pops views",
+   "A list that shows rows of data"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "Which UIKit class manages a stack of view controllers with push and pop?",
+  "options": [
+   "UITabBarController",
+   "UIPageViewController",
+   "UICollectionViewController",
+   "UINavigationController"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "46",
+  "question": "What is the delegate pattern in iOS?",
+  "options": [
+   "One object sends events to another by a protocol",
+   "One object copies all the data of another object",
+   "A view controller creates all its child views",
+   "An object saves its state to the disk"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "47",
+  "question": "What is a protocol in Swift?",
+  "options": [
+   "A class that other classes must inherit from",
+   "A set of methods that a type must have",
+   "A rule for how to name the source files",
+   "A network format for the requests"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "48",
+  "question": "What is Swift Package Manager used for?",
+  "options": [
+   "To add and manage code dependencies",
+   "To sign the app for the App Store",
+   "To check the layout of views",
+   "To format the Swift code"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "49",
+  "question": "What does `@Published` do in an `ObservableObject`?",
+  "options": [
+   "Saves the property in the app bundle",
+   "Makes the property visible to other apps",
+   "Sends a change signal when the property changes",
+   "Runs the property setter on the main thread"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "50",
+  "question": "What does `user?.address?.city` return if `address` is `nil`?",
+  "options": [
+   "`nil`",
+   "An empty string",
+   "A crash at run time",
+   "A compile error"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "51",
+  "question": "A view controller has a closure property that uses `self.title` without a capture list. What is the risk?",
+  "options": [
+   "A retain cycle, so the controller leaks",
+   "A crash because `self` is already `nil`",
+   "A data race on the title property value",
+   "The closure runs on the wrong thread"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "52",
+  "question": "When is `unowned` a better choice than `weak` for a captured object?",
+  "options": [
+   "The object can become `nil` at any time",
+   "The object is a value type such as a struct",
+   "The closure runs on a background queue",
+   "The object always lives as long as the closure"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "53",
+  "question": "A SwiftUI view creates its own `ObservableObject`. Which wrapper keeps the object alive when the view updates?",
+  "options": [
+   "@ObservedObject",
+   "@Binding",
+   "@StateObject",
+   "@EnvironmentObject"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "54",
+  "question": "In iOS 17, a view owns an `@Observable` model. Which wrapper do you use to store it?",
+  "options": [
+   "@StateObject",
+   "@ObservedObject",
+   "@State",
+   "@Published"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "55",
+  "question": "A child view reads `@EnvironmentObject var model`. No parent injects the object. What happens?",
+  "options": [
+   "The app crashes at run time",
+   "The view gets a new default object",
+   "The view shows with empty data",
+   "The compiler gives an error"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "A teammate starts a network call inside the `body` of a view. Why is this a bug?",
+  "options": [
+   "SwiftUI calls `body` often, so the call repeats",
+   "The `body` property cannot run any `async` function at all",
+   "The network call blocks the compiler during the build",
+   "The `body` runs only one time at the app start"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "57",
+  "question": "What does the `.task { }` modifier do in SwiftUI?",
+  "options": [
+   "Runs async work only one time in the app lifetime",
+   "Starts a detached task that nobody is able to cancel",
+   "Starts async work on appear, cancels on disappear",
+   "Runs only synchronous code on a new background thread"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "58",
+  "question": "What does the `@MainActor` attribute on a class mean?",
+  "options": [
+   "Its code runs on a new background thread",
+   "Its code runs on the main actor",
+   "Its code cannot call any async function",
+   "Its code is the first to run at app launch"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "59",
+  "question": "What is the difference between `Task { }` and `Task.detached { }`?",
+  "options": [
+   "`Task` runs on a new thread, `detached` does not",
+   "`Task` can be cancelled, `detached` cannot",
+   "`Task` inherits the actor, `detached` does not",
+   "`Task` is for UI work, `detached` is for I/O"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "60",
+  "question": "What does `async let` do?",
+  "options": [
+   "Makes a constant that Swift loads when first used",
+   "Runs the code after the current function ends",
+   "Starts a child task that runs at the same time",
+   "Makes a variable that two tasks can share"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "61",
+  "question": "Two tasks change a property of one class at the same time. What is the risk and a good fix?",
+  "options": [
+   "A deadlock; use `DispatchQueue.main.sync`",
+   "A retain cycle; make the property `weak`",
+   "A data race; move the state into an actor",
+   "A crash; make the property `lazy`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "62",
+  "question": "What does the `Sendable` protocol show?",
+  "options": [
+   "A type can be sent over the network",
+   "A type can be saved to the disk",
+   "A type can be used in a SwiftUI view",
+   "A type is safe to pass between tasks"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "63",
+  "question": "What happens when this code runs on the main thread?\nDispatchQueue.main.sync { print(\"hi\") }",
+  "options": [
+   "It prints hi and goes on",
+   "A deadlock happens",
+   "It prints hi on a background thread",
+   "The compiler gives an error"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "64",
+  "question": "What is the main property of a serial `DispatchQueue`?",
+  "options": [
+   "It runs all tasks at once on many threads",
+   "It always runs tasks on the main thread",
+   "It runs one task at a time, in order",
+   "It runs the highest priority task first"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "65",
+  "question": "`URLSession.data(for:)` gets a 404 response. What does the call do?",
+  "options": [
+   "It returns the response; you check `statusCode`",
+   "It throws an error for every status code above 399",
+   "It returns an empty `Data` value for the 404 reply",
+   "It retries the request one more time by itself"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "What does App Transport Security do by default?",
+  "options": [
+   "Encrypts all files on the device",
+   "Blocks insecure HTTP connections",
+   "Checks the app code signature at launch",
+   "Limits the number of network requests"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "67",
+  "question": "Xcode logs: Unable to simultaneously satisfy constraints. What is the most likely cause?",
+  "options": [
+   "A view has no constraints at all in the layout",
+   "A view is placed outside the safe area",
+   "The layout uses too many nested subviews",
+   "Some constraints give rules that conflict"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "68",
+  "question": "You create a `UIView` in code. Why set `translatesAutoresizingMaskIntoConstraints = false` before you add constraints?",
+  "options": [
+   "To make the view resize with its parent",
+   "To let the view ignore the safe area margins",
+   "To turn off the intrinsic size",
+   "To stop the system adding extra constraints"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "69",
+  "question": "What does a high content compression resistance priority mean for a view?",
+  "options": [
+   "The view resists being larger than its intrinsic size",
+   "The view keeps its position when the parent view moves around",
+   "The view compresses the image data that it shows to save memory",
+   "The view resists being smaller than its intrinsic size"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "70",
+  "question": "Why should you align content to the safe area layout guide?",
+  "options": [
+   "To make the layout draw much faster",
+   "To support dark mode on all screens",
+   "To avoid the notch and the home indicator",
+   "To keep the layout the same on iPad and iPhone"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "71",
+  "question": "Which SwiftUI environment value shows that the app moves to the background?",
+  "options": [
+   "colorScheme",
+   "scenePhase",
+   "isEnabled",
+   "openURL"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "72",
+  "question": "Which SwiftUI property wrapper reads and writes a value in `UserDefaults`?",
+  "options": [
+   "@State",
+   "@AppStorage",
+   "@Environment",
+   "@FocusState"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "73",
+  "question": "A teammate uses the Core Data `viewContext` on a background queue. What is the risk?",
+  "options": [
+   "A deadlock in the persistent store coordinator",
+   "A retain cycle between the context and the store",
+   "Crashes or corrupt data on a wrong queue",
+   "Only a slower fetch, with no other problem"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "74",
+  "question": "How does a remote push notification reach the device?",
+  "options": [
+   "Your server sends it to APNs with the device token",
+   "Your server sends it direct to the device IP address",
+   "The app polls your server in the background",
+   "Xcode sends it with the app bundle ID"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "Your app lets users create an account. Which App Store rule applies?",
+  "options": [
+   "Users must confirm their email with Apple ID",
+   "Users must find account deletion in the app",
+   "The app must store all accounts in iCloud",
+   "The app must show a login screen at each launch"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "76",
+  "question": "Which class do you use for a web view with script and navigation control in a new app?",
+  "options": [
+   "UIWebView",
+   "SFSafariViewController",
+   "ASWebAuthenticationSession",
+   "WKWebView"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "77",
+  "question": "Which type do you bind to a `NavigationStack` to change the screens in code?",
+  "options": [
+   "NavigationPath",
+   "NavigationLink",
+   "NavigationSplitView",
+   "NavigationBar"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "78",
+  "question": "JSON keys use `user_name`. The Swift property is `userName`. Which setting fixes the decoding?",
+  "options": [
+   "dateDecodingStrategy = .millisecondsSince1970",
+   "dataDecodingStrategy = .deferredToData",
+   "keyDecodingStrategy = .convertFromSnakeCase",
+   "nonConformingFloatDecodingStrategy = .throw"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "79",
+  "question": "A function copies a struct parameter to a `var` and changes it. What happens to the caller's value?",
+  "options": [
+   "It changes too",
+   "It becomes `nil`",
+   "It changes after the function returns",
+   "It does not change"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "80",
+  "question": "Which Xcode tool shows the objects in memory and their strong references, to find a retain cycle?",
+  "options": [
+   "Debug Memory Graph",
+   "View Hierarchy Debugger",
+   "Main Thread Checker",
+   "Time Profiler"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "81",
+  "question": "An actor method has an `await` in the middle. What can happen at that point?",
+  "options": [
+   "The actor blocks until the call returns",
+   "Another call can enter and change the state",
+   "The actor moves to the main thread",
+   "The actor state resets to its first value"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "82",
+  "question": "A task is cancelled in Swift concurrency. What happens to the running code?",
+  "options": [
+   "It continues until it checks for cancellation",
+   "The system stops it at once",
+   "The system throws an error in its thread",
+   "The system restarts it with lower priority"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "83",
+  "question": "A view model starts `Task { await self.load() }` in `init`. When does `self` become a lasting leak risk?",
+  "options": [
+   "Always, because a `Task` keeps `self` for the app life",
+   "When the task never finishes, such as an endless loop",
+   "Never, because a `Task` captures `self` as weak",
+   "Only when `load` is marked `@MainActor`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "84",
+  "question": "What is the rule for `withCheckedContinuation`?",
+  "options": [
+   "Call `resume` at least once, more is fine",
+   "Call `resume` exactly one time on every path",
+   "Call `resume` only on the main thread",
+   "Call `resume` before the closure returns"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "85",
+  "question": "What does the Swift 6 language mode add for concurrency?",
+  "options": [
+   "A garbage collector for tasks",
+   "Automatic locks on every class",
+   "A new thread for each `Task`",
+   "Compile-time checks for data races"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "86",
+  "question": "A SwiftUI `ForEach` uses the array index as `id`, and rows are removed. What is the risk?",
+  "options": [
+   "The list cannot show more than 100 rows",
+   "The compiler gives an error for index values",
+   "The rows load again from the network",
+   "Row state moves to the wrong items"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "A view gets a value in `init` and stores it in `@State`. The parent passes a new value later. What happens?",
+  "options": [
+   "The view keeps its old state value",
+   "The view state updates to the new value",
+   "The view state resets to zero",
+   "The compiler gives a warning for this code"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "A card view has a layer shadow. Scrolling many cards is slow. Which change helps the most?",
+  "options": [
+   "Set `opaque` to `false` on the layer of the card",
+   "Move the shadow setup code into `viewDidLoad` only",
+   "Set an explicit `shadowPath` for the layer",
+   "Set `contentsScale` to a lower value on the layer"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "A list drops frames when the user scrolls. Which Instruments template finds slow main-thread work?",
+  "options": [
+   "Leaks",
+   "Allocations",
+   "Network Connections",
+   "Time Profiler"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "90",
+  "question": "`weak var delegate: MyDelegate?` gives a compile error. What does the protocol need?",
+  "options": [
+   "`: AnyObject` in its declaration",
+   "`@objc` on each protocol method",
+   "`Sendable` conformance on the type",
+   "`Equatable` conformance on the type"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "A view controller makes a `URLSession` with `self` as delegate and never invalidates it. What is the result?",
+  "options": [
+   "The session stops all tasks when the controller leaves",
+   "The delegate is weak, so nothing leaks",
+   "The session keeps the delegate strongly, so it leaks",
+   "The session crashes when `self` is freed"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "92",
+  "question": "How do you pass a Core Data object between contexts on different queues?",
+  "options": [
+   "Pass the object itself and call `refresh` on the copy",
+   "Pass its `NSManagedObjectID`, fetch it again",
+   "Mark the object class as `Sendable` before you share it",
+   "Copy the object with `copy()` before you use it again"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "93",
+  "question": "Which change reduces the cold launch time of an app the most?",
+  "options": [
+   "Load all of the app data before `didFinishLaunching` ends",
+   "Defer non-essential work until the first screen",
+   "Add more dynamic frameworks that link at launch time",
+   "Show a long splash screen while the work runs behind it"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "94",
+  "question": "What can an app expect from a `BGAppRefreshTask` request?",
+  "options": [
+   "The task runs at the exact time you set",
+   "The system picks the time and may skip it",
+   "The task runs each time the device charges",
+   "The task can run for as long as you need"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "A large `Array` is assigned to a second variable, then one variable changes. When does Swift copy the buffer?",
+  "options": [
+   "At the first change of either variable",
+   "At the assignment, so every copy gets its own buffer",
+   "Never, because both variables share one buffer for life",
+   "At the end of the scope that holds the variables"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "96",
+  "question": "Why can `some Protocol` or a generic be faster than `any Protocol`?",
+  "options": [
+   "The type is boxed on the heap, and boxes are faster to use",
+   "The calls use a witness table, which is faster than direct calls",
+   "The type is checked at run time with fewer steps than before",
+   "The compiler sees the concrete type and can inline calls"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "97",
+  "question": "What proves that your app owns the domain for a universal link?",
+  "options": [
+   "An apple-app-site-association file on HTTPS",
+   "A custom URL scheme declared in `Info.plist`",
+   "A TXT record in DNS with the bundle ID",
+   "A domain field in App Store Connect"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "98",
+  "question": "What does `kSecAttrAccessibleWhenUnlockedThisDeviceOnly` do for a Keychain item?",
+  "options": [
+   "Readable after first unlock; it syncs by iCloud Keychain",
+   "Readable always; it stays only in the app group",
+   "Readable only in the app; it is not encrypted",
+   "Readable only when unlocked; not moved to a new device"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "99",
+  "question": "Since 2024, which file declares the reason when an app uses required-reason APIs like `UserDefaults`?",
+  "options": [
+   "Entitlements.plist",
+   "App-Privacy-Manifest.json",
+   "PrivacyInfo.xcprivacy",
+   "Info.plist"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "100",
+  "question": "Why is `DispatchSemaphore.wait()` inside an `async` function risky?",
+  "options": [
+   "It makes the function run on the main actor",
+   "It blocks a pool thread and can deadlock",
+   "It cancels the task when the wait time ends",
+   "It copies the task state to a new thread"
+  ],
+  "correct_index": 1
+ }
+]

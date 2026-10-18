@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "Which framework does Material UI target?",
+    "options": [
+      "React",
+      "Angular",
+      "Vue only",
+      "Svelte only"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "2",
+    "question": "Which package contains Material UI core components?",
+    "options": [
+      "@angular/material",
+      "@mui/x-data-grid",
+      "@base-ui/react",
+      "@mui/material"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "3",
+    "question": "What does ThemeProvider supply?",
+    "options": [
+      "Route definitions",
+      "Database context",
+      "Network caching",
+      "Theme context"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "4",
+    "question": "What does createTheme produce?",
+    "options": [
+      "A CSS Module mapping",
+      "A DOM stylesheet node",
+      "A theme configuration",
+      "A component instance"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "5",
+    "question": "What does useTheme read?",
+    "options": [
+      "The latest form value",
+      "The browser history",
+      "The active route",
+      "The active theme"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "6",
+    "question": "What does the sx prop support?",
+    "options": [
+      "Database query options",
+      "Route transition events",
+      "Theme-aware styling",
+      "React key generation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "7",
+    "question": "What does Box provide?",
+    "options": [
+      "A layout building block",
+      "A form validation store",
+      "A server data client",
+      "A required modal overlay"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "8",
+    "question": "What does Stack organize?",
+    "options": [
+      "Nested application routes",
+      "A fixed twelve-row table",
+      "One-dimensional item layout",
+      "Server response ordering"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "9",
+    "question": "What does Container constrain?",
+    "options": [
+      "Network concurrency",
+      "Form field values",
+      "Component state lifetime",
+      "Content width"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "10",
+    "question": "What does Typography provide?",
+    "options": [
+      "Text styles and semantics",
+      "A translation API",
+      "A rich-text document model",
+      "Automatic font downloads"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "11",
+    "question": "What does CssBaseline apply?",
+    "options": [
+      "A database schema reset",
+      "Baseline global styles",
+      "An application state reset",
+      "A required component theme"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "12",
+    "question": "What does Button variant control?",
+    "options": [
+      "Its destination URL",
+      "The button's visual treatment",
+      "Its accessible name",
+      "Its form field value"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "13",
+    "question": "What does IconButton represent?",
+    "options": [
+      "An SVG loading registry",
+      "A generated sprite file",
+      "An immutable status image",
+      "An icon action control"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "14",
+    "question": "What does a disabled Button restrict?",
+    "options": [
+      "User activation",
+      "Every CSS state",
+      "Every screen-reader label",
+      "All DOM rendering"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "15",
+    "question": "What does TextField combine?",
+    "options": [
+      "Database field definitions",
+      "Input-related UI pieces",
+      "Server validation services",
+      "Rich-text editing commands"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "16",
+    "question": "What does InputLabel provide?",
+    "options": [
+      "A submitted input value",
+      "A generated error code",
+      "A validation expression",
+      "A label for an input"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "17",
+    "question": "What does FormHelperText display?",
+    "options": [
+      "A new field control",
+      "Supporting field text",
+      "A hidden submit action",
+      "A selected option value"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "18",
+    "question": "What does FormControl coordinate?",
+    "options": [
+      "Application-wide form persistence",
+      "Server authentication state",
+      "Related input state and context",
+      "Browser storage synchronization"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "19",
+    "question": "What does InputAdornment add?",
+    "options": [
+      "A server file attachment",
+      "An input validation schema",
+      "An automatic submit handler",
+      "Content beside an input"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "20",
+    "question": "What does Checkbox represent?",
+    "options": [
+      "An exclusive menu route",
+      "A progress percentage",
+      "A checked choice",
+      "A numeric interval"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "21",
+    "question": "What does RadioGroup coordinate?",
+    "options": [
+      "A set of modal backdrops",
+      "Independent text values",
+      "A collection of tooltips",
+      "An exclusive choice"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "22",
+    "question": "What does FormControlLabel combine?",
+    "options": [
+      "A control and its label",
+      "An input and a server route",
+      "Two independent forms",
+      "A dialog and its backdrop"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "23",
+    "question": "What does Switch represent?",
+    "options": [
+      "A numeric measurement",
+      "A date range",
+      "A binary setting",
+      "A list of destinations"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "24",
+    "question": "What does Select provide?",
+    "options": [
+      "Database column mapping",
+      "Automatic remote search",
+      "Option selection",
+      "A rich-text editor"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "25",
+    "question": "What does MenuItem represent in a Menu?",
+    "options": [
+      "An available action",
+      "A page layout column",
+      "A theme color role",
+      "A form validation rule"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "26",
+    "question": "What does Autocomplete add to text entry?",
+    "options": [
+      "A suggestion-selection interface",
+      "A database indexing strategy",
+      "A required search backend",
+      "An automatic translation service"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "27",
+    "question": "What does Chip represent?",
+    "options": [
+      "A full text input form",
+      "A compact item or attribute",
+      "A complete modal flow",
+      "A responsive page section"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "28",
+    "question": "What does Slider let users change?",
+    "options": [
+      "A file export format",
+      "A numeric value or range",
+      "A list of application routes",
+      "A theme provider identity"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "29",
+    "question": "What does Dialog present?",
+    "options": [
+      "A persistent page heading",
+      "A table loading placeholder",
+      "A focused dialog task",
+      "An inline layout row"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "30",
+    "question": "What does DialogTitle provide?",
+    "options": [
+      "The dialog close event",
+      "The dialog's form value",
+      "The dialog heading",
+      "The overlay's stacking order"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "31",
+    "question": "What does DialogActions group?",
+    "options": [
+      "Dialog action controls",
+      "Global keyboard shortcuts",
+      "Server permission checks",
+      "All application routes"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "32",
+    "question": "What does Snackbar display?",
+    "options": [
+      "A persistent navigation tree",
+      "A brief status message",
+      "A required modal input",
+      "A full data table"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "33",
+    "question": "What does Alert communicate?",
+    "options": [
+      "A numeric selection",
+      "A table sort key",
+      "A contextual status",
+      "A route destination"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "What does Tooltip supply?",
+    "options": [
+      "Essential editable content",
+      "Brief supporting information",
+      "A persistent form field",
+      "A complete action menu"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "35",
+    "question": "What does Popover position?",
+    "options": [
+      "A server request queue",
+      "A global data cache",
+      "Anchored content",
+      "A new application route"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "36",
+    "question": "What does Drawer present?",
+    "options": [
+      "A text format selector",
+      "A panel near a screen edge",
+      "A date selection field",
+      "A numeric input control"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "37",
+    "question": "What does AppBar typically contain?",
+    "options": [
+      "Top-level navigation and actions",
+      "Database connection settings",
+      "Only form error messages",
+      "Only table cell content"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "38",
+    "question": "What does Toolbar provide within an AppBar?",
+    "options": [
+      "An automatic routing engine",
+      "A required authentication guard",
+      "A server-rendered menu cache",
+      "A layout for its contents"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "39",
+    "question": "What does Tabs coordinate?",
+    "options": [
+      "A selected tab",
+      "All browser windows",
+      "The user's server session",
+      "The current theme palette"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "40",
+    "question": "What does Accordion show?",
+    "options": [
+      "Only selectable search results",
+      "Only navigation breadcrumbs",
+      "Expandable content sections",
+      "Only page loading indicators"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "41",
+    "question": "What does List organize?",
+    "options": [
+      "Related list items",
+      "Only form submit events",
+      "Only chart coordinates",
+      "Only grid breakpoints"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "42",
+    "question": "What does TablePagination control?",
+    "options": [
+      "Automatic server querying",
+      "Complete row virtualization",
+      "Database result filtering",
+      "Paging interaction"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "43",
+    "question": "What does TableSortLabel provide?",
+    "options": [
+      "A persistent sort preference store",
+      "A sortable header control",
+      "Automatic table data sorting",
+      "A complete remote sort service"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "44",
+    "question": "What does Skeleton indicate?",
+    "options": [
+      "A selected navigation item",
+      "A validated form value",
+      "Pending content",
+      "An inaccessible input"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "45",
+    "question": "What does CircularProgress communicate?",
+    "options": [
+      "A circular menu",
+      "Operation progress",
+      "A radio selection",
+      "A round avatar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "46",
+    "question": "What does Portal change?",
+    "options": [
+      "DOM placement",
+      "Component data automatically",
+      "React ownership automatically",
+      "Theme prop values automatically"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "47",
+    "question": "What do slots customize?",
+    "options": [
+      "Application route names",
+      "Server API endpoints",
+      "Browser storage keys",
+      "Internal component parts"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "48",
+    "question": "What does slotProps supply?",
+    "options": [
+      "Props for component parts",
+      "New package dependencies",
+      "Only component children",
+      "Only global CSS variables"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "49",
+    "question": "What does useMediaQuery return?",
+    "options": [
+      "The current theme object",
+      "Whether a media query matches",
+      "The current DOM selector list",
+      "The generated stylesheet URL"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "50",
+    "question": "Are MUI X Data Grid and Material UI Table the same component?",
+    "options": [
+      "Yes, Table enables every grid feature",
+      "Only when rows contain objects",
+      "Only in a dark theme",
+      "No, they have separate APIs"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "51",
+    "question": "A MUI TextField shows error styling. Does error=true create a validation rule?",
+    "options": [
+      "Only if helperText is also set",
+      "No, validation logic remains separate",
+      "Only if the field is required",
+      "Yes, it blocks all form submissions"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "52",
+    "question": "A MUI Select label floats incorrectly in outlined mode. What should the developer inspect?",
+    "options": [
+      "Only the selected option's font weight",
+      "Only the global Snackbar timeout",
+      "The label and ID associations",
+      "Only the table pagination count"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "53",
+    "question": "A MUI Select receives a value absent from its options. What should the app correct?",
+    "options": [
+      "The Tooltip's placement",
+      "The AppBar's position",
+      "The value-option contract",
+      "The Card's elevation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "54",
+    "question": "A MUI Autocomplete stores option objects. What compares refreshed objects by ID?",
+    "options": [
+      "isOptionEqualToValue",
+      "renderInput",
+      "filterOptions",
+      "getOptionLabel"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "55",
+    "question": "A MUI Autocomplete needs a user name as its visible option text. Which prop supplies that text mapping?",
+    "options": [
+      "onInputChange",
+      "filterOptions",
+      "isOptionEqualToValue",
+      "getOptionLabel"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "56",
+    "question": "A MUI Autocomplete uses server-filtered results. What can prevent unwanted second filtering?",
+    "options": [
+      "A new theme provider per response",
+      "A pass-through filterOptions",
+      "getOptionLabel returning IDs",
+      "A fixed Popper width only"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "57",
+    "question": "A MUI Autocomplete supports freeSolo. What extra value type should label logic handle?",
+    "options": [
+      "User-entered strings",
+      "Only numeric option indexes",
+      "Only DOM option nodes",
+      "Only server response objects"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "58",
+    "question": "A custom MUI Autocomplete renderInput ignores supplied params. What can fail?",
+    "options": [
+      "Only the remote response cache",
+      "Only the theme's spacing function",
+      "Input refs and required behavior",
+      "Only the list's background color"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "59",
+    "question": "A MUI Menu anchor is a button. What should anchorEl reference?",
+    "options": [
+      "The button's text label",
+      "The button's React key",
+      "The actual anchor element",
+      "The menu's option value"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "60",
+    "question": "A controlled MUI Dialog receives open=true. onClose runs but state stays true. What happens?",
+    "options": [
+      "The backdrop becomes an input",
+      "The dialog's theme disappears",
+      "The dialog remains open",
+      "The dialog becomes uncontrolled"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "61",
+    "question": "A MUI Dialog's onClose handler receives a reason. Why inspect it?",
+    "options": [
+      "Resolve an option label",
+      "Load the theme's source file",
+      "Distinguish dismissal causes",
+      "Choose the dialog's title font"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "62",
+    "question": "A MUI Snackbar shows successive messages. Why can a message-specific key help?",
+    "options": [
+      "Convert the Snackbar into an Alert",
+      "Treat each message as a new instance",
+      "Remove the need for a timeout",
+      "Prevent all duplicate server actions"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "63",
+    "question": "A MUI Tooltip wraps a custom button. What must the child preserve?",
+    "options": [
+      "Only its component display name",
+      "Only its initial inline color",
+      "Only its visible text children",
+      "Received props and a usable ref"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "64",
+    "question": "A MUI IconButton has only a decorative SVG. What must the app supply?",
+    "options": [
+      "An accessible button name",
+      "A numeric icon value",
+      "A separate keyboard shortcut",
+      "A hidden checkbox control"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "65",
+    "question": "A MUI Slider returns a range. What shape can its value have?",
+    "options": [
+      "An array of numeric bounds",
+      "A list of DOM element refs",
+      "A comma-separated CSS string",
+      "A map of radio labels"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "66",
+    "question": "A MUI slider triggers expensive work only after interaction ends. Which callback fits?",
+    "options": [
+      "onFocusVisible",
+      "onChange",
+      "onMouseEnter",
+      "onChangeCommitted"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "67",
+    "question": "A MUI TableSortLabel changes direction. What still needs implementation?",
+    "options": [
+      "The label's click event support",
+      "The actual row sorting",
+      "The direction indicator markup",
+      "The component's React import"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "68",
+    "question": "A MUI TablePagination uses page state. What indexing contract should the app check?",
+    "options": [
+      "A page number equal to row count",
+      "Zero-based component pages",
+      "A CSS class as the page value",
+      "One-based pages in every API"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "69",
+    "question": "A MUI responsive sx value changes by breakpoint. What does the object represent?",
+    "options": [
+      "Breakpoint-specific style values",
+      "Component state transition events",
+      "Server-specific HTTP headers",
+      "A sequence of animation frames"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "70",
+    "question": "A MUI sx spacing number differs from an inline style number. Why?",
+    "options": [
+      "sx ignores all numeric declarations",
+      "sx can apply theme spacing transforms",
+      "Inline style numbers always use rem",
+      "The browser reverses the declarations"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "71",
+    "question": "A MUI theme needs global Button defaults. Which theme section is intended for this?",
+    "options": [
+      "spacing.Button.children",
+      "typography.Button.events",
+      "palette.MuiButton.value",
+      "components.MuiButton.defaultProps"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "72",
+    "question": "A MUI theme needs Button slot style overrides. Which configuration fits?",
+    "options": [
+      "palette.MuiButton.state",
+      "breakpoints.Button.labels",
+      "transitions.Button.props",
+      "components.MuiButton.styleOverrides"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "73",
+    "question": "A component override targets .Mui-selected globally. What is the risk?",
+    "options": [
+      "Other selected components can match",
+      "The class never appears in browsers",
+      "All selected components become disabled",
+      "The theme stops using CSS variables"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "74",
+    "question": "A MUI customization targets an undocumented generated hash class. Why prefer documented component classes?",
+    "options": [
+      "Hashes can change across builds",
+      "Documented classes cannot be overridden",
+      "Hashes only exist in development tools",
+      "Documented classes always disable specificity"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "75",
+    "question": "A MUI custom theme adds a TypeScript property. What can make useTheme expose it safely?",
+    "options": [
+      "A new React key",
+      "A global DOM declaration",
+      "Module augmentation",
+      "A copied CSS class"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "76",
+    "question": "A MUI button renders as a router link. What contract must its adapter preserve?",
+    "options": [
+      "Only the page's active breakpoint",
+      "Only the original button tag",
+      "Only the default button color",
+      "Link props and ref forwarding"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "77",
+    "question": "A MUI Drawer uses temporary mode. What interaction differs from a persistent layout region?",
+    "options": [
+      "The existence of a React component",
+      "Modal overlay and dismissal behavior",
+      "The ability to render text content",
+      "The ability to receive a CSS class"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "78",
+    "question": "A MUI Tabs value matches no rendered tab. What should the developer check?",
+    "options": [
+      "Only the Snackbar's timeout",
+      "Only the theme's palette mode",
+      "Only the Card's border radius",
+      "Consistent tab value mapping"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "79",
+    "question": "A MUI Grid layout copies outdated size props from a prior major version. What should the developer use?",
+    "options": [
+      "A mix of every historical Grid API",
+      "Only CSS class hashes from examples",
+      "A new provider around every cell",
+      "The installed version's Grid API"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "80",
+    "question": "A MUI Dialog contains a Select menu. What overlay interaction should tests cover?",
+    "options": [
+      "Only the Dialog's source filename",
+      "Focus, scrolling, and dismissal",
+      "Only the close icon's SVG size",
+      "Only the Select's text color"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "81",
+    "question": "A MUI SSR app shares one mutable style cache across requests. What risk should architecture review address?",
+    "options": [
+      "Every browser tab sharing React state",
+      "Automatic database connection leaks",
+      "Cross-request style state contamination",
+      "A required change to every component name"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "82",
+    "question": "A MUI SSR response omits critical generated styles. What can users see before hydration?",
+    "options": [
+      "A forced browser source map download",
+      "An automatic switch to a native theme",
+      "A flash of unstyled content",
+      "A permanent loss of all route data"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "83",
+    "question": "A MUI app has several styling systems. What must its integration define for predictable overrides?",
+    "options": [
+      "Only the component source indentation",
+      "Only the alphabetical package order",
+      "Style insertion and cascade order",
+      "Only the number of exported components"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "84",
+    "question": "A MUI custom palette defines semantic colors. What must accessibility review still validate?",
+    "options": [
+      "Only whether all colors use hex notation",
+      "Contrast in actual rendered pairs",
+      "Only the palette object's key count",
+      "Only whether names match component names"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "85",
+    "question": "A MUI dialog closes after deleting the focused trigger. What should closing logic choose?",
+    "options": [
+      "The first hidden input in the form",
+      "The document body's background color",
+      "A surviving useful focus target",
+      "The removed trigger's old DOM reference"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "86",
+    "question": "A MUI theme is rebuilt from changing user data each render. What cost should the app measure?",
+    "options": [
+      "Only the JSX source file size",
+      "Only the component import statement count",
+      "Only the browser's image decode time",
+      "Theme processing and style regeneration"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "87",
+    "question": "A MUI Autocomplete virtualizes a large option list. What behavior must its adapter preserve?",
+    "options": [
+      "Only the server's HTTP cache headers",
+      "Only the dropdown background color",
+      "Only the option labels' capitalization",
+      "Option props, identity, and keyboard navigation"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "88",
+    "question": "A MUI component accepts highly dynamic sx values on every pointer move. What design can reduce generated-style churn?",
+    "options": [
+      "Generate a new theme for each pointer event",
+      "Remount the component after each update",
+      "Use CSS variables for changing values",
+      "Append a random class after each move"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "89",
+    "question": "A MUI wrapper forwards an internal styling prop to the DOM. What should its styled integration define?",
+    "options": [
+      "A suitable shouldForwardProp rule",
+      "A new DOM ID on every render",
+      "An extra theme provider for each prop",
+      "An additional onClick handler"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "90",
+    "question": "A MUI color-scheme setup changes only after client effects run. What should SSR integration prevent?",
+    "options": [
+      "A flash of the wrong scheme",
+      "All local CSS Module exports",
+      "The creation of semantic theme roles",
+      "Every browser media query"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "91",
+    "question": "A MUI design system offers variants across many products. What boundary should its wrapper expose?",
+    "options": [
+      "Every internal slot implementation detail",
+      "Stable semantic variant contracts",
+      "Only generated production hash names",
+      "Only the current DOM child indexes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "92",
+    "question": "A MUI app changes z-index on one overlay until it appears above another. What architecture should replace repeated patches?",
+    "options": [
+      "A coherent overlay layering policy",
+      "A forced body position change per menu",
+      "Random z-index values per render",
+      "A separate theme for every overlay node"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "93",
+    "question": "A MUI Shadow DOM integration portals overlays to document.body. What can it lose?",
+    "options": [
+      "All JavaScript event propagation",
+      "Local styles and inherited theme variables",
+      "The component's controlled state",
+      "React context unconditionally"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "94",
+    "question": "A MUI remote Autocomplete issues several search requests. What keeps stale results from replacing current input results?",
+    "options": [
+      "Appending each response without comparison",
+      "A fixed delay applied to every response",
+      "Changing the theme after each result",
+      "Cancellation or request identity checks"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "95",
+    "question": "A MUI form uses disabled styling to imply read-only data. What behavioral distinction needs review?",
+    "options": [
+      "Disabled and read-only controls differ",
+      "Read-only controls never receive focus",
+      "Both states enforce server validation",
+      "All disabled fields are always submitted"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "96",
+    "question": "A MUI Data Grid replaces a simple Table. What migration assumption should the team avoid?",
+    "options": [
+      "That both can display text in cells",
+      "That interaction and data APIs stay identical",
+      "That both render within a React app",
+      "That both need meaningful column labels"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "97",
+    "question": "A MUI theme override hides every focus outline. What substitute must it preserve?",
+    "options": [
+      "Only a pointer hover background",
+      "Only a disabled button opacity",
+      "Only a selected menu item color",
+      "A visible keyboard focus indicator"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "98",
+    "question": "A MUI bundle grows after importing many icon exports. What should optimization verify?",
+    "options": [
+      "Actual imported modules and bundle output",
+      "Only the icon variable naming style",
+      "Only the order of JSX attributes",
+      "Only the component's page position"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "99",
+    "question": "A MUI app uses a strict Content Security Policy. What must its styling integration account for?",
+    "options": [
+      "Only the route loading order",
+      "Only the count of React providers",
+      "Only the component display names",
+      "Style injection and nonce requirements"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "100",
+    "question": "A new MUI Button variant has theme styles, but TypeScript rejects its use. Which type contract needs extension?",
+    "options": [
+      "ThemeProviderProps.children",
+      "ButtonPropsVariantOverrides",
+      "AutocompleteProps.value",
+      "CssBaselineProps.enableColorScheme"
+    ],
+    "correct_index": 1
+  }
+]

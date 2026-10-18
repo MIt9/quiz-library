@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What do Radix UI Primitives provide?",
+    "options": [
+      "Unstyled interaction components",
+      "A server data layer",
+      "A required branded theme",
+      "A React routing framework"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "2",
+    "question": "Who supplies visual styles for Radix Primitives?",
+    "options": [
+      "The route loader",
+      "The browser extension",
+      "The database",
+      "The application"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "3",
+    "question": "What does a Radix Root part commonly coordinate?",
+    "options": [
+      "Only stylesheet download order",
+      "Only static image assets",
+      "Only server validation rules",
+      "Component state and context"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "4",
+    "question": "What does Radix Dialog.Trigger provide?",
+    "options": [
+      "The dialog opening control",
+      "The dialog backdrop style",
+      "The dialog content container",
+      "The dialog accessible title"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "5",
+    "question": "What does Radix Dialog.Content contain?",
+    "options": [
+      "The application route table",
+      "The provider's theme tokens",
+      "The dialog task content",
+      "The trigger's original label"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "6",
+    "question": "What does Radix Dialog.Overlay represent?",
+    "options": [
+      "A selected radio value",
+      "A backdrop layer",
+      "A form error list",
+      "A menu action item"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "7",
+    "question": "What does Radix Dialog.Title provide?",
+    "options": [
+      "A required form field value",
+      "An automatic page heading",
+      "An accessible dialog title",
+      "A generated route identifier"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "8",
+    "question": "What does Radix Dialog.Description provide?",
+    "options": [
+      "A browser document title",
+      "Supporting dialog description",
+      "A server response schema",
+      "A modal animation duration"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "9",
+    "question": "What does Radix Dialog.Close provide?",
+    "options": [
+      "A persistent form value",
+      "A dismissal control",
+      "A focus-free text label",
+      "A new overlay container"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "10",
+    "question": "What does a Radix Portal change?",
+    "options": [
+      "The controlled value automatically",
+      "The React owner automatically",
+      "The DOM placement",
+      "The current route automatically"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "11",
+    "question": "What does Radix's asChild prop enable?",
+    "options": [
+      "Composition with a child element",
+      "A required nested wrapper",
+      "A new child state store",
+      "A new React rendering root"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "12",
+    "question": "What does a Radix custom child need to spread?",
+    "options": [
+      "Only children",
+      "Only its own ID",
+      "Received props",
+      "Only className"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "13",
+    "question": "What must a Radix composed child expose through its ref?",
+    "options": [
+      "Its React route",
+      "Its stylesheet object",
+      "Its usable DOM node",
+      "Its server response"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "14",
+    "question": "What does Radix defaultOpen specify?",
+    "options": [
+      "Global animation duration",
+      "Initial uncontrolled state",
+      "Permanent controlled state",
+      "The target page URL"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "15",
+    "question": "What does Radix open control?",
+    "options": [
+      "The source file path",
+      "Current open state",
+      "The initial theme mode",
+      "The selected form value"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "16",
+    "question": "What does onOpenChange report?",
+    "options": [
+      "A successful server mutation",
+      "A changed theme token",
+      "An open-state change request",
+      "A new DOM element ID"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "17",
+    "question": "What does Radix data-state support?",
+    "options": [
+      "Database persistence",
+      "Automatic routing",
+      "State-dependent styling",
+      "Package version detection"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "18",
+    "question": "What does Radix data-disabled communicate?",
+    "options": [
+      "A closed database connection",
+      "A disabled component state",
+      "A missing stylesheet file",
+      "An inactive browser profile"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "19",
+    "question": "Which Radix primitive selects one option?",
+    "options": [
+      "Select",
+      "Avatar",
+      "Tooltip",
+      "Separator"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "20",
+    "question": "What does Select.Value display?",
+    "options": [
+      "Every available option",
+      "The form's submit result",
+      "The selected value's presentation",
+      "The active theme color"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "21",
+    "question": "What does Select.Item represent?",
+    "options": [
+      "A selectable option",
+      "A dialog close reason",
+      "An application route guard",
+      "A form field label"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "22",
+    "question": "What does Select.ItemText supply?",
+    "options": [
+      "The panel's animation timing",
+      "The option's server ID only",
+      "The trigger's DOM reference",
+      "The item's text content"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "23",
+    "question": "What does Select.ItemIndicator show?",
+    "options": [
+      "Network loading state",
+      "Viewport breakpoint state",
+      "Form submission state",
+      "Selection state"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "24",
+    "question": "What does Select.Group organize?",
+    "options": [
+      "Browser history entries",
+      "Independent dialogs",
+      "Related options",
+      "Server request batches"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "25",
+    "question": "What does Select.Label name?",
+    "options": [
+      "The current page route",
+      "The submitted form value",
+      "An option group",
+      "The dropdown's animation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "26",
+    "question": "Which Radix primitive presents popup actions?",
+    "options": [
+      "Slider",
+      "DropdownMenu",
+      "Select",
+      "Progress"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "27",
+    "question": "Which Radix primitive supports right-click actions?",
+    "options": [
+      "NavigationMenu",
+      "ContextMenu",
+      "RadioGroup",
+      "Collapsible"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "28",
+    "question": "What does DropdownMenu.CheckboxItem represent?",
+    "options": [
+      "A permanently disabled item",
+      "An independently checked action",
+      "A required numeric input",
+      "An exclusive route destination"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "29",
+    "question": "What does DropdownMenu.RadioGroup coordinate?",
+    "options": [
+      "Exclusive menu selection",
+      "A stack of dialog backdrops",
+      "Independent menu checks",
+      "A collection of text inputs"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "30",
+    "question": "What does DropdownMenu.Sub organize?",
+    "options": [
+      "A nested submenu",
+      "A data validation schema",
+      "A separate browser window",
+      "A numeric value range"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "31",
+    "question": "Which Radix primitive supports a focused confirmation task?",
+    "options": [
+      "HoverCard",
+      "Tooltip",
+      "Separator",
+      "AlertDialog"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "32",
+    "question": "What does AlertDialog.Cancel represent?",
+    "options": [
+      "The dialog description",
+      "The cancel action",
+      "The destructive confirmation",
+      "The modal backdrop"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "33",
+    "question": "What does AlertDialog.Action represent?",
+    "options": [
+      "The confirmation action",
+      "The focus-restoration target",
+      "The noninteractive title",
+      "The supporting description"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "34",
+    "question": "Which Radix primitive presents anchored interactive content?",
+    "options": [
+      "Avatar",
+      "Separator",
+      "Tooltip",
+      "Popover"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "35",
+    "question": "Which Radix primitive presents brief noninteractive guidance?",
+    "options": [
+      "Select",
+      "Dialog",
+      "Tooltip",
+      "DropdownMenu"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "36",
+    "question": "What does Tooltip.Provider coordinate?",
+    "options": [
+      "The server's content cache",
+      "The application's theme tokens",
+      "Shared tooltip configuration",
+      "All component route state"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "37",
+    "question": "Which Radix primitive shows hover-based preview content?",
+    "options": [
+      "Progress",
+      "ContextMenu",
+      "Toast",
+      "HoverCard"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "38",
+    "question": "Which Radix primitive organizes tabs?",
+    "options": [
+      "RadioGroup",
+      "Toolbar",
+      "ToggleGroup",
+      "Tabs"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "39",
+    "question": "What does Tabs.Trigger select?",
+    "options": [
+      "An associated content panel",
+      "A new browser profile",
+      "A numeric input bound",
+      "A global color palette"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "40",
+    "question": "Which Radix primitive groups expandable sections?",
+    "options": [
+      "Accordion",
+      "NavigationMenu",
+      "Slider",
+      "Toast"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "41",
+    "question": "Which Radix primitive manages one expandable region?",
+    "options": [
+      "AccordionItemGroup",
+      "Collapsible",
+      "RadioGroup",
+      "HoverCard"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "42",
+    "question": "Which Radix primitive represents a checked choice?",
+    "options": [
+      "Checkbox",
+      "Avatar",
+      "Progress",
+      "Separator"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "43",
+    "question": "Which Radix primitive represents a binary setting?",
+    "options": [
+      "Slider",
+      "Switch",
+      "Select",
+      "Tabs"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "44",
+    "question": "Which Radix primitive selects a numeric value or range?",
+    "options": [
+      "RadioGroup",
+      "ScrollArea",
+      "Slider",
+      "Progress"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "45",
+    "question": "Which Radix primitive groups mutually exclusive choices?",
+    "options": [
+      "Accordion with multiple items",
+      "Toolbar",
+      "ToggleGroup with multiple values",
+      "RadioGroup"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "46",
+    "question": "Which Radix primitive reports operation completion?",
+    "options": [
+      "Switch",
+      "Slider",
+      "Toggle",
+      "Progress"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "47",
+    "question": "Which Radix primitive groups related action controls with keyboard support?",
+    "options": [
+      "Toolbar",
+      "FieldsetRoot",
+      "Separator",
+      "Avatar"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "48",
+    "question": "Which Radix primitive supplies an image with fallback content?",
+    "options": [
+      "Tooltip",
+      "Toast",
+      "HoverCard",
+      "Avatar"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "49",
+    "question": "Which Radix primitive styles a scrollable region?",
+    "options": [
+      "Dialog",
+      "Collapsible",
+      "NavigationMenu",
+      "ScrollArea"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "50",
+    "question": "Which Radix primitive presents brief notifications?",
+    "options": [
+      "Toast",
+      "Tooltip",
+      "HoverCard",
+      "Popover"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "51",
+    "question": "A Radix Trigger uses asChild around a custom button. What breaks if the button drops event props?",
+    "options": [
+      "The compiled CSS file syntax",
+      "The application's database access",
+      "The primitive's interaction behavior",
+      "The browser's image decoding"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "52",
+    "question": "A Radix asChild component receives two sibling elements. What structure does composition normally require?",
+    "options": [
+      "A hidden copy of each child",
+      "A provider for every sibling",
+      "Two independent React roots",
+      "One compatible child element"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "53",
+    "question": "A Radix trigger wraps a native button without asChild. What invalid structure can result?",
+    "options": [
+      "A duplicate CSS variable",
+      "An unsupported route object",
+      "A missing database field",
+      "Nested buttons"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "54",
+    "question": "A Radix trigger becomes an anchor through asChild. What must its semantics still match?",
+    "options": [
+      "Its intended interaction",
+      "Its generated hash name",
+      "Its source filename",
+      "Its server response type"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "55",
+    "question": "A controlled Radix Dialog stays open after onOpenChange(false). What must the app update?",
+    "options": [
+      "Its Portal container only",
+      "Its overlay class only",
+      "Its title text only",
+      "Its open state"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "56",
+    "question": "A Radix Dialog opens without a visible heading. What must its naming strategy still provide?",
+    "options": [
+      "A new global CSS selector",
+      "A numbered tab order",
+      "An accessible dialog name",
+      "A second hidden trigger"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "57",
+    "question": "A Radix dialog needs custom initial focus. Which event hook supports that control?",
+    "options": [
+      "onEscapeKeyDown",
+      "onInteractOutside",
+      "onPointerDownOutside",
+      "onOpenAutoFocus"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "58",
+    "question": "A Radix dialog needs custom focus restoration. Which hook supports that control?",
+    "options": [
+      "onValueChange",
+      "onOpenAutoFocus",
+      "onPointerMove",
+      "onCloseAutoFocus"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "59",
+    "question": "A Radix Dialog must keep focus inside during modal use. Which behavior should tests verify?",
+    "options": [
+      "Only the title font weight",
+      "Only the trigger width",
+      "Focus containment",
+      "Only the backdrop opacity"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "60",
+    "question": "A Radix Dialog closes on outside interaction. What can a supported event handler prevent?",
+    "options": [
+      "Every browser click event",
+      "The default dismissal",
+      "All React state updates",
+      "Every stylesheet selector"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "61",
+    "question": "A Radix dropdown contains a destructive command. What event normally represents item activation?",
+    "options": [
+      "onOpenAutoFocus",
+      "onCheckedChange",
+      "onValueChange",
+      "onSelect"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "62",
+    "question": "A Radix Checkbox supports a partial group selection. Which state can it represent?",
+    "options": [
+      "indeterminate",
+      "invalid-only",
+      "unavailable",
+      "uncontrolled"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "63",
+    "question": "A Radix Select item uses a human label and an opaque value. What should application state store?",
+    "options": [
+      "The DOM label element",
+      "The item's value",
+      "The generated class name",
+      "The popup's pixel width"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "64",
+    "question": "A Radix Select trigger text needs a placeholder. When does the placeholder apply?",
+    "options": [
+      "When no value is selected",
+      "Whenever a group has a label",
+      "Whenever the trigger has focus",
+      "Whenever the popup is open"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "65",
+    "question": "A Radix Tabs trigger has value=\"billing\". What associates its panel?",
+    "options": [
+      "The same DOM tag",
+      "The same text length",
+      "The same CSS width",
+      "The same value"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "66",
+    "question": "A Radix Accordion allows one expanded item. Which type fits?",
+    "options": [
+      "multiple",
+      "single",
+      "exclusive-menu",
+      "radio-only"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "67",
+    "question": "A Radix Accordion should allow all items closed in single mode. Which prop supports this?",
+    "options": [
+      "disabled",
+      "orientation",
+      "collapsible",
+      "loop"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "68",
+    "question": "A Radix Slider uses two thumbs. What value representation fits?",
+    "options": [
+      "Two DOM references",
+      "One boolean value",
+      "Two numeric values",
+      "One CSS transform string"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "69",
+    "question": "A Radix Slider should save only after interaction completes. Which callback fits?",
+    "options": [
+      "onValueChange",
+      "onValueCommit",
+      "onCheckedChange",
+      "onOpenChange"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "70",
+    "question": "A Radix Tooltip contains an input field. Which primitive better fits that interaction?",
+    "options": [
+      "Separator",
+      "Avatar",
+      "Progress",
+      "Popover"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "71",
+    "question": "A Radix portal renders outside an ancestor that defines CSS custom properties. Why can inherited values be absent?",
+    "options": [
+      "Radix disables custom properties",
+      "DOM inheritance follows placement",
+      "The variable names become class names",
+      "React context cannot cross portals"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "72",
+    "question": "A Radix popup needs preferred placement near its anchor. Which Content prop commonly selects the side?",
+    "options": [
+      "side",
+      "collisionPadding",
+      "sideOffset",
+      "align"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "73",
+    "question": "A Radix popup needs spacing from its anchor. Which prop controls that distance?",
+    "options": [
+      "align",
+      "avoidCollisions",
+      "sideOffset",
+      "side"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "74",
+    "question": "A Radix popup changes side near a viewport edge. What should arrow styling reflect?",
+    "options": [
+      "Only the default theme mode",
+      "The actual placement state",
+      "Only the requested side",
+      "Only the source markup order"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "75",
+    "question": "A Radix Toast has a short timeout but includes essential instructions. What should the app change?",
+    "options": [
+      "Keep essential information available",
+      "Disable every close control",
+      "Require pointer hover to read it",
+      "Remove all visible text"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "76",
+    "question": "A Radix ScrollArea customizes scrollbar visuals. What underlying behavior should remain usable?",
+    "options": [
+      "Native scrolling interactions",
+      "A fixed scroll position forever",
+      "A server request per pixel",
+      "A new application route per scroll"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "77",
+    "question": "A Radix NavigationMenu renders destination items. What semantics should link adapters preserve?",
+    "options": [
+      "Slider bounds and steps",
+      "Links and their destinations",
+      "Dialog focus trap boundaries",
+      "Checkbox values and states"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "78",
+    "question": "A Radix ToggleGroup allows several pressed items. Which type fits?",
+    "options": [
+      "multiple",
+      "exclusive",
+      "modal",
+      "single"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "79",
+    "question": "A Radix state style uses a guessed private selector. What documented hook is usually safer?",
+    "options": [
+      "Its React fiber identifier",
+      "The component's data attributes",
+      "Its generated runtime class hash",
+      "Its source file line number"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "80",
+    "question": "A Radix Progress value is unknown. What should the component represent?",
+    "options": [
+      "A selected tab value",
+      "A checked input state",
+      "Indeterminate progress",
+      "A completed task state"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "81",
+    "question": "A Radix custom component replaces native button semantics with a div. What behavior must the adapter deliberately restore?",
+    "options": [
+      "Keyboard activation and focusability",
+      "Only the component display name",
+      "Only the source import path",
+      "Only the original border radius"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "82",
+    "question": "A Radix portal receives clicks that reach a React ancestor outside its DOM parent. Why?",
+    "options": [
+      "Radix adds all ancestors to the DOM",
+      "Portals duplicate every event target",
+      "CSS inheritance forwards native clicks",
+      "React events follow React ownership"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "83",
+    "question": "A Radix nested popup sits outside the parent dialog's DOM subtree. What integration risk needs testing?",
+    "options": [
+      "Only the parent's import alias",
+      "Dismissal and focus ownership",
+      "Only the dropdown border color",
+      "Only the popup's text alignment"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "84",
+    "question": "A Radix wrapper overwrites aria-labelledby after spreading props. What can it break?",
+    "options": [
+      "Generated accessible relationships",
+      "The CSS Module export shape",
+      "The server's database schema",
+      "The browser's network cache"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "85",
+    "question": "A Radix wrapper composes several primitives into one trigger. What should prop merging preserve?",
+    "options": [
+      "Only the outer component class",
+      "Only the inner element's text",
+      "Required handlers, attributes, and refs",
+      "Only the last click handler"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "86",
+    "question": "A Radix dialog opens from a menu item that then unmounts. What focus fallback should close handling define?",
+    "options": [
+      "The deleted menu item reference",
+      "A surviving useful control",
+      "A permanently unfocusable overlay",
+      "The document's hidden metadata"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "87",
+    "question": "A Radix design system promises stable consumer overrides. Which boundary should it publish?",
+    "options": [
+      "Every private DOM descendant path",
+      "Semantic variants and documented slots",
+      "Only generated hash class names",
+      "Only the current source directory tree"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "88",
+    "question": "A Radix modal contains a third-party editor's portaled toolbar. What must both integrations agree on?",
+    "options": [
+      "Only equal animation durations",
+      "Only the same source file extension",
+      "Focus and outside-interaction boundaries",
+      "Only matching component display names"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "89",
+    "question": "A Radix Select virtualizes options. What accessibility contract needs explicit verification?",
+    "options": [
+      "Only the option background color",
+      "Active-item identity and navigation",
+      "Only the selected label length",
+      "Only the list's border radius"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "90",
+    "question": "A Radix server render and client render start with different open states. What risk follows?",
+    "options": [
+      "A guaranteed network deadlock",
+      "Hydration mismatch",
+      "A required second browser document",
+      "An automatic CSS parse failure"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "91",
+    "question": "A Radix exit uses CSS keyframe animation. How can the primitive support the leaving animation?",
+    "options": [
+      "Convert the animation into React state",
+      "Copy the node into a second React root",
+      "Delay unmounting until animation completes",
+      "Always keep every closed part mounted"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "92",
+    "question": "A Radix JS animation library needs a closed Content node to remain mounted. Which option enables external mounting control?",
+    "options": [
+      "defaultOpen",
+      "asChild",
+      "forceMount",
+      "collisionPadding"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "93",
+    "question": "A Radix force-mounted closed panel stays in the DOM. What additional contract must custom animation handling preserve?",
+    "options": [
+      "Visibility and interaction state",
+      "Only the React component display name",
+      "Only the initial component class",
+      "Only the source import ordering"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "94",
+    "question": "A Radix dropdown keeps an item open after selection for a custom workflow. What should the app test?",
+    "options": [
+      "Only the trigger's shadow size",
+      "Only the item label capitalization",
+      "Only the current body background",
+      "Expected menu focus and dismissal behavior"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "95",
+    "question": "A Radix Select option set changes after a server refresh. What stable mapping protects selection?",
+    "options": [
+      "The generated CSS class names",
+      "The popup's measured pixel positions",
+      "The current array indexes only",
+      "Persistent option values"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "96",
+    "question": "A Radix Tooltip delay improves pointer use but hides guidance from keyboard users. What should review prioritize?",
+    "options": [
+      "Equivalent access across input methods",
+      "Removing all focus interactions",
+      "One identical timer for all users",
+      "A longer delay for every trigger"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "97",
+    "question": "A Radix Popover collision policy is disabled inside a narrow viewport. What must the product accept or handle?",
+    "options": [
+      "The trigger value becomes uncontrolled",
+      "The popup loses its React parent",
+      "The portal removes every CSS rule",
+      "Content can extend beyond available space"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "98",
+    "question": "A Radix custom child uses event.preventDefault(). Why should composition tests cover it?",
+    "options": [
+      "It removes all forwarded DOM attributes",
+      "It disables every browser event globally",
+      "It can suppress default primitive behavior",
+      "It always changes the component's value"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "99",
+    "question": "A Radix component upgrade changes focus timing. What regression tests protect user flow?",
+    "options": [
+      "Open, navigate, act, close, and restore focus",
+      "Only screenshots of generated class names",
+      "Only the package version string",
+      "Only the source file character count"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "100",
+    "question": "A Radix RTL widget portals content under an LTR body. What should the app supply for direction-sensitive primitive behavior?",
+    "options": [
+      "Only the popup's text-align property",
+      "Only the trigger's source file language",
+      "One reversed list of DOM class names",
+      "An explicit Radix direction setting"
+    ],
+    "correct_index": 3
+  }
+]

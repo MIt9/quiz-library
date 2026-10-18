@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What does `d3.select(\"p\")` return?",
+  "options": [
+   "A plain array that holds all the matching p elements",
+   "A selection with the first matching p element",
+   "A raw DOM node for the first matching p element",
+   "A promise that gives the first matching p element"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "What does `d3.selectAll(\"circle\")` return?",
+  "options": [
+   "A selection of the first matching circle only",
+   "A plain array of circle data values",
+   "A selection of all the matching circles",
+   "A new empty group of circle elements"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "3",
+  "question": "Which method sets the SVG attribute `r` on each selected circle?",
+  "options": [
+   "`selection.style(\"r\", 5)`",
+   "`selection.attr(\"r\", 5)`",
+   "`selection.text(\"r\", 5)`",
+   "`selection.data(\"r\", 5)`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "4",
+  "question": "What does `selection.style(\"fill\", \"red\")` do?",
+  "options": [
+   "It adds a CSS class named fill to the element",
+   "It sets the fill attribute in the SVG markup",
+   "It sets an inline CSS style on each element",
+   "It adds a rule to the page style sheet"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "5",
+  "question": "What does `selection.text(\"Hello\")` do?",
+  "options": [
+   "It sets the text content of each element",
+   "It appends a new text node as a sibling",
+   "It sets the title attribute of each element",
+   "It returns the text of the first element"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "6",
+  "question": "What does `selection.append(\"g\")` do?",
+  "options": [
+   "It adds a g element after the selected element",
+   "It moves the selected elements into a new g",
+   "It wraps all selected elements in one g",
+   "It adds a new g child to each selected element"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "7",
+  "question": "What does `selection.data(array)` do?",
+  "options": [
+   "It binds the array values to the elements",
+   "It copies the element attributes into the array",
+   "It creates one new DOM element for each value",
+   "It sorts the selected elements by array order"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "8",
+  "question": "What does `selection.enter()` return after `.data(array)`?",
+  "options": [
+   "The existing elements that have no data value",
+   "Placeholders for data values with no element",
+   "The elements that already match a data value",
+   "A copy of the original data array"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "9",
+  "question": "What does `selection.exit()` return after `.data(array)`?",
+  "options": [
+   "Placeholders for data values that have no element",
+   "The elements that match a data value",
+   "The elements that have no matching data value",
+   "The parent elements of the selection"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "What does `selection.join(\"circle\")` do?",
+  "options": [
+   "It joins all circles into one path element",
+   "It merges two selections into one array",
+   "It adds, updates and removes circle elements",
+   "It binds data to circles that already exist only"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "11",
+  "question": "What is a D3 scale?",
+  "options": [
+   "A method that resizes the SVG to fit the screen size",
+   "A CSS rule that sets the size of an element",
+   "A list of the colors that the chart uses on screen",
+   "A function that maps input values to a range"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "12",
+  "question": "`x = d3.scaleLinear().domain([0, 100]).range([0, 500])`. What does `x(50)` return?",
+  "options": [
+   "50",
+   "500",
+   "1000",
+   "250"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "13",
+  "question": "For which data do you use `d3.scaleBand`?",
+  "options": [
+   "Dates on a time axis",
+   "Numbers that grow in a very large range",
+   "Categories, such as bars in a chart",
+   "Data that has negative and positive values"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "14",
+  "question": "What does `d3.axisBottom(x)` create?",
+  "options": [
+   "An axis function to call on a selection",
+   "An svg element that holds a visible axis line",
+   "A scale that has ticks below the chart",
+   "A text label for the bottom of the chart"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "15",
+  "question": "How do you draw an axis in a `g` element?",
+  "options": [
+   "`g.call(axis)`",
+   "`g.data(axis)`",
+   "`g.append(axis)`",
+   "`g.attr(axis)`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "What does `d3.max([3, 9, 2])` return?",
+  "options": [
+   "2",
+   "[2, 9]",
+   "14",
+   "9"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "17",
+  "question": "What does `d3.extent([3, 9, 2])` return?",
+  "options": [
+   "`[3, 2]`",
+   "`[2, 9]`",
+   "`[9, 2]`",
+   "`[2, 3, 9]`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "18",
+  "question": "What does `d3.csv(url)` return in D3 version 7?",
+  "options": [
+   "A promise that gives the parsed rows",
+   "An array of the parsed rows, right away",
+   "A selection that holds the loaded rows",
+   "A stream that you read row by row"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "What does `d3.json(url)` return in D3 version 7?",
+  "options": [
+   "The parsed object, returned right away",
+   "A promise that gives parsed JSON data",
+   "A selection that holds the JSON data",
+   "A callback with an error and data"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "In D3 version 7, what are the arguments of `.on(\"click\", handler)`?",
+  "options": [
+   "The datum, then the index",
+   "The datum, the index and the nodes",
+   "The element, then the event",
+   "The event, then the datum"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "What does `d3.line()` create?",
+  "options": [
+   "A line element that has two fixed end points",
+   "A scale that maps data values to line positions",
+   "A selection of all the line elements in the svg",
+   "A generator for the `d` string of a path"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "In `d3.line().x(d => x(d.date))`, what does the function do?",
+  "options": [
+   "It sets the x position of the whole path",
+   "It gives the x position for each point",
+   "It draws a vertical line for each point",
+   "It sorts the data points in order of date"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "23",
+  "question": "What does `d3.arc()` create?",
+  "options": [
+   "A scale that maps numbers to angles in radians",
+   "A circle element that has a radius and a center",
+   "A layout that sorts the values by size in a ring",
+   "A generator for the `d` string of a donut slice"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "What does `d3.pie()` compute?",
+  "options": [
+   "The start and end angles for each data value",
+   "The path string for each slice of the pie chart",
+   "The color for each slice of the pie chart",
+   "The radius for each slice of the pie chart"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "25",
+  "question": "What is `d3.scaleOrdinal` often used for?",
+  "options": [
+   "To map dates to pixel positions on a time axis",
+   "To make smooth curves between the data points",
+   "To round the numbers to the nearest tick value",
+   "To map a list of categories to colors"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "What is `d3.schemeCategory10`?",
+  "options": [
+   "A function that makes 10 ticks",
+   "An array of 10 category colors",
+   "A layout with 10 groups",
+   "A list of 10 time formats"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "27",
+  "question": "What does `selection.transition()` do?",
+  "options": [
+   "It copies the selection to a new parent",
+   "It changes the data of the selection",
+   "It starts an animation of changes",
+   "It stops all running timers"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "Which method sets the length of a transition?",
+  "options": [
+   "`transition.duration(500)`, in ms",
+   "`transition.length(500)`, in video frames",
+   "`transition.time(500)`, in whole seconds",
+   "`transition.ease(500)`, in easing steps"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "29",
+  "question": "What does `transition.delay(200)` do?",
+  "options": [
+   "It makes the transition last 200 ms in total",
+   "It repeats the transition 200 times in a row",
+   "It stops the transition after 200 ms of run time",
+   "It waits 200 ms before the transition starts"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "What does `selection.remove()` do?",
+  "options": [
+   "It removes the data from the selected elements",
+   "It removes the selected elements from the DOM",
+   "It hides the selected elements with CSS",
+   "It clears the attributes of the elements"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "What does `selection.classed(\"active\", true)` do?",
+  "options": [
+   "It removes the class active from each element",
+   "It sets the id of each element to active",
+   "It adds the class active to each element",
+   "It returns true if the class exists"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "What does `selection.each(fn)` do?",
+  "options": [
+   "It calls the function once for the whole selection",
+   "It calls the function for each selected element",
+   "It makes a new selection from the results",
+   "It calls the function after the next frame"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "In `.attr(\"x\", d => d.x)`, what is `d`?",
+  "options": [
+   "The DOM element that has the attribute",
+   "The index of the element in the group",
+   "The parent selection of the element",
+   "The datum bound to that element"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "34",
+  "question": "What does `d3.hierarchy(data)` create?",
+  "options": [
+   "A flat array of all the leaf values in the data",
+   "An svg tree with one g element for each node",
+   "A root node with links to its children",
+   "A force layout that moves all the nodes"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "What does `d3.forceSimulation(nodes)` do?",
+  "options": [
+   "It draws the nodes on the page with circles",
+   "It sorts the nodes by the number of their links",
+   "It creates a simulation that applies forces",
+   "It loads the nodes from a file with the data"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "What does `d3.zoom()` create?",
+  "options": [
+   "A zoom behavior to apply with `call`",
+   "A scale that makes the chart look larger",
+   "An axis that has a built-in zoom control",
+   "A transition that scales the element"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "37",
+  "question": "What does `d3.brush()` create?",
+  "options": [
+   "A behavior to select an area with the mouse",
+   "A tool that draws free lines on the chart area",
+   "A layout that groups the nearby points in a cluster",
+   "A scale that maps the pixels to colors on a chart"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "38",
+  "question": "Why do many D3 charts use the margin convention?",
+  "options": [
+   "It makes the svg load faster in the browser",
+   "It leaves room inside the svg for axes",
+   "It sets the scale domain in the right way",
+   "It stops the svg from using CSS rules"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "39",
+  "question": "What type of values do you give to the domain of `d3.scaleTime`?",
+  "options": [
+   "Strings in the ISO format only",
+   "Integer indexes of the rows",
+   "Date objects",
+   "Percent values"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "40",
+  "question": "What does `d3.format(\".2f\")(3.14159)` return?",
+  "options": [
+   "\"3.1\"",
+   "\"3.142\"",
+   "\"0.31\"",
+   "\"3.14\""
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "41",
+  "question": "What does `d3.timeFormat(\"%Y-%m-%d\")` return?",
+  "options": [
+   "A date that has the new text format inside",
+   "A scale that maps Date values to pixel positions",
+   "A function that turns a Date into a string",
+   "A parser that turns a date string into a Date"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "42",
+  "question": "What does `x.invert(250)` do on a linear scale?",
+  "options": [
+   "It reverses the order of the domain values",
+   "It maps the range value 250 to the domain",
+   "It maps the domain value 250 to the range",
+   "It makes the scale go from high to low"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "43",
+  "question": "What does `scale.nice()` do?",
+  "options": [
+   "It extends the domain to round values",
+   "It rounds the range to whole pixels",
+   "It adds more ticks to the axis",
+   "It removes values that are not numbers"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "44",
+  "question": "Why does a bar chart often use `range([height, 0])` for the y scale?",
+  "options": [
+   "The scale needs the larger number first in the range",
+   "It makes the bars thinner at the top of the chart",
+   "SVG y grows down, so larger values must go up",
+   "It stops the axis labels from overlap each other"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "What does `d3.sum(data, d => d.value)` return?",
+  "options": [
+   "The sum of the value in every row",
+   "The count of rows that have a value",
+   "The largest value in the rows",
+   "The average of the value field"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "What does `selection.on(\"mouseover\", fn)` do?",
+  "options": [
+   "It adds an event listener to the element",
+   "It calls the function one time, right now",
+   "It removes all other listeners from the elements",
+   "It sets a CSS hover style on each element"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "47",
+  "question": "In D3 version 7, how do you get the mouse position in an event handler?",
+  "options": [
+   "`d3.mouse(this)`",
+   "`d3.event.pageX`",
+   "`event.target.position`",
+   "`d3.pointer(event)`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "48",
+  "question": "What does `selection.node()` return?",
+  "options": [
+   "A new selection that holds the parent elements",
+   "The first non-null DOM element in the selection",
+   "An array that holds all the DOM elements",
+   "The data value that is bound to the first element"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "49",
+  "question": "What does `selection.filter(fn)` do?",
+  "options": [
+   "It returns a selection of the matches",
+   "It removes the non-matching elements from the DOM",
+   "It hides the non-matching elements",
+   "It returns the data of the matching elements"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "What does `d3.range(5)` return?",
+  "options": [
+   "`[1, 2, 3, 4, 5]`",
+   "`[0, 1, 2, 3, 4]`",
+   "`[0, 1, 2, 3, 4, 5]`",
+   "`[5]`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "51",
+  "question": "Your data is reordered, but the bars update with the wrong data. What is the usual cause?",
+  "options": [
+   "The scale has the wrong domain for the new data",
+   "The join matches by index, with no key",
+   "The exit selection runs before the enter selection",
+   "The data array is too long for the existing DOM"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "How do you tell D3 to match the elements to the data by an id?",
+  "options": [
+   "Pass a key: `.data(data, d => d.id)`",
+   "Set the id attribute with `.attr(\"id\")` only",
+   "Call `.sort()` after `.data(data)`",
+   "Use `.datum(d => d.id)`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "53",
+  "question": "What is the difference between `selection.join(\"circle\")` and `enter().append(\"circle\")`?",
+  "options": [
+   "`join` handles only the exit selection of the data",
+   "`join` also handles the update and exit parts",
+   "`join` creates the elements but does not bind any data",
+   "`join` does the same job, but it is much slower"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "54",
+  "question": "A callback is an arrow function and uses `d3.select(this)`. It fails. Why?",
+  "options": [
+   "D3 refuses to call arrow functions as callbacks",
+   "`this` is always the window in D3 version 7",
+   "Arrow functions ignore the `this` D3 sets",
+   "`d3.select` cannot accept `this` as input"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "55",
+  "question": "Code: `svg.selectAll(\"circle\").data(data).attr(\"r\", 3)`. The page is empty at first. What is missing?",
+  "options": [
+   "A call to `exit().remove()` at the end",
+   "A key function in the `data` call here",
+   "A transition on the `r` attribute here",
+   "An `enter()` step to create circles"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "56",
+  "question": "You want a new bar to grow from zero height. What do you do?",
+  "options": [
+   "Use `exit().transition()` on the new bar element",
+   "Set the final height and use a much longer duration",
+   "Set the height to zero first, then transition up",
+   "Call `selection.merge()` before you append the bar"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "You start a second transition on an element, and both use the same name. What happens?",
+  "options": [
+   "The new transition waits for the first to end",
+   "Both transitions run at the same time",
+   "D3 throws an error",
+   "The new transition interrupts the first one"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "58",
+  "question": "What does `xBand.bandwidth()` return?",
+  "options": [
+   "The width of one band",
+   "The space between two bands",
+   "The total width of the range",
+   "The number of categories"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "59",
+  "question": "Why does `d3.scaleLog` fail with the domain `[0, 1000]`?",
+  "options": [
+   "A log scale cannot use a range of pixel values",
+   "A log scale needs a domain with at least three values",
+   "The domain must start with the larger of the two values",
+   "The log of zero is not defined, so zero is invalid"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "60",
+  "question": "You encode a value with the radius of a circle. Which scale shows the value as area?",
+  "options": [
+   "`d3.scaleLinear`",
+   "`d3.scaleLog`",
+   "`d3.scaleQuantize`",
+   "`d3.scaleSqrt`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "What does `d3.stack()` produce?",
+  "options": [
+   "A single path string for all the keys in the data",
+   "For each key, an array of `[y0, y1]` pairs",
+   "A flat array of the sums for each of the keys",
+   "A selection with one g element for each key"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "62",
+  "question": "What does `d3.group(data, d => d.type)` return?",
+  "options": [
+   "A plain object with one count for each type",
+   "An array of arrays that is sorted by type",
+   "A selection with one element for each type",
+   "A Map from each type to an array of rows"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "63",
+  "question": "You want a smooth line. What do you set on the line generator?",
+  "options": [
+   "`line.smooth(true)`",
+   "`line.interpolate(\"monotone\")`",
+   "`line.join(d3.curveMonotoneX)`",
+   "`line.curve(d3.curveBasis)`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "64",
+  "question": "Some data points have `null` values. How do you show a gap in the line?",
+  "options": [
+   "Set `line.defined(d => d.value != null)`",
+   "Filter the data and make the line continuous",
+   "Set the `null` values to zero",
+   "Add `.attr(\"stroke-dasharray\", \"0\")` to the path"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "You call `d3.treemap()(root)`, but the rectangles have no size. What did you forget on the root?",
+  "options": [
+   "A call to `root.sum(d => d.value)`",
+   "A call to `root.sort()` to order the nodes",
+   "A call to `root.copy()` to clone the tree",
+   "A call to `root.links()` to get the links"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "What does a treemap layout add to each node?",
+  "options": [
+   "The values `x`, `y` and `r`",
+   "The values `cx`, `cy` and `width`",
+   "The values `x0`, `y0`, `x1` and `y1`",
+   "The values `left`, `top` and `size` of a box"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "What is the difference between `d3.tree` and `d3.cluster`?",
+  "options": [
+   "`tree` can draw only binary trees",
+   "`cluster` aligns all leaf nodes at one depth",
+   "`cluster` needs a data array that has no links",
+   "`tree` places all the leaf nodes at the same depth"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "68",
+  "question": "A node-link graph has all nodes in one pile. You add `forceManyBody().strength(-30)`. What does the force do?",
+  "options": [
+   "It pulls all the nodes to the center",
+   "It makes the nodes push each other away",
+   "It moves the nodes to the right side",
+   "It makes the nodes stay in their position"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "When do you update the positions of circles for a force simulation?",
+  "options": [
+   "Once, after you create the simulation",
+   "In the `tick` event of the simulation",
+   "In the `end` event of the simulation only",
+   "In a `zoom` event of the svg"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "Your links use string ids in `source` and `target`. What do you set on `forceLink`?",
+  "options": [
+   "`.distance(d => d.id)`",
+   "`.strength(d => d.id)`",
+   "`.links(d => d.id)`",
+   "`.id(d => d.id)`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "What happens to `link.source` after `forceLink` runs with node ids?",
+  "options": [
+   "D3 keeps the id and adds a new field beside it",
+   "D3 swaps the id for the node object",
+   "D3 sets the value to the index of the node",
+   "D3 throws an error for string ids"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "72",
+  "question": "While you drag a node, you call `simulation.alphaTarget(0.3).restart()`. Why?",
+  "options": [
+   "It keeps the simulation warm so nodes move",
+   "It stops the simulation until the drag ends",
+   "It fixes the node at its start position",
+   "It sets the strength of all forces to 0.3"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "73",
+  "question": "How do you keep a node at the mouse position during a drag in a force layout?",
+  "options": [
+   "Set `d.x` and `d.y` one time",
+   "Set `d.vx` and `d.vy` to zero",
+   "Set `d.fx` and `d.fy` for the node",
+   "Set `d.index` to the mouse position"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "74",
+  "question": "You use zoom on an svg. What is the usual zoom handler?",
+  "options": [
+   "`g.attr(\"transform\", event.transform)`",
+   "`svg.attr(\"viewBox\", event.transform.toString())`",
+   "`g.style(\"zoom\", event.transform.k + \"%\")`",
+   "`svg.attr(\"width\", event.transform.k * 100)`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "What does `zoom.scaleExtent([1, 8])` do?",
+  "options": [
+   "It sets the size of the zoom area in pixels",
+   "It limits the pan to eight pixels",
+   "It limits the zoom factor between 1 and 8",
+   "It sets 8 steps for the zoom animation"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "After a zoom, how do you update an x axis that uses the scale `x`?",
+  "options": [
+   "Call `event.transform.rescaleX(x)` for the axis",
+   "Change the range of `x` with the zoom factor `k`",
+   "Call `x.invert(event.transform.k)` and pass it on",
+   "Call `axis.zoom(event.transform)` on the axis group"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "77",
+  "question": "When the user clears a brush, what is `event.selection` in the `end` handler?",
+  "options": [
+   "An empty array",
+   "`[0, 0]`",
+   "`null`",
+   "`undefined`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "78",
+  "question": "What is a safe way to use D3 with React?",
+  "options": [
+   "D3 and React both change the same DOM nodes",
+   "D3 renders all, and React only holds the state",
+   "React renders the elements, and D3 computes",
+   "React renders once, and D3 re-renders on updates"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "79",
+  "question": "In a React function component, where do you run `d3.select(ref.current)` code?",
+  "options": [
+   "In `useEffect`",
+   "In the render body",
+   "In the `return` statement",
+   "In a `useMemo` callback that returns JSX"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "80",
+  "question": "You want to animate the exit of a circle with `join`. How do you do it?",
+  "options": [
+   "Call `remove()` on the selection after the `join` call",
+   "Pass `join` an exit function that uses a transition",
+   "Add `.transition()` before the `.join(\"circle\")` call",
+   "Use `exit()` on the result that `join` returns"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "81",
+  "question": "A chart with 50,000 SVG elements is slow. What is the main reason?",
+  "options": [
+   "D3 sets up a timer for each element in the svg",
+   "SVG cannot use the GPU for any kind of drawing",
+   "Each element is a DOM node that costs memory",
+   "The data join is slower than a plain JavaScript loop"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "82",
+  "question": "How do you draw a D3 line on a canvas?",
+  "options": [
+   "Call `line(data)` and pass the string to `ctx.fillText()` to show it",
+   "Set `line.context(ctx)`, call `line(data)`, then `ctx.stroke()`",
+   "Use `d3.select(canvas).append(\"path\").attr(\"d\", line(data))`",
+   "Set `ctx.d = line(data)` and then call `ctx.draw()` on the canvas"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "You use canvas for a scatter plot. How do you find the point under the mouse fast?",
+  "options": [
+   "Use `d3.quadtree` and call `find`",
+   "Add a click listener to each point you draw",
+   "Loop over all points on each mouse move",
+   "Use `selection.filter` on the canvas"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "Why does `forceManyBody` scale well for large graphs?",
+  "options": [
+   "It checks only the nodes that have links",
+   "It runs the force in a web worker",
+   "It checks each pair of nodes, but it skips fixed nodes",
+   "It uses the Barnes-Hut approximation with a quadtree"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "You want the final layout of a graph, but no animation. What is a good approach?",
+  "options": [
+   "Set `alphaDecay` to 0 and wait for the layout to settle",
+   "Set `alphaTarget` to 1 and draw on each tick event",
+   "Call `simulation.stop()`, then `simulation.tick(300)`",
+   "Call `simulation.restart()` in a loop until it ends"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "86",
+  "question": "In React 18 Strict Mode in development, your D3 effect adds two charts. What is the fix?",
+  "options": [
+   "Remove `StrictMode` from the app in production only",
+   "Add an empty dependency array to the effect call",
+   "Call `d3.select` outside of the component function",
+   "Return a cleanup that removes the chart it made"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "An old force simulation still runs after the React component unmounts. What is the risk and the fix?",
+  "options": [
+   "It can crash React at once; call `simulation.restart()` on unmount",
+   "It leaks the scales only; set the nodes to `null` on unmount",
+   "It keeps running; call `simulation.stop()` in the cleanup",
+   "It has no cost, because D3 stops it after the unmount"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "88",
+  "question": "You transition the `d` attribute of a path between two data sets with different point counts. The shape looks wrong. Why?",
+  "options": [
+   "The transition cannot run on path elements that have a `d` attribute",
+   "D3 sorts the points of the path by x before it draws them",
+   "The easing function changes the order of the path points in time",
+   "The default interpolation blends the numbers in the strings"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "89",
+  "question": "A force layout runs on a React state array that Immer made read-only. It fails. Why?",
+  "options": [
+   "The simulation needs the nodes in a Map, not in an array",
+   "The simulation writes `x` and `y` into the node objects",
+   "Immer removes the `index` field from each node object",
+   "The simulation can read only arrays of plain numbers"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "90",
+  "question": "Why do 5,000 simultaneous transitions cost much CPU per frame?",
+  "options": [
+   "Each tick runs interpolators and sets attributes in JavaScript",
+   "Each transition starts a new web worker that does the work for it",
+   "D3 forces a full layout of the whole page for each transition",
+   "Each transition adds its own new timer to the browser event queue"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "A mousemove handler searches 100,000 sorted dates for the nearest point. What is the best change?",
+  "options": [
+   "Use `array.find` and stop at the first match",
+   "Cache all the dates in a Set object",
+   "Call `d3.extent` on the dates for every event",
+   "Use `d3.bisector` to do a binary search"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "92",
+  "question": "What does `treemap(root)` do to the `root` object?",
+  "options": [
+   "It changes the nodes and sets the position fields",
+   "It makes a deep copy and returns the copy",
+   "It returns a flat array without a change to the root",
+   "It freezes the root and returns it"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "On a high-DPI screen your canvas chart looks blurry. What is the standard fix?",
+  "options": [
+   "Use a thinner `lineWidth` for all the strokes that you draw on it",
+   "Scale the canvas size by `devicePixelRatio` and the context",
+   "Set `image-rendering: pixelated` for the canvas element",
+   "Call `ctx.save()` before you start each new draw call"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "94",
+  "question": "How do you apply a D3 zoom transform `t` when you draw on a canvas?",
+  "options": [
+   "Set the `transform` attribute of the canvas element to the value `t`",
+   "Call `ctx.translate` and `ctx.scale` with `t` before you draw",
+   "Call `canvas.zoom(t)` on the drawing context of the canvas",
+   "Change the width and the height of the canvas by the factor `t.k`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "In a React chart, each zoom event sets state, and the chart is slow. What is a better design?",
+  "options": [
+   "Apply the transform to the `g` with a ref, and avoid state",
+   "Debounce the state updates and keep the result in `useMemo` for reuse",
+   "Move the zoom code into the render function of the component",
+   "Call `forceUpdate` for each zoom event to refresh the whole chart"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "96",
+  "question": "A wheel zoom on an svg blocks the page scroll. How do you fix this?",
+  "options": [
+   "Set `zoom.scaleExtent([1, 1])` so that the zoom has no effect",
+   "Call `event.stopPropagation()` on the body element of the page",
+   "Use `zoom.filter` to allow wheel events only with Ctrl",
+   "Set `pointer-events: none` on the svg element and its children"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "Why does a force simulation stop on its own?",
+  "options": [
+   "The tick count reaches a fixed limit of 300 ticks",
+   "Alpha decays to `alphaMin`, then it stops",
+   "The nodes reach zero velocity and all of them stop",
+   "The browser pauses the animation frame after a time"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "You call `d3.select(\"#chart\").selectAll(\"*\").remove()` in each render and rebuild. What is the main trade-off?",
+  "options": [
+   "It is fast, but it leaks the event listeners of old nodes",
+   "It works only for canvas charts and not for SVG charts",
+   "It is simple, but you lose transitions and rebuild nodes",
+   "It keeps the data bound, but it breaks the existing scales"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "Why do D3 transitions run on `d3.timer` and not on many `setInterval` calls?",
+  "options": [
+   "The browser limits `setInterval` to 10 calls in a page",
+   "`setInterval` cannot change the attributes of SVG elements",
+   "`d3.timer` runs the code in a web worker thread",
+   "All animations share one `requestAnimationFrame` loop"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "Your band scale gives blurry bars with fractional pixel positions. What helps?",
+  "options": [
+   "Call `band.round(true)` for whole pixel positions",
+   "Set the `padding` of the band scale to zero",
+   "Round the `bandwidth()` value in each attribute call",
+   "Use `scalePoint` instead of the band scale here"
+  ],
+  "correct_index": 0
+ }
+]

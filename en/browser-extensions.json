@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "Which file is required in every browser extension and describes its name, version, and permissions?",
+  "options": [
+   "package.json",
+   "extension.config.js",
+   "background.html",
+   "manifest.json"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "2",
+  "question": "Which `manifest_version` must a new extension use to join the Chrome Web Store today?",
+  "options": [
+   "1",
+   "3",
+   "2",
+   "4"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "In Manifest V3 for Chrome, what runs the background logic of an extension?",
+  "options": [
+   "A service worker",
+   "A persistent background page",
+   "A hidden popup window",
+   "An offscreen tab"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "4",
+  "question": "What is a content script?",
+  "options": [
+   "JavaScript that Chrome runs only inside the extension popup",
+   "JavaScript that the web server adds to its own page",
+   "JavaScript that Chrome injects into web pages",
+   "JavaScript that the user types in the DevTools console"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "5",
+  "question": "Which API stores small data for an extension in the browser?",
+  "options": [
+   "window.sessionData",
+   "chrome.storage",
+   "chrome.memory",
+   "document.cookie"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "6",
+  "question": "Which permission must the manifest declare to use `chrome.storage`?",
+  "options": [
+   "database",
+   "browserData",
+   "storage",
+   "localStorage"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "7",
+  "question": "Which storage area can sync data to other devices where the user is signed in?",
+  "options": [
+   "chrome.storage.local",
+   "chrome.storage.session",
+   "chrome.storage.managed",
+   "chrome.storage.sync"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "What is the main property of `chrome.storage.session`?",
+  "options": [
+   "It keeps data in memory until the browser closes",
+   "It saves the data on disk and keeps it after a restart",
+   "It syncs the data to every device of the signed-in user",
+   "It stores the data as read-only values for all pages"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "9",
+  "question": "Which method does a content script call to send a one-time message to the extension background?",
+  "options": [
+   "chrome.tabs.sendMessage",
+   "chrome.runtime.sendMessage",
+   "window.postBackground",
+   "chrome.background.send"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "10",
+  "question": "Which method sends a message from the background to the content script in one specific tab?",
+  "options": [
+   "chrome.tabs.sendMessage",
+   "chrome.runtime.sendMessage",
+   "chrome.windows.send",
+   "chrome.scripting.post"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "11",
+  "question": "Which manifest key declares the scripts that Chrome injects into matching pages?",
+  "options": [
+   "web_scripts",
+   "inject_files",
+   "page_scripts",
+   "content_scripts"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "12",
+  "question": "What does the `matches` array in a content script entry define?",
+  "options": [
+   "The file names that the script is allowed to load",
+   "The page messages that the script is allowed to read",
+   "The URL patterns where the script runs",
+   "The tabs that the user must select before injection"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "13",
+  "question": "What is the default value of `run_at` for a content script?",
+  "options": [
+   "document_start",
+   "document_end",
+   "window_load",
+   "document_idle"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "14",
+  "question": "What does the `action` key in an MV3 manifest define?",
+  "options": [
+   "The background worker file and its life cycle events",
+   "The keyboard commands and the options page address",
+   "The toolbar icon and its popup",
+   "The list of pages that the extension can open"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "15",
+  "question": "How do you load an unpacked extension to test it in Chrome?",
+  "options": [
+   "Turn on Developer mode on chrome://extensions and click Load unpacked",
+   "Rename the folder to .crx and open the file in Chrome",
+   "Copy the folder into the Chrome profile directory by hand",
+   "Run chrome --install-extension in the extension folder"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "Where do you open the DevTools for the MV3 service worker of your extension?",
+  "options": [
+   "The Network panel of the DevTools of the active tab",
+   "The service worker link on chrome://extensions",
+   "The Application panel of the DevTools of the popup",
+   "The background page link on the Chrome task manager"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "17",
+  "question": "What is the options page of an extension?",
+  "options": [
+   "A page that Chrome opens on the first run of any tab",
+   "A page that lists the permission warnings for users",
+   "A page where the user changes the settings",
+   "A page that shows the errors of the extension code"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "18",
+  "question": "Which manifest key lists the sites that an extension can access with APIs like `fetch` in MV3?",
+  "options": [
+   "host_permissions",
+   "site_access",
+   "url_permissions",
+   "allowed_hosts"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "What does the `activeTab` permission give an extension?",
+  "options": [
+   "Permanent access to all open tabs and their history",
+   "Temporary access to the current tab after a user action",
+   "Access to every tab in all windows until browser restart",
+   "Access to the cookies of all sites the user visited"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "What does the `tabs` permission add for `chrome.tabs` results?",
+  "options": [
+   "The right to create, move, and close browser tabs",
+   "The right to read the cookies that each tab uses",
+   "The right to inject scripts in every open tab",
+   "Access to sensitive fields like `url` and `title`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "What does `chrome.tabs.query({ active: true, currentWindow: true })` return?",
+  "options": [
+   "A single tab object for the focused tab",
+   "The numeric ID of the tab that has focus",
+   "An array of matching tab objects",
+   "A promise that resolves with the HTML of the page"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "22",
+  "question": "What happens to an extension popup when the user clicks outside of it?",
+  "options": [
+   "The popup moves to the background and keeps its state",
+   "The popup opens again in a new tab at once",
+   "The popup stays open until the user closes it",
+   "The popup closes and its page is destroyed"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "23",
+  "question": "Which method opens a new browser tab from the extension code?",
+  "options": [
+   "chrome.tabs.create",
+   "window.open in the worker",
+   "chrome.windows.tab",
+   "chrome.runtime.openTab"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "24",
+  "question": "Which namespace do Firefox WebExtensions use for the promise-based API?",
+  "options": [
+   "firefox",
+   "browser",
+   "moz",
+   "webext"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "25",
+  "question": "How do you prepare an extension to upload to the Chrome Web Store?",
+  "options": [
+   "Sign the folder with a Google certificate",
+   "Make a ZIP file of the extension folder",
+   "Build an EXE installer",
+   "Send the source code to Google by email"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "26",
+  "question": "Which URL scheme do pages of a Chrome extension use?",
+  "options": [
+   "extension://",
+   "chrome-extension://",
+   "chrome://",
+   "moz-extension://"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "27",
+  "question": "What does `web_accessible_resources` do?",
+  "options": [
+   "It lets the extension read files from any web site",
+   "It makes the extension work when the user is offline",
+   "It lets web pages load chosen files from the extension",
+   "It shows the listed files on the store page"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "What happens to `chrome.action.onClicked` when the manifest sets `default_popup`?",
+  "options": [
+   "The popup opens and the event does not fire",
+   "The event fires first, then the popup opens",
+   "The event fires only after a right-click",
+   "The event fires only when the popup closes"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "29",
+  "question": "What does `chrome.runtime.getURL('icon.png')` return?",
+  "options": [
+   "The path of the file in the folder on the disk",
+   "The URL of the page that is now active",
+   "The ID string of the extension that owns the file",
+   "The full URL of a file in the extension"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "Which permission does an extension need to add items to the right-click menu?",
+  "options": [
+   "contextMenus",
+   "rightClick",
+   "menus.add",
+   "browserMenu"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "31",
+  "question": "Can an MV3 extension load and run JavaScript code that is hosted on a remote server?",
+  "options": [
+   "Yes, if the remote server uses HTTPS and a valid certificate",
+   "Yes, if the user accepts a prompt at install",
+   "No, all the code must be in the package",
+   "Yes, but only in the popup and the options page"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "Which API injects a script into a tab from the background code in MV3?",
+  "options": [
+   "chrome.tabs.executeScript",
+   "chrome.scripting.executeScript",
+   "chrome.runtime.inject",
+   "chrome.pages.runScript"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "What is the first argument of `chrome.tabs.sendMessage`?",
+  "options": [
+   "The ID of the target tab",
+   "The ID of the extension",
+   "A URL pattern of the tab",
+   "The file name of the content script"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "34",
+  "question": "Which Chrome API can a content script NOT use?",
+  "options": [
+   "chrome.runtime",
+   "chrome.storage",
+   "chrome.tabs",
+   "chrome.i18n"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "Which method adds a handler for incoming extension messages?",
+  "options": [
+   "chrome.runtime.onMessage.addListener",
+   "chrome.runtime.listen",
+   "chrome.messages.subscribe",
+   "window.onExtensionMessage"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "36",
+  "question": "Where must you add event listeners in an MV3 service worker?",
+  "options": [
+   "Inside a `DOMContentLoaded` handler",
+   "Inside a `setTimeout` call",
+   "Only inside the `onInstalled` handler",
+   "At the top level of the script"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "37",
+  "question": "Why does `localStorage` not work in an MV3 service worker?",
+  "options": [
+   "Chrome blocks it in workers for security reasons only",
+   "A service worker has no `window` or DOM storage",
+   "It needs the `storage` permission in the manifest",
+   "It works only in the Firefox browser, not in Chrome"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "38",
+  "question": "What is the purpose of `optional_permissions` in the manifest?",
+  "options": [
+   "To remove the permission after a fixed time",
+   "To give the permission to content scripts only",
+   "To hide the permission warning from the install dialog",
+   "To ask the user for a permission later at run time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "Which API sets the text on the badge of the toolbar icon?",
+  "options": [
+   "chrome.action.setBadgeText",
+   "chrome.action.setTitle",
+   "chrome.runtime.setBadge",
+   "chrome.tabs.setBadgeText"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "When does `chrome.runtime.onInstalled` fire?",
+  "options": [
+   "On install, on update, and on a Chrome update",
+   "Only when the user starts the browser each day",
+   "Each time a tab loads a page that matches",
+   "Each time the user opens the popup of the extension"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "41",
+  "question": "Which API shows a system notification from an extension?",
+  "options": [
+   "chrome.alerts",
+   "chrome.runtime.toast",
+   "chrome.windows.notify",
+   "chrome.notifications"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "42",
+  "question": "Which manifest key defines keyboard shortcuts for an extension?",
+  "options": [
+   "commands",
+   "shortcuts",
+   "hotkeys",
+   "keybindings"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "43",
+  "question": "How do you load a temporary extension for tests in Firefox?",
+  "options": [
+   "Use about:config and set a developer flag to true",
+   "Use about:debugging and Load Temporary Add-on",
+   "Drag the extension folder to the Firefox icon",
+   "Use the Firefox Add-ons store and choose a draft add-on"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "44",
+  "question": "Which manifest key sets the add-on ID that Firefox needs for some APIs?",
+  "options": [
+   "firefox_id",
+   "applications.gecko.name",
+   "browser_specific_settings.gecko.id",
+   "gecko_extension_key"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "Does an extension run in Incognito windows by default?",
+  "options": [
+   "Yes, with the same permissions as in normal windows",
+   "No, the user must turn on Allow in Incognito",
+   "Yes, if the manifest has the `incognito` key",
+   "No, Incognito windows never run extensions"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "46",
+  "question": "What does the `web-ext` command line tool do?",
+  "options": [
+   "It signs the extensions for the Chrome Web Store",
+   "It runs, lints, and builds WebExtensions",
+   "It converts MV2 code to MV3 code by itself",
+   "It hosts the extension on a local web test server"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "47",
+  "question": "Which permissions does an extension need to read the cookies of a website?",
+  "options": [
+   "tabs and storage",
+   "webRequest and history",
+   "cookies and a host permission for the site",
+   "cookies only, with no site access"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "48",
+  "question": "In MV3, what does `chrome.storage.local.get('key')` return when you pass no callback?",
+  "options": [
+   "The stored value at once",
+   "An event object",
+   "A promise",
+   "Nothing; a callback is required"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "49",
+  "question": "What does `chrome.runtime.lastError` show in a callback-based API call?",
+  "options": [
+   "The last message that the worker received",
+   "The last error of the web page",
+   "The number of failed installs",
+   "The error from the last failed API call"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "50",
+  "question": "Which event fires when a value in `chrome.storage` changes?",
+  "options": [
+   "chrome.storage.onUpdate",
+   "chrome.runtime.onStorage",
+   "chrome.storage.onChanged",
+   "chrome.storage.onSet"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "51",
+  "question": "A service worker keeps a counter in a global variable. After some time, the counter resets to zero. Why?",
+  "options": [
+   "Chrome stops the idle worker and loses its memory",
+   "Chrome clears the variable on each tab load",
+   "The variable is local to the last handled message",
+   "The worker restarts at each alarm and resets all code"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "52",
+  "question": "Find the bug:\n`onMessage.addListener((m, s, send) => {\n  fetch(m.url).then(r => r.json()).then(send);\n});`",
+  "options": [
+   "The listener must call `send` two times for each message",
+   "The listener must return true to keep the channel open",
+   "The fetch call needs the tabs permission to run",
+   "The `send` function works only inside an `await` call"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "53",
+  "question": "Why do you use `chrome.alarms` and not `setInterval` for repeated work in a service worker?",
+  "options": [
+   "`setInterval` is not defined in a service worker",
+   "The worker can stop, and an alarm wakes it again",
+   "Alarms run more often and faster than timers do",
+   "`setInterval` needs the alarms permission to run"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "54",
+  "question": "What does it mean that a content script runs in an isolated world?",
+  "options": [
+   "It has its own copy of the DOM of the page",
+   "It runs in a process that has no DOM access",
+   "It can read page variables but not the page DOM",
+   "It has its own JS globals but shares the page DOM"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "55",
+  "question": "A content script must read `window.appConfig` that the page defines. What is a correct way?",
+  "options": [
+   "Run a script with `world: 'MAIN'`",
+   "Read `window.appConfig` directly in the content script",
+   "Use `eval` in the isolated world",
+   "Ask the service worker to read it"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "What is the main difference between `declarativeNetRequest` and blocking `webRequest`?",
+  "options": [
+   "The extension code can edit each request in JavaScript before it leaves",
+   "The rules work only for HTTPS requests to known hosts",
+   "The browser applies the rules without extension code seeing the request",
+   "The rules must be loaded from a remote server at start"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "What is the difference between static and dynamic rules in `declarativeNetRequest`?",
+  "options": [
+   "Static rules run first; dynamic rules run only in incognito mode",
+   "Static rules come from files in the package; dynamic rules are set at run time",
+   "Static rules block requests; dynamic rules can only redirect them",
+   "Static rules need no permission; dynamic rules need host access"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "58",
+  "question": "A popup page in MV3 has an inline `<script>alert(1)</script>`. What happens?",
+  "options": [
+   "The script runs but cannot use chrome APIs",
+   "The script runs only in developer mode",
+   "The store rejects the extension at upload",
+   "The default CSP blocks the inline script"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "59",
+  "question": "Which permissions does `chrome.scripting.executeScript` need to inject into a site?",
+  "options": [
+   "the tabs permission only",
+   "the scripting permission only",
+   "scripting plus webNavigation and tabs",
+   "scripting plus a host permission or activeTab"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "60",
+  "question": "When do you use `chrome.runtime.connect` and not `sendMessage`?",
+  "options": [
+   "When two sides must exchange many messages on one channel",
+   "When you need to send a message to another extension only",
+   "When the message is larger than one megabyte",
+   "When you want to avoid the CSP"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "61",
+  "question": "A developer saves 1 MB of data with `chrome.storage.sync.set`. What is the likely result?",
+  "options": [
+   "The call fails with a quota error",
+   "Chrome saves only the first 100 KB",
+   "Chrome saves it in local storage instead",
+   "The call works but sync is slow"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "62",
+  "question": "A single-page app changes the URL with `history.pushState`. Why does the content script not run again?",
+  "options": [
+   "Content scripts run only once for each browser session",
+   "No new page load happens, so no new injection",
+   "The pushState call blocks injection",
+   "The script needs the history permission"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "63",
+  "question": "What does `\"all_frames\": true` do in a content script entry?",
+  "options": [
+   "It injects the script in all open tabs of the window",
+   "It injects the script in all browser windows at once",
+   "It injects the script in matching iframes too",
+   "It runs the script for all URL schemes, even file URLs"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "64",
+  "question": "A web page needs to send a message to your extension. Which manifest key allows this?",
+  "options": [
+   "web_accessible_resources",
+   "host_permissions",
+   "content_security_policy",
+   "externally_connectable"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "65",
+  "question": "In MV3, where should you call `fetch` to a cross-origin API to avoid the page CORS rules?",
+  "options": [
+   "In the service worker with matching host permissions",
+   "In the content script, with no change to the code",
+   "In the page itself, with a CORS proxy server",
+   "In the popup page, with only the tabs permission"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "Which background setting does Firefox MV3 support in place of `background.service_worker`?",
+  "options": [
+   "background.page with persistent true",
+   "background.worker as a shared worker",
+   "background.module as a service",
+   "background.scripts as an event page"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "67",
+  "question": "An extension asks for `<all_urls>` but only works on one site. What is the likely outcome in the store review?",
+  "options": [
+   "A faster review, because the code is simple and short",
+   "A longer review or a rejection for too broad access",
+   "An automatic limit of the access to the active tab",
+   "No effect on the review, because the permission is common"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "68",
+  "question": "How do you run test code in the isolated world of a content script from the page DevTools?",
+  "options": [
+   "Type the code in the Network panel of the DevTools",
+   "Use the Application panel of the DevTools of the page",
+   "Choose the extension in the context list of the Console",
+   "Reload the tab with the Developer mode switched off"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "69",
+  "question": "You upload a new package with the same `version` as the live one. What happens?",
+  "options": [
+   "The store replaces the live package at once",
+   "The store keeps both versions and asks users to choose",
+   "The store accepts it after a manual check of the code",
+   "The store rejects it; the version must increase"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "70",
+  "question": "A content script cannot read `chrome.storage.session`. What is the cause?",
+  "options": [
+   "The default access level allows only trusted contexts",
+   "Session storage works only inside the popup page",
+   "The data is older than the current browser session",
+   "The script needs the cookies permission for this area"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "71",
+  "question": "Why do you create an offscreen document in MV3?",
+  "options": [
+   "To show a hidden popup window to the user",
+   "To use DOM APIs that the service worker does not have",
+   "To keep the service worker alive for ever",
+   "To load remote scripts in a safe sandbox for the worker"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "72",
+  "question": "A content script adds a widget to a page. How do you protect the widget from the page CSS?",
+  "options": [
+   "Use `!important` on all rules",
+   "Load the CSS in the service worker",
+   "Put the widget in a Shadow DOM",
+   "Use a very long class name"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "Can a normal MV3 extension block network requests with `webRequest` and `webRequestBlocking`?",
+  "options": [
+   "Yes, if it has host permissions",
+   "Yes, if the user turns on Developer mode",
+   "Yes, but only for images",
+   "No, it must use declarativeNetRequest"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "74",
+  "question": "A new version of an extension asks for a new permission with a warning. What does Chrome do?",
+  "options": [
+   "It disables the extension until the user accepts",
+   "It adds the permission with no prompt to the user",
+   "It keeps the old version for 30 days, then updates",
+   "It asks the user at the next install of the extension"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "When must you call `chrome.permissions.request` for an optional permission?",
+  "options": [
+   "Only in the service worker at the browser startup",
+   "Only in the `onInstalled` handler of the worker",
+   "In a handler of a user action like a click",
+   "In a content script, when the page finishes its load"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "An extension calls `chrome.contextMenus.create` at the top level of the worker. Later it shows a duplicate ID error. Why?",
+  "options": [
+   "The create call is not allowed inside a service worker",
+   "The code runs on each worker start, but menus persist",
+   "The menu ID must be a number and not a string",
+   "The menu is created before the manifest is fully loaded"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "77",
+  "question": "Why does `chrome.tabs.onUpdated` often call your handler many times for one page load?",
+  "options": [
+   "It fires once for each frame request of the page",
+   "It fires again each time the user opens the popup",
+   "It fires once for each content script that is injected",
+   "It fires for each change, like status, title, and favicon"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "78",
+  "question": "Does `https://*.example.com/*` match `https://example.com/`?",
+  "options": [
+   "No, a subdomain must be in the URL for a match",
+   "Yes, the host wildcard also matches the bare domain",
+   "Yes, but only when the extension has the tabs permission",
+   "No, because the URL scheme of the pattern is different"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "What is the problem with `\"run_at\": \"document_start\"` when your script uses `document.body`?",
+  "options": [
+   "The body is always empty after a page reload",
+   "The script runs in the wrong frame of the page",
+   "The body can be null because the DOM is not built yet",
+   "The script cannot use the DOM at this stage at all"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "80",
+  "question": "A developer puts a private API key in the background script. Why is this a risk?",
+  "options": [
+   "Anyone can unpack the extension and read the key",
+   "Chrome removes the key from the package at upload",
+   "The key works only in developer mode of Chrome",
+   "The service worker hides the key from all users"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "81",
+  "question": "A service worker handler runs a task that needs 10 minutes in Chrome. What does Chrome do?",
+  "options": [
+   "It stops the worker after a single event takes over 5 minutes",
+   "It lets the worker run until the task ends by itself",
+   "It pauses the task and resumes it after a restart",
+   "It moves the task to an offscreen document at once"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "82",
+  "question": "A service worker gets `{type:'delete', id}` from a content script. What is the safest design?",
+  "options": [
+   "Trust it, because only your own content script sends it",
+   "Trust it when the `sender.tab` field is present",
+   "Treat the message as untrusted and check the sender and the data",
+   "Trust it when the page uses HTTPS and a valid origin"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "83",
+  "question": "Two `declarativeNetRequest` rules with the same priority match one request: one `block` and one `allow`. Which one wins?",
+  "options": [
+   "The block rule",
+   "The allow rule",
+   "The rule with the lower ID",
+   "The rule that the extension added last"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "84",
+  "question": "How can you see which `declarativeNetRequest` rules match during development?",
+  "options": [
+   "Use `webRequest.onBeforeRequest` in a packed extension build",
+   "Read the rule log in the console of the service worker",
+   "Use the `getMatchedRules` call in a content script of the tab",
+   "Use `onRuleMatchedDebug` in an unpacked extension with feedback permission"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "What is a manifest `sandbox` page used for?",
+  "options": [
+   "To run the page with full API access and a strict CSP",
+   "To run code like `eval` in a page with no extension API access",
+   "To store data that other extensions cannot read",
+   "To test the extension before it goes to the store review"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "86",
+  "question": "Which permissions does a `redirect` rule in `declarativeNetRequest` need?",
+  "options": [
+   "Only the declarativeNetRequest permission",
+   "declarativeNetRequest plus host permissions for the URLs",
+   "webRequest plus webRequestBlocking",
+   "activeTab after a user click"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "87",
+  "question": "Why do you set the `key` field in the manifest of an unpacked extension?",
+  "options": [
+   "It signs the code so the store accepts the package",
+   "It encrypts the local storage of the extension",
+   "It grants the extension all host permissions at install",
+   "It keeps the same extension ID on all machines"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "88",
+  "question": "A user updates an extension. An old tab shows `Extension context invalidated` errors from its content script. What is the cause?",
+  "options": [
+   "The new version removed all the data in the storage",
+   "The tab blocks the new service worker from starting",
+   "The old script still runs but its link to the extension is gone",
+   "The manifest of the new version has an invalid match pattern"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "A module service worker (`\"type\": \"module\"`) calls `importScripts('lib.js')`. What happens?",
+  "options": [
+   "It works, but only for local files",
+   "It works if the file is a web accessible resource",
+   "It works, but loads the file twice",
+   "It fails; you must use static `import` instead"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "90",
+  "question": "An extension must act on sites that the user picks at run time. What is the best permission design?",
+  "options": [
+   "Declare `<all_urls>` and ignore it until it is needed",
+   "Use `optional_host_permissions` and request each site on demand",
+   "Declare `activeTab` and store the tab ID for later",
+   "Declare the `tabs` permission and check each page URL"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "91",
+  "question": "The user adds new target sites in the options page. How do you inject a content script there after a restart?",
+  "options": [
+   "Add the new sites to the manifest file at run time",
+   "Call `executeScript` once and save the result for later",
+   "Use `chrome.scripting.registerContentScripts` with the new matches",
+   "Use `tabs.onUpdated` and `eval` the code saved in storage"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "92",
+  "question": "An MV3 extension page loads a WebAssembly module and the CSP blocks it. What is the correct fix?",
+  "options": [
+   "Add `'wasm-unsafe-eval'` to the `script-src` of the CSP",
+   "Add `'unsafe-eval'` to the `script-src` directive of the CSP",
+   "Add the remote host of the module to the `script-src` list",
+   "Move the page to the `sandbox` list and keep the default CSP"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "A content script uses `window.addEventListener('message', ...)` to get data from the page. What must the handler check?",
+  "options": [
+   "That the event has a `type` field and nothing else",
+   "That the page URL uses HTTPS and not HTTP only",
+   "That `event.source === window` and the data has the expected shape",
+   "That the extension has the tabs permission in the manifest"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "94",
+  "question": "What does `chrome.scripting.executeScript` resolve with?",
+  "options": [
+   "The return value of the injected function only",
+   "An array of results, one for each injected frame",
+   "A boolean that tells if the injection worked",
+   "The DOM tree of the target frame"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "A script with `world: 'MAIN'` calls `chrome.storage.local.get`. What happens?",
+  "options": [
+   "The call works because of the host permissions",
+   "The call works only in an incognito window",
+   "The call works but returns old data from the cache",
+   "The chrome extension APIs are not available there"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "96",
+  "question": "You change the shape of the data in `chrome.storage` in a new version. Where do you run the migration?",
+  "options": [
+   "In the popup, when the user opens it the first time",
+   "In `onInstalled` when the reason is `update`, using `previousVersion`",
+   "In a content script on the first page that loads",
+   "In the store dashboard, before the upload of the package"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "97",
+  "question": "What must a Firefox developer do to give a release build to users outside of the AMO listing?",
+  "options": [
+   "Sign it with a self-made certificate",
+   "Set the `xpinstall.signatures.required` flag for all users",
+   "Submit it to AMO for signing as an unlisted add-on",
+   "Zip it and ask users to use about:config"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "98",
+  "question": "Since Chrome 116, how can an open WebSocket affect the MV3 service worker?",
+  "options": [
+   "Active messages on the connection reset the idle timer",
+   "The worker stops as soon as the socket is opened",
+   "The worker keeps running even if there are no messages",
+   "WebSockets are not allowed in a service worker at all"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "99",
+  "question": "An extension has `content_scripts` matches for `https://a.com/*` but no `host_permissions`. Does the script inject in MV3?",
+  "options": [
+   "No, the manifest is invalid",
+   "Yes, the matches alone allow the injection",
+   "No, it needs `activeTab` for each page",
+   "Yes, but only after the user accepts a prompt"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "100",
+  "question": "`tabs.sendMessage` fails with `Receiving end does not exist` on a tab that was open before install. Why?",
+  "options": [
+   "The tab uses a different extension ID than the worker",
+   "The message is larger than the allowed size limit",
+   "The tabs permission is missing from the manifest file",
+   "No content script exists in that tab yet"
+  ],
+  "correct_index": 3
+ }
+]

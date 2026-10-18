@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What does the `<!DOCTYPE html>` declaration do?",
+  "options": [
+   "It makes the browser use standards mode",
+   "It tells the browser to stop on any markup error",
+   "It sets the character set of the page",
+   "It tells the server to send HTML"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "2",
+  "question": "Which element sets the title shown in the browser tab?",
+  "options": [
+   "`<h1>`",
+   "`<header>`",
+   "`<meta>`",
+   "`<title>`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "3",
+  "question": "Which element is for the main navigation links of a site?",
+  "options": [
+   "`<menu>`",
+   "`<aside>`",
+   "`<nav>`",
+   "`<header>`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "4",
+  "question": "Which attribute gives a text alternative for an image?",
+  "options": [
+   "`title`",
+   "`name`",
+   "`caption`",
+   "`alt`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "5",
+  "question": "Which element is the best choice for the main heading of a page?",
+  "options": [
+   "`<title>`",
+   "`<header>`",
+   "`<h1>`",
+   "`<strong>`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "6",
+  "question": "What does `<label for=\"email\">` do?",
+  "options": [
+   "It links the label to the control with id `email`",
+   "It sets the name of the control to `email` for the submit",
+   "It validates the control with id `email`",
+   "It hides the control with id `email`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "7",
+  "question": "Which input type makes the browser check for an email format?",
+  "options": [
+   "`type=\"mail\"`",
+   "`type=\"text\"`",
+   "`type=\"address\"`",
+   "`type=\"email\"`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "Which attribute stops a form from submitting when a field is empty?",
+  "options": [
+   "`required`",
+   "`mandatory`",
+   "`validate`",
+   "`nonempty`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "9",
+  "question": "What does `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">` do?",
+  "options": [
+   "It sets the layout width to the device width",
+   "It makes the page fit on one screen with no scroll",
+   "It blocks the user from zoom on mobile",
+   "It loads a mobile version of the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "10",
+  "question": "Which element is for a self-contained item, such as a blog post?",
+  "options": [
+   "`<section>`",
+   "`<article>`",
+   "`<div>`",
+   "`<main>`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "11",
+  "question": "What does `target=\"_blank\"` do on a link?",
+  "options": [
+   "It opens the link in the same frame as the page",
+   "It opens the link in a pop-up dialog",
+   "It opens the link in a new tab or window",
+   "It downloads the file at the link"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "12",
+  "question": "Which element makes a numbered list?",
+  "options": [
+   "`<ul>`",
+   "`<nl>`",
+   "`<ol>`",
+   "`<dl>`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "13",
+  "question": "Which tag sets UTF-8 as the character encoding of a page?",
+  "options": [
+   "`<meta encoding=\"utf-8\">`",
+   "`<meta lang=\"utf-8\">`",
+   "`<meta charset=\"utf-8\">`",
+   "`<link charset=\"utf-8\">`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "14",
+  "question": "What does the `defer` attribute do on an external script?",
+  "options": [
+   "It runs the script after the HTML is parsed",
+   "It runs the script before the HTML is parsed",
+   "It loads the script only after a user click",
+   "It loads the script after the page is shown"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "15",
+  "question": "What does the `async` attribute do on an external script?",
+  "options": [
+   "It runs the script when it is ready, in any order",
+   "It runs the script after the HTML is fully parsed",
+   "It runs the script in a separate thread",
+   "It runs the script in the order of the tags"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "What is special about `<script type=\"module\">`?",
+  "options": [
+   "It runs before the HTML parser starts to read the page",
+   "It runs in a separate worker thread",
+   "It is deferred by default and can use `import`",
+   "It can use `import` only in the `<head>`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "17",
+  "question": "Which attribute limits the number of characters in a text field?",
+  "options": [
+   "`maxcharacters`",
+   "`limit`",
+   "`size`",
+   "`maxlength`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "18",
+  "question": "What does `loading=\"lazy\"` do on an `<img>`?",
+  "options": [
+   "It delays the load until the image is near the viewport",
+   "It loads the image first with a lower quality",
+   "It loads the image only after all the scripts on the page run",
+   "It shows a blur until the user clicks it"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "What does the `<br>` element do?",
+  "options": [
+   "It makes a new paragraph with a margin",
+   "It makes a line break inside text",
+   "It draws a horizontal line",
+   "It makes the text bold"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "Which element is a direct child of `<ul>`?",
+  "options": [
+   "`<ul>`",
+   "`<item>`",
+   "`<p>`",
+   "`<li>`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "Which element is for a header cell in a table?",
+  "options": [
+   "`<thead>`",
+   "`<td>`",
+   "`<caption>`",
+   "`<th>`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "Which element is for the footer of a page or a section?",
+  "options": [
+   "`<bottom>`",
+   "`<aside>`",
+   "`<footer>`",
+   "`<section>`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "23",
+  "question": "How many visible `<main>` elements can a page have?",
+  "options": [
+   "Two",
+   "One",
+   "As many as there are sections",
+   "One for each `<article>`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "24",
+  "question": "Which element is for content related to the main content, such as a sidebar?",
+  "options": [
+   "`<nav>`",
+   "`<section>`",
+   "`<sidebar>`",
+   "`<aside>`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "25",
+  "question": "Which attribute makes a checkbox selected when the page loads?",
+  "options": [
+   "`selected`",
+   "`active`",
+   "`value`",
+   "`checked`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "Which element gives the list of choices inside a `<select>`?",
+  "options": [
+   "`<item>`",
+   "`<choice>`",
+   "`<option>`",
+   "`<li>`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "27",
+  "question": "Which element makes a multi-line text field?",
+  "options": [
+   "`<input type=\"multiline\">`",
+   "`<textarea>`",
+   "`<text>`",
+   "`<input type=\"area\">`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "28",
+  "question": "What is the `name` attribute of an input used for?",
+  "options": [
+   "It is the label text that is shown above the input",
+   "It is the key of the value in the submitted data",
+   "It is the unique id for the CSS selector",
+   "It is the hint shown in an empty input"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "29",
+  "question": "A form uses `method=\"get\"`. Where does the browser put the data?",
+  "options": [
+   "In the URL query string",
+   "In the body of the HTTP request",
+   "In a cookie header",
+   "In the URL fragment"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "30",
+  "question": "What does the link `<a href=\"#contact\">` do?",
+  "options": [
+   "It opens a page named `contact`",
+   "It scrolls to the element with id `contact`",
+   "It sends a form named `contact`",
+   "It reloads the page with a `contact` parameter"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "What do `<details>` and `<summary>` make without JavaScript?",
+  "options": [
+   "A widget that opens and closes",
+   "A tooltip that shows when the mouse is over it",
+   "A modal that blocks the page",
+   "A tab list with panels"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "32",
+  "question": "Which method opens a `<dialog>` as a modal?",
+  "options": [
+   "`open()`",
+   "`display()`",
+   "`openModal()`",
+   "`showModal()`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "33",
+  "question": "What does the `<hr>` element represent?",
+  "options": [
+   "A thematic break between blocks of content",
+   "A hidden element that screen readers skip",
+   "A header region of a page or of one section of it",
+   "A line break inside a heading"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "34",
+  "question": "What does the `<strong>` element mean?",
+  "options": [
+   "The content is only bold in style",
+   "The content is a heading",
+   "The content has strong importance",
+   "The content is a quotation"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "What does the `<em>` element mean?",
+  "options": [
+   "The content is an error message",
+   "The content is an empty element",
+   "The content has strong importance",
+   "The content has stress emphasis"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "36",
+  "question": "Which element groups an image with its caption?",
+  "options": [
+   "`<picture>`",
+   "`<figure>`",
+   "`<caption>`",
+   "`<image>`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "37",
+  "question": "Can the `class` attribute be on many elements with the same value?",
+  "options": [
+   "No, a class value must be unique",
+   "Yes, but only on elements of one type",
+   "Yes, many elements can share a class",
+   "No, only one element per parent can use it"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "38",
+  "question": "What does the `<iframe>` element do?",
+  "options": [
+   "It makes a floating image frame",
+   "It embeds another HTML page in the page",
+   "It loads a script in a background thread",
+   "It groups form fields in a frame"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "39",
+  "question": "What does the `controls` attribute do on `<video>`?",
+  "options": [
+   "It shows the playback controls",
+   "It starts the video when the page loads",
+   "It loops the video at the end",
+   "It mutes the video sound"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "Which attribute sets the language of a page?",
+  "options": [
+   "`locale` on the `<body>` element",
+   "`lang` on the `<html>` element",
+   "`language` on the `<head>` element",
+   "`lang` on the `<title>` element"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "41",
+  "question": "What is `<meta name=\"description\">` mostly used for?",
+  "options": [
+   "A list of keywords for the cache of the browser",
+   "A short summary that search engines can show",
+   "A comment for other developers",
+   "A summary for the screen reader only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "42",
+  "question": "Where does a `<link rel=\"stylesheet\">` element go?",
+  "options": [
+   "Only at the end of `<body>`",
+   "Inside the `<title>` element",
+   "Only before the `<!DOCTYPE>`",
+   "Inside the `<head>` element"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "Does the browser send the value of a `disabled` input with the form?",
+  "options": [
+   "Yes, it sends the value as normal",
+   "Yes, but only with a `GET` form",
+   "No, it does not send the value",
+   "Yes, but it sends an empty string"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "What does `type=\"password\"` do on an input?",
+  "options": [
+   "It encrypts the value before it is sent",
+   "It blocks copy and paste in the field",
+   "It hides the typed characters on screen",
+   "It checks the strength of the password"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "Which element groups related form controls with a title?",
+  "options": [
+   "`<fieldset>` with a `<legend>`",
+   "`<group>` with a `<title>` element",
+   "`<form>` with a `<caption>`",
+   "`<section>` with a `<label>`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "What does the `hidden` attribute do?",
+  "options": [
+   "It keeps the element but removes its text",
+   "It removes the element from the DOM",
+   "It hides the element from search engines",
+   "It hides the element from the page"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "47",
+  "question": "What is a `<span>` element?",
+  "options": [
+   "A table cell that joins two or more columns",
+   "A generic inline container with no meaning",
+   "A semantic container for a text section",
+   "A block container for page layout"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "48",
+  "question": "What is a `<div>` element?",
+  "options": [
+   "A semantic container for a main section of text",
+   "A generic block container with no meaning",
+   "An inline container for short text",
+   "A container that keeps its own scroll"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "49",
+  "question": "What are `data-*` attributes used for?",
+  "options": [
+   "To bind an element to a server API",
+   "To store custom data on an element",
+   "To set the data type of an input",
+   "To load external data into a table"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "50",
+  "question": "Which attributes set the lowest and highest values of `<input type=\"number\">`?",
+  "options": [
+   "`min` and `max`",
+   "`from` and `to`",
+   "`low` and `high`",
+   "`start` and `end`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "51",
+  "question": "A classic `<script src>` without attributes is in the `<head>`. What does it do to the parser?",
+  "options": [
+   "It loads in parallel and does not block the parser",
+   "It blocks the HTML parsing until the script runs",
+   "It waits until the DOM is fully built",
+   "It runs after the page is shown"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "Two scripts need to run in order, and both need the DOM. Which choice is best?",
+  "options": [
+   "Use `defer` on both scripts",
+   "Use `async` on both scripts",
+   "Use `async` on the first script only",
+   "Put both scripts in the `<head>` with no attribute"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "53",
+  "question": "A developer adds `defer` to an inline `<script>` with no `src`. What happens?",
+  "options": [
+   "The browser ignores `defer` and runs it at once",
+   "The script runs after the HTML is parsed as normal",
+   "The script runs after the page is loaded",
+   "The browser shows a validation error"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "54",
+  "question": "An `<img>` has `srcset` with `w` values but no `sizes`. What does the browser assume?",
+  "options": [
+   "The image has its natural width",
+   "The image is `100vw` wide",
+   "The image is `50vw` wide",
+   "The image is as wide as its parent"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "55",
+  "question": "What does the `sizes` attribute of an `<img>` tell the browser?",
+  "options": [
+   "The file size in bytes of each image in `srcset`",
+   "The pixel size of the original image",
+   "The display width of the image in the layout",
+   "The size of the device screen in pixels"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "56",
+  "question": "When do you use `<picture>` and not only `srcset`?",
+  "options": [
+   "For art direction or to offer other image formats",
+   "For a lazy load of very large images on the page",
+   "For an image that needs a text caption shown below it",
+   "For a faster load on slow networks"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "57",
+  "question": "An `<img>` has no `width` and `height` attributes. What is the common result?",
+  "options": [
+   "The browser does not load the image",
+   "The layout moves when the image loads",
+   "The browser blocks the page until the image loads",
+   "The image is not visible to search engines"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "58",
+  "question": "A page uses `loading=\"lazy\"` on the large image at the top of the page. What is the risk?",
+  "options": [
+   "The image never loads",
+   "The image loads twice",
+   "The page layout changes after the load",
+   "The main content paints later"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "59",
+  "question": "A link has `target=\"_blank\"` to a third-party site. Which `rel` value stops access to `window.opener`?",
+  "options": [
+   "`noopener`",
+   "`nofollow`",
+   "`external`",
+   "`noindex`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "60",
+  "question": "What does `rel=\"nofollow\"` on a link tell search engines?",
+  "options": [
+   "Do not show this page in search results",
+   "Do not crawl the page that has this link",
+   "Do not store the linked page in a cache",
+   "Do not use this link as a ranking signal"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "What is the difference between `rel=\"preload\"` and `rel=\"prefetch\"`?",
+  "options": [
+   "`preload` is for the current page, `prefetch` for a next page",
+   "`preload` is for images and fonts, `prefetch` is for scripts",
+   "`preload` runs the file at once, `prefetch` only stores it for later",
+   "`preload` is for the next page, `prefetch` for this page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "62",
+  "question": "A teammate makes a button with `<div role=\"button\" aria-label=\"Save\">`. What is the best advice?",
+  "options": [
+   "Add `aria-live` to the `<div>`",
+   "Use a native `<button>` element",
+   "Add `aria-pressed` to the `<div>`",
+   "Use a `<span>` with the same role"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "63",
+  "question": "A `<div onclick>` works as a button for a mouse. What is the main problem?",
+  "options": [
+   "Keyboard users cannot focus or activate it",
+   "The click event does not work on touch screens",
+   "Screen readers cannot read the text inside",
+   "The browser does not send the click event"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "64",
+  "question": "When do you use `alt=\"\"` on an image?",
+  "options": [
+   "When the image is only for decoration",
+   "When the image is not loaded yet",
+   "When the image has a caption below it",
+   "When the image is a link to a page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "A form field has only a `placeholder` and no label. What is the problem?",
+  "options": [
+   "The browser does not send the field with the form data",
+   "The hint disappears and it is a weak accessible name",
+   "The field is not focusable by keyboard",
+   "The field does not pass validation"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "66",
+  "question": "A developer adds `pattern=\"[0-9]{5}\"` to `<input type=\"number\">`. What happens?",
+  "options": [
+   "The browser ignores the `pattern` attribute",
+   "The browser checks the pattern on the text of the number",
+   "The browser shows an error in the console",
+   "The browser changes the type to `text`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "67",
+  "question": "What does the `novalidate` attribute on a `<form>` do?",
+  "options": [
+   "It stops the form from being sent to the server",
+   "It removes the `required` attributes",
+   "It turns off the built-in validation on submit",
+   "It validates the form on the server"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "68",
+  "question": "What does `form.checkValidity()` return?",
+  "options": [
+   "`true` after the form is submitted without error",
+   "The list of invalid controls",
+   "`false` if any control in the form is invalid",
+   "`false` if the form has no controls"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "69",
+  "question": "A `<button>` inside a form has no `type`. A click reloads the page. Why?",
+  "options": [
+   "The default type is `reset`",
+   "The default type is `submit`",
+   "The default type is `button`",
+   "The form has no `action` attribute"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "The Elements panel shows an element that is not in the page source. What is the likely reason?",
+  "options": [
+   "The browser has cached an old copy of the page",
+   "The parser removed the element",
+   "The element is hidden by CSS",
+   "JavaScript changed the DOM after the load"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "The source has `<p>One<p>Two`. What DOM does the parser build?",
+  "options": [
+   "One `<p>` with a nested `<p>`",
+   "One `<p>` with the text `OneTwo`",
+   "A parse error and an empty body",
+   "Two sibling `<p>` elements"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "72",
+  "question": "A page has no doctype. What does the browser do?",
+  "options": [
+   "It does not render the page and shows an error",
+   "It uses the XML parser",
+   "It renders the page in quirks mode",
+   "It shows the page as plain text"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "The source has a `<table>` with `<tr>` and no `<tbody>`. What does the DOM show?",
+  "options": [
+   "The DOM has no `<tbody>` element",
+   "The parser adds a `<thead>` element",
+   "The parser rejects the table",
+   "The parser adds a `<tbody>` element"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "74",
+  "question": "A page uses `<h1>` and then `<h4>` with no `<h2>`. What is the main risk?",
+  "options": [
+   "The browser does not render the `<h4>` as a heading",
+   "Screen reader users lose the page structure",
+   "Search engines remove the page",
+   "The `<h1>` loses its style"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "75",
+  "question": "What does `type=\"tel\"` do on an `<input>`?",
+  "options": [
+   "It checks that the value is a valid phone number",
+   "It adds the country code of the user to the value of the field",
+   "It shows a phone keypad on mobile, with no format check",
+   "It starts a call when the user submits"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "What is the value format of `<input type=\"date\">` in JavaScript?",
+  "options": [
+   "`DD-MM-YYYY`",
+   "`MM/DD/YYYY`",
+   "`YYYY-MM-DD`",
+   "A Unix timestamp"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "77",
+  "question": "What is the difference between `dialog.show()` and `dialog.showModal()`?",
+  "options": [
+   "Only `show()` can be closed with the Esc key",
+   "Only `show()` can hold a form inside of the dialog element",
+   "Only `showModal()` makes the rest of the page inert",
+   "Only `showModal()` can have a close button"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "78",
+  "question": "Three `<details>` elements have the same `name` attribute. What is the behavior?",
+  "options": [
+   "All of them open and close at the same time",
+   "Only one of them can be open at a time",
+   "The browser shows a duplicate error",
+   "Only the first one can be open"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "What does `<link rel=\"canonical\" href=\"...\">` tell search engines?",
+  "options": [
+   "The next page in a series of linked pages",
+   "The language version of the page for a region",
+   "The URL of the mobile version",
+   "The preferred URL for the content of the page"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "80",
+  "question": "What does `<meta name=\"robots\" content=\"noindex\">` do?",
+  "options": [
+   "It blocks the crawl of the page by search bots",
+   "It hides the page from all visitors",
+   "It removes links from the page",
+   "It asks search engines to not index the page"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "81",
+  "question": "A script sets the main image `src` late, and the image loads slowly. Why does the preload scanner not help?",
+  "options": [
+   "It skips the images that are above the fold of the page",
+   "It runs only after all of the scripts on the page finish to run",
+   "It reads only the `<head>` of the page",
+   "It reads only the HTML, not the DOM changes from scripts"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "82",
+  "question": "When do `defer` scripts run, compared to the `DOMContentLoaded` event?",
+  "options": [
+   "They run after the event fires",
+   "They run before the event fires",
+   "They run in parallel with the event",
+   "They run only after the `load` event"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "The same module script is in the page two times with the same URL. How many times does it run?",
+  "options": [
+   "One time",
+   "Two times",
+   "Zero times, the browser blocks it",
+   "One time for each `<script>` tag with `defer`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "What does `document.write()` do when a script calls it after the page is loaded?",
+  "options": [
+   "It adds text at the end of the body",
+   "It adds text at the cursor position",
+   "It throws an error",
+   "It replaces the whole document"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "A developer sets `el.innerHTML = '<script>alert(1)</script>'`. What happens?",
+  "options": [
+   "The script does not run",
+   "The script runs at once",
+   "The script runs after a `defer` delay",
+   "The browser blocks the whole assignment"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "86",
+  "question": "A `<template>` has an `<img src>` inside. When does the browser fetch the image?",
+  "options": [
+   "When the parser reads the tag",
+   "When the content is inserted into the document",
+   "When the template is in the viewport",
+   "When the `load` event fires"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "87",
+  "question": "What does the `inert` attribute do to an element and its subtree?",
+  "options": [
+   "It only hides the subtree from assistive tools and screen readers",
+   "It only blocks clicks but keeps keyboard focus",
+   "It blocks focus and clicks and hides them from assistive tools",
+   "It removes the subtree from the layout"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "88",
+  "question": "A focusable link has `aria-hidden=\"true\"`. What is the problem?",
+  "options": [
+   "The link can no longer be focused by the keyboard",
+   "The link is removed from the DOM and from the focus order of the page",
+   "Keyboard users can focus it, but screen readers do not announce it",
+   "The link is hidden for all users"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "A status message must be read after a user action, with no focus change. Which markup is best?",
+  "options": [
+   "A container with `aria-live=\"polite\"`",
+   "A container with `role=\"alertdialog\"`",
+   "A container with `aria-hidden=\"false\"`",
+   "A container with `aria-busy=\"true\"`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "90",
+  "question": "Can one `srcset` value mix `w` and `x` descriptors?",
+  "options": [
+   "Yes, the browser picks the best one of the values",
+   "No, the list must use one kind of descriptor",
+   "Yes, if `sizes` is also set",
+   "No, but `x` is allowed with `<picture>`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "91",
+  "question": "What does `fetchpriority=\"high\"` do on the main image?",
+  "options": [
+   "It forces the image to load before the HTML is read",
+   "It stops all other images on the page from loading until it is done",
+   "It makes the image decode faster",
+   "It gives the browser a hint to fetch the image earlier"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "92",
+  "question": "What does `<link rel=\"preconnect\" href=\"https://cdn.example\">` do?",
+  "options": [
+   "It opens the DNS, TCP and TLS connection early",
+   "It downloads the main file of the origin in advance",
+   "It caches the files of the origin",
+   "It only resolves the DNS name of the origin"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "Two elements have the same `id`. What does `document.getElementById` return?",
+  "options": [
+   "The last matching element in the order of the tree",
+   "A list of both elements",
+   "The first matching element in the tree order",
+   "`null`, because the id is not valid"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "94",
+  "question": "A cross-origin script has an `integrity` attribute. The load fails. What does it need?",
+  "options": [
+   "The `nonce` attribute and a CSP header on the page",
+   "The `type=\"module\"` attribute",
+   "The same hash in a `<meta>` tag in the document head of the page",
+   "The `crossorigin` attribute and CORS headers on the server"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "95",
+  "question": "What does `<iframe sandbox>` with an empty value do?",
+  "options": [
+   "It allows scripts and forms but blocks all pop-ups",
+   "It blocks only the access to cookies",
+   "It applies all restrictions, including no scripts",
+   "It blocks only the top-level navigation"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "96",
+  "question": "A script calls `input.setCustomValidity('Bad value')`. Later the value is fixed, but the form still fails. Why?",
+  "options": [
+   "The input needs a new `required` attribute",
+   "The input needs a call to `reportValidity()`",
+   "The message was not reset to an empty string",
+   "The form needs a new `novalidate` attribute"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "Where must `<meta charset>` be in the document to work well?",
+  "options": [
+   "After the `<title>` element in the `<head>` element",
+   "In the first 1024 bytes of the document",
+   "At the end of the `<head>` element",
+   "Before the `<!DOCTYPE>` declaration"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "A `<div>` is placed in the `<head>` before a `<meta>` tag. What does the parser do with the `<meta>`?",
+  "options": [
+   "It keeps the `<meta>` in the `<head>`",
+   "It puts the `<meta>` in the `<body>`",
+   "It ignores the `<meta>` tag",
+   "It stops with a syntax error"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "99",
+  "question": "The source has a `<form>` inside another `<form>`. What does the parser do?",
+  "options": [
+   "It ignores the inner `<form>` start tag",
+   "It builds two forms and nests the inner one in the outer",
+   "It closes the outer form first",
+   "It stops with a parse error"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "100",
+  "question": "An `<img>` has `width=\"800\" height=\"400\"` and CSS `width: 100%`. How does the browser avoid layout shift?",
+  "options": [
+   "It waits for the header of the image file to arrive",
+   "It reserves 800 by 400 pixels at all sizes",
+   "It sets the height to `auto` after the load",
+   "It computes the aspect ratio from the attributes"
+  ],
+  "correct_index": 3
+ }
+]

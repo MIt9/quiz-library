@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "Which command installs Recharts in a project?",
+  "options": [
+   "npm install react-recharts",
+   "npm install recharts",
+   "npm install d3-recharts",
+   "npm install recharts-react"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "How does Recharts draw a chart in the browser?",
+  "options": [
+   "It paints canvas pixels",
+   "It uses WebGL shaders",
+   "It makes SVG elements",
+   "It makes HTML table cells"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "3",
+  "question": "Which prop of `Line` sets the thickness of the line?",
+  "options": [
+   "lineWidth",
+   "strokeWidth",
+   "thickness",
+   "borderWidth"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "4",
+  "question": "Which component is the root of a line chart?",
+  "options": [
+   "LineSeries",
+   "LinePlotChart",
+   "LineChart",
+   "LineGraphChart"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "5",
+  "question": "What data format does a Recharts chart usually need?",
+  "options": [
+   "An array of objects",
+   "A two-dimensional matrix",
+   "A single JSON string",
+   "A Map of arrays"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "6",
+  "question": "Which prop of `Line` selects the value from each data object?",
+  "options": [
+   "valueKey",
+   "accessor",
+   "valueField",
+   "dataKey"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "7",
+  "question": "Which prop of `XAxis` reads the labels from the data objects?",
+  "options": [
+   "dataKey",
+   "labelKey",
+   "nameKey",
+   "sourceKey"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "8",
+  "question": "Which component makes a chart fit the size of its parent?",
+  "options": [
+   "AutoSizerContainer",
+   "ResponsiveContainer",
+   "FlexibleChartBox",
+   "FitParentContainer"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "9",
+  "question": "A `ResponsiveContainer` has `height=\"100%\"` and the chart is not visible. What is the most likely cause?",
+  "options": [
+   "The data array has too many items",
+   "The Tooltip component is missing",
+   "The parent element has no defined height",
+   "The chart has no margin prop"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "Which component shows a box with values when the user moves the pointer over the chart?",
+  "options": [
+   "PopoverCard",
+   "HintBoxPanel",
+   "Tooltip",
+   "CalloutBox"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "11",
+  "question": "Which component shows series names with colored icons?",
+  "options": [
+   "CaptionBox",
+   "LabelGroup",
+   "KeyBox",
+   "Legend"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "12",
+  "question": "Which component draws the background lines of a chart?",
+  "options": [
+   "GridLines",
+   "PlotBackground",
+   "AxisGridLines",
+   "CartesianGrid"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "13",
+  "question": "Which `type` value of `Line` draws a smooth curve?",
+  "options": [
+   "smoothed",
+   "curved-line",
+   "monotone",
+   "spline-curve"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "14",
+  "question": "Which prop removes the dots from a `Line`?",
+  "options": [
+   "dot={false}",
+   "points={false}",
+   "markers={false}",
+   "showDots={false}"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "15",
+  "question": "Which root component draws a bar chart?",
+  "options": [
+   "BarChart",
+   "ColumnChart",
+   "BarGraph",
+   "BarPlotChart"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "Which prop puts two `Bar` components in one stack?",
+  "options": [
+   "stackGroup",
+   "stackGroupId",
+   "layerGroupId",
+   "stackId"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "17",
+  "question": "Which root component draws a pie or donut chart?",
+  "options": [
+   "DonutChart",
+   "PieChart",
+   "CircleChart",
+   "SliceChart"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "18",
+  "question": "Which prop of `Pie` makes the pie a donut?",
+  "options": [
+   "innerRadius",
+   "holeDiameter",
+   "cutoutRadius",
+   "donutHoleSize"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "Which component gives a different color to one bar or one slice?",
+  "options": [
+   "SliceItem",
+   "Cell",
+   "Segment",
+   "FillColor"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "Which root component draws a line with a filled region under it?",
+  "options": [
+   "FillChart",
+   "LineFillChart",
+   "ShadeChart",
+   "AreaChart"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "Which root component can show `Bar`, `Line`, and `Area` in one chart?",
+  "options": [
+   "MixedSeriesChart",
+   "CombinedSeriesChart",
+   "MultiSeriesChart",
+   "ComposedChart"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "Which root component draws points on an x/y plane?",
+  "options": [
+   "PointPlotChart",
+   "ScatterChart",
+   "PlotAreaChart",
+   "DotPlotChart"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "23",
+  "question": "Which prop of `Line` turns off the draw animation?",
+  "options": [
+   "animateOnMount={false}",
+   "animationType=\"none\"",
+   "disableAnimations",
+   "isAnimationActive={false}"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "Which prop of `Line` sets the color of the line?",
+  "options": [
+   "stroke",
+   "lineFill",
+   "fill",
+   "lineColor"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "25",
+  "question": "Which prop of `Bar` sets the color of the bars?",
+  "options": [
+   "color",
+   "stroke",
+   "background",
+   "fill"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "Which props set the size of a chart in pixels, when no container is used?",
+  "options": [
+   "size and ratio",
+   "width and height",
+   "viewBox and scale",
+   "rows and columns"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "27",
+  "question": "What does the `margin` prop of a chart set?",
+  "options": [
+   "The gap between two bars",
+   "The distance between two charts",
+   "The space between the plot and the SVG edge",
+   "The padding of the Tooltip box"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "Which prop of `YAxis` formats the text of the tick labels?",
+  "options": [
+   "tickFormatter",
+   "labelFormatter",
+   "tickTextFormat",
+   "valueFormatter"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "29",
+  "question": "Which prop of `Tooltip` changes the text of the shown value?",
+  "options": [
+   "valueFormat",
+   "renderValue",
+   "textFn",
+   "formatter"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "Which `Legend` prop puts the legend below the chart?",
+  "options": [
+   "position=\"bottom\"",
+   "verticalAlign=\"bottom\"",
+   "placement=\"below\"",
+   "align=\"bottom\""
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "Which prop gives a series a display name in the Tooltip and the Legend?",
+  "options": [
+   "seriesTitle",
+   "label",
+   "name",
+   "alias"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "What does `ReferenceLine` do?",
+  "options": [
+   "Connects the first and the last data points",
+   "Draws a line at a fixed x or y value",
+   "Draws the line of best fit for the data",
+   "Marks the average value of all the data"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "What does the `Brush` component let the user do?",
+  "options": [
+   "Draw free shapes on the plot area",
+   "Paint new colors on all the bars",
+   "Erase single points from the chart",
+   "Select a range of the data to view"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "34",
+  "question": "Which prop of `CartesianGrid` makes the grid lines dashed?",
+  "options": [
+   "lineDashStyle",
+   "dashedStyle",
+   "strokeDasharray",
+   "strokeLineStyle"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "Which root component draws a radar chart?",
+  "options": [
+   "SpiderChart",
+   "PolarAreaChart",
+   "RadarChart",
+   "StarPlotChart"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "Which prop of `BarChart` makes the bars horizontal?",
+  "options": [
+   "layout=\"vertical\"",
+   "layout=\"horizontal\"",
+   "direction=\"row\"",
+   "orientation=\"right\""
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "37",
+  "question": "Which prop of `YAxis` sets the range of the axis?",
+  "options": [
+   "domain",
+   "valueRange",
+   "axisLimits",
+   "dataBounds"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "38",
+  "question": "In SVG, where is the origin (0, 0) of the coordinate system?",
+  "options": [
+   "At the bottom-left corner, y grows up",
+   "At the top-left corner, y grows down",
+   "At the center, y grows up",
+   "At the top-right corner, y grows down"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "39",
+  "question": "Which SVG element groups other SVG elements?",
+  "options": [
+   "<div>",
+   "<group>",
+   "<g>",
+   "<layer>"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "40",
+  "question": "Which SVG element draws a curve with a `d` attribute?",
+  "options": [
+   "<curve>",
+   "<polyline>",
+   "<spline>",
+   "<path>"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "41",
+  "question": "Which SVG attribute lets a drawing scale to the size of its container?",
+  "options": [
+   "scaleToFit",
+   "fitParent",
+   "viewBox",
+   "aspectRatio"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "42",
+  "question": "How does Recharts use D3?",
+  "options": [
+   "It needs the full D3 bundle loaded on the page",
+   "It uses small D3 modules for scales and shapes",
+   "It does not use any D3 code in the package",
+   "It uses D3 to change the DOM nodes directly"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "43",
+  "question": "What is the main rendering difference between Chart.js and Recharts?",
+  "options": [
+   "Chart.js draws on a canvas, Recharts makes SVG",
+   "Chart.js makes SVG, Recharts draws on a canvas",
+   "Both draw on a canvas",
+   "Both make SVG elements"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "44",
+  "question": "Which charting library has a React Native version called `victory-native`?",
+  "options": [
+   "Recharts",
+   "D3",
+   "Victory",
+   "Chart.js"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "Why do many React teams use Recharts and not raw D3?",
+  "options": [
+   "Recharts gives ready React components for charts",
+   "Recharts has more chart types than D3",
+   "Recharts is always faster than D3",
+   "Recharts does not need any data"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "Which chart prop turns on keyboard navigation and ARIA roles for the chart?",
+  "options": [
+   "accessibilityLayer",
+   "a11yEnabled",
+   "keyboardNavigation",
+   "ariaRoleMode"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "47",
+  "question": "A chart shows eight lines that differ only by color. How can you help users with color blindness?",
+  "options": [
+   "Use eight shades of the same color",
+   "Make all the lines thicker",
+   "Hide the Legend component",
+   "Add different dash patterns or direct labels"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "48",
+  "question": "Which prop of `Area` sets the transparency of the fill?",
+  "options": [
+   "areaAlphaValue",
+   "fillOpacity",
+   "opacity",
+   "fillAlphaLevel"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "49",
+  "question": "What does `cursor={false}` do on a `Tooltip`?",
+  "options": [
+   "It hides the highlight shape under the pointer",
+   "It hides the whole Tooltip box and content",
+   "It turns off all the pointer events",
+   "It hides the mouse pointer on the chart"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "Which component shows the value text on top of each bar?",
+  "options": [
+   "ValueTextList",
+   "LabelList",
+   "BarLabelList",
+   "DataTagList"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "51",
+  "question": "A chart has a line for revenue in dollars and a line for orders in units. How do you add a second y-axis?",
+  "options": [
+   "Add a second LineChart inside the first chart as a child",
+   "Add a second YAxis with a yAxisId, and use it in the Line",
+   "Set the dualAxis prop on the YAxis of the first line",
+   "Set the secondary prop on the Line and the YAxis"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "A `Line` data point has the value `null`. What does the line do by default?",
+  "options": [
+   "It breaks and leaves a gap",
+   "It joins the two nearest points",
+   "It drops to zero",
+   "It stops drawing the rest of the line"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "53",
+  "question": "Two `Bar` components use `stackId=\"a\"`. A third `Bar` has no `stackId`. How is the third bar drawn?",
+  "options": [
+   "On top of the stack as a new layer",
+   "Beside the stack, not in it",
+   "Behind the stack, hidden by it",
+   "It does not show in the chart"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "54",
+  "question": "What does a horizontal bar chart need for the axes?",
+  "options": [
+   "layout=\"horizontal\", XAxis type=\"category\", YAxis type=\"number\"",
+   "rotate=\"90\" on the BarChart and the default axes",
+   "layout=\"vertical\", XAxis type=\"number\", YAxis type=\"category\"",
+   "Swapped dataKey values on the Bar and the XAxis"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "55",
+  "question": "Which prop of `ResponsiveContainer` keeps a fixed width-to-height ratio?",
+  "options": [
+   "ratio",
+   "proportion",
+   "shape",
+   "aspect"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "56",
+  "question": "What does a custom `content` component of `Tooltip` receive from Recharts?",
+  "options": [
+   "Only the index of the hovered point",
+   "A DOM event and the SVG element",
+   "Props such as active, payload, and label",
+   "The full data array and a callback"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "A chart uses ISO date strings on a category `XAxis`. Dates are not evenly spaced, but the points are. What is a fix?",
+  "options": [
+   "Sort the date strings in the data before the render",
+   "Set interval=\"0\" on the XAxis to show all ticks",
+   "Use a Brush component under the chart",
+   "Use timestamps with a number axis and a time scale"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "58",
+  "question": "Which `Tooltip` prop formats the title text, which is the x value?",
+  "options": [
+   "titleFormatter",
+   "labelFormatter",
+   "headerFormatter",
+   "formatter"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "59",
+  "question": "How do you draw a bar as a custom SVG shape?",
+  "options": [
+   "Pass a component to the `render` prop of `BarChart`",
+   "Nest an SVG element inside `Cell`",
+   "Set the `path` prop on `Bar`",
+   "Pass a component to the `shape` prop of `Bar`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "60",
+  "question": "Which props does a custom `dot` function of `Line` get to place the dot?",
+  "options": [
+   "x, y, and width",
+   "left, top, and value",
+   "index and total",
+   "cx, cy, and payload"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "A bar chart has `YAxis domain={[90, 100]}`. What is the main risk?",
+  "options": [
+   "The chart shows no bars at all",
+   "Small differences look very large",
+   "The Tooltip shows wrong values",
+   "The axis labels overlap each other"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "62",
+  "question": "What does the `syncId` prop do when two charts have the same value?",
+  "options": [
+   "Both charts share the same data array in state",
+   "Both charts get the same width and height",
+   "Both charts start the animation at one time",
+   "The Tooltip and cursor move together"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "63",
+  "question": "How do you fill an `Area` with a gradient?",
+  "options": [
+   "Pass an array of colors to the fill prop of the Area",
+   "Set the gradient prop on the AreaChart component",
+   "Use a CSS gradient string in the fill prop",
+   "Add a linearGradient in `defs`, use fill=\"url(#id)\""
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "64",
+  "question": "A chart test in Jest with jsdom renders no chart inside `ResponsiveContainer`. What is the cause and a fix?",
+  "options": [
+   "jsdom has no layout, so size is 0; set a fixed size",
+   "jsdom cannot make SVG elements; use a canvas mock",
+   "The chart needs act() around each render call in tests",
+   "The Tooltip must be mounted first in each test file"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "A component builds the chart data array inline in each render. What is a good fix?",
+  "options": [
+   "Keep the array with `useMemo`",
+   "Move the array into the Tooltip",
+   "Convert the array to a string",
+   "Use a `key` that changes in each render"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "How does `Pie` find the angle of each slice?",
+  "options": [
+   "It uses the index of the item in the data array",
+   "It reads a ready angle from each data object",
+   "It divides each value by the sum of all values",
+   "It gives all the slices the same angle size"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "Labels on a crowded `XAxis` overlap. Which prop skips some labels?",
+  "options": [
+   "tickSkip",
+   "maxTicks",
+   "interval",
+   "skipLabels"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "68",
+  "question": "Rotated labels on the `XAxis` are cut off at the bottom. What is a fix?",
+  "options": [
+   "Increase the `width` of the XAxis",
+   "Increase the `height` of the XAxis",
+   "Set the `scale` prop of the XAxis",
+   "Remove the `angle` prop and keep the rest"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "How do you let users hide a series when they click its `Legend` item?",
+  "options": [
+   "Set the toggle prop on the Legend component",
+   "Use Legend onClick to set state, then pass hide to the series",
+   "Wrap each series in a Switch component",
+   "Set the hidden prop on the LineChart component"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "Which props of `ReferenceArea` set the horizontal range of the shaded area?",
+  "options": [
+   "from and to",
+   "xMin and xMax",
+   "start and end",
+   "x1 and x2"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "The `YAxis` tick labels are cut off on the left side. What is a fix?",
+  "options": [
+   "Set `mirror` on the XAxis and the YAxis",
+   "Add `padding` to the Legend component",
+   "Increase the `width` of the YAxis or the margin",
+   "Reduce the `strokeWidth` of the Line to 1"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "72",
+  "question": "How do you round the top corners of a `Bar`?",
+  "options": [
+   "Use radius={[4, 4, 0, 0]}",
+   "Use cornerRadius=\"4\"",
+   "Use rx={4} on the BarChart",
+   "Use borderRadius=\"4px\""
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "73",
+  "question": "Which prop of `Line` styles the dot under the pointer?",
+  "options": [
+   "hoverDotStyle",
+   "focusDotStyle",
+   "activeDot",
+   "dotActiveState"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "74",
+  "question": "Small slices in a `Pie` are almost not visible. Which prop sets a minimum angle for them?",
+  "options": [
+   "minAngle",
+   "minSize",
+   "minValue",
+   "floorAngle"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "How do you make a stacked area chart show each series as a share of 100%?",
+  "options": [
+   "Set percent on every Area",
+   "Set domain={[0, 100]} on the YAxis",
+   "Set stackOffset=\"expand\" on the chart",
+   "Set normalize on the Legend"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "In a bubble chart, which component sets the size of each bubble from data?",
+  "options": [
+   "ZAxis",
+   "SizeAxis",
+   "BubbleSize",
+   "RadiusAxis"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "77",
+  "question": "A `ScatterChart` shows points at equal x spacing. What is the likely mistake?",
+  "options": [
+   "The Scatter has no fill prop to set the point color",
+   "The chart has no CartesianGrid to align the points",
+   "The data has too many points for one render",
+   "The XAxis is a category axis, not a number axis"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "78",
+  "question": "A team must show a live chart with 50,000 points. Which choice is usually better and why?",
+  "options": [
+   "Recharts, because React batches all the SVG updates",
+   "Victory, because it always draws on a canvas",
+   "Chart.js, because canvas costs less than 50,000 SVG nodes",
+   "Recharts, because SVG scales without cost"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "79",
+  "question": "What does the `onChange` callback of `Brush` give you?",
+  "options": [
+   "An object with startIndex and endIndex",
+   "The first and last x values",
+   "The filtered data array",
+   "The pixel width of the selection"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "80",
+  "question": "Your data has `a` and `b` fields, and you need a line for their sum. What can `dataKey` be?",
+  "options": [
+   "A string such as \"a+b\" that Recharts evaluates",
+   "A function such as `d => d.a + d.b`",
+   "An array such as [\"a\", \"b\"] of two keys",
+   "An object such as {sum: [\"a\", \"b\"]}"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "81",
+  "question": "Why does a Recharts chart get slow with many thousands of points?",
+  "options": [
+   "React cannot use keys for the chart marks in a loop",
+   "D3 scales are very slow for large arrays of data",
+   "Each mark is an SVG node, so layout and paint cost grow",
+   "The Tooltip copies all the data on each frame"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "82",
+  "question": "A time series has 100,000 points and the user zooms. What is a good approach?",
+  "options": [
+   "Render all points and set dot={false} on the Line",
+   "Downsample to the pixel width, load detail on zoom",
+   "Split the points into 100 small charts on the page",
+   "Round every value to an integer before the render"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "A chart in a flex item grows with the window but does not shrink. What is a common cause?",
+  "options": [
+   "The flex item has min-width auto, so it cannot shrink",
+   "ResponsiveContainer ignores resize events that make it smaller",
+   "The chart caches the first width that it measures",
+   "The SVG viewBox is fixed by the margin prop value"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "What is the behavior of `ResponsiveContainer` during server-side rendering?",
+  "options": [
+   "It renders the chart with the full width of the browser page",
+   "It reads the size from the CSS file on the server side",
+   "It renders a canvas fallback image",
+   "It cannot measure the parent, so the chart shows after mount"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "Why can many animated charts on one dashboard use a lot of CPU?",
+  "options": [
+   "The animation uses SVG filters that need the GPU for each mark",
+   "Each chart opens its own Web Worker for the animation",
+   "The animation runs in JavaScript and re-renders each frame",
+   "The animation blocks the network thread of the browser"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "86",
+  "question": "A custom `shape` for 2,000 bars is slow when the pointer moves over the chart. What is a good first step?",
+  "options": [
+   "Move the shape to a class component",
+   "Replace the shape with a string",
+   "Add a key to every shape",
+   "Wrap the shape component in React.memo"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "When is D3 a better choice than Recharts?",
+  "options": [
+   "When you want less code for a standard bar chart in React",
+   "When the team does not know SVG and wants a simple API",
+   "When you need a custom mark that no chart component gives",
+   "When the chart must render on the server side first"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "88",
+  "question": "Which `scale` values can an axis accept in Recharts?",
+  "options": [
+   "Only the names linear and band, as strings",
+   "Only a scale class from the Recharts package",
+   "Only a CSS function name, such as calc",
+   "A scale name or a D3 scale function"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "89",
+  "question": "An axis uses `scale=\"log\"` and the data has a value of 0. What happens?",
+  "options": [
+   "Zero is drawn at the start of the axis line",
+   "Zero has no valid log position, so the mark is wrong",
+   "Recharts changes each zero to 1 in the data",
+   "Recharts removes the axis from the chart"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "90",
+  "question": "A chart is an SVG with hover tooltips. What does a screen reader user still need?",
+  "options": [
+   "A text alternative, such as a summary or a data table",
+   "Only a higher color contrast on all the marks",
+   "Only the accessibilityLayer prop",
+   "A longer animation time for each data change"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "A `YAxis` has domain={[0, 50]} and one value is 80. What happens with the default `allowDataOverflow`?",
+  "options": [
+   "The value is cut at 50",
+   "The value is removed from the data",
+   "Recharts throws an error",
+   "The domain grows to include 80"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "92",
+  "question": "What does `ifOverflow=\"extendDomain\"` do on a `ReferenceLine`?",
+  "options": [
+   "It extends the axis range to show the line",
+   "It cuts the line at the edge of the plot area",
+   "It hides the line when it is outside the range",
+   "It draws the line outside the plot area"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "You set `tickCount={5}` on a `YAxis` with an automatic domain. Why can the axis show 6 ticks?",
+  "options": [
+   "tickCount counts only the labels, not the tick lines",
+   "The count is a hint, and Recharts picks round values",
+   "tickCount works only with a fixed numeric domain",
+   "The chart adds one more tick for the margin space"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "94",
+  "question": "A page shows 500 small sparklines. Which setup reduces the cost the most?",
+  "options": [
+   "One ResponsiveContainer around all the sparklines",
+   "Fixed size, no animation, and render only visible ones",
+   "One shared Tooltip for all of the sparklines",
+   "A Brush component under each sparkline"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "What is a real trade-off of SVG charts compared with canvas charts?",
+  "options": [
+   "SVG gives DOM styling and tests, but costs more per mark",
+   "SVG is faster with many marks, but cannot use CSS rules",
+   "SVG cannot scale to a large screen, but canvas can",
+   "SVG needs a plugin for any pointer interaction"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "96",
+  "question": "Why are snapshot tests of SVG `path` data weak for Recharts charts?",
+  "options": [
+   "SVG snapshots cannot hold the attributes of elements",
+   "Jest cannot read the text inside SVG elements",
+   "Small layout or version changes change `d` and break it",
+   "Recharts adds random ids to every path and group"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "A live chart gets new data every 100 ms and the line looks late and jumpy. What is a likely fix?",
+  "options": [
+   "Increase the animationDuration of the series to 2000",
+   "Set isAnimationActive={false} on the series",
+   "Set a new key on the chart for each update",
+   "Add a Brush component"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "A dashboard shows 12 categories in a `Pie` chart. Why is a `BarChart` often a better choice?",
+  "options": [
+   "Bars use less memory than pie slices in the SVG",
+   "Pie charts cannot show more than 10 values",
+   "People compare lengths better than angles",
+   "Bars do not need a Legend to name the items"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "A `Brush` inside a chart with 200,000 points is slow. What is a likely reason?",
+  "options": [
+   "The Brush reads more data from the server on each move",
+   "The Brush locks the main thread on each mouse up",
+   "The Brush re-sorts all the data on each move",
+   "The Brush draws a small copy of all the data"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "A window resize makes the chart re-render many times. Which `ResponsiveContainer` prop reduces this?",
+  "options": [
+   "debounce",
+   "throttleMs",
+   "resizeDelay",
+   "lazy"
+  ],
+  "correct_index": 0
+ }
+]

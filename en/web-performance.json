@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What does the browser build from the HTML markup before it can render the page?",
+    "options": [
+      "A DOM tree from the parsed HTML tags",
+      "A bytecode file from the HTML tags",
+      "A layout tree straight from raw HTML text",
+      "A paint list straight from the HTML bytes"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "2",
+    "question": "Which resource blocks the first render of a page by default?",
+    "options": [
+      "An image used in an img tag",
+      "A CSS stylesheet linked in the head",
+      "A script that has the async attribute",
+      "A font file named in a CSS rule"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "3",
+    "question": "A script tag with no async or defer is in the head. What happens during parsing?",
+    "options": [
+      "The HTML parser stops while the script loads and runs",
+      "The script runs only after the load event fires",
+      "The parser continues and runs the script after the DOM",
+      "The script waits for the first user click to run"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "4",
+    "question": "What does the defer attribute do on an external script?",
+    "options": [
+      "It loads the script in parallel and runs it after parsing, in order",
+      "It loads the script only after the load event of the page",
+      "It loads the script on the main thread and blocks the parser",
+      "It loads the script in parallel and runs it when ready, in any order"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "5",
+    "question": "What does the async attribute do on an external script?",
+    "options": [
+      "It loads the script in parallel and runs it after the whole page has loaded, in order",
+      "It loads the script after the load event and then runs it at once",
+      "It loads the script in a web worker, which has no access to the DOM",
+      "It loads the script in parallel and runs it when ready, in any order"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "6",
+    "question": "What does `<link rel=\"preload\">` tell the browser?",
+    "options": [
+      "Fetch this resource early because the current page needs it",
+      "Fetch this resource at low priority because the next page may need it",
+      "Open a connection to the host but do not fetch any file from it",
+      "Resolve only the DNS name of the host and keep it for later use"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "7",
+    "question": "What does `<link rel=\"prefetch\">` do?",
+    "options": [
+      "It fetches a resource at low priority for a likely next page",
+      "It opens a TCP and TLS connection to the origin and fetches no file",
+      "It runs the script file at once when the fetch of the file ends",
+      "It fetches a resource at high priority for the page that is open now"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "8",
+    "question": "What does `<link rel=\"preconnect\">` do?",
+    "options": [
+      "It resolves only the DNS name of an origin and stops there",
+      "It downloads the main file of an origin before the page needs it",
+      "It opens an early connection to an origin: DNS, TCP and TLS",
+      "It keeps the connection open after the page is closed"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "9",
+    "question": "What is the work of `<link rel=\"dns-prefetch\">`?",
+    "options": [
+      "It sends a first request to the host to warm the cache of the host",
+      "It resolves the name and also opens the TLS session early for the host",
+      "It stores the DNS answer on the server for all users of the site",
+      "It resolves the DNS name of a host early and does nothing more"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "10",
+    "question": "You add `fetchpriority=\"high\"` to the hero image. What does it do?",
+    "options": [
+      "It hints that the browser should fetch this image earlier than normal",
+      "It forces the server to send this image before all of the other files",
+      "It makes the browser decode this image on the GPU in a separate thread",
+      "It stops the browser from saving this image in the disk cache"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "11",
+    "question": "What does `loading=\"lazy\"` do on an img element?",
+    "options": [
+      "The browser loads the image after the page load event has fired for the page",
+      "The browser delays the image fetch until the image is near the viewport",
+      "The browser shows a blurred small copy of the image first, then the full image",
+      "The browser loads the image with a lower image quality to save the network"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "12",
+    "question": "Which image format is best for a logo with sharp lines that must scale without loss?",
+    "options": [
+      "JPEG",
+      "GIF",
+      "BMP",
+      "SVG"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "13",
+    "question": "What does `Cache-Control: max-age=3600` mean?",
+    "options": [
+      "The server deletes the file from its disk after 3600 seconds of no use",
+      "The browser may reuse the response for 3600 seconds without asking the server",
+      "The browser must ask the server again after it sends 3600 requests in total",
+      "The CDN must refresh its own copy of the response every 3600 milliseconds"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "14",
+    "question": "What is an ETag used for?",
+    "options": [
+      "The server uses it to count how many users read the file in each day of the week",
+      "The browser sends it back to ask if the stored copy is still valid",
+      "The browser uses it to pick the best image format for the screen of a user",
+      "The CDN uses it to compress the file for users who are on slow networks"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "15",
+    "question": "The server answers `304 Not Modified`. What does the browser do?",
+    "options": [
+      "It uses its stored copy because the server sent no body",
+      "It downloads the file again from a second server that is closer to it",
+      "It shows an error because the file is not found on the server",
+      "It removes the stored copy and asks the user to retry the request"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "16",
+    "question": "What does `Cache-Control: no-cache` mean?",
+    "options": [
+      "The browser must not store the file in any cache, on disk or in memory",
+      "The browser may use the file for one day without asking the server",
+      "The browser may store the file only in memory and not on the disk",
+      "The browser may store the file but must revalidate before each use"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "17",
+    "question": "What does the `immutable` directive in Cache-Control tell the browser?",
+    "options": [
+      "The file does not change while fresh, so skip revalidation on reload",
+      "The file may be served stale for a time if the network is down",
+      "The file must be revalidated with the server on each reload of the page",
+      "The file is private and no shared cache may keep a copy of it"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "18",
+    "question": "Why do many builds put a content hash in a file name, like `app.3f9a1c.js`?",
+    "options": [
+      "The hash makes the CDN keep the file in memory and not on disk",
+      "The hash makes the browser compress the file with a better method",
+      "The hash lets the server skip the HTTP headers for that file",
+      "A changed file gets a new URL, so you can cache each URL for a long time"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "19",
+    "question": "What is the main job of a CDN?",
+    "options": [
+      "It builds the JavaScript bundle for each request that a user sends",
+      "It replaces the DNS system for the domain of the site and its hosts",
+      "It runs the database queries for the origin server of the website",
+      "It serves cached copies of content from servers close to the user"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "20",
+    "question": "Which HTTP header shows that a response uses gzip or Brotli compression?",
+    "options": [
+      "Content-Type",
+      "Accept-Ranges",
+      "Transfer-Policy",
+      "Content-Encoding"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "21",
+    "question": "Which file type gets almost no gain from gzip compression?",
+    "options": [
+      "JSON files",
+      "HTML files",
+      "JPEG images",
+      "SVG files"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "22",
+    "question": "What is the main benefit of HTTP/2 for page loading?",
+    "options": [
+      "The server sends each file with no HTTP headers, so each file is small",
+      "Many requests share one connection at the same time (multiplexing)",
+      "The browser opens 20 TCP connections to one host at the same time",
+      "The browser skips the TLS handshake for all hosts that it knows"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "23",
+    "question": "Which transport protocol does HTTP/3 use?",
+    "options": [
+      "TCP with a faster handshake",
+      "QUIC, which runs over UDP",
+      "TLS 1.2 over a raw IP socket",
+      "SCTP with a built-in cache"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "24",
+    "question": "Why did domain sharding help on HTTP/1.1?",
+    "options": [
+      "Each host got its own copy of the browser cache",
+      "Each host got its own limit of parallel connections",
+      "Each host got a free compression of all files",
+      "Each host got a separate TLS certificate that loads faster"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "25",
+    "question": "What does `font-display: swap` do?",
+    "options": [
+      "It hides the text until the web font is fully loaded and then shows it",
+      "It shows the web font only on the second page view of a user",
+      "It shows fallback text at once and swaps in the web font when it loads",
+      "It loads the web font after all of the images on the page"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "26",
+    "question": "What is font subsetting?",
+    "options": [
+      "Splitting one font into many files, one for each weight of the font",
+      "Converting a font from vector outlines to bitmap images for speed",
+      "Keeping only the glyphs that the site needs, to make the file smaller",
+      "Loading a font only after the user scrolls the page to the text"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "27",
+    "question": "Which font format is the best choice for the web today?",
+    "options": [
+      "WOFF2 (Web Open Font Format 2)",
+      "TrueType (TTF)",
+      "Embedded OpenType (EOT)",
+      "OpenType (OTF)"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "28",
+    "question": "What does FOIT mean in font loading?",
+    "options": [
+      "Text is shown in the fallback font and never changes",
+      "Text is shown in bold until the font loads",
+      "Text stays invisible while the web font loads",
+      "Text moves to a new line when the font loads"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "29",
+    "question": "Why can heavy JavaScript make a page feel slow to a user?",
+    "options": [
+      "The browser clears its cache when a script is large",
+      "The browser stops all of the network requests while JavaScript runs",
+      "The GPU is busy with the script and can not draw the page",
+      "The main thread also handles input and rendering, so it can not do both"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "30",
+    "question": "What is a long task in the browser?",
+    "options": [
+      "A network request that waits more than 50 seconds",
+      "A CSS animation that runs for more than 50 frames",
+      "A script that loads from a third-party host",
+      "A main-thread task that runs for more than 50 ms"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "31",
+    "question": "What can a web worker do that the main thread should not do?",
+    "options": [
+      "Change the DOM in the background and then paint the result to the screen",
+      "Run heavy JavaScript in the background, but with no DOM access",
+      "Block the network request queue until the work of the page is done",
+      "Read the page cookies and edit the CSS rules of the page directly"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "32",
+    "question": "What is layout thrashing?",
+    "options": [
+      "Code loads many CSS files that all change the same layout of the page",
+      "Code mixes layout reads and style writes and forces many reflows",
+      "Code sets display none on many elements one by one in a long loop",
+      "Code moves an element with transform on each frame of the animation"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "33",
+    "question": "Which CSS property is usually the cheapest to animate?",
+    "options": [
+      "width",
+      "transform",
+      "top",
+      "margin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "34",
+    "question": "Why are `transform` and `opacity` animations smooth in most browsers?",
+    "options": [
+      "The CPU caches each frame of the animation on the disk for later use",
+      "The compositor thread can run them without layout or paint",
+      "The browser skips some frames to keep the speed of the animation constant",
+      "The browser runs them in a web worker on a second core of the CPU"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "35",
+    "question": "What does the CSS property `will-change` do?",
+    "options": [
+      "It forces the browser to run the animation at 60 frames in each second",
+      "It stops the property from changing after the first frame is drawn",
+      "It moves the element to a worker thread so the browser can paint it",
+      "It hints which property will change so the browser can prepare"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "36",
+    "question": "When does a `requestAnimationFrame` callback run?",
+    "options": [
+      "Right after the HTML parser ends the document",
+      "When the network becomes idle for one second",
+      "Before the browser paints the next frame",
+      "After the browser paints the next frame"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "37",
+    "question": "What is the main advantage of server-side rendering (SSR)?",
+    "options": [
+      "The browser never needs to download any JavaScript for the page at all",
+      "The server keeps a separate DOM for each browser tab of the user",
+      "The browser gets HTML with content before the JavaScript runs",
+      "The page needs no cache because the HTML is always new for each user"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "38",
+    "question": "What is hydration?",
+    "options": [
+      "JavaScript attaches event handlers and state to HTML from the server",
+      "The server inserts data into the HTML before it sends the page",
+      "The browser converts HTML to a static image to paint it fast",
+      "The CDN fills its cache with the HTML of every route of the site"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "39",
+    "question": "What happens first on a client-side rendered (CSR) page?",
+    "options": [
+      "The server builds all the HTML for the route and sends it as a file",
+      "The browser loads a small HTML shell, then JavaScript builds the content",
+      "The CDN builds the page on its edge servers in advance, for each user",
+      "The build tool prints each route to a static HTML file"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "40",
+    "question": "What is static site generation (SSG)?",
+    "options": [
+      "Pages are built to HTML files at build time and served as files",
+      "Pages are built on the server for each request that a user sends",
+      "Pages are built in the browser after the load event of the window",
+      "Pages are built by a service worker on the first visit of the user"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "41",
+    "question": "Why can third-party scripts hurt performance?",
+    "options": [
+      "They always block the HTML parser, even if they use the async attribute",
+      "They force the browser to turn off its HTTP cache for all files",
+      "They use your main thread and network, and you do not control their code",
+      "They make the server send all files with no compression at all"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "42",
+    "question": "What is a performance budget?",
+    "options": [
+      "A plan of how many servers the team pays for in each month",
+      "A list of all the scripts that the site may load from other hosts",
+      "A set limit for a size or timing value, checked as the code changes",
+      "A target for how fast a developer must fix the slow pages"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "43",
+    "question": "What is critical CSS?",
+    "options": [
+      "The CSS that the first visible part of the page needs, often inlined",
+      "The CSS for the print version of the page and for nothing else",
+      "The CSS rules that the browser marks as errors during the build",
+      "The CSS that a CDN loads before it sends any of the HTML"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "44",
+    "question": "A link tag has `media=\"(min-width: 1200px)\"`. The screen is 400 px wide. What happens?",
+    "options": [
+      "The file does not download and it has no effect on this screen",
+      "The file blocks the first render until the width of the screen changes",
+      "The file downloads only after the load event of the page",
+      "The file still downloads, but it does not block the first render"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "45",
+    "question": "What can a service worker do for performance?",
+    "options": [
+      "Answer requests from Cache Storage, even when the network is slow",
+      "Compress all responses on the server with Brotli before the send",
+      "Open the connection to the server before the user clicks a link",
+      "Move the DOM work of the page to another thread of the CPU"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "46",
+    "question": "What does `Cache-Control: private` do?",
+    "options": [
+      "Only the CDN may store the response, and the browser may not store it",
+      "The response is encrypted when the browser stores it on the disk",
+      "Only the browser cache may store the response, not shared caches",
+      "The response needs a password before the browser shows it to the user"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "47",
+    "question": "Why is connection reuse (keep-alive) good for speed?",
+    "options": [
+      "It keeps the browser cache alive after the tab closes",
+      "It stops the server from closing slow requests",
+      "It avoids a new TCP and TLS handshake for each request",
+      "It lets the browser send requests to any host on one socket"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "48",
+    "question": "What does the `srcset` attribute with `sizes` help the browser do?",
+    "options": [
+      "Show a low-quality image first and a better one later",
+      "Load all image sizes at once and pick one when idle",
+      "Pick an image file with a size that fits the screen",
+      "Convert the image to WebP on the device"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "49",
+    "question": "What does `<link rel=\"modulepreload\">` do?",
+    "options": [
+      "It runs the ES module code at once, in a worker thread",
+      "It fetches an ES module early, so the browser can parse it before use",
+      "It saves the ES module in the cache of the service worker",
+      "It converts the ES module to a classic script for old browsers"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "50",
+    "question": "What does minification do to a JavaScript file?",
+    "options": [
+      "It removes the code that the page never calls at run time",
+      "It compresses the file with gzip and adds a hash to the name",
+      "It splits the file into small chunks, one for each route",
+      "It removes spaces and comments and shortens names to make it smaller"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "51",
+    "question": "A team preloads a same-origin font without a `crossorigin` attribute. What is the result?",
+    "options": [
+      "The browser downloads the font once and uses the same copy for the page",
+      "The browser ignores the preload and loads the font later, with CSS",
+      "The browser downloads the font twice, because the requests do not match",
+      "The browser blocks the font because of a CORS error in the console"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "52",
+    "question": "The console says a preloaded image was not used within a few seconds. What is the main cost?",
+    "options": [
+      "The server blocked the next request for the same image for some time",
+      "The browser deleted the HTTP cache for that image after the warning",
+      "The page spent bandwidth and priority on a file it did not need",
+      "The image is now stored two times in memory for the whole session"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "53",
+    "question": "What is the difference between preload and prefetch in loading priority?",
+    "options": [
+      "Both use the same priority, but prefetch works only for script files",
+      "Preload is low priority for a later page; prefetch is high priority for this page",
+      "Both use the same priority, but preload skips the HTTP cache of the browser",
+      "Preload is high priority for this page; prefetch is lowest priority for a later page"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "54",
+    "question": "A page has 15 `preconnect` hints to different hosts. What is the risk?",
+    "options": [
+      "The browser blocks the page until all 15 hosts have answered the request",
+      "The browser sends 15 copies of every request to each of the hosts",
+      "The browser closes the first 14 connections at once to save memory",
+      "Open sockets and early work compete with the critical requests"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "55",
+    "question": "When does a `<script type=\"module\" src=\"app.js\">` run by default?",
+    "options": [
+      "After the HTML is parsed, like a deferred script",
+      "Before the HTML parser reads the next tag",
+      "As soon as it is downloaded, like an async script",
+      "Only after the load event of the window"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "56",
+    "question": "Two async scripts exist: `lib.js` and `app.js`. `app.js` needs `lib.js`. What is the bug?",
+    "options": [
+      "The browser always runs app.js first, because it is last in the HTML",
+      "The run order is not fixed, so app.js can run first and fail",
+      "The browser blocks both scripts until the DOM is ready",
+      "The browser downloads app.js only after lib.js ends"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "57",
+    "question": "A stylesheet link comes before an inline script that reads layout. What does the browser do?",
+    "options": [
+      "It runs the script first and applies the CSS to the page later on",
+      "It downloads the stylesheet again after the script has run once",
+      "It skips the stylesheet until the script has ended its work",
+      "It waits for the stylesheet before it runs the script"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "58",
+    "question": "A team sets `Cache-Control: max-age=31536000` on `index.html` and deploys a new version. What is the problem?",
+    "options": [
+      "Many users keep the old HTML and do not see the new version",
+      "The browser deletes the HTML file from its cache after one hour",
+      "The new version loads, but the old CSS file blocks the new page",
+      "The CDN refuses to store the HTML file for such a long time"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "59",
+    "question": "What does `stale-while-revalidate` do?",
+    "options": [
+      "It asks the user to choose between the old and the new response now",
+      "It serves an error page until the new response is ready for the user",
+      "It waits for the new response and then drops the old one at once",
+      "It serves the old response now and refreshes it in the background"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "60",
+    "question": "What is the reason for the `Vary: Accept-Encoding` header?",
+    "options": [
+      "The cache removes the encoding from the stored response to save space",
+      "The cache keeps a separate copy for each encoding, such as gzip and br",
+      "The server skips the compression of files that a cache already holds",
+      "The browser picks the same encoding for every host that it uses"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "61",
+    "question": "What does `s-maxage` change in Cache-Control?",
+    "options": [
+      "It sets the freshness time for shared caches, such as a CDN",
+      "It sets the freshness time for the private browser cache only",
+      "It sets how long the server may keep the session",
+      "It sets the maximum size of a stored response"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "62",
+    "question": "Which service worker strategy fits versioned static assets, such as `app.3f9a1c.js`?",
+    "options": [
+      "Network first, with cache as a fallback",
+      "Network only, with no cache",
+      "Cache first, with network as a fallback",
+      "Cache only, with no network at all"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "63",
+    "question": "Why do teams use preload or Early Hints and not HTTP/2 server push?",
+    "options": [
+      "Push can not send CSS files or JavaScript files in any case at all",
+      "Push works only on HTTP/1.1 and it fails on HTTP/2 servers with TLS",
+      "Push can send files the browser already has, and Chrome removed it",
+      "Push needs a service worker in the browser to receive the pushed files"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "64",
+    "question": "A site uses HTTP/2. What is a real downside of one huge JavaScript bundle?",
+    "options": [
+      "One small code change gives the file a new URL, so users download all of it again",
+      "HTTP/2 can not send more than six files at the same time, so one file is faster",
+      "HTTP/2 does not compress the headers of many small files, so one file is faster",
+      "HTTP/2 can send only one file on each connection, so the bundle must be split"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "65",
+    "question": "What is one real benefit of HTTP/3 on a lossy mobile network?",
+    "options": [
+      "A lost packet is never sent again by the server on this link",
+      "The client may skip the TLS check when the network is bad",
+      "A lost packet blocks only its own stream, not all streams",
+      "The server compresses the headers more than HTTP/2 does for each stream"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "66",
+    "question": "Why do many servers use a lower Brotli level for dynamic HTML than for static files?",
+    "options": [
+      "A high level costs much CPU time and delays the response",
+      "A high level makes the compressed file larger for HTML content",
+      "A high level works only with files that are bigger than 1 MB",
+      "A high level breaks the ETag of the response for all of the caches"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "67",
+    "question": "Why is it often a bad idea to gzip a 100-byte response?",
+    "options": [
+      "The browser can not read a gzip response that is that small, so it fails",
+      "The CDN refuses to store a compressed response that is that small",
+      "The gzip format adds a large fixed block of 1 KB to each response",
+      "The gain is tiny and the CPU and header cost can be larger"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "68",
+    "question": "What does `font-display: optional` do?",
+    "options": [
+      "It always waits for the web font and then shows the text with it",
+      "It uses the web font only if it loads very fast; else it keeps the fallback",
+      "It shows the fallback text and always swaps to the web font later",
+      "It lets the user choose the font from a menu in the browser"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "69",
+    "question": "What does `unicode-range` in `@font-face` do for performance?",
+    "options": [
+      "The browser downloads the font file only if the page uses those characters",
+      "The browser draws all of the characters of the font as images",
+      "The browser stores the font in the HTTP cache for one year",
+      "The browser converts the font to the WOFF2 format on the device"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "70",
+    "question": "A site self-hosts its fonts and does not use a font CDN. Which reason is true today?",
+    "options": [
+      "It makes the font load in the same order on all browsers",
+      "It saves a connection to another host, and a shared cross-site font cache no longer exists",
+      "It removes the need for any font-display value in the CSS",
+      "It lets the browser skip the font download after the first visit"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "71",
+    "question": "A 400 ms loop blocks the main thread on click. What is the best general fix?",
+    "options": [
+      "Add `will-change` to the element that the user clicks on",
+      "Split the work into chunks and yield to the main thread between them",
+      "Set `loading=\"lazy\"` on the script tag of the page",
+      "Move the script tag to the end of the body of the page"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "72",
+    "question": "Find the performance bug:\nfor (const el of items) {\n  el.style.width = box.offsetWidth + 'px';\n}",
+    "options": [
+      "The loop writes to the style, and all style writes are async in the browser",
+      "The loop reads the box width, and offsetWidth is a deprecated property",
+      "The read of offsetWidth after a write forces a layout in each loop turn",
+      "The loop uses const, so the browser can not skip a repaint"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "73",
+    "question": "When is `requestIdleCallback` a good tool?",
+    "options": [
+      "For work that must finish before the next paint of the page",
+      "For low-priority work that can wait until the browser is idle",
+      "For network requests that must start at once and have high priority",
+      "For animations that must run at 60 frames in each second"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "74",
+    "question": "A page sends a 50 MB ArrayBuffer to a worker with `postMessage`. How do you avoid a copy?",
+    "options": [
+      "Convert it to a JSON string before you send it to the worker",
+      "Wrap it in a Promise and resolve the Promise in the worker",
+      "Pass it as a transferable object in the second argument",
+      "Freeze it with `Object.freeze` before you send it to the worker"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "75",
+    "question": "A team animates `left` on 200 elements. What is the cost of this choice?",
+    "options": [
+      "Each frame triggers layout work on the main thread",
+      "Each frame starts a new network request",
+      "Each frame creates a new GPU layer for every element",
+      "Each frame forces the browser to decode the image again"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "76",
+    "question": "A developer adds `will-change: transform` to 500 list items. What is the likely result?",
+    "options": [
+      "Faster scroll, because the browser skips layout for all of the items",
+      "Lower memory use, because the browser merges all the layers into one",
+      "No effect, because the browser ignores this property on list items",
+      "More GPU memory use, with no gain for items that do not animate"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "77",
+    "question": "What does partial hydration (islands) do?",
+    "options": [
+      "It hydrates the page on the server before it sends the HTML to users",
+      "It hydrates only the interactive parts and leaves static HTML as is",
+      "It hydrates each component again on every route change in the app",
+      "It hydrates the page only after the user has closed the tab"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "78",
+    "question": "What is the main benefit of streaming SSR?",
+    "options": [
+      "The server sends the page as a single file with no HTML tags in it",
+      "The browser caches the stream as one large HTTP response for later",
+      "The server avoids all the work for the parts of the page that change",
+      "The browser starts to render the first part of the HTML before the slow parts are ready"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "79",
+    "question": "A YouTube embed adds a large cost to a landing page. Which fix keeps the cost small?",
+    "options": [
+      "Show a thumbnail and load the iframe only after a click",
+      "Set `fetchpriority=\"high\"` on the iframe tag of the video player",
+      "Move the iframe to the head of the document, before the body tag",
+      "Add `defer` to the iframe tag so it runs after the HTML parsing ends"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "80",
+    "question": "The hero image at the top of the page has `loading=\"lazy\"`. What is the problem?",
+    "options": [
+      "The browser decodes the image twice on load",
+      "The browser delays an image that the user sees at once",
+      "The browser stores the image only in the service worker cache",
+      "The browser downloads the image at low quality only"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "81",
+    "question": "Why do images that JavaScript sets load later than `img` tags in the HTML?",
+    "options": [
+      "The preload scanner can not see them in the markup",
+      "The HTML parser must wait for the load event first",
+      "The HTTP cache ignores images that a script creates",
+      "The browser gives all script-made images the lowest priority by rule"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "82",
+    "question": "A shared library CDN is used by many sites. Why does a user not get a warm cache from another site?",
+    "options": [
+      "The CDN adds a new ETag to each response for each site that asks",
+      "The CDN signs each response with the name of the site that asks",
+      "The browser deletes its cache when the user changes to another site",
+      "The browser cache is keyed by the top-level site and the URL"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "83",
+    "question": "Servers behind a load balancer send different ETags for the same file. What is the effect?",
+    "options": [
+      "The browser rejects the file because of a security rule",
+      "Revalidation often returns a full 200 and not a 304",
+      "The CDN merges all the ETags into one on its own",
+      "The browser never caches the file at all"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "84",
+    "question": "A CDN has a low hit ratio. URLs differ only by tracking query parameters. What is the best fix?",
+    "options": [
+      "Raise the TTL of the cached files to one year for all of the paths",
+      "Switch the origin to HTTP/3 for all of the requests to the origin",
+      "Add `Vary: *` to all of the responses that the origin sends",
+      "Normalize the cache key so the parameters are ignored"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "85",
+    "question": "What does a `103 Early Hints` response give you?",
+    "options": [
+      "The server sends Link hints while it still builds the real response",
+      "The server tells the browser to cancel the request and try again",
+      "The server replaces the final response with a copy from the cache",
+      "The server sends the body of the page in two parts, in order"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "86",
+    "question": "How do browsers set the priority of a request over HTTP/3?",
+    "options": [
+      "With a tree of stream dependencies that the server sets for each page",
+      "With the order in which the files appear in the HTML of the page",
+      "With the Priority header: urgency and an incremental flag",
+      "With a weight number from 1 to 256 in the TLS handshake of the stream"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "87",
+    "question": "Why is the first response from a new origin slow even with a fast link and HTTP/2?",
+    "options": [
+      "Handshakes cost round trips, and TCP slow start limits the early data",
+      "The browser must compress the first response itself before it reads it",
+      "The server must build a new cache for each new client that connects",
+      "The CDN waits a fixed time before it sends the first byte"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "88",
+    "question": "A transform animation driven by JavaScript with `requestAnimationFrame` janks when the main thread is busy. Why?",
+    "options": [
+      "The browser moves JS-driven animations to the CPU and not to the GPU",
+      "The browser skips the layout step, so the same frames repeat",
+      "The compositor thread blocks while any script runs on the page",
+      "Each frame value is set on the main thread, so the compositor can not run it alone"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "89",
+    "question": "A widget updates often and each update re-runs layout for the whole page. Which CSS property limits the layout work?",
+    "options": [
+      "`contain: layout`, which keeps the layout work inside the widget box",
+      "`will-change: layout`, which moves the layout work to the compositor thread",
+      "`content-visibility: hidden`, which keeps the widget on screen and skips its layout",
+      "`overflow: visible`, which lets the browser skip the layout of the parent box"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "90",
+    "question": "What does `content-visibility: auto` do, and what should you add with it?",
+    "options": [
+      "It hides the content from users; add `aria-hidden` to the same element",
+      "It skips rendering of off-screen content; add `contain-intrinsic-size`",
+      "It loads the content on demand; add `loading=\"lazy\"` to the element",
+      "It caches the rendered content; add a `Cache-Control` header to the page"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "91",
+    "question": "What is the main cost of full hydration of a large server-rendered page?",
+    "options": [
+      "The server must render the HTML two times for each request of a user",
+      "The browser runs the code of the whole page, so it looks ready but is not interactive",
+      "The CDN must keep a separate copy of the page for each user of the site",
+      "The browser must request the HTML of each component from the server again"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "92",
+    "question": "What is one performance gain of React Server Components?",
+    "options": [
+      "The server components skip the network for all data",
+      "The server components run again in the browser to check the result",
+      "The server components run inside a service worker",
+      "The code of server components is not sent to the browser"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "93",
+    "question": "A CDN caches HTML with `Cache-Control: public, max-age=300`. Some pages show another user's name. What went wrong?",
+    "options": [
+      "The CDN compressed the HTML with the wrong encoding for some users",
+      "Personalized HTML was stored in a shared cache and served to others",
+      "The browser cache mixed up the cookies of two tabs of the site",
+      "The origin sent an ETag that was too short to be unique"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "94",
+    "question": "After a deploy, some users still see the old site. The app uses a service worker. What is the likely cause?",
+    "options": [
+      "The new worker is blocked by the HTTP cache of the CDN for a long time",
+      "The new worker waits while pages that the old worker controls stay open",
+      "The browser runs both workers at the same time and mixes their caches",
+      "The old worker deletes the new files of the site after the install"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "95",
+    "question": "A site with a service worker has a slow first navigation after the browser was idle. What helps?",
+    "options": [
+      "A longer `max-age` on the file of the service worker itself",
+      "A second service worker with the same scope as the first one",
+      "Navigation preload, so the network request starts while the worker boots",
+      "A larger Cache Storage quota for the origin of the site"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "96",
+    "question": "Why can a third-party script not simply run in a web worker?",
+    "options": [
+      "Workers can not load scripts from another origin in any case",
+      "Workers run at a lower priority than the main thread of the page",
+      "Workers have no DOM, and these scripts expect synchronous access to it",
+      "Workers can not use the network and can not read the cache"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "97",
+    "question": "A carousel shows one slide and hides nine more. How can you use `fetchpriority` for the hidden slide images?",
+    "options": [
+      "Set `fetchpriority=\"auto\"` so the browser skips them until the user scrolls",
+      "Set `fetchpriority=\"high\"` so the browser fetches them before all other files",
+      "Set `fetchpriority=\"low\"` so they do not compete with the visible hero image",
+      "Set `fetchpriority=\"none\"` so the browser never downloads them at all"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "98",
+    "question": "A CI check fails when a page load time goes over a limit. The check fails at random. What is a better approach?",
+    "options": [
+      "Raise the time limit until the check never fails on any run",
+      "Turn off the check and test the page by hand each month",
+      "Run the check one time and trust the result if it passes",
+      "Gate on stable values, such as bytes and request count, and track timing as a trend"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "99",
+    "question": "What is a trade-off of AVIF compared to WebP for photos?",
+    "options": [
+      "Smaller files in many cases, but slower encode and decode on weak devices",
+      "Larger files in most cases, but a much faster encode and decode on the server",
+      "No transparency support, but wider support in older browsers than WebP has",
+      "No lossy mode, but a better result for flat graphics such as logos and icons"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "100",
+    "question": "A server needs 600 ms to build the body of a page. How can it help the browser start sooner?",
+    "options": [
+      "Wait and send the head and the body together in one single chunk of HTML",
+      "Move the CSS link to the end of the body of the page to save time",
+      "Flush the head early so the browser finds CSS while the body builds",
+      "Send the body first and the head after it, in the same HTML stream"
+    ],
+    "correct_index": 2
+  }
+]

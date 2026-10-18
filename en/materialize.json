@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What does Materialize provide?",
+    "options": [
+      "Material Design CSS and JS components",
+      "A database migration framework",
+      "An Angular dependency injector",
+      "A React-only component runtime"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "2",
+    "question": "What does Materialize's grid organize?",
+    "options": [
+      "Responsive rows and columns",
+      "Browser storage records",
+      "Server request pipelines",
+      "Application route handlers"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "3",
+    "question": "Which class creates a Materialize grid row?",
+    "options": [
+      "d-flex",
+      "grid-row-root",
+      "grid-x",
+      "row"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "4",
+    "question": "Which class marks a Materialize grid column?",
+    "options": [
+      "column-root",
+      "cell",
+      "grid-item",
+      "col"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "5",
+    "question": "What does s12 mean in the default Materialize grid?",
+    "options": [
+      "Twelve percent width",
+      "Twelve pixels of padding",
+      "Twelve small-grid columns",
+      "Twelve sibling rows"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "6",
+    "question": "What does m6 request from medium widths upward?",
+    "options": [
+      "A six-percent width",
+      "A six-row height",
+      "A half-row column",
+      "A six-pixel margin"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "7",
+    "question": "What does l4 request from large widths upward?",
+    "options": [
+      "A four-pixel gap",
+      "Four sibling rows",
+      "A four-percent width",
+      "A four-column span"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "8",
+    "question": "What does container provide?",
+    "options": [
+      "A centered content boundary",
+      "A form state repository",
+      "A JavaScript initialization scope",
+      "A fixed-height viewport"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "9",
+    "question": "What does offset-s2 add?",
+    "options": [
+      "Two extra row elements",
+      "A two-pixel border",
+      "A two-row height",
+      "A two-column offset"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "10",
+    "question": "What do push and pull grid classes change?",
+    "options": [
+      "The component state value",
+      "The document source order",
+      "Visual column position",
+      "The server data ordering"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "11",
+    "question": "What does hide-on-small-only control?",
+    "options": [
+      "Visibility on small viewports only",
+      "Visibility only during loading",
+      "Visibility for keyboard users",
+      "Visibility only in dark mode"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "12",
+    "question": "What does center-align apply?",
+    "options": [
+      "A fixed page center position",
+      "A full-width grid column",
+      "Centered text alignment",
+      "Automatic flex-item centering"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "13",
+    "question": "What does valign-wrapper support?",
+    "options": [
+      "A form submission policy",
+      "An image export resolution",
+      "A server data validation rule",
+      "Vertical content alignment"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "14",
+    "question": "What does z-depth-2 control?",
+    "options": [
+      "The number of modal layers",
+      "The DOM nesting depth",
+      "Shadow elevation styling",
+      "A fixed z-index of two"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "15",
+    "question": "What does responsive-img enable?",
+    "options": [
+      "A mandatory image loading placeholder",
+      "Image scaling within its parent",
+      "Automatic image format conversion",
+      "Server-side image compression"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "16",
+    "question": "What does circle do on an image?",
+    "options": [
+      "Apply a rounded presentation",
+      "Create a progress animation",
+      "Export a circular SVG file",
+      "Change its source dimensions"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "17",
+    "question": "Which class styles a Materialize action button?",
+    "options": [
+      "button",
+      "action-control",
+      "btn",
+      "mui-button"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "18",
+    "question": "What does btn-flat request?",
+    "options": [
+      "A disabled form control",
+      "A flat button treatment",
+      "A full-width layout row",
+      "A hidden focus indicator"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "19",
+    "question": "What does btn-floating style?",
+    "options": [
+      "A fixed-position modal",
+      "A scrolling navigation list",
+      "A circular action button",
+      "A wrapping layout column"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "20",
+    "question": "What does waves-effect add?",
+    "options": [
+      "A required form validator",
+      "A ripple effect during interaction",
+      "A carousel transition state",
+      "An automatic keyboard shortcut"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "21",
+    "question": "What does a card group?",
+    "options": [
+      "Only remote API responses",
+      "Related content and actions",
+      "Only form validation messages",
+      "Only navigation destinations"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "22",
+    "question": "What does card-content contain?",
+    "options": [
+      "The image export settings",
+      "The navigation trigger",
+      "The main card body",
+      "The modal backdrop"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "23",
+    "question": "What does card-action group?",
+    "options": [
+      "Global event handlers",
+      "Card-related actions",
+      "Responsive breakpoint values",
+      "Form validation rules"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "24",
+    "question": "What does card-reveal show?",
+    "options": [
+      "A new application route",
+      "A browser permission prompt",
+      "Additional card content",
+      "A hidden server response"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "25",
+    "question": "What does a collection present?",
+    "options": [
+      "A group of CSS variables",
+      "A related item list",
+      "A module export mapping",
+      "A database transaction"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "26",
+    "question": "What does a badge communicate?",
+    "options": [
+      "A complete error report",
+      "A required input label",
+      "A route transition state",
+      "A small count or status"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "27",
+    "question": "What does a breadcrumb represent?",
+    "options": [
+      "Numeric input bounds",
+      "Form field validity",
+      "Navigation hierarchy",
+      "Loading progress"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "28",
+    "question": "What does pagination provide?",
+    "options": [
+      "Complete table virtualization",
+      "Page navigation controls",
+      "Automatic server pagination",
+      "Database query optimization"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "29",
+    "question": "What does a preloader indicate?",
+    "options": [
+      "A selected menu item",
+      "An indication of pending work",
+      "A completed validation check",
+      "A disabled application route"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "30",
+    "question": "What does a determinate progress bar need?",
+    "options": [
+      "A measured completion percentage",
+      "An automatic infinite loop",
+      "A modal target reference",
+      "A selected option label"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "31",
+    "question": "What does a modal present?",
+    "options": [
+      "A tooltip-only label",
+      "A dialog task",
+      "A table sort key",
+      "A layout column"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "32",
+    "question": "What does a sidenav present?",
+    "options": [
+      "A date selection grid",
+      "A form error summary",
+      "Side navigation content",
+      "A numeric input track"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "33",
+    "question": "What does a dropdown present?",
+    "options": [
+      "Anchored popup content",
+      "A viewport-sized image export",
+      "A complete application route",
+      "A fixed database result"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "34",
+    "question": "What does a collapsible group?",
+    "options": [
+      "Expandable sections",
+      "Image export settings",
+      "Numeric range values",
+      "Browser history entries"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "35",
+    "question": "What does a carousel display?",
+    "options": [
+      "Only navigation labels",
+      "Only table cells",
+      "Only form fields",
+      "A sequence of slides"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "36",
+    "question": "What does Materialize Tabs switch?",
+    "options": [
+      "Content panels",
+      "Theme compiler modes",
+      "Database transactions",
+      "Browser profiles"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "37",
+    "question": "What does ScrollSpy coordinate?",
+    "options": [
+      "Form state with validation",
+      "Theme colors with font size",
+      "Navigation with scroll position",
+      "Image size with compression"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "38",
+    "question": "What does Pushpin support?",
+    "options": [
+      "Image source conversion",
+      "Server-side route selection",
+      "Input value serialization",
+      "Scroll-dependent positioning"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "39",
+    "question": "What does Parallax provide?",
+    "options": [
+      "A required navigation guard",
+      "A responsive table model",
+      "A form submission adapter",
+      "A scroll-related visual effect"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "40",
+    "question": "What does Materialbox provide?",
+    "options": [
+      "An enlarged media view",
+      "A component state store",
+      "A nested grid container",
+      "A numeric unit conversion"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "41",
+    "question": "What does a toast communicate?",
+    "options": [
+      "A complete navigation tree",
+      "A required input value",
+      "A persistent table filter",
+      "A brief transient status message"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "42",
+    "question": "What does a tooltip provide?",
+    "options": [
+      "Essential interactive input",
+      "Brief supporting information",
+      "A full action menu",
+      "A persistent error log"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "43",
+    "question": "What does a chip represent?",
+    "options": [
+      "A complete data table",
+      "A compact tag or item",
+      "An independent page layout",
+      "A modal focus boundary"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "44",
+    "question": "What does input-field commonly wrap?",
+    "options": [
+      "An app-wide theme provider",
+      "A server response and cache",
+      "A dropdown and every option",
+      "An input and its label"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "45",
+    "question": "What does helper-text supply?",
+    "options": [
+      "Supporting input information",
+      "An automatic server error mapper",
+      "A generated validation schema",
+      "A new hidden form value"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "46",
+    "question": "What does a Materialize switch use as its underlying control?",
+    "options": [
+      "Textarea",
+      "Select",
+      "Checkbox",
+      "Radio"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "47",
+    "question": "What does browser-default request for a select?",
+    "options": [
+      "A fixed selected option",
+      "A required custom dropdown",
+      "A hidden input replacement",
+      "Native select presentation"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "48",
+    "question": "In Materialize 1.0, what does M.AutoInit() do?",
+    "options": [
+      "Initialize supported components",
+      "Create every missing DOM node",
+      "Validate every form submission",
+      "Compile every Sass file"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "49",
+    "question": "In Materialize 1.0, what does M.Modal.init return for one element?",
+    "options": [
+      "Its modal instance",
+      "Its server response promise",
+      "Its selected form value",
+      "Its generated CSS text"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "50",
+    "question": "Does Materialize CSS alone initialize interactive components?",
+    "options": [
+      "Only if each element has an ID",
+      "No, JavaScript initialization is needed",
+      "Yes, all data attributes execute natively",
+      "Only if the stylesheet loads last"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "51",
+    "question": "A Materialize grid uses col s12 m6. What happens below medium?",
+    "options": [
+      "Each column spans half the row",
+      "Each column spans the row",
+      "Each column becomes hidden",
+      "Each column becomes content-sized"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "52",
+    "question": "A nested Materialize grid needs its own columns. Where should its row normally go?",
+    "options": [
+      "Inside an existing column",
+      "Inside every image element",
+      "Inside a text input label",
+      "Inside the parent's class attribute"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "53",
+    "question": "A Materialize modal trigger has href=\"#confirm\". What must confirm identify?",
+    "options": [
+      "The trigger's accessible label",
+      "The modal element ID",
+      "The dialog's title text",
+      "The overlay's CSS color"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "54",
+    "question": "Which class connects a Materialize modal trigger in the documented markup?",
+    "options": [
+      "reveal-trigger",
+      "data-bs-toggle",
+      "modal-trigger",
+      "dialog-toggle"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "55",
+    "question": "Which class provides Materialize's modal close hook?",
+    "options": [
+      "btn-close-modal",
+      "modal-close",
+      "dialog-dismiss",
+      "close-reveal"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "56",
+    "question": "A Materialize 1.0 modal must open through code. Which instance method fits?",
+    "options": [
+      "showModal()",
+      "open()",
+      "activate()",
+      "reveal()"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "57",
+    "question": "A Materialize 1.0 plugin needs cleanup before its view disappears. Which instance method fits?",
+    "options": [
+      "removeTheme()",
+      "unmountRoot()",
+      "destroy()",
+      "disposeAll()"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "58",
+    "question": "A Materialize 1.0 select still looks native after loading JavaScript. What can be missing?",
+    "options": [
+      "M.FormSelect.init on the element",
+      "A Sass compiler in the browser",
+      "A hidden TextField component",
+      "A second row around every option"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "59",
+    "question": "A Materialize custom select changes its source options dynamically. What must integration keep synchronized?",
+    "options": [
+      "Only the row's responsive width",
+      "Only the page's document title",
+      "Only the label's font family",
+      "The plugin UI and underlying select"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "60",
+    "question": "A Materialize input receives a value through code but its label overlaps. Which helper can refresh label state?",
+    "options": [
+      "M.rebuildGrid()",
+      "M.syncRoutes()",
+      "M.AutoTheme()",
+      "M.updateTextFields()"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "61",
+    "question": "A Materialize textarea grows through script. Which helper supports resizing it?",
+    "options": [
+      "M.textareaAutoResize(element)",
+      "M.FormSelect.init(element)",
+      "M.updateTextFields(element)",
+      "M.ScrollSpy.init(element)"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "62",
+    "question": "A Materialize dropdown trigger identifies its popup through data-target. What value belongs there?",
+    "options": [
+      "The popup's visible heading",
+      "The dropdown element ID",
+      "The trigger's button color",
+      "The current menu option label"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "63",
+    "question": "A Materialize sidenav trigger uses data-target. What should match that value?",
+    "options": [
+      "The current route's title",
+      "The sidenav element ID",
+      "The navbar background color",
+      "The close button's icon name"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "64",
+    "question": "A Materialize 1.0 toast must display a status. Which API fits?",
+    "options": [
+      "M.Toast.open(message)",
+      "M.showSnackbar(message)",
+      "M.toast({html: message})",
+      "M.Notification.render(message)"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "65",
+    "question": "A Materialize toast receives user-controlled text through an HTML option. What should the app prevent?",
+    "options": [
+      "The toast having a close action",
+      "The message having spaces",
+      "The message using Unicode",
+      "Untrusted markup injection"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "66",
+    "question": "A Materialize tooltip wraps a control that cannot receive focus. Who can lose access?",
+    "options": [
+      "Keyboard users",
+      "Only mouse users",
+      "Only users with wide screens",
+      "Only users on high-resolution displays"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "67",
+    "question": "A Materialize button looks disabled through styling. What must review confirm?",
+    "options": [
+      "Only its ripple animation speed",
+      "Only its text's capitalization",
+      "Its actual activation behavior",
+      "Only its source filename length"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "68",
+    "question": "A Materialize form uses valid and invalid classes. What do those classes primarily provide?",
+    "options": [
+      "Validation-related styling",
+      "A complete submission schema",
+      "Server-side validation rules",
+      "Automatic permission checks"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "69",
+    "question": "A Materialize text label targets an input. What association should the app preserve?",
+    "options": [
+      "The label's class matching the value",
+      "The label's font matching the input type",
+      "The label's text matching the name",
+      "for matching the input ID"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "70",
+    "question": "A Materialize custom select represents a required field. What should accessibility tests inspect?",
+    "options": [
+      "Only the option text's font weight",
+      "Only the compiled stylesheet size",
+      "Only the generated wrapper width",
+      "Label, keyboard, and validation behavior"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "71",
+    "question": "A Materialize modal contains long async-loaded content. What should integration test?",
+    "options": [
+      "Only the initial image filename",
+      "Only the footer border color",
+      "Scroll and focus behavior",
+      "Only the modal title length"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "72",
+    "question": "A Materialize carousel initializes while hidden. What can need recalculation when shown?",
+    "options": [
+      "Its server query schema",
+      "Its accessible label text",
+      "Its layout measurements",
+      "Its source file extension"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "73",
+    "question": "A Materialize Tabs link references a missing panel ID. What should the app correct?",
+    "options": [
+      "The active tab's shadow depth",
+      "The row's grid column count",
+      "The trigger-panel mapping",
+      "The navbar's background color"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "74",
+    "question": "A Materialize Autocomplete needs updated choices. What should the app use?",
+    "options": [
+      "The instance's supported update API",
+      "Only reloading its Sass variables",
+      "Only changing unrelated DOM text",
+      "Only changing the input's border"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "75",
+    "question": "A Materialize Collapsible should allow several sections open. What option disables accordion behavior?",
+    "options": [
+      "fullWidth: true",
+      "accordion: false",
+      "dismissible: false",
+      "draggable: false"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "76",
+    "question": "A Materialize theme changes its primary color in Sass. When must the override reach compilation?",
+    "options": [
+      "After every button click",
+      "Before dependent CSS is emitted",
+      "After browser layout completes",
+      "After JavaScript initialization only"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "77",
+    "question": "A custom Materialize build needs fewer components. What source-level approach fits?",
+    "options": [
+      "Disable all stylesheet caching",
+      "Include the full CSS in every route",
+      "Copy all generated rules into each widget",
+      "Compile selected Sass component imports"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "78",
+    "question": "A Materialize plugin element arrives after M.AutoInit has run. What does the app need?",
+    "options": [
+      "Change the element's text only",
+      "Add a second HTML document",
+      "Wait for every media query to change",
+      "Initialize the new element"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "79",
+    "question": "A Materialize input value changes through a framework. What must its plugin adapter preserve?",
+    "options": [
+      "One hidden duplicate input per render",
+      "One new plugin instance per keystroke",
+      "One global selected value for all fields",
+      "One consistent value owner"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "80",
+    "question": "A Materialize layout copies Bootstrap's col-md-6 class. Why does the layout fail?",
+    "options": [
+      "It uses another framework's class API",
+      "The page requires a modal instance",
+      "Materialize rejects all class attributes",
+      "The browser cannot render six columns"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "81",
+    "question": "A React view and Materialize both replace the same select markup. What failure mode should review address?",
+    "options": [
+      "An invalid CSS color token",
+      "Conflicting DOM ownership",
+      "A required database deadlock",
+      "An automatic font loading failure"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "82",
+    "question": "A Materialize adapter initializes on every render. What lifecycle invariant should it enforce?",
+    "options": [
+      "One managed instance per mounted element",
+      "A new stylesheet for every callback",
+      "A new instance for every prop read",
+      "A new DOM ID for every paint"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "83",
+    "question": "A routed Materialize view disappears while its plugin owns listeners. What must cleanup release?",
+    "options": [
+      "All server-side session records",
+      "Owned listeners and generated nodes",
+      "Every stylesheet rule in the document",
+      "All application route definitions"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "84",
+    "question": "A Materialize modal's trigger disappears before closing. What focus recovery policy is needed?",
+    "options": [
+      "Move focus to a hidden form field",
+      "Clear all tab stops on the page",
+      "Focus the removed trigger reference",
+      "Choose a surviving useful control"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "85",
+    "question": "A Materialize custom select mirrors a native select. What must a form adapter verify at submission?",
+    "options": [
+      "Only the visible wrapper's color",
+      "Only the option list's shadow depth",
+      "The underlying submitted value",
+      "Only the plugin constructor name"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "86",
+    "question": "A Materialize 1.0 app copies a plugin method from a different fork. What must review establish?",
+    "options": [
+      "Only the original component screenshot",
+      "Only the new method's spelling length",
+      "The installed package's actual API",
+      "Only the fork's website color palette"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "87",
+    "question": "A Materialize dropdown is clipped by an ancestor. What should overlay architecture inspect?",
+    "options": [
+      "Only the grid's number of columns",
+      "Only the menu item capitalization",
+      "Only the current form input type",
+      "Overflow boundaries and placement"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "88",
+    "question": "A Materialize design system styles generated plugin internals directly. What upgrade cost follows?",
+    "options": [
+      "A loss of every semantic HTML tag",
+      "Dependence on private markup",
+      "A ban on theme customization",
+      "A required switch to server rendering"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "89",
+    "question": "A Materialize scroll effect runs on many large images. What should performance tests measure?",
+    "options": [
+      "Only the navbar's accessible name",
+      "Only the source file indentation",
+      "Only the image filename lengths",
+      "Scroll smoothness and rendering work"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "90",
+    "question": "A Materialize breakpoint map differs from app JavaScript constants. What architecture reduces divergence?",
+    "options": [
+      "Randomized breakpoints per route",
+      "Independent values in every widget",
+      "A fixed desktop width everywhere",
+      "One shared breakpoint source"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "91",
+    "question": "A Materialize toast offers Undo after a server mutation. What contract belongs to application logic?",
+    "options": [
+      "Action consistency and failure recovery",
+      "Only the message text alignment",
+      "Only the close icon's shape",
+      "Only the toast animation duration"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "92",
+    "question": "A Materialize modal embeds another library's popup. What interaction deserves integration testing?",
+    "options": [
+      "Focus containment and dismissal",
+      "Only the popup's source file size",
+      "Only the modal's shadow elevation",
+      "Only the document title spelling"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "93",
+    "question": "A Materialize page uses column push/pull to reverse controls. What accessibility concern remains?",
+    "options": [
+      "Every pushed control becomes disabled",
+      "The browser removes all focus indicators",
+      "Keyboard order follows source order",
+      "All labels lose their input association"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "94",
+    "question": "A Materialize custom theme darkens surfaces only. What coordinated decisions remain necessary?",
+    "options": [
+      "Text, borders, states, and contrast",
+      "Only the navbar's initial DOM position",
+      "Only the source file extension",
+      "Only the grid container's class name"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "95",
+    "question": "A Materialize app initializes all plugins on every partial update. What is a more scalable integration boundary?",
+    "options": [
+      "Move every widget outside the document",
+      "Reload the complete page after each edit",
+      "Duplicate every plugin instance globally",
+      "Initialize only owned changed subtrees"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "96",
+    "question": "A Materialize custom select updates its generated UI during asynchronous option loading. What invariant protects selection consistency?",
+    "options": [
+      "Every refresh selects the first option",
+      "Native value and displayed choice stay aligned",
+      "Generated labels become submitted values",
+      "Each response creates a new uncontrolled instance"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "97",
+    "question": "A Materialize component wrapper exposes internal plugin instances freely. What contract risk should the team weigh?",
+    "options": [
+      "Consumers bypass lifecycle ownership",
+      "Consumers must use a different browser",
+      "Consumers lose all CSS customization",
+      "Consumers cannot read visible labels"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "98",
+    "question": "A Materialize carousel includes important text inside images. What handoff needs implementation review?",
+    "options": [
+      "Only the exported JPEG quality",
+      "Only the selected carousel slide index",
+      "Alternative content and readable presentation",
+      "Only the source image file names"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "99",
+    "question": "A Materialize plugin relies on geometry before fonts and images settle. What robust strategy should the adapter define?",
+    "options": [
+      "Only increase every timeout globally",
+      "Recalculate at relevant layout changes",
+      "Only initialize before the DOM exists",
+      "Only copy dimensions from one screenshot"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "100",
+    "question": "A Materialize upgrade retains CSS but changes JavaScript behavior. What release evidence matters?",
+    "options": [
+      "Only matching stylesheet filenames",
+      "Only the number of exported constructors",
+      "Integration tests of affected flows",
+      "Only a successful script download"
+    ],
+    "correct_index": 2
+  }
+]

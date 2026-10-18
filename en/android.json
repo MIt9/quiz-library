@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "Which Activity callback runs first when the system creates an Activity?",
+  "options": [
+   "onCreate()",
+   "onStart()",
+   "onResume()",
+   "onRestart()"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "2",
+  "question": "Which callback shows that the Activity is in the foreground and the user can interact with it?",
+  "options": [
+   "onStart()",
+   "onResume()",
+   "onCreate()",
+   "onRestart()"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "What is the main purpose of an Intent in Android?",
+  "options": [
+   "To keep the UI state of a screen",
+   "To declare the permissions that an app needs",
+   "To describe an action for the system",
+   "To draw the layout of a screen"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "4",
+  "question": "What is an explicit Intent?",
+  "options": [
+   "An Intent that lets the user choose an app",
+   "An Intent that the system sends to all apps",
+   "An Intent that needs a runtime permission",
+   "An Intent that names the exact component"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "5",
+  "question": "Which file declares the Activities and the permissions of an Android app?",
+  "options": [
+   "AndroidManifest.xml",
+   "app/build.gradle.kts",
+   "res/values/strings.xml",
+   "proguard-rules.pro file"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "6",
+  "question": "What is a ViewModel used for?",
+  "options": [
+   "To draw the views on the screen of the device",
+   "To keep UI state across configuration changes",
+   "To save the data of the app in a database file",
+   "To start and stop the background services of the app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "7",
+  "question": "A user rotates the device. What does the system do with the Activity by default?",
+  "options": [
+   "It keeps the same Activity and only redraws its views",
+   "It pauses the Activity and then resumes it",
+   "It destroys the Activity and creates a new one",
+   "It restarts the whole app process"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "8",
+  "question": "Which annotation makes a Kotlin class a table in a Room database?",
+  "options": [
+   "@Table",
+   "@Dao",
+   "@Database",
+   "@Entity"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "9",
+  "question": "What is the role of a Room @Dao?",
+  "options": [
+   "It defines the methods that access the database",
+   "It describes one table and its columns in the SQL code",
+   "It creates the database file on the disk",
+   "It manages the schema migrations of the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "10",
+  "question": "Which annotation marks a function as a Jetpack Compose UI function?",
+  "options": [
+   "@Compose",
+   "@Composable",
+   "@ViewBuilder",
+   "@UiFunction"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "11",
+  "question": "What does `remember` do in Jetpack Compose?",
+  "options": [
+   "It saves a value in the database file of the app",
+   "It keeps a value after process death",
+   "It keeps a value between recompositions",
+   "It sends a value to the ViewModel"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "12",
+  "question": "What is recomposition in Jetpack Compose?",
+  "options": [
+   "Compose rebuilds the whole Activity from the start",
+   "Compose compiles the UI code again at runtime",
+   "Compose copies the UI to a new background thread",
+   "Compose reruns composables whose state changed"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "13",
+  "question": "What does the `suspend` keyword mean for a Kotlin function?",
+  "options": [
+   "The function can pause without blocking a thread",
+   "The function always runs on a new background thread",
+   "The function can never throw any exceptions",
+   "The function can run only one time in the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "14",
+  "question": "What does `launch` return when you start a coroutine?",
+  "options": [
+   "A Deferred",
+   "A Job",
+   "A Thread",
+   "A Flow"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "15",
+  "question": "What is the main difference between a Flow and a suspend function that returns a List?",
+  "options": [
+   "A Flow always runs on the main thread of the app",
+   "A Flow cannot be cancelled once it has started",
+   "A Flow can emit many values over time",
+   "A Flow stores its values in a database table"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "16",
+  "question": "Which dispatcher is best for disk and network operations?",
+  "options": [
+   "Dispatchers.Main",
+   "Dispatchers.Unconfined",
+   "Dispatchers.Network",
+   "Dispatchers.IO"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "17",
+  "question": "Which dispatcher do you use to update the UI from a coroutine?",
+  "options": [
+   "Dispatchers.Main",
+   "Dispatchers.IO",
+   "Dispatchers.Default",
+   "Dispatchers.UI"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "18",
+  "question": "Since which Android version must an app ask the user for dangerous permissions at runtime?",
+  "options": [
+   "Android 4.4 KitKat (API 19)",
+   "Android 6.0 (API 23)",
+   "Android 8.0 Oreo (API 26)",
+   "Android 10 (API 29)"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "19",
+  "question": "Which modern API do you use to request a runtime permission from an Activity?",
+  "options": [
+   "Override onRequestPermissionsResult in the Activity",
+   "Call checkSelfPermission before every action",
+   "registerForActivityResult with RequestPermission",
+   "startActivityForResult with a request code"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "20",
+  "question": "What is a Fragment?",
+  "options": [
+   "A background task that has no UI at all in the app",
+   "A layout file written in XML format for a screen",
+   "A copy of an Activity that the system keeps in memory",
+   "A reusable part of the UI with its own lifecycle"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "In which Fragment callback do you usually create the view hierarchy in a classic View-based app?",
+  "options": [
+   "onCreateView()",
+   "onAttach(Context)",
+   "onCreate(Bundle?)",
+   "onStart()"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "22",
+  "question": "Why do developers use RecyclerView for long lists?",
+  "options": [
+   "It loads all of the items in a single frame",
+   "It reuses item views that leave the screen",
+   "It saves the whole list in a local database",
+   "It sorts the list on the server side first"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "23",
+  "question": "What does ANR mean in Android?",
+  "options": [
+   "Android Network Request",
+   "Application Needs Restart",
+   "Application Not Responding",
+   "Asynchronous Native Runtime"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "24",
+  "question": "The main thread does not handle an input event for about how long before the system shows an ANR dialog?",
+  "options": [
+   "About 1 second",
+   "About 20 seconds",
+   "About 60 seconds",
+   "About 5 seconds"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "25",
+  "question": "Which Jetpack library is best for deferrable background work that must finish even after an app restart?",
+  "options": [
+   "WorkManager",
+   "AsyncTask",
+   "Handler",
+   "IntentService"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "26",
+  "question": "What is a Service in Android?",
+  "options": [
+   "A screen that shows a list of items to the user",
+   "A component that does long work without a UI",
+   "A file that stores the settings of the whole app",
+   "A thread pool that the system owns for each app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "27",
+  "question": "What is a BroadcastReceiver used for?",
+  "options": [
+   "To show a notification on the screen of the device",
+   "To share files with the other apps on the device",
+   "To react to system or app broadcast messages",
+   "To run SQL queries in the background of the app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "What is a ContentProvider mainly used for?",
+  "options": [
+   "To draw custom views on the screen",
+   "To schedule the background jobs of an app",
+   "To handle the push messages from a server",
+   "To share structured data with other apps"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "29",
+  "question": "In a standard Android project, where do you add a library dependency for the app module?",
+  "options": [
+   "In the build.gradle file of the app module",
+   "In the AndroidManifest.xml file of the project",
+   "In the res/values/strings.xml file of the module",
+   "In the gradle.properties file of the project only"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "30",
+  "question": "What is the Android App Bundle (AAB)?",
+  "options": [
+   "A signed APK file that has all the languages inside",
+   "A publishing format; Google Play makes the APKs",
+   "A compressed copy of the source code of the app",
+   "A debug build that is made for the emulator only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "What does R8 do in a release build?",
+  "options": [
+   "It signs the APK file with your own release key",
+   "It converts the XML layouts to Kotlin source code",
+   "It shrinks, obfuscates, and optimizes the code",
+   "It runs the unit tests of every module in the project"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "Which resource folder do you use for a layout for landscape orientation?",
+  "options": [
+   "layout-horizontal",
+   "layout-wide",
+   "layout-landscape",
+   "layout-land"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "33",
+  "question": "What is the `dp` unit in Android?",
+  "options": [
+   "A density-independent pixel",
+   "A device-specific hardware pixel",
+   "A pixel unit used for text only",
+   "A physical millimeter on the display"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "34",
+  "question": "Which unit should you use for text size so the text follows the user font setting?",
+  "options": [
+   "dp (density-independent pixels)",
+   "sp (scale-independent pixels)",
+   "px (raw pixels)",
+   "pt (points)"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "35",
+  "question": "Which Jetpack library is the modern replacement for SharedPreferences?",
+  "options": [
+   "Room",
+   "WorkManager",
+   "DataStore",
+   "Paging"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "What does a `Context` give to your code?",
+  "options": [
+   "Access to the network without any permission",
+   "A direct link to the GPU of the device",
+   "A copy of the UI state of the whole app",
+   "Access to app resources and system services"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "37",
+  "question": "What is LiveData?",
+  "options": [
+   "A lifecycle-aware observable data holder",
+   "A database cursor object that Room returns to you",
+   "A thread-safe list of values kept in memory",
+   "A cold stream of values that arrive over time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "38",
+  "question": "Which tool shows the system and app log messages?",
+  "options": [
+   "Profiler",
+   "Logcat",
+   "Layout Inspector",
+   "Device Explorer"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "39",
+  "question": "What is `adb` used for?",
+  "options": [
+   "To build the app with the Gradle tool in a terminal",
+   "To sign the release APK for the Google Play store",
+   "To talk to a device or an emulator from a terminal",
+   "To edit the XML layouts of a screen in a terminal"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "40",
+  "question": "What does the type `String?` mean in Kotlin?",
+  "options": [
+   "The value is always empty",
+   "The value is lazy",
+   "The value is a platform type",
+   "The value can be null"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "41",
+  "question": "What does the Kotlin `data class` generate automatically?",
+  "options": [
+   "equals(), hashCode(), toString(), and copy()",
+   "Only the getters and the setters of properties",
+   "A Room table for the class in the database",
+   "A Parcelable implementation in all cases"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "42",
+  "question": "What does `minSdk` in a Gradle file define?",
+  "options": [
+   "The newest API level that the app is built to use",
+   "The lowest API level that the app supports",
+   "The API level that the team uses for the tests",
+   "The maximum size that the APK file may have"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "43",
+  "question": "What does the `Column` composable do?",
+  "options": [
+   "It places its children side by side in a row",
+   "It puts its children on top of each other",
+   "It places its children one below the other",
+   "It makes a scrollable list of its children"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "What is a `Modifier` in Jetpack Compose?",
+  "options": [
+   "A function that starts a recomposition of the UI",
+   "A class that stores the state of a whole screen",
+   "An annotation that marks a function for previews",
+   "An object that changes the layout or behavior"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "45",
+  "question": "A Room @Query method returns a Flow. When does the Flow emit a new value?",
+  "options": [
+   "When the data in the queried tables changes",
+   "Only one time, when the app opens the database",
+   "Only when you call the DAO method one more time",
+   "Every second, by a timer that Room runs inside"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "What is the default launch mode of an Activity?",
+  "options": [
+   "singleTop: the top instance is reused",
+   "standard: a new instance each time",
+   "singleTask: one instance is kept",
+   "singleInstance: the Activity is alone in a task"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "47",
+  "question": "What happens when the user presses the Back button on the second Activity of a task?",
+  "options": [
+   "The system closes the whole app and its process",
+   "The system restarts the first Activity from scratch",
+   "The system shows the first Activity again",
+   "The system keeps both Activities open on the stack"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "48",
+  "question": "What does ViewBinding generate for an XML layout?",
+  "options": [
+   "A Kotlin copy of the XML layout, as a source file",
+   "A ViewModel class that holds state for the layout",
+   "A Compose function that draws the same layout",
+   "A binding class with typed view references"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "49",
+  "question": "From Android 8.0 (API 26), what must an app create before it posts a notification?",
+  "options": [
+   "A notification channel",
+   "A notification service",
+   "A foreground permission",
+   "A broadcast receiver"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "What happens to coroutines started in `viewModelScope` when the ViewModel is cleared?",
+  "options": [
+   "They continue until they finish",
+   "The system cancels them",
+   "They move to GlobalScope",
+   "They pause until the next screen"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "51",
+  "question": "Activity A starts Activity B. Which callback of A runs first?",
+  "options": [
+   "onStop()",
+   "onPause()",
+   "onDestroy()",
+   "onSaveInstanceState()"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "A ViewModel keeps a search text. The system kills the app process in the background. Which tool restores the text?",
+  "options": [
+   "A second ViewModel",
+   "A retained Fragment only",
+   "SavedStateHandle",
+   "A singleton object"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "53",
+  "question": "Why do you observe LiveData in a Fragment with `viewLifecycleOwner` and not with `this`?",
+  "options": [
+   "The Fragment lifecycle is shorter than the view lifecycle",
+   "LiveData does not accept a Fragment as owner",
+   "The view lifecycle runs on a different thread",
+   "The view can be destroyed while the Fragment stays"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "54",
+  "question": "A team collects a Flow in `lifecycleScope.launch { flow.collect { } }`. What is the risk?",
+  "options": [
+   "The collection continues in the background",
+   "The collection stops after a rotation event",
+   "The collection runs on a background thread",
+   "The collection misses the first emitted value"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "55",
+  "question": "What is the benefit of `collectAsStateWithLifecycle` over `collectAsState`?",
+  "options": [
+   "It collects the Flow on Dispatchers.IO all the time in the app",
+   "It stops collection when the lifecycle is below STARTED",
+   "It keeps the last value after the process death",
+   "It converts the Flow to a LiveData object for you"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "56",
+  "question": "A composable has `var count = 0` and a Button that does `count++`. The text does not update. What is the fix?",
+  "options": [
+   "Call `invalidate()` on the view after the change",
+   "Store the count in a `val` property",
+   "Use `remember { mutableStateOf(0) }`",
+   "Move `count` to a top-level variable"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "What is the difference between `remember` and `rememberSaveable`?",
+  "options": [
+   "rememberSaveable shares the value between screens",
+   "rememberSaveable saves the value in a Room table",
+   "rememberSaveable runs the lambda on each recomposition",
+   "rememberSaveable also survives Activity recreation"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "58",
+  "question": "What does state hoisting mean in Jetpack Compose?",
+  "options": [
+   "A composable receives state and events from its caller",
+   "A composable stores its state in a global singleton object",
+   "A composable saves its state in a local database file",
+   "A composable copies its state into each child"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "59",
+  "question": "Why do you give a `key` to the items in a `LazyColumn`?",
+  "options": [
+   "Compose can load the items faster from the network",
+   "Compose can keep item state when the order changes",
+   "Compose can skip the layout phase for the items",
+   "Compose can save the items in a local database"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "60",
+  "question": "What happens by default when you run a Room query on the main thread?",
+  "options": [
+   "Room runs the query and shows a warning",
+   "Room moves the query to a background thread",
+   "Room throws an exception",
+   "Room returns an empty result"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "61",
+  "question": "A developer adds a column to a Room entity and increases the version. There is no Migration. What happens when the app opens the database?",
+  "options": [
+   "Room adds the column automatically",
+   "Room keeps the old data and ignores the column",
+   "Room shows a warning and continues",
+   "The app crashes with an IllegalStateException"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "62",
+  "question": "When do you use `@Transaction` on a Room DAO method?",
+  "options": [
+   "When several operations must succeed or fail together",
+   "When the query must run on the main thread of the app",
+   "When the query must return a Flow of values",
+   "When the table needs an extra index for the speed"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "63",
+  "question": "What is the difference between `launch` and `async`?",
+  "options": [
+   "launch blocks the current thread, but async never blocks it",
+   "async returns a Deferred; use `await` for the result",
+   "async can run only on the Dispatchers.IO dispatcher",
+   "launch can return a value, but async cannot do it"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "64",
+  "question": "A parent coroutine scope is cancelled. What happens to its child coroutines?",
+  "options": [
+   "They continue to run until they finish",
+   "They move to the global scope",
+   "The system cancels them too",
+   "They pause until a new parent exists"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "65",
+  "question": "Why is `GlobalScope.launch` a risk in an Android app?",
+  "options": [
+   "It always runs on the main thread of the app",
+   "It cannot call suspend functions at all in Android code",
+   "It stops when the Activity rotates on the screen",
+   "The work has no lifecycle and can outlive the screen"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "66",
+  "question": "What does `withContext(Dispatchers.IO) { ... }` do?",
+  "options": [
+   "It runs the block on IO and returns the result",
+   "It starts a new coroutine and returns a Job object",
+   "It blocks the caller thread until the end",
+   "It runs the block in a separate process"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "67",
+  "question": "What is a key property of `StateFlow`?",
+  "options": [
+   "It starts empty and waits for the first emitted value",
+   "It always holds a value for new collectors",
+   "It sends each value to all collectors and replays 10",
+   "It runs a new producer for each collector"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "68",
+  "question": "What does it mean that a `Flow` is cold?",
+  "options": [
+   "The Flow can never emit any value to a collector",
+   "The Flow keeps the last emitted value for new ones",
+   "The producer code starts again for each collector",
+   "The Flow runs only on the main thread of the app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "69",
+  "question": "A singleton stores a reference to an Activity. What is the risk and the fix?",
+  "options": [
+   "A crash at startup; use a ViewModel instead",
+   "A slow startup; use lazy initialization",
+   "A security hole; use a Fragment instead",
+   "A memory leak; use the application context"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "70",
+  "question": "An anonymous `Runnable` in an Activity is posted with a 10-minute delay to a Handler. What is the risk?",
+  "options": [
+   "The Runnable holds the Activity, so it cannot be freed",
+   "The Runnable runs on a background thread at that time",
+   "The Runnable runs before the end of the 10-minute delay",
+   "The Handler throws a NetworkOnMainThreadException at once"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "71",
+  "question": "Which tool helps to find memory leaks of Activities and Fragments in a debug build?",
+  "options": [
+   "Lint",
+   "LeakCanary",
+   "Detekt",
+   "Gradle Doctor"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "72",
+  "question": "The user denies a permission and selects “Don’t ask again”. What is the best next step?",
+  "options": [
+   "Ask again in a loop until the user finally accepts",
+   "Request the permission in the Manifest file again",
+   "Explain why you need it; link to the app settings",
+   "Close the app and show an error message to the user"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "What is the minimum repeat interval of a periodic work request in WorkManager?",
+  "options": [
+   "1 minute",
+   "5 minutes",
+   "1 hour",
+   "15 minutes"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "74",
+  "question": "What does Android require when an app runs a foreground service?",
+  "options": [
+   "A visible notification",
+   "A wake lock held by the user",
+   "A bound Activity",
+   "A dangerous permission"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "The device is in Doze mode. What happens to ordinary background jobs and alarms?",
+  "options": [
+   "The system runs them more often than before",
+   "The system defers them to maintenance windows",
+   "The system cancels them forever without a trace",
+   "The system runs them only when Wi-Fi is on"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "76",
+  "question": "An app is slow at cold start. The profiler shows heavy work in `Application.onCreate`. What do you do?",
+  "options": [
+   "Move the work into the Manifest file of the app",
+   "Move the work into the onDestroy() method of the Activity",
+   "Move the work to lazy or background setup",
+   "Increase the heap size of the app in the Manifest"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "77",
+  "question": "What is a cold start of an app?",
+  "options": [
+   "The app starts after the phone restarts or powers on",
+   "The app starts again from the recent apps list",
+   "The app starts with an empty cache",
+   "The system must create the app process first"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "78",
+  "question": "Which simple change usually gives the largest APK size reduction in a release build?",
+  "options": [
+   "Turn on R8 code and resource shrinking",
+   "Change the app name to a shorter one",
+   "Turn off the Manifest merger in Gradle",
+   "Move all the code into one single module"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "79",
+  "question": "Since Android 12, what must you set when you create a PendingIntent?",
+  "options": [
+   "A target SDK value in the Intent object",
+   "A mutability flag: FLAG_IMMUTABLE or FLAG_MUTABLE",
+   "A package name for the receiver of the Intent",
+   "A permission string that is declared in the Manifest"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "80",
+  "question": "When you target Android 12 or higher, which attribute must a component with an intent filter have?",
+  "options": [
+   "android:enabled",
+   "android:process",
+   "android:exported",
+   "android:permission"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "81",
+  "question": "What survives a configuration change but NOT process death?",
+  "options": [
+   "The data in SavedStateHandle",
+   "The data in onSaveInstanceState()",
+   "The data in a ViewModel",
+   "The data in a Room database"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "82",
+  "question": "A Compose screen needs only a boolean from a fast-changing scroll state. Which API reduces recompositions?",
+  "options": [
+   "rememberUpdatedState",
+   "produceState",
+   "snapshotFlow",
+   "derivedStateOf"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "83",
+  "question": "In Compose, why does `Modifier.offset { IntOffset(x, 0) }` often perform better than `Modifier.offset(x.dp, 0.dp)` for fast animations?",
+  "options": [
+   "The state read moves from composition to layout",
+   "The lambda runs on a background thread of the pool",
+   "The lambda disables the draw phase of the whole node",
+   "The lambda caches the layout result on the disk"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "What are the three main phases of a Compose frame in the correct order?",
+  "options": [
+   "Layout, composition, then drawing",
+   "Composition, layout, drawing",
+   "Composition, drawing, then layout",
+   "Drawing, layout, then composition"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "85",
+  "question": "A suspend function uses `try { ... } catch (e: Exception) { log(e) }`. Why can this break coroutine cancellation?",
+  "options": [
+   "It blocks the thread of the dispatcher for a long time",
+   "It stops the parent scope of the coroutine at once",
+   "It also catches CancellationException, so the work continues",
+   "It changes the Job into a Deferred object without any warning"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "86",
+  "question": "What is the effect of a `SupervisorJob` in a scope?",
+  "options": [
+   "A failed child is retried automatically by the scope",
+   "All children run on one single thread of the dispatcher",
+   "The scope ignores all of the exceptions that children throw",
+   "A failed child does not cancel its siblings"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "A Flow chain has `.map { }.flowOn(Dispatchers.IO).collect { }`. Which code runs on IO?",
+  "options": [
+   "The upstream operators before flowOn",
+   "The collect block at the end of the chain",
+   "Only the map block after the flowOn call",
+   "All operators and the collector together"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "What does `stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), init)` do after a screen rotation?",
+  "options": [
+   "The upstream flow restarts from the beginning again",
+   "The upstream stays active during the 5 second gap",
+   "The ViewModel scope is cancelled at once by the system",
+   "The last value is cleared from the flow when the screen rotates"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "89",
+  "question": "A Room query on table `User` returns a Flow. A different row in `User` changes. What happens?",
+  "options": [
+   "The Flow emits only if your own result changes",
+   "The Flow completes after the first change in the table",
+   "The Flow emits again, even if your result is the same",
+   "The Flow throws an exception to the collector of the data"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "90",
+  "question": "Which statement about `onTrimMemory` is correct?",
+  "options": [
+   "The system calls it only after the app is killed",
+   "The system calls it to ask for more heap",
+   "The system calls it on each garbage collection",
+   "The app can release caches when memory is low"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "91",
+  "question": "A 4000 x 3000 photo is decoded to a Bitmap with ARGB_8888. About how much memory does it use?",
+  "options": [
+   "About 48 MB",
+   "About 12 MB, with 1 byte for each pixel",
+   "About 24 MB, with 2 bytes for each pixel",
+   "About 96 MB, with 8 bytes for each pixel"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "92",
+  "question": "A screen runs at 60 Hz. About how much time does the app have to draw one frame without jank?",
+  "options": [
+   "About 33 ms",
+   "About 16 ms",
+   "About 100 ms",
+   "About 1 ms"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "93",
+  "question": "What does StrictMode help you find in a debug build?",
+  "options": [
+   "Slow SQL queries on a remote server of the app",
+   "Unused resources inside of the APK file of the app",
+   "Disk or network use on the main thread, and leaks",
+   "Wrong permission names in the Manifest of the app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "94",
+  "question": "A Fragment transaction with `commit()` runs after `onSaveInstanceState()`. What happens?",
+  "options": [
+   "The system saves the transaction for later",
+   "The system ignores the transaction silently",
+   "The system restarts the Activity",
+   "The system throws an IllegalStateException"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "95",
+  "question": "A feature must run at an exact time, for example an alarm clock. Why is WorkManager a poor choice?",
+  "options": [
+   "It does not guarantee exact timing",
+   "It cannot run after a reboot",
+   "It needs a foreground notification always",
+   "It runs only on the main thread"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "96",
+  "question": "What is a Baseline Profile used for?",
+  "options": [
+   "To list the permissions that an app needs to run",
+   "To tell ART which code to compile ahead of time",
+   "To remove unused resources from the APK at build time",
+   "To record the user flows for the UI tests of the app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "97",
+  "question": "A library uses reflection. The app works in debug but crashes in release after R8. What is the likely cause and fix?",
+  "options": [
+   "R8 changed the thread; add a dispatcher in the code",
+   "R8 removed the Manifest entry; add the exported flag",
+   "R8 removed or renamed classes; add keep rules",
+   "R8 signed the APK in a wrong way; change the key"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "98",
+  "question": "A launchMode `singleTop` Activity is on top of the back stack and receives a new Intent. What happens?",
+  "options": [
+   "The system creates a new instance on top of the old one",
+   "The system destroys and recreates the instance",
+   "The system ignores the new Intent without any callback",
+   "The system calls onNewIntent() on the same instance"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "99",
+  "question": "In Compose, `LaunchedEffect(Unit)` uses a lambda parameter `onDone` that can change. What is the risk and the fix?",
+  "options": [
+   "The effect keeps an old lambda; use rememberUpdatedState",
+   "The effect restarts on every recomposition; use remember()",
+   "The effect runs on a background thread; use withContext",
+   "The effect leaks the Activity; use a ViewModel"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "100",
+  "question": "Which Play delivery feature lets you download a rarely used feature module only when the user needs it?",
+  "options": [
+   "Multi-APK split by screen density",
+   "On-demand dynamic feature modules",
+   "Instant App Links for each module",
+   "A large OBB expansion file for assets"
+  ],
+  "correct_index": 1
+ }
+]

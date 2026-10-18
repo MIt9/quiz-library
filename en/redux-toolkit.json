@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What does `configureStore` do in Redux Toolkit?",
+    "options": [
+      "It creates a slice with reducers and matching action creators and types",
+      "It creates a store with no middleware and no DevTools support at all",
+      "It creates a store with default middleware and DevTools setup",
+      "It creates a React context that gives the store to all components"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "2",
+    "question": "What does `createSlice` return?",
+    "options": [
+      "A store object with `dispatch`, `subscribe`, and `getState` methods",
+      "A list of thunks, one for each reducer case",
+      "An object with a reducer function and action creators",
+      "A selector function that reads state from the root"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "3",
+    "question": "Why can you write code that looks like a mutation inside a `createSlice` reducer?",
+    "options": [
+      "The reducer receives the real store state and changes it in place",
+      "The store makes a deep clone of the state before each action",
+      "Immer records changes on a draft and makes a new immutable state",
+      "Redux 5 allows direct changes to the state object in reducers"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "4",
+    "question": "What does the `name` field in `createSlice` do?",
+    "options": [
+      "It sets the prefix of the action type strings, such as `counter/increment`",
+      "It sets the file name that DevTools uses to export the action history log",
+      "It sets the name of the selector that the slice creates by default for state",
+      "It sets the key that the persistence layer uses to save the slice to storage"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "5",
+    "question": "What is `PayloadAction<T>` in Redux Toolkit with TypeScript?",
+    "options": [
+      "A function that makes a thunk with a typed payload",
+      "A type for an action that has a payload of type T",
+      "A type that describes the whole root state of the store",
+      "A middleware that checks the payload type at run time"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "6",
+    "question": "What does `createAsyncThunk` generate for a promise?",
+    "options": [
+      "A React hook that fetches data and caches the result for components",
+      "A reducer that stores the promise result in the state of the slice",
+      "Action types for the pending, fulfilled, and rejected states",
+      "A middleware that retries the promise after each failure of the request"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "7",
+    "question": "What is the first argument of `createAsyncThunk`?",
+    "options": [
+      "A type prefix string, such as `users/fetch`",
+      "An options object with the base URL and headers",
+      "The name of the slice that handles the result",
+      "The payload creator function that calls the API"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "8",
+    "question": "In `createAsyncThunk`, what does the payload creator return value become?",
+    "options": [
+      "The payload of the fulfilled action",
+      "The payload of the pending action",
+      "The new state of the slice after the call",
+      "The error field of the rejected action"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "9",
+    "question": "Which `createSlice` field handles actions from a thunk made outside the slice?",
+    "options": [
+      "`initialState` with a callback function",
+      "`reducers` with a computed key name",
+      "`prepare` with the thunk type string",
+      "`extraReducers` with `builder.addCase`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "10",
+    "question": "Which `extraReducers` form does Redux Toolkit 2.0 remove?",
+    "options": [
+      "The builder callback notation, such as `(builder) => builder.addCase`",
+      "The use of `extraReducers` together with `createAsyncThunk`",
+      "The `builder.addMatcher` method inside the builder callback",
+      "The object notation, such as `{ [thunk.fulfilled]: ... }`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "11",
+    "question": "What is RTK Query?",
+    "options": [
+      "A library that writes SQL queries from the Redux state of the app",
+      "A hook that reads a value from the store state in a component",
+      "A middleware that logs all actions to the console in development",
+      "A tool in Redux Toolkit for data fetching and caching"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "12",
+    "question": "Which base query helper in RTK Query uses the `fetch` API?",
+    "options": [
+      "`axiosBaseQuery`",
+      "`createFetchQuery`",
+      "`fetchBaseQuery`",
+      "`useFetchQuery`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "13",
+    "question": "In `createApi`, which builder method defines an endpoint that only reads data?",
+    "options": [
+      "`builder.mutation`",
+      "`builder.query`",
+      "`builder.fetch`",
+      "`builder.select`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "14",
+    "question": "An endpoint is named `getPosts` and uses `builder.query`. Which hook does RTK Query generate?",
+    "options": [
+      "`useGetPostsSelector`",
+      "`useQueryGetPosts`",
+      "`useGetPostsMutation`",
+      "`useGetPostsQuery`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "15",
+    "question": "A mutation endpoint is named `addPost`. What does `useAddPostMutation` return?",
+    "options": [
+      "A tuple with a trigger function and a result object",
+      "An object with `data` that loads at the time of the mount",
+      "A promise that resolves when the request ends with a result",
+      "A selector that reads the result of the last request in the store"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "16",
+    "question": "What does `providesTags` do on a query endpoint?",
+    "options": [
+      "It sets the HTML tags for the rendered data",
+      "It sets the tags that the mutation must send",
+      "It states which cache tags the cached data has",
+      "It lists the endpoints that can use the cached data"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "17",
+    "question": "What does `invalidatesTags` do on a mutation endpoint?",
+    "options": [
+      "It deletes the tags from all the cached query results and refetches them",
+      "It marks the cached data with these tags as stale and refetches it",
+      "It sends the tags to the server in the body of the mutation request",
+      "It stops queries with these tags from running again until the next reload"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "18",
+    "question": "How do you stop a query hook from running until an argument is ready?",
+    "options": [
+      "Set `enabled: false` in the endpoint definition of the query in `createApi`",
+      "Pass `lazy: true` in the options of the hook until the argument is ready",
+      "Pass `null` as the second argument of the hook until the data is ready",
+      "Pass `skip: true` in the options, or `skipToken` as the argument"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "19",
+    "question": "Which query hook option refetches data at a fixed time interval?",
+    "options": [
+      "`refetchEvery`",
+      "`keepUnusedDataFor`",
+      "`pollingInterval`",
+      "`refreshInterval`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "20",
+    "question": "What is the difference between `isLoading` and `isFetching` in a query hook?",
+    "options": [
+      "`isLoading` is true for any request; `isFetching` is true only for the first load with no data",
+      "`isLoading` is true only for the first load with no data; `isFetching` is true for any request",
+      "`isLoading` shows a result from the cache; `isFetching` shows a result from the network",
+      "`isLoading` is true for mutations only; `isFetching` is true for queries and mutations"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "21",
+    "question": "What does `createEntityAdapter` give you?",
+    "options": [
+      "A normalized state shape with ids and entities, plus ready reducers and selectors",
+      "A hook that subscribes to one entity in the store and updates it when it changes",
+      "A wrapper that saves entities to local storage and loads them again at start",
+      "A thunk that loads a list of entities from the server and stores it as an array"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "22",
+    "question": "By default, which field does `createEntityAdapter` use as the entity id?",
+    "options": [
+      "The `key` field",
+      "The `_id` field",
+      "The `id` field",
+      "The `uuid` field"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "23",
+    "question": "Which entity adapter method adds a new entity, or shallow-merges changes into an existing entity with the same id?",
+    "options": [
+      "`upsertOne`",
+      "`setOne`",
+      "`addOne`",
+      "`mergeOne`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "24",
+    "question": "What does `adapter.getSelectors()` return?",
+    "options": [
+      "Selectors that make API calls for each entity when the state is empty",
+      "Selectors that only work with the first entity in the ids array of state",
+      "Selectors such as `selectAll`, `selectById`, and `selectIds`",
+      "Selectors that return the raw state of the slice without any changes in it"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "25",
+    "question": "What is the purpose of `createListenerMiddleware`?",
+    "options": [
+      "It validates the shape of each action before it reaches reducers",
+      "It runs side effects in response to dispatched actions",
+      "It splits the store into a separate store for each listener",
+      "It listens to DOM events and dispatches actions from them"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "26",
+    "question": "Which method adds a listener to a listener middleware instance?",
+    "options": [
+      "`listenerMiddleware.subscribe({ actionCreator, callback: effect })`",
+      "`listenerMiddleware.on({ actionCreator, handler: effect })`",
+      "`listenerMiddleware.startListening({ actionCreator, effect })`",
+      "`listenerMiddleware.addEffect({ actionCreator, effect: effect })`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "27",
+    "question": "In React-Redux 9.1 or later, how do you make a typed `useAppDispatch` hook?",
+    "options": [
+      "`useDispatch<AppDispatch>.typed()`",
+      "`useDispatch.withTypes<AppDispatch>()`",
+      "`createTypedHook<AppDispatch>(useDispatch)`",
+      "`useDispatch.as<AppDispatch>()`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "28",
+    "question": "How do you get the `RootState` type from a configured store?",
+    "options": [
+      "`typeof store.dispatch`",
+      "`Parameters<typeof store.subscribe>`",
+      "`ReturnType<typeof store.getState>`",
+      "`InstanceType<typeof store>`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "29",
+    "question": "How do you get the `AppDispatch` type from a configured store?",
+    "options": [
+      "`ReturnType<typeof store.getState>`",
+      "`typeof store.dispatch`",
+      "`typeof store.subscribe`",
+      "`Parameters<typeof store.dispatch>`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "30",
+    "question": "How do React components get access to the Redux store?",
+    "options": [
+      "Import the store and call `store.use()` in each component",
+      "Pass the store as a prop from the root component to each child",
+      "Wrap the app in `<Provider store={store}>`",
+      "Call `configureStore` inside the root component"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "31",
+    "question": "What does the `useSelector` hook do?",
+    "options": [
+      "It dispatches an action to the store and returns the new state value",
+      "It reads data from the store state and subscribes to changes",
+      "It creates a new memoized selector and subscribes the component to it",
+      "It writes a value to the slice state and renders the component again"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "32",
+    "question": "Which checks does the default middleware of `configureStore` run only in development?",
+    "options": [
+      "The immutability check and the serializability check",
+      "The DevTools check and the thunk check, in all build modes",
+      "The reducer check and the action type check, in all build modes",
+      "The thunk check and the listener check, in all build modes"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "33",
+    "question": "A teammate puts a `Date` object in an action payload. What does RTK show in development?",
+    "options": [
+      "A thrown error that stops the app",
+      "A console warning about a non-serializable value",
+      "Nothing, because the check only looks at the state",
+      "A silent change of the `Date` to a string"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "34",
+    "question": "In RTK 2.0, how do you add middleware to `configureStore`?",
+    "options": [
+      "Call `store.use(mw)` after the store is created with `configureStore`",
+      "Pass an object: `middleware: { extra: mw }` to the store options",
+      "Pass an array: `middleware: [mw]` and the defaults stay in place",
+      "Use a callback: `middleware: (gdm) => gdm().concat(mw)`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "35",
+    "question": "Where do you add the RTK Query API reducer in the store?",
+    "options": [
+      "In the middleware list as `api.reducer` after the thunk middleware",
+      "In the `preloadedState` option of the store, under the API name",
+      "In the `enhancers` option of the store, as a store enhancer",
+      "In the reducer object under the key `[api.reducerPath]`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "36",
+    "question": "What does `createAction` return?",
+    "options": [
+      "A reducer that handles one action type",
+      "An action object with a random type",
+      "A thunk that dispatches one action",
+      "An action creator function with a fixed type"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "37",
+    "question": "What does `createSelector` do?",
+    "options": [
+      "It makes a memoized selector from input selectors and a result function",
+      "It makes a selector that fetches data from the server and caches it",
+      "It makes a hook that selects state in a component and caches the value",
+      "It makes a copy of the state for each selector to avoid shared changes"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "38",
+    "question": "A `console.log(state)` in a reducer shows a Proxy. Which function shows a plain copy with the current changes?",
+    "options": [
+      "`current(state)`",
+      "`original(state)`",
+      "`freeze(state)`",
+      "`unwrap(state)`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "39",
+    "question": "A reducer changes the draft and also returns a new object. What does Immer do?",
+    "options": [
+      "It merges the two results into one state",
+      "It uses the returned object and ignores the changes",
+      "It uses the changed draft and ignores the returned object",
+      "It throws an error"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "40",
+    "question": "What does `rejectWithValue` do inside a `createAsyncThunk` payload creator?",
+    "options": [
+      "It gives a custom value as the payload of the rejected action",
+      "It stops the thunk and skips the rejected action in the store",
+      "It retries the thunk with a new value after a short delay time",
+      "It changes the state to the rejected value directly in the slice"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "41",
+    "question": "Which argument of the payload creator gives you `getState` and `dispatch`?",
+    "options": [
+      "The second argument, the `thunkAPI` object",
+      "The first argument, the thunk argument",
+      "The `this` value of the payload creator",
+      "The `meta` field of the pending action"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "42",
+    "question": "What does `.unwrap()` do on the promise from a dispatched thunk?",
+    "options": [
+      "It returns the full action in all cases, even when the thunk fails",
+      "It removes the thunk from the middleware chain after the first call",
+      "It converts the promise to an observable that you can subscribe to",
+      "It returns the payload when fulfilled, or throws when rejected"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "43",
+    "question": "What does the `preloadedState` option of `configureStore` do?",
+    "options": [
+      "It sets the default state of a slice after a reset action is dispatched",
+      "It sets the initial state of the store, for example from the server",
+      "It loads the state from DevTools at each start of the application",
+      "It sets the state that reducers return for unknown action types"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "44",
+    "question": "How do you combine several slice reducers in `configureStore`?",
+    "options": [
+      "Pass an object of slice reducers as the `reducer` option",
+      "Pass an array of slices to the `slices` option",
+      "Call `store.addSlice` for each slice after creation",
+      "Use `Object.assign` on the slice actions"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "45",
+    "question": "Which function in a query hook result forces a new request?",
+    "options": [
+      "`reload`",
+      "`refetch`",
+      "`invalidate`",
+      "`revalidate`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "46",
+    "question": "What does `transformResponse` do in an RTK Query endpoint?",
+    "options": [
+      "It changes the request body before it goes to the server",
+      "It changes the response data before it goes to the cache",
+      "It changes the error before the hook shows it",
+      "It changes the cache tags after the response"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "47",
+    "question": "What does the `keepUnusedDataFor` option control?",
+    "options": [
+      "How many seconds a request waits before it times out",
+      "How many entries the cache keeps for each endpoint",
+      "How many seconds the polling timer waits at start",
+      "How many seconds unused cached data stays in the cache"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "48",
+    "question": "Which query option makes data refetch each time the component mounts?",
+    "options": [
+      "`refetchOnMountOrArgChange: true`",
+      "`refetchOnReconnect: true`",
+      "`refetchOnFocus: true`",
+      "`forceRefetch: true`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "49",
+    "question": "`refetchOnFocus` does not work in an app. Which setup call is probably missing?",
+    "options": [
+      "`api.util.resetApiState()`",
+      "`store.subscribe(api.refetch)`",
+      "`enableRefetch(store)`",
+      "`setupListeners(store.dispatch)`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "50",
+    "question": "Which `extraReducers` builder method handles all actions that match a predicate function?",
+    "options": [
+      "`builder.addFilter`",
+      "`builder.addMatcher`",
+      "`builder.addDefaultCase`",
+      "`builder.addPredicate`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "51",
+    "question": "Which `createSlice` reducer syntax lets you change the action payload before it is created?",
+    "options": [
+      "A reducer with a third `payload` argument",
+      "An object with `reducer` and `prepare` functions",
+      "A function named `preReducer` in the slice",
+      "A `transform` option in `createSlice`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "52",
+    "question": "A query provides `[{ type: 'Post', id: 1 }]`. A mutation invalidates `['Post']`. What happens?",
+    "options": [
+      "The query is removed from the cache and does not refetch after that",
+      "The query stays cached, because the mutation has no id in its tag list",
+      "The query refetches, because a general tag matches all tags of that type",
+      "The query refetches only after the next component mount or focus event"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "53",
+    "question": "Caching, polling, and invalidation do not work in a store. What is the most likely cause?",
+    "options": [
+      "The store uses the default thunk middleware",
+      "The `api.reducer` is added with a wrong key name",
+      "The `tagTypes` list is empty in `createApi`",
+      "The `api.middleware` is not added to the store"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "54",
+    "question": "Two components call `useGetPostQuery(1)` and `useGetPostQuery(2)`. How many cache entries exist?",
+    "options": [
+      "Two, because the cache key comes from the serialized arguments",
+      "One, because both calls use the same endpoint and share one entry",
+      "Two, but only the last one stays active in the cache of the store",
+      "One for each component that is mounted at the same time in the app"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "55",
+    "question": "Which lifecycle callback do you use to make an optimistic update in a mutation endpoint?",
+    "options": [
+      "`onCacheEntryAdded`",
+      "`transformResponse`",
+      "`queryFn`",
+      "`onQueryStarted`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "56",
+    "question": "An optimistic update with `updateQueryData` fails on the server. How do you restore the old data?",
+    "options": [
+      "Dispatch `api.util.resetApiState()` in the `catch` block after the failed call",
+      "Call `patchResult.undo()` in a catch block after `await queryFulfilled`",
+      "Call `patchResult.rollback()` in the `onError` option of the mutation",
+      "Set the `keepUnusedDataFor` option to zero for the changed query entry"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "57",
+    "question": "Which RTK Query option do you use to push live updates from a WebSocket into the cache?",
+    "options": [
+      "`onQueryStarted`",
+      "`providesTags`",
+      "`onCacheEntryAdded`",
+      "`serializeQueryArgs`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "58",
+    "question": "A thunk action carries a function in its payload. How do you hide the warning for only this action?",
+    "options": [
+      "Set `immutableCheck` to false for the whole store",
+      "Add its type to `serializableCheck.ignoredActions`",
+      "Add the thunk name to the `ignoredPaths` list",
+      "Wrap the function in `JSON.stringify` in the reducer"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "59",
+    "question": "What does the `condition` option of `createAsyncThunk` do?",
+    "options": [
+      "It cancels the thunk before it starts when the function returns false",
+      "It retries the thunk when the function returns false, with a delay",
+      "It changes the payload before the thunk starts, based on the state",
+      "It runs the thunk again after it ends with an error, one more time"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "60",
+    "question": "How do you cancel a `createAsyncThunk` request that is already running?",
+    "options": [
+      "Dispatch the `rejected` action by hand with the same id",
+      "Call `promise.abort()` on the promise that `dispatch` returns",
+      "Set `condition` to false while the request runs",
+      "Call `thunk.cancel()` on the thunk action creator"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "61",
+    "question": "Slice A must change its state when an action of slice B is dispatched. Where do you write this?",
+    "options": [
+      "In the `extraReducers` field of slice A",
+      "In the `reducers` field of slice A with the type of B",
+      "In the `initialState` field of slice A",
+      "In the `prepare` function of slice B"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "62",
+    "question": "What does `sortComparer` do in `createEntityAdapter`?",
+    "options": [
+      "It sorts the entities object by key at each read",
+      "It keeps the `ids` array sorted after each change",
+      "It sorts the selector result only when you call `selectAll`",
+      "It sorts the actions before reducers handle them"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "63",
+    "question": "Items from the API use `_id`. The adapter state shows `undefined` ids. What is the fix?",
+    "options": [
+      "Set `idField: '_id'` in the adapter state",
+      "Rename `_id` to `id` inside the adapter reducers",
+      "Pass `_id` as the second argument of `getSelectors`",
+      "Set `selectId: (item) => item._id` in `createEntityAdapter`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "64",
+    "question": "Find the bug:\n`increment: (state) => state.count++`\nWhat does Immer do?",
+    "options": [
+      "It throws, because the reducer changes the draft and returns a number",
+      "It works, because `++` is a normal change to the draft of the state",
+      "It returns the old count and ignores the change to the draft state",
+      "It works, but it gives a warning in the console in development"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "65",
+    "question": "A slice keeps a `Map` in the state. Immer throws when a reducer changes it. What do you need?",
+    "options": [
+      "Replace the `Map` with a plain object, because Immer cannot read `Map`",
+      "Set `autoFreeze: false` in `configureStore`",
+      "Add `immerable` to the `Map` class by hand",
+      "Call `enableMapSet()` from `immer` once at app start"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "66",
+    "question": "`useSelector(s => s.items.filter(f))` makes a component render after every action. What is the cause and fix?",
+    "options": [
+      "The component has no key; add `React.memo` to the component",
+      "The selector reads too much state; use `useStore` in the component",
+      "The filter is async; move the filter to a thunk and wait for it",
+      "The selector returns a new array each time; use `createSelector`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "67",
+    "question": "By default, how does `useSelector` decide if the component must render again?",
+    "options": [
+      "It compares the new result with the old result by deep equality",
+      "It compares the whole store state with the old state",
+      "It compares the new result with the old result by `===`",
+      "It compares the action type with the last action type"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "68",
+    "question": "What is the use of `selectFromResult` in a query hook?",
+    "options": [
+      "It changes the cache key of the query result for each component",
+      "It selects the endpoint that the hook must call at each render",
+      "It copies the result to another slice of the store when it ends",
+      "It picks part of the result, so the component renders less often"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "69",
+    "question": "When do you use a lazy query hook such as `useLazyGetPostsQuery`?",
+    "options": [
+      "When the request must start before the first render",
+      "When the request must start from an event, such as a click",
+      "When the request must run in a Web Worker",
+      "When the request must not use the cache"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "70",
+    "question": "How do you start an RTK Query endpoint outside of a React component?",
+    "options": [
+      "`api.endpoints.getPosts.useQuery()` inside a plain function call",
+      "`api.getPosts.fetch(store)` after the store is created",
+      "`store.dispatch(api.endpoints.getPosts.initiate())`",
+      "`store.dispatch(api.util.getPosts())` from the util object"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "71",
+    "question": "Where do you put the logic that refreshes an expired token for all endpoints?",
+    "options": [
+      "In the `transformResponse` of each endpoint",
+      "In the `providesTags` of the login endpoint",
+      "In a custom `baseQuery` that wraps `fetchBaseQuery`",
+      "In a reducer that handles the 401 status"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "72",
+    "question": "What does `prepareHeaders` in `fetchBaseQuery` do?",
+    "options": [
+      "It sets headers for each request, for example a token from `getState`",
+      "It sets the cache headers for the data that the app stores locally",
+      "It validates the headers of the response that the server sends back",
+      "It copies the headers of the page request to the API request"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "73",
+    "question": "Which RTK Query utility wraps a base query to retry failed requests?",
+    "options": [
+      "`retry`",
+      "`withRetry`",
+      "`resend`",
+      "`repeat`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "74",
+    "question": "`fetchBaseQuery` cannot reach the server because of a network error. What is `error.status`?",
+    "options": [
+      "The number `0`",
+      "The number `500`",
+      "The string `'NETWORK_FAILURE'`",
+      "The string `'FETCH_ERROR'`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "75",
+    "question": "Which `createApi` method adds endpoints later, for example for code splitting?",
+    "options": [
+      "`api.addEndpoints`",
+      "`api.extendEndpoints`",
+      "`api.injectEndpoints`",
+      "`api.mergeEndpoints`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "76",
+    "question": "Where do you add the listener middleware in the middleware chain?",
+    "options": [
+      "After all other middleware, with `.concat(listener.middleware)` at the end",
+      "Before the other middleware, with `.prepend(listener.middleware)`",
+      "Only in the `enhancers` option of the store as an enhancer function",
+      "Only after the `api.middleware`, with `.concat(listener.middleware)`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "77",
+    "question": "How do you make a debounce in a listener effect?",
+    "options": [
+      "Call `cancelActiveListeners()` and then `await delay(ms)`",
+      "Pass a `debounce` option in `startListening`",
+      "Call `unsubscribe()` and then `await timeout(ms)`",
+      "Wrap the effect in a `setTimeout` outside the listener"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "78",
+    "question": "A team moves from plain Redux to Redux Toolkit step by step. Can old hand-written reducers stay?",
+    "options": [
+      "No, because `configureStore` only accepts reducers from `createSlice`",
+      "Yes, because slices make standard reducers that work with them",
+      "Yes, but only if they use the Immer `produce` function",
+      "No, because the old reducers lose their action types"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "79",
+    "question": "In RTK 2.0, which `createSlice` field defines selectors that receive the slice state?",
+    "options": [
+      "`selectors`",
+      "`derived`",
+      "`views`",
+      "`getters`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "80",
+    "question": "In RTK 2.0, what does `create.asyncThunk` do inside the `reducers` callback of `createSlice`?",
+    "options": [
+      "It makes a hook for async data in the slice",
+      "It makes a listener for async actions in the slice",
+      "It defines a thunk and its reducers inside the slice",
+      "It wraps all reducers of the slice in a promise"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "81",
+    "question": "A reducer changes `state.a.b`. Which object references change with Immer structural sharing?",
+    "options": [
+      "All the objects in the state tree get new references at each action",
+      "Only `b`, because Immer changes the parent objects in place",
+      "The root and all the direct children of the root are copied",
+      "Only the root, `a`, and `b`; the other branches keep their references"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "82",
+    "question": "A reducer saves a draft of `state.list` in a variable and uses it after the reducer returns. What happens?",
+    "options": [
+      "It works, and the later changes go to the next state",
+      "It works, but the changes are lost silently",
+      "It throws a TypeError, because Immer revokes the draft proxy",
+      "It gives a warning, and Immer makes a copy of the draft"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "83",
+    "question": "A component does `useSelector(s => s.items).sort()` and gets a TypeError. What is the cause?",
+    "options": [
+      "The serializability check blocks array methods in development mode",
+      "Immer wraps the array in a Proxy, and the Proxy does not support `sort`",
+      "The selector returns a draft that is already revoked by Immer",
+      "Immer freezes the state deeply, and `sort` changes the array in place"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "84",
+    "question": "In development, a warning says the immutability check took too long on a big state. What is the fix?",
+    "options": [
+      "Add `ignoredPaths` for large branches, or turn off the check for them",
+      "Move the large branches to the `preloadedState` option of the store",
+      "Replace the state with a `Map` so the check can skip large branches",
+      "Set `immutableCheck: false` in the Immer settings of the root reducer"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "85",
+    "question": "`keepUnusedDataFor` is 60. Component A unmounts. Component B calls the same query with the same arguments 10 seconds later. What happens?",
+    "options": [
+      "B starts a new request, because A removed the subscription",
+      "B gets the cached data and no new request starts by default",
+      "B gets the cached data and a request starts in the background",
+      "B waits for the 60 seconds and then starts a request"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "86",
+    "question": "A mutation invalidates a tag, but no component subscribes to the matching query now. What does RTK Query do?",
+    "options": [
+      "It refetches the query in the background at once",
+      "It keeps the stale entry until the next mount refetches it",
+      "It removes the cache entry and does not refetch it",
+      "It marks the entry as an error state"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "87",
+    "question": "When is `invalidatesTags` better than a manual `updateQueryData` after a mutation?",
+    "options": [
+      "When the local result is hard to compute and one more request is fine",
+      "When the cache must not make any extra request to the server at all",
+      "When the app must show the new data with no delay from the network",
+      "When the mutation changes a value that no query reads in the app"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "88",
+    "question": "The same user object is in two RTK Query caches. A mutation updates it, and only one cache changes. Why?",
+    "options": [
+      "RTK Query normalizes data only for entities with an `id` field",
+      "RTK Query does not normalize data, so each cache entry is separate",
+      "The second query has a different `keepUnusedDataFor` value",
+      "The mutation updates the first subscription only"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "89",
+    "question": "Which three endpoint options let you build an infinite scroll in one cache entry?",
+    "options": [
+      "`transformResponse`, `keepUnusedDataFor`, and `skip`",
+      "`providesTags`, `merge`, and `pollingInterval`",
+      "`serializeQueryArgs`, `merge`, and `forceRefetch`",
+      "`onQueryStarted`, `merge`, and `selectFromResult`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "90",
+    "question": "Why would you choose a listener middleware over a thunk for the rule 'when action X happens, do Y'?",
+    "options": [
+      "The listener runs before the reducer and can change the state",
+      "The side effect stays separate from the code that dispatches X",
+      "The thunk cannot read the state after the reducer runs",
+      "The listener gives a faster result than a thunk in all cases"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "91",
+    "question": "A listener effect throws an error. What does the listener middleware do?",
+    "options": [
+      "It stops the dispatch and rethrows the error to the caller of dispatch",
+      "It removes the listener and keeps the error in the state of the slice",
+      "It catches the error, calls `onError`, and does not break the dispatch",
+      "It retries the effect until it works and then goes on to the next"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "92",
+    "question": "TypeScript reports that `RootState` references itself when a thunk uses `getState`. What is the fix?",
+    "options": [
+      "Remove the `AppDispatch` type from the thunk and use `any` instead",
+      "Type `getState` as `any` in all the thunks of the whole app",
+      "Move the thunk into the file that creates the store of the app",
+      "Derive `RootState` from the root reducer, not from the store"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "93",
+    "question": "In RTK 2.0, how do you type `state`, `dispatch`, and `rejectValue` once for all your thunks?",
+    "options": [
+      "`createAsyncThunk<RootState, AppDispatch>()` at each call",
+      "`configureStore<{ thunk: ThunkConfig }>()`",
+      "`createAsyncThunk.withTypes<{ state: RootState; ... }>()`",
+      "`createTypedThunk<RootState>(createAsyncThunk)`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "94",
+    "question": "What does `combineSlices` give you that `combineReducers` does not?",
+    "options": [
+      "It runs the reducers in parallel in separate threads of the browser",
+      "It reads keys from slice names and can inject reducers later",
+      "It merges the state of two slices into one key of the root state",
+      "It adds Immer to plain reducer functions that do not use it"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "95",
+    "question": "Why use `getDefaultMiddleware().concat(mw)` and not a plain array of middleware?",
+    "options": [
+      "The array form is slower, because it copies the middleware at each action",
+      "The array form runs the middleware in the wrong order at run time",
+      "The array form is not allowed in production builds of the app",
+      "The array form removes the default middleware and the dispatch types"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "96",
+    "question": "A Next.js app uses one global store module for server rendering. What is the risk?",
+    "options": [
+      "The store loses its state at each route change",
+      "Server rendering cannot read the preloaded state",
+      "The serializability check fails for all server actions",
+      "The state of one user can leak to another user's request"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "97",
+    "question": "In RTK 2.0 (Reselect 5), how does the default memoization of `createSelector` differ from Reselect 4?",
+    "options": [
+      "It uses a cache of one entry, and the old version used many",
+      "It uses `weakMapMemoize`, which keeps a cache across different arguments",
+      "It compares arguments by deep equality, and the old version used `===`",
+      "It runs the result function in each call, and the old version cached it"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "98",
+    "question": "The server sends a refreshed list. After `addMany`, existing items keep their old values. Why?",
+    "options": [
+      "`addMany` ignores items whose ids are already in the state",
+      "`addMany` merges only the fields that changed",
+      "`addMany` replaces items only when the order is the same",
+      "`addMany` updates items only after the next `setAll`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "99",
+    "question": "A `createAsyncThunk` throws an `Error`. What does `action.error` hold in the rejected action?",
+    "options": [
+      "A plain serialized object with `name`, `message`, and `stack`",
+      "The original `Error` instance with its prototype and stack trace",
+      "Only the message string of the error, with no name or stack",
+      "The `rejectWithValue` value of the thunk as a plain object"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "100",
+    "question": "Two components poll the same query with intervals of 5 and 30 seconds. How often does the query run?",
+    "options": [
+      "Every 5 seconds, because the lowest interval wins",
+      "Every 17.5 seconds, as the mean of both values",
+      "Two separate timers run at 5 and 30 seconds",
+      "Every 30 seconds, because the last subscriber wins"
+    ],
+    "correct_index": 0
+  }
+]

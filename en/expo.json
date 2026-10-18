@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What is Expo?",
+  "options": [
+   "A replacement for React Native with its own renderer engine",
+   "A framework and tools on top of React Native",
+   "A state management library for large React Native apps",
+   "A cloud database service for storing mobile app data"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "Which command creates a new Expo project?",
+  "options": [
+   "`npx react-native init`",
+   "`npx expo build:init`",
+   "`npx create-expo-app`",
+   "`npm install expo-new`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "3",
+  "question": "What does `npx expo start` do?",
+  "options": [
+   "It makes a release build for a store",
+   "It sends an update to the EAS servers",
+   "It creates the native folders",
+   "It starts the Metro development server"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "4",
+  "question": "What is Expo Go?",
+  "options": [
+   "A cloud service that makes iOS and Android builds",
+   "A ready-made app that runs your JavaScript project",
+   "A command line tool that sends apps to the stores",
+   "A test library that checks Expo components on devices"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "5",
+  "question": "What is an Expo development build?",
+  "options": [
+   "A production build that the app stores approve and publish",
+   "A web version of your app that Metro makes for browsers",
+   "A debug build of your app with `expo-dev-client`",
+   "A copy of Expo Go that has the name of your app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "6",
+  "question": "A teammate adds a library with custom native code. Why does it fail in Expo Go?",
+  "options": [
+   "Expo Go blocks all libraries that come from npm",
+   "Expo Go only runs apps that use TypeScript",
+   "Expo Go needs a paid license to load native code",
+   "Expo Go has fixed native code and cannot load new modules"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "7",
+  "question": "In a project that uses Continuous Native Generation, where are the `ios` and `android` folders?",
+  "options": [
+   "They are not in the repository; `prebuild` makes them",
+   "They must be in the repository and you edit them by hand",
+   "They are stored in the `node_modules` folder",
+   "They are downloaded from EAS at each app start"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "8",
+  "question": "What is the main purpose of `app.json` in an Expo project?",
+  "options": [
+   "It lists the npm packages that the project installs on a computer",
+   "It stores the routes and the screens of the whole app",
+   "It holds app settings such as name, icon, and version",
+   "It holds the cache files that the Metro bundler makes on disk"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "9",
+  "question": "What does `npx expo install --fix` do?",
+  "options": [
+   "It fixes type errors in the files of the project",
+   "It repairs the generated native folders of the project",
+   "It removes unused packages from `package.json`",
+   "It changes package versions to match the current SDK"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "10",
+  "question": "What can `app.config.js` do that `app.json` cannot do?",
+  "options": [
+   "It runs JavaScript, so it can use environment variables",
+   "It builds the native code of the app on the device",
+   "It checks all fields against a schema that `app.json` skips",
+   "It makes the app work on the web and on phones"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "11",
+  "question": "Which prefix makes an environment variable available in the JavaScript code of an Expo app?",
+  "options": [
+   "`REACT_NATIVE_APP_`",
+   "`EXPO_PUBLIC_`",
+   "`NEXT_PUBLIC_EXPO_`",
+   "`METRO_CLIENT_PUBLIC_`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "12",
+  "question": "A developer puts a private API key in `EXPO_PUBLIC_API_KEY`. What is the problem?",
+  "options": [
+   "The value is deleted from memory when the app starts",
+   "The key works only when the app is in development mode",
+   "The key is sent to the Expo servers in plain text",
+   "The value goes into the app bundle, so users can read it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "13",
+  "question": "What is Expo Router?",
+  "options": [
+   "A file-based routing library for Expo apps",
+   "A tool that routes network requests to the API server",
+   "A service that routes push notifications to devices",
+   "A Metro plugin that splits the bundle into parts"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "14",
+  "question": "Which file is the home route `/` by default in Expo Router?",
+  "options": [
+   "`app/home/home.tsx`",
+   "`app/index.tsx`",
+   "`app/main/index.tsx`",
+   "`pages/index.tsx`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "15",
+  "question": "Which file name makes a dynamic route for a user id?",
+  "options": [
+   "`app/users/:id.tsx`",
+   "`app/users/{id}.tsx`",
+   "`app/users/[id].tsx`",
+   "`app/users/$userId.tsx`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "16",
+  "question": "Which Expo Router hook gives the route parameters of the current screen?",
+  "options": [
+   "`useLocalSearchParams`",
+   "`useRouteParamsState`",
+   "`useScreenSearchQuery`",
+   "`useNavigationParams`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "17",
+  "question": "What is the purpose of a `_layout.tsx` file in Expo Router?",
+  "options": [
+   "It stores the style rules that apply to every screen in the app",
+   "It sets the shared layout and navigator for that folder",
+   "It lists the routes that need a signed-in user to open them",
+   "It sets the splash screen and the icon of the whole app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "18",
+  "question": "What does a folder name such as `(tabs)` do in Expo Router?",
+  "options": [
+   "It makes the routes private to the signed-in user",
+   "It loads the routes on the web platform only",
+   "It groups routes and adds no segment to the URL",
+   "It adds the word tabs to the path in the URL"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "19",
+  "question": "Which code moves the user to a new screen in Expo Router?",
+  "options": [
+   "`navigation.open('/settings')`",
+   "`router.show('settings')`",
+   "`Linking.goTo('/settings')`",
+   "`router.push('/settings')`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "20",
+  "question": "What is EAS?",
+  "options": [
+   "Expo Animation System, a library for fast and smooth animations",
+   "Expo Application Services, the cloud services for apps",
+   "Expo App Store, a store for Expo libraries and apps",
+   "Expo Auth Service, a login provider for mobile apps"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "21",
+  "question": "What does EAS Build do?",
+  "options": [
+   "It sends JavaScript updates to apps that users installed",
+   "It tests the app on many real devices at the same time",
+   "It builds iOS and Android binaries in the cloud",
+   "It checks the code of the app for type errors and lint rules"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "22",
+  "question": "Which file holds the build profiles for EAS?",
+  "options": [
+   "`eas.config.js`",
+   "`build.profiles.json`",
+   "`app.eas.json`",
+   "`eas.json`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "23",
+  "question": "What does EAS Submit do?",
+  "options": [
+   "It uploads a built app to App Store Connect or Google Play",
+   "It builds the app in the cloud",
+   "It sends push notifications to the users",
+   "It reviews the app for the store rules"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "24",
+  "question": "What does EAS Update do?",
+  "options": [
+   "It updates the Expo SDK version in the project",
+   "It updates the native code of installed apps",
+   "It sends new JavaScript and assets to installed apps",
+   "It updates the npm packages of the project"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "25",
+  "question": "Which command installs the EAS command line tool?",
+  "options": [
+   "`npm install -g expo-cli`",
+   "`npm install -g eas-build`",
+   "`npm install -g expo-eas-tools`",
+   "`npm install -g eas-cli`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "What is an Expo config plugin?",
+  "options": [
+   "A function that changes native project settings in prebuild",
+   "A Metro plugin that makes the JavaScript bundle smaller",
+   "A hook that changes the app while it runs on a device",
+   "A Babel plugin that adds new syntax"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "27",
+  "question": "What does `npx expo prebuild` do?",
+  "options": [
+   "It builds a signed app that is ready for the stores",
+   "It generates the native `ios` and `android` folders",
+   "It deletes the cache files that Metro makes",
+   "It installs the Expo Go app on a connected device"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "28",
+  "question": "Why do developers use `npx expo install` and not `npm install` for Expo libraries?",
+  "options": [
+   "It installs the package faster than npm",
+   "It installs the package for the native side only",
+   "It adds the package to the EAS project settings",
+   "It picks the package version that fits the current SDK"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "29",
+  "question": "What is the Expo SDK?",
+  "options": [
+   "A versioned set of libraries for a React Native version",
+   "A paid kit that helps the developer with the App Store review",
+   "A native IDE for iOS and Android app developers",
+   "A tool that converts web pages into mobile apps"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "30",
+  "question": "Which Expo library stores a login token in encrypted device storage?",
+  "options": [
+   "`expo-file-system`",
+   "`expo-secure-store`",
+   "`expo-keychain-storage`",
+   "`expo-encrypted-vault`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "What does `expo-constants` give an app at runtime?",
+  "options": [
+   "The list of all Expo libraries that the app installs",
+   "The constants of the React Native JavaScript engine",
+   "Values from the app config and facts about the device",
+   "The environment variables of the EAS build server"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "What is the Expo Modules API?",
+  "options": [
+   "An API to write native modules in Swift and Kotlin",
+   "An API to load remote web modules in the app",
+   "An API to share modules between two Expo apps",
+   "An API to list all modules in the `node_modules` folder"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "33",
+  "question": "Which hook from `expo-font` loads custom fonts before the first render?",
+  "options": [
+   "`useFontLoader`",
+   "`useFonts`",
+   "`useFontAssets`",
+   "`useCustomFonts`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "34",
+  "question": "What does `npx expo-doctor` do?",
+  "options": [
+   "It repairs the native code of the project",
+   "It measures the speed of the app on a device",
+   "It checks the project for dependency and config problems",
+   "It removes the packages that the app does not use"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "Which two app config fields set the app identifier for iOS and Android?",
+  "options": [
+   "`ios.appIdentifier` and `android.applicationId`",
+   "`ios.bundleName` and `android.packageName`",
+   "`ios.uniqueId` and `android.namespaceId`",
+   "`ios.bundleIdentifier` and `android.package`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "36",
+  "question": "Which app config field sets the Android build number for Google Play?",
+  "options": [
+   "`android.buildNumber`",
+   "`android.versionCode`",
+   "`android.versionName`",
+   "`android.buildVersionCode`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "37",
+  "question": "What does the `scheme` field in the app config set?",
+  "options": [
+   "The color scheme that the app uses for dark mode",
+   "The database scheme that the app uses on the device",
+   "The custom URL scheme for deep links to the app",
+   "The security policy for the network calls of the app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "38",
+  "question": "Which library lets an Expo app run in a web browser?",
+  "options": [
+   "`expo-web-runtime`",
+   "`react-dom-native`",
+   "`webview-runtime-core`",
+   "`react-native-web`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "Which `expo-notifications` function gets the push token that Expo servers use for a device?",
+  "options": [
+   "`getExpoPushTokenAsync`",
+   "`getDevicePushTokenAsync`",
+   "`registerForPushAsync`",
+   "`requestPushTokenAsync`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "What is the `runtimeVersion` field used for?",
+  "options": [
+   "It sets the version of the JavaScript engine in the app",
+   "It shows the version number that the store lists to users",
+   "It shows which native code an update can run on",
+   "It sets the minimum Expo Go version that can open the app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "41",
+  "question": "Which Expo Router component makes a link to another screen?",
+  "options": [
+   "`NavLink`",
+   "`RouteLink`",
+   "`Anchor`",
+   "`Link`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "42",
+  "question": "Which two navigators does Expo Router offer to make a stack and a tab bar?",
+  "options": [
+   "`Stack` and `Tabs`",
+   "`Pages` and `TabBar`",
+   "`Navigator` and `Router`",
+   "`Screens` and `Menu`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "43",
+  "question": "In the terminal of `npx expo start`, which key opens the app on the iOS Simulator?",
+  "options": [
+   "`s`",
+   "`i`",
+   "`o`",
+   "`r`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "44",
+  "question": "What does `npx expo run:ios` do?",
+  "options": [
+   "It runs the app inside the Expo Go application",
+   "It sends the build job to the EAS servers",
+   "It runs the unit tests of the project",
+   "It builds the native app on your computer and runs it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "45",
+  "question": "When do you use `npx expo start --tunnel`?",
+  "options": [
+   "When the phone cannot reach the computer on the network",
+   "When you want the bundle to load faster",
+   "When you want to make a production build",
+   "When you want to share the code with the team"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "Does Expo CLI load a `.env` file by default?",
+  "options": [
+   "No, you must add the `dotenv` package first",
+   "Yes, and it shows `EXPO_PUBLIC_` values to the app",
+   "No, it only reads the variables in `app.json`",
+   "Yes, and it shows all the variables to the app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "47",
+  "question": "What is the `expo-dev-client` package for?",
+  "options": [
+   "It adds a test framework to the Expo project",
+   "It adds a client for the Expo web API",
+   "It adds the development tools to a development build",
+   "It adds hot reload to the web version"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "48",
+  "question": "Which JavaScript engine does a new Expo app use by default?",
+  "options": [
+   "Hermes",
+   "V8",
+   "JavaScriptCore",
+   "SpiderMonkey"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "49",
+  "question": "An app needs the user location. What must the code do first?",
+  "options": [
+   "Set the `location` field in the `eas.json` file",
+   "Ask the user for permission with an Expo function",
+   "Add the `expo-location` package name to `app.json`",
+   "Install the Google Maps SDK by hand in Xcode"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "50",
+  "question": "What does `npx expo export` do?",
+  "options": [
+   "It sends the app to the App Store for review",
+   "It copies the config files to a new project",
+   "It makes a production JavaScript bundle and assets",
+   "It changes the project to a bare React Native app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "51",
+  "question": "A prototype uses only libraries from the Expo SDK. Which tool tests it on a phone with no native build?",
+  "options": [
+   "A development build with `expo-dev-client`",
+   "An EAS preview build with internal distribution",
+   "A local build with `npx expo run:ios`",
+   "Expo Go"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "52",
+  "question": "You add a library with native code and publish an update with EAS Update. What happens on old installed apps?",
+  "options": [
+   "The native code installs in the background when the app starts for the first time",
+   "The update cannot add native code, so you need a new build",
+   "The app asks the user to update from the store",
+   "The library works on Android but not on iOS"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "53",
+  "question": "An app has `runtimeVersion` 1.0.0. You publish an update with `runtimeVersion` 2.0.0. What does the app do?",
+  "options": [
+   "It installs the update and restarts",
+   "It installs the update on the next build",
+   "It ignores the update",
+   "It shows an error to the user"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "54",
+  "question": "What does the `fingerprint` policy for `runtimeVersion` calculate?",
+  "options": [
+   "A hash of the full JavaScript bundle of the app",
+   "A hash of the last Git commit of the project",
+   "A hash of the `version` field in `package.json`",
+   "A hash of the sources that change the native app"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "55",
+  "question": "How does a build in the store receive updates from one EAS Update branch?",
+  "options": [
+   "The build channel points to that branch",
+   "The build uses the same Git branch name",
+   "The build reads the branch from `app.json`",
+   "The build asks the user to select a branch"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "An OTA update has a bug and users have it. What is a fast fix?",
+  "options": [
+   "Delete the app from the store and wait for users",
+   "Change the `runtimeVersion` of all the old builds",
+   "Republish the previous good update to the same branch",
+   "Make a new store build and wait for the review"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "A user opens the app. A new update exists. With default settings, when does the user see it?",
+  "options": [
+   "At once, before the first screen of the app shows on the phone",
+   "After the user taps an update button in the app",
+   "Only after the user installs a new store version",
+   "After the download, when the app starts the next time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "58",
+  "question": "You edit a file in the `ios` folder by hand. Later you run `npx expo prebuild --clean`. What happens?",
+  "options": [
+   "The tool deletes your manual change",
+   "The tool keeps your change and merges it",
+   "The tool stops with a merge error",
+   "The tool copies your change to `app.json`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "59",
+  "question": "Which `eas.json` setting makes a build profile produce a development build?",
+  "options": [
+   "`distribution: \"store\"`",
+   "`developmentClient: true`",
+   "`buildType: \"debug\"`",
+   "`devTools: true`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "60",
+  "question": "You add a config plugin to `app.json`. A running development build does not change. Why?",
+  "options": [
+   "The plugin works only after a store release",
+   "The plugin needs a Metro restart only",
+   "The plugin works only in Expo Go",
+   "Native changes need a new native build"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "Which config plugin helper changes the iOS `Info.plist` file?",
+  "options": [
+   "`withInfoPlist`",
+   "`withIosPlist`",
+   "`withNativeConfig`",
+   "`withAppDelegate`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "62",
+  "question": "You use `app.config.js` with environment logic. Which command shows the final resolved config?",
+  "options": [
+   "`npx expo doctor`",
+   "`npx expo config`",
+   "`npx expo prebuild --show`",
+   "`npx expo diagnostics`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "63",
+  "question": "`app.json` and `app.config.js` both exist. What does the `config` argument of the exported function hold?",
+  "options": [
+   "The environment variables of the shell",
+   "The default Expo config only",
+   "The content of `app.json`",
+   "The content of `eas.json`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "64",
+  "question": "What is the difference between `router.push` and `router.replace`?",
+  "options": [
+   "`replace` does not add a new entry to the history",
+   "`replace` opens the new screen as a modal sheet",
+   "`push` works only for routes with dynamic segments",
+   "`push` clears the navigation history of the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "Which Expo Router file shows a screen when no route matches the URL?",
+  "options": [
+   "`404.tsx`",
+   "`+not-found.tsx`",
+   "`_error.tsx`",
+   "`[...fallback].tsx`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "66",
+  "question": "In Expo Router, where do you put a provider that must wrap all screens?",
+  "options": [
+   "In `app/index.tsx`",
+   "In `app.config.js`",
+   "In `app/_layout.tsx`",
+   "In `app/(tabs)/index.tsx`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "What happens to deep links when you use Expo Router?",
+  "options": [
+   "You must list each link in the `app.json` file of the project",
+   "Only routes in the `(tabs)` group get deep links",
+   "You must write a linking config for each route",
+   "Each route file gets a deep link path automatically"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "68",
+  "question": "The splash screen never goes away. The code calls `SplashScreen.preventAutoHideAsync()`. What is the likely cause?",
+  "options": [
+   "The splash image file is too large for the device",
+   "The code never calls `SplashScreen.hideAsync()`",
+   "The `scheme` field is missing in the app config",
+   "The app uses the Hermes JavaScript engine"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "Metro shows \"Unable to resolve module\" after you install a package. What is a good first step?",
+  "options": [
+   "Delete the `app.json` file and make it again from the template",
+   "Run `npx expo prebuild --clean` on the project",
+   "Restart with `npx expo start -c` to clear the cache",
+   "Change the `slug` of the project and restart"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "70",
+  "question": "You install a library with native code and run a build. Do you link it by hand?",
+  "options": [
+   "Yes, you edit the `Podfile` and `build.gradle` files",
+   "Yes, you run `expo link` for each new library",
+   "No, EAS links the library when the app starts",
+   "No, autolinking finds the native code in the build"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "How do you run an EAS build on your own computer?",
+  "options": [
+   "Use `eas build --local`",
+   "Use `eas build --offline`",
+   "Use `expo build:local`",
+   "Use `eas run --device`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "72",
+  "question": "What do you need to send an iOS app to the App Store with EAS Submit?",
+  "options": [
+   "A Mac computer with the Xcode tool installed",
+   "An Expo Go license that you buy for the project",
+   "A paid Apple Developer Program membership",
+   "A signed legal agreement with the Expo company"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "What does `distribution: \"internal\"` in an `eas.json` profile do?",
+  "options": [
+   "It makes a build that only the EAS servers can open and run",
+   "It makes a build that goes to the store review",
+   "It makes a build that has no JavaScript code",
+   "It makes a build that testers install without the store"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "74",
+  "question": "Why is a JavaScript change quick to test in a development build?",
+  "options": [
+   "Metro sends the new code to the app; no rebuild",
+   "The build runs in the cloud in a few seconds",
+   "The app skips the native code while it runs",
+   "The app reads the new code from the store"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "What does `autoIncrement` in an EAS build profile do?",
+  "options": [
+   "It raises the version of the Expo SDK each build",
+   "It raises the build number or version code each build",
+   "It repeats a failed build until it works",
+   "It raises the number of workers for the build"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "76",
+  "question": "An iOS app uses the camera but `Info.plist` has no usage description. What is the result?",
+  "options": [
+   "The app uses the front camera only",
+   "The app asks for the permission twice",
+   "The app works but the store charges a fee",
+   "The app crashes when it uses the camera"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "77",
+  "question": "`app.config.js` reads `process.env.API_URL`. When does this code run?",
+  "options": [
+   "When the config is read, for example at build or start",
+   "Each time the app starts on the device of the user, before the first screen",
+   "Each time the user opens a new screen in the app",
+   "Only when the app runs in a web browser"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "78",
+  "question": "A team wants dev, staging, and production apps on one phone. What is a common method?",
+  "options": [
+   "Use three copies of the repository, one for each app",
+   "Use `app.config.js` and `APP_VARIANT` to set the bundle ID",
+   "Use one bundle ID and switch the apps with `scheme`",
+   "Use Expo Go with three project names on the phone"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "A tab does not show. The file is `app/(tabs)/settings.tsx` and the code is `<Tabs.Screen name=\"setting\" />`. What is wrong?",
+  "options": [
+   "The `Tabs` component needs an `href` prop",
+   "The file must have the name `setting.tsx`",
+   "The `name` does not match the file name",
+   "The group name needs a prefix for tabs"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "80",
+  "question": "A developer puts a helper component file `Button.tsx` in the `app` folder. What does Expo Router do?",
+  "options": [
+   "It treats the file as a route and may warn about exports",
+   "It ignores all files that start with a capital letter",
+   "It adds the file to the shared layout of the folder",
+   "It shows the file as a hidden route in the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "81",
+  "question": "Why is the `fingerprint` policy safer than the `appVersion` policy for `runtimeVersion`?",
+  "options": [
+   "It makes the update download faster on slow mobile networks",
+   "It blocks updates from builds with other native code",
+   "It lets one update work on all SDK versions at the same time",
+   "It checks the update code for syntax errors before publishing"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "82",
+  "question": "What is the trade-off when you raise `fallbackToCacheTimeout` in `expo-updates`?",
+  "options": [
+   "The update installs faster but the app uses more memory",
+   "The update is safer but it skips the checks of the assets",
+   "The user can get the update at launch but waits longer",
+   "The update loads at launch but works only when offline"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "83",
+  "question": "What does code signing for `expo-updates` protect against?",
+  "options": [
+   "A crash that a JavaScript error causes in the app",
+   "A rejection from the app store review team",
+   "A mismatch of the native runtime version",
+   "A changed update from a server that is not trusted"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "84",
+  "question": "A user installs your app from the store and starts it for the first time with no network. Which JavaScript runs?",
+  "options": [
+   "The latest update from the EAS cache",
+   "The embedded bundle inside the binary",
+   "A blank screen until the network returns",
+   "The bundle from the Metro server"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "85",
+  "question": "How does EAS Update keep the download small when only one file changes?",
+  "options": [
+   "The app downloads a binary diff of the full bundle",
+   "The server sends only the changed lines of code",
+   "The app gets only the assets it lacks, found by hash",
+   "The app downloads the update slowly over many days"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "86",
+  "question": "A project needs a native change that no library offers. How can the team keep Continuous Native Generation?",
+  "options": [
+   "Edit the `ios` folder by hand and commit the change",
+   "Patch the native change into the files of the `node_modules` folder",
+   "Move the native change into the `app.json` file",
+   "Write a config plugin that makes the change in prebuild"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "Why must a config plugin be idempotent?",
+  "options": [
+   "`prebuild` can run again on existing folders",
+   "EAS runs each plugin two times for safety reasons",
+   "Metro calls the plugin each time the app loads in a build",
+   "The plugin runs once for each platform in parallel"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "Why does Expo call the `withDangerousMod` function dangerous?",
+  "options": [
+   "It runs code on the device when the app starts up",
+   "It deletes the native folders after each build step",
+   "It edits native files directly and can clash with plugins",
+   "It skips the signing step of the native build process"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "You change `EXPO_PUBLIC_API_URL` in the EAS dashboard. Installed apps still use the old URL. Why?",
+  "options": [
+   "The app reads the value from the device settings once a day",
+   "The app keeps a cache of the value in secure storage",
+   "The value works only in the development build",
+   "The bundler put the value into the bundle at build time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "90",
+  "question": "A user opens the deep link `/settings/profile`. The back button has no screen to go to. Why?",
+  "options": [
+   "The stack starts at the linked screen with no earlier ones",
+   "The router blocks the back action for all deep links in the app",
+   "The link opens the screen in a separate app on the device",
+   "The profile route has no layout file in its folder"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "An EAS build fails because a file is missing on the server. The file is in `.gitignore`. Why?",
+  "options": [
+   "EAS removes all files that are larger than 1 MB from the upload",
+   "EAS does not upload files that the ignore rules skip",
+   "EAS uploads only the `src` folder of the project",
+   "EAS reads the files only from the last commit message"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "92",
+  "question": "A project uses SDK 50. The team wants SDK 53. What is the safer approach?",
+  "options": [
+   "Change the `expo` version in `package.json` to 53 at once",
+   "Create a new project and copy all the screens to it",
+   "Upgrade only the native folders and keep the old packages",
+   "Upgrade one SDK version at a time and run `expo-doctor`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "93",
+  "question": "In the Expo Modules API, why do you use `AsyncFunction` for heavy work?",
+  "options": [
+   "A sync `Function` blocks the JavaScript thread",
+   "A sync `Function` cannot return a value to JavaScript",
+   "An `AsyncFunction` runs only on the iOS platform",
+   "An `AsyncFunction` never uses the bridge to JavaScript"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "94",
+  "question": "The Expo push service gives a ticket with status `ok`, but the device gets no message. What do you check next?",
+  "options": [
+   "The ticket ID that you keep in the `app.json` file of the app",
+   "The push receipt, which shows APNs or FCM delivery errors",
+   "The runtime version of the build that got the push",
+   "The EAS Update channel of the build that got the push"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "A team calls `Updates.reloadAsync()` right after `fetchUpdateAsync()`. What is the risk?",
+  "options": [
+   "The app downloads the same update two times",
+   "The update installs for the next SDK version only",
+   "The user can lose state that is only in memory",
+   "The app goes back to the embedded bundle again"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "96",
+  "question": "OAuth with a custom scheme works in a development build but not in Expo Go. What is the cause?",
+  "options": [
+   "Expo Go has its own app identity and scheme, not yours",
+   "Expo Go blocks all web browsers on the device",
+   "Expo Go supports only the old OAuth 1.0 standard",
+   "Expo Go removes the `scheme` field from the redirect URL"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "97",
+  "question": "The code reads `process.env[name]` with `EXPO_PUBLIC_` variables. The values are `undefined` in the app. Why?",
+  "options": [
+   "The bundler hides every variable that has a dynamic key on purpose",
+   "The bundler replaces only static names such as `process.env.EXPO_PUBLIC_X`",
+   "The variables work only after a store release of the app",
+   "The variables work only for the web platform of the app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "A release build crashes at launch but the debug build works. Which command tests the production JavaScript mode with Metro?",
+  "options": [
+   "`npx expo start --release`",
+   "`npx expo start --production-native`",
+   "`npx expo start --no-dev --minify`",
+   "`npx expo doctor --release`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "What does `appVersionSource: \"remote\"` in `eas.json` change?",
+  "options": [
+   "EAS reads the version from a remote Git repository only",
+   "EAS downloads the app version from the store at run time",
+   "EAS sets the runtime version of each update on its servers",
+   "EAS keeps the build number and version code on its servers"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "You add an API route file `app/hello+api.ts`. What do you need for it to work in production?",
+  "options": [
+   "Nothing, because the app binary runs the route on the phone",
+   "A server deployment, because the app binary cannot run it",
+   "An EAS Update that publishes the route file to installed apps",
+   "A config plugin that adds the route to the native project"
+  ],
+  "correct_index": 1
+ }
+]

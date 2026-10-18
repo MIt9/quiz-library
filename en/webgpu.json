@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What does WebGPU give to a web page?",
+    "options": [
+      "A CSS feature that draws shapes with the help of the hardware",
+      "A faster JavaScript engine that runs all page code on the CPU cores only",
+      "Access to the GPU for graphics and general compute from JavaScript",
+      "A browser plugin that installs native GPU drivers for the page"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "2",
+    "question": "Which object is the entry point of the WebGPU API in a browser?",
+    "options": [
+      "window.webgpu",
+      "document.gpuContext",
+      "navigator.gpu",
+      "navigator.webgl"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "3",
+    "question": "What does navigator.gpu.requestAdapter() return?",
+    "options": [
+      "A GPUDevice object that you can use at once",
+      "A GPUAdapter object that you can use right away without any await",
+      "An array of strings with the names of all GPUs",
+      "A promise that resolves to a GPUAdapter, or to null"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "4",
+    "question": "Which method of a GPUAdapter gives you a logical GPUDevice?",
+    "options": [
+      "createDevice()",
+      "getDevice()",
+      "openDevice()",
+      "requestDevice()"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "5",
+    "question": "Which page requirement does WebGPU have in browsers?",
+    "options": [
+      "The page must load a signed WebGPU script from a trusted CDN host",
+      "The page must be a full screen page with a canvas",
+      "The page must run in a secure context, for example HTTPS",
+      "The page must ask the user for a GPU permission prompt"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "6",
+    "question": "Which call gets the WebGPU context from a canvas element?",
+    "options": [
+      "canvas.getContext('gpu2d')",
+      "canvas.getContext('webgpu')",
+      "canvas.createContext('webgpu')",
+      "canvas.getContext('webgl3')"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "7",
+    "question": "Which two values must you give to context.configure()?",
+    "options": [
+      "A shader module and a pipeline",
+      "A device and a texture format",
+      "An adapter and a bind group",
+      "A queue and a command encoder"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "8",
+    "question": "Which function returns the best texture format for the canvas of the user system?",
+    "options": [
+      "navigator.gpu.getDefaultCanvasTextureFormat()",
+      "navigator.gpu.getPreferredCanvasFormat()",
+      "adapter.getPreferredCanvasFormatForDevice()",
+      "adapter.requestFormat()"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "9",
+    "question": "Which language do you use to write WebGPU shaders?",
+    "options": [
+      "WGSL",
+      "GLSL",
+      "HLSL",
+      "SPIR-V text"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "10",
+    "question": "What does @location(0) mean on the return value of a fragment shader?",
+    "options": [
+      "The value goes to color attachment 0 of the render pass",
+      "The value is read from vertex buffer slot 0",
+      "The value goes to bind group 0 of the pipeline",
+      "The value is written to the first pixel of the canvas"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "11",
+    "question": "Which WGSL attribute marks the entry point of a vertex shader?",
+    "options": [
+      "@main_vertex",
+      "@stage(vertex)",
+      "@entry(vertex)",
+      "@vertex"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "12",
+    "question": "Which WGSL attribute marks the entry point of a compute shader?",
+    "options": [
+      "@kernel",
+      "@dispatch",
+      "@compute",
+      "@main_compute"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "13",
+    "question": "Which WGSL keyword declares a function-scope value that you cannot change?",
+    "options": [
+      "const_val",
+      "fixed",
+      "readonly",
+      "let"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "14",
+    "question": "What does device.createShaderModule() do?",
+    "options": [
+      "It sends the shader code to the driver and starts the first draw call",
+      "It runs the shader code at once on the GPU",
+      "It takes WGSL code and makes a shader module for pipelines",
+      "It makes a pipeline layout from the shader code"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "15",
+    "question": "Which two fields must the descriptor of device.createBuffer() contain?",
+    "options": [
+      "format and layout",
+      "size and format",
+      "usage and label",
+      "size and usage"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "16",
+    "question": "Which usage flag lets a buffer work as a uniform buffer in a bind group?",
+    "options": [
+      "GPUBufferUsage.UNIFORM",
+      "GPUBufferUsage.BIND",
+      "GPUBufferUsage.CONSTANT",
+      "GPUBufferUsage.READONLY"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "17",
+    "question": "Which usage flag does a buffer need if queue.writeBuffer() writes to it?",
+    "options": [
+      "GPUBufferUsage.COPY_SRC",
+      "GPUBufferUsage.COPY_DST",
+      "GPUBufferUsage.STORAGE",
+      "GPUBufferUsage.MAP_WRITE"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "18",
+    "question": "What is the job of a GPUCommandEncoder?",
+    "options": [
+      "It records GPU commands into a command buffer",
+      "It sends the commands to the screen at once",
+      "It compiles WGSL code into GPU commands",
+      "It allocates memory for the commands on the GPU"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "19",
+    "question": "Which method of the command encoder makes a command buffer?",
+    "options": [
+      "submit()",
+      "close()",
+      "build()",
+      "finish()"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "20",
+    "question": "Which call sends command buffers to the GPU?",
+    "options": [
+      "device.queue.execute([commandBuffer])",
+      "encoder.submit(queue)",
+      "device.queue.submit([commandBuffer])",
+      "context.present(commandBuffer)"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "21",
+    "question": "Which method of the encoder starts a render pass?",
+    "options": [
+      "startRender()",
+      "createRenderPass()",
+      "encodeRenderPass()",
+      "beginRenderPass()"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "22",
+    "question": "Which texture view do you usually give to a color attachment that draws to the canvas?",
+    "options": [
+      "context.getCurrentTexture().createView()",
+      "device.getCanvasView()",
+      "context.getCurrentTexture().getDefaultView()",
+      "context.createTexture().getView()"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "23",
+    "question": "What does loadOp: 'clear' do in a color attachment?",
+    "options": [
+      "It removes the texture from GPU memory when the pass ends and draws again",
+      "It deletes all pipelines that the pass uses",
+      "It fills the attachment with clearValue at the start of the pass",
+      "It sets the attachment to transparent after the pass"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "24",
+    "question": "Which method of a render pass encoder draws vertices?",
+    "options": [
+      "draw(vertexCount)",
+      "drawArrays(vertexCount)",
+      "submitVertices(vertexCount)",
+      "render(vertexCount)"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "25",
+    "question": "What must you call on a pass encoder before you call encoder.finish()?",
+    "options": [
+      "end()",
+      "submit()",
+      "flush()",
+      "close()"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "26",
+    "question": "What does a GPURenderPipeline hold?",
+    "options": [
+      "The shaders and the fixed state that a draw call uses",
+      "The list of all commands that the GPU must run",
+      "The vertex data and the texture data of each draw call that you bind",
+      "The canvas context and the swap chain"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "27",
+    "question": "Which method creates a render pipeline?",
+    "options": [
+      "device.createPipeline('render')",
+      "device.createRenderPipeline()",
+      "queue.createRenderPipeline()",
+      "adapter.createRenderPipeline()"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "28",
+    "question": "Which method creates a compute pipeline?",
+    "options": [
+      "device.createComputeShader()",
+      "device.createKernel()",
+      "device.createComputePipeline()",
+      "queue.createComputePipeline()"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "29",
+    "question": "What does passEncoder.dispatchWorkgroups(x, y, z) do?",
+    "options": [
+      "It starts x*y*z invocations in one single workgroup",
+      "It starts the compute work with x*y*z workgroups",
+      "It sends x*y*z command buffers to the queue",
+      "It copies x*y*z buffers to the GPU"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "30",
+    "question": "What does @workgroup_size(64) mean in a compute shader?",
+    "options": [
+      "The shader uses 64 bytes of shared memory",
+      "Each workgroup has 64 invocations",
+      "The shader runs in 64 workgroups",
+      "The GPU keeps 64 threads for the shader"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "31",
+    "question": "What is a bind group in WebGPU?",
+    "options": [
+      "A set of resources that a shader can use together",
+      "A group of shaders that the pipeline links to a render pass",
+      "A list of vertex buffers for one draw call",
+      "A queue of commands for one render pass"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "32",
+    "question": "What does a bind group layout describe?",
+    "options": [
+      "The type and binding slot of each resource in a group",
+      "The order of the draw calls in a render pass",
+      "The shader code that uses the group",
+      "The bytes of each buffer and the data in a bind group at runtime"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "33",
+    "question": "Which WGSL address space do you use for a large read-write buffer?",
+    "options": [
+      "function",
+      "private",
+      "storage",
+      "constant"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "Which buffer type usually has the smaller default size limit for one binding?",
+    "options": [
+      "Storage buffer",
+      "Vertex buffer",
+      "Index buffer",
+      "Uniform buffer"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "35",
+    "question": "What does a GPUSampler define?",
+    "options": [
+      "How the shader reads a texture, for example the filter and wrap mode",
+      "The format of the pixels in the texture",
+      "The number of mip levels of the texture",
+      "The size of the texture in GPU memory and the order of its pixel rows"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "36",
+    "question": "Which fields does device.createTexture() need in the descriptor?",
+    "options": [
+      "width, height, and color",
+      "size, format, and usage",
+      "size, layout, and queue",
+      "format, view, and sampler"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "37",
+    "question": "What does texture.createView() return?",
+    "options": [
+      "A copy of the texture data in CPU memory that you can read",
+      "A new texture with half of the size",
+      "A sampler for the texture",
+      "A GPUTextureView that you can bind or draw to"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "38",
+    "question": "Which texture usage flag lets a render pass draw to the texture?",
+    "options": [
+      "GPUTextureUsage.DRAW_TARGET",
+      "GPUTextureUsage.RENDER_ATTACHMENT",
+      "GPUTextureUsage.COLOR_OUTPUT",
+      "GPUTextureUsage.WRITE_ONLY"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "39",
+    "question": "Which texture usage flag lets a shader sample the texture?",
+    "options": [
+      "GPUTextureUsage.SHADER_READ",
+      "GPUTextureUsage.SAMPLER",
+      "GPUTextureUsage.TEXTURE_BINDING",
+      "GPUTextureUsage.STORAGE_ONLY"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "40",
+    "question": "What is the purpose of buffer.mapAsync()?",
+    "options": [
+      "It lets the CPU read or write the buffer data after a promise resolves",
+      "It copies the buffer to another GPU in the system when a promise resolves",
+      "It makes the buffer larger without a new allocation",
+      "It sends the buffer to a worker thread"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "41",
+    "question": "Which usage flag must a buffer have for mapAsync(GPUMapMode.READ)?",
+    "options": [
+      "GPUBufferUsage.COPY_SRC",
+      "GPUBufferUsage.MAP_READ",
+      "GPUBufferUsage.READBACK",
+      "GPUBufferUsage.STORAGE"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "42",
+    "question": "What must you call after you finish with the data from getMappedRange()?",
+    "options": [
+      "buffer.release()",
+      "buffer.close()",
+      "buffer.destroy()",
+      "buffer.unmap()"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "43",
+    "question": "What does device.queue.writeBuffer() do?",
+    "options": [
+      "It maps a GPU buffer into CPU memory",
+      "It reads a GPU buffer into a typed array after the GPU is idle",
+      "It sends a buffer to another queue",
+      "It copies data from the CPU into a GPU buffer"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "44",
+    "question": "What does device.pushErrorScope('validation') do?",
+    "options": [
+      "It stops all validation checks on the device until you pop the scope",
+      "It captures validation errors until you call popErrorScope()",
+      "It throws a JavaScript exception for each error",
+      "It writes all errors to the browser console only"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "45",
+    "question": "What does device.popErrorScope() return?",
+    "options": [
+      "A promise that resolves to the first error, or to null",
+      "The error object right away, or undefined if no error happened",
+      "A list of all shaders that have errors",
+      "A boolean that shows if the device is lost"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "46",
+    "question": "Where can you listen for GPU errors that no error scope caught?",
+    "options": [
+      "window.addEventListener('error', ...) on the page",
+      "adapter.addEventListener('gpuerror', ...)",
+      "queue.addEventListener('failure', ...)",
+      "device.addEventListener('uncapturederror', ...)"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "47",
+    "question": "What is a main difference between WebGPU and WebGL?",
+    "options": [
+      "WebGPU uses a global state machine, and WebGL uses pipeline objects",
+      "WebGPU has no shaders, and WebGL has vertex shaders",
+      "WebGPU uses explicit pipelines, and WebGL uses a global state machine",
+      "WebGPU has no shader stages, and WebGL has vertex and fragment shaders"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "48",
+    "question": "Which shader type does WebGPU support in the core API but WebGL 2 does not?",
+    "options": [
+      "Fragment shaders",
+      "Vertex shaders",
+      "Compute shaders",
+      "Geometry shaders"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "49",
+    "question": "What does it mean if navigator.gpu is undefined?",
+    "options": [
+      "The GPU of the user has no free memory for the page",
+      "The browser or page does not support WebGPU",
+      "The page has no canvas element",
+      "The adapter is not ready"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "50",
+    "question": "Which task is a good fit for a WebGPU compute shader?",
+    "options": [
+      "A sequential parse of a text file",
+      "A parallel particle simulation",
+      "A DOM update of a long list",
+      "A network request to an API"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "51",
+    "question": "What does layout: 'auto' do in a pipeline descriptor?",
+    "options": [
+      "It sets the screen layout for the canvas and the size of the viewport",
+      "It picks the best vertex buffer format for you",
+      "It builds the bind group layouts from the resources the shaders use",
+      "It makes a bind group with default buffers"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "52",
+    "question": "A bind group comes from the auto layout of pipeline A. A teammate uses it with pipeline B, which also has auto layout. What is the risk?",
+    "options": [
+      "A validation error, because the layouts are not compatible objects",
+      "No risk, because all auto layouts are the same object",
+      "No risk, because the device converts the group when needed",
+      "An exception that stops the page at once"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "53",
+    "question": "A draw is already in a submitted command buffer. Then code calls queue.writeBuffer() on a buffer it uses. Which data does that earlier draw see?",
+    "options": [
+      "Random data, because the GPU reads the buffer at the same time",
+      "The new data, because writeBuffer runs at once on the GPU before the draw",
+      "The old data, because queue operations run in the order of the calls",
+      "No data, because the buffer is locked until the draw ends"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "54",
+    "question": "A storage buffer has the usages STORAGE and COPY_SRC. How do you read the result on the CPU?",
+    "options": [
+      "Call mapAsync on the storage buffer after a queue.submit has finished",
+      "Copy it to a MAP_READ and COPY_DST buffer, then map that new buffer",
+      "Call getMappedRange on the storage buffer at once",
+      "Use buffer.read() after the compute pass ends"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "55",
+    "question": "A teammate creates a buffer with usage MAP_READ | STORAGE. What happens?",
+    "options": [
+      "A validation error, because MAP_READ combines only with COPY_DST",
+      "The buffer works only in compute passes and not in render passes",
+      "The buffer works, but all reads from it are slow because of copies",
+      "A RangeError is thrown for the usage value"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "56",
+    "question": "A WGSL uniform struct has an f32 member and then a vec3<f32> member. At which byte offset does the vec3 start?",
+    "options": [
+      "8",
+      "4",
+      "16",
+      "12"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "57",
+    "question": "What is the default minimum alignment of a uniform buffer offset in a dynamic bind group?",
+    "options": [
+      "16 bytes",
+      "256 bytes",
+      "64 bytes",
+      "4 bytes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "58",
+    "question": "Which rule applies to bytesPerRow when you copy a texture to a buffer?",
+    "options": [
+      "It must be a multiple of 256",
+      "It must be equal to the texture width",
+      "It must be a power of two",
+      "It must be a multiple of 16"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "59",
+    "question": "A compute shader has @workgroup_size(64). You have 1000 items. How many workgroups do you dispatch?",
+    "options": [
+      "16, from Math.ceil(1000 / 64), and the shader checks the index",
+      "15, from Math.floor(1000 / 64), and the GPU runs the rest",
+      "17, because each workgroup must be full of items",
+      "64, because that is the size of the workgroup"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "60",
+    "question": "What is the value of global_invocation_id in a compute shader?",
+    "options": [
+      "workgroup_id * num_workgroups + local_invocation_index",
+      "workgroup_id * workgroup_size + local_invocation_id",
+      "workgroup_size * workgroup_count",
+      "local_invocation_id * workgroup_count"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "61",
+    "question": "What does the promise device.lost give you?",
+    "options": [
+      "A new GPUDevice that replaces the lost one without any new request",
+      "A GPUDeviceLostInfo with the reason and a message",
+      "A boolean that shows if the GPU has power",
+      "A list of buffers that you must free"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "62",
+    "question": "How do you find the line and the message of a WGSL compile error?",
+    "options": [
+      "Read device.lastError",
+      "Catch the exception of createShaderModule()",
+      "Call pipeline.getErrors()",
+      "Call shaderModule.getCompilationInfo()"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "63",
+    "question": "A page changes canvas.width and canvas.height. Which resource must you create again by yourself?",
+    "options": [
+      "The command queue, so that it matches the new size",
+      "The GPUDevice, so that it matches the new size",
+      "The canvas context, because it loses its configuration",
+      "Your depth texture, so that it matches the new size"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "64",
+    "question": "Why do you call context.getCurrentTexture() in each frame?",
+    "options": [
+      "The texture needs a new format in each frame",
+      "The texture is deleted when you call createView on it in the frame",
+      "The texture for the canvas changes from one frame to the next",
+      "The device returns a new queue in each frame"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "65",
+    "question": "Which sampler setting makes UV values outside 0 to 1 wrap around?",
+    "options": [
+      "wrapMode: 'loop'",
+      "mipmapFilter: 'repeat'",
+      "filterMode: 'linear'",
+      "addressModeU: 'repeat'"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "66",
+    "question": "What does arrayStride describe in a vertex buffer layout?",
+    "options": [
+      "The size in bytes of the whole vertex buffer",
+      "The number of vertices in the buffer",
+      "The number of bytes from one vertex to the next vertex",
+      "The offset of the buffer in GPU memory"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "67",
+    "question": "A 3D scene shows near objects behind far objects. The pipeline has no depthStencil state. What is the fix?",
+    "options": [
+      "Add depthStencil to the pipeline and depthStencilAttachment to the pass",
+      "Set loadOp to 'clear' on the color attachment",
+      "Sort the vertex buffer with the CPU in each frame before every draw call",
+      "Change the canvas alphaMode to 'opaque'"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "68",
+    "question": "Which MSAA sample counts does WebGPU guarantee for render pipelines?",
+    "options": [
+      "2 and 8",
+      "1 and 4",
+      "1 and 16",
+      "4 and 8"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "69",
+    "question": "What does buffer.destroy() do?",
+    "options": [
+      "It frees the GPU memory of the buffer at once, not at garbage collection",
+      "It deletes the JavaScript object from memory and from the GPU queue now",
+      "It removes the buffer from all of the bind groups that use it at the same time",
+      "It copies the data to the CPU and then unmaps it"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "70",
+    "question": "What is wrong here?\nconst device = adapter.requestDevice();\nconst buf = device.createBuffer({size: 16, usage: GPUBufferUsage.UNIFORM});",
+    "options": [
+      "The buffer needs the COPY_DST usage in the code to work as a uniform",
+      "The size of 16 is too small for a uniform buffer on most GPUs",
+      "The adapter must call createBuffer, and the device must call requestAdapter",
+      "No await, so device is a promise and createBuffer is not a function"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "71",
+    "question": "A teammate asks for a feature that the adapter does not list in adapter.features. What does requestDevice() do?",
+    "options": [
+      "It rejects with a TypeError",
+      "It resolves with a device that has a software feature",
+      "It returns null",
+      "It resolves, and the feature is silently off"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "72",
+    "question": "A shader needs a storage binding of 1 GiB. The default maxStorageBufferBindingSize is 128 MiB. What do you do?",
+    "options": [
+      "Call device.setLimit() after the device is ready, with the new value",
+      "Split the binding with a vertex buffer",
+      "Check adapter.limits and ask for a higher value in requiredLimits",
+      "Set the usage flag LARGE on the buffer"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "73",
+    "question": "Can you start a compute dispatch inside a render pass encoder?",
+    "options": [
+      "No, you record compute work in a separate compute pass",
+      "Yes, if both passes use the same bind group",
+      "No, you must use a second device for it",
+      "Yes, if the pipeline has a compute stage and the same bind groups"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "74",
+    "question": "Many invocations add 1 to the same counter in a storage buffer. Which WGSL feature avoids lost updates?",
+    "options": [
+      "A plain += on a u32 value",
+      "atomicAdd on an atomic<u32> value",
+      "The workgroupBarrier() function",
+      "A let binding for the counter"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "75",
+    "question": "What does workgroupBarrier() do in a compute shader?",
+    "options": [
+      "It makes all workgroups of the dispatch wait for each other at that line",
+      "It makes all invocations of one workgroup wait there for each other",
+      "It stops the GPU queue until the CPU is ready",
+      "It flushes the storage buffers to the CPU"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "76",
+    "question": "What is memory in the var<workgroup> address space?",
+    "options": [
+      "Memory that all invocations of the whole dispatch share",
+      "Memory that the GPU shares with the CPU without copies",
+      "Memory that the CPU can read after the pass",
+      "Memory that all invocations of one workgroup share"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "77",
+    "question": "What does queue.onSubmittedWorkDone() return?",
+    "options": [
+      "A boolean that shows if the queue has no work to do right now",
+      "An array of the command buffers that the queue has finished now",
+      "A promise that resolves when all work submitted so far ends",
+      "A promise that resolves when the next frame starts on the canvas"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "78",
+    "question": "What is a GPURenderBundle used for?",
+    "options": [
+      "To group several textures into one atlas for faster texture reads",
+      "To compress vertex data in GPU memory",
+      "To send draw commands to a worker thread",
+      "To record draw commands once and replay them in many passes"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "79",
+    "question": "Can code in a Web Worker use WebGPU?",
+    "options": [
+      "No, WebGPU works only in the main thread, and workers have no GPU access",
+      "Yes, WebGPU works in dedicated workers, with an OffscreenCanvas",
+      "No, but a worker can use WebGL instead",
+      "Yes, but only if the worker has no canvas"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "80",
+    "question": "Which method copies an ImageBitmap into a GPUTexture?",
+    "options": [
+      "queue.writeTextureFromImage()",
+      "encoder.copyImageToTexture()",
+      "device.uploadImage()",
+      "queue.copyExternalImageToTexture()"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "81",
+    "question": "A compute result buffer is read with mapAsync in each frame. Why can this hurt frame time?",
+    "options": [
+      "mapAsync blocks the main thread completely until the GPU is idle again",
+      "The promise resolves after earlier GPU work ends, so it adds latency",
+      "mapAsync disables the other queue operations",
+      "mapAsync copies the buffer twice on the CPU"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "82",
+    "question": "A shader calls textureSample() inside an if that depends on a per-pixel value. What happens?",
+    "options": [
+      "The shader runs, but the result is random",
+      "The driver changes the if to a select",
+      "The shader compiles, but the driver runs it on the CPU",
+      "The shader fails to compile because of the uniformity analysis"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "83",
+    "question": "Why use an override declaration in WGSL for a workgroup size?",
+    "options": [
+      "The value can be larger than the device limit",
+      "The value can change in each dispatch call without a new pipeline",
+      "The GPU can change the value while the shader runs on each new frame",
+      "You set its value at pipeline creation and do not edit the shader"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "84",
+    "question": "Workgroup B needs the results of workgroup A in the same dispatch. What is the correct design?",
+    "options": [
+      "Use workgroupBarrier() to make workgroup B wait for workgroup A to end",
+      "Use an atomic flag in a storage buffer and spin on it",
+      "Split the work into two dispatches, because the queue orders them",
+      "Put both workgroups in one var<workgroup> array"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "85",
+    "question": "One buffer is bound as read_write storage and also as a uniform in the same draw. What is the result?",
+    "options": [
+      "A validation error, because the usages conflict in one usage scope",
+      "The GPU picks the first usage and ignores the second usage in the draw",
+      "A silent race that gives random pixels",
+      "The draw works, but it is slower because of the extra barrier"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "86",
+    "question": "A call to createBuffer() has an invalid usage value. What happens in the JavaScript code?",
+    "options": [
+      "A TypeError is thrown at once, and you can catch it with a try and catch block",
+      "The call returns null, so you can check the result in the code",
+      "No exception. You get an invalid buffer, and the error goes to an error scope",
+      "The device is lost at once, and you must request a new device"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "87",
+    "question": "Which error scope filter catches a failed GPU memory allocation?",
+    "options": [
+      "'allocation'",
+      "'validation'",
+      "'resource'",
+      "'out-of-memory'"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "88",
+    "question": "The promise device.lost resolves with the reason 'unknown'. What is the correct recovery?",
+    "options": [
+      "Call device.reset() and then use the old buffers and pipelines again",
+      "Call adapter.restore() and keep the old pipelines",
+      "Request a new adapter and device, and create all resources again",
+      "Wait for the page to fire a gpurestored event"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "89",
+    "question": "A shader uses the f16 type. What does it need?",
+    "options": [
+      "Only the f16 suffix on each number literal in the shader code",
+      "The shader-f16 feature and an enable f16; line in the shader",
+      "A buffer with the F16 usage flag",
+      "A pipeline with the half precision flag"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "90",
+    "question": "You draw 10,000 identical meshes with different transforms. Which approach is best?",
+    "options": [
+      "One draw with instanceCount 10,000 and a storage buffer of transforms",
+      "10,000 draw calls with one new bind group and one new buffer for each mesh",
+      "10,000 render passes with one uniform buffer",
+      "One draw call with 10,000 command encoders"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "91",
+    "question": "Which bind group design reduces setBindGroup cost in a large scene?",
+    "options": [
+      "One bind group for each draw call with all data inside",
+      "One bind group for each frame with a new layout each time",
+      "Group 0 for per-object data, and the last group for data that changes once per frame",
+      "Group 0 for per-frame data, and higher groups for data that changes often"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "92",
+    "question": "A game stutters when a new material shows for the first time. What is a likely cause and fix?",
+    "options": [
+      "Pipeline creation at first use. Use createRenderPipelineAsync at load",
+      "Texture upload at first use. Use a bigger canvas and a smaller texture size",
+      "Shader parsing at each frame. Use a smaller shader",
+      "Queue overflow at first use. Use more command encoders"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "93",
+    "question": "Which approach is safest for a production app that must run for all users of WebGPU?",
+    "options": [
+      "Check navigator.gpu and a non-null adapter, and keep a fallback",
+      "Assume WebGPU works on every device, because it is a web standard",
+      "Check only the user agent name, because every browser has the same support",
+      "Check the WebGL version, because it shows the WebGPU support on that device"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "94",
+    "question": "Why can WebGPU be faster than WebGL for matrix multiplication?",
+    "options": [
+      "WebGPU runs the matrix code on the CPU with SIMD and many worker threads",
+      "WebGPU has a built-in matmul instruction in the WGSL language and in every GPU driver",
+      "Compute shaders with shared workgroup memory allow tiling without textures",
+      "WebGPU uses a separate GPU for compute work"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "95",
+    "question": "Where can a WGSL struct have a runtime-sized array member?",
+    "options": [
+      "As the first member of a struct in a uniform buffer",
+      "In any struct in the private address space",
+      "As the last member of a struct in a storage buffer",
+      "In any struct in the workgroup address space"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "96",
+    "question": "Why use getPreferredCanvasFormat() instead of a fixed 'rgba8unorm'?",
+    "options": [
+      "The fixed format is not valid for any canvas in any current browser",
+      "The best format depends on the platform, and others cost a conversion",
+      "The preferred format always has the highest color depth of all formats",
+      "The preferred format is required to avoid validation errors"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "97",
+    "question": "A canvas shows dark halos around transparent edges. Which setting and output rule fix this?",
+    "options": [
+      "alphaMode: 'premultiplied' and shader output with premultiplied color",
+      "alphaMode: 'opaque' and shader output with straight non-premultiplied alpha",
+      "loadOp: 'load' and shader output with a zero alpha",
+      "format: 'rgba16float' and a larger canvas"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "98",
+    "question": "A compute pass must set the number of draws without a CPU readback. Which feature does this?",
+    "options": [
+      "drawIndexed with a buffer that the CPU mapped for writing",
+      "executeBundles with a storage texture",
+      "dispatchWorkgroups with a vertex buffer",
+      "drawIndirect with a buffer that has the INDIRECT usage"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "99",
+    "question": "How do you measure the GPU time of a pass in WebGPU?",
+    "options": [
+      "Call performance.now() before and after queue.submit() and subtract",
+      "Request timestamp-query and set timestampWrites with a query set",
+      "Read device.gpuTime after the pass",
+      "Use the pass encoder method getDuration()"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "100",
+    "question": "What happens if you call createBuffer with mappedAtCreation: true and size 10?",
+    "options": [
+      "It works, and the size becomes 12",
+      "It throws a RangeError, because the size must be a multiple of 4",
+      "It returns an invalid buffer and reports a validation error later",
+      "It works, and the buffer is not mapped"
+    ],
+    "correct_index": 1
+  }
+]

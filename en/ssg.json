@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What does a static site generator do?",
+    "options": [
+      "It runs a database query for each visitor on the live site and returns the result as HTML.",
+      "It compiles the pages in the browser after the site opens.",
+      "It renders each page on the server for every user request.",
+      "It builds HTML pages from content and templates before deployment."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "2",
+    "question": "When does SSG make the HTML for a page?",
+    "options": [
+      "At build time, before the site goes live.",
+      "On each request, when the user opens the page.",
+      "In the browser, after the JavaScript bundle loads.",
+      "On the CDN edge, only when the cache is empty."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "3",
+    "question": "Which site type fits SSG best?",
+    "options": [
+      "A chat app that shows new messages in real time.",
+      "A documentation site with content that changes rarely.",
+      "A bank dashboard with data that is different for each user.",
+      "A stock ticker that updates its prices every second."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "4",
+    "question": "What do you deploy for a pure static site?",
+    "options": [
+      "A database with the page templates stored inside and a query layer for each request.",
+      "A Node.js server process that renders each page.",
+      "A folder with HTML, CSS, JavaScript, and asset files.",
+      "A container that runs the framework at runtime."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "5",
+    "question": "Why is a static page fast for the user?",
+    "options": [
+      "The server compresses the data more strongly than it does for dynamic pages.",
+      "The browser skips the HTML parser for all static files.",
+      "The CDN rewrites the JavaScript into smaller code.",
+      "The server sends a ready HTML file and does no rendering work."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "6",
+    "question": "Which static site generator is written in Go?",
+    "options": [
+      "Eleventy",
+      "Astro",
+      "Hugo",
+      "Gatsby"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "7",
+    "question": "Which static site generator is known for a GraphQL data layer at build time?",
+    "options": [
+      "Gatsby",
+      "Hugo",
+      "Eleventy",
+      "Jekyll"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "8",
+    "question": "What name does Astro use for interactive components inside static HTML?",
+    "options": [
+      "Edge side includes",
+      "Islands architecture",
+      "Progressive rendering",
+      "Micro frontends"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "9",
+    "question": "Which Next.js config option makes a fully static export?",
+    "options": [
+      "`output: 'export'`",
+      "`mode: 'export'`",
+      "`target: 'static'`",
+      "`output: 'static'`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "10",
+    "question": "With `output: 'export'`, which folder does `next build` write the HTML to by default?",
+    "options": [
+      "`out`",
+      "`dist`",
+      "`public`",
+      "`build`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "11",
+    "question": "Which folder does Eleventy write the built site to by default?",
+    "options": [
+      "`build`",
+      "`_site`",
+      "`public`",
+      "`dist`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "12",
+    "question": "What is a dynamic route in SSG?",
+    "options": [
+      "A route that changes its HTML on each user request, based on the data of that user.",
+      "A route with a parameter, like `/blog/[slug]`, that makes many pages.",
+      "A route that uses a WebSocket to get its data.",
+      "A route that the browser loads only after a redirect."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "13",
+    "question": "In the Next.js Pages Router, which function tells the build which dynamic paths to make?",
+    "options": [
+      "`getStaticProps`",
+      "`getStaticPaths`",
+      "`getInitialPaths`",
+      "`getServerSideProps`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "14",
+    "question": "In the Next.js Pages Router, which function gets the data for a page at build time?",
+    "options": [
+      "`getStaticPaths`",
+      "`getBuildData`",
+      "`getStaticProps`",
+      "`getInitialProps`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "15",
+    "question": "In the Next.js App Router, which function lists the params for dynamic routes at build time?",
+    "options": [
+      "`getStaticPaths`",
+      "`getStaticParams`",
+      "`generateRoutes`",
+      "`generateStaticParams`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "16",
+    "question": "What do Astro content collections give you?",
+    "options": [
+      "A set of React components that fetch content in the browser.",
+      "A server cache that keeps the rendered pages in memory between the requests.",
+      "A live database that stores the content of each page.",
+      "Typed and checked content files, such as Markdown, with a schema."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "17",
+    "question": "What is hydration?",
+    "options": [
+      "The CDN refreshes the old cached pages on a timer.",
+      "The build step copies all images to the output folder.",
+      "The browser attaches JavaScript event handlers to HTML that already exists.",
+      "The server fills the HTML with data from the database before it sends the page."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "18",
+    "question": "What is a CDN?",
+    "options": [
+      "A database that stores the page content for builds.",
+      "A browser feature that saves the visited pages on the disk for offline use.",
+      "A tool that compiles templates into HTML files.",
+      "A group of servers that keep copies of files near the users."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "19",
+    "question": "What does ISR mean in Next.js?",
+    "options": [
+      "Isolated Script Runtime, which runs the build scripts in a sandbox on the CI server.",
+      "Instant Server Rendering, which renders every page per request.",
+      "Incremental Static Regeneration, which updates static pages after the build.",
+      "Indexed Static Routing, which maps URLs to files in a table."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "20",
+    "question": "In the Next.js Pages Router, which key in the `getStaticProps` result sets the ISR time in seconds?",
+    "options": [
+      "`revalidate`",
+      "`maxAge`",
+      "`ttl`",
+      "`expires`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "21",
+    "question": "What is on-demand revalidation?",
+    "options": [
+      "The browser asks for a fresh build at each visit.",
+      "You start the update of chosen static pages with a call, such as a webhook.",
+      "The CDN deletes all the pages of the site after one hour and asks for a rebuild.",
+      "The build tool watches the files and rebuilds on the server."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "22",
+    "question": "What is the main SEO benefit of SSG?",
+    "options": [
+      "Crawlers get the full HTML content at once and do not need to run JavaScript.",
+      "Search engines rank static sites higher than other sites by a fixed ranking rule.",
+      "The site does not need a sitemap or meta tags.",
+      "Crawlers read the JavaScript state faster than the HTML."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "23",
+    "question": "What is CSR?",
+    "options": [
+      "The server builds the full HTML for each user request and sends it to the browser.",
+      "The build step makes all the HTML files in advance.",
+      "The CDN edge builds the HTML when the cache is empty.",
+      "The browser builds the page with JavaScript after it loads an empty HTML shell."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "24",
+    "question": "What is the main difference between SSG and SSR?",
+    "options": [
+      "SSG renders once at build time, and SSR renders on each request.",
+      "SSG needs a database at runtime, and SSR works with static files only.",
+      "SSG makes HTML for bots, and SSR makes HTML for people.",
+      "SSG renders in the browser, and SSR renders at build time."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "25",
+    "question": "A site has 100,000 pages. Which problem can pure SSG cause?",
+    "options": [
+      "The pages cannot use CSS files.",
+      "The build can take a very long time.",
+      "The pages cannot have links between them.",
+      "The CDN cannot cache the pages."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "26",
+    "question": "In a blog built with an SSG, what is a draft post?",
+    "options": [
+      "A page that the CDN stores only in memory and removes when the cache gets full.",
+      "A page that the build deletes after one visit.",
+      "A content item that production builds skip but a preview can show.",
+      "A page that the browser renders with no CSS."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "27",
+    "question": "What is front matter in a Markdown file?",
+    "options": [
+      "The table of contents that the build makes from the headings of the page.",
+      "A block of CSS that the build adds to the page.",
+      "A list of images that the page loads first.",
+      "Metadata, such as title and date, at the top of the file."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "28",
+    "question": "What is a headless CMS in an SSG project?",
+    "options": [
+      "A CMS that runs only in the terminal and keeps no data in a database.",
+      "A content tool with an API that has no page rendering of its own.",
+      "A CMS that renders pages only on the server for users.",
+      "A CMS that stores content only inside the HTML files."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "29",
+    "question": "What does the term Jamstack mean?",
+    "options": [
+      "A server stack with Java, Apache, MySQL, and Kubernetes for dynamic pages.",
+      "Prebuilt markup from a CDN, with JavaScript and APIs for dynamic parts.",
+      "A framework that renders all pages on the server only.",
+      "A database layer that stores JSON for each page."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "30",
+    "question": "How can a static site have a dynamic feature, such as a comment form?",
+    "options": [
+      "Edit the HTML files on the server by hand each time a user sends a new comment.",
+      "Store the comments inside the HTML file on the CDN.",
+      "Run the build again in the browser of each user.",
+      "Call an external API or a serverless function from client JavaScript."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "31",
+    "question": "What does a `sitemap.xml` file help with?",
+    "options": [
+      "It sets the cache time for each page on the CDN and on the browser.",
+      "It hides the pages from the search engines.",
+      "It makes the pages load faster in the browser.",
+      "It lists the page URLs so that crawlers find them."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "32",
+    "question": "Why do build tools add a hash to file names, such as `app.3f9a1c.js`?",
+    "options": [
+      "New content gets a new name, so the file can stay in cache for a long time.",
+      "The hash keeps the file secret from other sites and blocks the copy of the code.",
+      "The hash makes the file smaller after compression.",
+      "The hash lets the browser run the file in parallel."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "33",
+    "question": "In Eleventy, what do files in the `_data` folder do?",
+    "options": [
+      "They hold the plugins that the build installs before it renders the pages.",
+      "They store the built HTML output of the site.",
+      "They set the cache time for each page.",
+      "They add global data that all templates can use."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "34",
+    "question": "A team uses `output: 'export'` in Next.js. Which feature does not work?",
+    "options": [
+      "CSS Modules",
+      "ISR with `revalidate`",
+      "Client Components",
+      "The `Link` component"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "35",
+    "question": "In Astro 5, what is the default `output` mode?",
+    "options": [
+      "`edge`",
+      "`static`",
+      "`hybrid`",
+      "`server`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "36",
+    "question": "Why do teams choose Hugo for large sites?",
+    "options": [
+      "It is a single Go binary with very fast builds.",
+      "It renders the pages on the server for each request.",
+      "It needs a Node.js version manager for its builds.",
+      "It has a built-in React runtime for hydration."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "37",
+    "question": "What does a build-time image step usually do?",
+    "options": [
+      "It makes smaller sizes and new formats, such as WebP, for responsive images.",
+      "It moves the images into the HTML as plain text, so the page needs no image files.",
+      "It removes the images that the browser does not show.",
+      "It loads each image from the server on every visit."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "38",
+    "question": "What does `robots.txt` do on a static site?",
+    "options": [
+      "It blocks bad users with a password.",
+      "It sets the cache time for the CDN.",
+      "It tells crawlers which paths they may fetch.",
+      "It lists all the pages for the build tool to render."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "39",
+    "question": "What is link prefetching on a static site?",
+    "options": [
+      "The browser loads the assets of the next page before the user clicks.",
+      "The build step removes links that nobody uses.",
+      "The CDN deletes the old page from its cache when a link on the site changes.",
+      "The server renders the next page for each user."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "40",
+    "question": "Which `Cache-Control` value tells a shared CDN cache to keep a page for 1 hour?",
+    "options": [
+      "`no-store`",
+      "`stale-if-error=3600`",
+      "`s-maxage=3600`",
+      "`private, max-age=3600`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "41",
+    "question": "What is a `404.html` file on static hosting?",
+    "options": [
+      "The page that the host shows when a path does not exist.",
+      "The log file of the build with all the errors.",
+      "The page that the host shows when the build fails and the deploy stops.",
+      "The page that the host shows for the home path."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "42",
+    "question": "A blog has 500 posts, and a list page shows 10 posts. How does an SSG make the list pages?",
+    "options": [
+      "It makes one page and loads the other posts with a server query.",
+      "It makes many list pages at build time, such as `/page/2`.",
+      "It makes one page per post and merges them in the browser.",
+      "It makes the list pages only when the user clicks next."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "43",
+    "question": "What is MDX?",
+    "options": [
+      "A tool that converts Markdown to PDF files.",
+      "A binary format that stores Markdown in a database.",
+      "A template language that only runs on the server.",
+      "Markdown that can include JSX components."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "44",
+    "question": "A build script uses `fs.readFile` in `getStaticProps`. Where does this code run?",
+    "options": [
+      "In the browser of the user, when the user opens the page for the first time.",
+      "In a service worker, after the first visit.",
+      "At build time on the build machine, not in the browser.",
+      "On the CDN edge, for each user request."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "45",
+    "question": "Which metric is usually very low when a CDN serves a cached static page?",
+    "options": [
+      "TTFB (Time to First Byte)",
+      "CLS (Cumulative Layout Shift)",
+      "LCP (Largest Contentful Paint)",
+      "TBT (Total Blocking Time)"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "46",
+    "question": "In Gatsby, which file do you use to make pages from data with `createPages`?",
+    "options": [
+      "`gatsby-browser.js`",
+      "`gatsby-node.js`",
+      "`gatsby-ssr.js`",
+      "`gatsby-config.js`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "47",
+    "question": "What is a collection in Eleventy?",
+    "options": [
+      "A folder with all the images for the site.",
+      "A cache of the pages that were built before.",
+      "A group of content items, often by tag, that templates can loop over.",
+      "A set of plugins that the build downloads at start from the package registry."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "48",
+    "question": "What is a build hook (deploy hook)?",
+    "options": [
+      "A plugin that removes the unused CSS and JavaScript from the output of the build.",
+      "A function that changes the HTML in the browser.",
+      "A URL that starts a new build when a service sends a request to it.",
+      "A Git rule that blocks a commit without tests."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "49",
+    "question": "Which tags control the preview card when a user shares a link to a static page?",
+    "options": [
+      "JSON files in the `public` folder",
+      "Hash values in the file names of the CSS and JavaScript bundles",
+      "HTTP cookies set by the CDN",
+      "Open Graph meta tags in the HTML head"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "50",
+    "question": "Why do hosts use atomic deploys for static sites?",
+    "options": [
+      "The host keeps only the newest file of each page and deletes all the older files at once.",
+      "The host builds each page again for every visitor.",
+      "The new version goes live in one step, so no visitor sees a mix of files.",
+      "The host splits the site into small parts for each user."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "51",
+    "question": "A build fetches data from an API, and the API is down. What is the safest default?",
+    "options": [
+      "Skip the failed pages and publish all the others.",
+      "Fail the build, so the last good deploy stays live.",
+      "Publish the pages with empty data and fix them later.",
+      "Cache the error response and serve it as the page."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "52",
+    "question": "A static product page shows an old price after a CMS change. What is the most likely cause?",
+    "options": [
+      "The page was built before the change, and nothing rebuilt or revalidated it.",
+      "The page uses CSS that hides the new price.",
+      "The CDN cannot cache a page that has a price, so it asks the origin each time.",
+      "The browser blocks the new price for security reasons."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "53",
+    "question": "A Next.js page uses `revalidate: 60`. A user requests it after 5 minutes. What happens?",
+    "options": [
+      "The user gets a 404 error page until the next full build of the whole site is done.",
+      "The user waits while the server makes a new page.",
+      "The user gets the old page, and the server makes a new one in the background.",
+      "The user gets a new page, made by a timer every 60 seconds."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "54",
+    "question": "What does `fallback: 'blocking'` do for a path that the build did not make?",
+    "options": [
+      "The server returns a 404 page for this path.",
+      "The browser shows a loading skeleton first and then fetches the JSON data of the page.",
+      "The server renders the page on the first request, waits, and then caches it.",
+      "The server redirects the user to the home page."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "55",
+    "question": "In the App Router, what does `export const dynamicParams = false` do?",
+    "options": [
+      "The build makes each param page again on every request.",
+      "Paths not from `generateStaticParams` render on the first request.",
+      "Paths not from `generateStaticParams` return a 404 error.",
+      "The route cannot use any params in the URL."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "56",
+    "question": "A static React page shows `new Date().toLocaleString()`. The console shows a hydration warning. Why?",
+    "options": [
+      "React does not allow a date value in a static page, so it shows a warning at each load.",
+      "The CDN changes the text of the page when it caches the page for later.",
+      "The server cannot read the clock during the build.",
+      "The build-time text differs from the text that the browser renders on load."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "57",
+    "question": "Which call updates one cached page after a CMS webhook in the Next.js App Router?",
+    "options": [
+      "`router.refresh('/blog/my-post')`",
+      "`revalidatePath('/blog/my-post')`",
+      "`cache.clear('/blog/my-post')`",
+      "`unstable_noStore('/blog/my-post')`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "58",
+    "question": "A team puts a private API key in the client code of a static site. What is the risk?",
+    "options": [
+      "Anyone can read the key in the JavaScript bundle.",
+      "The key works only for the first visitor who opens the page.",
+      "The CDN deletes the key after the first request.",
+      "The build fails because the key is too long."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "59",
+    "question": "A site with 200,000 pages builds in 90 minutes. Which change helps most?",
+    "options": [
+      "Add more CSS minification and image compression steps to the build script.",
+      "Build only the popular pages and make the others on first request.",
+      "Increase the cache time on the CDN to a very long value, such as one year.",
+      "Move the image files of the site to a bigger server with more disk space."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "60",
+    "question": "After a deploy, users still see old HTML, but the assets have hashed names. What is most likely?",
+    "options": [
+      "The HTML file has a long cache time, so the CDN or browser keeps it.",
+      "The hashed assets are too large for the CDN, so it cannot store them.",
+      "The build did not make the JavaScript files for the new version of the site.",
+      "The browser cannot read files with a hash in the name."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "61",
+    "question": "A page shows data that is different for each logged-in user. Which rendering fits best?",
+    "options": [
+      "ISR with a revalidate time of one year, because the data stays the same.",
+      "CSR or SSR, because the data is different for each user.",
+      "SSG, because the build knows the token of each user.",
+      "SSG, because the CDN can cache a page for each user."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "62",
+    "question": "Compared to SSG, what does ISR need at runtime?",
+    "options": [
+      "A server or platform function that can make pages again.",
+      "A second CDN that stores the old pages.",
+      "A browser plugin that rebuilds the pages.",
+      "A database that holds the HTML of each page and the list of the old versions."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "63",
+    "question": "What does the Astro directive `client:visible` do?",
+    "options": [
+      "It loads and hydrates the component when it enters the viewport.",
+      "It hydrates the component on page load for every user.",
+      "It hydrates the component after the first user click.",
+      "It renders the component on the server for each request and sends only the HTML."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "64",
+    "question": "The URLs `/blog/post` and `/blog/post/` show the same page. What is the SEO risk and the fix?",
+    "options": [
+      "Lower speed; compress the HTML of the page.",
+      "Duplicate content; set a canonical URL and one trailing slash rule.",
+      "Broken links; add a redirect from each page to the home page of the site.",
+      "Slow indexing; add more links between the two URLs on the same page."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "65",
+    "question": "A static host sends `index.html` with status 200 for unknown URLs. What is the SEO problem?",
+    "options": [
+      "Crawlers stop visiting the site for 30 days.",
+      "Crawlers remove all the pages of the site from their index at once.",
+      "Crawlers see soft 404 pages, because missing pages return 200.",
+      "Crawlers cannot read the HTML of the home page."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "66",
+    "question": "Why can a CSR-only page take longer to appear in search results?",
+    "options": [
+      "The crawler does not support the HTTP protocol that the static host uses.",
+      "The crawler skips all pages that use a script tag.",
+      "The crawler reads only pages that are smaller than 1 KB.",
+      "The crawler must run JavaScript in a queue before it sees the content."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "67",
+    "question": "How can an editor see a draft in a Next.js site that uses static pages?",
+    "options": [
+      "Disable the cache on the CDN for the whole site while editors work on drafts.",
+      "Run a full build for each change in the draft.",
+      "Publish the draft to production and delete it later.",
+      "Use Draft Mode, which renders the page on request with draft content."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "68",
+    "question": "A build makes 5,000 pages, and each page calls the same menu endpoint. How can you cut the build time?",
+    "options": [
+      "Fetch the menu once and share the result across the pages.",
+      "Move the menu fetch to the browser for each visitor.",
+      "Fetch the menu again in each page to keep the menu fresh for every page.",
+      "Make the pages in a slower order to reduce load."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "69",
+    "question": "A Next.js static export fails on `next/image` with the default loader. What is the fix?",
+    "options": [
+      "Move the images into the `.next/cache` folder before the export step.",
+      "Enable ISR for the image route.",
+      "Set `images.unoptimized: true` or use a custom loader.",
+      "Add `getServerSideProps` to the page."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "70",
+    "question": "A static site works at the root, but the CSS breaks at `example.com/docs/`. What is the likely cause?",
+    "options": [
+      "The browser blocks CSS from a path that ends with a slash for security.",
+      "The build did not make the CSS file for this path.",
+      "The CDN cannot serve CSS from a sub folder.",
+      "The asset URLs start with `/`, so they ignore the base path."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "71",
+    "question": "After a static Next.js site loads, a click on `Link` does not reload the page. How does this work?",
+    "options": [
+      "The router gets the next page data and updates the page in the browser.",
+      "The server keeps a WebSocket open for each link and pushes the next page.",
+      "The browser keeps all the site pages in memory from the start.",
+      "The CDN sends the user a new page over HTTP push."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "72",
+    "question": "A static host has no server. How do you set redirects?",
+    "options": [
+      "Write a Node.js route in the build output folder and run it on the host.",
+      "Use `getServerSideProps` in each page that needs a redirect.",
+      "Add an `if` statement in the HTML of the page.",
+      "Use the redirect rules of the host, such as a config file for the CDN."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "73",
+    "question": "In Astro static mode, how does `src/pages/blog/[slug].astro` get its pages?",
+    "options": [
+      "It needs one `.astro` file for each slug, with the slug in the file name.",
+      "It exports `generateStaticParams`, which the build calls for each slug.",
+      "It sets `output: 'server'`, so Astro reads the slug from each request.",
+      "It exports `getStaticPaths`, which returns a list of `params` objects."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "74",
+    "question": "How can you add search to a static site that has no server?",
+    "options": [
+      "Run a SQL query on the CDN edge for each search that a user sends to the site.",
+      "Ask the user to enter the full URL of the page.",
+      "Build a search index at build time and load it in the browser.",
+      "Send each search term to the build machine."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "75",
+    "question": "Why can a very large `getStaticProps` result be a problem in the Pages Router?",
+    "options": [
+      "The data makes the HTML invalid for crawlers.",
+      "The data is cut at 1 MB by the CDN, so the page loses part of the props.",
+      "The data goes into the page JSON and is sent to the browser.",
+      "The data stays on the server and the build takes less time."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "76",
+    "question": "`getStaticProps` returns `{ props: { date: new Date() } }`. What happens?",
+    "options": [
+      "The page builds and the date updates on each request after the build.",
+      "The date becomes a string in the local time zone.",
+      "The date becomes a number of milliseconds.",
+      "An error, because the props must be serializable as JSON."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "77",
+    "question": "What does `Cache-Control: s-maxage=60, stale-while-revalidate=300` allow?",
+    "options": [
+      "The browser must wait 300 seconds after each response before it may ask the CDN again.",
+      "The CDN may send a stale page for up to 300 seconds while it gets a new copy.",
+      "The CDN must send an error after 60 seconds.",
+      "The CDN may keep the page for 360 seconds and never ask the origin during that time."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "78",
+    "question": "A site has 3 languages and 1,000 pages for each language. How does SSG handle this?",
+    "options": [
+      "It builds 3 pages and loads the text of each language from an API in the browser.",
+      "It builds a separate HTML page for each locale, so there are 3,000 pages.",
+      "It builds 1,000 pages and translates them in the browser.",
+      "It builds 1,000 pages and picks the language on the CDN."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "79",
+    "question": "What does the cache of an incremental build save?",
+    "options": [
+      "The size of the CDN and the cost of the host, because the build needs less storage.",
+      "The results of unchanged pages or steps, so the next build does less work.",
+      "The data of the users that visited the site.",
+      "The HTML of the pages that failed to build."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "80",
+    "question": "A page uses `useEffect` to fetch the price. What does a crawler see in the built HTML?",
+    "options": [
+      "The loading placeholder, not the price that the fetch returns.",
+      "An error message from the failed fetch, because the build cannot reach the API.",
+      "The final price from the API at build time.",
+      "An empty file with no HTML tags."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "81",
+    "question": "Many requests hit one expired ISR page at the same time. What do you expect from the platform?",
+    "options": [
+      "One regeneration runs, and the other requests get the stale page until it ends.",
+      "All requests wait and get an error if the first one fails.",
+      "The platform deletes the page and returns 404 to all requests.",
+      "Each request starts its own regeneration in parallel, and the last one wins the cache."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "82",
+    "question": "An ISR regeneration fails because the data source is down. What does the user get?",
+    "options": [
+      "A redirect to the home page until the next build.",
+      "The last good page stays, and the platform tries again later.",
+      "A 500 error page for all requests to this path until the source is up again.",
+      "An empty page that the platform caches for one hour."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "83",
+    "question": "A site has 2 million product pages. A team builds the top 10,000 and uses `fallback: 'blocking'`. What is the trade-off?",
+    "options": [
+      "Longer builds, but the CDN stores less data.",
+      "Longer builds, but all visitors get a page at once.",
+      "Shorter builds, but the first visitor of a rare page waits for the render.",
+      "Shorter builds, but rare pages never get any HTML and always return a 404 error."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "84",
+    "question": "A CDN caches one URL, but the origin changes the HTML by cookie. What is the main risk?",
+    "options": [
+      "The CDN deletes the cookie on each request and the user loses the session.",
+      "The CDN can send the HTML of one user to other users.",
+      "The CDN cannot compress the response.",
+      "The browser cannot read the cookie any more."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "85",
+    "question": "Why can a fully static page still have a bad INP score?",
+    "options": [
+      "Large hydration JavaScript blocks the main thread, so clicks wait.",
+      "The CDN adds delay to each click event because it checks the cache on each click.",
+      "The browser does not cache static pages for clicks.",
+      "Static HTML cannot respond to any click event."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "86",
+    "question": "What is a trade-off of islands architecture compared to full page hydration?",
+    "options": [
+      "Less HTML, but the SEO score is lower because the crawlers see fewer components.",
+      "More JavaScript, but all state is shared at once.",
+      "Less JavaScript, but sharing state between islands needs extra work.",
+      "More build time, but the server load is zero."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "87",
+    "question": "A user keeps a tab open during a deploy. The old page asks for a chunk that gives 404. Why?",
+    "options": [
+      "The browser cannot fetch a chunk after 10 minutes, because the HTTP cache expires.",
+      "The CDN blocks all requests from old tabs.",
+      "The new build changed the HTTP method of the request.",
+      "The old HTML points to hashed files that the new deploy removed."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "88",
+    "question": "Two builds from the same commit give different HTML. Which is a likely cause?",
+    "options": [
+      "The Git commit changes its hash during the build.",
+      "The build tool reads the files from the disk in a different order each time.",
+      "The CDN changes the HTML after the upload.",
+      "The build uses the time, random values, or live API data that changes."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "89",
+    "question": "A Node.js build of 300,000 pages runs out of memory. Which fix is most direct?",
+    "options": [
+      "Compress the images before the build starts and delete the cache of the old build.",
+      "Add a second CDN in front of the host.",
+      "Increase the `max-age` header on the CDN.",
+      "Render the pages in batches and do not keep all the page data in memory."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "90",
+    "question": "A CMS sends 500 webhooks in one minute during an import, and each starts a full build. What is the best design?",
+    "options": [
+      "Ignore the webhooks and build once each day.",
+      "Run all 500 builds in parallel to finish faster, with one build for each webhook.",
+      "Block the CMS import until the first build ends.",
+      "Queue or debounce the events, then run one build or revalidate only changed paths."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "91",
+    "question": "An author changes a product that 300 pages use. Why use `revalidateTag` instead of `revalidatePath`?",
+    "options": [
+      "It runs faster because it does not render any page, so the CDN stays the same.",
+      "One call updates all the pages that depend on that data.",
+      "It makes the CDN delete all pages of the site.",
+      "It updates the browser cache of the author."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "92",
+    "question": "Two Next.js instances behind a load balancer each keep a local ISR cache. What is the risk?",
+    "options": [
+      "The instances can serve different versions, and revalidation reaches only one.",
+      "The instances share one cache and delete the pages of each other at every request.",
+      "The ISR time doubles for every second instance.",
+      "The load balancer rebuilds the site on each request."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "93",
+    "question": "You purge the CDN before the new origin version is live. What can happen?",
+    "options": [
+      "The CDN sends the new page before it exists.",
+      "The CDN stops caching the pages of the site until the next deploy ends.",
+      "The CDN deletes the origin files that you deployed.",
+      "The CDN fetches the old page again and caches it for a long time."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "94",
+    "question": "A static build reads `process.env.API_URL` at build time. The same artifact goes from staging to production. What is the problem?",
+    "options": [
+      "The value is empty because the CDN removes it from the artifact at the time of the upload.",
+      "The value changes at runtime for each user.",
+      "The value is fixed in the artifact, so production still uses the staging URL.",
+      "The build fails because two environments use one artifact."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "95",
+    "question": "What is the main correctness risk of an incremental build cache?",
+    "options": [
+      "The cache deletes the pages that nobody visited, so those pages return a 404 error.",
+      "A missing dependency link, so a changed data source does not rebuild its pages.",
+      "The cache makes the build output larger than the source.",
+      "The cache lets two builds write to the same file at the same time and breaks it."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "96",
+    "question": "A site has 5 million static pages, and crawlers do not index the new pages. Which action helps most?",
+    "options": [
+      "Put all the URLs in one very large sitemap file that is bigger than the limit.",
+      "Split the sitemaps by size and add internal links to the new pages.",
+      "Increase the cache time of the home page.",
+      "Add a `noindex` tag to the old pages."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "97",
+    "question": "A service worker caches HTML with a cache-first rule. What is the risk after a deploy?",
+    "options": [
+      "The browser deletes the HTML after each visit, so the user sees a blank page.",
+      "The CDN ignores the worker and sends new HTML.",
+      "Users can stay on the old HTML until the new worker takes control.",
+      "The worker blocks the hashed assets of the new build."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "98",
+    "question": "Why can a static site still have an XSS bug?",
+    "options": [
+      "The build step runs user input as code, so a visitor can run commands on the host.",
+      "The CDN adds scripts to the HTML at the edge.",
+      "Client JavaScript can put untrusted data from the URL or an API into the DOM.",
+      "Static files can run SQL queries in the browser."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "99",
+    "question": "What problem does resumability, as in Qwik, try to remove?",
+    "options": [
+      "The need to run component code again in the browser to rebuild state.",
+      "The need to use a CDN for the static files.",
+      "The need to send HTML from the server.",
+      "The need to build the HTML at build time, because the server renders every page."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "100",
+    "question": "A static site on S3 behind CloudFront returns an error for `/about/`. What is the likely cause?",
+    "options": [
+      "The default root object works only for the root, so a rewrite adds `index.html`.",
+      "CloudFront cannot cache paths that end with a slash, so it asks S3 for each one.",
+      "S3 blocks all paths that have a sub folder.",
+      "The browser removes the slash and asks for `/about`."
+    ],
+    "correct_index": 0
+  }
+]

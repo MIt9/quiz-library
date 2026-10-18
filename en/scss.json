@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What identifies the SCSS syntax?",
+    "options": [
+      "Indentation-only blocks",
+      "Braces and semicolons",
+      "XML opening tags",
+      "JavaScript arrow functions"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "2",
+    "question": "Which filename normally contains SCSS source?",
+    "options": [
+      "button.css.json",
+      "button.sass",
+      "button.less",
+      "button.scss"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "3",
+    "question": "Is SCSS a separate language from Sass's features?",
+    "options": [
+      "No, it is a Sass syntax",
+      "Only for component library files",
+      "Only for browser custom properties",
+      "Yes, it has an unrelated compiler"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "4",
+    "question": "Why can existing CSS often enter an SCSS file directly?",
+    "options": [
+      "Browsers compile SCSS automatically",
+      "Every CSS selector becomes a function",
+      "SCSS ignores all declaration syntax",
+      "SCSS is largely a CSS superset"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "5",
+    "question": "What does .card { .title { color: red; } } generate?",
+    "options": [
+      "A new DOM element",
+      "Two unrelated root rules",
+      "A component export object",
+      "A descendant selector rule"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "6",
+    "question": "What does .card { &:hover { color: red; } } target?",
+    "options": [
+      "The card's parent only",
+      "The hovered card",
+      "A hovered child only",
+      "Every hovered element"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "7",
+    "question": "What does .button { &--large { padding: 1rem; } } generate?",
+    "options": [
+      "A --large custom property",
+      "A .button .large selector",
+      "A .button--large selector",
+      "A large HTML element selector"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "8",
+    "question": "What does .card { > .title { color: red; } } express?",
+    "options": [
+      "A parent hover relationship",
+      "An adjacent-sibling relationship",
+      "A direct-child relationship",
+      "A universal root selector"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "9",
+    "question": "What does .card { .theme & { color: red; } } generate?",
+    "options": [
+      "A theme property declaration",
+      "A theme module import",
+      "A theme descendant selector",
+      "A theme ancestor selector"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "10",
+    "question": "What does nested @media usually do in SCSS output?",
+    "options": [
+      "Create a module namespace",
+      "Change the source file extension",
+      "Conditional selector rules",
+      "Register a resize event handler"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "11",
+    "question": "What does SCSS property nesting group?",
+    "options": [
+      "Only server response keys",
+      "Only DOM child elements",
+      "Only module dependencies",
+      "Related property prefixes"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "12",
+    "question": "Which SCSS pattern expands border subproperties?",
+    "options": [
+      "border: { color: red; style: solid; }",
+      "@border(color=red, style=solid)",
+      "border = [red, solid];",
+      "border { red: color; solid: style; }"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "13",
+    "question": "What is a common role of an underscore-prefixed SCSS file?",
+    "options": [
+      "A browser-only stylesheet module",
+      "A partial loaded by other sources",
+      "A file that cannot contain declarations",
+      "A required public CSS entrypoint"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "14",
+    "question": "What does _index.scss commonly provide?",
+    "options": [
+      "A mandatory global reset",
+      "A directory entrypoint",
+      "A browser style cache",
+      "An automatic database index"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "15",
+    "question": "What should an SCSS entrypoint define?",
+    "options": [
+      "The current DOM component state",
+      "The user's active browser tab",
+      "The intended output composition",
+      "The production API response shape"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "16",
+    "question": "What does a component SCSS file ideally own?",
+    "options": [
+      "Every unrelated page layout",
+      "Every global element rule",
+      "Owned component styles",
+      "The complete server theme state"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "17",
+    "question": "What belongs in a definitions-only SCSS module?",
+    "options": [
+      "Only copied minified output",
+      "Only generated class selectors",
+      "All page-level reset declarations",
+      "Reusable definitions without emitted rules"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "18",
+    "question": "What belongs in a reset SCSS layer?",
+    "options": [
+      "Application route state",
+      "Server-side input validation",
+      "Component-specific interaction logic",
+      "Global baseline normalization"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "19",
+    "question": "Why separate SCSS tokens from emitted component rules?",
+    "options": [
+      "Separate data from CSS emission",
+      "Prevent tokens from being imported",
+      "Make every component global",
+      "Remove the compilation stage"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "20",
+    "question": "What does a vendor SCSS layer isolate?",
+    "options": [
+      "Every application data request",
+      "Only browser default fonts",
+      "Only generated source maps",
+      "Third-party styling integration"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "21",
+    "question": "What does a documented SCSS layer order help manage?",
+    "options": [
+      "Database transaction order",
+      "Cascade precedence",
+      "Browser history navigation",
+      "React event propagation"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "22",
+    "question": "What does a shallow SCSS nesting policy reduce?",
+    "options": [
+      "Structural selector coupling",
+      "All CSS inheritance",
+      "All stylesheet downloads",
+      "All browser layout work"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "23",
+    "question": "What does a selector naming convention support in SCSS?",
+    "options": [
+      "Automatic keyboard accessibility",
+      "Automatic DOM validation",
+      "Consistent ownership and reuse",
+      "Guaranteed server rendering"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "24",
+    "question": "What does @extend change in SCSS?",
+    "options": [
+      "Selector matching relationships",
+      "The browser route table",
+      "The React component tree",
+      "The source file encoding"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "25",
+    "question": "What does a %placeholder represent?",
+    "options": [
+      "A module namespace alias",
+      "An extend-only selector",
+      "A required percentage value",
+      "A browser CSS custom property"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "26",
+    "question": "What happens to an unextended SCSS placeholder rule?",
+    "options": [
+      "It becomes a universal selector",
+      "It creates a runtime browser warning",
+      "It becomes an empty CSS variable",
+      "It does not emit a selector rule"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "27",
+    "question": "What does @extend ... !optional permit?",
+    "options": [
+      "A target that is absent",
+      "An unsupported CSS property",
+      "An undefined mixin call",
+      "An invalid selector syntax"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "28",
+    "question": "What does @at-root primarily help control?",
+    "options": [
+      "The browser document root",
+      "Nesting in emitted rules",
+      "The current module namespace",
+      "The stylesheet encoding"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "29",
+    "question": "What does @at-root (without: media) request?",
+    "options": [
+      "Emission outside media context",
+      "A browser without media support",
+      "Removal of all media rules",
+      "A required static viewport"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "30",
+    "question": "What does SCSS @supports express?",
+    "options": [
+      "A package version constraint",
+      "A Sass installation check",
+      "A CSS feature condition",
+      "A server permission guard"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "31",
+    "question": "What does CSS @layer inside SCSS organize?",
+    "options": [
+      "Server authentication tiers",
+      "React component layers",
+      "Sass module namespaces",
+      "Cascade layers"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "32",
+    "question": "Does SCSS compilation alone locally scope class names?",
+    "options": [
+      "No, separate scoping tools are needed",
+      "Only classes inside partial files",
+      "Only classes in production builds",
+      "Yes, every class gets a hash"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "33",
+    "question": "What does .module.scss convention commonly combine?",
+    "options": [
+      "A Sass plugin and a database model",
+      "A browser module script and JSX",
+      "A server route and a CSS reset",
+      "SCSS processing and CSS Modules"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "34",
+    "question": "What does a stylesheet linter check in SCSS?",
+    "options": [
+      "Every rendered visual outcome",
+      "All application data types",
+      "Configured source conventions",
+      "Every browser performance trace"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "35",
+    "question": "What does an SCSS formatter primarily standardize?",
+    "options": [
+      "Rendered component layout",
+      "Source layout",
+      "Generated selector meaning",
+      "Application navigation state"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "36",
+    "question": "What does a production SCSS build normally publish?",
+    "options": [
+      "A required Sass browser runtime",
+      "Compiled stylesheet assets",
+      "A component state database",
+      "Editable source as browser input"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "37",
+    "question": "What does output compression change?",
+    "options": [
+      "The browser interaction contract",
+      "The intended selector semantics",
+      "The SCSS module API",
+      "CSS serialization size"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "38",
+    "question": "What does a compile error's source location help identify?",
+    "options": [
+      "The server's active request route",
+      "The currently focused DOM node",
+      "The offending authored statement",
+      "The user's installed browser extensions"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "39",
+    "question": "What should a style output artifact pair with for debugging?",
+    "options": [
+      "An unrelated development screenshot",
+      "A copy of the database schema",
+      "Its matching source map",
+      "A new browser history entry"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "40",
+    "question": "What does an asset URL in SCSS require from the build?",
+    "options": [
+      "A Sass function for every image",
+      "A component event handler",
+      "Correct resolution and deployment",
+      "A database record for each icon"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "41",
+    "question": "What does a watch build do for SCSS?",
+    "options": [
+      "Recompute browser layout each frame",
+      "Rebuild after relevant source changes",
+      "Observe DOM mutations at runtime",
+      "Poll every user input value"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "42",
+    "question": "What does dependency tracking need to include?",
+    "options": [
+      "Loaded stylesheet sources",
+      "Only the package description",
+      "Only the output file extension",
+      "Only the entrypoint filename"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "43",
+    "question": "Why keep generated CSS out of hand-edited SCSS modules?",
+    "options": [
+      "Prevent all minification",
+      "Avoid competing sources",
+      "Remove all build caching",
+      "Force every token into CSS"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "44",
+    "question": "What does a stylesheet budget limit?",
+    "options": [
+      "Published style output cost",
+      "The number of React props",
+      "The database query time",
+      "The source repository age"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "45",
+    "question": "What does a visual regression test compare for SCSS changes?",
+    "options": [
+      "Only compiler warning text",
+      "Only module import aliases",
+      "Rendered UI appearance",
+      "Only source indentation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "46",
+    "question": "What does SCSS migration from @import often make explicit?",
+    "options": [
+      "Database ownership",
+      "Module dependencies",
+      "Application user roles",
+      "Browser focus behavior"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "47",
+    "question": "What does a migration entrypoint identify?",
+    "options": [
+      "The dependency graph to transform",
+      "The browser's default stylesheet",
+      "The current route URL",
+      "The first DOM selector to animate"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "48",
+    "question": "What does a codemod or migrator output still require?",
+    "options": [
+      "Review and validation",
+      "A new component per selector",
+      "Automatic release approval",
+      "A browser compiler installation"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "49",
+    "question": "What does a public SCSS entrypoint expose to consumers?",
+    "options": [
+      "The browser's internal stylesheet tree",
+      "The app's runtime user data",
+      "The supported styling API",
+      "Every private source file by promise"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "50",
+    "question": "What should a style-only package document?",
+    "options": [
+      "How consumers load its styles",
+      "How to disable all CSS inheritance",
+      "How to edit generated hashes",
+      "How browsers compile Sass source"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "51",
+    "question": "A teammate adds @use inside .card { ... }. Why does that migration fail?",
+    "options": [
+      "The module name must be a CSS class",
+      "Every module needs a React component",
+      "@use requires top-level placement",
+      "SCSS forbids all nested declarations"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "52",
+    "question": "A migrated SCSS component used to read ambient globals. What dependency should it declare now?",
+    "options": [
+      "Its required modules directly",
+      "Only the source map's output directory",
+      "Every downstream component globally",
+      "Only the final CSS asset URL"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "53",
+    "question": "A migrated entrypoint loads token definitions, but another module cannot see them. Why?",
+    "options": [
+      "Module visibility is not transitive global scope",
+      "Only mixins can cross file boundaries",
+      "SCSS removes every exported variable",
+      "The browser must evaluate the module"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "54",
+    "question": "Two SCSS dependencies expose the same member name. Which import practice avoids ambiguity?",
+    "options": [
+      "Use distinct module namespaces",
+      "Depend on import order silently",
+      "Rename generated CSS hashes",
+      "Load everything with as *"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "55",
+    "question": "A library's SCSS facade forwards a helper module accidentally. What maintenance risk follows?",
+    "options": [
+      "Private helpers become consumer dependencies",
+      "All CSS declarations become variables",
+      "Every helper emits a new DOM node",
+      "The browser rejects the facade filename"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "56",
+    "question": "A nested legacy @import emits vendor CSS under .theme. What migration pattern preserves intentional contextual output?",
+    "options": [
+      "Copy the vendor CSS into a variable",
+      "A mixin that emits the vendor styles",
+      "Move all styles to global body rules",
+      "Place @use inside the theme selector"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "57",
+    "question": "A migration cannot wrap a vendor stylesheet in a mixin. Which module API can load its CSS contextually?",
+    "options": [
+      "meta.type-of",
+      "selector.parse",
+      "map.get",
+      "meta.load-css"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "58",
+    "question": "A migrated SCSS module relies on the caller's variable assignment for configuration. What should replace the hidden contract?",
+    "options": [
+      "A shared global DOM class name",
+      "An explicit supported configuration interface",
+      "A CSS-only import of the compiled output",
+      "A random entrypoint loading order"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "59",
+    "question": "A legacy SCSS project imports a file many times for side effects. What must migration review examine?",
+    "options": [
+      "Only the source file comment style",
+      "The resulting CSS output and call structure",
+      "Only the new namespace length",
+      "Only the total import line count"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "60",
+    "question": "A SCSS file nests five component ancestors before .label. What maintenance failure becomes likely?",
+    "options": [
+      "Every label becomes a form control",
+      "Browsers stop supporting the declaration",
+      "Markup changes break styling",
+      "Class names become locally hashed"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "61",
+    "question": "A SCSS selector list nests another selector list. What should output review inspect?",
+    "options": [
+      "Only the file's final newline",
+      "Only the source's visible line count",
+      "Only the component's import alias",
+      "The expanded selector combinations"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "62",
+    "question": "A SCSS @extend is expected to copy declarations at its call site. What should the developer inspect instead?",
+    "options": [
+      "The source map's comment placement",
+      "The server-rendered component name",
+      "The current DOM inline styles",
+      "The generated selector groups"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "63",
+    "question": "A SCSS component extends a broadly used semantic class. What coupling does this create?",
+    "options": [
+      "A mandatory runtime mixin call",
+      "A required component inheritance tree",
+      "Shared selector behavior across contexts",
+      "A new browser custom element"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "64",
+    "question": "A SCSS placeholder is extended only from one media context. What restriction should the developer check?",
+    "options": [
+      "Whether the output filename is lowercase",
+      "Extension across incompatible at-rule contexts",
+      "Whether the placeholder uses a short name",
+      "Whether the source uses UTF-8 text"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "65",
+    "question": "A SCSS rule uses @at-root and loses its intended ancestor prefix. What should review establish?",
+    "options": [
+      "Only the module's color palette",
+      "Only the source declaration count",
+      "Only the compiler executable path",
+      "The desired emitted selector scope"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "66",
+    "question": "A SCSS mixin emits top-level @font-face every time a component includes it. What should architecture separate?",
+    "options": [
+      "All component names from all selectors",
+      "Shared asset rules from per-component styling",
+      "All font names from all token sources",
+      "All Sass definitions from every entrypoint"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "67",
+    "question": "A SCSS theme emits identical resets for every mode. What output design reduces waste?",
+    "options": [
+      "Copy the reset into each component",
+      "Increase the reset selector specificity",
+      "Load both compiled and source styles",
+      "Emit shared baseline rules once"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "68",
+    "question": "A component.module.scss file has global vendor overrides. What should code review make explicit?",
+    "options": [
+      "The intentional global boundary",
+      "The route's server cache duration",
+      "The current component's React key",
+      "The imported image's filename length"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "69",
+    "question": "A SCSS class rename changes source but not JSX usage. What integration check can detect it?",
+    "options": [
+      "CSS Module export/type validation",
+      "Only Sass syntax validation",
+      "Only source whitespace formatting",
+      "Only a package lockfile comparison"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "70",
+    "question": "A SCSS style targets a library's generated hash. Why should the team use supported hooks?",
+    "options": [
+      "Only global element selectors can override styles",
+      "Generated classes are never selectable",
+      "Generated names lack a public stability contract",
+      "Every CSS hash contains private user data"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "71",
+    "question": "A SCSS custom property assignment needs a Sass-computed value. Which authored form makes evaluation explicit?",
+    "options": [
+      "--gap = $gap;",
+      "$--gap: var($gap);",
+      "@gap: --gap;",
+      "--gap: #{$gap};"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "72",
+    "question": "A SCSS dependency URL resolves differently in CI. What should the team compare?",
+    "options": [
+      "Load paths and importer configuration",
+      "Only the indentation of declarations",
+      "Only the browser's preferred language",
+      "Only the CSS color syntax"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "73",
+    "question": "A SCSS compile succeeds but referenced images return 404. What build boundary likely needs repair?",
+    "options": [
+      "The Sass variable scope",
+      "Asset path rewriting or deployment",
+      "The CSS selector's specificity",
+      "The component's focus order"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "74",
+    "question": "A SCSS watcher rebuilds after entrypoint changes but misses partial edits. What is missing?",
+    "options": [
+      "An extra browser focus handler",
+      "Dependency-aware invalidation",
+      "A new component display name",
+      "A second stylesheet minifier"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "75",
+    "question": "A SCSS migration suppresses deprecation warnings without replacing APIs. What has actually changed?",
+    "options": [
+      "The deprecated API's support guarantee",
+      "The generated CSS's accessibility",
+      "Diagnostics visibility, not the dependency",
+      "The browser's stylesheet compatibility"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "76",
+    "question": "A SCSS library's consumer overrides stop working after internal layers change. What contract should release review inspect?",
+    "options": [
+      "Only the generated file's byte count",
+      "Only the package author's username",
+      "Only the source comment language",
+      "Documented override precedence"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "77",
+    "question": "A SCSS build includes the same global stylesheet through app and library entrypoints. What can result?",
+    "options": [
+      "A smaller final stylesheet",
+      "A guaranteed module syntax error",
+      "Duplicated CSS output",
+      "Automatic selector scope isolation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "78",
+    "question": "A SCSS project upgrades a framework and its mixin signature changes. What should the adapter tests validate?",
+    "options": [
+      "Only the generated file extension",
+      "Only the mixin's source indentation",
+      "The supported calls and generated output",
+      "Only the framework's download URL"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "79",
+    "question": "A SCSS component uses parent interpolation inside a dynamic selector mixin. What should a small compilation fixture assert?",
+    "options": [
+      "Only the React component tree depth",
+      "The exact intended selector expansion",
+      "Only the browser's computed font size",
+      "Only the current viewport size"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "80",
+    "question": "A SCSS output change moves declarations around nested rules. What regression should compiler-upgrade tests detect?",
+    "options": [
+      "Only a different compiler banner",
+      "Only changed source map filenames",
+      "Only shorter whitespace sequences",
+      "Cascade changes from emitted order"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "81",
+    "question": "A SCSS package exposes deep source paths as its public API. What makes internal reorganization expensive?",
+    "options": [
+      "CSS classes cannot survive file moves",
+      "Browsers keep every source file open",
+      "Consumers import those paths directly",
+      "All partials must remain global forever"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "82",
+    "question": "A SCSS monorepo shares tokens through several packages. What prevents accidental dependency cycles?",
+    "options": [
+      "One giant global import everywhere",
+      "A directed ownership boundary",
+      "A separate token copy per component",
+      "Random import order per build"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "83",
+    "question": "A SCSS build emits several independent route assets. What duplicate-output risk should it measure?",
+    "options": [
+      "Only matching declaration indentation",
+      "Only duplicate source comments",
+      "Only repeated package version strings",
+      "Shared CSS repeated across entrypoints"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "84",
+    "question": "SCSS meta.load-css nests compiled CSS. Why can loaded parent selectors fail to see the caller's outer selector?",
+    "options": [
+      "Every loaded selector is converted into a variable",
+      "Parent selectors require a browser layout pass",
+      "The loaded module compiles before contextual nesting",
+      "The loader removes all nested selectors by default"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "85",
+    "question": "A SCSS module migration changes which files emit CSS. Why is compiler success insufficient?",
+    "options": [
+      "The migrator always checks visual correctness",
+      "Output composition can change silently",
+      "Only source formatting matters after migration",
+      "Browsers cannot render module-generated CSS"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "86",
+    "question": "A SCSS facade forwards configuration before loading dependent components. What integration test protects that design?",
+    "options": [
+      "Consumer configuration reaches dependent output",
+      "Only the facade's source file size",
+      "Only the number of exported comments",
+      "Only the package's description field"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "87",
+    "question": "A SCSS design system uses @extend for unrelated variant trees. What should a senior review inspect?",
+    "options": [
+      "Only the mixin parameter formatting",
+      "Selector growth and cross-component coupling",
+      "Only the original source line count",
+      "Only the selector names' capitalization"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "88",
+    "question": "A SCSS build caches output without importer dependencies. What correctness failure can occur?",
+    "options": [
+      "A permanent loss of every CSS variable",
+      "Stale CSS after imported content changes",
+      "A required new component state store",
+      "A guaranteed browser memory leak"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "89",
+    "question": "A SCSS dependency ships legacy syntax that the app cannot change immediately. What migration boundary limits disruption?",
+    "options": [
+      "Editing generated CSS after each build",
+      "Copying the dependency into every component",
+      "Global warning suppression forever",
+      "A compatibility adapter"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "90",
+    "question": "A SCSS package publishes a source map from another build. What debugging failure can follow?",
+    "options": [
+      "Every selector becomes invalid",
+      "The browser cannot apply any CSS",
+      "Reported source locations are misleading",
+      "All stylesheet imports become synchronous"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "91",
+    "question": "A SCSS generated theme accepts arbitrary strings from a remote configuration. What should the build validate?",
+    "options": [
+      "Allowed values and generated syntax",
+      "Only the component source extension",
+      "Only the output indentation level",
+      "Only the configuration filename length"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "92",
+    "question": "A SCSS app switches theme only by recompiling on the client. What architecture supports frequent runtime changes more naturally?",
+    "options": [
+      "A new stylesheet source per keystroke",
+      "One compiler instance per component",
+      "Random class names on every theme toggle",
+      "Precompiled rules and CSS variables"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "93",
+    "question": "A SCSS custom library supports overrides through a facade. What should a breaking-change review treat as public?",
+    "options": [
+      "Every internal helper file implicitly",
+      "Every local development directory name",
+      "Every generated output line number",
+      "Documented public members and options"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "94",
+    "question": "A SCSS build combines styles from several UI libraries. What integration policy reduces ad hoc specificity patches?",
+    "options": [
+      "Explicit layer and override ordering",
+      "A blanket !important on every rule",
+      "Random stylesheet insertion order",
+      "One duplicate reset for every widget"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "95",
+    "question": "A SCSS framework adapter customizes a component's focus state. What production validation should accompany its CSS snapshot?",
+    "options": [
+      "Only matching output file extensions",
+      "Keyboard interaction in rendered controls",
+      "Only a count of generated selectors",
+      "Only a successful package install"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "96",
+    "question": "A SCSS project compiles sources from workspace symlinks and package exports. What should dependency tests establish?",
+    "options": [
+      "Only equal source file sizes",
+      "Only the browser's default charset",
+      "Consistent resolution of intended entrypoints",
+      "Only matching editor syntax highlighting"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "97",
+    "question": "A SCSS build removes apparently unused placeholder modules. What should its dependency audit inspect?",
+    "options": [
+      "Only the package's latest release date",
+      "Only literal class names in HTML",
+      "Only the shortest source import paths",
+      "Indirect extensions and generated selector reach"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "98",
+    "question": "A SCSS component has themeable values and fixed structural rules. What library boundary supports controlled customization?",
+    "options": [
+      "Semantic configuration over owned structure",
+      "Expose every private selector as permanent API",
+      "Require consumers to copy all source files",
+      "Allow overrides only through production hashes"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "99",
+    "question": "An SCSS migration adds !optional to every @extend to silence errors. What failure can this conceal?",
+    "options": [
+      "Missing required style relationships",
+      "Automatic private module exports",
+      "Mandatory source map generation",
+      "Browser-side module execution"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "100",
+    "question": "A SCSS application has many feature stylesheets. What architecture limits global leakage while preserving shared tokens?",
+    "options": [
+      "One unrestricted global namespace",
+      "Copied token literals in every file",
+      "Scoped feature rules with explicit token dependencies",
+      "A separate reset inside every component"
+    ],
+    "correct_index": 2
+  }
+]

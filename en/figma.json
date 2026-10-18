@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What does Figma Dev Mode help developers inspect?",
+    "options": [
+      "Runtime exceptions",
+      "Network requests",
+      "Design properties",
+      "Database records"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "2",
+    "question": "What does Auto Layout define?",
+    "options": [
+      "Server endpoints",
+      "Layout rules",
+      "Browser permissions",
+      "Source dependencies"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "3",
+    "question": "What does Hug contents sizing follow?",
+    "options": [
+      "Contained content",
+      "The export filename",
+      "The viewport width",
+      "The device resolution"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "4",
+    "question": "What does Fill container sizing use?",
+    "options": [
+      "The current zoom level",
+      "Available parent space",
+      "The original pixel size",
+      "The exported image size"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "5",
+    "question": "What does Fixed width preserve?",
+    "options": [
+      "The specified width",
+      "The viewport width",
+      "The content width",
+      "The parent width"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "6",
+    "question": "What does Auto Layout padding measure?",
+    "options": [
+      "Space between sibling frames",
+      "Space between text baselines",
+      "Space inside the frame edge",
+      "Space outside the page edge"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "7",
+    "question": "What does Auto Layout gap control?",
+    "options": [
+      "Space between children",
+      "The text character spacing",
+      "The outer frame border",
+      "The parent frame offset"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "8",
+    "question": "What does a vertical Auto Layout flow arrange?",
+    "options": [
+      "Children by alphabetical name",
+      "Children along a circle",
+      "Children in overlapping layers",
+      "Children in a column"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "9",
+    "question": "What does horizontal Auto Layout arrange?",
+    "options": [
+      "Children in separate pages",
+      "Children in a row",
+      "Children by variable mode",
+      "Children by export format"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "10",
+    "question": "What does wrapping allow in horizontal Auto Layout?",
+    "options": [
+      "Children become fixed images",
+      "Children lose component properties",
+      "Children ignore frame boundaries",
+      "Children continue on another line"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "11",
+    "question": "What does a minimum width constrain?",
+    "options": [
+      "Minimum width",
+      "The largest allowed width",
+      "The initial canvas zoom",
+      "The preferred export width"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "12",
+    "question": "What does a maximum height constrain?",
+    "options": [
+      "The total page scroll length",
+      "The original image resolution",
+      "The smallest allowed height",
+      "The largest allowed height"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "13",
+    "question": "What does ignoring Auto Layout allow a child to do?",
+    "options": [
+      "Set every sibling width",
+      "Use independent positioning",
+      "Remove all parent padding",
+      "Replace the parent flow"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "14",
+    "question": "What does a Figma component define?",
+    "options": [
+      "A reusable design element",
+      "A browser custom element",
+      "A compiled JavaScript package",
+      "A deployed application route"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "15",
+    "question": "What is a component instance?",
+    "options": [
+      "An independent code module",
+      "A detached image export",
+      "A published source library",
+      "A linked component copy"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "16",
+    "question": "What does a component set group?",
+    "options": [
+      "Related component variants",
+      "Only exported image layers",
+      "Unrelated project files",
+      "Only variable collections"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "17",
+    "question": "What does a variant property describe?",
+    "options": [
+      "A required browser event",
+      "A canvas coordinate pair",
+      "A component source URL",
+      "A component configuration axis"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "18",
+    "question": "Which is a useful variant property?",
+    "options": [
+      "Author email",
+      "Canvas zoom",
+      "Export timestamp",
+      "Size"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "19",
+    "question": "What does a text component property expose?",
+    "options": [
+      "Editable text content",
+      "A text animation curve",
+      "A required CSS selector",
+      "The global font cache"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "20",
+    "question": "What does a boolean component property commonly expose?",
+    "options": [
+      "Font weight selection",
+      "Image export resolution",
+      "Layer visibility",
+      "A numeric border width"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "21",
+    "question": "What does an instance swap property expose?",
+    "options": [
+      "A changed canvas page order",
+      "A different variable collection",
+      "A replaceable nested instance",
+      "A new file owner identity"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "22",
+    "question": "What does a main component change normally affect?",
+    "options": [
+      "Its linked instances",
+      "Every detached frame",
+      "Every exported image",
+      "Every unrelated library"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "23",
+    "question": "What does detaching an instance remove?",
+    "options": [
+      "Its visible content",
+      "Its parent frame",
+      "Its export settings",
+      "Its main component link"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "24",
+    "question": "What is an instance override?",
+    "options": [
+      "A published library version",
+      "An app-wide token migration",
+      "A new main component file",
+      "A change on one instance"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "25",
+    "question": "What does a Figma variable store?",
+    "options": [
+      "A compiled CSS stylesheet",
+      "A server session token",
+      "A complete DOM subtree",
+      "A reusable typed value"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "26",
+    "question": "Which is a Figma variable type?",
+    "options": [
+      "Boolean",
+      "CSS selector",
+      "DOM node",
+      "HTTP response"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "27",
+    "question": "Which Figma variable type fits spacing values?",
+    "options": [
+      "Boolean",
+      "String",
+      "Number",
+      "Color"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "28",
+    "question": "Which Figma variable type fits a surface fill?",
+    "options": [
+      "Number",
+      "Boolean",
+      "Color",
+      "String"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "29",
+    "question": "What does a variable collection group?",
+    "options": [
+      "Only ready-for-dev sections",
+      "Only component screenshots",
+      "Related variables and modes",
+      "Only prototype interactions"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "30",
+    "question": "What does a variable mode represent?",
+    "options": [
+      "A different file extension",
+      "A component render method",
+      "A contextual set of values",
+      "A developer access token"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "31",
+    "question": "What is a variable alias?",
+    "options": [
+      "A component instance override",
+      "A reference to another variable",
+      "A second variable display label",
+      "An exported CSS class name"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "32",
+    "question": "What does binding a variable to a property do?",
+    "options": [
+      "Make the property read-only forever",
+      "Export the property as an image",
+      "Connect the property to its value",
+      "Create a new component variant"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "33",
+    "question": "What does variable code syntax provide?",
+    "options": [
+      "A complete component implementation",
+      "An automatically deployed variable",
+      "A platform-specific code representation",
+      "A mandatory JavaScript runtime"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "What does variable scope help control?",
+    "options": [
+      "Where a variable appears for binding",
+      "Where the output package installs",
+      "Which users can open the file",
+      "Which mode becomes the default"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "35",
+    "question": "What does a shared library publish?",
+    "options": [
+      "Reusable design resources",
+      "A production application build",
+      "A database schema migration",
+      "A browser compatibility layer"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "36",
+    "question": "What does a text style bundle?",
+    "options": [
+      "An application route group",
+      "Text formatting properties",
+      "A server translation file",
+      "A component click handler"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "37",
+    "question": "What does an export setting define?",
+    "options": [
+      "Component keyboard behavior",
+      "Production API permissions",
+      "Asset format and scale",
+      "Token alias resolution order"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "38",
+    "question": "Which asset format preserves vector paths?",
+    "options": [
+      "PNG",
+      "SVG",
+      "JPEG",
+      "WebP"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "39",
+    "question": "Which asset format supports raster transparency?",
+    "options": [
+      "JPEG",
+      "PNG",
+      "Plain text",
+      "BMP without alpha"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "40",
+    "question": "What does a prototype interaction describe?",
+    "options": [
+      "A database state transition",
+      "A complete accessibility contract",
+      "A deployed event listener",
+      "A simulated response to an action"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "41",
+    "question": "What does a ready-for-dev status communicate?",
+    "options": [
+      "Handoff readiness",
+      "Final accessibility certification",
+      "Automated test success",
+      "Production deployment completion"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "42",
+    "question": "What does a design annotation communicate?",
+    "options": [
+      "A compiled code dependency",
+      "An active browser breakpoint",
+      "Implementation context",
+      "A database index definition"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "43",
+    "question": "What can Dev Mode change comparisons help identify?",
+    "options": [
+      "Production request latency",
+      "Design revisions",
+      "Browser memory leaks",
+      "Database locking conflicts"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "44",
+    "question": "What does the component playground let developers explore?",
+    "options": [
+      "Application user sessions",
+      "Properties and variants",
+      "Server runtime logs",
+      "Production network traffic"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "45",
+    "question": "What does Code Connect associate?",
+    "options": [
+      "Canvas pages and browser tabs",
+      "Image exports and user accounts",
+      "Variables and database tables",
+      "Design components and code examples"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "46",
+    "question": "What do generated Dev Mode snippets provide?",
+    "options": [
+      "Automatic responsive testing",
+      "Complete application behavior",
+      "Implementation reference",
+      "Guaranteed production architecture"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "47",
+    "question": "Why align Figma component names with code names?",
+    "options": [
+      "Shared naming for handoff",
+      "Prevent every runtime defect",
+      "Guarantee smaller code bundles",
+      "Remove all design reviews"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "48",
+    "question": "What does a frame clipping setting control?",
+    "options": [
+      "The current variable collection",
+      "The exported token name",
+      "Every child component property",
+      "Content visibility beyond its bounds"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "49",
+    "question": "What do layout constraints describe?",
+    "options": [
+      "Code review acceptance rules",
+      "Resizing relationships to a parent",
+      "Supported package versions",
+      "Server authorization requirements"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "50",
+    "question": "Does a Figma screen prove its implementation is accessible?",
+    "options": [
+      "Only if it contains variables",
+      "No, implementation needs testing",
+      "Only if it uses Auto Layout",
+      "Yes, frames include full semantics"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "51",
+    "question": "A button label becomes longer. Which Figma sizing usually keeps its horizontal padding?",
+    "options": [
+      "Fixed width without wrapping",
+      "Hug contents on the button",
+      "Maximum width equal to the icon",
+      "Fill container on every icon"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "52",
+    "question": "A card must keep its width but grow with multiline text. Which size combination fits?",
+    "options": [
+      "Zero minimum height and clipped text",
+      "Fixed width and fixed height",
+      "Content-based width and fixed height",
+      "Fixed width and content-based height"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "53",
+    "question": "A Figma frame hugs its width, but a child fills that width. What can happen to parent sizing on that axis?",
+    "options": [
+      "The parent becomes fixed",
+      "The parent loses its padding",
+      "The parent becomes a component",
+      "The parent changes variable modes"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "54",
+    "question": "A Figma badge overlaps a card corner. Which layout detail should the developer inspect?",
+    "options": [
+      "Whether the text uses a shared style",
+      "Whether the file has one page",
+      "Whether the badge exports as JPEG",
+      "Whether the badge ignores Auto Layout"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "55",
+    "question": "A design uses one 24-pixel gap and 16-pixel padding. What should implementation preserve?",
+    "options": [
+      "The two distinct spacing roles",
+      "A 16-pixel outer page margin only",
+      "A 40-pixel gap between all children",
+      "One equal margin on every child"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "56",
+    "question": "A Figma label disappears through a boolean property. What should the developer inspect before implementing visibility?",
+    "options": [
+      "Whether the frame has a thumbnail",
+      "Whether its text export uses UTF-8",
+      "Whether layout space also disappears",
+      "Whether the library author changes"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "57",
+    "question": "A component has Size and State variants. How should a developer interpret those properties?",
+    "options": [
+      "One required prop for every combination",
+      "A requirement for separate routes",
+      "Independent configuration dimensions",
+      "A required global state store"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "58",
+    "question": "A Figma instance changes one label. Why should code usually expose a prop rather than duplicate the component?",
+    "options": [
+      "Make the component entirely static",
+      "Avoid all runtime string values",
+      "Prevent every localization change",
+      "Keep shared structure reusable"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "59",
+    "question": "A Figma icon instance supports swaps. What implementation API commonly matches that flexibility?",
+    "options": [
+      "An icon slot or component prop",
+      "A separate page per icon",
+      "A global click handler for all icons",
+      "A hardcoded image filename only"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "60",
+    "question": "A Figma instance is detached. What handoff risk increases?",
+    "options": [
+      "It cannot have export settings",
+      "It can diverge from library updates",
+      "It always loses its layout dimensions",
+      "It cannot contain text layers"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "61",
+    "question": "A designer renames a variable. Why should a token exporter avoid using names as the only stable identity?",
+    "options": [
+      "Only color variables have names",
+      "All variables share the same name",
+      "Names can change independently of identity",
+      "Names never appear in Dev Mode"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "62",
+    "question": "A layer has an explicit dark mode. Its parent changes to light mode. What should inspection check?",
+    "options": [
+      "The canvas background grid density",
+      "The layer's explicit mode override",
+      "The library file creation date",
+      "The layer's image export scale"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "63",
+    "question": "A layer uses automatic variable mode selection. What context should a developer inspect?",
+    "options": [
+      "Only the current canvas zoom",
+      "Inherited or default collection mode",
+      "Only the layer display name",
+      "Only the component instance count"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "64",
+    "question": "A Figma variable aliases another collection. What must token export include or resolve?",
+    "options": [
+      "Only the current layer coordinates",
+      "Only the local component screenshot",
+      "Only the visible variable label",
+      "The referenced collection dependency"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "65",
+    "question": "A Dev Mode snippet shows var(--space-small). What must application code still provide?",
+    "options": [
+      "A PNG export of the variable",
+      "An instance override per component",
+      "A Figma file inside the bundle",
+      "The corresponding token definition"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "66",
+    "question": "A Figma variable has one value but several code syntaxes. Why?",
+    "options": [
+      "Every syntax creates a different mode",
+      "Targets use different identifier conventions",
+      "Variables require multiple programming languages",
+      "Every syntax changes the design value"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "67",
+    "question": "A generated snippet uses absolute coordinates for a responsive card. What should the developer infer from Auto Layout instead?",
+    "options": [
+      "A fixed viewport width for all users",
+      "The underlying layout relationships",
+      "The author's current inspection zoom",
+      "The exact canvas page position"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "68",
+    "question": "A desktop Figma frame shows three cards. What additional handoff detail is needed for smaller screens?",
+    "options": [
+      "Only the desktop screenshot scale",
+      "Only the card background color",
+      "Wrapping and minimum-width behavior",
+      "Only the exported frame filename"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "69",
+    "question": "A design shows a hover variant only. What implementation states still need clarification?",
+    "options": [
+      "Only the SVG path command order",
+      "Only the page thumbnail dimensions",
+      "Only the component author identity",
+      "Keyboard focus and touch behavior"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "70",
+    "question": "A prototype animates a modal opening. What production requirement remains unspecified?",
+    "options": [
+      "The simulated trigger label",
+      "The modal's approximate position",
+      "The animation's visible direction",
+      "Focus management and dismissal rules"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "71",
+    "question": "A developer exports an icon at 3x raster scale. What should the app distinguish?",
+    "options": [
+      "Pixel dimensions and display dimensions",
+      "Variant names and component names",
+      "Code syntax and prototype duration",
+      "Collection modes and user permissions"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "72",
+    "question": "A Figma SVG includes strokes and masks. What should the developer validate after export?",
+    "options": [
+      "Only its filename capitalization",
+      "Its actual rendering in the target",
+      "Only its page position in Figma",
+      "Only its parent frame's comment count"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "73",
+    "question": "A text layer uses a font absent from the app. What can change despite matching the font size?",
+    "options": [
+      "The token collection mode name",
+      "The browser's event bubbling order",
+      "Text metrics and wrapping",
+      "The component's source filename"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "74",
+    "question": "A screen uses a numeric spacing variable for radius. Why might variable scoping improve handoff?",
+    "options": [
+      "Reduce unsuitable binding choices",
+      "Prevent every developer override",
+      "Convert radius into a color token",
+      "Enforce runtime layout automatically"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "75",
+    "question": "A ready-for-dev component changes later. What should the implementation workflow check?",
+    "options": [
+      "The revised design and affected contract",
+      "Only the exported screenshot date",
+      "Only the original readiness label",
+      "Only the current package lockfile"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "76",
+    "question": "A design uses a hidden overflow container. What browser behavior should a developer clarify?",
+    "options": [
+      "Only its exported asset format",
+      "Clipping versus intended scrolling",
+      "Only its text layer capitalization",
+      "Only its variable description length"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "77",
+    "question": "A Figma component maps to an existing code component. What should the developer prefer before recreating it?",
+    "options": [
+      "Inspect the existing component contract",
+      "Detach the design instance first",
+      "Create a new component for each screen",
+      "Copy every generated style verbatim"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "78",
+    "question": "A token export contains only resolved colors. What semantic information can be lost?",
+    "options": [
+      "The exported token names",
+      "The JSON object structure",
+      "Alias relationships",
+      "The current color values"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "79",
+    "question": "A design file contains local and library variables with similar names. What should mapping use?",
+    "options": [
+      "The first matching name in a search",
+      "The shortest visible display name",
+      "The current alphabetical layer order",
+      "Their actual bindings and origins"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "80",
+    "question": "A generated snippet appears correct visually. What review still checks production fitness?",
+    "options": [
+      "Only the Figma layer's export scale",
+      "Only the frame's canvas coordinates",
+      "Behavior and semantics",
+      "Only the copied snippet indentation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "81",
+    "question": "A Figma design exposes forty variants for one component. What should architecture review distinguish?",
+    "options": [
+      "The total pixel area of the set",
+      "The number of thumbnails on the page",
+      "Real API axes versus redundant combinations",
+      "The alphabetic order of variant names"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "82",
+    "question": "A design library renames a variant value used by Code Connect mappings. What integration can break?",
+    "options": [
+      "The application's network protocol",
+      "The design-to-code property mapping",
+      "Every unrelated token collection",
+      "The SVG coordinate system"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "83",
+    "question": "A Figma token exporter keys values only by variable ID. What additional context is needed for correct themed output?",
+    "options": [
+      "Only file modification time",
+      "Only visible component size",
+      "Only the screenshot color profile",
+      "Collection and mode resolution"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "84",
+    "question": "A token export follows aliases recursively. What failure must it detect?",
+    "options": [
+      "Long component descriptions",
+      "Duplicate screenshot dimensions",
+      "Multiple text styles on a page",
+      "Cycles and missing targets"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "85",
+    "question": "A team repeatedly imports tokens from Figma and edits the generated files manually. What workflow issue needs resolution?",
+    "options": [
+      "Missing image export presets",
+      "Insufficient frame padding",
+      "Competing sources of truth",
+      "Too many prototype transitions"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "86",
+    "question": "A design uses fill sizing everywhere. Why can a literal flex: 1 translation be incorrect?",
+    "options": [
+      "Sizing rules depend on axis and context",
+      "Every child must have an equal height",
+      "Figma forbids fixed parent dimensions",
+      "Fill sizing always means absolute positioning"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "87",
+    "question": "A Figma Auto Layout grid has unequal fractional tracks. What implementation information matters beyond column count?",
+    "options": [
+      "The track proportions and constraints",
+      "Only the order of component names",
+      "Only the canvas background color",
+      "Only the page's default variable mode"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "88",
+    "question": "A design replaces a nested instance with a structurally different one. What code contract needs review?",
+    "options": [
+      "Only the component author's username",
+      "Slot sizing and interaction assumptions",
+      "Only the exported filename extension",
+      "Only the layer's canvas coordinates"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "89",
+    "question": "A design system uses separate Figma and code state names. What scalable mapping avoids scattered translation rules?",
+    "options": [
+      "A new manual mapping in every screen",
+      "A comparison of generated image hashes",
+      "A documented shared property contract",
+      "A requirement to detach all instances"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "90",
+    "question": "A prototype supports one happy path. Why should developers request failure-state specifications?",
+    "options": [
+      "Dev Mode generates all recovery behavior",
+      "Errors and interrupted flows",
+      "Every failed request uses one fixed dialog",
+      "Prototype links always simulate errors"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "91",
+    "question": "A Figma screen uses long translated text only in one variant. What test exposes layout assumptions?",
+    "options": [
+      "Compare only the English screenshot",
+      "Export every label as a raster image",
+      "Render representative languages and lengths",
+      "Count only the source text layers"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "92",
+    "question": "A Figma gradient uses a color space the target handles differently. What should the handoff validate?",
+    "options": [
+      "The rendered target appearance",
+      "Only the export folder structure",
+      "Only the gradient layer name",
+      "Only the number of component variants"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "93",
+    "question": "A Figma token sync removes variables absent from one export. What must deletion logic establish first?",
+    "options": [
+      "That every deleted name is short",
+      "That the export is complete and authoritative",
+      "That all layers use Auto Layout",
+      "That each collection has one mode"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "94",
+    "question": "A component's Figma and code versions diverge during a staged release. What keeps handoff traceable?",
+    "options": [
+      "Only a shared component display name",
+      "Only a single mutable screenshot URL",
+      "Only the latest canvas selection state",
+      "Explicit version and mapping compatibility"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "95",
+    "question": "A Figma design shows a dense table without scroll behavior. Which implementation trade-off requires clarification?",
+    "options": [
+      "Only the number of variable descriptions",
+      "Only the export scale of the table",
+      "Only the page thumbnail background",
+      "Responsive overflow and keyboard access"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "96",
+    "question": "A designer changes a semantic variable alias to a different value. Why can many screens change without direct layer edits?",
+    "options": [
+      "Bound consumers resolve the new target",
+      "Every frame becomes a detached instance",
+      "Dev Mode replaces all component markup",
+      "Each screenshot reruns application code"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "97",
+    "question": "A Figma component hides internal layers but exports public properties. Why preserve that abstraction in code?",
+    "options": [
+      "Consumers must target every DOM child",
+      "Consumers need generated class hashes",
+      "Consumers should copy the internal layout",
+      "Consumers depend on stable intent"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "98",
+    "question": "A token sync converts every number to pixels. What kind of data can it corrupt?",
+    "options": [
+      "Only component description strings",
+      "Unitless values such as opacity",
+      "Only variable collection names",
+      "Only exported SVG viewBox text"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "99",
+    "question": "A Figma-to-code tool produces a visual match at one width. What proves responsive behavior more directly?",
+    "options": [
+      "Tests across widths and content extremes",
+      "A matching frame name in the code",
+      "A larger screenshot at the same width",
+      "A longer generated source file"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "100",
+    "question": "A library update changes internal nesting but preserves public properties. What should integration avoid relying on?",
+    "options": [
+      "Documented component properties",
+      "Published variant names",
+      "Private layer paths",
+      "Explicit token bindings"
+    ],
+    "correct_index": 2
+  }
+]

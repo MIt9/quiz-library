@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What does `$('.card')` return?",
+  "options": [
+   "The first element with the class `card`, as a plain DOM node",
+   "A plain array of the elements that have the class `card`",
+   "A string with the HTML of the elements that have the class `card`",
+   "A jQuery object that wraps all elements with the class `card`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "2",
+  "question": "What is the difference between `$(document).ready()` and the window `load` event?",
+  "options": [
+   "`ready` fires when the DOM is parsed; `load` also waits for images and styles",
+   "`ready` waits for images and styles; `load` fires when the DOM is parsed",
+   "`ready` fires before the HTML is parsed; `load` fires after parsing ends",
+   "`ready` fires once per page; `load` fires once for each loaded image only"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "3",
+  "question": "Which element does `$('#menu')` select?",
+  "options": [
+   "All elements whose class is `menu`",
+   "All elements whose tag name is `menu`",
+   "The element whose `id` is `menu`",
+   "The first child element of the element named `menu`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "4",
+  "question": "What does the selector `$('ul > li')` select?",
+  "options": [
+   "All `li` elements at any depth inside a `ul`",
+   "Only direct-child `li` elements of a `ul`",
+   "Only the first `li` element inside each `ul`",
+   "The `ul` elements that have at least one `li` child"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "5",
+  "question": "What does `.find('a')` do on a jQuery object?",
+  "options": [
+   "It searches the descendants of each matched element for `a` elements",
+   "It searches the ancestors of each matched element for `a` elements",
+   "It keeps only the matched elements that are `a` elements",
+   "It searches the next siblings of each matched element for `a` elements"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "6",
+  "question": "What is the difference between `.children()` and `.find()`?",
+  "options": [
+   "`.children()` checks all descendants; `.find()` checks direct children only",
+   "`.children()` checks direct children only; `.find()` checks all descendants",
+   "`.children()` returns text nodes too; `.find()` returns elements only",
+   "`.children()` works on one element only; `.find()` works on many elements"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "7",
+  "question": "What does `.closest('.card')` return for a clicked button?",
+  "options": [
+   "The first descendant of the button with the class `card`",
+   "The previous sibling of the button that has the class `card`",
+   "The topmost ancestor of the button with the class `card`",
+   "The nearest ancestor with the class `card`, starting at the button itself"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "What does `.parent()` return?",
+  "options": [
+   "All ancestors of each matched element, up to the `html` tag",
+   "The nearest ancestor that matches a given selector",
+   "The direct parent of each matched element",
+   "The first and last children of each matched element"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "9",
+  "question": "You run `$('#out').text('<b>Hi</b>')`. What does the user see?",
+  "options": [
+   "The word Hi shown in bold letters",
+   "The literal text `<b>Hi</b>`",
+   "Nothing, because jQuery removes the tags",
+   "An error, because `.text()` rejects markup"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "10",
+  "question": "What does `.html()` return when you call it with no arguments?",
+  "options": [
+   "The combined text of all matched elements",
+   "The outer HTML of the first matched element",
+   "The HTML markup inside every matched element, joined together",
+   "The HTML markup inside the first matched element"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "11",
+  "question": "What is `.val()` used for?",
+  "options": [
+   "To check a form field against validation rules",
+   "To get or set a `data-` attribute of an element",
+   "To get or set the value of a form field",
+   "To get or set the text between the tags of an element"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "12",
+  "question": "How do you read the current checked state of a checkbox in jQuery?",
+  "options": [
+   "`$('#box').prop('checked')`",
+   "`$('#box').css('is-checked')`",
+   "`$('#box').data('is-checked')`",
+   "`$('#box').val('is-checked')`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "13",
+  "question": "What does `.addClass('on')` do to an element that has the class `item`?",
+  "options": [
+   "It replaces `item` with `on`",
+   "It adds `on` only if `item` is missing",
+   "It adds `on` and keeps `item`",
+   "It adds `on` to the parent of the element instead"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "14",
+  "question": "What does `.toggleClass('open')` do?",
+  "options": [
+   "It adds the class if it is missing and removes it if it is present",
+   "It always adds the class and removes all other classes",
+   "It removes the class from all siblings and keeps it on the match",
+   "It adds the class to the element and to its parent"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "15",
+  "question": "What does `$('p').css('color', 'red')` do?",
+  "options": [
+   "It adds a new rule to the page style sheet for `p`",
+   "It sets inline `color: red` on each `p`",
+   "It adds the class `red` to each `p` element",
+   "It returns the color of the first `p` element"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "16",
+  "question": "Where does `.append(content)` put the content?",
+  "options": [
+   "At the start inside each matched element",
+   "Right after each matched element, as a sibling",
+   "Right before each matched element, as a sibling",
+   "At the end inside each matched element"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "17",
+  "question": "What does `.after(content)` do?",
+  "options": [
+   "It inserts the content as a sibling right after each matched element",
+   "It inserts the content as the last child inside each matched element",
+   "It replaces each matched element with the content",
+   "It inserts the content as the first child inside each matched element"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "18",
+  "question": "What does `.remove()` do to the matched elements?",
+  "options": [
+   "It hides them but keeps them in the DOM",
+   "It deletes them but keeps their data and handlers for later use",
+   "It deletes only their child nodes and keeps the elements",
+   "It deletes them from the DOM with their data and event handlers"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "19",
+  "question": "What does `.empty()` do to a `div`?",
+  "options": [
+   "It removes the `div` and keeps its child nodes",
+   "It removes only the text nodes and keeps the child elements",
+   "It removes all child nodes and keeps the `div` itself",
+   "It removes the `div` from the DOM but keeps its data"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "20",
+  "question": "What does `.clone()` return?",
+  "options": [
+   "A reference to the same elements under a new name",
+   "A copy of the matched elements that is not yet in the page",
+   "A string with the HTML of the matched elements",
+   "A copy that jQuery already inserted after the original"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "21",
+  "question": "Which code attaches a click handler to all `.btn` elements?",
+  "options": [
+   "`$('.btn').attach('click', fn)`",
+   "`$('.btn').listen('click', fn)`",
+   "`$('.btn').on('click', fn)`",
+   "`$('.btn').addEventListener('click', fn)`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "22",
+  "question": "What does `$('.btn').off('click')` do?",
+  "options": [
+   "It removes the click handlers from the matched elements",
+   "It disables the buttons so users cannot click them",
+   "It stops the current click event from bubbling",
+   "It triggers a click on each matched element"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "23",
+  "question": "What does `.one('click', fn)` do?",
+  "options": [
+   "It runs the handler only on the first matched element",
+   "It runs the handler at most one time for each element",
+   "It runs the handler one second after the event",
+   "It runs the handler for the left mouse button only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "24",
+  "question": "What does `event.preventDefault()` do on a click on a link?",
+  "options": [
+   "It stops the event from reaching parent elements",
+   "It removes the click handler from the link",
+   "It stops the other handlers on the same link",
+   "It stops the browser from following the link"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "25",
+  "question": "What does `event.stopPropagation()` do?",
+  "options": [
+   "It stops the browser default action for the event",
+   "It removes all handlers from the parents of the element",
+   "It stops the event from reaching child elements",
+   "It stops the event from bubbling up to parent elements"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "What is `this` inside a normal jQuery event handler function?",
+  "options": [
+   "The DOM element that has the handler",
+   "A jQuery object that wraps the element",
+   "The `window` object of the page",
+   "The event object that the handler receives"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "27",
+  "question": "How do you use jQuery methods on `this` inside a handler?",
+  "options": [
+   "Call it as `this.$()`",
+   "Use it as it is, like `this.hide()`",
+   "Wrap it as `$(this)`",
+   "Convert it with `jQuery.parse(this)`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "Why does `$('#a').addClass('x').show()` work?",
+  "options": [
+   "Each method waits for the previous one to finish before it starts",
+   "Most jQuery methods return the jQuery object, so you can call another method on it",
+   "jQuery copies the element for each call and joins the copies later",
+   "The browser merges the two calls into a single call"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "29",
+  "question": "Which `$.ajax` option sets the HTTP method, such as `POST`?",
+  "options": [
+   "`verb`",
+   "`method`",
+   "`action`",
+   "`request`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "30",
+  "question": "When does the `.done()` callback of a jQuery AJAX request run?",
+  "options": [
+   "When the response is a success",
+   "When the request starts",
+   "When the response has an HTTP error status",
+   "When the DOM is ready"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "31",
+  "question": "When does the `.fail()` callback of a jQuery AJAX request run?",
+  "options": [
+   "When the server answers with status 200 and valid data",
+   "When the request is sent and no response has arrived yet",
+   "On a network error or an HTTP error status",
+   "When the page finishes loading and the DOM is ready"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "What does `$.getJSON(url)` do?",
+  "options": [
+   "It sends a POST request with a JSON body",
+   "It reads a JSON file from the local disk",
+   "It converts a JavaScript object to a JSON string",
+   "It sends a GET request and parses the response as JSON"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "33",
+  "question": "What does `$.each(arr, fn)` do?",
+  "options": [
+   "It returns a new array with the results of the function",
+   "It calls the function for each item of an array or object",
+   "It removes the items for which the function returns false",
+   "It calls the function once, with the whole array as the argument"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "34",
+  "question": "How do you stop a `$.each` loop early?",
+  "options": [
+   "Return `true` from the callback loop",
+   "Call `break` inside of the callback function",
+   "Return `false` from the callback",
+   "Return `null` from the callback"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "What does `.hide()` do to an element?",
+  "options": [
+   "It removes the element from the DOM",
+   "It sets its CSS `opacity` to zero",
+   "It sets its CSS `visibility` to `hidden`",
+   "It sets its CSS `display` to `none`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "36",
+  "question": "What does `.fadeOut()` do?",
+  "options": [
+   "It animates the opacity to zero and then hides the element",
+   "It removes the element after a short delay",
+   "It animates the height to zero and keeps the element visible",
+   "It animates the width to zero and then removes the element"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "37",
+  "question": "What does `.slideToggle()` do?",
+  "options": [
+   "It moves the element to the left or to the right",
+   "It slides the element to the top of its parent",
+   "It slides the element up and down in a repeating loop",
+   "It slides the element up if it is visible and down if it is hidden"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "38",
+  "question": "What can `.animate()` change in core jQuery?",
+  "options": [
+   "Any CSS property, including `color` and `background`",
+   "Numeric CSS properties, such as `width` or `opacity`",
+   "Only the `top` and `left` properties",
+   "Only properties that have a CSS transition"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "39",
+  "question": "How do you check if `$('.item')` found at least one element?",
+  "options": [
+   "Check that `.length` is greater than 0",
+   "Check that the result is not `null`",
+   "Check that the result is not `undefined`",
+   "Check that `.exists()` returns `true`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "What does `$('#row').data('id')` read on the first call?",
+  "options": [
+   "The value of the `id` attribute of the element",
+   "The value of the CSS property named `id`",
+   "The `data-id` attribute, if it exists",
+   "The value of the `name` attribute of the element"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "41",
+  "question": "What does `.hasClass('active')` return?",
+  "options": [
+   "A boolean: `true` if any matched element has the class",
+   "The matched elements that have the class",
+   "The number of matched elements that have the class",
+   "The list of classes of the first matched element"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "42",
+  "question": "What does `$('#opt').is(':checked')` return?",
+  "options": [
+   "A jQuery object with all of the checked elements",
+   "A boolean that shows if the element is checked",
+   "The value attribute of the checked element",
+   "The number of checked elements in the whole page"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "43",
+  "question": "What does `.serialize()` do on a form?",
+  "options": [
+   "It converts the form to a JSON object",
+   "It submits the form with an AJAX request",
+   "It encodes the form fields as a URL query string",
+   "It returns an array of objects with `name` and `value`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "What is `$.fn` in jQuery?",
+  "options": [
+   "A shortcut for the `$.ajax` function and its options",
+   "The object that holds the jQuery version number",
+   "A registry of all event handlers on the page",
+   "The prototype of jQuery objects, for plugin methods"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "45",
+  "question": "What does `jQuery.noConflict()` do?",
+  "options": [
+   "It gives the `$` name back to the library that used it before",
+   "It removes all jQuery plugins from the page",
+   "It stops jQuery from changing the DOM until plugins load",
+   "It loads a second copy of jQuery"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "What does `.first()` return?",
+  "options": [
+   "The first matched DOM element as a plain node",
+   "The index of the first matched element",
+   "A jQuery object with only the first matched element",
+   "The text of the first matched element"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "47",
+  "question": "What does `$('li').eq(2)` return?",
+  "options": [
+   "A jQuery object with the second `li` element",
+   "A jQuery object with the third `li` element",
+   "A jQuery object with all `li` elements after the second",
+   "A jQuery object with the `li` that has the id `2`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "48",
+  "question": "What does `.filter('.active')` do?",
+  "options": [
+   "It searches the descendants for elements with the class `active`",
+   "It removes the class `active` from the matched elements",
+   "It adds the class `active` to the matched elements",
+   "It keeps only the matched elements that have the class `active`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "49",
+  "question": "A teammate runs `$('#box').classList.add('x')` and gets an error. Why?",
+  "options": [
+   "The method `add` was removed from `classList` in jQuery 3",
+   "`classList` works only inside a ready handler",
+   "A jQuery object is not a DOM element",
+   "The selector `#box` returns a string, not an element"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "50",
+  "question": "How do you get the plain DOM element from `$('#a')`?",
+  "options": [
+   "`$('#a').get(0)`",
+   "`$('#a').dom()`",
+   "`$('#a').toElement()`",
+   "`$('#a').unwrap()`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "51",
+  "question": "What is the main benefit of `$('#list').on('click', 'li', fn)` over `$('#list li').on('click', fn)`?",
+  "options": [
+   "It runs faster when the list has only one item",
+   "It lets the handler run for clicks on the `ul` itself",
+   "It stops the click from bubbling to the document",
+   "It also works for `li` elements that you add after the handler call"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "52",
+  "question": "You call `.text()` with no arguments on a set of three `p` elements. What does it return?",
+  "options": [
+   "The text of the first element, without the others",
+   "The combined text of all three elements",
+   "An array with the text of each of the elements",
+   "The text of the last element, without the others"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "53",
+  "question": "In a delegated handler on `#list` for `li`, what is `event.delegateTarget`?",
+  "options": [
+   "The `li` element that matched the selector",
+   "The deepest element that the user clicked",
+   "The `#list` element with the handler",
+   "The `document` object of the page"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "54",
+  "question": "What does `return false` do in a jQuery event handler?",
+  "options": [
+   "It calls only `preventDefault()`",
+   "It calls both `preventDefault()` and `stopPropagation()`",
+   "It calls only `stopPropagation()`",
+   "It calls `stopImmediatePropagation()` and `preventDefault()`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "55",
+  "question": "This code runs in a loop 500 times:\n`$('#box').addClass('a');`\nWhat is the best fix for speed?",
+  "options": [
+   "Use a longer selector to make the search more precise",
+   "Wrap the call in `setTimeout` to spread the work",
+   "Use `.each()` because the set has only one element",
+   "Store `$('#box')` in a variable once and reuse it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "56",
+  "question": "A script in `<head>` runs `$('#btn').click(fn)` and nothing happens. What is the most likely cause?",
+  "options": [
+   "The button is not in the DOM yet",
+   "jQuery cannot bind `click` on `button` elements",
+   "The `id` selector is not allowed in the head of a page",
+   "The `click` method works only with `.on()` in jQuery 3"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "57",
+  "question": "A user unchecks a checkbox that had the `checked` attribute in HTML. What does `.prop('checked')` return?",
+  "options": [
+   "`false`",
+   "`true`",
+   "`'checked'`",
+   "`undefined`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "58",
+  "question": "What is the difference between `.remove()` and `.detach()`?",
+  "options": [
+   "`.remove()` keeps data and event handlers for later use",
+   "`.detach()` also removes the child elements of the matched element",
+   "`.detach()` keeps data and event handlers, so you can insert the element again",
+   "`.remove()` only hides the element from view"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "59",
+  "question": "Find the bug:\n`$('.btn').each(function(){ setTimeout(function(){ $(this).hide(); }, 100); });`",
+  "options": [
+   "`.hide()` cannot run inside `setTimeout`",
+   "`.each` cannot be used with a class selector",
+   "The delay of 100 ms is too short for `.hide()`",
+   "In the callback, `this` is not the button"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "60",
+  "question": "What does `$.when(a, b).done(fn)` do when `a` and `b` are promises?",
+  "options": [
+   "It calls `fn` after the first promise resolves",
+   "It calls `fn` after both promises resolve",
+   "It calls `fn` once for each promise",
+   "It calls `fn` after both promises reject"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "61",
+  "question": "What is a main change for `.then()` in jQuery 3.x Deferreds?",
+  "options": [
+   "Callbacks run asynchronously and follow the Promises/A+ rules",
+   "Callbacks run at once, in the same call stack as `resolve`",
+   "`.then()` no longer accepts a failure callback",
+   "`.then()` returns the same Deferred, not a new promise"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "62",
+  "question": "What does `$.ajax()` return, and what can you do with it?",
+  "options": [
+   "A plain object with the parsed response; you can read it at once",
+   "The DOM node of the form; you can submit it again",
+   "A native `Promise`; you can call `.cancel()` on it",
+   "A jqXHR object; you can call `.abort()` to cancel the request"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "63",
+  "question": "`$.ajax({ dataType: 'json' })` gets a response with broken JSON and status 200. What happens?",
+  "options": [
+   "The success callback runs with an empty object",
+   "The error callback runs with `parsererror`",
+   "The success callback runs with the raw text",
+   "The request is sent a second time"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "64",
+  "question": "What does `cache: false` do for a GET request in `$.ajax`?",
+  "options": [
+   "It sends a `Cache-Control: no-cache` header, with no change to the URL",
+   "It stores the response in jQuery memory for later calls",
+   "It adds a unique `_` query parameter, so the browser skips its cache",
+   "It makes the request run synchronously"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "65",
+  "question": "A user moves the mouse over a box many times and the animations keep running after the mouse leaves. What helps?",
+  "options": [
+   "Call `.stop()` before animating again",
+   "Add `.delay()` before the animation",
+   "Use `.hide()` in place of `.animate()`",
+   "Use a longer duration for the animation"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "What does the last argument of `.fadeOut(400, fn)` do?",
+  "options": [
+   "It runs `fn` one time, before the animation starts",
+   "It runs `fn` for each element after it ends",
+   "It runs `fn` when the browser repaints the page",
+   "It runs `fn` for the last matched element only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "67",
+  "question": "What does `.outerWidth(true)` return?",
+  "options": [
+   "The width with padding and border, but without margin",
+   "The width of the content only, without padding",
+   "The width of the parent element, with its padding",
+   "The width with padding, border, and margin"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "68",
+  "question": "What is the use of the event name `click.myApp`?",
+  "options": [
+   "The handler runs only when the `myApp` element is clicked",
+   "The event fires on the `myApp` object only",
+   "You can remove only these handlers later with `.off('.myApp')`",
+   "jQuery runs the handler before the other click handlers"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "69",
+  "question": "A plugin method must support chaining. What must it do?",
+  "options": [
+   "Return a new jQuery object for the `document`",
+   "Return `true` at the end",
+   "Return `this`, usually with `this.each(...)`",
+   "Return the number of matched elements"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "70",
+  "question": "Why do many plugins use `(function($){ ... })(jQuery);`?",
+  "options": [
+   "`$` is jQuery inside, even after `noConflict()`",
+   "It makes the plugin run before the DOM is ready",
+   "It makes the plugin run faster in very old browsers",
+   "It adds the plugin to the global scope"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "71",
+  "question": "A teammate writes `$('#out').html(location.hash.slice(1))`. What is the risk?",
+  "options": [
+   "The page can crash when the hash is empty",
+   "The browser sends the hash to the server in the HTTP request",
+   "The browser history grows with each call",
+   "An attacker can run JavaScript with a crafted URL (DOM XSS)"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "72",
+  "question": "A teammate writes `$(userInput)`, and `userInput` is `<img src=x onerror=alert(1)>`. What happens in jQuery 3.x?",
+  "options": [
+   "jQuery treats the string as a CSS selector and finds nothing",
+   "jQuery creates the element, and the `onerror` code can run",
+   "jQuery throws a syntax error and blocks the string",
+   "jQuery escapes the tags and shows them as text"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "73",
+  "question": "What does `.val()` return for a `<select multiple>` with two options selected?",
+  "options": [
+   "A comma-separated string of the selected values",
+   "An array of the selected values",
+   "Only the value of the first selected option",
+   "The number of selected options"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "74",
+  "question": "What does `$.extend({}, a, b)` do?",
+  "options": [
+   "It copies the properties of `a` and `b` into a new object",
+   "It deep clones `a` and `b` into a new object",
+   "It merges `b` into `a` and returns `a`",
+   "It returns `a` and ignores `b`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "Which code works in jQuery 3.x for the window load event?",
+  "options": [
+   "`$(window).load(fn)`",
+   "`$(window).onload(fn)`",
+   "`$.load(window, fn)`",
+   "`$(window).on('load', fn)`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "76",
+  "question": "`.live()` was removed in jQuery 1.9. What do you use today for the same job?",
+  "options": [
+   "`.bind()` on the `document` element",
+   "`.trigger()` with a selector argument",
+   "`.on()` with a selector (delegation)",
+   "`.one()` on the `body` element"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "77",
+  "question": "Which vanilla JavaScript code is the closest to `$.getJSON(url)`?",
+  "options": [
+   "`fetch(url).json()`",
+   "`fetch(url).then(r => r.json())`",
+   "`XMLHttpRequest.get(url).json()`",
+   "`new Request(url).then(r => r.json())`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "78",
+  "question": "How do you replace delegation `$('#list').on('click', 'li', fn)` in vanilla JavaScript?",
+  "options": [
+   "Add a listener to the list and check `event.target.closest('li')`",
+   "Add a listener to each `li` once, when the page loads",
+   "Add a listener to `window` and compare `event.type` with `'li'`",
+   "Add a listener to the list and read `event.delegate`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "79",
+  "question": "A component calls `$('#save').on('click', save)` on each render. Now `save` runs 3 times per click. Why?",
+  "options": [
+   "jQuery runs each handler once per ancestor",
+   "The click event fires three times in the browser",
+   "`.on()` calls `save` and the browser calls it again",
+   "Each call adds one more handler"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "80",
+  "question": "What happens when you call `$('#missing').hide()` and no element has that id?",
+  "options": [
+   "jQuery throws a `TypeError`",
+   "jQuery hides the `body` element",
+   "Nothing happens and no error occurs",
+   "jQuery returns `null`, so the next chained call fails"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "81",
+  "question": "Why is `$('.item').filter(':visible')` often faster than `$('.item:visible')`?",
+  "options": [
+   "The native selector can use `querySelectorAll`, and `:visible` runs on the result",
+   "`.filter` caches the result of `:visible` for later calls",
+   "`:visible` is a CSS standard, and the browser runs it faster after `.filter`",
+   "`.item:visible` makes the browser repaint the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "82",
+  "question": "Why can a delegated `mousemove` handler on `document` cost much CPU?",
+  "options": [
+   "jQuery creates a new handler for each element in the page",
+   "jQuery copies the event object for every child node",
+   "jQuery reads the layout of each element before it runs the handler",
+   "jQuery tests the selector against every element from the target up to `document`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "83",
+  "question": "`$('#r').data('id')` read the number 1 from `data-id`. Then you run `$('#r').attr('data-id', 5)`. What does `.data('id')` return now?",
+  "options": [
+   "`5`, because jQuery reads the attribute on each call",
+   "`undefined`, because `.attr` clears the cache",
+   "`1`, because jQuery cached it in its data store",
+   "`'5'`, as a string from the attribute"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "84",
+  "question": "Why is `$('#box').empty()` safer than `box.innerHTML = ''` when the child elements have jQuery handlers?",
+  "options": [
+   "It runs faster because it skips the layout step",
+   "It also removes the jQuery data and handlers of the child elements",
+   "It also removes the handlers that you added with `addEventListener`",
+   "It keeps the child nodes in memory, so you can reuse them"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "85",
+  "question": "`$.when(a, b)` gets two promises. `b` rejects after 100 ms, `a` takes 5 s. When do the fail callbacks run?",
+  "options": [
+   "After both `a` and `b` finish",
+   "At once, when `b` rejects",
+   "After `a` resolves, with the error of `b`",
+   "Never, because `a` is still pending"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "86",
+  "question": "A deferred is already resolved. In jQuery 3.x, how do `d.done(fn)` and `d.then(fn)` differ?",
+  "options": [
+   "`done` calls `fn` later; `then` calls it at once",
+   "Both call `fn` at once, before the next line",
+   "Both call `fn` later, after the current code ends",
+   "`done` calls `fn` at once; `then` calls it later, asynchronously"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "In jQuery 3.x, what happens to a cross-domain `$.ajax` response with a JavaScript content type and no `dataType`?",
+  "options": [
+   "It runs only if `dataType` is `'script'`",
+   "jQuery runs the script in the page context",
+   "jQuery blocks the request before it is sent",
+   "jQuery runs the script in a sandboxed iframe"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "What did the security fix in jQuery 3.5.0 change in `jQuery.htmlPrefilter`?",
+  "options": [
+   "It removed every `<script>` tag from HTML strings first",
+   "It started to escape all quote characters in HTML strings",
+   "It stopped rewriting self-closing tags such as `<div/>`",
+   "It started to block HTML strings from other domains"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "A handler is bound on a `li` and a delegated handler on its `ul`. The direct handler calls `event.stopPropagation()`. What happens?",
+  "options": [
+   "The delegated handler does not run",
+   "The delegated handler runs first, then the direct one",
+   "Both handlers run, in reverse order",
+   "Both handlers are removed from the DOM"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "90",
+  "question": "Which browser API do jQuery 3.x animations use for their timer?",
+  "options": [
+   "`setInterval` with 13 ms",
+   "`requestAnimationFrame`",
+   "CSS transitions only",
+   "The Web Animations API"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "91",
+  "question": "How do you run a function after all animations on `.box` elements end?",
+  "options": [
+   "`$('.box').on('animationend', fn)`",
+   "`$('.box').wait().then(fn)`",
+   "`$('.box').promise().done(fn)`",
+   "`$.when($('.box')).fail(fn)`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "92",
+  "question": "You write a plugin that can be called many times on one element. What is a good way to avoid double setup?",
+  "options": [
+   "Set a global flag with the plugin name and skip setup when it is set",
+   "Call `.off()` for all events on the page before the setup",
+   "Wrap the plugin function in `.one()`",
+   "Store the instance with `.data()` and check it before you create a new one"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "93",
+  "question": "You must remove jQuery from a large old app with no downtime. Which plan is the best?",
+  "options": [
+   "Rewrite everything in one release and delete jQuery at once",
+   "Freeze the app for months and rewrite it in a separate branch",
+   "Migrate module by module with tests, then remove jQuery",
+   "Remove the script tag first and fix the errors that users report"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "94",
+  "question": "A team changes DOM nodes that React renders with jQuery `.html()`. What is the risk?",
+  "options": [
+   "React reads the jQuery change into its virtual DOM before the next render",
+   "jQuery blocks React from rendering that node",
+   "React merges the jQuery change into the new state",
+   "React does not know about the change; the next render can overwrite it or fail"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "95",
+  "question": "Why do the jQuery docs discourage `$.ajaxSetup()`?",
+  "options": [
+   "It disables the global AJAX events, such as `ajaxStart`",
+   "It changes the defaults for requests from all code",
+   "It resets the options of the request that is running now",
+   "It makes later requests ignore the options you pass to `$.ajax`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "96",
+  "question": "A loop runs `el.css('width', el.width() + 10)` for 1000 elements. Why is it slow?",
+  "options": [
+   "Each read after a write forces the browser to recalculate the layout",
+   "`.css` parses the style string on each call, which is slow",
+   "jQuery parses the selector again on each pass",
+   "The browser blocks style writes inside a loop"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "97",
+  "question": "You add 1000 `li` elements with `$('#ul').append('<li>')` in a loop. What is the better way?",
+  "options": [
+   "Call `.append` on `document.body` instead of `#ul`",
+   "Build the full HTML first and append it once",
+   "Hide the `ul` and call `.slideDown()` after each item",
+   "Wrap each `<li>` in `setTimeout` so the browser can paint"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "Two handlers are on the same element. The first calls `event.stopImmediatePropagation()`. What happens?",
+  "options": [
+   "The second handler runs, but the event does not bubble",
+   "The second handler runs, and the event bubbles",
+   "The second handler and bubbling both stop",
+   "The first handler is removed, and the second one runs"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "You call `$(fn)` when the DOM is already loaded. In jQuery 3.x, when does `fn` run?",
+  "options": [
+   "Asynchronously, after the current code ends",
+   "At once, before the next line",
+   "After the window `load` event",
+   "Never, because the ready event already fired"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "100",
+  "question": "What is the difference between `.offset()` and `.position()`?",
+  "options": [
+   "`.offset()` is relative to the offset parent; `.position()` to the document",
+   "`.offset()` includes margins; `.position()` includes borders only",
+   "`.offset()` returns pixels; `.position()` returns percent",
+   "`.offset()` is relative to the document; `.position()` to the offset parent"
+  ],
+  "correct_index": 3
+ }
+]

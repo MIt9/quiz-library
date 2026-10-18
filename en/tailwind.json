@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What does Tailwind CSS primarily provide?",
+    "options": [
+      "A server routing engine",
+      "Utility-based styling",
+      "A browser database API",
+      "A React state manager"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "2",
+    "question": "What does a utility class usually express?",
+    "options": [
+      "A required component state",
+      "A server data schema",
+      "A complete application route",
+      "A focused styling rule"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "3",
+    "question": "Which Tailwind class creates a flex container?",
+    "options": [
+      "flex-row",
+      "items-center",
+      "flex",
+      "justify-center"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "4",
+    "question": "Which class creates a grid container?",
+    "options": [
+      "grid",
+      "gap-2",
+      "grid-cols-2",
+      "col-span-2"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "5",
+    "question": "What does flex-col control?",
+    "options": [
+      "Flex item shrinkage",
+      "Flex basis only",
+      "Flex item growth",
+      "Flex direction"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "6",
+    "question": "What does items-center control in a flex layout?",
+    "options": [
+      "Column count",
+      "Text alignment",
+      "Cross-axis alignment",
+      "Main-axis justification"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "7",
+    "question": "What does justify-between control?",
+    "options": [
+      "The text line height",
+      "The grid row count",
+      "Main-axis distribution",
+      "The document source order"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "8",
+    "question": "What does gap-4 control?",
+    "options": [
+      "Space between layout items",
+      "Every item's border width",
+      "The text letter spacing",
+      "The container's outer margin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "9",
+    "question": "What does p-4 apply?",
+    "options": [
+      "All-side padding",
+      "Padding only above",
+      "Margin on every side",
+      "Margin only below"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "10",
+    "question": "What does px-4 apply?",
+    "options": [
+      "Vertical padding",
+      "Horizontal margin",
+      "Vertical margin",
+      "Horizontal padding"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "11",
+    "question": "What does mt-4 apply?",
+    "options": [
+      "Bottom margin",
+      "Top margin",
+      "Top padding",
+      "Bottom padding"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "12",
+    "question": "What does mx-auto commonly support with a constrained block width?",
+    "options": [
+      "Vertical flex alignment",
+      "Automatic full viewport height",
+      "Equal grid column widths",
+      "Horizontal centering"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "13",
+    "question": "What does w-full request?",
+    "options": [
+      "Containing width",
+      "Content-only width",
+      "Full viewport height",
+      "Zero minimum width"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "14",
+    "question": "What does min-w-0 permit in constrained layouts?",
+    "options": [
+      "Automatic line truncation",
+      "Shrink below intrinsic width",
+      "A fixed viewport width",
+      "A guaranteed zero final width"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "15",
+    "question": "What does max-w-lg constrain?",
+    "options": [
+      "Maximum width",
+      "Maximum height",
+      "Minimum height",
+      "Minimum width"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "16",
+    "question": "What does h-screen request?",
+    "options": [
+      "Viewport-height sizing",
+      "Intrinsic image height",
+      "Document content height",
+      "Parent line height"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "17",
+    "question": "What does size-8 control?",
+    "options": [
+      "Border and outline width",
+      "Font size and weight",
+      "Width and height",
+      "Margin and padding"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "18",
+    "question": "What does hidden apply?",
+    "options": [
+      "opacity: 0",
+      "pointer-events: none",
+      "display: none",
+      "visibility: hidden"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "19",
+    "question": "What does invisible apply?",
+    "options": [
+      "display: none",
+      "opacity: 0",
+      "position: absolute",
+      "visibility: hidden"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "20",
+    "question": "What does sr-only support?",
+    "options": [
+      "Visually hidden accessible content",
+      "A browser-only source map",
+      "A disabled form control",
+      "A hidden application route"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "21",
+    "question": "What does relative establish for ordinary positioned children?",
+    "options": [
+      "A font loading policy",
+      "A new React context",
+      "A positioning reference",
+      "A server route boundary"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "22",
+    "question": "What does absolute request?",
+    "options": [
+      "Absolute positioning",
+      "Fixed viewport positioning",
+      "Sticky scroll positioning",
+      "Normal static flow"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "23",
+    "question": "What does sticky request?",
+    "options": [
+      "Scroll-relative sticky positioning",
+      "A permanently fixed viewport layer",
+      "A new grid container",
+      "An automatic focus trap"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "24",
+    "question": "What does z-10 set?",
+    "options": [
+      "The pixel size of a shadow",
+      "DOM nesting depth",
+      "Stacking order value",
+      "The number of overlay nodes"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "25",
+    "question": "What does overflow-auto allow?",
+    "options": [
+      "Scrolling when content overflows",
+      "Automatic image compression",
+      "Automatic grid column sizing",
+      "Automatic text capitalization"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "26",
+    "question": "What does rounded-lg control?",
+    "options": [
+      "Border color",
+      "Shadow opacity",
+      "Corner radius",
+      "Outline offset"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "27",
+    "question": "What does border-2 control?",
+    "options": [
+      "Border color",
+      "Border style priority",
+      "Border radius",
+      "Border width"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "28",
+    "question": "What does bg-blue-500 control?",
+    "options": [
+      "Background color",
+      "Text color",
+      "Shadow color only",
+      "Border color"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "29",
+    "question": "What does text-sm control?",
+    "options": [
+      "Text color treatment",
+      "Font size treatment",
+      "Text decoration",
+      "Text alignment"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "30",
+    "question": "What does font-semibold control?",
+    "options": [
+      "Font weight",
+      "Letter spacing",
+      "Line height",
+      "Font size"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "31",
+    "question": "What does leading-tight control?",
+    "options": [
+      "Text wrapping",
+      "Font family",
+      "Letter spacing",
+      "Line height"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "32",
+    "question": "What does tracking-wide control?",
+    "options": [
+      "Font weight",
+      "Line height",
+      "Text alignment",
+      "Letter spacing"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "33",
+    "question": "What does truncate combine?",
+    "options": [
+      "A complete tooltip with hidden content",
+      "A server-side text shortening rule",
+      "Ellipsis-related single-line text styling",
+      "A required fixed character limit"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "What does object-cover control?",
+    "options": [
+      "The container's grid template",
+      "Replaced-element content fitting",
+      "The image's accessible name",
+      "The image's downloaded resolution"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "35",
+    "question": "What does aspect-video express?",
+    "options": [
+      "A mandatory video file format",
+      "An aspect-ratio constraint",
+      "A required media player",
+      "An automatic video poster"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "36",
+    "question": "What does shadow-lg provide?",
+    "options": [
+      "A fixed stacking order",
+      "A shadow treatment",
+      "An overlay focus boundary",
+      "A border color role"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "37",
+    "question": "What does opacity-50 affect?",
+    "options": [
+      "Only its background alpha",
+      "Element opacity",
+      "Only its border transparency",
+      "Only its text contrast"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "38",
+    "question": "What does transition-colors target?",
+    "options": [
+      "Every layout dimension",
+      "Only transform values",
+      "Color-related transitions",
+      "Every CSS property"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "39",
+    "question": "What does duration-200 control?",
+    "options": [
+      "Animation repeat count",
+      "Delay before focus",
+      "Scroll distance",
+      "Transition duration"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "40",
+    "question": "What does hover: prefix select?",
+    "options": [
+      "Keyboard focus only",
+      "Checked state",
+      "Disabled state",
+      "Hover state"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "41",
+    "question": "What does focus-visible: support?",
+    "options": [
+      "Automatic keyboard shortcuts",
+      "A required input label",
+      "Focus-visible styling",
+      "A modal focus trap"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "42",
+    "question": "What does disabled: select?",
+    "options": [
+      "Read-only state always",
+      "Disabled state",
+      "Hidden state",
+      "Loading state automatically"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "43",
+    "question": "What does md: usually mean for a utility?",
+    "options": [
+      "Apply only when JavaScript runs",
+      "Apply only at one exact width",
+      "Apply from md upward",
+      "Apply only below md"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "44",
+    "question": "What does dark: express?",
+    "options": [
+      "A mandatory black value",
+      "A disabled style state",
+      "An automatic contrast audit",
+      "A dark-mode variant"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "45",
+    "question": "What does group-hover: depend on?",
+    "options": [
+      "Every sibling's hover state",
+      "Marked ancestor hover",
+      "A server-side user role",
+      "The current browser route"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "46",
+    "question": "What does peer-checked: depend on?",
+    "options": [
+      "A checked ancestor only",
+      "The current form's server status",
+      "A checked preceding peer",
+      "Every child checkbox"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "47",
+    "question": "What does w-[18rem] provide?",
+    "options": [
+      "An eighteen-column grid",
+      "A required theme token",
+      "A generated image width",
+      "An arbitrary width value"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "48",
+    "question": "What does bg-blue-500/50 modify?",
+    "options": [
+      "The text font weight",
+      "The background color alpha",
+      "The whole element opacity",
+      "The border width"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "49",
+    "question": "In Tailwind v4, what does @theme define?",
+    "options": [
+      "Utility-driving theme variables",
+      "A React context provider",
+      "An application route theme",
+      "A browser runtime Sass module"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "50",
+    "question": "In Tailwind v4, what does @utility register?",
+    "options": [
+      "A React component class",
+      "A custom utility",
+      "A server request handler",
+      "A database schema type"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "51",
+    "question": "A Tailwind layout needs one column below md and two from md upward. Which classes fit?",
+    "options": [
+      "grid grid-cols-2 md:grid-cols-1",
+      "grid md:grid-cols-1 lg:grid-cols-2",
+      "flex grid-cols-2 md:flex-col",
+      "grid grid-cols-1 md:grid-cols-2"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "52",
+    "question": "A Tailwind card uses hidden md:block. What happens below md?",
+    "options": [
+      "It is visible with zero padding",
+      "It becomes a flex container",
+      "It is not displayed",
+      "It is transparent but takes space"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "53",
+    "question": "A Tailwind button uses hover styling but no keyboard cue. Which variant should review consider?",
+    "options": [
+      "focus-visible:",
+      "group-hover:",
+      "peer-checked:",
+      "placeholder-shown:"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "54",
+    "question": "A Tailwind field label should react to an input sibling's state. Which marker pattern can fit?",
+    "options": [
+      "container on every descendant",
+      "peer with a peer state variant",
+      "dark on the input value",
+      "group on an unrelated ancestor"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "55",
+    "question": "A Tailwind child needs styling when its parent is hovered. Which parent marker fits?",
+    "options": [
+      "state-root",
+      "contents-only",
+      "group",
+      "peer"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "56",
+    "question": "A Tailwind utility string includes both p-2 and p-4. Why is HTML class order an unreliable winner rule?",
+    "options": [
+      "The final text token always wins",
+      "React removes the first utility",
+      "CSS cascade order controls precedence",
+      "The browser sorts utility names"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "57",
+    "question": "A Tailwind component builds bg-${color}-500 dynamically. Why can the generated CSS miss it?",
+    "options": [
+      "Every color must be hardcoded in CSS",
+      "The scanner needs complete class candidates",
+      "Dynamic React props disable all utilities",
+      "The browser rejects template strings"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "58",
+    "question": "A Tailwind component maps sizes to complete static class strings. Why does that help compilation?",
+    "options": [
+      "It bypasses the CSS cascade",
+      "It forces every utility into inline style",
+      "It removes every media query",
+      "The scanner can detect each candidate"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "59",
+    "question": "A Tailwind app renders user-selected colors from an API. What handles unrestricted runtime color values without generating classes?",
+    "options": [
+      "A new class name per color without source entries",
+      "A random utility suffix on every render",
+      "A source scan after every browser paint",
+      "A controlled style or CSS variable"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "60",
+    "question": "A Tailwind monorepo ignores a shared UI package during scanning. What must configuration include?",
+    "options": [
+      "Only the generated asset filenames",
+      "Only the app's document title",
+      "Only the shared package's version string",
+      "The package's relevant source files"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "61",
+    "question": "In Tailwind v4, which directive can explicitly register a source path?",
+    "options": [
+      "@theme",
+      "@source",
+      "@variant",
+      "@utility"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "62",
+    "question": "A Tailwind v4 build needs a small explicit set of generated class candidates. Which feature can include them?",
+    "options": [
+      "@utility scan(...)",
+      "@source inline(...)",
+      "@apply source(...)",
+      "@theme class(...)"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "63",
+    "question": "A Tailwind v4 custom state needs a reusable variant definition. Which directive fits?",
+    "options": [
+      "@source-variant",
+      "@theme-variant",
+      "@apply-variant",
+      "@custom-variant"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "64",
+    "question": "A Tailwind v4 project adds --color-brand in @theme. What class family can that enable?",
+    "options": [
+      "Brand color utilities",
+      "A server authorization scope",
+      "A browser event namespace",
+      "A new React component family"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "65",
+    "question": "A Tailwind v4 token should remain a normal CSS variable without creating utilities. Where can it be declared?",
+    "options": [
+      "A normal CSS selector such as :root",
+      "Only in JavaScript source comments",
+      "Only inside @utility",
+      "Only inside @theme"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "66",
+    "question": "A Tailwind v4 stylesheet needs to inline existing utilities into a custom rule. Which directive fits?",
+    "options": [
+      "@source",
+      "@custom-variant",
+      "@reference",
+      "@apply"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "67",
+    "question": "A separate Tailwind v4 stylesheet uses @apply but cannot see app theme definitions. Which directive references them without emitting duplicate CSS?",
+    "options": [
+      "@source",
+      "@plugin-only",
+      "@reference",
+      "@utility"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "68",
+    "question": "A Tailwind v4 migration keeps tailwindcss as the PostCSS plugin. Which package should its documented PostCSS setup use?",
+    "options": [
+      "@tailwindcss/postcss",
+      "@tailwindcss/forms",
+      "@tailwindcss/typography",
+      "@tailwindcss/vite"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "69",
+    "question": "A Tailwind v4 Vite app wants the dedicated integration. Which package fits?",
+    "options": [
+      "@tailwindcss/postcss",
+      "@tailwindcss/vite",
+      "@tailwindcss/cli",
+      "@tailwindcss/forms"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "70",
+    "question": "A Tailwind v4 project imports framework CSS. Which stylesheet statement fits the documented setup?",
+    "options": [
+      "@import \"tailwindcss\";",
+      "@use \"tailwindcss\";",
+      "@include tailwindcss;",
+      "@tailwind import;"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "71",
+    "question": "A Tailwind v4 project keeps a JavaScript configuration file. What should migration check about loading it?",
+    "options": [
+      "Whether browsers read it before HTML",
+      "Whether every theme value becomes a React prop",
+      "Explicit configuration loading",
+      "Whether Sass automatically imports it"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "72",
+    "question": "A Tailwind theme changes its spacing scale. What should component review inspect?",
+    "options": [
+      "Only the CSS asset filename",
+      "Only the token's source indentation",
+      "All utilities derived from that scale",
+      "Only the app's current route"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "73",
+    "question": "A Tailwind dark theme activates through a custom selector. What must its dark variant match?",
+    "options": [
+      "Only the component display name",
+      "Only the browser's current font",
+      "Only the package's install folder",
+      "That selector strategy"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "74",
+    "question": "A Tailwind class uses an arbitrary selector variant. What should review check?",
+    "options": [
+      "Its generated selector scope",
+      "Only the HTML file extension",
+      "Only the current page title",
+      "Only the square bracket count"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "75",
+    "question": "A Tailwind arbitrary value contains spaces inside a class token. What syntax convention commonly represents those spaces?",
+    "options": [
+      "Underscores where supported",
+      "Unescaped literal spaces",
+      "A second class attribute",
+      "HTML closing tags"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "76",
+    "question": "A Tailwind truncation class does not shorten a flex child. What layout constraint can be missing?",
+    "options": [
+      "A second identical truncate class",
+      "An effective shrinkable width boundary",
+      "A hover state on the parent",
+      "A required uppercase label"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "77",
+    "question": "A Tailwind sticky header does not stick as expected. What should the developer inspect?",
+    "options": [
+      "Only the HTML element's source order",
+      "Only the theme's primary color",
+      "Only the header's class name length",
+      "Scroll containers and offset constraints"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "78",
+    "question": "A Tailwind important modifier fixes one override but causes new conflicts. What should the team inspect first?",
+    "options": [
+      "Only the server request timeout",
+      "The intended cascade and ownership",
+      "Only the component's image filename",
+      "Only the source file encoding"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "79",
+    "question": "A Tailwind custom utility needs hover and responsive variants. Why use @utility rather than an unrelated global class rule?",
+    "options": [
+      "It becomes a React component",
+      "It participates in Tailwind's utility system",
+      "It prevents every stylesheet override",
+      "It automatically validates every interaction"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "80",
+    "question": "A Tailwind component merges caller classes with defaults. What must the merge policy preserve?",
+    "options": [
+      "Only the caller's string length",
+      "Only alphabetically sorted class names",
+      "Supported override intent and required structure",
+      "Only the last React prop name"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "81",
+    "question": "A Tailwind design system lets arbitrary utility overrides reach every internal node. What long-term contract cost follows?",
+    "options": [
+      "Internal structure becomes consumer API",
+      "The browser disables responsive styling",
+      "All component props become strings",
+      "Every utility becomes a server dependency"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "82",
+    "question": "A Tailwind component library ships only source with utility classes. What must consumer builds know?",
+    "options": [
+      "How to include that source for generation",
+      "Only the package author's username",
+      "Only the component's display title",
+      "Only the library's screenshot dimensions"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "83",
+    "question": "A Tailwind library instead ships compiled CSS. What integration policy prevents conflicting framework baselines?",
+    "options": [
+      "A duplicate Preflight in every component",
+      "A new framework build for each button",
+      "Random stylesheet ordering per route",
+      "Explicit ownership of global base styles"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "84",
+    "question": "A Tailwind app accepts user-provided class strings. What does build-time scanning fail to guarantee?",
+    "options": [
+      "Any ability to use static variants",
+      "CSS for arbitrary unseen runtime classes",
+      "Any generated CSS for known sources",
+      "Any browser support for class attributes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "85",
+    "question": "A Tailwind v4 theme aliases one custom property to another. When can @theme inline help?",
+    "options": [
+      "Force every alias into a global React store",
+      "Resolve utility values in their use context",
+      "Prevent all CSS inheritance",
+      "Make browser custom properties immutable"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "86",
+    "question": "A Tailwind output becomes large after broad source inclusion. What should optimization inspect?",
+    "options": [
+      "Only the number of app routes",
+      "Only the class attribute order",
+      "Candidates and source scope",
+      "Only the source file indentation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "87",
+    "question": "A Tailwind v4 app supports older browsers than the framework's target. What is the architectural issue?",
+    "options": [
+      "The compiler automatically adds every fallback",
+      "Only the HTML doctype needs removal",
+      "Only the component names need changing",
+      "Generated CSS may require unsupported features"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "88",
+    "question": "A Tailwind v3-to-v4 migration changes default utility appearance. What evidence catches visual regressions?",
+    "options": [
+      "Only matching source filenames",
+      "Representative rendered comparisons",
+      "Only a valid JavaScript config object",
+      "Only a successful package installation"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "89",
+    "question": "A Tailwind design system exposes spacing through semantic component props. What benefit can that provide?",
+    "options": [
+      "A guarantee of zero CSS output",
+      "A requirement for global selectors",
+      "An automatic server form validator",
+      "A stable intent-based API"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "90",
+    "question": "A Tailwind runtime theme changes shared CSS variables. What does performance review need to measure?",
+    "options": [
+      "Only the scanner's source line count",
+      "Only the package lockfile length",
+      "Affected style and layout recalculation",
+      "Only the component export names"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "91",
+    "question": "A Tailwind variant combination targets nested hover and focus states. Why should tests cover actual DOM structure?",
+    "options": [
+      "Variants always use inline JavaScript",
+      "Variant selectors depend on relationships",
+      "Every variant ignores the DOM",
+      "Only class token order matters"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "92",
+    "question": "A Tailwind wrapper removes focus outlines but adds only hover color. What accessibility regression remains?",
+    "options": [
+      "Keyboard focus lacks a visible cue",
+      "The component cannot receive classes",
+      "Every pointer interaction stops working",
+      "The app loses all color tokens"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "93",
+    "question": "A Tailwind class merge utility uses outdated conflict groups. What failure can a new utility syntax cause?",
+    "options": [
+      "A required change to every DOM ID",
+      "Automatic browser CSS parser corruption",
+      "Incorrect preservation or removal of classes",
+      "A permanent loss of theme variables"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "94",
+    "question": "A Tailwind app mixes layered utilities with normal unlayered vendor declarations. What cascade fact should review account for?",
+    "options": [
+      "Class token order overrides layer order",
+      "The shortest stylesheet always wins",
+      "Normal unlayered declarations outrank layered ones",
+      "All layered utilities always win"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "95",
+    "question": "A Tailwind container query variant styles a reusable widget. What context must the app establish?",
+    "options": [
+      "Only the widget's source filename",
+      "Only a React component key",
+      "Only a global viewport width",
+      "The intended query container"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "96",
+    "question": "A Tailwind app scans generated files containing many false class candidates. What build boundary can reduce noise?",
+    "options": [
+      "Load all candidate classes at runtime",
+      "Replace all utilities with !important",
+      "Generate a theme token for every word",
+      "Exclude irrelevant generated sources"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "97",
+    "question": "A Tailwind v4 CSS-first theme is shared across packages. What dependency contract matters beyond the CSS file path?",
+    "options": [
+      "Token namespaces and utility semantics",
+      "Only the consuming app's route names",
+      "Only the file's indentation style",
+      "Only the number of source comments"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "98",
+    "question": "A Tailwind component animates large layout dimensions with transition-all. What performance risk should review detect?",
+    "options": [
+      "Only a longer generated component name",
+      "Only a new browser history entry",
+      "Unintended expensive property transitions",
+      "Only a larger source class string"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "99",
+    "question": "A Tailwind responsive component looks correct at its default content length. What validation catches hidden layout assumptions?",
+    "options": [
+      "Widths, long content, and input modes",
+      "Only one higher-resolution screenshot",
+      "Only the source's class count",
+      "Only a sorted utility name list"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "100",
+    "question": "A Tailwind build caches output without tracking imported theme CSS. What correctness risk follows?",
+    "options": [
+      "An automatic DOM hierarchy change",
+      "Stale utility output",
+      "A guaranteed database query failure",
+      "A required browser extension reload"
+    ],
+    "correct_index": 1
+  }
+]

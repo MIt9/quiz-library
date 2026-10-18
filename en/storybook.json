@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What is the main use of Storybook?",
+    "options": [
+      "Manage the global state of a large web application",
+      "Build and test UI components in isolation from the app",
+      "Bundle a web application for production release",
+      "Generate API documentation for a backend service"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "2",
+    "question": "What is a story in Storybook?",
+    "options": [
+      "A text file that describes the history of a project",
+      "A unit test that checks the answers of a server",
+      "A saved state of a component that shows one use case",
+      "A package that installs a UI library in a project"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "3",
+    "question": "In CSF 3, how do you write a story?",
+    "options": [
+      "As a class that extends the Story base class",
+      "As a named export that is an object",
+      "As a call to the storiesOf function at runtime",
+      "As a JSON file placed next to the component"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "4",
+    "question": "Which export of a CSF file sets the metadata of the component?",
+    "options": [
+      "The default export",
+      "A named export that is called meta",
+      "The export that is called stories",
+      "A named export that is called config"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "5",
+    "question": "Which command starts the Storybook development server in version 8?",
+    "options": [
+      "storybook dev",
+      "storybook start",
+      "storybook serve",
+      "storybook run"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "6",
+    "question": "Which command adds Storybook to an existing project?",
+    "options": [
+      "npx storybook@latest init",
+      "npx storybook install",
+      "npx storybook attach",
+      "npx storybook create"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "7",
+    "question": "Which port does the Storybook development server use by default?",
+    "options": [
+      "3000",
+      "6006",
+      "8080",
+      "4200"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "8",
+    "question": "In Storybook, what are args?",
+    "options": [
+      "The inputs, such as props, that a story gives to the component",
+      "The settings that select the builder and the framework of a project",
+      "The command line options that you give to the storybook command",
+      "The names of the files and folders that contain all the stories"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "9",
+    "question": "What does the Controls addon do?",
+    "options": [
+      "It records the network calls that a story makes",
+      "It lets you change the args of a story in the UI",
+      "It runs the play function of each story in a loop",
+      "It checks the colors of a story for contrast errors"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "10",
+    "question": "What does argTypes describe?",
+    "options": [
+      "The list of the addons that a story must load",
+      "The order in which the stories show in the sidebar",
+      "The type, control, and description of each arg",
+      "The size of the screen that a story uses"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "11",
+    "question": "Where do you set default args for all stories of one component?",
+    "options": [
+      "In the file .storybook/main.ts under the field defaults",
+      "In the args field of the default export",
+      "In the package.json file under the field storybook",
+      "In the name of the first story in the file"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "12",
+    "question": "What is a decorator in Storybook?",
+    "options": [
+      "A comment that adds a long description to a story in the docs page",
+      "A tag that hides a story from the sidebar and from the docs page",
+      "A function that wraps a story to add context, such as a provider",
+      "A plugin that changes the build output and the cache of Storybook"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "13",
+    "question": "What are parameters in Storybook?",
+    "options": [
+      "Static metadata that configures features and addons",
+      "The values that a story passes to the props of a component",
+      "The arguments of the storybook build command",
+      "The types that TypeScript infers for a story"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "14",
+    "question": "Which file holds global decorators and parameters for all stories?",
+    "options": [
+      ".storybook/main.ts",
+      ".storybook/global.ts",
+      ".storybook/manager.ts",
+      ".storybook/preview.ts"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "15",
+    "question": "Which file sets the stories glob, the addons, and the framework?",
+    "options": [
+      ".storybook/preview.ts",
+      ".storybook/manager.ts",
+      ".storybook/main.ts",
+      ".storybook/config.ts"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "16",
+    "question": "What does the stories field in main.ts contain?",
+    "options": [
+      "The list of the story names that Storybook shows",
+      "Glob patterns that find the story files",
+      "The path of the folder that stores the build output",
+      "The names of the components that Storybook can use"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "17",
+    "question": "In Storybook 8, how do you turn on autodocs for one component?",
+    "options": [
+      "Add the file docs.autodocs to the component folder",
+      "Set the parameter docs: true in each story",
+      "Call the function enableDocs in the preview file",
+      "Add tags: ['autodocs'] to the default export"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "18",
+    "question": "What can you write in an MDX file in Storybook?",
+    "options": [
+      "Only the test code for the play function",
+      "Documentation that mixes Markdown and JSX",
+      "Only the config for the builder of Storybook",
+      "Only the CSS styles for the preview iframe"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "19",
+    "question": "In Storybook 8, which function creates a spy for an event arg such as onClick?",
+    "options": [
+      "spyOn from @storybook/react",
+      "fn from @storybook/test",
+      "mock from @storybook/addon-docs",
+      "action from @storybook/blocks"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "20",
+    "question": "What does the Viewport addon do?",
+    "options": [
+      "It shows a story at the sizes of different screens",
+      "It lets you zoom the sidebar of the Storybook UI",
+      "It lists the browsers that can open the Storybook",
+      "It hides the parts of a story that are not visible"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "21",
+    "question": "What does the a11y addon check?",
+    "options": [
+      "The accessibility problems of a rendered story, with axe-core",
+      "The size of the bundle that a story adds to the final build",
+      "The speed of the first paint and the layout shift of a story",
+      "The type errors and the lint errors in the code of a story"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "22",
+    "question": "What does the Backgrounds addon do?",
+    "options": [
+      "It loads a background image from a CDN",
+      "It runs the stories in a hidden browser tab",
+      "It changes the background color of the story canvas",
+      "It saves the old versions of a story"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "23",
+    "question": "What is Chromatic?",
+    "options": [
+      "A CSS library that makes color themes for a design system",
+      "A cloud service that publishes Storybook and runs visual tests",
+      "A VS Code plugin that creates story files",
+      "A test runner that uses Node and no browser"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "24",
+    "question": "What is a play function in a story?",
+    "options": [
+      "A function that renders the component again with new args and props",
+      "A function that runs after the render to simulate user actions",
+      "A function that plays an animation of the component on a loop",
+      "A function that loads the data of the story before it renders"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "25",
+    "question": "What does the Interactions panel show?",
+    "options": [
+      "The list of the props that a component accepts and their types",
+      "The history of the args that you changed in the Controls panel",
+      "The network requests and the console logs that a story sends",
+      "The steps of the play function, with a way to step through them"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "26",
+    "question": "Which command creates a static version of Storybook?",
+    "options": [
+      "storybook bundle",
+      "storybook export",
+      "storybook build",
+      "storybook publish"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "27",
+    "question": "What is the default output folder of the storybook build command?",
+    "options": [
+      "dist/storybook",
+      "build/stories",
+      "storybook-static",
+      "public/storybook"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "28",
+    "question": "Which framework package do you use for a React project that uses Vite?",
+    "options": [
+      "@storybook/react-webpack",
+      "@storybook/react-vite",
+      "@storybook/addon-react-vite",
+      "@storybook/vite-react-builder"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "29",
+    "question": "A CSF file has no title field. What does Storybook do in version 8?",
+    "options": [
+      "It makes the title from the path of the file",
+      "It shows an error and stops the build",
+      "It puts the stories in a group called Untitled",
+      "It uses the name of the component as the title"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "30",
+    "question": "A story is exported as PrimaryButton. How does the sidebar show its name?",
+    "options": [
+      "As PrimaryButton, with no change",
+      "As Primarybutton",
+      "As primary-button",
+      "As Primary Button"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "31",
+    "question": "How do you change the display name of one story?",
+    "options": [
+      "Rename the file that contains the story",
+      "Set the title field in the story object",
+      "Set the name field in the story object",
+      "Add the label tag to the default export"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "32",
+    "question": "What does the render field of a story do?",
+    "options": [
+      "It forces the story to render again each second",
+      "It lets you write custom code to render the story",
+      "It sets the render engine for the framework",
+      "It saves the rendered HTML as a snapshot"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "33",
+    "question": "What does the tags field do on a story or on the default export?",
+    "options": [
+      "It adds the HTML tags that wrap the story",
+      "It lists the packages that the story needs",
+      "It sets the Git tags of the published build",
+      "It labels stories, for example to turn on autodocs"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "34",
+    "question": "Which package gives you expect, userEvent, and within in Storybook 8 play functions?",
+    "options": [
+      "@storybook/jest-dom",
+      "@storybook/addon-actions",
+      "@storybook/blocks",
+      "@storybook/test"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "35",
+    "question": "In a play function, what does canvasElement give you?",
+    "options": [
+      "The canvas HTML element that draws the story",
+      "The list of all stories in the sidebar",
+      "The object that stores the args of the story",
+      "The root DOM element of the rendered story"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "36",
+    "question": "Why must a play function use await with userEvent.click?",
+    "options": [
+      "Because click only works in the main thread",
+      "Because the function must run after the build",
+      "Because Storybook blocks the render until the click ends",
+      "Because the user event functions return promises"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "37",
+    "question": "What does the Storybook test-runner do for each story by default?",
+    "options": [
+      "It opens each story and fails if the render or play code throws",
+      "It checks the props of each story with the TypeScript compiler",
+      "It compares each story with a saved image of the old version",
+      "It counts the lines of code and the imports in each story file"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "38",
+    "question": "What must be available when you run test-storybook?",
+    "options": [
+      "A Chromatic project token from the cloud",
+      "A Jest config file in the folder .storybook",
+      "A build of the app in the dist folder",
+      "A running or served Storybook that the runner can open"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "39",
+    "question": "What does the package @storybook/addon-essentials contain?",
+    "options": [
+      "The themes and the icons for the Storybook manager UI panels",
+      "The base React components that the Storybook UI uses to render",
+      "The test helpers that the play function needs to run in a browser",
+      "A bundle of core addons, such as controls, actions, and docs"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "40",
+    "question": "Where do you add an addon to a project?",
+    "options": [
+      "In the addons array of main.ts",
+      "In the imports of the file preview.ts",
+      "In the parameters object of the first story",
+      "In the scripts field of package.json"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "41",
+    "question": "What does staticDirs in main.ts do?",
+    "options": [
+      "It serves the files of a folder, such as images, to the stories",
+      "It sets the folder for the cache files that the builder makes",
+      "It stops the stories from loading remote files at runtime",
+      "It stores the story files in a folder that the watcher ignores"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "42",
+    "question": "Which field of the default export names the component that Storybook uses to infer controls and docs?",
+    "options": [
+      "render",
+      "target",
+      "component",
+      "subject"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "43",
+    "question": "How does Storybook find the props of a React component for the docs table?",
+    "options": [
+      "It runs the component in a browser and reads the props from it",
+      "It asks you to list each prop in a JSON file for the component",
+      "It reads the code and the types with a static docgen tool",
+      "It reads the README file in the folder of each component"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "44",
+    "question": "Which type do you use to type a story object in React and TypeScript?",
+    "options": [
+      "StoryObj",
+      "StoryArgs",
+      "StoryConfig",
+      "StoryFn"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "45",
+    "question": "How do you build a new story from the args of another story?",
+    "options": [
+      "Import the old story with the loader field",
+      "Call the function extendStory with the old story",
+      "Use the field extends: Primary in the new story",
+      "Spread the args: args: { ...Primary.args, label: 'New' }"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "46",
+    "question": "Which argTypes setting gives a prop a dropdown with a fixed list of values?",
+    "options": [
+      "control: 'select' with an options array",
+      "type: 'dropdown' with a values array",
+      "control: 'list' with a choices array",
+      "options: 'select' with a control array"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "47",
+    "question": "How do you hide the control of one arg in the Controls panel?",
+    "options": [
+      "Set the arg to undefined in the story",
+      "Set control: false in the argTypes of that arg",
+      "Remove the arg from the component",
+      "Set hidden: true in the parameters of the arg"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "48",
+    "question": "Where do the descriptions of props in the autodocs table come from?",
+    "options": [
+      "From the test files of the component",
+      "From the names of the stories in the file",
+      "From the commit messages of the file",
+      "From the JSDoc comments on the props"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "49",
+    "question": "Autodocs is on for all components. How do you turn it off for one component?",
+    "options": [
+      "Set docs: false in the args of each story of that component",
+      "Remove the component from the stories glob in the main.ts file",
+      "Add tags: ['!autodocs'] to the default export of that component",
+      "Set the parameter autodocs: 'off' in the preview.ts file"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "50",
+    "question": "Which URL shows one story alone, without the Storybook UI around it?",
+    "options": [
+      "story.html?name=button-primary",
+      "canvas.html?story=button/primary",
+      "iframe.html?id=button--primary",
+      "preview.html?path=button--primary"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "51",
+    "question": "A play function has the line userEvent.click(button) without await. What can happen?",
+    "options": [
+      "The story does not render in the canvas or in the docs page",
+      "The next assertion can run before the click finishes",
+      "The test runner skips the whole story and marks it as passed",
+      "The click runs two times in the browser of the test-runner"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "52",
+    "question": "A global, a component, and a story all have decorators. Which decorator is the innermost?",
+    "options": [
+      "The story decorator",
+      "The global decorator",
+      "The component decorator",
+      "The decorator that was added last to main.ts"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "53",
+    "question": "A parameter has a value in preview.ts and a different value in one story. Which value does that story use?",
+    "options": [
+      "The value from preview.ts",
+      "The value from the story",
+      "The first value that Storybook loads",
+      "The value from main.ts"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "54",
+    "question": "A story sets label in args and the default export also sets label. Which value does the story use?",
+    "options": [
+      "The value from the default export",
+      "The value from the component default props",
+      "The value that is longer",
+      "The value from the story"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "55",
+    "question": "A component calls useNavigate and the story fails with an error about a missing Router. What is the fix?",
+    "options": [
+      "Import the real browser history object into the story file",
+      "Add a decorator that wraps the story in a MemoryRouter",
+      "Remove useNavigate from the component and pass a callback",
+      "Set the parameter router: false in the default export file"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "56",
+    "question": "Many components need the same theme provider. Where do you add it once?",
+    "options": [
+      "As a global decorator in .storybook/preview.ts",
+      "As a parameter in the main.ts file of the project",
+      "As a loader in each story file that needs the theme",
+      "As an addon in the .storybook/manager.ts file"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "57",
+    "question": "A callback prop shows no control in the Controls panel. What is the usual reason?",
+    "options": [
+      "The prop has a default value in the code of the component",
+      "The component does not use this prop anywhere in its render code",
+      "The Controls addon only works with props of the string or number type",
+      "Controls cannot edit functions, so use a spy made with fn()"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "58",
+    "question": "In Storybook 8, why is fn() in args better than argTypesRegex: '^on.*'?",
+    "options": [
+      "fn() makes the build of the stories faster in CI",
+      "You can assert on the spy in the play function",
+      "fn() works only with stories that are written in TypeScript",
+      "argTypesRegex removes the actions panel from the toolbar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "59",
+    "question": "How do you mock a fetch request for one story with msw-storybook-addon?",
+    "options": [
+      "Set parameters.msw.handlers in the story",
+      "Set args.mockFetch in the story",
+      "Add the handler to the package.json file",
+      "Call jest.mock in the story file"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "60",
+    "question": "The msw handlers do not catch any request in Storybook. Which setup step is a likely cause?",
+    "options": [
+      "The story has no play function that waits for the response data",
+      "The handlers use the GET method instead of the POST method",
+      "The initialize() call or the service worker file is missing",
+      "The default export has no title field for the story group"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "61",
+    "question": "How can you replace a module only inside Storybook with a mock file?",
+    "options": [
+      "Add an alias in the builder config, for example in viteFinal",
+      "Call jest.mock at the top of the story file for the real module",
+      "Add the mock path to the stories glob in the main.ts file",
+      "Set the parameter mockModules in preview.ts for each story"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "62",
+    "question": "Chromatic finds a visual change in a pull request. What must a reviewer do?",
+    "options": [
+      "Update the story file in the pull request",
+      "Delete the old build from the Chromatic project",
+      "Run the test-runner on the local machine",
+      "Accept or deny the change in the Chromatic UI"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "63",
+    "question": "What does TurboSnap do in Chromatic?",
+    "options": [
+      "It makes the snapshots in a lower resolution to save time and cost",
+      "It skips the snapshots of all stories with a play function",
+      "It saves the snapshots only on the main branch of the project",
+      "It snapshots only the stories that the changed files affect"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "64",
+    "question": "Which command runs the test-runner against a Storybook that serves at a given address?",
+    "options": [
+      "test-runner --serve 6006",
+      "storybook test --host 127.0.0.1:6006",
+      "test-storybook --url http://127.0.0.1:6006",
+      "storybook run-tests --port 6006"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "65",
+    "question": "In Storybook 8, what does docs.autodocs: 'tag' in main.ts do?",
+    "options": [
+      "It makes a docs page for each story file in the whole project",
+      "It turns off the docs pages for all stories in the project",
+      "It makes docs only for components with the autodocs tag",
+      "It makes docs pages only for the files that end in .mdx"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "66",
+    "question": "Which MDX element attaches a docs page to a CSF file in Storybook 8?",
+    "options": [
+      "<Docs from={ButtonStories} />",
+      "<Meta of={ButtonStories} />",
+      "<Story attach={ButtonStories} />",
+      "<Canvas file={ButtonStories} />"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "67",
+    "question": "How do you change the Vite config of a Vite-based Storybook?",
+    "options": [
+      "Edit the file storybook.vite.js in the root folder of the project",
+      "Set the vite field in preview.ts and export the new config",
+      "Add a vite block with the new config in the package.json file",
+      "Export a viteFinal function in main.ts that returns the config"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "68",
+    "question": "By default, which Vite config does the Vite builder of Storybook use?",
+    "options": [
+      "The vite.config of the project, merged with its own settings",
+      "Only a config that Storybook makes itself from the story files",
+      "The config that the last app build used for the production",
+      "A config that you must copy to the .storybook folder first"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "69",
+    "question": "How do you add a loader for SVG files to a Webpack-based Storybook?",
+    "options": [
+      "Change the config in a webpackFinal function in main.ts",
+      "Add the loader to the stories glob",
+      "Add the loader to the parameters in preview.ts",
+      "Install the loader as an addon in manager.ts"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "70",
+    "question": "A component looks fine in the app but has no styles in Storybook. What is a likely cause?",
+    "options": [
+      "The component file has no default export for the story to use",
+      "The global CSS file is not imported in .storybook/preview",
+      "The Controls addon blocks the CSS files of the component",
+      "The story has no title field in the default export of the file"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "71",
+    "question": "What does the refs field in main.ts do?",
+    "options": [
+      "It lists the stories that other stories refer to",
+      "It shows another published Storybook inside the sidebar",
+      "It sets the Git references of the build",
+      "It links a story to a design file in Figma"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "72",
+    "question": "Two story files have the same title and an export with the same name. What happens?",
+    "options": [
+      "Storybook uses the file that it loads last",
+      "Storybook joins the two stories into one",
+      "Storybook shows an error about duplicate story IDs",
+      "Storybook adds a number to the second story"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "73",
+    "question": "A story needs data from an API before it renders. Which story field fits best?",
+    "options": [
+      "decorators",
+      "parameters",
+      "argTypes",
+      "loaders"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "74",
+    "question": "What does the step function do in a play function?",
+    "options": [
+      "It runs the play function again for each arg that changes",
+      "It waits for one second between two actions of the play function",
+      "It groups interactions under a name in the Interactions panel",
+      "It skips the next action when the test-runner runs the story"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "75",
+    "question": "A story has a play function. When does Chromatic take the snapshot?",
+    "options": [
+      "Before the play function starts",
+      "At the same time as the first render",
+      "After the play function ends",
+      "After the first click in the play function"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "76",
+    "question": "A team expects the a11y addon to fail the CI build. What is true in Storybook 8?",
+    "options": [
+      "The test-runner already fails the run on any a11y warning of a story",
+      "The Chromatic build always fails on any a11y warning of a story",
+      "The storybook build command fails on any a11y warning in a story",
+      "It only reports in the UI, so add axe-playwright to the runner"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "77",
+    "question": "What is the difference between args and parameters?",
+    "options": [
+      "Args are inputs for the component, and parameters configure Storybook",
+      "Args configure Storybook, and parameters are the inputs of the component",
+      "Args are for the docs page, and parameters are for the canvas",
+      "Args are static values, and parameters change at runtime"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "78",
+    "question": "A new file Card.story.tsx does not show in the sidebar. The glob is ../src/**/*.stories.tsx. What is the problem?",
+    "options": [
+      "The file name does not match the glob",
+      "The file has no play function",
+      "The file uses a named export",
+      "The file is in the wrong addon folder"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "79",
+    "question": "A play function uses getByText for text that shows after a fetch. It fails at random. What is the fix?",
+    "options": [
+      "Add the retry field to the story, so the test-runner tries again",
+      "Use await canvas.findByText, which waits for the element",
+      "Use getAllByText instead, because it returns all the matches",
+      "Wrap the call to getByText in a try block with a fixed delay"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "80",
+    "question": "How do you make a theme switch in the Storybook toolbar?",
+    "options": [
+      "Add a theme addon to the manager.ts file, then set the default theme in main.ts",
+      "Add a theme field to the args of each story, then read that arg in a decorator",
+      "Define globalTypes with a toolbar, then read context.globals in a decorator",
+      "Set a theme field in package.json, then read that field in the preview file"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "81",
+    "question": "Storybook 8 has a fast sidebar even with many stories. What is the main reason?",
+    "options": [
+      "It runs all the story files in a worker thread when Storybook starts up",
+      "It renders the stories in the sidebar as small live preview images",
+      "It saves a rendered snapshot of each story in the cache of the browser",
+      "It indexes stories by static analysis and loads story files on demand"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "82",
+    "question": "What is a real trade-off of interaction tests in play functions compared with Jest unit tests?",
+    "options": [
+      "They run faster than unit tests, but they cannot check the DOM",
+      "They use a real browser and real CSS, but they run slower",
+      "They need no build step, but they cannot use any mocks or spies",
+      "They check the types of props, but they cannot click elements"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "83",
+    "question": "How does Chromatic choose the baseline for a pull request build?",
+    "options": [
+      "It uses the latest build that ran on any branch of the same project",
+      "It uses the build that has the most accepted stories in total",
+      "It uses the build with the oldest date in the whole project",
+      "It uses accepted builds of the ancestor commits in Git history"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "84",
+    "question": "A story shows the current date. Each Chromatic build shows a diff. What is the best fix?",
+    "options": [
+      "Make the date fixed, with an arg or a mocked Date",
+      "Raise the diff threshold of Chromatic for the whole project",
+      "Accept the change in each new build of the branch",
+      "Turn off the snapshots for the whole Chromatic project"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "85",
+    "question": "A decorator calls createStore() in its body. Changing a control resets the state. Why?",
+    "options": [
+      "Controls always reload the whole iframe of the preview page",
+      "The store is not serializable, so Storybook drops it from args",
+      "It runs again on each render, so it makes a new store",
+      "The play function clears the store after each new render"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "86",
+    "question": "A story passes in the Canvas but fails on the Docs page. What is a likely reason?",
+    "options": [
+      "The Docs page does not load the global decorators of the preview",
+      "Docs shows many stories in one page, so global state can clash",
+      "The Docs page turns off all decorators of the component and story",
+      "The Docs page runs the stories in Node and not in a browser tab"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "87",
+    "question": "How can you split the test-runner work over several CI machines?",
+    "options": [
+      "Use the --shard option, for example test-storybook --shard 1/4",
+      "Use the --parallel flag of the storybook build command on each machine",
+      "Set the workers field in main.ts to the number of machines",
+      "Run storybook dev on each machine with a different port number"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "88",
+    "question": "Why use StoryObj<typeof meta> to type a story?",
+    "options": [
+      "It makes the story code run faster in the browser at runtime",
+      "It turns on the Controls for all the props of the component",
+      "It removes the need for the default export in the file",
+      "Args that the meta sets are not required in the story"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "89",
+    "question": "Why use userEvent from @storybook/test and not from the testing-library package?",
+    "options": [
+      "It is the only version of the library that works with React 18+",
+      "It is instrumented, so the steps show in the Interactions panel",
+      "It skips the wait for the updates of the DOM after each click",
+      "It makes the clicks run faster than the clicks of a real user"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "90",
+    "question": "How do you reuse your stories in a Vitest unit test with the preview settings?",
+    "options": [
+      "Run storybook dev and read the story from the URL in the test",
+      "Import the story object and call it as a normal function in the test",
+      "Use composeStories, with setProjectAnnotations for the preview",
+      "Copy the args and the decorators of the story into the test file"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "91",
+    "question": "Which prefix makes an environment variable visible in the preview code through process.env?",
+    "options": [
+      "VITE_",
+      "STORYBOOK_",
+      "PUBLIC_",
+      "SB_"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "92",
+    "question": "A container component fetches data with a hook. Which is the better way to give data to its story?",
+    "options": [
+      "Pass the data in args and skip the hook in the story",
+      "Change the hook to return fixed data in the production build",
+      "Mock the network with msw, so the real fetch code runs",
+      "Use a loader that sets a global variable for the hook"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "93",
+    "question": "What is a cost of showing stories inline on a large Docs page?",
+    "options": [
+      "The play functions never run in the Docs page of the component",
+      "Each story gets a new iframe, which uses much more memory",
+      "All stories render in one page, so it can be slow",
+      "The Controls panel stops working for all the stories on the page"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "94",
+    "question": "Which story parameter makes Chromatic take snapshots at several viewport widths?",
+    "options": [
+      "parameters.viewport.widths",
+      "args.snapshotViewports",
+      "globals.chromaticSizes",
+      "parameters.chromatic.viewports"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "95",
+    "question": "A developer changes .storybook/preview.ts. What does TurboSnap do?",
+    "options": [
+      "It snapshots only the stories that import the preview file directly",
+      "It skips the build, because the preview files do not matter much",
+      "It snapshots only the stories that have a play function",
+      "It snapshots all stories, because the change affects any story"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "96",
+    "question": "Where do you add a postVisit hook that runs an axe check after each story in the test-runner?",
+    "options": [
+      ".storybook/test-runner.ts, as an exported hook",
+      ".storybook/main.ts, in the testRunner field",
+      "jest.config.js, in the setupFilesAfterEach field",
+      ".storybook/preview.ts, in the decorators array"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "97",
+    "question": "Why do addons often have a manager part and a preview part?",
+    "options": [
+      "The manager part builds the code and the preview part tests the built code",
+      "The manager UI and the preview iframe are separate and use a channel",
+      "The manager part runs in Node and the preview part runs in a web worker",
+      "The preview part is only for the production build of the Storybook"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "98",
+    "question": "After an upgrade, the Storybook UI shows errors. The packages have mixed versions, such as 8.1 and 8.4. What is the risk?",
+    "options": [
+      "All Storybook packages need the same version, or errors can occur",
+      "Mixed versions are safe if the major number is the same for all",
+      "Only the addons must match the version of the framework package",
+      "Only the builder package must match the version of the Node.js in use"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "99",
+    "question": "What is a good rule to split tests between Storybook and end-to-end tests?",
+    "options": [
+      "Test all the flows in stories, because they run faster than E2E tests",
+      "Test all states end to end, because stories only use mock data",
+      "Test component states in stories, and full flows end to end",
+      "Test only the visual parts end to end, and the rest in stories"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "100",
+    "question": "What is the safe way to move a project from Storybook 7 to 8?",
+    "options": [
+      "Run npx storybook@latest upgrade, which runs the automigrations",
+      "Change the version in package.json and reinstall all the packages",
+      "Delete the .storybook folder and run the init command again",
+      "Update only the addons to 8 and keep the core package on 7"
+    ],
+    "correct_index": 0
+  }
+]

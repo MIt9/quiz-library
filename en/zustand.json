@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What does `create` from `zustand` return?",
+    "options": [
+      "A Provider component that you must put at the root of the application",
+      "A reducer function that you call with actions to change the state",
+      "A React hook that you call in components to read state from the store",
+      "A plain object that holds the state but has no subscribe method"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "2",
+    "question": "In Zustand v5, which import gets the `create` function?",
+    "options": [
+      "`import create from 'zustand'`",
+      "`import { create } from 'zustand'`",
+      "`import { create } from 'zustand/react'`",
+      "`import { createHook } from 'zustand/core'`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "3",
+    "question": "Which code subscribes a component only to the `count` value?",
+    "options": [
+      "`const count = useStore((s) => s).count`",
+      "`const count = useStore.getSnapshot().count`",
+      "`const count = useStore.count()`",
+      "`const count = useStore((s) => s.count)`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "4",
+    "question": "What does the `set` function do inside the `create` callback?",
+    "options": [
+      "It returns the current state of the store and does not change anything",
+      "It replaces the whole state and removes all keys that you did not pass",
+      "It creates a new store that has the state that you give to the function",
+      "It merges a partial state object into the state and tells the subscribers"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "5",
+    "question": "What does the `get` function do inside the `create` callback?",
+    "options": [
+      "It reads a saved value from `localStorage` with the key that you give",
+      "It subscribes the component to every change of the state in the store",
+      "It returns the current state of the store at the time you call it",
+      "It returns the initial state that the store had when it was created"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "6",
+    "question": "A store has `{ count: 0, name: 'a' }`. You call `set({ count: 1 })`. What is `name` now?",
+    "options": [
+      "It stays `'a'`, because `set` merges the new object into the state",
+      "It becomes `null`, because the old value is removed at the update",
+      "The call throws an error, because the object has a missing key",
+      "It becomes `undefined`, because the new object has no `name` key"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "7",
+    "question": "Where do you usually put the actions in a Zustand store?",
+    "options": [
+      "In a separate reducer file that the store must import at start",
+      "In the same object as the state, as functions that call `set`",
+      "In a Provider component that wraps the whole application tree",
+      "In a special `actions` argument that you pass to `create`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "8",
+    "question": "Which comparison does a Zustand hook use by default on the result of a selector?",
+    "options": [
+      "A deep comparison of all nested keys and values",
+      "No comparison; the component renders after each `set` call",
+      "A shallow comparison of the top-level keys of an object",
+      "`Object.is` on the value that the selector returns"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "9",
+    "question": "Which extra package must you install to use the `immer` middleware of Zustand?",
+    "options": [
+      "The `immer-zustand` package",
+      "The `zustand-immer` package",
+      "The `use-immer` package",
+      "The `immer` package"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "10",
+    "question": "Do you need a Provider to use a store that `create` makes?",
+    "options": [
+      "Yes, you must wrap the application with a store Provider",
+      "Yes, but only when the application uses React 18 or newer",
+      "Only when the store uses at least one middleware function",
+      "No, the hook works in any component that imports the store"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "11",
+    "question": "Which function makes a store that does not depend on React?",
+    "options": [
+      "`makeStore` from `zustand/node-store`",
+      "`makeStore` from `zustand/node`",
+      "`createVanilla` from `zustand/store`",
+      "`createStore` from `zustand/vanilla`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "12",
+    "question": "How do you read the state in a plain function outside a React component?",
+    "options": [
+      "`useStore.getState()`",
+      "`useStore().state`",
+      "`useStore.current`",
+      "`useStore.readCurrentState()`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "13",
+    "question": "How do you change the state from code outside a React component?",
+    "options": [
+      "`useStore.dispatch({ count: 5 }, true)`",
+      "`useStore.setState({ count: 5 })`",
+      "`useStore.state.count = 5`",
+      "`useStore.update(5)`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "14",
+    "question": "What does the `subscribe` method of a store return?",
+    "options": [
+      "The next state object that the store makes after the update",
+      "A function that you call to stop the listener",
+      "A Promise that resolves at the next change",
+      "A React hook that uses the listener"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "15",
+    "question": "Which middleware connects a store to the Redux DevTools extension?",
+    "options": [
+      "`reduxInspector`",
+      "`devtools`",
+      "`logger`",
+      "`trace`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "16",
+    "question": "Which middleware saves the state of a store in the browser storage?",
+    "options": [
+      "`persist`",
+      "`save`",
+      "`hydrate`",
+      "`storageSync`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "17",
+    "question": "Which middleware lets you write code that seems to change the state directly?",
+    "options": [
+      "`mutable`",
+      "`produce`",
+      "`draft`",
+      "`immer`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "18",
+    "question": "What is the `name` option of the `persist` middleware?",
+    "options": [
+      "The name of the state type in the TypeScript output",
+      "The label that the React DevTools show for the store",
+      "The display name of the hook function in stack traces",
+      "The key that the storage uses for the saved item"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "19",
+    "question": "Which storage does `persist` use if you do not set the `storage` option?",
+    "options": [
+      "`localStorage`",
+      "`sessionStorage`",
+      "`IndexedDB`",
+      "A browser cookie"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "20",
+    "question": "What does the `partialize` option of `persist` do?",
+    "options": [
+      "It splits the state into several slices so each part has its own devtools tab",
+      "It makes the selectors return only part of the object",
+      "It selects the parts of the state that go to the storage",
+      "It delays the calls of `set` until the browser is idle"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "21",
+    "question": "Which form does the Zustand TypeScript guide recommend to type a store with a `State` interface?",
+    "options": [
+      "`create((set) => ({ ... }))<State>`",
+      "`create<State, set>((set) => ({ ... }))`",
+      "`create as State((set) => ({ ... }))`",
+      "`create<State>()((set) => ({ ... }))`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "22",
+    "question": "Why does `create<T>()()` have an extra pair of parentheses?",
+    "options": [
+      "It lets TypeScript infer the middleware types while you set `T` by hand",
+      "It runs the store creation two times to support React strict mode",
+      "It marks the store as lazy, so it starts at the first use in a component",
+      "It makes a copy of the store that you can use in the unit tests"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "23",
+    "question": "What is the main purpose of a selector in a Zustand hook?",
+    "options": [
+      "To change a part of the state in the store before the component reads it again at render",
+      "To save a part of the state in the storage after each change of it",
+      "To pick a part of the state, so the component renders only when it changes",
+      "To create a copy of the state that no other component can change"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "24",
+    "question": "How do you add 1 to `count` when the new value depends on the old value?",
+    "options": [
+      "`set(count++)` which changes the value in the store directly",
+      "`set({ count: count + 1 })` with a `count` from the last render",
+      "`set((state) => ({ count: state.count + 1 }))`",
+      "`set.count((c) => c + 1)` with a function for the key"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "25",
+    "question": "A teammate calls `state.items.push(x)` and then `set({ items: state.items })`. What is the risk?",
+    "options": [
+      "The call throws an error, because Zustand freezes all arrays",
+      "The store ignores the call, because the key names are the same",
+      "The array keeps the same reference, so selectors can miss the change",
+      "The code works only in production builds of the application"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "26",
+    "question": "Which call adds `item` to the `items` array without changing the old array?",
+    "options": [
+      "`set((s) => ({ items: [...s.items, item] }))`",
+      "`set((s) => ({ items: s.items.push(item) }), true)`",
+      "`set((s) => { s.items.push(item) })`",
+      "`set((s) => s.items.push(item))`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "27",
+    "question": "What does `set(newState, true)` do?",
+    "options": [
+      "It merges the new state in a deep way into the old state",
+      "It changes the state and does not tell the subscribers",
+      "It saves the new state in the storage right away",
+      "It replaces the whole state and does not merge it"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "28",
+    "question": "Which function lets a React component use a vanilla store that `createStore` made?",
+    "options": [
+      "`useVanilla`",
+      "`useStore`",
+      "`useCreateStore`",
+      "`useSnapshot`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "29",
+    "question": "Can a Zustand action be an `async` function?",
+    "options": [
+      "No, because `set` must run in the same tick as the action call",
+      "Yes, you call `set` after the `await` when the data is ready",
+      "Yes, but only when the store also uses the `persist` middleware",
+      "Yes, but only when you add a `thunk` middleware to the store"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "30",
+    "question": "An async action must read the newest state after an `await`. What do you use?",
+    "options": [
+      "The `state` variable from before the `await`",
+      "A new call to `get()` after the `await`",
+      "The `useStore` hook inside the action body",
+      "The `this.state` property of the action"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "31",
+    "question": "In `devtools`, how do you give a name to an action in the log?",
+    "options": [
+      "Add a `name` key to the partial state object that you pass to `set` as first argument",
+      "Call `useStore.name('inc')` before the call of the action",
+      "Pass the name as the third argument: `set(partial, false, 'inc')`",
+      "Set the `displayName` property on the action function"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "32",
+    "question": "A component selects the action: `useStore((s) => s.increment)`. Does `count` change cause a new render?",
+    "options": [
+      "Yes, because every state change makes new functions",
+      "Yes, because the selector returns a function value",
+      "No, because the action keeps the same reference",
+      "No, but only when you add `React.memo` to the component"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "33",
+    "question": "What is the `subscribeWithSelector` middleware for?",
+    "options": [
+      "It lets you listen to one part of the state with `subscribe(selector, listener)`",
+      "It saves the result of selectors between different components",
+      "It lets `set` change only the keys that a selector returns",
+      "It adds selectors to the React hook of the store and it caches them without extra code"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "34",
+    "question": "What does the `combine` middleware do?",
+    "options": [
+      "It joins two different stores into one object with shared keys",
+      "It merges the saved state and the current state after the reload",
+      "It joins reducers into one reducer in the same way as Redux",
+      "It makes a store from an initial state and a function that returns the actions"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "35",
+    "question": "What is the slices pattern in Zustand?",
+    "options": [
+      "You call `create` several times so that each part of the state has its own separate store",
+      "You cut the state into time slices, so that you can make an undo history",
+      "You write several functions that each make a part of the state and the actions, then merge them in one store",
+      "You split the hook into several hooks that follow the component tree"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "36",
+    "question": "Which store method returns the state that the store had at creation?",
+    "options": [
+      "`getInitialState`",
+      "`getDefaultState`",
+      "`getFirstState`",
+      "`getOriginalState`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "37",
+    "question": "How do you reset a store to its initial state in a test?",
+    "options": [
+      "`useStore.setState(useStore.getInitialState(), true)`",
+      "`useStore.setState(useStore.getDefaultState(), true)`",
+      "`useStore.clearState(useStore.getInitialState())`",
+      "`useStore.setState(useStore.getState(), true)`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "38",
+    "question": "A Context holds `{ a, b }`. A component reads only `a`. What happens when `b` changes?",
+    "options": [
+      "The component renders again, while a Zustand selector for `a` would skip the render",
+      "The component skips the render, because React Context compares the keys it uses",
+      "The component renders again only in development builds, and skips it in production",
+      "The component skips the render, but only when it uses `React.memo`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "39",
+    "question": "Which difference between Zustand and Redux do developers see first?",
+    "options": [
+      "Zustand needs more setup code than Redux for one store",
+      "Zustand needs no action types, no reducers and no Provider",
+      "Zustand cannot keep state outside of React components",
+      "Zustand needs a Provider, but Redux does not need one"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "40",
+    "question": "How does Jotai differ from Zustand in the way it models state?",
+    "options": [
+      "Jotai uses one large store object, and Zustand uses many atoms",
+      "Jotai works only outside React, and Zustand works only inside React",
+      "Jotai uses many small atoms, and Zustand uses one store object",
+      "Jotai needs reducers, and Zustand needs only plain functions"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "41",
+    "question": "A developer writes `useStore.getState().count++`. What is the problem?",
+    "options": [
+      "The code throws an error at run time, because Zustand freezes the state object",
+      "The subscribers get no message, so the components do not update",
+      "The code works the same as a call to `set` with a new value",
+      "The store makes a new copy of the state at each call"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "42",
+    "question": "You call `set({ count: 1 })`. What does `get().count` return on the next line?",
+    "options": [
+      "The old value, because React updates the state only at the next render",
+      "`1`, because the state changes at once",
+      "`undefined`, until the Promise ends",
+      "The old value, until a microtask runs"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "43",
+    "question": "What is the `createJSONStorage` helper for?",
+    "options": [
+      "It checks that the state has only values that JSON supports",
+      "It converts the state to a JSON string for the Redux DevTools panel and the logger",
+      "It reads a JSON file from the disk when the store starts",
+      "It wraps a storage like `sessionStorage` so `persist` can save JSON strings"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "44",
+    "question": "How do you make `persist` use `sessionStorage`?",
+    "options": [
+      "`storage: createSessionStorage(() => sessionStorage)`",
+      "`storage: 'sessionStorage'`",
+      "`storage: createJSONStorage(() => sessionStorage)`",
+      "`storage: window.sessionStorage`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "45",
+    "question": "In the Next.js App Router, what does a component that calls a store hook need?",
+    "options": [
+      "The `'use client'` directive at the top of the file",
+      "The `'use store'` directive at the top of the file",
+      "An `async` function component with an `await` for the store",
+      "A `getServerSideProps` function that returns the state"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "46",
+    "question": "Which React version does Zustand v5 need at minimum?",
+    "options": [
+      "React 17",
+      "React 16.8",
+      "React 18",
+      "React 19"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "47",
+    "question": "Can one application have more than one Zustand store?",
+    "options": [
+      "Yes, you call `create` once for each store you need",
+      "Yes, but only when each store has a different Provider",
+      "No, the second call of `create` replaces the first store",
+      "No, an application can have only one store like in Redux"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "48",
+    "question": "With the `immer` middleware, which call correctly adds 1 to `count`?",
+    "options": [
+      "`set((state) => state.count = state.count + 1)`",
+      "`set((state) => { state.count += 1 })`",
+      "`set(state.count += 1)`",
+      "`set({ draft: (s) => s.count + 1 })`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "49",
+    "question": "How do you run a function after every change of the state, outside React?",
+    "options": [
+      "`useStore.subscribe((state, prev) => { ... })`",
+      "`useStore.on('change', (state, prev) => { ... })`",
+      "`useStore.watch((state, prev) => { ... })`",
+      "`useStore.listen((state) => { ... })`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "50",
+    "question": "From which module do you import `devtools` and `persist`?",
+    "options": [
+      "`zustand/middleware-core`",
+      "`zustand/middleware`",
+      "`zustand/plugins`",
+      "`zustand/extra`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "51",
+    "question": "In v4, a component uses `useStore((s) => ({ a: s.a, b: s.b }))`. What is the effect?",
+    "options": [
+      "It renders only when `a` or `b` change, because Zustand compares the keys",
+      "It renders after each change of the store, because the selector returns a new object",
+      "It never renders again, because the object is made at the first call",
+      "It throws an error at the first render, because objects are not valid"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "52",
+    "question": "In v5, a component uses `useStore((s) => ({ a: s.a, b: s.b }))`. What happens?",
+    "options": [
+      "The component renders one time and then it stops all updates",
+      "The component renders only when `a` or `b` change, as in v4",
+      "React reports an infinite loop, because each call returns a new object",
+      "The store copies the object once and warns in the console"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "53",
+    "question": "In v5, how do you fix a selector that returns a new object at each call?",
+    "options": [
+      "Wrap the component with `React.memo`",
+      "Wrap the selector with `useShallow`",
+      "Pass `Object.is` as the second argument",
+      "Read the store in `useEffect` and call `setState`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "54",
+    "question": "What does the `shallow` function compare?",
+    "options": [
+      "All nested keys and values of two objects, at every level of depth",
+      "The JSON strings that come from two objects",
+      "Only the reference of the two objects",
+      "The top-level keys of two objects, with `Object.is` for each value"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "55",
+    "question": "In v5, the hook has no equality function argument. Which export replaces it?",
+    "options": [
+      "`createWithShallowEquality` from `zustand/shallow`",
+      "`createEqual` from `zustand/vanilla`",
+      "`createWithSelector` from `zustand/middleware`",
+      "`createWithEqualityFn` from `zustand/traditional`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "56",
+    "question": "In v5, a selector returns `s.items.filter((x) => x.done)`. What is the best fix?",
+    "options": [
+      "Add a `try` and `catch` block around the call to the selector",
+      "Use `JSON.stringify` on the result of the selector in the hook",
+      "Select `s.items` and run the filter with `useMemo` in the component",
+      "Move the call of `filter` into the `set` function of the store"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "57",
+    "question": "`persist` saves only `token` with `partialize`. After a reload, what are the other fields?",
+    "options": [
+      "They are `undefined`, because the storage has only the token",
+      "They keep the last values, because Zustand saves them in memory",
+      "They have their initial values, and the saved `token` is merged in",
+      "They are `null`, until the first call of `set` for each field"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "58",
+    "question": "When does `persist` call the `migrate` function?",
+    "options": [
+      "When the saved version is different from the `version` option",
+      "At each reload of the page, before the state is read",
+      "When the storage has no saved item for the key",
+      "When the size of the saved state is larger than the limit"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "59",
+    "question": "A persisted store has a `Set` field. After a reload with the default storage, what is wrong?",
+    "options": [
+      "The `Set` comes back as an array, and every method of it still works",
+      "`JSON.stringify` turns the `Set` into an empty object, so the data is lost",
+      "The `Set` comes back correct, because `persist` knows how to save it",
+      "The storage throws an error each time the state with a `Set` changes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "60",
+    "question": "In Next.js, you export one store from a module with `create`. Why is this risky on the server?",
+    "options": [
+      "The module state is shared by all requests, so users can see data of other users",
+      "The store makes a new state for each request, so all data is lost",
+      "The server needs the `devtools` middleware to run the store at all",
+      "The server cannot import modules that call the `create` function"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "61",
+    "question": "A store uses `persist` with `localStorage`. Next.js shows a hydration mismatch. What is the cause?",
+    "options": [
+      "The server cannot read the middleware code of the store",
+      "The `persist` middleware changes the HTML tags in the server output",
+      "The client renders before the browser loads the React library",
+      "The server renders the initial state, but the client renders the saved state"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "62",
+    "question": "Which pattern does the Zustand guide recommend for a store in the Next.js App Router?",
+    "options": [
+      "Make one global store with `create` and import it in all Server Components",
+      "Make the store in `middleware.ts` and send it to the client by a header",
+      "Make the store with `createStore` in a function and give it to components by a Context Provider",
+      "Make the store in `layout.tsx` and save it on the `window` object"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "63",
+    "question": "What does `skipHydration: true` do in the `persist` options?",
+    "options": [
+      "The store never reads the storage, and the saved item is only for write",
+      "The store does not read the storage at creation, and you call `persist.rehydrate()` later",
+      "The store reads the storage only on the server and not on the client",
+      "The store reads the storage at creation, but it skips the `migrate` function"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "64",
+    "question": "Stores are module-level objects. What problem can this cause in unit tests?",
+    "options": [
+      "The tests run slower, because each test makes a new copy of React",
+      "The tests cannot import the store, because the module runs only in a browser",
+      "The store resets itself after each test, so the tests cannot share data",
+      "The state of one test leaks into the next test unless you reset the store"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "65",
+    "question": "A store has `user: { name, age }`. You call `set({ user: { name: 'x' } })`. What is the result?",
+    "options": [
+      "`age` becomes `null`, and Zustand keeps the key in the object",
+      "`age` stays, because Zustand merges nested objects in a deep way",
+      "The call throws an error, because the `age` key is missing",
+      "`age` is lost, because the merge is shallow and `user` is replaced"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "66",
+    "question": "A developer writes `const { a, b } = useStore()`. What is the main problem?",
+    "options": [
+      "The code throws an error, because you cannot destructure the state",
+      "The values `a` and `b` are old copies that never update",
+      "The component renders again after any change of the state",
+      "The component never renders again after the first render"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "67",
+    "question": "What does `fireImmediately: true` do in `subscribe` of `subscribeWithSelector`?",
+    "options": [
+      "It calls the listener on the server before the first render",
+      "It calls the listener only when the selected value is not `undefined`",
+      "It calls the listener again after each call of `set` in the same tick",
+      "It calls the listener at once with the current selected value"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "68",
+    "question": "With the `immer` middleware, a callback changes the draft and also returns a new object. What happens?",
+    "options": [
+      "Immer uses the returned object and ignores the changes of the draft",
+      "Immer throws an error, because you can do only one of the two",
+      "Immer merges both results into one new state automatically",
+      "Immer uses the draft changes and ignores the returned object"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "69",
+    "question": "Which type do you use to write the type of one slice function?",
+    "options": [
+      "`StateCreator`",
+      "`StoreSliceCreator`",
+      "`StoreSlice`",
+      "`StateSlice`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "70",
+    "question": "A mouse position changes 60 times per second. How do you read it without many renders?",
+    "options": [
+      "Use `subscribe` in an effect and write the value to a ref or to the DOM",
+      "Use `setState` in a `setInterval` and read the value in the render",
+      "Use `getState()` in the render body of the component",
+      "Use `useStore()` with no selector and wrap the whole component in `useMemo`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "71",
+    "question": "You have a vanilla `store` from `createStore`. How does a component read `count` from it?",
+    "options": [
+      "`useStore(store, (s) => s.count)`",
+      "`useStore.getState(store).count`",
+      "`store((s) => s.count)`",
+      "`store.useSelector((s) => s.count)`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "72",
+    "question": "A listener on `subscribe` calls `setState` on the same store without a condition. What happens?",
+    "options": [
+      "The listener runs one time only, then Zustand removes it",
+      "Zustand blocks the second call and keeps the first state",
+      "The listener runs again after each `setState`, so it can make an infinite loop",
+      "The store queues the call and runs it after the next render"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "73",
+    "question": "A component calls `useStore.getState().count` in the render body. What is the problem?",
+    "options": [
+      "The component does not render again when `count` changes",
+      "The call returns the initial state and never the current state",
+      "The call throws an error, because `getState` is only for tests",
+      "The component renders again two times for each change"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "74",
+    "question": "How do you get a derived value, like a total price, from a Zustand store?",
+    "options": [
+      "Add a `computed` option to the `create` call and read it with a getter on the store",
+      "Compute it in a selector or in the component from the state values",
+      "Make a getter with `Object.defineProperty` on the hook",
+      "Call `useStore.derive()` after each call of `set`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "75",
+    "question": "What is `onRehydrateStorage` in the `persist` options?",
+    "options": [
+      "A function that changes the state before it goes to the storage",
+      "A function that runs when the storage has no item for the key",
+      "A function that runs on each write of the state to the storage",
+      "A function that runs before the hydration and can return a function for after it"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "76",
+    "question": "An app update adds a new nested default field. Old users have saved nested data. What goes wrong with the default `persist` merge?",
+    "options": [
+      "The shallow merge replaces the whole nested object, so the new field is missing",
+      "The deep merge keeps the old field and removes the new field from the object",
+      "The merge throws an error, because the saved data has an old version",
+      "The merge skips the saved data and uses only the new default state"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "77",
+    "question": "After an upgrade from v4 to v5, `import create from 'zustand'` fails. Why?",
+    "options": [
+      "v5 moves the `create` function to the `zustand/react` package and removes it from the main one",
+      "v5 needs the `new` keyword in front of the `create` function",
+      "v5 removes the default export, and only the named export `create` remains",
+      "v5 renames the `create` function to `createStore` in the main package"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "78",
+    "question": "What does the `redux` middleware add to a Zustand store?",
+    "options": [
+      "A connection to the Redux Toolkit store of the application, so both can share one state",
+      "A `dispatch` function and a reducer that handles actions in the Redux style",
+      "A copy of the state in the Redux DevTools without the `devtools` middleware",
+      "A Provider that works with the `react-redux` hooks"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "79",
+    "question": "Which React API does Zustand v5 use to subscribe components to the store?",
+    "options": [
+      "`useExternalStoreEffect`",
+      "`useSyncExternalStore`",
+      "`useContext`",
+      "`useDeferredValue`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "80",
+    "question": "A user logs out, but the token stays in `localStorage`. Which call removes the saved item?",
+    "options": [
+      "`useStore.persist.clearStorage()`",
+      "`useStore.persist.removeStoredItem()`",
+      "`useStore.destroy()`",
+      "`useStore.persist.rehydrate()`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "81",
+    "question": "Why does a selector that returns a new array at each call cause a loop in v5?",
+    "options": [
+      "`useSyncExternalStore` expects a cached snapshot, and a new reference looks like a change at each render",
+      "React cannot compare arrays, so it throws an error as soon as the selector returns one",
+      "The `set` function runs again for each new array that the selector returns, and this makes a loop in the store itself",
+      "The store keeps a copy of each returned array, and this fills the memory until the loop starts"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "82",
+    "question": "How does `useShallow` stop the extra renders?",
+    "options": [
+      "It freezes the selector result with `Object.freeze` so that nobody can change it",
+      "It runs the selector only one time and keeps the result for the full life of the component",
+      "It keeps the last result in a ref and returns it when the new result is shallow equal",
+      "It compares the whole store state in a deep way before it calls the selector"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "83",
+    "question": "A list has 10,000 rows. Each row component needs only its own item. Which design gives the fewest renders?",
+    "options": [
+      "Keep one array and select the whole array in each row component",
+      "Keep items in an object by id, and select `s.items[id]` in each row",
+      "Keep one array and filter it by id in each row with no selector",
+      "Keep a counter in the store and compare it in each row component"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "84",
+    "question": "A store has 10,000 subscribed selectors. One `set` runs. What is the cost?",
+    "options": [
+      "Only the selectors for the changed keys run, as Zustand tracks key use",
+      "Every selector runs once, and only components with a changed result render",
+      "Zustand batches the call and runs the selectors in the next animation frame",
+      "Every subscribed component renders, and React skips the DOM updates later"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "85",
+    "question": "A function passed to `set` returns the same `state` object. What does Zustand do?",
+    "options": [
+      "It tells all listeners, because the function was called and Zustand treats each call as a change",
+      "It skips the update and does not tell the listeners, because `Object.is` is true",
+      "It throws an error, because an update must return a new object",
+      "It tells only the listeners that use a selector with no equality function"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "86",
+    "question": "`persist` uses `localStorage` or an async storage. When does the state hydrate?",
+    "options": [
+      "Both kinds hydrate after the first render, when React runs the effects of the store",
+      "Sync storage hydrates after the first render, and async storage hydrates during creation",
+      "Both kinds hydrate during store creation, because `persist` waits for the Promise",
+      "Sync storage hydrates during store creation, and async storage hydrates after its Promise ends"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "87",
+    "question": "How can you keep a persisted store in sync between two browser tabs?",
+    "options": [
+      "Call `subscribe` on the store in each tab, because it shares the memory of tabs",
+      "Listen to the window `storage` event and call `useStore.persist.rehydrate()`",
+      "Set `sync: true` in the `persist` options, and Zustand uses a BroadcastChannel",
+      "Use `skipHydration` in both tabs, and the browser merges the saved items"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "88",
+    "question": "A component calls `useStore.subscribe` in `useEffect` and ignores the return value. What is the risk?",
+    "options": [
+      "The listener stays after unmount, so it leaks memory and can run on old data",
+      "The listener runs two times for each change, because of the effect",
+      "The store removes the listener when the module reloads, so nothing leaks",
+      "React shows a warning in the console, and the listener stops at the next render of the component"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "89",
+    "question": "Is an inline selector like `(s) => s.items[props.id]` a performance problem in v5?",
+    "options": [
+      "No, the selector runs again at each render, and a render happens only if the result changes",
+      "Yes, because a new function makes the hook subscribe again, and the component renders again",
+      "Yes, because Zustand saves each selector in a cache that grows at every render",
+      "No, but only when you wrap the selector in `useCallback` first"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "90",
+    "question": "During hydration, which state does the Zustand hook give React as the server snapshot?",
+    "options": [
+      "An empty object until the hydration ends",
+      "The state that `getState` returns at that time",
+      "The state that `persist` reads from the storage",
+      "The state that `getInitialState` returns"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "91",
+    "question": "Which method tells you whether the `persist` middleware has finished hydration?",
+    "options": [
+      "`useStore.persist.getStatus()`",
+      "`useStore.persist.isReady()`",
+      "`useStore.persist.hasHydrated()`",
+      "`useStore.persist.isHydrated()`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "92",
+    "question": "In the slices pattern, how can an action in slice A read data of slice B?",
+    "options": [
+      "It reads a `slices` map that Zustand adds to the store",
+      "It imports the hook of slice B and calls it inside the action",
+      "It calls `subscribe` on slice B and waits for the first value",
+      "It calls `get()`, because all slices share one state object"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "93",
+    "question": "Two slices both define a key named `status`. You merge them with spread. What happens?",
+    "options": [
+      "Zustand throws an error at the creation of the store",
+      "Zustand makes a nested object that has both values",
+      "The slice that you spread later replaces the key of the first slice",
+      "The slice that you spread first keeps the key and wins"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "94",
+    "question": "`persist` does not save functions. Why do the actions still work after a rehydrate?",
+    "options": [
+      "The merge puts the saved data over the current state, which already has the actions",
+      "The storage keeps the source code of the functions as strings",
+      "Zustand makes the actions again from the `name` option at each load",
+      "`persist` saves the actions in a separate item with the suffix `-actions`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "95",
+    "question": "An action calls `set` three times. A vanilla `subscribe` listener is active. How many times does it run?",
+    "options": [
+      "Three times, but only when the values are different",
+      "One time, because Zustand batches all calls in one tick",
+      "One time, because React 18 batches the updates",
+      "Three times, one time for each call of `set`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "96",
+    "question": "A large team needs strict one-way data flow and an enforced log of actions. Which choice is right and why?",
+    "options": [
+      "Zustand, because its `set` function always makes a log of each change with the name of the caller",
+      "Redux, because it forces actions and reducers while Zustand lets code call `set` anywhere",
+      "Redux, because it has no boilerplate and needs fewer files than Zustand",
+      "Zustand, because it has a built-in rule for one-way data flow in the store"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "97",
+    "question": "Why do you keep a store from `createStore` in `useRef` inside a Provider?",
+    "options": [
+      "It makes the store update the components without any selectors",
+      "It stops the store from sending changes to other components",
+      "It makes one store instance that stays the same across renders",
+      "It lets the store save its state when the component unmounts"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "98",
+    "question": "Why does `create<State>(devtools(...))` lose the type of the middleware?",
+    "options": [
+      "The `devtools` middleware has no type definitions, so TypeScript uses `any` for the result",
+      "The `State` interface hides the type of the `set` function",
+      "TypeScript removes generic types when a function gets a function argument",
+      "TypeScript cannot infer the other type parameters when you give only some of them"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "99",
+    "question": "`subscribe(selector, listener)` with an array selector calls the listener at each `set`. What is the fix?",
+    "options": [
+      "Pass `{ equalityFn: shallow }` as the third argument",
+      "Call `subscribe` again after each change of the state",
+      "Add `fireImmediately: false` to the options of the call",
+      "Wrap the selector in `useMemo` before you call `subscribe`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "100",
+    "question": "A test calls `useStore.setState({ count: 0 }, true)`. What is `useStore.getState().increment` after it?",
+    "options": [
+      "A function that does nothing, because Zustand makes an empty action",
+      "The old function, because Zustand keeps all functions in the state",
+      "`undefined`, because the replace removes the actions from the state",
+      "The call throws an error, because `increment` is missing in the new state"
+    ],
+    "correct_index": 2
+  }
+]

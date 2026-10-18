@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What does Mantine provide for React apps?",
+    "options": [
+      "A required database layer",
+      "An Angular template compiler",
+      "A CSS preprocessing language",
+      "UI components and hooks"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "2",
+    "question": "Which package provides Mantine core components?",
+    "options": [
+      "@mantine/core",
+      "@mantine/dates",
+      "@mantine/form",
+      "@mantine/hooks"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "3",
+    "question": "What does MantineProvider configure?",
+    "options": [
+      "Theme and library context",
+      "Server API routes",
+      "Database connection pools",
+      "Application authentication"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "4",
+    "question": "What does createTheme help define?",
+    "options": [
+      "A new React renderer",
+      "An automatic design screenshot",
+      "A typed theme override",
+      "A server data cache"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "5",
+    "question": "What does Mantine's Styles API expose?",
+    "options": [
+      "Required DOM class hashes",
+      "Private browser rendering internals",
+      "Documented component style slots",
+      "Application network endpoints"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "6",
+    "question": "What does classNames map in the Styles API?",
+    "options": [
+      "Events to server handlers",
+      "Routes to component trees",
+      "Slot names to CSS classes",
+      "Token names to database keys"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "7",
+    "question": "What does styles map in the Styles API?",
+    "options": [
+      "Images to export formats",
+      "Slot names to style objects",
+      "Selectors to API responses",
+      "Props to browser permissions"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "8",
+    "question": "What does the component prop commonly change?",
+    "options": [
+      "The active theme palette",
+      "The rendered root element",
+      "The current form value",
+      "The portal target directory"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "9",
+    "question": "What does a Mantine Box provide?",
+    "options": [
+      "An automatic route outlet",
+      "A basic layout wrapper",
+      "A mandatory modal layer",
+      "A required form state store"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "10",
+    "question": "What does Stack arrange?",
+    "options": [
+      "Items vertically",
+      "Items in a carousel",
+      "Items by sorted name",
+      "Items in a fixed table"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "11",
+    "question": "What does Group arrange?",
+    "options": [
+      "Items horizontally",
+      "Items across browser tabs",
+      "Items by source file",
+      "Items in a tree"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "12",
+    "question": "What does SimpleGrid provide?",
+    "options": [
+      "A nested navigation tree",
+      "A server-side data table",
+      "A virtualized list",
+      "An equal-column grid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "13",
+    "question": "What does Grid.Col span describe?",
+    "options": [
+      "A number of viewport rows",
+      "A text character limit",
+      "A gap between list items",
+      "A share of the grid columns"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "14",
+    "question": "What does Container constrain?",
+    "options": [
+      "Content width",
+      "Component render count",
+      "Modal keyboard input",
+      "Form submission rate"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "15",
+    "question": "What does AppShell organize?",
+    "options": [
+      "Form validation rules",
+      "Remote API client methods",
+      "Browser storage entries",
+      "Application layout regions"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "16",
+    "question": "What does Paper provide?",
+    "options": [
+      "A navigation state store",
+      "A form submission hook",
+      "A styled surface",
+      "A numeric input parser"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "17",
+    "question": "What does Card.Section represent?",
+    "options": [
+      "A theme variable namespace",
+      "A nested portal container",
+      "A card content region",
+      "An independent application route"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "18",
+    "question": "What does ActionIcon provide?",
+    "options": [
+      "An automatic SVG registry",
+      "A read-only status image",
+      "An icon-only action control",
+      "A form error summary"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "19",
+    "question": "What must an icon-only ActionIcon receive?",
+    "options": [
+      "A numeric form value",
+      "A fixed tooltip delay",
+      "A second hidden button",
+      "An accessible name"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "20",
+    "question": "What does TextInput provide?",
+    "options": [
+      "A text entry control",
+      "A rich-text document model",
+      "A text translation service",
+      "A required search backend"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "21",
+    "question": "What does NumberInput support?",
+    "options": [
+      "Database integer validation",
+      "Numeric input interaction",
+      "Automatic unit conversion",
+      "Currency exchange fetching"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "22",
+    "question": "What does PasswordInput add?",
+    "options": [
+      "Automatic account creation",
+      "Password visibility interaction",
+      "Password hashing on the server",
+      "A password breach database"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "23",
+    "question": "What does Textarea support?",
+    "options": [
+      "A list of selected dates",
+      "A file upload directory",
+      "A numeric interval",
+      "Multiline text entry"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "24",
+    "question": "What does Select let users choose?",
+    "options": [
+      "An option from provided data",
+      "A database table column",
+      "An arbitrary application route",
+      "A font from the operating system"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "25",
+    "question": "What does MultiSelect represent?",
+    "options": [
+      "A range of numeric values",
+      "Several selected option values",
+      "One selected radio value",
+      "A pair of selected dates"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "26",
+    "question": "What does Combobox provide?",
+    "options": [
+      "An automatic remote search service",
+      "Building blocks for selection controls",
+      "Only a native HTML datalist",
+      "Only a fixed searchable select"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "27",
+    "question": "What does TagsInput allow?",
+    "options": [
+      "Rendering server log entries",
+      "Selecting a date range",
+      "Editing a table schema",
+      "Entering tag values"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "28",
+    "question": "What does Checkbox represent?",
+    "options": [
+      "An animation duration",
+      "A numeric measurement",
+      "A checked choice",
+      "A menu destination"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "29",
+    "question": "What does Radio.Group coordinate?",
+    "options": [
+      "An exclusive choice",
+      "A set of notifications",
+      "Independent checkbox states",
+      "A list of text inputs"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "30",
+    "question": "What does Switch represent?",
+    "options": [
+      "A date interval",
+      "A binary setting",
+      "A numeric range",
+      "A list of routes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "31",
+    "question": "What does Slider provide?",
+    "options": [
+      "A scroll position monitor",
+      "A list of variable modes",
+      "A carousel of image slides",
+      "Track-based numeric selection"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "32",
+    "question": "What does RangeSlider select?",
+    "options": [
+      "Two theme palettes",
+      "Two navigation routes",
+      "Two numeric bounds",
+      "Two radio options"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "33",
+    "question": "What does Modal present?",
+    "options": [
+      "A table filter",
+      "A tab trigger",
+      "A dialog layer",
+      "A tooltip label"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "What does Drawer present?",
+    "options": [
+      "A numeric input",
+      "A side panel",
+      "A progress meter",
+      "A dropdown option"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "35",
+    "question": "What does Popover present?",
+    "options": [
+      "A data validation schema",
+      "A mandatory page overlay",
+      "Anchored content",
+      "A full application route"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "36",
+    "question": "What does Tooltip supply?",
+    "options": [
+      "Required editable content",
+      "Brief explanatory text",
+      "A permanent error log",
+      "A complex action menu"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "37",
+    "question": "What does Menu present?",
+    "options": [
+      "Available actions",
+      "Application theme values",
+      "Editable form rows",
+      "Progress measurements"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "38",
+    "question": "What does Accordion organize?",
+    "options": [
+      "Collapsible sections",
+      "Browser history entries",
+      "Remote search results",
+      "Unrelated file uploads"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "39",
+    "question": "What does Tabs organize?",
+    "options": [
+      "A list of form errors",
+      "A set of modal backdrops",
+      "A numeric value range",
+      "Selectable content panels"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "40",
+    "question": "What does ScrollArea customize?",
+    "options": [
+      "The browser history length",
+      "Every window scroll event",
+      "A database result cursor",
+      "A scrollable region"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "41",
+    "question": "What does Skeleton indicate?",
+    "options": [
+      "An invalid application route",
+      "Content that is loading",
+      "A permanently disabled field",
+      "A successfully saved form"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "42",
+    "question": "What does LoadingOverlay cover?",
+    "options": [
+      "Only a text input label",
+      "Every browser window",
+      "Only a selected menu item",
+      "A region during pending work"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "43",
+    "question": "What does Notification display?",
+    "options": [
+      "A status message",
+      "A theme configuration file",
+      "A date selection grid",
+      "A form field group"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "44",
+    "question": "Which package provides useDisclosure?",
+    "options": [
+      "@mantine/dates",
+      "@mantine/charts",
+      "@mantine/hooks",
+      "@mantine/form"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "45",
+    "question": "What does useDisclosure manage?",
+    "options": [
+      "An opened boolean state",
+      "A collection of CSS rules",
+      "A user authentication token",
+      "A server request cache"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "46",
+    "question": "Which package provides useForm?",
+    "options": [
+      "@mantine/hooks",
+      "@mantine/notifications",
+      "@mantine/form",
+      "@mantine/core"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "47",
+    "question": "What does form.getInputProps provide?",
+    "options": [
+      "A fetched server response",
+      "A component export filename",
+      "Bindings for a form field",
+      "A generated CSS selector"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "48",
+    "question": "What does form.onSubmit wrap?",
+    "options": [
+      "Stylesheet compilation",
+      "Theme color generation",
+      "Browser route registration",
+      "Validation and submit handling"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "49",
+    "question": "Which package provides DatePicker?",
+    "options": [
+      "@mantine/core",
+      "@mantine/dates",
+      "@mantine/hooks",
+      "@mantine/dropzone"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "50",
+    "question": "What does Mantine's notifications system need in the tree?",
+    "options": [
+      "Its Notifications component",
+      "A new provider for each toast",
+      "A hidden input for every message",
+      "A native browser alert element"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "51",
+    "question": "A Mantine component looks unstyled despite correct JSX. What setup should the developer inspect?",
+    "options": [
+      "The server's database schema",
+      "Required stylesheet imports",
+      "The browser's saved bookmarks",
+      "The component's React key only"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "52",
+    "question": "A controlled Mantine Modal receives opened but state never changes in onClose. What happens?",
+    "options": [
+      "It becomes uncontrolled",
+      "It resets the global theme",
+      "It remains open",
+      "It removes its provider"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "53",
+    "question": "A Mantine Popover.Target wraps a custom component. What must that component forward?",
+    "options": [
+      "Only its background color",
+      "Its ref and received props",
+      "Only its display name",
+      "Only its text children"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "54",
+    "question": "A Mantine Menu.Target has two sibling children. What structural issue should review detect?",
+    "options": [
+      "The menu requires two root providers",
+      "The target expects one compatible element",
+      "The menu cannot render text labels",
+      "Every sibling becomes a new menu item"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "55",
+    "question": "A Mantine Button uses component=\"a\". What must navigation code still supply?",
+    "options": [
+      "A valid href",
+      "A checkbox value",
+      "A modal target ID",
+      "A progress percentage"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "56",
+    "question": "A Mantine text control must accept arbitrary input and show suggestions. Which component fits better than Select?",
+    "options": [
+      "Autocomplete",
+      "NativeSelect",
+      "Radio.Group",
+      "SegmentedControl"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "57",
+    "question": "A Mantine NumberInput emits an empty value while editing. What must the app's value model allow?",
+    "options": [
+      "Only integers greater than zero",
+      "A DOM element for each keystroke",
+      "Non-numeric intermediate states",
+      "Only the initial numeric default"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "58",
+    "question": "A Mantine Checkbox uses form.getInputProps. Which option requests checked-state bindings?",
+    "options": [
+      "mode: 'selected'",
+      "valueType: 'boolean'",
+      "type: 'text'",
+      "type: 'checkbox'"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "59",
+    "question": "A Mantine uncontrolled form updates a field programmatically. What supports refreshing the corresponding uncontrolled input?",
+    "options": [
+      "form.errors[path]",
+      "form.key(path)",
+      "form.getValues()",
+      "form.isDirty(path)"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "60",
+    "question": "A Mantine form reads values in uncontrolled mode. Which method obtains the current values?",
+    "options": [
+      "form.clearErrors()",
+      "form.resetDirty()",
+      "form.getTransformedValues only",
+      "form.getValues()"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "61",
+    "question": "A Mantine form has a nested user.email field. What identifies that field in its API?",
+    "options": [
+      "A dotted field path",
+      "A CSS descendant selector",
+      "A DOM parent element ID",
+      "A generated component hash"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "62",
+    "question": "A Mantine form submits while validation fails. What should its submit handler wrapper do?",
+    "options": [
+      "Automatically remove all required constraints",
+      "Convert invalid fields to hidden inputs",
+      "Ignore every error after one keystroke",
+      "Report errors instead of running success logic"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "63",
+    "question": "A Mantine dynamic field list changes order. Why should items have stable React keys?",
+    "options": [
+      "Force every input to remount",
+      "Remove all validation errors",
+      "Make all fields share one value",
+      "Preserve item identity"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "64",
+    "question": "A Mantine style change targets a component's inner label. Which mechanism is intended for that?",
+    "options": [
+      "Only the root style attribute",
+      "A copied generated class hash",
+      "The provider's children prop",
+      "Its documented Styles API slot"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "65",
+    "question": "A Mantine component needs hover styling. Which approach fits a CSS class-based customization?",
+    "options": [
+      "An onSubmit handler on the provider",
+      "A nested :hover in a plain React style object",
+      "A new theme provider per pointer event",
+      "A CSS selector in classNames styles"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "66",
+    "question": "A Mantine component uses size=\"lg\". Why might a custom inner element remain unchanged?",
+    "options": [
+      "Size rewrites all descendant inline styles",
+      "Size only changes the React component name",
+      "Size requires every child to use an icon",
+      "The size affects documented component styles"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "67",
+    "question": "A Mantine responsive style prop changes padding by breakpoint. What design should the developer preserve?",
+    "options": [
+      "The source object's insertion order only",
+      "One value from the current viewport only",
+      "The intended breakpoint-based values",
+      "The provider's React key only"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "68",
+    "question": "A Mantine tooltip wraps a disabled button. What browser limitation may require a wrapper?",
+    "options": [
+      "Disabled controls may not emit trigger events",
+      "Disabled buttons cannot contain text",
+      "Buttons lose all CSS custom properties",
+      "Tooltips require a new document root"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "69",
+    "question": "A Mantine LoadingOverlay covers a form. What must the app verify about keyboard users?",
+    "options": [
+      "Whether the overlay uses a gradient",
+      "Whether the form has a short filename",
+      "Whether every input uses equal widths",
+      "Whether controls remain interactable underneath"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "70",
+    "question": "A Mantine modal contains long content. What should the app test beyond its initial position?",
+    "options": [
+      "Scrolling and focus behavior",
+      "Only the source import order",
+      "Only the overlay's border width",
+      "Only the title's color token"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "71",
+    "question": "A Mantine theme changes primaryColor. What should a review check about a custom palette?",
+    "options": [
+      "Its name matches the page route",
+      "Its first color equals the background",
+      "Its shape matches the theme contract",
+      "Its values all use one string length"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "72",
+    "question": "A Mantine component needs default props across the app. Which theme configuration is intended for that?",
+    "options": [
+      "Component extend defaults",
+      "A new React context per prop",
+      "A global click event handler",
+      "A copied DOM class hash"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "73",
+    "question": "A Mantine Select needs server-filtered results. What must search integration avoid?",
+    "options": [
+      "Applying an unintended second local filter",
+      "Providing stable option identifiers",
+      "Passing labels with spaces",
+      "Using accessible input labels"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "74",
+    "question": "A Mantine popover appears behind another overlay. What should the developer inspect?",
+    "options": [
+      "Only the source file extension",
+      "Only the input's validation message",
+      "Portal placement and stacking contexts",
+      "Only the selected option label"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "75",
+    "question": "A Mantine DatePicker callback differs after upgrading from 7 to 8. Which value change must code account for?",
+    "options": [
+      "Dates become boolean values",
+      "Date strings replace Date objects",
+      "Dates become DOM calendar cells",
+      "Dates become Unix seconds only"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "76",
+    "question": "A Mantine Radio has label='Administrator' and value='admin'. Which value should its Radio.Group store?",
+    "options": [
+      "The visible label, Administrator",
+      "The option value, admin",
+      "The rendered radio DOM node",
+      "The index of the label text"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "77",
+    "question": "A Mantine Notifications API shows no toast. What should the app inspect first?",
+    "options": [
+      "The active accordion value",
+      "The popover's anchor reference",
+      "The mounted Notifications component",
+      "The current table page size"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "78",
+    "question": "A Mantine form resets after a successful save. What baseline should the app define?",
+    "options": [
+      "Only the input label color",
+      "The values and dirty-state policy",
+      "Only the server route name",
+      "Only the submit button width"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "79",
+    "question": "A Mantine Accordion uses multiple mode. What value shape represents open items?",
+    "options": [
+      "One comma-separated label",
+      "One numeric index only",
+      "An array of item values",
+      "A map of DOM nodes"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "80",
+    "question": "A Mantine Tabs panel uses a value that matches no tab. What is the likely integration error?",
+    "options": [
+      "The provider has too many children",
+      "Tab and panel identifiers disagree",
+      "The panel cannot contain form controls",
+      "The theme lacks a primary color"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "81",
+    "question": "A Mantine SSR app reads client-only color-scheme storage during initial render. What can break?",
+    "options": [
+      "Server-client markup agreement",
+      "The DatePicker import syntax",
+      "Every static CSS declaration",
+      "The form field name format"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "82",
+    "question": "A Mantine color-scheme setup updates only React state after paint. What user-visible issue should review address?",
+    "options": [
+      "A flash of the wrong scheme",
+      "A permanent loss of theme tokens",
+      "A required full-page navigation",
+      "A guaranteed memory leak"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "83",
+    "question": "A design system exposes Mantine private DOM selectors. What long-term coupling does this create?",
+    "options": [
+      "Dependence on internal markup",
+      "A ban on CSS Modules",
+      "A required server rendering strategy",
+      "A requirement for inline styles"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "84",
+    "question": "A Mantine wrapper changes the rendered root element. What TypeScript contract should it preserve?",
+    "options": [
+      "Only the original component display name",
+      "Props and ref type for that element",
+      "Only the theme's primary color name",
+      "Only the wrapper's filename extension"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "85",
+    "question": "A Mantine uncontrolled form loads data asynchronously. What initialization policy avoids overwriting later user edits?",
+    "options": [
+      "Reset all fields on every keystroke",
+      "Apply initial data at a defined ownership point",
+      "Copy server data after every render",
+      "Use changing list indexes as input keys"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "86",
+    "question": "A Mantine combobox virtualizes its options. What accessibility mapping must remain correct?",
+    "options": [
+      "Only the component's import alias",
+      "Only the dropdown's border radius",
+      "Only the server's request count",
+      "Active option IDs and rendered items"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "87",
+    "question": "A Mantine nested overlay portals outside its modal subtree. What integration should the app test?",
+    "options": [
+      "Only the font family of its title",
+      "Only the width of its close icon",
+      "Focus containment and dismissal interaction",
+      "Only the source map output path"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "88",
+    "question": "A Mantine AppShell header changes height at a breakpoint. What must content offsets stay synchronized with?",
+    "options": [
+      "Only the selected menu label",
+      "The actual configured layout regions",
+      "Only the initial server timestamp",
+      "Only the browser address bar height"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "89",
+    "question": "A Mantine theme provides CSS variables to one subtree. A portal renders elsewhere. What can fail?",
+    "options": [
+      "The React context always disappears",
+      "Inherited theme values and local overrides",
+      "All stylesheet imports stop loading",
+      "The component becomes a native iframe"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "90",
+    "question": "A Mantine searchable select starts several remote requests. What prevents an old response from replacing current results?",
+    "options": [
+      "Cancel or ignore stale requests",
+      "Accept whichever response finishes last",
+      "Append all historical options forever",
+      "Delay every response equally"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "91",
+    "question": "A Mantine form mixes uncontrolled inputs with independent controlled state for the same field. What is the architectural risk?",
+    "options": [
+      "The browser rejects every input name",
+      "The theme stops rendering labels",
+      "Two owners disagree about the value",
+      "The form loses all CSS classes"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "92",
+    "question": "A Mantine modal's trigger disappears during submission. What closing behavior requires an explicit fallback?",
+    "options": [
+      "The modal's title capitalization",
+      "The button's original icon export",
+      "The overlay's background opacity only",
+      "Useful focus restoration"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "93",
+    "question": "A Mantine custom variant changes contrast for several palettes. What review checks the real usability impact?",
+    "options": [
+      "Only the variant name's spelling",
+      "Rendered foreground-background combinations",
+      "Only the component source length",
+      "Only the count of theme keys"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "94",
+    "question": "A Mantine slider changes expensive visualization data continuously. What separation helps responsiveness?",
+    "options": [
+      "A network request before each thumb move",
+      "One synchronous redraw per pointer event",
+      "Fast input state and deferred heavy work",
+      "A forced remount on every value change"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "95",
+    "question": "A Mantine large form rerenders on every field change. What trade-off can uncontrolled mode offer?",
+    "options": [
+      "Guaranteed zero input latency",
+      "Automatic request cancellation",
+      "No need for field validation",
+      "Fewer state-driven form renders"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "96",
+    "question": "A Mantine rich-text extension loads on every route. What optimization should the team measure?",
+    "options": [
+      "Disabling all accessible labels",
+      "Importing every editor plugin globally",
+      "Repeating its stylesheet per component",
+      "Lazy loading the costly feature"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "97",
+    "question": "A Mantine custom theme adds semantic tokens. Which provider extension can expose corresponding CSS custom properties?",
+    "options": [
+      "A form validation resolver",
+      "An onColorSchemeChange handler only",
+      "A cssVariablesResolver mapping",
+      "A component displayName mapping"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "98",
+    "question": "A Mantine library upgrade changes a Styles API slot. What should the wrapper's compatibility tests cover?",
+    "options": [
+      "Only the package version string",
+      "Only the provider's children count",
+      "Its documented consumer styling hooks",
+      "Only the old generated class names"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "99",
+    "question": "A Mantine table displays a million server records. What belongs outside a basic visual table component?",
+    "options": [
+      "Data paging, sorting, and virtualization strategy",
+      "Only the table border color",
+      "Only the header label capitalization",
+      "Only the cell text font family"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "100",
+    "question": "A Mantine notification offers Undo for an action with delayed failure. What contract must application logic define?",
+    "options": [
+      "Only the animation easing curve",
+      "Only the toast's maximum width",
+      "Only the close icon color",
+      "Action state and server consistency"
+    ],
+    "correct_index": 3
+  }
+]

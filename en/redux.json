@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What is the Redux store?",
+  "options": [
+   "A browser database that saves the state of every mounted component",
+   "A function that turns actions into components",
+   "An object that holds the full state tree and lets you dispatch actions",
+   "A component that renders child state"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "2",
+  "question": "What is an action in Redux?",
+  "options": [
+   "A plain object with a `type` field",
+   "A function that changes the state of the store at once, without a reducer",
+   "A React hook that sends data from a component to the DOM",
+   "A class that holds the local state of one component in the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "3",
+  "question": "What does a reducer do?",
+  "options": [
+   "It reads the current state from the store and draws the result on the screen",
+   "It sends the action to the server and saves the response in the state",
+   "It listens to the store and changes the state in place after each action",
+   "It takes the current state and an action, and returns the next state"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "4",
+  "question": "Which rule must a reducer follow?",
+  "options": [
+   "It must change the old state object directly to save memory on each action",
+   "It must call the API first and then return the new state to the store",
+   "It must be pure: no side effects, and the same output for the same input",
+   "It must return a new random id inside each state that it makes"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "5",
+  "question": "How do you start a state change in Redux?",
+  "options": [
+   "Call `store.setState(newState)` with the next state",
+   "Change the object that `store.getState()` returns",
+   "Call `store.dispatch(action)`",
+   "Call the root reducer from the component directly"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "6",
+  "question": "What does `store.getState()` return?",
+  "options": [
+   "A list of all actions that the store got so far",
+   "A copy of the root reducer function of the store",
+   "A promise that resolves with the next state",
+   "The current state tree that the store holds right now"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "7",
+  "question": "What does `store.subscribe(listener)` do?",
+  "options": [
+   "It calls the listener before each reducer and can stop the dispatch",
+   "It calls the listener after each dispatch and returns an unsubscribe function",
+   "It adds a new reducer to the store and returns the new state",
+   "It runs the listener one time and then removes it at once"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "8",
+  "question": "What is an action creator?",
+  "options": [
+   "A middleware that makes actions from DOM events in the app",
+   "A class that creates a new store for each page",
+   "A function that returns the next state of the store",
+   "A function that returns an action object"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "9",
+  "question": "Which list shows the three Redux principles?",
+  "options": [
+   "Single source of truth, read-only state, changes made by components",
+   "Single source of truth, read-only state, changes made by pure functions",
+   "Single source of truth, mutable state, changes made by any function",
+   "Many stores, read-only state, changes made by pure functions"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "10",
+  "question": "Why must a reducer not change the state object in place?",
+  "options": [
+   "Reducers run in a worker thread that cannot access the old state of the store",
+   "Redux and React-Redux compare references, so a change in place can skip updates",
+   "The browser throws an error when any object changes in place in memory",
+   "The store freezes the state and a change in place throws a runtime error"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "11",
+  "question": "Which reducer line adds an item without changing the old state?",
+  "options": [
+   "`state.push(action.payload); return state`",
+   "`state[state.length] = action.payload; return state`",
+   "`return [...state, action.payload]`",
+   "`state.unshift(action.payload); return state`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "12",
+  "question": "What does `combineReducers` do?",
+  "options": [
+   "It makes one reducer that runs only on the first action that the store gets",
+   "It joins slice reducers into one root reducer, one for each key",
+   "It runs all reducers on the same slice and merges the results into one",
+   "It joins many stores into one store with a shared history of actions"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "13",
+  "question": "A reducer gets an action type that it does not know. What must it return?",
+  "options": [
+   "The current state, unchanged and with the same reference",
+   "`undefined`, so Redux uses the initial state again",
+   "A new empty object that replaces the whole state",
+   "`null`, to show that the action is not valid"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "14",
+  "question": "How does a reducer get its initial state?",
+  "options": [
+   "Redux calls a special `init()` method on the reducer at start",
+   "The store reads the initial state from `localStorage`",
+   "The first dispatched action must carry the initial state",
+   "A default value for the `state` parameter, such as `state = initialState`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "15",
+  "question": "In Redux 4.2 and later, what is the status of `createStore`?",
+  "options": [
+   "It is marked as deprecated, but it still works",
+   "It is renamed to `configureStore` and has the same API",
+   "It is removed and throws an error when you call it",
+   "It is the only way to make a store with middleware"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "What is `legacy_createStore`?",
+  "options": [
+   "A store factory that works only in the old browsers and in Node",
+   "A store factory that supports only a single reducer and no middleware",
+   "An alias of `createStore` without the deprecation mark",
+   "A new store factory that makes the state immutable for you"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "17",
+  "question": "What does the `Provider` component from React-Redux do?",
+  "options": [
+   "It wraps the root reducer and runs it again on each render",
+   "It fetches the initial state of the store from the server",
+   "It copies the state of the store into the props of each child",
+   "It makes the store available to all nested components"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "18",
+  "question": "What is the purpose of `useSelector`?",
+  "options": [
+   "To add a reducer to the store at run time",
+   "To read data from the store state in a function component",
+   "To make a new store inside a function component",
+   "To send an action to the store from a function component"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "19",
+  "question": "What does `useDispatch` return?",
+  "options": [
+   "The current state of the store, as a plain object",
+   "A new store that is made for the component",
+   "The `dispatch` function of the store, to send actions",
+   "A list of the actions that the component sent"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "20",
+  "question": "What is `connect` in React-Redux?",
+  "options": [
+   "A hook that links two stores to each other",
+   "A middleware that links the store to the server API",
+   "A higher-order component that links a component to the store",
+   "A function that links two reducers into one root reducer"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "21",
+  "question": "What is the job of `mapStateToProps`?",
+  "options": [
+   "It copies the props of the component into the store state",
+   "It picks data from the state and passes it to the component as props",
+   "It maps each state key to a DOM element of the page",
+   "It maps each action type to a reducer function"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "22",
+  "question": "What is middleware in Redux?",
+  "options": [
+   "Code that runs only one time when the store starts, before any action",
+   "Code that runs between the dispatch of an action and the reducer",
+   "Code that replaces the reducer for async actions in the store",
+   "Code that runs after the reducer and draws the new state on screen"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "23",
+  "question": "What does `redux-thunk` let you do?",
+  "options": [
+   "Change the state of the store without a reducer",
+   "Cancel an action that the store already processed",
+   "Dispatch an action to many stores at the same time",
+   "Dispatch a function, and not only an object, to run logic with `dispatch`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "Which arguments does a thunk function receive?",
+  "options": [
+   "`dispatch` and `getState`",
+   "`getState` and `subscribe`",
+   "`store` and `reducer`",
+   "`state` and `action`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "25",
+  "question": "What does `applyMiddleware` return?",
+  "options": [
+   "A store enhancer that adds the middleware to the store",
+   "A new action that holds the list of the middleware",
+   "A new reducer that runs the middleware on the state",
+   "A hook that runs the middleware in a component"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "26",
+  "question": "What can you do with Redux DevTools?",
+  "options": [
+   "Send actions to the server when the user is offline",
+   "Make the store faster with a cache of the state",
+   "Look at each action and state change, and go back in time",
+   "Edit the source code of reducers in the browser"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "27",
+  "question": "What is a selector?",
+  "options": [
+   "A component that shows one slice of the store and updates by itself",
+   "A function that takes an action and returns the next state",
+   "A function that takes the state and returns a part of it or derived data",
+   "A middleware that selects the actions to log for the DevTools"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "What is the `createSelector` function from `reselect` used for?",
+  "options": [
+   "To make a selector that updates the store when the data changes",
+   "To make a selector that saves its result in `localStorage`",
+   "To make a selector that runs at each dispatch without a cache",
+   "To make memoized selectors that calculate again only when the inputs change"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "29",
+  "question": "Where should you calculate a filtered list from the state?",
+  "options": [
+   "In the action creator, before the dispatch of the action",
+   "In the reducer, and save the list in the state also",
+   "In a selector, not in the store state",
+   "In the store, with a second call to `getState`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "30",
+  "question": "What is normalized state?",
+  "options": [
+   "Items are saved in one big array, in the order of the API response",
+   "Items are saved as strings in a flat JSON text",
+   "Items are saved by id in a lookup object, with a list of ids for the order",
+   "Items are copied in each slice that needs them"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "31",
+  "question": "Why do teams normalize the Redux state?",
+  "options": [
+   "To make the state serializable for the first time",
+   "To let reducers change the items in place",
+   "To remove the need for selectors in components",
+   "To avoid duplicate data and keep updates simple"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "32",
+  "question": "Which place is wrong for an API call?",
+  "options": [
+   "In a saga",
+   "In a reducer",
+   "In an event handler",
+   "In a thunk"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "Which three actions do teams often use for one async request?",
+  "options": [
+   "Create, update, and delete actions",
+   "Request, success, and failure",
+   "Load, render, and unmount events",
+   "Start, pause, and resume steps"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "34",
+  "question": "What is `redux-saga`?",
+  "options": [
+   "A library that makes reducers from JSON schemas",
+   "Middleware that handles side effects with generator functions",
+   "A tool that checks the types of actions at build time",
+   "A library that saves the state in a database"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "35",
+  "question": "What does `takeEvery` do in a saga?",
+  "options": [
+   "It waits for all actions and then starts one task",
+   "It starts a task for only the first matching action",
+   "It starts a task for each action that matches",
+   "It cancels the old task and starts a new one"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "What does the `put` effect do in a saga?",
+  "options": [
+   "It dispatches an action to the store",
+   "It reads a value from the state",
+   "It waits for the next action",
+   "It calls an async function"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "37",
+  "question": "What does the `call` effect do in a saga?",
+  "options": [
+   "It starts a task that runs in the background of the saga",
+   "It reads a value from the state of the store",
+   "It dispatches an action to the store at once",
+   "It describes a function call, so tests need no mock"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "38",
+  "question": "A form state is used by only one component. What is the best choice?",
+  "options": [
+   "Add a new Redux reducer and action types for it",
+   "Add a new saga that watches the form",
+   "Use local state inside that one component",
+   "Add a new middleware for the form"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "39",
+  "question": "Which kind of data should you keep in the Redux state?",
+  "options": [
+   "Plain serializable data, such as objects and arrays",
+   "DOM nodes of the components that are on the page",
+   "Class instances with methods and private fields",
+   "Promises and callback functions from the API layer of the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "When `store.dispatch(action)` returns, has the reducer already run?",
+  "options": [
+   "No, the reducer runs after the component renders",
+   "No, the reducer runs on the next tick of the event loop",
+   "Yes, but only if the action has a `payload` field",
+   "Yes, the reducer runs synchronously"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "41",
+  "question": "What is the `payload` field in an action?",
+  "options": [
+   "Only a convention; Redux does not require it",
+   "A field that holds the reducer name for the action",
+   "A field that Redux requires in each action",
+   "A field that Redux sets after the reducer runs"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "42",
+  "question": "What happens if a reducer calls `store.dispatch`?",
+  "options": [
+   "The action is ignored and Redux prints no message at all",
+   "The action runs at once, in a second copy of the store",
+   "Redux throws an error: reducers may not dispatch",
+   "The action waits until the current reducer ends, then runs"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "43",
+  "question": "Why do many teams define action type constants?",
+  "options": [
+   "To avoid typos and find all uses of a type",
+   "To make the actions run faster in the reducer code",
+   "To let Redux check the types of the payload at run time",
+   "To let the DevTools show the actions in the right order"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "44",
+  "question": "What is `mapDispatchToProps` used for?",
+  "options": [
+   "It reads the state and passes the values to the component as props",
+   "It adds the dispatch function to the list of store enhancers",
+   "It gives the component props that dispatch actions",
+   "It lists the reducers that the component can call directly"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "Why can Redux DevTools go back to an old state?",
+  "options": [
+   "Each component keeps its own history of props for the tool",
+   "The store keeps a full copy of the DOM for each action",
+   "Pure reducers and recorded actions let it replay them",
+   "The browser saves a snapshot of the memory for each dispatch"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "46",
+  "question": "Look at `{ ...state, count: 1 }`. How deep is the copy?",
+  "options": [
+   "Shallow: but the nested objects are copied one level deep",
+   "Shallow: nested objects keep the same references",
+   "Deep: all nested objects are copied also",
+   "Deep: but only arrays are copied, not plain objects"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "47",
+  "question": "What does `compose` do in Redux?",
+  "options": [
+   "It joins functions from right to left into one function",
+   "It joins reducers into one reducer that handles all the keys",
+   "It joins actions from one event into a single action object",
+   "It joins stores into one store with a common state tree"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "48",
+  "question": "When does `useSelector` re-render the component?",
+  "options": [
+   "When the selector function runs after an action, with any result",
+   "When the component gets new props from its parent",
+   "When the selected value changes by `===` comparison",
+   "When any part of the store state changes"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "49",
+  "question": "How many stores does a normal Redux app have?",
+  "options": [
+   "One store for each reducer in the app",
+   "One store for each component on the page",
+   "One store for each page route of the app",
+   "One store for the whole app"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "50",
+  "question": "What is the role of `getState` in a thunk?",
+  "options": [
+   "It reads the current state inside the thunk",
+   "It reads the previous action that the store processed",
+   "It changes the state without a dispatch of an action",
+   "It reads the state of another store in the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "51",
+  "question": "How do you connect Redux DevTools to a store made with `createStore`?",
+  "options": [
+   "Wrap the root component in a `DevTools` provider component",
+   "Pass `composeWithDevTools(applyMiddleware(...))` as the enhancer",
+   "Add `devtools: true` as a key of the root reducer object",
+   "Call `store.enableDevTools()` after the store starts"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "A store uses `applyMiddleware(a, b)`. In which order does a dispatched action pass the code?",
+  "options": [
+   "First the reducer, then `b`, and last `a`",
+   "First `a`, then `b`, then the reducer",
+   "First `b`, then `a`, and last the reducer",
+   "First `a` and `b` at the same time, then the reducer"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "53",
+  "question": "A reducer does `state.items.push(item); return state;`. The UI does not update. Why?",
+  "options": [
+   "The `push` method is not allowed in a reducer in strict mode",
+   "The component must call `forceUpdate` after each dispatch",
+   "The reducer must return a new `type` field with the state",
+   "The reference stays the same, so the change is not seen"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "54",
+  "question": "In React-Redux 8, this selector returns a new object each time:\n`useSelector(s => ({ a: s.a, b: s.b }))`\nWhat is the effect?",
+  "options": [
+   "The component re-renders only when `a` and `b` both change",
+   "The selector throws an error at the first render",
+   "It re-renders after each dispatch, because `===` fails",
+   "The component never re-renders, because Redux caches the object"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "55",
+  "question": "How can you fix the selector `s => ({ a: s.a, b: s.b })` without `reselect`?",
+  "options": [
+   "Wrap the returned object in `JSON.stringify` inside the selector",
+   "Use two `useSelector` calls, or pass `shallowEqual`",
+   "Call `store.getState()` inside the component body",
+   "Use `useDispatch` to read `a` and `b` from the store"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "56",
+  "question": "When does a `createSelector` selector calculate its output again?",
+  "options": [
+   "When any value in the whole state changes at all",
+   "When the component that calls the selector re-renders",
+   "When the result of an input selector changes by reference",
+   "When the selector is called two times with the same arguments"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "In `reselect` 4, many list items call one shared `createSelector` selector with different ids. What is the problem?",
+  "options": [
+   "The selector saves all results and the memory grows without limit",
+   "The selector throws an error when it gets different ids",
+   "The selector returns the result for the first id for all items",
+   "The cache holds one result, so a new id recalculates"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "58",
+  "question": "`mapStateToProps` uses `state.todos.filter(t => !t.done)`. What is the effect in `connect`?",
+  "options": [
+   "It re-renders only when a todo changes its `done` field and the list changes",
+   "It returns a new array each time, so it re-renders after each state change",
+   "It returns a cached array by default, so the component never re-renders",
+   "It throws an error, because `filter` is not allowed in this function"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "59",
+  "question": "The app shows: Reducer returned undefined during initialization. What is the cause?",
+  "options": [
+   "An action has a `type` field that is longer than 100 characters",
+   "A reducer returns an object that has a nested array in it",
+   "A reducer returns `undefined` for an unknown action",
+   "The root reducer has more than ten slice reducers inside"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "60",
+  "question": "What decides the shape of the state tree when you use `combineReducers({ a, b })`?",
+  "options": [
+   "The keys of the object that you pass to it",
+   "The names of the reducer functions that you import",
+   "The first action that the store gets after it starts",
+   "The order of the reducers in the source file"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "61",
+  "question": "A thunk is `() => async dispatch => { await api() }`. How do you wait for it to end?",
+  "options": [
+   "Subscribe to the store and wait for the next change of state",
+   "Call `store.getState()` in a loop until the data is in the state",
+   "Add `.then` to the action creator, and not to the dispatch call",
+   "`await store.dispatch(thunk())`, because dispatch returns what the thunk returns"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "62",
+  "question": "Two requests start in order A, B, but A ends last. The UI shows data from A. What is a good fix?",
+  "options": [
+   "Make the reducer wait one second before it saves data",
+   "Dispatch the success action two times for each response",
+   "Call `getState` after each response and compare the length",
+   "Ignore the old response, for example with a request id"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "63",
+  "question": "What is the difference between `takeLatest` and `takeEvery`?",
+  "options": [
+   "`takeLatest` cancels the old task when a new action comes",
+   "`takeLatest` ignores new actions while a task is still running",
+   "`takeLatest` runs tasks in a queue, one task after the other",
+   "`takeLatest` runs only for the last action that the store gets"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "64",
+  "question": "When is a saga a better choice than a thunk?",
+  "options": [
+   "When the flow is one simple API call with a loading flag",
+   "When the flow needs cancel or debounce",
+   "When you want to avoid generator functions in the code",
+   "When you want to dispatch a plain object from a component"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "65",
+  "question": "Why do sagas use `call(api, id)` and not `api(id)`?",
+  "options": [
+   "`call` runs the function in a separate thread of the browser",
+   "`call` returns a plain description that a test can check",
+   "`call` catches all errors and hides them from the parent saga",
+   "`call` makes the request run faster than a direct function call"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "66",
+  "question": "Which action name follows the Redux style guide best?",
+  "options": [
+   "`userClickedSave`, an event that describes what happened",
+   "`doSaveUser`, a command that runs a side effect",
+   "`SAVE`, a short name with no extra detail",
+   "`setSavedToTrue`, a setter that tells the reducer what to do"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "67",
+  "question": "A team saves `filteredTodos` in the state, next to `todos`. What is the risk?",
+  "options": [
+   "The reducer cannot read two keys in one action",
+   "The two values can drift apart",
+   "The store cannot save two arrays at the same time",
+   "The selector cannot read a key that has a derived name"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "68",
+  "question": "A user changes the name of an author. The state is normalized by id. How many places change?",
+  "options": [
+   "Every page that shows this author",
+   "One place: the author entity in the state",
+   "Every book that has this author",
+   "The list of ids and each book"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "A team saves a `Date` object in the state. What problem can come?",
+  "options": [
+   "The selector cannot read a key that has a date value",
+   "The store throws an error at the first dispatch of it",
+   "The reducer cannot copy it with the spread operator",
+   "It is not serializable, so persist can break"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "70",
+  "question": "A component reads `store.getState()` directly in render. What is the risk?",
+  "options": [
+   "It changes the state when it reads it",
+   "It re-renders after each action, even if the state is the same",
+   "It does not subscribe, so it misses state changes",
+   "It works only if the store has middleware"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "71",
+  "question": "What does `next(action)` do in a middleware?",
+  "options": [
+   "It waits for the next action and merges it with this one",
+   "It passes the action on to the next middleware or the reducer",
+   "It returns the next state without calling the reducer",
+   "It sends the action again to the first middleware in the chain"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "72",
+  "question": "A logging middleware does not call `next(action)`. What happens?",
+  "options": [
+   "The action stops there, and the state does not change",
+   "Redux calls `next` for you after the middleware ends",
+   "The action reaches the reducer two times",
+   "The action reaches the reducer, but the logger does not print it"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "73",
+  "question": "When do you pass a second argument to `createStore(reducer, preloadedState)`?",
+  "options": [
+   "To limit how many actions the store can process in one second",
+   "To set the name that the DevTools show for the store",
+   "To add a second reducer to the store at run time",
+   "To start the store with saved state, such as server data"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "74",
+  "question": "`createStore(root, { x: 1 })` is called, but `root` has no `x` key. What does Redux do?",
+  "options": [
+   "It warns about the unexpected key and ignores it",
+   "It adds a reducer for `x` that returns the value `1`",
+   "It saves `x` in the state and passes it to all reducers",
+   "It throws an error and stops the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "A team uses `redux-persist`. They rename a state key and release the app. What is the risk?",
+  "options": [
+   "The store refuses to start until the storage is empty",
+   "The old data is always merged correctly with the new keys",
+   "Redux deletes all saved data on its own at the next start",
+   "Old saved data has the old shape; a migration is needed"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "76",
+  "question": "Two slices must both react to a `logout` action. How do you do this?",
+  "options": [
+   "Send the action two times, once for each slice",
+   "Handle the same action type in both reducers",
+   "Create a separate store for each slice",
+   "Call one reducer from inside the other reducer"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "77",
+  "question": "How can the root reducer reset the whole state on `logout`?",
+  "options": [
+   "Pass `undefined` as state to the reducers on `logout`",
+   "Delete the keys of the state object inside the root reducer",
+   "Return `null` from the root reducer for the `logout` action",
+   "Call `store.replaceState({})` from a component on logout"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "78",
+  "question": "How do you test a reducer in the easiest way?",
+  "options": [
+   "Mock the `dispatch` function and count the calls",
+   "Call `reducer(state, action)` and check the result",
+   "Run the reducer inside a saga and wait for the result",
+   "Make a full store and render the app in a browser"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "Is the identity of the `dispatch` function from `useDispatch` stable between renders?",
+  "options": [
+   "Yes, but only if you wrap the dispatch call in `useCallback`",
+   "No, it changes when the state of the store changes",
+   "Yes, so you can safely put it in a dependency array",
+   "No, it is a new function in each render of the component"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "80",
+  "question": "What is `store.replaceReducer(nextReducer)` mostly used for?",
+  "options": [
+   "Code splitting and hot reloading of reducers",
+   "Resetting the state of the store to the initial state",
+   "Changing the state of the store without an action",
+   "Switching between two stores at run time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "81",
+  "question": "In React 18, a click handler calls `dispatch` two times. How many renders do you expect?",
+  "options": [
+   "Two, because each dispatch makes its own separate render pass",
+   "Usually one, because React batches updates in a handler",
+   "One for each subscribed component, one after the other",
+   "Zero, because React waits for the next user event to start"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "82",
+  "question": "Why does React-Redux 8 use `useSyncExternalStore`?",
+  "options": [
+   "To avoid tearing between parts of the UI in concurrent rendering",
+   "To remove the need for the `Provider` component in the whole component tree",
+   "To make the reducers run in a separate worker thread of the browser",
+   "To let selectors return a new object without any extra renders"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "83",
+  "question": "An input selector for `createSelector` is `s => s.items.filter(isActive)`. What is the problem?",
+  "options": [
+   "It reads the state two times, which `reselect` does not allow",
+   "It runs only one time, so the result never changes after that",
+   "It must return a string, or the output selector fails at run time",
+   "It returns a new array each time, so the memoization never works"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "84",
+  "question": "A list has 5,000 rows. Each row needs its item to avoid a full list re-render. What is the best pattern?",
+  "options": [
+   "Read the full list in the parent and wrap each row with `memo`",
+   "Pass the full list to each row and find the item with `find`",
+   "Pass the id, and let each row call `useSelector` for its item",
+   "Call `store.getState()` in each row and skip `useSelector`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "85",
+  "question": "A store has the thunk and the logger middleware. Which order shows plain actions in the logger?",
+  "options": [
+   "The order does not change what the logger sees",
+   "Put the logger first, so it sees the thunk functions",
+   "Put the thunk first, so the logger gets the plain actions",
+   "Put the logger last, so it receives the plain actions twice"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "86",
+  "question": "How do you build an optimistic update in classic Redux?",
+  "options": [
+   "Apply the change now, and undo it if the request fails",
+   "Dispatch the failure action first and the request action later",
+   "Wait for the server, then apply the change in the reducer",
+   "Apply the change in a selector, not in the state"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "87",
+  "question": "A selector joins `books` with `authors` and returns new objects each time. How do you stop extra renders?",
+  "options": [
+   "Memoize the join with `createSelector` on the entity maps",
+   "Use `JSON.stringify` on the result in each render",
+   "Save the joined objects in the state in each reducer",
+   "Call the selector inside `useEffect` and keep the result in local state"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "A team puts each keystroke of a text field into Redux. What is a main cost?",
+  "options": [
+   "Each keystroke runs all active selectors",
+   "Redux cannot process more than ten actions in one second",
+   "The reducer must be async to save the text of the field",
+   "The DevTools stop the app after 50 recorded actions"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "89",
+  "question": "Why is hand-written Redux code for server data often a poor fit?",
+  "options": [
+   "Redux blocks the UI while the request is pending",
+   "Redux cannot process data in the JSON format",
+   "You must write cache and loading logic yourself",
+   "Redux cannot hold data that came from an HTTP request"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "90",
+  "question": "A reducer uses `Date.now()` to set a field. What does this break?",
+  "options": [
+   "Purity: replay and time travel give different results",
+   "Nothing, because `Date.now()` always returns an integer",
+   "The state can no longer be passed to `combineReducers`",
+   "The type checks of the action fail at run time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "In a saga, what is the main difference between `fork` and `call`?",
+  "options": [
+   "`fork` does not block the caller, and `call` waits until the task ends",
+   "`fork` runs the task in a separate thread, and `call` in the main thread",
+   "`fork` waits until the task ends, and `call` does not block the caller",
+   "`fork` can call only a generator, and `call` only a plain function"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "92",
+  "question": "A saga task is cancelled by `takeLatest`. How can the task run clean-up code?",
+  "options": [
+   "Dispatch a `CANCEL` action from the reducer",
+   "Catch the error that `takeLatest` throws into the task",
+   "Return a clean-up function from the saga, as in `useEffect`",
+   "Use `finally` with the `cancelled()` effect"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "93",
+  "question": "When no slice changes, what does the reducer from `combineReducers` return?",
+  "options": [
+   "A frozen copy of the previous state",
+   "`undefined`, so the store keeps the old state",
+   "A new object with the same values",
+   "The same state object reference as before"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "94",
+  "question": "A store has many `useSelector` calls. What work does each dispatch cause?",
+  "options": [
+   "Every active selector runs again after each dispatch",
+   "Each component re-renders until the selector throws an error",
+   "The reducer runs one time for each `useSelector` call",
+   "Redux copies the whole state tree for each subscriber"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "95",
+  "question": "What is the difference between a middleware and a store enhancer?",
+  "options": [
+   "A middleware wraps the whole store; an enhancer wraps only the reducer",
+   "A middleware runs after the reducer; an enhancer runs before the reducer",
+   "A middleware is for async code; an enhancer is for sync code",
+   "A middleware wraps `dispatch`; an enhancer wraps the whole store"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "96",
+  "question": "Inside a middleware, what is the difference between `store.dispatch(a)` and `next(a)`?",
+  "options": [
+   "`store.dispatch` goes to the reducer; `next` goes to the first middleware",
+   "`dispatch` restarts at the first middleware; `next` moves on",
+   "`store.dispatch` is async and `next` is sync, but both reach the reducer",
+   "They are the same; `next` is only a shorter name for it"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "97",
+  "question": "A reducer sets `state.a.b.c = 5` in an immutable way. Which objects must it copy?",
+  "options": [
+   "Only `b`, because Redux updates the parent objects for you",
+   "Every object in the whole state tree, to be safe",
+   "Only `state`, because it holds all the other objects",
+   "`state`, `a`, and `b`; the other objects stay the same"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "98",
+  "question": "A Node server renders pages with Redux. What is the right way to make the store?",
+  "options": [
+   "Make one store at module level and reuse it for all requests",
+   "Make one store for each server process and reset it at midnight",
+   "Save the store in a global variable and clear it after each page",
+   "Make a new store for each request, to avoid shared state"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "99",
+  "question": "A dashboard has many widgets that share data and change in complex ways. Which choice fits Redux best?",
+  "options": [
+   "Use Redux, but only if each widget has its own store",
+   "Do not use Redux, because it supports only small forms",
+   "Do not use Redux, because shared state needs `localStorage`",
+   "Use Redux for one traceable flow of shared state"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "What is the curried shape of a Redux middleware function?",
+  "options": [
+   "`action => next => store => result`",
+   "`store => next => action => result`",
+   "`next => store => action => result`",
+   "`(state, action) => nextState`"
+  ],
+  "correct_index": 1
+ }
+]

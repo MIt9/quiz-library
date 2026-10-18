@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What is server-side rendering (SSR)?",
+    "options": [
+      "The browser builds all HTML from JavaScript after it loads an empty HTML page and fetches the data.",
+      "The server builds the HTML of a page for each request and sends it to the browser.",
+      "The build tool makes all HTML files one time before the site goes live, and the server only sends them.",
+      "The CDN builds the HTML from JSON files at the edge on each new visit without any server code."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "2",
+    "question": "What is client-side rendering (CSR)?",
+    "options": [
+      "The server sends complete HTML for each request, and the browser only shows it without any script.",
+      "The build tool creates static HTML for each route before the deployment and uploads the files.",
+      "The browser asks the server for a new full HTML page on every click and replaces the old page.",
+      "The browser runs JavaScript to build the content after it gets an almost empty HTML file."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "3",
+    "question": "What is one main SEO benefit of SSR compared with pure CSR?",
+    "options": [
+      "Crawlers get the full content in the first HTML without running JavaScript.",
+      "The server hides the page content from crawlers, so only human users can read the text.",
+      "Search engines always give a higher rank to every site that runs a server for its pages.",
+      "SSR pages load faster than all other page types, so the rank is always higher in search."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "4",
+    "question": "What is hydration in an SSR application?",
+    "options": [
+      "The server fills the HTML with data from the database before it sends the page to the browser.",
+      "Client JavaScript attaches event handlers and state to the HTML from the server.",
+      "The CDN keeps a copy of the HTML and gives it to the next visitor without a call to the origin.",
+      "The browser removes the server HTML and builds the whole page again from nothing with new nodes."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "5",
+    "question": "When is an SSR page visible but not yet interactive?",
+    "options": [
+      "After the server gets the request and before it sends the first byte.",
+      "After the user clicks a link and before the server sends the new HTML.",
+      "After the build ends and before the server process starts.",
+      "After the HTML shows in the browser and before the hydration ends."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "6",
+    "question": "What does TTFB mean?",
+    "options": [
+      "Time To First Button: the time until the first button on the page can react to a click.",
+      "Time To Full Build: the time the build tool needs to make the server bundle for production.",
+      "Time To First Byte: the time from the request until the first response byte arrives.",
+      "Time To Fetch Body: the time the server needs to get all the data from the API."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "7",
+    "question": "Which React function renders a component to an HTML string on the server?",
+    "options": [
+      "`hydrateRoot` from `react-dom/client` with the root node",
+      "`createRoot` from `react-dom/client` with the root node",
+      "`flushSync` from `react-dom` with a callback",
+      "`renderToString` from `react-dom/server`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "8",
+    "question": "Which React function attaches a React app to HTML that the server made?",
+    "options": [
+      "`renderToString`",
+      "`createRoot`",
+      "`hydrateRoot`",
+      "`createPortal`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "9",
+    "question": "An SSR build fails with \"window is not defined\" for `window.innerWidth`. Why?",
+    "options": [
+      "The server runs in strict mode, which blocks all global variables.",
+      "The bundler removes `window` from all production builds.",
+      "The browser blocks the access to `window` before hydration ends.",
+      "Node.js has no `window` object, so the code fails on the server."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "10",
+    "question": "Where is it safe to read `window` in a React component for SSR?",
+    "options": [
+      "Inside `useEffect`, because effects run only in the browser.",
+      "In the component body, because React gives a fake `window` on the server.",
+      "Inside `useMemo`, because it runs only after the first paint.",
+      "In the `return` statement, because JSX is evaluated only in the browser."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "11",
+    "question": "What is a hydration mismatch?",
+    "options": [
+      "The client bundle has a different version than the server bundle in the CDN.",
+      "The server HTML is different from what the client renders in its first pass.",
+      "The server HTML arrives after the client JavaScript has already run in the browser.",
+      "The hydration runs two times because two root elements have the same id."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "12",
+    "question": "Why does `<p>{Math.random()}</p>` cause a hydration mismatch?",
+    "options": [
+      "`Math.random` is not available in Node.js, so the server renders nothing for that node.",
+      "React cannot render numbers inside `p` tags, so the client throws an error during hydration.",
+      "The server and the client make different random values in the same render.",
+      "`Math.random` is async, so the server sends the HTML before the value is ready."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "13",
+    "question": "A component renders a `<div>` inside a `<p>`. What can happen in SSR?",
+    "options": [
+      "The server stops with an error and sends a 500 response to the browser.",
+      "The browser fixes the HTML tree, and React can report a hydration error.",
+      "React moves the `div` outside the `p` tag before it sends the HTML to the browser.",
+      "The browser ignores the `div` tag and shows only its text inside the paragraph."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "14",
+    "question": "What is streaming SSR?",
+    "options": [
+      "The browser downloads all JavaScript files in parallel before it renders the first frame.",
+      "The server sends a video stream of the page to the browser as a live picture.",
+      "The server keeps a WebSocket open and sends new HTML after each data change.",
+      "The server sends the HTML in chunks while it renders the rest of the page."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "15",
+    "question": "Which React API gives streaming SSR in Node.js?",
+    "options": [
+      "`renderToPipeableStream` from `react-dom/server`",
+      "`renderToString` from `react-dom/server`",
+      "`renderToStaticMarkup` from `react-dom/server`",
+      "`hydrateRoot` from `react-dom/client`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "16",
+    "question": "Which React component shows a fallback while part of the page is not ready?",
+    "options": [
+      "`StrictMode`",
+      "`Fragment`",
+      "`Suspense`",
+      "`Profiler`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "17",
+    "question": "What is selective hydration?",
+    "options": [
+      "React hydrates only the components that have a `key` prop and skips all other components.",
+      "React hydrates the page one time on the server before it sends the HTML to the client.",
+      "React skips the hydration for all components that do not use state or effects.",
+      "React hydrates parts of the page on their own and starts with the part the user clicks."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "18",
+    "question": "What problem does streaming solve for a page with one slow data source?",
+    "options": [
+      "The fast parts of the page show first, and the slow part does not block them.",
+      "The slow data source becomes faster because the server caches the data for each user.",
+      "The browser does not need JavaScript to show the slow part of the page after the first paint.",
+      "The server skips the slow data source after a timeout of one second and drops the data."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "19",
+    "question": "Where does the data fetch for the first render happen in SSR?",
+    "options": [
+      "In the browser, after the hydration ends and the first click happens.",
+      "In the build step, one time for all users before the deploy.",
+      "On the CDN, when it caches the HTML for the next visitor.",
+      "On the server, before or during the HTML render."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "20",
+    "question": "How can the client avoid a second request for data that the server already fetched?",
+    "options": [
+      "It sends the same request again and compares the result with the HTML.",
+      "It reads the data from serialized state that the server put in the HTML.",
+      "It asks the CDN to add the data to the response headers of the next page.",
+      "It reads the data from the server memory through a shared variable in the page."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "21",
+    "question": "How does an SSR framework often pass the server state to the client?",
+    "options": [
+      "It puts serialized JSON in a `<script>` tag in the HTML.",
+      "It writes the state to `localStorage` from the server.",
+      "It uses a memory object that the server and the browser share.",
+      "It sends the state in a cookie with the `HttpOnly` flag."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "22",
+    "question": "What security problem can occur if you put JSON in a `<script>` tag without escaping?",
+    "options": [
+      "Cross-site request forgery (CSRF), because the token becomes public in the page.",
+      "SQL injection, because the database reads the script tag in the response.",
+      "Clickjacking, because the page can load in a hidden frame on another site.",
+      "Cross-site scripting (XSS), for example if the data contains `</script>`."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "23",
+    "question": "Which request header carries the cookies to the server during SSR?",
+    "options": [
+      "`Set-Cookie`",
+      "`Cookie`",
+      "`Cache-Control`",
+      "`Referer`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "24",
+    "question": "The SSR server calls an internal API for the user data. What must it do with the cookie?",
+    "options": [
+      "Forward the cookie from the incoming request to the API call.",
+      "Read the cookie from `document.cookie` in the component before the render.",
+      "Keep the cookie in a global variable and reuse it for all next requests.",
+      "Nothing, because Node.js `fetch` adds the browser cookies by itself on each call."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "25",
+    "question": "Why can the server not use a token from `localStorage` to render a user page?",
+    "options": [
+      "The browser deletes `localStorage` when the server sends the HTML to the page.",
+      "The server cannot read `localStorage`, which exists only in the browser.",
+      "`localStorage` works only on `https` origins, and the server uses `http` inside the network.",
+      "`localStorage` is encrypted, so only the browser code of the same site can decode it."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "26",
+    "question": "Why is an `HttpOnly` cookie useful for auth in an SSR app?",
+    "options": [
+      "The browser sends it to the server, but page JavaScript cannot read it.",
+      "The browser sends it only to the CDN and not to the origin server of the site.",
+      "JavaScript can read it, so the client can add it to each API call by hand.",
+      "The server can read it only after the hydration ends in the browser."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "27",
+    "question": "Why can an SSR page have a higher TTFB than a static page?",
+    "options": [
+      "The browser must download all JavaScript before it asks for the HTML document.",
+      "The CDN always compresses the HTML again on each request before it replies.",
+      "The server must fetch data and render the HTML before the first byte.",
+      "The server must wait for the browser to finish hydration before it replies."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "28",
+    "question": "What does LCP mean in web performance?",
+    "options": [
+      "Longest CPU Pause: the longest time that the main thread is busy with one task.",
+      "Latest Click Processing: the time of the last click response on the page.",
+      "Layout Change Percentage: the amount of layout shift on the page during the load.",
+      "Largest Contentful Paint: the time the largest visible content element renders."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "29",
+    "question": "How can SSR improve LCP compared with CSR?",
+    "options": [
+      "The server moves all JavaScript files to the end of the HTML and uses the `defer` flag.",
+      "The server compresses the images, so the largest image is smaller on the screen.",
+      "The browser skips the layout step for HTML that comes from the server and paints at once.",
+      "The browser shows the main content from the first HTML, with no wait for JavaScript."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "30",
+    "question": "Pages are the same for all users. How can a team lower the load on the SSR server?",
+    "options": [
+      "Cache the HTML in a CDN with a `Cache-Control` header.",
+      "Move all rendering to the browser with CSR and drop the server.",
+      "Add more `useMemo` calls to every component of the page.",
+      "Increase the size of the JavaScript bundle for each route."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "31",
+    "question": "Which `Cache-Control` value lets a shared CDN cache a page for 60 seconds?",
+    "options": [
+      "`no-store, max-age=60`",
+      "`private, max-age=60`",
+      "`public, s-maxage=60`",
+      "`max-age=0, must-revalidate`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "32",
+    "question": "Why is it dangerous to cache user-specific SSR HTML in a shared CDN?",
+    "options": [
+      "The CDN cannot store HTML that is larger than one kilobyte.",
+      "One user can get a page that has the data of another user.",
+      "The server must render the page again for the CDN every second.",
+      "The browser cache then ignores the cookies of all users."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "33",
+    "question": "What does the `Vary: Cookie` response header tell a cache?",
+    "options": [
+      "Do not store the response in any cache in any case.",
+      "Remove the cookies from the request before it stores the response.",
+      "Store a separate copy of the response for each different `Cookie` value.",
+      "Send the cookie to the origin only one time for each user."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "What is a main cost of SSR compared with static hosting?",
+    "options": [
+      "You must run and scale a server that renders pages for each request.",
+      "The page cannot contain any JavaScript on the client at all.",
+      "The HTML cannot be indexed by search engines without an extra tool.",
+      "The browser cannot cache the JavaScript files of the application."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "35",
+    "question": "Why do social preview bots often show wrong data for a CSR-only page?",
+    "options": [
+      "These bots block all pages that use React or any other client library.",
+      "These bots read only the `robots.txt` file and never read the page HTML.",
+      "Many of them do not run JavaScript, so they read only the first HTML.",
+      "These bots cache each page for one year and never fetch it again later."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "36",
+    "question": "What is a shared-state risk in an SSR Node.js server?",
+    "options": [
+      "Each request starts a new Node.js process, so the memory use grows very fast.",
+      "A module-level variable resets after each request, so the state is lost for the user.",
+      "A module-level variable lives for all requests, so users can see each other's data.",
+      "Node.js blocks the access to module-level variables inside all request handlers."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "37",
+    "question": "A teammate makes the store a module-level singleton in an SSR app. What is the fix?",
+    "options": [
+      "Create a new store instance for each request.",
+      "Move the store to `localStorage` so the server can read it.",
+      "Freeze the store with `Object.freeze` so no one can change it.",
+      "Create the store one time and reset it at the end of each hour."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "38",
+    "question": "What is an island in islands architecture?",
+    "options": [
+      "A server process that renders one page for one user and then stops after the reply.",
+      "A CSS scope that stops styles from leaking out of a component into the page.",
+      "An interactive component on a static HTML page that hydrates on its own.",
+      "A cache zone in the CDN that keeps the pages for the users of one country."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "39",
+    "question": "What is the main benefit of islands architecture?",
+    "options": [
+      "The server needs no render step, because the pages are built in the browser at runtime.",
+      "The browser runs less JavaScript, because only the interactive parts are hydrated.",
+      "All components share one global state without any extra code or any store library.",
+      "The page does not need HTML, because the islands are written in JavaScript only."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "40",
+    "question": "Which tool uses islands architecture with partial hydration by default?",
+    "options": [
+      "Create React App",
+      "Astro",
+      "The default Vite React template",
+      "The default Angular CLI project"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "41",
+    "question": "What is edge rendering?",
+    "options": [
+      "The browser renders the HTML at the edge of the screen with a canvas.",
+      "The code that renders the HTML runs on nodes that are close to the user.",
+      "The build tool renders all pages in the cloud one time for each deploy.",
+      "The CDN keeps the HTML at the edge and never calls the origin."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "42",
+    "question": "What is a typical limit of an edge runtime?",
+    "options": [
+      "It cannot send an HTTP response that is larger than one kilobyte to a client.",
+      "It can run only code that has no `async` functions or any network call.",
+      "It needs a database in the same region as the node, or the code always fails.",
+      "It has fewer Node.js APIs and less CPU time and memory than a server."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "43",
+    "question": "Which statement about SSR and the JavaScript bundle is true?",
+    "options": [
+      "The browser still downloads the component JavaScript to hydrate the page.",
+      "The server sends the component code only after the user clicks on the page.",
+      "The browser needs no JavaScript for the SSR page to be interactive at all.",
+      "The bundle is smaller, because the server runs all the components for the user."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "44",
+    "question": "Why can SSR help users on slow phones?",
+    "options": [
+      "The server sends the phone a smaller JavaScript bundle than a CSR app does.",
+      "They see the content from the HTML before the phone runs the JavaScript.",
+      "The phone skips the hydration step because the server already did it.",
+      "The phone gets the data faster because the CDN runs the components."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "45",
+    "question": "What does `useEffect` do during a server render?",
+    "options": [
+      "It runs after the server sends the first byte.",
+      "It runs one time before the HTML is sent.",
+      "It does not run on the server.",
+      "It runs, and its result goes into the HTML."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "46",
+    "question": "Which check is safe on the server before you use `document`?",
+    "options": [
+      "`if (document !== undefined)`",
+      "`if (window !== null && window)`",
+      "`typeof document !== \"undefined\"`",
+      "`if (Boolean(document) === true)`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "47",
+    "question": "A requested page does not exist. Which status code must the SSR server send?",
+    "options": [
+      "200, together with the \"not found\" page.",
+      "404, together with the \"not found\" page.",
+      "500, together with the \"not found\" page.",
+      "301, with a redirect to the home page."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "48",
+    "question": "How does an SSR server redirect a user who is not logged in?",
+    "options": [
+      "It sends status 302 and a `Location` header with the login URL.",
+      "It sends status 200 and a `Redirect` header with the login URL.",
+      "It sends status 404 and a `Location` header with the login URL.",
+      "It sends status 500 and the login page in the body."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "49",
+    "question": "What does `renderToString` return?",
+    "options": [
+      "A string that contains HTML.",
+      "A Promise that resolves to a stream.",
+      "A DOM node.",
+      "A virtual DOM tree object."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "50",
+    "question": "A component throws an error inside `renderToString`. What happens?",
+    "options": [
+      "React ignores the error and skips only that component, then it renders the rest.",
+      "React sends an empty page with status 200 and logs nothing to the server console.",
+      "React renders the nearest error boundary and returns the HTML of its fallback.",
+      "The function throws, and the server code must catch the error."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "51",
+    "question": "A page shows `new Date().toLocaleString()`. The server and the user have different time zones. What is a good fix?",
+    "options": [
+      "Use `Date.now()` instead, because the value is the same on both sides of the app.",
+      "Format the date with a fixed locale and time zone, or show it after the mount.",
+      "Add `suppressHydrationWarning` to the root `div` of the application.",
+      "Call `toLocaleString` only on the server and skip it on the client render."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "52",
+    "question": "What does `suppressHydrationWarning` do?",
+    "options": [
+      "It turns off the hydration for the element and for all its children in the tree.",
+      "It fixes the mismatch by patching the DOM after the hydration ends in the browser.",
+      "It hides the warning for a text difference in one element, but it fixes nothing.",
+      "It makes React render the element only on the server and skip it on the client."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "53",
+    "question": "A component uses `const [mounted, setMounted] = useState(false)` and sets it in `useEffect`. Why does this help?",
+    "options": [
+      "The effect runs on the server and fills the HTML with the values of the browser.",
+      "The server waits for the effect before it sends the HTML to the browser.",
+      "React skips the hydration for all components that have this kind of state.",
+      "The first client render equals the server render, and the browser UI comes later."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "54",
+    "question": "A page waits for three API calls before it sends any HTML. TTFB is two seconds. What helps most?",
+    "options": [
+      "Compress the HTML with a higher gzip level to send fewer bytes to the user.",
+      "Send the shell first and put the slow parts in `Suspense` boundaries.",
+      "Add more CSS to the head of the document to show the page sooner.",
+      "Hydrate the page with a larger JavaScript bundle that holds all the data."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "55",
+    "question": "Two independent server fetches run one after the other with `await`. What is a better approach?",
+    "options": [
+      "Move both requests to `useEffect` on the client and show a spinner.",
+      "Run the second request inside the `then` of the first one after it ends.",
+      "Keep both results in a module-level variable for the next request.",
+      "Start both requests at once and wait for both with `Promise.all`."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "56",
+    "question": "A parent component fetches data. Its child starts its own fetch after the parent renders. Why is this slow in SSR?",
+    "options": [
+      "The child fetch starts only after the parent finishes, so the delays add up.",
+      "Child components cannot fetch data on the server, so the data comes late.",
+      "The server renders children in a random order, so some fetches repeat twice.",
+      "Each fetch blocks the Node.js event loop for all users during the call."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "57",
+    "question": "The SSR server memory grows with each request. A module-level `Map` caches data by user id without a limit. What is the fix?",
+    "options": [
+      "Call `global.gc()` after each request to free the cache memory at once.",
+      "Use a cache with a size limit or a time to live, for example an LRU cache.",
+      "Increase the `--max-old-space-size` value of Node.js to give the heap more room.",
+      "Run the render function inside `setImmediate` so the event loop can clean the cache."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "58",
+    "question": "A component subscribes to a store in its body. On the server, the memory grows. Why?",
+    "options": [
+      "The server calls the cleanup two times, so the listeners double in the store.",
+      "The effect runs on the server, but the cleanup does not run after the render.",
+      "The store copies its state for each render, and the copies fill the heap.",
+      "No cleanup runs on the server, so a subscription made in the body stays forever."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "59",
+    "question": "Server code calls `fetch('/api/me')` and fails with an invalid URL error. Why?",
+    "options": [
+      "Node.js `fetch` accepts only `https` URLs and rejects every `http` address.",
+      "Server `fetch` has no base URL, so the URL must be absolute in Node.js.",
+      "The server blocks `fetch` calls to its own routes to stop request loops.",
+      "`fetch` works only inside `useEffect` and not during the server render."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "60",
+    "question": "After login, the first SSR page load shows the logged-out header. The app reads auth only from `localStorage`. What is the fix?",
+    "options": [
+      "Add `suppressHydrationWarning` to the header and read the token on the client.",
+      "Read `localStorage` on the server with a polyfill library for Node.js.",
+      "Keep the session in an `HttpOnly` cookie and read it on the server.",
+      "Delay the first byte until the client sends the token in a new request."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "61",
+    "question": "A CDN caches SSR HTML by URL. The page language comes from the `Accept-Language` header. What is the risk?",
+    "options": [
+      "The CDN refuses to cache any page whose language depends on a header.",
+      "Users can get the wrong language unless the cache varies on that header.",
+      "The browser blocks the HTML because the language differs from the system language.",
+      "The server cannot read `Accept-Language` in Node.js, so it uses the default language."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "62",
+    "question": "What does `stale-while-revalidate=30` allow a CDN to do after `max-age` ends?",
+    "options": [
+      "Serve the old copy for 30 seconds and never refresh it after that time ends.",
+      "Block all users for 30 seconds while the cache refreshes the copy.",
+      "Refresh the copy in the browser every 30 seconds with a timer in the page.",
+      "Serve the old copy up to 30 more seconds while it refreshes in the background."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "63",
+    "question": "In streaming SSR, the server already sent status 200 and the first chunk. Then a component throws. What can the server do?",
+    "options": [
+      "It cannot change the status, so it streams an error UI or the client retries.",
+      "It changes the status to 500 in the last chunk after the body is complete.",
+      "It sends a second status line after the body to replace the first status line.",
+      "It restarts the response with a `Refresh` header and sends a new first chunk."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "64",
+    "question": "Streaming SSR works locally, but in production the browser gets the whole HTML at once. What is a likely cause?",
+    "options": [
+      "The browser disables chunked transfer encoding for `https`.",
+      "A proxy or a compression layer buffers the response.",
+      "React turns streaming off when the page has more than 10 components.",
+      "The CDN always removes the `Content-Type` header."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "65",
+    "question": "Why can `renderToString` hurt a busy server more than a streaming render?",
+    "options": [
+      "It renders the page in one synchronous step, so it blocks the event loop.",
+      "It uses more network bandwidth than a stream for the same HTML output.",
+      "It starts a new thread for each component and the threads fight for the CPU.",
+      "It writes the HTML to disk before it sends the response to the browser."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "66",
+    "question": "The SSR render is CPU heavy. What happens to other requests on the same Node.js process?",
+    "options": [
+      "They wait, because the render blocks the single JavaScript thread of the process.",
+      "They run in parallel on other threads that Node.js starts automatically.",
+      "They get a 503 response from Node.js at once, before the render ends.",
+      "They use the CPU of the browser instead of the CPU of the server."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "67",
+    "question": "How can you use all CPU cores for SSR on one machine?",
+    "options": [
+      "Increase the `UV_THREADPOOL_SIZE` value so Node.js renders in parallel threads.",
+      "Use `async` functions, so the render spreads over all cores of the machine.",
+      "Wrap all components in `Promise.all` so the render uses more cores at once.",
+      "Run several Node.js processes, for example with `cluster`, behind a load balancer."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "68",
+    "question": "In React 18, the user clicks inside a Suspense boundary that did not hydrate yet. What does React do?",
+    "options": [
+      "It ignores the click.",
+      "It reloads the page from the server.",
+      "It hydrates that boundary first and then replays the click event.",
+      "It hydrates the whole page in the original order and drops the click."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "69",
+    "question": "What do you need so a slow component does not block the hydration of the rest of the page in React 18?",
+    "options": [
+      "Wrap the component in `memo`.",
+      "Pass the props of the component to `useDeferredValue`.",
+      "Add the `defer` attribute to the HTML tag of the component.",
+      "Wrap the component in `Suspense` and use `hydrateRoot`."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "70",
+    "question": "After hydration, the client fetches the same data again, and the screen flashes. What is the likely cause?",
+    "options": [
+      "The browser deletes the `<script>` tag with the state before the hydration starts.",
+      "React does not allow data fetching during the hydration of a server page.",
+      "The server data did not reach the client cache, so the client starts empty.",
+      "The CDN adds a time zone to the serialized state and breaks the cache key."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "71",
+    "question": "A server passes props to the client with `JSON.stringify`. What happens to a `Date` value?",
+    "options": [
+      "It becomes a string, so the client gets a different type.",
+      "It stays a `Date` object, because JSON supports it.",
+      "It becomes `undefined`, so the client skips it.",
+      "It becomes a number, so the client can use it as a time."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "72",
+    "question": "Where must the app check auth so it does not send private HTML to a guest?",
+    "options": [
+      "On the server before the render, with a 401 response or a redirect.",
+      "In the CDN, with a check of the cookie in the client JavaScript.",
+      "In `useEffect` after the hydration, and hide the content with CSS.",
+      "In the browser, with a `localStorage` check before the first paint."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "73",
+    "question": "The page has no styles on the first load in an SSR app with a runtime CSS-in-JS library. What is missing?",
+    "options": [
+      "The browser blocks styles that come from JavaScript on the first page load.",
+      "The CDN removes all `<style>` tags from the HTML to make the response smaller.",
+      "React cannot render the `className` prop on the server for styled components.",
+      "The server render does not collect the styles and put them in the HTML."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "74",
+    "question": "Two server-rendered inputs get ids from `Math.random()`, and hydration fails. Which React 18 API solves this?",
+    "options": [
+      "`useRef`",
+      "`useId`",
+      "`useMemo`",
+      "`useCallback`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "75",
+    "question": "What does `getServerSnapshot` do in `useSyncExternalStore`?",
+    "options": [
+      "It gives the value for the next client render after the store has an update.",
+      "It gives the store value for the server render and for the hydration.",
+      "It gives the function that removes the subscription when the component unmounts.",
+      "It gives the previous value of the store for a comparison with the new value."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "76",
+    "question": "Googlebot can run JavaScript. Why do teams still choose SSR for SEO?",
+    "options": [
+      "Googlebot renders later and less reliably, and many other bots run no JavaScript.",
+      "Googlebot does not follow links that a framework router creates in the browser.",
+      "Googlebot cannot read the `title` tag when JavaScript sets it after the load.",
+      "Googlebot gives a lower rank to any page that uses hydration on the client."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "77",
+    "question": "A link preview shows the default title for every URL of a single-page app. Where must the server set `og:title`?",
+    "options": [
+      "In a `useEffect` after the hydration with `document.title`.",
+      "In a cookie on the first response.",
+      "In the `<head>` of the HTML response for that URL.",
+      "In the JavaScript bundle as a constant."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "78",
+    "question": "A library uses `window` when you import it. The SSR server crashes at start. What is the best fix?",
+    "options": [
+      "Wrap the `import` statement in `try/catch` and ignore the error when the server starts.",
+      "Set `global.window = {}` on the server at start, before the app imports the library.",
+      "Use a dynamic `import()` in `useEffect`, so the library loads only in the browser.",
+      "Use `require` for the library at the top of the file instead of an `import` statement."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "79",
+    "question": "Two components in one server render request the same URL. How do you avoid two backend calls?",
+    "options": [
+      "Use a module-level variable that stores the last result for all users.",
+      "Call `useEffect` in both components.",
+      "Use a cache that lives for one request, for example React `cache`.",
+      "Add a `Cache-Control` header to the page response."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "80",
+    "question": "A backend API is slow, and SSR requests pile up. What is a good protection?",
+    "options": [
+      "Set a timeout on server fetches and show a fallback instead of waiting.",
+      "Retry the call without a limit until it works, and keep the user waiting.",
+      "Remove the `catch` block so the process crashes and the manager restarts it.",
+      "Increase the server socket timeout to five minutes so slow calls can finish."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "81",
+    "question": "In React 18, a text mismatch occurs during hydration. What does React do?",
+    "options": [
+      "It stops the app and shows a blank page until the user reloads the browser.",
+      "It keeps the server HTML and skips the event handlers for that part of the tree.",
+      "It repairs the text only and keeps all other DOM nodes, with no error in the console.",
+      "It logs an error and falls back to client rendering of the nearest Suspense boundary."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "82",
+    "question": "What is the main difference between React selective hydration and islands architecture?",
+    "options": [
+      "Islands render on the server, but selective hydration renders only in the browser after load.",
+      "Selective hydration skips the server HTML, but islands reuse it for the first paint.",
+      "Islands send no JavaScript for static parts, but selective hydration needs all the code.",
+      "Islands need a CDN to work, but selective hydration needs a Node.js server to work."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "83",
+    "question": "How does a resumable framework such as Qwik differ from hydration?",
+    "options": [
+      "It saves state and listeners in the HTML, so it does not rerun components at start.",
+      "It renders the page two times on the server and compares both results for safety.",
+      "It hydrates all the components in a web worker and sends the DOM patches back.",
+      "It uses CSR for the first page and SSR for the next pages in the same session."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "84",
+    "question": "Hydration of a large page blocks the main thread, and INP is poor. Which change helps most?",
+    "options": [
+      "Move the HTML to a faster CDN, so the browser gets the first byte in less time.",
+      "Give the server a larger CPU so that it renders the HTML in less time.",
+      "Add a long `Cache-Control` time to the JavaScript files to skip some downloads.",
+      "Hydrate fewer components, for example with islands or lazy hydration below the fold."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "85",
+    "question": "An SSR app builds absolute URLs from the `Host` header, and a CDN caches the HTML. What attack is possible?",
+    "options": [
+      "Session fixation, because the CDN cache gives one session id to all visitors.",
+      "SQL injection, because the server puts the `Host` header in a database query.",
+      "Cache poisoning: a fake `Host` header makes the CDN serve HTML with bad links.",
+      "DNS rebinding, because the cached HTML points the browser to a private address."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "86",
+    "question": "A response has `Set-Cookie` and `Cache-Control: public, s-maxage=300`. What is the risk if the CDN stores it?",
+    "options": [
+      "The browser ignores the cookie because of the `s-maxage` directive on the page.",
+      "The CDN removes the page but keeps the cookie for the next response.",
+      "The cookie expires after 300 seconds in the CDN and the session ends.",
+      "The CDN can give the same session cookie to many other users."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "87",
+    "question": "How can Node.js SSR code get per-request data, such as the user, deep in the call stack without globals?",
+    "options": [
+      "Store it in `process.env` for the time of the request, then reset it.",
+      "Store it on `globalThis` and delete it after the render ends.",
+      "Keep it in a module-level variable and protect it with a mutex.",
+      "Use `AsyncLocalStorage`, or pass a request context object down the call tree."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "88",
+    "question": "A global variable is set before an `await` and read after it. Why does this fail under load?",
+    "options": [
+      "`await` copies all global variables, so the code reads an old copy later.",
+      "Other requests run during the `await` and can overwrite the value.",
+      "Node.js clears the global variables at each `await` to free the memory.",
+      "The garbage collector removes global variables during `await` calls."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "89",
+    "question": "Edge rendering is near the user, but the page is slower than before. The database stays in one region. Why?",
+    "options": [
+      "Each query crosses a long distance, so many sequential queries add delay.",
+      "The edge nodes compile the code again on each request, which adds a large delay.",
+      "The edge nodes run queries in sequence, because they do not support `async` code.",
+      "The CDN adds a fixed delay of one second to each call from an edge node."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "90",
+    "question": "How does React streaming SSR put the HTML of a Suspense boundary that resolves later into the page?",
+    "options": [
+      "The server sends a JSON patch, and the client framework builds the DOM from it.",
+      "The server closes the connection and opens a new one with the new HTML for the part.",
+      "The server sends the HTML in a hidden element and a small inline script moves it.",
+      "The browser requests the HTML of that part again with `fetch` after the page load."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "91",
+    "question": "What is the main cost of serialized state in the HTML for hydration?",
+    "options": [
+      "The server must run the render two times for each request to build the JSON.",
+      "The HTML gets larger, because the data is in the markup and in the JSON.",
+      "The CDN cannot cache a page that has JSON inside a script tag in the body.",
+      "The browser must call the API a second time to check the JSON in the page."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "92",
+    "question": "A popular cached SSR page expires. Thousands of requests hit the origin at once. What helps?",
+    "options": [
+      "A shorter `s-maxage`, so the pages expire more often and refresh sooner.",
+      "Request collapsing: one origin request, while the CDN holds the others.",
+      "Turn off the CDN for this page, so every user gets a fresh render.",
+      "A longer `max-age` for the JavaScript files, so the browser caches them."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "93",
+    "question": "The SSR server is at its CPU limit during a traffic peak. Which design keeps the site up?",
+    "options": [
+      "Add more `await` calls, so the event loop gets time to handle other requests.",
+      "Load shedding: serve a cached or static shell and let the client render.",
+      "Increase the render timeout for all requests, so slow renders can finish.",
+      "Retry each failed render on the server until it works for the user."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "94",
+    "question": "A client closes the connection during a streamed SSR response. What should the server do?",
+    "options": [
+      "Abort the render, for example with `abort`, to free CPU and memory.",
+      "Start the render again for the same client on a new connection.",
+      "Nothing, because Node.js stops the work by itself when the socket closes.",
+      "Finish the render, because the CDN might need the HTML for later users."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "95",
+    "question": "Some users report hydration errors, but the code is correct. What is a likely cause?",
+    "options": [
+      "Browser extensions or proxies change the HTML before the hydration starts.",
+      "React hydrates only for users with a slow network, so others see no state.",
+      "The server uses `async` components, which React cannot hydrate in the browser.",
+      "The CDN sends gzip, and React cannot read the compressed HTML in the browser."
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "96",
+    "question": "A dashboard behind login has no SEO need and heavy per-user data. Which choice is usually best?",
+    "options": [
+      "SSR for every page, because it always gives a better LCP to all the users.",
+      "Edge rendering with a shared CDN cache for all users of the dashboard.",
+      "CSR with an app shell, because SSR adds server cost and no SEO gain.",
+      "Islands, because they hide private data from the browser and the network."
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "97",
+    "question": "What does the HTTP 103 Early Hints response let an SSR server do?",
+    "options": [
+      "Send partial HTML and set the final status code later in the response.",
+      "Tell the browser to skip the hydration of the files in the list.",
+      "Tell the CDN to cache the page for later users of the same URL.",
+      "Send preload hints for CSS and JavaScript before the final response."
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "98",
+    "question": "In `renderToPipeableStream`, a component inside `Suspense` suspends. What does React do?",
+    "options": [
+      "It waits for the promise and then sends the whole page as one response.",
+      "It sends the fallback, renders the rest, and streams the content later.",
+      "It cancels the render and returns status 500 to the browser at once.",
+      "It retries the render every second in a loop until the promise ends."
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "99",
+    "question": "In `renderToPipeableStream`, which callback must you use to send the complete HTML to a crawler?",
+    "options": [
+      "`onShellError`",
+      "`onShellReady`",
+      "`onAllReady`",
+      "`onError`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "100",
+    "question": "A page passes the whole `user` object from the database to a client component. What is the risk?",
+    "options": [
+      "All fields, including private ones, go into the HTML and the user can read them.",
+      "The hydration fails, because the object has a password field in it.",
+      "Nothing, because only the fields that JSX uses are sent to the browser.",
+      "The server gets slower, because it caches all the user objects in memory."
+    ],
+    "correct_index": 0
+  }
+]

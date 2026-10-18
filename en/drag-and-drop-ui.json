@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "Which HTML attribute makes a `<div>` draggable with the native API?",
+  "options": [
+   "`dragenabled=\"true\"`",
+   "`draggable=\"true\"`",
+   "`data-drag=\"true\"`",
+   "`movable=\"true\"`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "Which event fires first when the user starts to drag an element?",
+  "options": [
+   "`drag`",
+   "`dragstart`",
+   "`dragenter`",
+   "`dragover`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "Which object carries the data during a native drag and drop operation?",
+  "options": [
+   "`event.clipboardData`",
+   "`event.target.dataset`",
+   "`window.dragStore`",
+   "`event.dataTransfer`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "4",
+  "question": "Which method saves data in the drag data store in a `dragstart` handler?",
+  "options": [
+   "`dataTransfer.setData()`",
+   "`dataTransfer.addData()`",
+   "`dataTransfer.setItem()`",
+   "`dataTransfer.storeData()`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "5",
+  "question": "In a `drop` handler, how do you read the text saved with `setData(\"text/plain\", id)`?",
+  "options": [
+   "`event.dataTransfer.readData(\"text\")`",
+   "`event.target.getData(\"text/plain\")`",
+   "`event.dataTransfer.getData(\"text/plain\")`",
+   "`event.dataTransfer.items[0].text`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "6",
+  "question": "Which event fires on the target element when the user releases the dragged item over it?",
+  "options": [
+   "`dragend`",
+   "`drop`",
+   "`dragleave`",
+   "`dragstop`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "7",
+  "question": "Which event fires on the source element when the drag operation ends, by drop or by cancel?",
+  "options": [
+   "`drop`",
+   "`dragend`",
+   "`dragleave`",
+   "`dragcancel`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "8",
+  "question": "Why must a `dragover` handler call `event.preventDefault()` on a drop zone?",
+  "options": [
+   "The default action starts a new drag on the zone element",
+   "The default action refuses the drop on the zone",
+   "The default action clears the data in the `dataTransfer` object before `drop`",
+   "The default action stops the `drop` event from bubbling up to the parents"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "9",
+  "question": "Which event fires again and again on a target while the dragged item stays over it?",
+  "options": [
+   "`dragmove`",
+   "`dragenter`",
+   "`dragover`",
+   "`dragleave`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "Which event fires when the dragged item leaves a drop target?",
+  "options": [
+   "`dragout`",
+   "`dragleave`",
+   "`dragend`",
+   "`dragstop`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "11",
+  "question": "What does `dataTransfer.effectAllowed` set?",
+  "options": [
+   "How many items the user can drag at the same time",
+   "Which elements the browser accepts as drop targets",
+   "The drag operations the source allows",
+   "How large the drag image is on the user screen"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "12",
+  "question": "Which value is valid for `dataTransfer.dropEffect`?",
+  "options": [
+   "`\"copy\"`",
+   "`\"clone\"`",
+   "`\"swap\"`",
+   "`\"reorder\"`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "13",
+  "question": "Which method sets a custom picture that follows the pointer during a native drag?",
+  "options": [
+   "`setDragPreview()`",
+   "`setDragImage()`",
+   "`setGhostImage()`",
+   "`setImage()`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "14",
+  "question": "Where do you find the files that the user drops from the desktop?",
+  "options": [
+   "`event.target.files`",
+   "`event.dataTransfer.files`",
+   "`event.dataTransfer.paths`",
+   "`event.files`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "15",
+  "question": "Which Pointer Event usually starts a custom drag on an element?",
+  "options": [
+   "`pointerdown`",
+   "`pointerenter`",
+   "`pointerover`",
+   "`pointerup`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "What does `element.setPointerCapture(pointerId)` do?",
+  "options": [
+   "It locks the cursor inside the element until the user releases the pointer",
+   "It keeps pointer events on the element, even outside it",
+   "It blocks the page scroll for as long as the pointer is down",
+   "It copies each pointer event to all parent elements in the tree"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "17",
+  "question": "Which CSS rule stops browser scroll gestures on a touch drag handle?",
+  "options": [
+   "`pointer-events: none`",
+   "`user-select: none`",
+   "`touch-action: none`",
+   "`overscroll-behavior: none`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "18",
+  "question": "Which CSS rule stops text selection while the user drags with a mouse?",
+  "options": [
+   "`user-select: none`",
+   "`pointer-events: none`",
+   "`cursor: none`",
+   "`overflow: hidden`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "A sortable list shows the new order after a drop. What must the app also update?",
+  "options": [
+   "The state that stores the item order",
+   "The `id` attribute of each moved list item in the DOM",
+   "The `draggable` value of each list item in the list",
+   "The `tabindex` value of the first item in the list"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "20",
+  "question": "Which `touch-action` value lets the browser scroll vertically, but leaves horizontal gestures to your drag code?",
+  "options": [
+   "`pan-x`",
+   "`manipulation`",
+   "`pinch-zoom`",
+   "`pan-y`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "In a React sortable list, which value is the best `key` for an item?",
+  "options": [
+   "The index of the item in the array",
+   "A random number made at each render",
+   "The current drop position",
+   "A stable unique id from the data"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "Which dnd-kit component holds the drag state and wraps the draggable elements?",
+  "options": [
+   "`SortableContext`",
+   "`DragOverlay`",
+   "`DndContext`",
+   "`DropProvider`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "23",
+  "question": "Which element is draggable in HTML by default, without the `draggable` attribute?",
+  "options": [
+   "`<div>`",
+   "`<button>`",
+   "`<li>`",
+   "`<img>`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "Which event fires on a target when a dragged item first enters it?",
+  "options": [
+   "`dragstart`",
+   "`dragend`",
+   "`dragenter`",
+   "`dragleave`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "25",
+  "question": "What does `dataTransfer.types` show during a drag?",
+  "options": [
+   "A list of the file sizes in the drag data store",
+   "The allowed drop effects for the current target",
+   "A list of the data formats in the drag data store",
+   "The element types of all possible drop targets"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "26",
+  "question": "WCAG 2.2 criterion 2.5.7 is about dragging movements. What does it require?",
+  "options": [
+   "A way to do the action with one pointer, without dragging",
+   "A way to do the action only with the keyboard and no mouse",
+   "A drag handle with a visible text label on each item",
+   "A drag speed that is slow enough for users to follow"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "27",
+  "question": "How do you tell a screen reader user that an item moved during a keyboard drag?",
+  "options": [
+   "Change the `title` attribute of the whole page document",
+   "Set `aria-hidden` on the moved item after the move",
+   "Write a message into an `aria-live` region",
+   "Move the focus to the `body` element after each move"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "Which key do users commonly press to cancel a keyboard drag?",
+  "options": [
+   "`Escape`",
+   "`Tab`",
+   "`Backspace`",
+   "`Home`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "29",
+  "question": "What does auto-scroll do during a drag?",
+  "options": [
+   "It scrolls the container when the pointer is near its edge",
+   "It scrolls the page to the top after the drop is done",
+   "It moves the item to the end of the list by itself",
+   "It scrolls only when the user presses an arrow key"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "30",
+  "question": "What is a drag handle in a list item?",
+  "options": [
+   "A CSS class that the library adds to the item you drag",
+   "An event that fires when the drag begins on the item",
+   "A small element that starts the drag",
+   "A hidden input that stores the order of the item"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "31",
+  "question": "What is a placeholder in a sortable list during a drag?",
+  "options": [
+   "A copy of the item that stays after the drop",
+   "An empty space that shows where the item will land",
+   "A loading text shown while the server saves",
+   "A message that tells the user to drag an item"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "32",
+  "question": "A user drops an image on the page, outside the drop zone. The browser opens the file. How do you stop it?",
+  "options": [
+   "Set `draggable=\"false\"` on the `body` and `html` elements",
+   "Call `preventDefault()` in `dragover` and `drop` on `window`",
+   "Call `stopPropagation()` in the `dragstart` handler of the item",
+   "Set `dropEffect` to `none` in the `dragend` handler of the item"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "What is an optimistic update in a reorder feature?",
+  "options": [
+   "The UI waits for the server before it shows the new order",
+   "The server sorts the list again after each request",
+   "The UI shows the new order before the server confirms it",
+   "The client sends the new order two times to be safe"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "34",
+  "question": "An optimistic reorder request fails. What should the UI do?",
+  "options": [
+   "Keep the new order and hide the error from the user",
+   "Reload the full page without any message",
+   "Send the same request in a loop until it works",
+   "Restore the previous order and show an error message"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "35",
+  "question": "Which values can `event.pointerType` have?",
+  "options": [
+   "`\"mouse\"`, `\"pen\"`, and `\"touch\"`",
+   "`\"mouse\"`, `\"finger\"`, and `\"stylus\"`",
+   "`\"cursor\"`, `\"touch\"`, and `\"pen\"`",
+   "`\"mouse\"`, `\"touchpad\"`, and `\"stylus\"`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "36",
+  "question": "What is the main benefit of Pointer Events for a custom drag?",
+  "options": [
+   "They also fire the native `dragstart` and `drop` events",
+   "They give access to the native drag image",
+   "One event model for mouse, touch, and pen input",
+   "They need no CSS to stop the page scroll"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "37",
+  "question": "Which `dataTransfer` type holds the URL when a user drags a link?",
+  "options": [
+   "`text/url`",
+   "`text/link`",
+   "`text/uri-list`",
+   "`application/url`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "38",
+  "question": "What does `arrayMove(items, 1, 3)` from dnd-kit return?",
+  "options": [
+   "The same array with items 1 and 3 swapped in place",
+   "A new array without the items at index 1 and 3",
+   "A new array where the item at index 3 is now at index 1",
+   "A new array; the item at index 1 moves to index 3"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "Which dnd-kit hook makes an element a drop target?",
+  "options": [
+   "`useDropZone`",
+   "`useDroppable`",
+   "`useTarget`",
+   "`useDrop`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "40",
+  "question": "In the dnd-kit `onDragEnd` event, what does `over` hold?",
+  "options": [
+   "The dragged item itself, or `null`",
+   "The droppable under the dragged item, or `null`",
+   "The distance of the drag in pixels",
+   "The list of all the droppables in the context"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "41",
+  "question": "What does a collision detection algorithm do in a DnD library?",
+  "options": [
+   "It finds which drop target the dragged item is over",
+   "It finds two dragged items with the same id",
+   "It stops two users from dragging the same item",
+   "It checks that the dragged item fits in the target"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "42",
+  "question": "Why do libraries offer an activation distance, such as 5px, before a drag starts?",
+  "options": [
+   "The browser needs 5px to make the drag image",
+   "The scroll position needs 5px to be saved",
+   "The drop target needs 5px to be found",
+   "A normal click on the item is not seen as a drag"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "Which `tabindex` value puts a list item in the normal Tab order?",
+  "options": [
+   "`\"-1\"`",
+   "`\"none\"`",
+   "`\"0\"`",
+   "`\"auto\"`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "Which event fires again and again on the dragged element while the user drags it?",
+  "options": [
+   "`drag`",
+   "`dragover`",
+   "`dragmove`",
+   "`dragtick`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "45",
+  "question": "Which key picks up an item by default with the dnd-kit keyboard sensor?",
+  "options": [
+   "`Tab`",
+   "`Shift`",
+   "`Delete`",
+   "`Space`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "46",
+  "question": "Which value from `useDraggable` do you spread on the element to start a pointer drag?",
+  "options": [
+   "`modifiers`",
+   "`listeners`",
+   "`sensors`",
+   "`collisions`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "47",
+  "question": "Which element is the best choice for a keyboard-focusable drag handle?",
+  "options": [
+   "`<span>`",
+   "`<div>`",
+   "`<li>`",
+   "`<button>`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "48",
+  "question": "Which event normally ends a custom drag that uses Pointer Events?",
+  "options": [
+   "`pointerout`",
+   "`pointerenter`",
+   "`pointerover`",
+   "`pointerup`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "49",
+  "question": "Which properties give the pointer position relative to the viewport?",
+  "options": [
+   "`clientX` and `clientY`",
+   "`pageX` and `pageY`",
+   "`offsetX` and `offsetY`",
+   "`movementX` and `movementY`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "Which dnd-kit hook gives an item the behavior of a sortable list?",
+  "options": [
+   "`useSorter`",
+   "`useReorder`",
+   "`useSortable`",
+   "`useDraggableList`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "51",
+  "question": "A `dragover` handler calls `dataTransfer.getData()` and gets an empty string. Why?",
+  "options": [
+   "The data store stays empty until the `dragend` event fires",
+   "The browser hides the data until `drop`",
+   "The `setData` call must use the `text/html` type for this",
+   "The handler must run before the `dragenter` event fires"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "In `dragover`, you set `dropEffect` to `\"copy\"`. What is the visible result?",
+  "options": [
+   "The browser copies the dragged element into the target",
+   "The source element stays hidden while the cursor moves",
+   "The cursor shows a copy sign and the drop operation is copy",
+   "The `drop` event gets a cloned `dataTransfer` object"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "53",
+  "question": "The highlight of a drop zone flickers, because `dragleave` fires when the pointer enters a child. What is a common fix?",
+  "options": [
+   "Call `stopPropagation()` in the `dragover` handler of the zone",
+   "Replace `dragleave` with the `dragend` event on the zone",
+   "Count `dragenter` and `dragleave` calls; clear at zero",
+   "Set `draggable=\"false\"` on the child elements"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "54",
+  "question": "How can a `dragend` handler know that the user dropped the item outside any valid target?",
+  "options": [
+   "`event.dataTransfer.effectAllowed` is `\"none\"`",
+   "`event.target` is `null`",
+   "`event.relatedTarget` is the `document`",
+   "`event.dataTransfer.dropEffect` is `\"none\"`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "55",
+  "question": "Where must you call `setDragImage()` to change the drag preview?",
+  "options": [
+   "In the `dragstart` handler",
+   "In the first `dragover` handler",
+   "In the `dragenter` handler of the target",
+   "In the `drop` handler of the target"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "A `dragstart` handler sets `display: none` on the dragged element. In Chrome the drag ends at once. What is the fix?",
+  "options": [
+   "Change the style in a `setTimeout` after `dragstart`",
+   "Call `event.stopPropagation()` before the style change",
+   "Set `effectAllowed` to `none` before the style change",
+   "Add `pointer-events: none` to the element in the handler"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "57",
+  "question": "A custom drag listens to `pointermove` on the dragged element. When the pointer moves fast, the events stop. What helps?",
+  "options": [
+   "Call `setPointerCapture` at `pointerdown`",
+   "Call `preventDefault()` in the `pointerenter` handler",
+   "Use the `pointerover` event in place of `pointermove`",
+   "Set `touch-action` to `auto` on the dragged element"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "58",
+  "question": "On a phone, a touch drag with Pointer Events gets `pointercancel` when the page starts to scroll. What is the fix?",
+  "options": [
+   "Call `preventDefault()` in the `pointercancel` handler",
+   "Set `pointer-events: none` on the drag handle",
+   "Listen to `pointerleave` in place of `pointercancel`",
+   "Set `touch-action: none` on the drag handle"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "59",
+  "question": "In Chrome, `preventDefault()` in a `touchmove` listener on `document` does not stop the scroll. Why?",
+  "options": [
+   "Touch events do not support `preventDefault()` any more",
+   "The listener must run on the `body` and not on `document`",
+   "The page scroll always runs before any listener",
+   "Chrome makes such listeners passive by default"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "60",
+  "question": "Why is `transform` better than `top` and `left` to move a dragged element?",
+  "options": [
+   "It can run on the compositor without a new layout",
+   "It always runs on the CPU, which is more stable",
+   "It gives pixel positions that are more exact than `top`",
+   "It skips the style calculation of the element"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "61",
+  "question": "A dragged item follows the pointer. React state changes on each `pointermove` and the UI is slow. What is better?",
+  "options": [
+   "Put the position in a context so that fewer components render",
+   "Call `setState` two times in each handler to batch the update",
+   "Use `top` and `left` in place of `transform` for each update",
+   "Keep position in a ref; set `transform` in a frame callback"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "62",
+  "question": "How do you make smooth auto-scroll near the edge of a container during a drag?",
+  "options": [
+   "Use a `requestAnimationFrame` loop; speed follows edge distance",
+   "Call `scrollIntoView` for the item in each `dragend` event handler",
+   "Set `overflow: scroll` on the container at `dragstart`",
+   "Run a `setInterval` that scrolls by 100px each second"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "63",
+  "question": "Why should a drag start measure the item rectangles once and cache them?",
+  "options": [
+   "The browser removes the rectangles after the first frame",
+   "The rectangles change only when the user releases the pointer",
+   "Cached rectangles let the browser skip the paint step",
+   "`getBoundingClientRect` on each move can force a new layout"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "64",
+  "question": "Which statement about `react-beautiful-dnd` is correct today?",
+  "options": [
+   "It is the main Atlassian library and gets new features each month",
+   "It moved to the React team and is now part of React core",
+   "It is now a thin wrapper around `dnd-kit` with the same API",
+   "Atlassian deprecated it and points to `pragmatic-drag-and-drop`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "65",
+  "question": "In dnd-kit, what must the `items` prop of `SortableContext` contain?",
+  "options": [
+   "The React elements of the sortable items, in render order",
+   "The ids of the items, sorted in alphabetical order",
+   "The index of each item in the data before the drag",
+   "The ids of the sortable items, in the same order as rendered"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "66",
+  "question": "Why use `DragOverlay` in dnd-kit when the list is in a container with `overflow: hidden`?",
+  "options": [
+   "The overlay lets the browser use its native drag image",
+   "The overlay removes the need for unique ids in `SortableContext`",
+   "The overlay sits above the container, so it is not clipped",
+   "The overlay turns off collision detection for the clone"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "Which option do you give to the dnd-kit `KeyboardSensor` for sortable lists?",
+  "options": [
+   "`coordinateGetter: sortableKeyboardCoordinates`",
+   "`strategy: verticalListSortingStrategy`",
+   "`modifiers: [restrictToVerticalAxis]`",
+   "`collisionDetection: closestCenter`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "68",
+  "question": "Which ARIA attributes for drag and drop are deprecated in ARIA 1.1?",
+  "options": [
+   "`aria-live` and `aria-relevant`",
+   "`aria-grabbed` and `aria-dropeffect`",
+   "`aria-owns` and `aria-flowto`",
+   "`aria-roledescription` and `aria-describedby`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "What is the best accessible alternative to drag for reordering a list?",
+  "options": [
+   "A longer press time before the drag starts",
+   "Buttons that move an item up or down",
+   "A tooltip that explains the drag gesture",
+   "A bigger drag handle with a clear icon"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "A user reorders twice quickly. The server answers the first request last. The UI shows the old order. Why?",
+  "options": [
+   "The server sorted the list by id and not by position",
+   "The late first response overwrote the newer local order",
+   "The second request used a different HTTP method",
+   "The browser cached the response of the second request"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "71",
+  "question": "This `onDragEnd` code runs in React StrictMode in development. What is the risk?\n`setItems(prev => { api.save(next(prev)); return next(prev); })`",
+  "options": [
+   "React batches the updater, so the app sends no request",
+   "The updater runs after unmount, so it throws an error",
+   "The updater runs twice, so the app sends two requests",
+   "React skips the updater, so the list does not change"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "72",
+  "question": "In a Kanban board, when do you move a card to another column in state so the preview updates during the drag?",
+  "options": [
+   "In the `onDragStart` handler",
+   "In the `onDragEnd` handler",
+   "In the `onDragCancel` handler",
+   "In the `onDragOver` handler"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "73",
+  "question": "During `dragover`, `dataTransfer.files` is empty. How do you check that the user drags files?",
+  "options": [
+   "Check that `dataTransfer.files.length` is more than zero",
+   "Check that `dataTransfer.types` includes `\"Files\"`",
+   "Check that `event.target` is an `<input>` element",
+   "Check that `dataTransfer.effectAllowed` is `\"copy\"`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "74",
+  "question": "Which feature needs the native HTML5 DnD API and not only Pointer Events?",
+  "options": [
+   "Moving a card between two columns on one page",
+   "Dragging a file from the desktop onto the page",
+   "Reordering table rows with a drag handle",
+   "Resizing a panel with a draggable split bar"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "75",
+  "question": "Which dnd-kit sensor option starts a touch drag only after a long press?",
+  "options": [
+   "`activationConstraint: { delay: 250, tolerance: 5 }`",
+   "`activationConstraint: { distance: 250, delay: 5, tolerance: 0 }`",
+   "`collisionDetection: { delay: 250, tolerance: 5 }`",
+   "`modifiers: [{ delay: 250, tolerance: 5 }]`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "76",
+  "question": "Two nested elements both handle `drop`, and one drop runs both handlers. Which call stops the parent handler?",
+  "options": [
+   "`event.preventDefault()`",
+   "`event.cancelBubble = false`",
+   "`dataTransfer.clearData()`",
+   "`event.stopPropagation()`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "77",
+  "question": "After a custom drag with Pointer Events, a `click` handler on the item runs. Why?",
+  "options": [
+   "The pointer went down and up on the item, so `click` fires",
+   "The drag library fires a `click` event by itself at each drop",
+   "The `click` event fires after every `pointermove` event",
+   "The browser fires `click` only when `touch-action` is `none`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "78",
+  "question": "When should the app send the new order to the API in a drag and drop list?",
+  "options": [
+   "On each `pointermove` event",
+   "Once, when the drop ends",
+   "On each `dragover` event",
+   "After the user leaves the page"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "An element has `draggable=\"true\"` and a `pointermove` listener. After the drag starts, the pointer events stop. Why?",
+  "options": [
+   "The `draggable` attribute turns off all pointer listeners on that element",
+   "The browser moves the listener to the `document` object",
+   "The browser sends `pointercancel` when the native drag begins",
+   "The `dragover` event always replaces `pointermove`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "80",
+  "question": "In dnd-kit, how do you keep a sortable item on the vertical axis only?",
+  "options": [
+   "Set `touch-action: pan-y` on the item",
+   "Use `closestCorners` collision detection for the list",
+   "Add the `restrictToVerticalAxis` modifier",
+   "Pass `axis=\"y\"` to `useSortable`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "81",
+  "question": "Why do teams use fractional indexing for the order of rows that users drag?",
+  "options": [
+   "A move needs no key, as the database keeps the order by itself",
+   "A move changes one row, as the new key goes between neighbors",
+   "A move changes all rows, but in one fast bulk query",
+   "A move is stored in the client, so the server stays as it is"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "82",
+  "question": "Users insert items again and again between the same two neighbors with number-based positions. What breaks?",
+  "options": [
+   "The database refuses a key with more than two decimals",
+   "The sort order of the keys changes with the locale",
+   "Float precision ends, so two keys become equal",
+   "The keys grow until the server runs out of integers"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "83",
+  "question": "In a virtualized list, the user drags an item and scrolls far. The item unmounts and the drag breaks. What is a good fix?",
+  "options": [
+   "Render the dragged item in an overlay and keep its id mounted",
+   "Turn off virtualization for the first 100 rows of the list",
+   "Stop the scroll by calling `preventDefault` on `wheel` events",
+   "Cache the row height and unmount the row as before"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "What does the FLIP technique do for a list reorder animation?",
+  "options": [
+   "It animates `top` and `left` from the end spot to the start spot",
+   "It measures both positions, then animates `transform` from the old spot",
+   "It flips the list in memory and paints the page only one time",
+   "It copies each item to a canvas and then moves the pixels there"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "85",
+  "question": "Which dnd-kit collision detection uses the pointer position and not the rectangle of the dragged item?",
+  "options": [
+   "`rectIntersection`",
+   "`closestCenter`",
+   "`closestCorners`",
+   "`pointerWithin`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "86",
+  "question": "After a drop, React remounts the moved item and keyboard focus is lost. What is the right fix?",
+  "options": [
+   "Set `tabindex=\"-1\"` on all items so focus cannot be lost",
+   "Call `blur()` on the item so the screen reader restarts",
+   "Move the focus to the `body` element after each drop",
+   "Keep stable keys, or set focus on the moved item again"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "The server must reject a reorder that is based on an old list. Which design is common?",
+  "options": [
+   "The client sends a version; the server returns 409 on mismatch",
+   "The client sends a timestamp; the server always accepts the newest one",
+   "The server locks the list while the user drags an item",
+   "The server returns 200 and ignores the new order"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "A dragged element uses `position: fixed`, but it appears far from the pointer. A parent has `transform`. Why?",
+  "options": [
+   "The `fixed` value works only for direct children of the `body` element",
+   "The transform changes the units of `clientX` to percent",
+   "The transform sets `pointer-events` to none for children",
+   "A transformed parent is the containing block of fixed children"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "89",
+  "question": "During auto-scroll the pointer does not move, but the dragged item drifts from it. What is missing?",
+  "options": [
+   "The code must add the scroll change to the item position",
+   "The code must call `setPointerCapture` on each scroll",
+   "The code must fire a fake `pointermove` with `clientY` zero",
+   "The code must reset `touch-action` after each scroll"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "90",
+  "question": "Code: `dragstart` sets `effectAllowed = \"copy\"`, and `dragover` sets `dropEffect = \"move\"`. What happens on release?",
+  "options": [
+   "The browser copies the item, and the `drop` event fires",
+   "The browser moves the item, and then `dropEffect` becomes `none` again",
+   "The `dragover` handler throws a `TypeError`",
+   "The drop is not allowed, so the `drop` event does not fire"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "91",
+  "question": "A drop handler writes `getData(\"text/html\")` with `innerHTML`. What is the risk?",
+  "options": [
+   "The browser blocks all `innerHTML` writes in drop handlers",
+   "The text loses its line breaks and becomes plain",
+   "Dragged HTML can run code, which causes XSS",
+   "The HTML is lost, because `getData` reads only text"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "92",
+  "question": "`document.elementFromPoint` always returns the dragged element, not the target under it. What is the fix?",
+  "options": [
+   "Set `visibility: collapse` on the parent element only",
+   "Use `clientX` and `clientY` with the page scroll offset added",
+   "Set `pointer-events: none` on the dragged element",
+   "Call `elementFromPoint` before the `pointermove` event"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "93",
+  "question": "What approach does the Atlassian library `pragmatic-drag-and-drop` take?",
+  "options": [
+   "It uses native HTML5 DnD, in any framework",
+   "It is built on Pointer Events with its own drag image",
+   "It is a React-only wrapper around `react-beautiful-dnd`",
+   "It is built on the Web Animations API and `IntersectionObserver`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "94",
+  "question": "A designer wants a dragged card to rotate and cast a shadow live during a native HTML5 drag. Why is it hard?",
+  "options": [
+   "The browser draws the drag image as a snapshot at `dragstart`",
+   "The `drag` event does not fire at all during native drags in browsers",
+   "The `transform` property is blocked on draggable elements",
+   "The drag image can only show plain text and no styled elements"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "95",
+  "question": "In TanStack Query, why call `cancelQueries` in `onMutate` for an optimistic reorder?",
+  "options": [
+   "It stops the mutation from running two times in a row",
+   "A running refetch could overwrite the optimistic order",
+   "It clears the cache, so that the old order is gone",
+   "It makes the server run the mutation before the client"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "96",
+  "question": "A canvas has `transform: scale(0.5)`. A dragged item lags behind the pointer. What is the fix?",
+  "options": [
+   "Multiply the pointer delta by the scale before you move the item",
+   "Use `screenX` in place of `clientX` for the delta",
+   "Divide the pointer delta by the scale before you move the item",
+   "Set `will-change: transform` on the canvas"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "A team adds `will-change: transform` to all 500 list items. What is the main risk?",
+  "options": [
+   "The browser stops all animations of the list items",
+   "The items lose their `z-index` order in the list",
+   "The browser repaints each item two times per frame",
+   "High memory use, as each item gets its own layer"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "98",
+  "question": "A list helper calculates `to` as \"insert before row j\" on the original array. For a move down, what must the code do?",
+  "options": [
+   "Add one to `to` after it removes the item",
+   "Use `from + 1` as the index for the insert",
+   "Subtract one from `to` after it removes the item",
+   "Reverse the array before the move and again after it"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "A pointer moves from element A to element B during a native drag. In which order do the events fire?",
+  "options": [
+   "`dragleave` on A, and only later `dragenter` on B",
+   "`dragover` on B, then `dragenter` on B",
+   "`dragend` on A, then `dragenter` on B",
+   "`dragenter` on B, then `dragleave` on A"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "A `pointerdown` handler sets `touch-action: none` on the element, but the page still scrolls. Why?",
+  "options": [
+   "The browser ignores `touch-action` on `div` elements and `span` elements",
+   "The browser reads `touch-action` at touch start, so it is too late",
+   "The value `none` works only with the `mouse` pointer type of input",
+   "The browser applies `touch-action` only after the `pointerup` event"
+  ],
+  "correct_index": 1
+ }
+]

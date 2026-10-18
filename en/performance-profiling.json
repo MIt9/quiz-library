@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "Which Chrome DevTools panel do you use to record the CPU activity of a page?",
+  "options": [
+   "The Performance panel",
+   "The Elements panel",
+   "The Sources panel",
+   "The Application panel"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "2",
+  "question": "What does a flame chart show in a performance profile?",
+  "options": [
+   "A list of all network requests, sorted by size and by start time",
+   "Function call stacks over time, where width shows time spent",
+   "The count of DOM nodes for each component",
+   "The memory use of each object by type"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "What is a long task in the browser?",
+  "options": [
+   "A task that takes more than 1 second in total",
+   "A request that waits more than 5 seconds for a response from a server",
+   "A task that blocks the main thread for more than 50 ms",
+   "A timer that runs more than 100 times"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "4",
+  "question": "What problem do long tasks cause for the user?",
+  "options": [
+   "The browser downloads fewer files in parallel at the same time",
+   "The page loses all data stored in memory",
+   "The server closes the connection after a short time",
+   "The page cannot react to clicks and typing until the task ends"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "5",
+  "question": "Which DevTools panel do you use to look for memory leaks?",
+  "options": [
+   "The Network panel",
+   "The Memory panel",
+   "The Lighthouse panel",
+   "The Console panel"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "6",
+  "question": "What does a heap snapshot show?",
+  "options": [
+   "A list of functions that ran during the last second of the recording",
+   "The time of each paint event on the page",
+   "All live JavaScript objects at one moment, with their sizes",
+   "The size of each file that the page downloaded"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "7",
+  "question": "What is a detached DOM node?",
+  "options": [
+   "A node that the browser has not yet painted on screen for the user",
+   "A node inside a shadow root that has no children",
+   "A node that has no parent in the HTML source file",
+   "A node removed from the page that JavaScript still references"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "What does the waterfall in the Network panel show?",
+  "options": [
+   "The timeline of each request, from queue to end of download",
+   "The call stack of each JavaScript function over time in the recording",
+   "The order of React component renders on the page",
+   "The memory use of each request in the browser"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "9",
+  "question": "Why do you use CPU throttling in DevTools?",
+  "options": [
+   "To reduce the CPU use of the DevTools window while it records data",
+   "To limit the number of network requests per second",
+   "To simulate a slower device on a fast development computer",
+   "To stop the page from using the GPU for painting"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "What does the React DevTools Profiler record?",
+  "options": [
+   "The size of each JavaScript bundle chunk and how long it needs to load",
+   "The number of HTTP requests that each component sends",
+   "The memory leaks in the React reconciler code",
+   "Which components render, why they render, and how long it takes"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "11",
+  "question": "What does `performance.mark('start')` do?",
+  "options": [
+   "It saves a named timestamp in the performance timeline",
+   "It starts a CPU profile with the name start",
+   "It prints the elapsed time in the console",
+   "It sets a breakpoint on the next function call in the code"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "12",
+  "question": "What does `performance.measure('load', 'a', 'b')` do?",
+  "options": [
+   "It checks that the marks a and b have the same value in the timeline",
+   "It creates an entry with the time between the marks a and b",
+   "It removes the marks a and b from the timeline",
+   "It sends the time of the marks a and b to the server"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "13",
+  "question": "What is a `PerformanceObserver` used for?",
+  "options": [
+   "To make a page load faster by caching the requests",
+   "To measure the memory that the page uses each second of its life",
+   "To stop long tasks from running on the main thread",
+   "To get performance entries, such as paints, when they happen"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "14",
+  "question": "What does the Coverage tool in Chrome DevTools show?",
+  "options": [
+   "How many bytes of each JavaScript and CSS file the page ran",
+   "Which test cases cover each function of the page code",
+   "Which browsers support each API that the page uses",
+   "How much of the screen the page content covers"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "15",
+  "question": "Why is `performance.now()` better than `Date.now()` for timing code?",
+  "options": [
+   "It runs on a separate thread and does not block the main thread code",
+   "It has higher resolution and the system clock does not change it",
+   "It counts only the CPU time and ignores waiting time",
+   "It rounds the result to full seconds to reduce noise"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "16",
+  "question": "What does premature optimization mean?",
+  "options": [
+   "Optimizing code after the release to production is done",
+   "Making code shorter without a change in its behavior",
+   "Optimizing code before you measure that it is a real problem",
+   "Optimizing only the code that the profiler marks as slow in production"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "17",
+  "question": "A page is slow. What is the first step?",
+  "options": [
+   "Record a profile and find the real bottleneck",
+   "Rewrite the slowest looking component",
+   "Add memoization to every component",
+   "Upgrade the framework to the latest version and test again"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "18",
+  "question": "You want to profile the page load in the Performance panel. What do you do?",
+  "options": [
+   "Open the page, wait for the load, then click Record",
+   "Use the record and reload button, so the trace starts before the page loads",
+   "Export a HAR file from the Network panel",
+   "Turn on Disable cache and read the Console"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "19",
+  "question": "What is layout (reflow) in the browser?",
+  "options": [
+   "The work to download and parse the HTML file",
+   "The work to run the JavaScript event handlers after user input",
+   "The work to compute the size and position of elements",
+   "The work to fill the pixels of each element"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "20",
+  "question": "What is the paint step in the rendering pipeline?",
+  "options": [
+   "The browser calculates the size of each box on the page",
+   "The browser parses the CSS rules into a tree",
+   "The browser writes the layer tree to the disk cache",
+   "The browser draws text, colors, and borders into pixels"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "What is the composite step in the rendering pipeline?",
+  "options": [
+   "The browser merges the CSS files into one file",
+   "The browser combines the layers into the final image",
+   "The browser joins the small tasks into one long task",
+   "The browser combines the network requests into a batch"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "22",
+  "question": "Which CSS change is usually cheapest for animation, because it can skip layout and paint?",
+  "options": [
+   "Changing `width`",
+   "Changing `margin-left`",
+   "Changing `transform`",
+   "Changing `top`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "23",
+  "question": "What does Largest Contentful Paint (LCP) measure?",
+  "options": [
+   "The time when the first byte arrives from the server to the browser",
+   "The time when all scripts finish their execution",
+   "The time when the user can first type in the page",
+   "The time when the largest visible element is rendered"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "What does Cumulative Layout Shift (CLS) measure?",
+  "options": [
+   "How much visible content moves without user action",
+   "How many times the layout code runs on the page during the load",
+   "How long the layout step takes in milliseconds",
+   "How many elements change color during the load"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "25",
+  "question": "What does Interaction to Next Paint (INP) measure?",
+  "options": [
+   "How fast the server answers the first request",
+   "How long the browser needs to parse the first script on the page",
+   "How fast the page shows a visual update after user input",
+   "How many frames the page shows each second"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "26",
+  "question": "Which tool gives you a lab audit score of a page in Chrome?",
+  "options": [
+   "Coverage",
+   "Layers",
+   "Sensors",
+   "Lighthouse"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "27",
+  "question": "What is field data in performance work?",
+  "options": [
+   "Data that comes from real users on their own devices",
+   "Data that you collect on a test server in the cloud",
+   "Data that comes from the DevTools throttling presets on your computer",
+   "Data that a build tool prints for each bundle"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "28",
+  "question": "Why do you profile in an incognito window?",
+  "options": [
+   "The browser gives more CPU time to private windows",
+   "Browser extensions do not add noise to the result",
+   "The browser disables the JavaScript garbage collector",
+   "The browser skips the paint step in private windows"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "29",
+  "question": "Why do you profile a production build, not a development build?",
+  "options": [
+   "Production builds keep all the source maps in memory",
+   "Development builds cannot be opened in DevTools",
+   "Production builds always run with a higher CPU priority",
+   "Development builds have extra checks and run slower"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "In a CPU profile, what does self time mean?",
+  "options": [
+   "The time spent in the function, without the functions it calls",
+   "The time from the start of the page until the function runs for the first time",
+   "The time that the function waits for the network",
+   "The time of the function and all the functions that call it"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "31",
+  "question": "In a CPU profile, what does total time mean?",
+  "options": [
+   "The time of the whole recording from start to end",
+   "The self time plus the time of all the functions it calls",
+   "The time that the function waited in the task queue before it ran",
+   "The time of the slowest single call of the function"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "32",
+  "question": "What does the Allocation sampling profile in the Memory panel show?",
+  "options": [
+   "Which DOM nodes the page removed from the document during the recording",
+   "Which network requests keep the memory in use",
+   "Which functions allocate memory, with low overhead",
+   "Which CSS rules cause the most repaints"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "33",
+  "question": "The memory graph goes up and down in a sawtooth and returns to the same level. What does it mean?",
+  "options": [
+   "The memory use is normal; the garbage collector frees the objects",
+   "The page has a memory leak in the event listeners",
+   "The browser runs out of memory and restarts the tab after some time",
+   "The page loads the same data again and again"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "34",
+  "question": "You repeat one action 10 times. The memory after each garbage collection grows. What does this suggest?",
+  "options": [
+   "The garbage collector runs more often than before",
+   "A memory leak that keeps the objects alive",
+   "The JIT compiler stores more optimized code",
+   "The browser reserves memory for the next tab"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "35",
+  "question": "Which Node.js flag writes a `.cpuprofile` file that you can open in Chrome DevTools?",
+  "options": [
+   "`--trace-gc`",
+   "`--prof-process`",
+   "`--cpu-prof`",
+   "`--max-old-space-size`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "What does `node --inspect app.js` do?",
+  "options": [
+   "It prints a CPU profile to the console when the process ends",
+   "It runs the code with extra type checks",
+   "It restarts the process when a file changes",
+   "It opens a debug port so DevTools can connect and profile"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "37",
+  "question": "What does the Disable cache option in the Network panel do?",
+  "options": [
+   "It deletes the cache of all sites in the browser for this session",
+   "It skips the browser cache while DevTools is open",
+   "It stops the server from sending cache headers",
+   "It blocks the page from using service workers"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "38",
+  "question": "Why do you select the Slow 4G preset in the Network panel?",
+  "options": [
+   "To reduce the size of the responses from the server",
+   "To switch the page to the mobile layout of the site",
+   "To test the page on a slow network connection",
+   "To limit the browser to one parallel request"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "39",
+  "question": "What does Time to First Byte (TTFB) measure?",
+  "options": [
+   "The time from the page load until the first image shows",
+   "The time that the browser needs to parse the first byte of JavaScript",
+   "The time from the first click until the first response",
+   "The time from the request start to the first byte of the response"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "40",
+  "question": "In the Network waterfall, a long bar for waiting for the server response shows what?",
+  "options": [
+   "The server is slow to start the response",
+   "The download of the file is slow",
+   "The browser is slow to parse the file it received",
+   "The DNS lookup is slow"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "41",
+  "question": "A synchronous script in the `<head>` has no `defer`. What happens?",
+  "options": [
+   "It loads after the page and never blocks anything on the page",
+   "It runs in a separate thread from the parser",
+   "It blocks the HTML parsing and delays the first paint",
+   "It loads after the HTML is parsed and runs in the idle time"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "42",
+  "question": "What does the `defer` attribute on a script do?",
+  "options": [
+   "It runs the script in a web worker",
+   "It delays the download until the user scrolls down to the script",
+   "It runs the script before any HTML is parsed",
+   "It downloads in parallel and runs after the HTML is parsed"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "Why is a big JavaScript bundle a problem?",
+  "options": [
+   "The browser must download, parse, and run it on the main thread",
+   "The browser cannot cache files that are larger than 1 MB",
+   "The browser runs large files in a slower JavaScript engine than small files",
+   "The browser downloads it again at each route change"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "44",
+  "question": "What is a web worker used for?",
+  "options": [
+   "To cache the network responses of the page for offline use in the browser",
+   "To run JavaScript in a separate thread, away from the main thread",
+   "To run the code of the page in a faster engine",
+   "To access the DOM from a background script"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "45",
+  "question": "In React, what is the commit phase?",
+  "options": [
+   "The step where React calls your components to get new output",
+   "The step where React compares the old and new props",
+   "The step where React saves the state to storage",
+   "The step where React applies the changes to the DOM"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "46",
+  "question": "What does Highlight updates when components render show in React DevTools?",
+  "options": [
+   "It draws colored borders around the components that render",
+   "It marks the components that have a memory leak",
+   "It shows the components that use the most memory in the current commit",
+   "It highlights the components that fail to render"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "47",
+  "question": "Which API gives you the timing data of the page load, such as `domInteractive`?",
+  "options": [
+   "`performance.getEntriesByType('resource')[0]`",
+   "`performance.getEntriesByType('navigation')`",
+   "`performance.memory.usedJSHeapSize`",
+   "`document.readyState`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "48",
+  "question": "Where do you see the User Timing marks and measures in the Performance panel?",
+  "options": [
+   "In the Network track",
+   "In the Frames track",
+   "In the Timings track",
+   "In the Interactions track"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "49",
+  "question": "You make a change to improve speed. What must you do next?",
+  "options": [
+   "Measure again and compare with the first result",
+   "Deploy the change and wait for user reports",
+   "Check that the code looks cleaner than before the change",
+   "Ask a teammate if the page feels faster"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "What does Total Blocking Time (TBT) add up?",
+  "options": [
+   "The full time of all tasks on the main thread",
+   "The part of each long task that is longer than 50 ms",
+   "The time that the network blocks the page",
+   "The time between the first click and the first response"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "51",
+  "question": "A click handler runs for 400 ms and INP is poor. Which change helps most?",
+  "options": [
+   "Add `async` to the handler function",
+   "Wrap the work in `Promise.resolve().then`",
+   "Split the work into small chunks and yield to the main thread",
+   "Add `will-change: transform` to the button and to its parent element"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "52",
+  "question": "A loop reads `el.offsetHeight` and then sets `el.style.height` on each item. Why is it slow?",
+  "options": [
+   "Each write sends a new request to the server over the network",
+   "Each read copies the DOM node in memory",
+   "Each write blocks the garbage collector",
+   "Each read after a write forces a new synchronous layout"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "53",
+  "question": "How do you fix the layout thrashing in a loop that mixes reads and writes?",
+  "options": [
+   "Do each write in a separate `setTimeout` call in the same loop",
+   "Do all the reads first, then do all the writes",
+   "Replace `offsetHeight` with `innerHTML`",
+   "Run the loop twice and use the last result"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "54",
+  "question": "How do you find a leak with heap snapshots?",
+  "options": [
+   "Take one snapshot and look for the largest object",
+   "Take a snapshot when the page loads and check the node count in the Summary view",
+   "Take a snapshot, repeat the action, take another, and compare the two",
+   "Take a snapshot after you close the tab"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "55",
+  "question": "In a heap snapshot, what is the retained size of an object?",
+  "options": [
+   "The memory that the object uses by itself",
+   "The memory that the object had at the time of its creation in the heap",
+   "The memory that the object shares with other tabs",
+   "The memory that the garbage collector frees if the object is removed"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "56",
+  "question": "A global `Map` stores DOM nodes by id. The app removes the nodes from the page but not from the `Map`. What happens?",
+  "options": [
+   "The nodes become detached and the memory grows",
+   "The browser removes the nodes from the `Map` itself",
+   "The nodes stay in the page and show again",
+   "The garbage collector frees the nodes after some time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "57",
+  "question": "A component starts `setInterval` in `useEffect` and has no cleanup. What is the risk?",
+  "options": [
+   "The timer stops when the component renders again",
+   "The timer runs only once for each page load and then stops by itself",
+   "The timer runs after unmount and keeps references in memory",
+   "The timer blocks other effects from running"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "58",
+  "question": "Find the bug:\n`useEffect(() => {\n  window.addEventListener('resize', onResize)\n}, [])`",
+  "options": [
+   "The empty array makes the effect run on each render of the component",
+   "The `resize` event does not work with `window`",
+   "The listener runs before the component mounts",
+   "There is no cleanup, so the listener stays after unmount"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "59",
+  "question": "Why is a 6x CPU throttle in DevTools not the same as a real phone?",
+  "options": [
+   "It slows only the CPU; memory, GPU, and network stay the same",
+   "It slows the network but not the CPU",
+   "It uses a different JavaScript engine than the phone has in its browser",
+   "It turns off the JIT compiler for the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "60",
+  "question": "How do you see why a component rendered in the React DevTools Profiler?",
+  "options": [
+   "Turn on Highlight updates in the general settings",
+   "Turn on the option to record why each component rendered",
+   "Read the warning that React prints in the console for each render",
+   "Count the hooks of the component in the Components tab"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "61",
+  "question": "Why does `React.memo` not help when the parent passes a new inline object each render?",
+  "options": [
+   "`React.memo` works only with class components and not with functions",
+   "`React.memo` compares only the children props",
+   "The inline object is too large for the cache",
+   "The shallow compare sees a different reference each time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "62",
+  "question": "When can `useMemo` make the performance worse?",
+  "options": [
+   "When the calculation is cheap, so the memo cost is higher than the gain",
+   "When the dependency array has more than one item, because React then compares them slowly",
+   "When the component renders more than once",
+   "When the result is an object and not a number"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "63",
+  "question": "In the React Profiler flame chart, a gray component means what?",
+  "options": [
+   "It rendered but took no time",
+   "It did not render during this commit",
+   "It failed with an error during render",
+   "It renders again in the next commit"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "64",
+  "question": "What does `buffered: true` do in `observer.observe({type: 'largest-contentful-paint', buffered: true})`?",
+  "options": [
+   "It saves the entries in the session storage",
+   "It waits and sends all entries in one batch at the end of the page load",
+   "It also gives the entries that happened before the observer started",
+   "It limits the observer to the first 100 entries"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "65",
+  "question": "A dev calls `performance.measure('load', 'start', 'end')` but never creates the `end` mark. What happens?",
+  "options": [
+   "The call throws an error",
+   "The call uses the current time for end",
+   "The call returns an entry with a duration of 0",
+   "The call waits until the mark exists"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "The waterfall shows many small requests that wait a long time in Stalled. The site uses HTTP/1.1. What is the likely cause?",
+  "options": [
+   "The server compresses each response too slowly for the browser to read",
+   "The browser limits the parallel connections for each host",
+   "The browser blocks requests from other origins",
+   "The DNS cache is full after six requests"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "67",
+  "question": "What is the difference between `preload` and `prefetch`?",
+  "options": [
+   "Preload is for images; prefetch is for scripts",
+   "Preload runs the script; prefetch only downloads it",
+   "Preload is for the current page; prefetch is for a later navigation",
+   "Preload has low priority and prefetch has high priority for the page"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "68",
+  "question": "A third-party script uses `async`. Why can it still hurt the page performance?",
+  "options": [
+   "Async scripts block the HTML parser until they finish their download",
+   "Async scripts cannot use the browser cache",
+   "Async scripts run before the first paint",
+   "Its code still runs on the main thread and can create long tasks"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "69",
+  "question": "A function takes 1 ms but the CPU profile does not show it. What is the likely reason?",
+  "options": [
+   "The profiler hides all functions that come from the browser itself",
+   "The profiler takes samples at intervals and can miss short calls",
+   "The profiler skips code that the JIT compiler optimizes",
+   "The profiler shows only functions that call the network"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "How can you measure the event loop delay in a Node.js server?",
+  "options": [
+   "Use `process.memoryUsage()`",
+   "Use `os.loadavg()`",
+   "Use `monitorEventLoopDelay` from `perf_hooks`",
+   "Read `process.uptime()` after each request"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "71",
+  "question": "How can you take a heap snapshot of a Node.js process without a debugger?",
+  "options": [
+   "Call `process.memoryUsage().heapUsed`",
+   "Call `console.memory()`",
+   "Call `global.gc()`",
+   "Call `v8.writeHeapSnapshot()`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "72",
+  "question": "Why use `performance.mark` and not `console.log` with a timestamp in a trace?",
+  "options": [
+   "The marks show in the Performance panel next to the other events",
+   "The marks run faster than `console.log` in all browsers and engines",
+   "The marks send their data to the server automatically",
+   "The marks work only in the production build"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "73",
+  "question": "A trace shows a long Recalculate Style after a class change on `body`. What is the likely reason?",
+  "options": [
+   "The class name is too long for the style engine",
+   "The browser reloads the CSS file for each class change on the body",
+   "The change can affect the style of many descendant elements",
+   "The `body` element has no layout box"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "74",
+  "question": "Which Rendering tool shows the areas of the page that the browser repaints?",
+  "options": [
+   "Layout shift regions",
+   "Frame rendering stats",
+   "Core Web Vitals overlay",
+   "Paint flashing"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "75",
+  "question": "The waterfall shows the HTML ends at 200 ms but the LCP image starts at 3 s. What is the best hypothesis?",
+  "options": [
+   "The browser finds the image late, for example from JavaScript or CSS",
+   "The server is too slow to send the HTML",
+   "The image file is too small for the browser to cache",
+   "The browser blocks all images for the first 3 seconds of the load time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "76",
+  "question": "Lighthouse reports 60% unused JavaScript on the first page. Which action helps?",
+  "options": [
+   "Add `defer` to all the scripts",
+   "Split the code with dynamic `import()` and load it when needed",
+   "Minify the code with a second tool",
+   "Move all the scripts to the end of the body and add a longer cache time"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "77",
+  "question": "A teammate wants to rewrite a component in a faster library. What do you ask first?",
+  "options": [
+   "Is the new library smaller than the old one?",
+   "Does the new library have a TypeScript version?",
+   "Can we finish the rewrite before the next sprint and the next release?",
+   "How much of the total time does this component use in the profile?"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "78",
+  "question": "A function uses 2% of the total time. You make it 10 times faster. What is the best total gain?",
+  "options": [
+   "About 1.8%",
+   "About 10%",
+   "About 20%",
+   "About 90%"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "79",
+  "question": "Why is the first run of a benchmark often slower than the next runs?",
+  "options": [
+   "The garbage collector is off during the first run",
+   "The JIT compiler and the caches are not warm yet",
+   "The CPU runs at a lower clock for the first run only",
+   "The profiler adds a delay to the first call only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "80",
+  "question": "Run times of a test vary between runs. Which value is the best summary?",
+  "options": [
+   "The average, because it uses all the values",
+   "The fastest run, because it has the least noise from the system",
+   "The median, because the outliers do not change it much",
+   "The last run, because it is the most recent"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "81",
+  "question": "Two closures share one scope. Only closure A uses `bigData`. Why can `bigData` stay in memory when you keep only closure B?",
+  "options": [
+   "V8 can use one shared context object for the captured variables of the scope",
+   "Each closure keeps a copy of all variables of the parent scope",
+   "The garbage collector never frees any data that a function has read at least once",
+   "Closure B reads `bigData` through a hidden global variable"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "82",
+  "question": "Why does a `WeakMap` cache help to avoid detached DOM node leaks?",
+  "options": [
+   "It removes the nodes from the DOM when the cache is full",
+   "It holds the keys weakly, so the entry goes away when the node is collected",
+   "It copies the node data and drops the reference to the node at once, so no leak",
+   "It frees the entries after a fixed time with a timer"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "Major garbage collection pauses cause jank in a hot code path. What is the most effective change?",
+  "options": [
+   "Call `global.gc()` after each frame",
+   "Move all the objects to the global scope so they are never freed",
+   "Allocate fewer short-lived objects in the hot path",
+   "Use `var` in place of `let` and `const`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "84",
+  "question": "Why can the numbers in a DevTools profile be different from the numbers that real users see?",
+  "options": [
+   "DevTools always uses a different JavaScript engine than the one that real users have",
+   "DevTools removes the third-party scripts from the page",
+   "DevTools measures the network time twice",
+   "The profiler adds overhead and the device and the page state are different"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "Lighthouse gives LCP of 1.8 s but the field data at p75 shows 4 s. What is the most likely reason?",
+  "options": [
+   "Lighthouse measures a different element than the real users do on the same page",
+   "Real users have slower devices, slower networks, and different page states",
+   "The field data includes the time of the server build",
+   "Lighthouse uses the worst case of all the runs"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "86",
+  "question": "Which percentile of the field data do Core Web Vitals use to judge a page?",
+  "options": [
+   "The median of page visits",
+   "The 95th percentile of page visits",
+   "The 75th percentile of page visits",
+   "The average of all page visits"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "87",
+  "question": "In Chromium browsers, what extra information does the Long Animation Frames API give over Long Tasks?",
+  "options": [
+   "The memory that each long frame used",
+   "The network requests that each frame started, with their size and time",
+   "The GPU time of each long frame",
+   "The scripts that caused the slow frame, and the render time in it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "88",
+  "question": "INP is poor but the event handler is fast. Which part of the interaction is the likely cause?",
+  "options": [
+   "The presentation delay, for example a large layout after the handler",
+   "The input delay of the keyboard hardware that the user has on the device",
+   "The size of the JavaScript heap",
+   "The time to first byte of the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "89",
+  "question": "A search input filters a slow list and typing lags. How does `startTransition` help?",
+  "options": [
+   "It moves the render work of the list to a web worker",
+   "It delays the update until the browser is idle for 5 seconds",
+   "It marks the list update as non-urgent, so typing can interrupt it",
+   "It caches the output of the render function between updates"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "90",
+  "question": "The React Profiler shows a fast render phase but a long commit phase. Which is the likely cause?",
+  "options": [
+   "Too many state updates in the render function of the root component",
+   "A large number of props in the components",
+   "A slow API call during the render phase",
+   "Slow layout effects or heavy DOM changes during the commit"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "91",
+  "question": "What is a real trade-off of list virtualization?",
+  "options": [
+   "Find in page and accessibility tools do not see the rows that are not rendered",
+   "The list uses more memory because it keeps all the rows rendered in the DOM tree",
+   "The list cannot scroll more than one screen",
+   "The list cannot use keys for its rows"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "92",
+  "question": "A 20-character substring of a 50 MB string stays in a long-lived object. What can happen in V8?",
+  "options": [
+   "V8 copies the substring and frees the parent string at once after that",
+   "The sliced string can keep the whole parent string in memory",
+   "V8 stores the substring in the CPU cache only",
+   "V8 throws an error when the parent is not referenced"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "93",
+  "question": "A Node.js server stops answering when a request parses a 100 MB JSON string. What is the best fix?",
+  "options": [
+   "Increase `UV_THREADPOOL_SIZE`",
+   "Add `await` before `JSON.parse`",
+   "Call `setImmediate` before `JSON.parse` in the request handler",
+   "Move the parsing to a `worker_threads` worker"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "94",
+  "question": "A Node.js CPU profile shows 5 ms of self time for a handler, but the request takes 800 ms. Where do you look?",
+  "options": [
+   "At the wait time for I/O, such as the database or the network, with tracing",
+   "At the settings of the garbage collector and the heap size limit of the process",
+   "At the JIT compiler logs of the handler",
+   "At the size of the event loop queue only"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "95",
+  "question": "Two builds differ by 5% in a benchmark, and the runs vary by 20%. How do you decide which is faster?",
+  "options": [
+   "Run each build once and compare the two numbers",
+   "Run both many times, interleaved, and compare the distributions",
+   "Run the new build only and compare with the old report from last week",
+   "Use the fastest single run of each build"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "96",
+  "question": "Which metric is the most stable for a performance budget check in CI?",
+  "options": [
+   "The LCP value from one Lighthouse run",
+   "The INP value from one test run",
+   "The size of the bundle in bytes",
+   "The total time of the test suite"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "A page sends a large `ArrayBuffer` to a worker with `postMessage`. How do you avoid the copy cost?",
+  "options": [
+   "Pass it in the transfer list so the ownership moves",
+   "Convert it to a JSON string first",
+   "Send it in smaller messages with `setTimeout` between each message",
+   "Freeze it with `Object.freeze`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "98",
+  "question": "A developer adds `will-change: transform` to 500 elements. What is the likely result?",
+  "options": [
+   "The browser skips the paint step for the whole page after the first frame",
+   "Many compositor layers use a lot of GPU memory and can slow the page",
+   "The browser merges all elements into one layer",
+   "The elements animate faster with no side effects"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "99",
+  "question": "The same function is called from many places. Which DevTools view helps to see its total cost?",
+  "options": [
+   "The Call Tree tab, which groups the time by caller of the function",
+   "The Event Log tab, which lists the events",
+   "The Bottom-Up tab, which groups the time by function",
+   "The Network tab, which lists the requests"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "100",
+  "question": "The JS heap is stable but the process memory in Task Manager grows. Where is the likely cause?",
+  "options": [
+   "The JavaScript engine does not run the garbage collector for the main thread",
+   "The heap snapshot hides the objects of the main thread",
+   "The browser counts the same memory twice",
+   "Memory outside the JS heap, such as decoded images or `ArrayBuffer` data"
+  ],
+  "correct_index": 3
+ }
+]

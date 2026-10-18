@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What is a design token?",
+    "options": [
+      "A component rendering function",
+      "A fixed stylesheet import path",
+      "A browser authentication credential",
+      "A named design decision value"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "2",
+    "question": "Why does a team name a design value?",
+    "options": [
+      "To force one platform implementation",
+      "To remove every component style rule",
+      "Give the decision a reusable identity",
+      "To prevent every future visual change"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "3",
+    "question": "What does a primitive token commonly represent?",
+    "options": [
+      "A specific component interaction",
+      "A selected application theme",
+      "A complete screen layout",
+      "A raw value in a palette or scale"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "4",
+    "question": "What does a semantic token commonly describe?",
+    "options": [
+      "Its generated class hash",
+      "Its source file byte position",
+      "The current browser engine",
+      "The intended use of a value"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "5",
+    "question": "What does a component token commonly target?",
+    "options": [
+      "A component-specific design decision",
+      "Every value in a global palette",
+      "The application routing model",
+      "The design tool account owner"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "6",
+    "question": "Which name describes a semantic color role?",
+    "options": [
+      "color.text.primary",
+      "color.rgb.10.20.30",
+      "color.blue.500",
+      "color.hex.336699"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "7",
+    "question": "Which name describes a primitive palette value?",
+    "options": [
+      "color.blue.500",
+      "color.text.muted",
+      "color.action.primary",
+      "color.border.error"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "8",
+    "question": "What is a token alias?",
+    "options": [
+      "A duplicate generated filename",
+      "A required component identifier",
+      "A local CSS class selector",
+      "A reference to another token"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "9",
+    "question": "Why does an alias help token maintenance?",
+    "options": [
+      "Propagate source changes",
+      "It makes every color accessible",
+      "It eliminates every theme file",
+      "It prevents all invalid values"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "10",
+    "question": "What does a theme commonly change?",
+    "options": [
+      "The component API route names",
+      "Values assigned to design roles",
+      "The application user permissions",
+      "The source language grammar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "11",
+    "question": "Why use semantic tokens for light and dark modes?",
+    "options": [
+      "Remove runtime theme selection",
+      "Keep every raw color identical",
+      "Avoid defining surface roles",
+      "Keep intent stable across modes"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "12",
+    "question": "Which decision can a spacing token express?",
+    "options": [
+      "A database record interval",
+      "A layout gap value",
+      "A component event type",
+      "An API retry policy"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "13",
+    "question": "Which decision can a duration token express?",
+    "options": [
+      "A layout column count",
+      "An animation time",
+      "A token package version",
+      "A color contrast ratio"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "14",
+    "question": "Which decision can an easing token express?",
+    "options": [
+      "A font fallback order",
+      "A border color role",
+      "A motion timing curve",
+      "A breakpoint naming rule"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "15",
+    "question": "Which decision can a typography token express?",
+    "options": [
+      "A page permission model",
+      "A form validation schema",
+      "Font and text style properties",
+      "A server localization route"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "16",
+    "question": "What does a border-radius token represent?",
+    "options": [
+      "A corner shape value",
+      "A border color pair",
+      "A text width constraint",
+      "A shadow blur stack"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "17",
+    "question": "What does an opacity token represent?",
+    "options": [
+      "A mandatory color palette",
+      "A stacking context boundary",
+      "A text style family",
+      "An alpha-related numeric value"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "18",
+    "question": "What is a composite token?",
+    "options": [
+      "A list of generated output paths",
+      "A folder with unrelated token files",
+      "An alias with two independent names",
+      "A token with structured subvalues"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "19",
+    "question": "Which is a typical composite design token?",
+    "options": [
+      "A single duration value",
+      "A typography style",
+      "A single opacity number",
+      "A single font weight number"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "20",
+    "question": "What does token metadata add?",
+    "options": [
+      "An automatic validation result",
+      "Context beyond the value",
+      "A second default value",
+      "A required runtime component"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "21",
+    "question": "Why document a token description?",
+    "options": [
+      "Force all platforms to share units",
+      "Explain the intended use",
+      "Replace version control history",
+      "Generate every component layout"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "22",
+    "question": "What does token deprecation communicate?",
+    "options": [
+      "A token value that cannot change",
+      "A hidden mode required at runtime",
+      "A planned move away from the token",
+      "A generated file that needs editing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "23",
+    "question": "What does a token naming convention support?",
+    "options": [
+      "Consistent discovery and usage",
+      "Automatic contrast compliance",
+      "Guaranteed smaller asset files",
+      "Automatic component correctness"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "24",
+    "question": "What does token hierarchy organize?",
+    "options": [
+      "The application's route order",
+      "The UI component render queue",
+      "Related token names and roles",
+      "The browser DOM event path"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "25",
+    "question": "What should token source files contain?",
+    "options": [
+      "Only component runtime state",
+      "The maintained design data",
+      "Only screenshots of components",
+      "Only generated platform output"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "26",
+    "question": "Why generate platform files from token sources?",
+    "options": [
+      "Produce target-specific representations",
+      "Prevent all version changes",
+      "Remove all format validation",
+      "Force every target to use CSS"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "27",
+    "question": "What does a token transform change?",
+    "options": [
+      "The application authentication state",
+      "The component accessibility role",
+      "The source control author identity",
+      "A token representation for a target"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "28",
+    "question": "What does a token output format define?",
+    "options": [
+      "The ordering of browser events",
+      "The structure of generated files",
+      "The design team's review schedule",
+      "The app's network request shape"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "29",
+    "question": "What is Style Dictionary used for?",
+    "options": [
+      "Rendering a React component tree",
+      "Validating every screen layout",
+      "Hosting an application database",
+      "Building platform-specific token outputs"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "30",
+    "question": "Can one token source generate CSS and native constants?",
+    "options": [
+      "Yes, with suitable target configuration",
+      "Only if native views embed a browser",
+      "No, tokens are browser-only data",
+      "Only if all values are pixel strings"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "31",
+    "question": "What is the DTCG format intended to support?",
+    "options": [
+      "A universal runtime theme engine",
+      "A browser component styling API",
+      "A required frontend UI framework",
+      "Token exchange between tools"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "32",
+    "question": "In DTCG 2025.10, which property holds a token value?",
+    "options": [
+      "$value",
+      "$description",
+      "$extensions",
+      "$type"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "33",
+    "question": "In DTCG 2025.10, which property identifies a token type?",
+    "options": [
+      "$type",
+      "$deprecated",
+      "$value",
+      "$description"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "34",
+    "question": "In DTCG 2025.10, which property holds explanatory text?",
+    "options": [
+      "$type",
+      "$description",
+      "$value",
+      "$extensions"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "35",
+    "question": "In DTCG 2025.10, what are $extensions for?",
+    "options": [
+      "Mandatory alias values",
+      "Generated component markup",
+      "Required CSS declarations",
+      "Tool-specific metadata"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "36",
+    "question": "What does the DTCG alias notation {color.brand} identify?",
+    "options": [
+      "A browser custom property name",
+      "A CSS declaration block",
+      "A referenced token path",
+      "A JavaScript template value"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "37",
+    "question": "Why reject a token alias cycle?",
+    "options": [
+      "Aliases lack a resolvable base value",
+      "Every token must have a distinct type",
+      "Aliases require alphabetical file order",
+      "The browser cannot parse JSON files"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "38",
+    "question": "What does an unresolved alias indicate?",
+    "options": [
+      "A token description is too short",
+      "A reference target is missing",
+      "A generated file has no comments",
+      "A color has insufficient saturation"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "39",
+    "question": "What does a token schema check primarily validate?",
+    "options": [
+      "The runtime speed of every animation",
+      "The visual quality of every screen",
+      "The expected data structure",
+      "The usability of every component"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "40",
+    "question": "Does a valid token file guarantee an accessible UI?",
+    "options": [
+      "Only if all colors use the same space",
+      "No, usage and combinations still need checks",
+      "Only if every token has a description",
+      "Yes, the format checks all contrast pairs"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "41",
+    "question": "Why keep generated token files separate from sources?",
+    "options": [
+      "Remove the need for a build pipeline",
+      "Make ownership and regeneration clear",
+      "Prevent platform output from loading",
+      "Require hand edits after every generation"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "42",
+    "question": "Should teams normally edit generated token output directly?",
+    "options": [
+      "Yes, generated values are authoritative",
+      "Only when the output has comments",
+      "No, change its maintained source",
+      "Only when the filename contains CSS"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "43",
+    "question": "What does token package versioning communicate?",
+    "options": [
+      "The design tool zoom setting",
+      "The browser color profile alone",
+      "Changes to a consumer-facing contract",
+      "The component render count"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "44",
+    "question": "What is token drift?",
+    "options": [
+      "A token import with a relative path",
+      "A fixed animation easing curve",
+      "Design and implementation diverge",
+      "A default browser color transform"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "45",
+    "question": "What does a token usage audit locate?",
+    "options": [
+      "Only the generated package size",
+      "Only the design tool page order",
+      "Only the browser cache expiry",
+      "Where tokens and raw values appear"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "46",
+    "question": "Why can a token preview page help reviews?",
+    "options": [
+      "Prove all consumers use tokens",
+      "Replace every visual regression test",
+      "Show values in meaningful contexts",
+      "Remove the need for documentation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "47",
+    "question": "What is a useful naming rule for semantic tokens?",
+    "options": [
+      "Use the author name for every category",
+      "Name the role, not only the current value",
+      "Use the raw hex color as the whole name",
+      "Use the current component DOM hash"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "48",
+    "question": "What does a token owner decide?",
+    "options": [
+      "The application's user data permissions",
+      "The build server's network address",
+      "The token's maintained meaning and changes",
+      "The browser's native focus behavior"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "49",
+    "question": "Why should related tokens share a documented scale?",
+    "options": [
+      "Promote consistent design choices",
+      "Guarantee one value fits every screen",
+      "Remove exceptions from all products",
+      "Force equal numerical increments"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "50",
+    "question": "What does a token fallback provide?",
+    "options": [
+      "An automatic token migration script",
+      "A mandatory dark mode value",
+      "A value when the primary value is absent",
+      "A second alias name for every token"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "51",
+    "question": "A button uses primitive blue directly. What can a semantic action token improve?",
+    "options": [
+      "Prevent every color contrast failure",
+      "Separate intent from palette choice",
+      "Remove the need for disabled states",
+      "Make all button sizes identical"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "52",
+    "question": "A token named text-black changes to white in dark mode. What naming issue appears?",
+    "options": [
+      "The name encodes a value rather than a role",
+      "The value cannot use a theme override",
+      "The token name has too few segments",
+      "The token must become a composite"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "53",
+    "question": "A spacing token has the string red. What should fail first?",
+    "options": [
+      "Component event registration",
+      "The package version parser",
+      "Type-aware token validation",
+      "The browser navigation history"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "54",
+    "question": "A token aliases a color but declares a dimension type. What should the pipeline check?",
+    "options": [
+      "Only token name character count",
+      "Only generated file extension",
+      "Only JSON indentation width",
+      "Reference type compatibility"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "55",
+    "question": "A theme overrides values that other tokens reference. Which build order resolves those aliases against the intended theme?",
+    "options": [
+      "Resolve all aliases, then ignore overrides",
+      "Resolve only the original primitive values",
+      "Apply overrides, then resolve aliases",
+      "Treat theme values as output comments"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "56",
+    "question": "A generated CSS value needs runtime theme switching. Which output can preserve that flexibility?",
+    "options": [
+      "Only fixed inline colors",
+      "Only Sass variables",
+      "CSS custom properties",
+      "Only hardcoded PNG assets"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "57",
+    "question": "A native target cannot use rem directly. What should the token build define?",
+    "options": [
+      "An explicit platform conversion policy",
+      "A copy of the CSS declaration text",
+      "A token name with a native suffix only",
+      "An automatic browser font dependency"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "58",
+    "question": "A token transform converts dimensions to pixels. What input assumption must it document?",
+    "options": [
+      "The generated comment language",
+      "The source file creation time",
+      "The alias alphabetical order",
+      "The unit conversion basis"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "59",
+    "question": "A team adds a token for every one-pixel exception. What is the likely maintenance risk?",
+    "options": [
+      "A stable semantic API for every product",
+      "A large set with little reusable meaning",
+      "A complete removal of design drift",
+      "A guaranteed smaller source repository"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "60",
+    "question": "A component needs a temporary local value. What should determine whether it becomes a token?",
+    "options": [
+      "Whether the value is an integer",
+      "Its reusable design meaning",
+      "Whether it is a valid CSS value",
+      "Whether the filename is short"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "61",
+    "question": "A token build overwrites generated files nondeterministically. What should the team stabilize?",
+    "options": [
+      "The page scroll position",
+      "The component event timing",
+      "Input ordering and build configuration",
+      "The design tool zoom level"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "62",
+    "question": "A primitive color changes. How should the team find affected semantic roles?",
+    "options": [
+      "Search only the primitive description",
+      "Read only the package version number",
+      "Inspect only the changed JSON line",
+      "Trace reverse alias dependencies"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "63",
+    "question": "A token removal affects public consumers. Which release practice helps them migrate?",
+    "options": [
+      "Deprecate and document a replacement",
+      "Rename every unrelated token too",
+      "Delete the token without notice",
+      "Keep only the previous screenshot"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "64",
+    "question": "A token changes value without changing its name. What should release review still assess?",
+    "options": [
+      "The visible impact on consumers",
+      "Only whether the value is shorter",
+      "Only whether the type name stays equal",
+      "Only whether JSON remains valid"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "65",
+    "question": "A team imports two brands with identical token paths. What must configuration define?",
+    "options": [
+      "Only the number of build workers",
+      "Namespace or override precedence",
+      "Only the source comment style",
+      "Only generated file indentation"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "66",
+    "question": "A Style Dictionary transform changes a name. What does its output affect?",
+    "options": [
+      "The theme selection UI automatically",
+      "The target identifier",
+      "The source alias graph automatically",
+      "The token's design intent automatically"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "67",
+    "question": "A Style Dictionary format emits CSS variables. What is the format responsible for?",
+    "options": [
+      "Creating the design tool source data",
+      "Choosing every token's semantic role",
+      "Validating every application's contrast",
+      "Serializing selected tokens as CSS"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "68",
+    "question": "A token source uses DTCG properties while a consumer expects legacy value keys. What integration is required?",
+    "options": [
+      "A different browser color mode",
+      "A new component keyboard handler",
+      "An extra CSS specificity layer",
+      "A compatible parser or migration"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "69",
+    "question": "A token is grouped under color but has dimension type. What should processing use for its value semantics?",
+    "options": [
+      "Only the group display name",
+      "Its declared or inherited type",
+      "Only the file's extension",
+      "Only the generated variable prefix"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "70",
+    "question": "A typography token references a font family. What does the consuming app still need?",
+    "options": [
+      "Disable the browser fallback list",
+      "Convert every font weight to a color",
+      "Rename every typography token",
+      "Load or provide the font"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "71",
+    "question": "A token pipeline emits a CSS variable that no component uses. What does that prove?",
+    "options": [
+      "Only that the output exists",
+      "That its contrast passes review",
+      "That every screen uses the token",
+      "That its design meaning is correct"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "72",
+    "question": "A dark theme passes single-token checks but text remains unreadable. What should tests compare?",
+    "options": [
+      "Only palette sorting order",
+      "Only token name lengths",
+      "Only the number of theme files",
+      "Foreground and background pairs"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "73",
+    "question": "A token alias changes target but keeps the same resolved value. What review remains useful?",
+    "options": [
+      "Remove the alias as automatically invalid",
+      "Change the token type to a string",
+      "Check dependency and semantic intent",
+      "Require a visible screenshot difference"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "74",
+    "question": "A spacing scale changes from px to rem. What must migration consider?",
+    "options": [
+      "Only the JSON parser version",
+      "Only generated file comment order",
+      "Root font size and consumer assumptions",
+      "Only token naming capitalization"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "75",
+    "question": "A team uses one token for errors and destructive actions. What can justify separating those roles?",
+    "options": [
+      "Their current red values are equal",
+      "The token source is a JSON object",
+      "They can evolve independently",
+      "Both roles appear in one design tool"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "76",
+    "question": "A product duplicates all brand tokens per platform. What architecture reduces source drift?",
+    "options": [
+      "Shared source with target transforms",
+      "Generated files as competing source data",
+      "Independent manual copies per target",
+      "Separate undocumented aliases per screen"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "77",
+    "question": "A token description says heading text, but body text uses it. What should a review inspect?",
+    "options": [
+      "Whether the semantic contract matches usage",
+      "Only the resolved font size number",
+      "Only the package archive checksum",
+      "Only the generated output variable name"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "78",
+    "question": "A style pipeline preserves alias references in CSS. What must the emitted output include?",
+    "options": [
+      "The referenced target variables",
+      "Only the primitive token descriptions",
+      "Only the source file extension metadata",
+      "Only the aliases used by one page"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "79",
+    "question": "A team filters output tokens after resolving aliases. What failure should it check if references remain in output?",
+    "options": [
+      "Too many primitive token descriptions",
+      "References to excluded targets",
+      "A changed object key insertion order",
+      "A different design tool preview scale"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "80",
+    "question": "A token package claims to support three themes. What should its contract tests verify?",
+    "options": [
+      "Only that all output files share a size",
+      "Only the names of the theme folders",
+      "Only that each theme has one color",
+      "Required token availability in each theme"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "81",
+    "question": "A public semantic token aliases private palette data. What release impact can changing that palette have?",
+    "options": [
+      "Palette changes reach public consumers",
+      "The token cannot be serialized to JSON",
+      "The browser ignores aliases with metadata",
+      "The token must become a component selector"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "82",
+    "question": "A token graph contains thousands of aliases. Which build design avoids repeated resolution work?",
+    "options": [
+      "Replace all aliases with runtime DOM queries",
+      "Treat unresolved references as empty strings",
+      "Resolve every path again for every consumer",
+      "Memoize resolved nodes with cycle detection"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "83",
+    "question": "A token pipeline preserves wide-gamut colors for one target but converts another to sRGB. What must it define?",
+    "options": [
+      "A shared browser DOM selector",
+      "A single integer for every color",
+      "A deliberate gamut mapping policy",
+      "A required component-specific alias"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "84",
+    "question": "A global brand switch changes hundreds of CSS variables. What runtime cost can follow?",
+    "options": [
+      "A guaranteed layout shift for every color",
+      "Style recalculation across dependent elements",
+      "A server request for every component instance",
+      "A new JavaScript module download per token"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "85",
+    "question": "A team renames semantic tokens without changing values. Why can this still require a breaking release?",
+    "options": [
+      "Token names are only documentation",
+      "Consumers depend on identifiers",
+      "Aliases automatically repair every import",
+      "Identical values cannot share types"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "86",
+    "question": "A design tool and repository both accept token edits. What does the workflow need to prevent lost updates?",
+    "options": [
+      "A larger palette with more primitives",
+      "A shorter token naming convention only",
+      "An explicit source and conflict policy",
+      "A second generated output directory only"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "87",
+    "question": "A token build uses environmental data without recording it. What release property becomes hard to guarantee?",
+    "options": [
+      "Accessible button names",
+      "Reproducible outputs",
+      "Valid JSON indentation",
+      "Correct DOM event ordering"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "88",
+    "question": "A composite shadow token contains unsupported features for a native target. What should the transform do?",
+    "options": [
+      "Use a documented mapping or report unsupported data",
+      "Serialize browser CSS as a native constant",
+      "Rename the shadow as a spacing token",
+      "Silently discard all unsupported subvalues"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "89",
+    "question": "A token migration changes values and roles at once. What review structure makes regressions easier to locate?",
+    "options": [
+      "Combine all changes into one unlabelled patch",
+      "Separate contract changes from visual changes",
+      "Remove old usage records before review",
+      "Regenerate outputs without source diffs"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "90",
+    "question": "A theme resolves aliases from another theme accidentally. What validation catches this cross-theme leak?",
+    "options": [
+      "Resolve each theme in its intended context",
+      "Validate only the primitive color strings",
+      "Compare only the generated file line counts",
+      "Check only the JSON file syntax"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "91",
+    "question": "A platform rounds small dimension tokens differently. What should cross-platform consistency review compare?",
+    "options": [
+      "Only the source token descriptions",
+      "Only exact generated text strings",
+      "Rendered intent and rounding policy",
+      "Only the platform constant names"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "92",
+    "question": "A token build flattens paths into names. Two different paths produce one identifier. What should happen?",
+    "options": [
+      "Concatenate both values without warning",
+      "Replace both names with file timestamps",
+      "Silently keep the final token",
+      "Report a name collision"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "93",
+    "question": "A product wants user-selectable compact density. Which token architecture limits duplicated color configuration?",
+    "options": [
+      "Separate density decisions from color themes",
+      "Encode density into every font family name",
+      "Use one primitive for color and spacing",
+      "Copy every color for each spacing value"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "94",
+    "question": "A token is technically valid but changes a control below its usable target size. What additional gate is needed?",
+    "options": [
+      "An alphabetical naming rule",
+      "A JSON indentation check",
+      "Component-level usability checks",
+      "A generated filename length limit"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "95",
+    "question": "A library publishes only resolved token values. What capability can consumers lose compared with preserved aliases?",
+    "options": [
+      "Inspecting the original semantic dependency graph",
+      "Using constants in platform source code",
+      "Seeing the published token names",
+      "Reading the generated numeric values"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "96",
+    "question": "A token package references tokens from another package. What must its release dependency contract preserve?",
+    "options": [
+      "Only the other package display title",
+      "Only identical output file indentation",
+      "Compatible referenced package versions",
+      "Only the same preview screenshot size"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "97",
+    "question": "A design tool export drops unsupported token metadata. What must round-trip tests detect?",
+    "options": [
+      "Only the generated file size",
+      "Only changes in file whitespace",
+      "Only the order of preview screenshots",
+      "Information loss between representations"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "98",
+    "question": "A team caches token builds by source files alone. What additional inputs can change output?",
+    "options": [
+      "The browser scroll restoration setting",
+      "The current page heading text",
+      "The developer's editor cursor position",
+      "Tool versions and transform configuration"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "99",
+    "question": "A token source allows untrusted extension metadata. What should a generation pipeline avoid?",
+    "options": [
+      "Validating metadata structure",
+      "Ignoring unsupported optional metadata",
+      "Keeping metadata in a JSON object",
+      "Executing metadata as code"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "100",
+    "question": "A token roll-out spans several apps with independent deployments. Which release design reduces mismatched contracts?",
+    "options": [
+      "Require every app to copy new values manually",
+      "Version outputs and retain a migration window",
+      "Delete deprecated tokens before any consumer updates",
+      "Replace all artifacts under one mutable URL"
+    ],
+    "correct_index": 1
+  }
+]

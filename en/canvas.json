@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "Which HTML element gives you a bitmap surface that you draw on with JavaScript?",
+  "options": [
+   "`<picture>`",
+   "`<canvas>`",
+   "`<figure>`",
+   "`<svg>`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "How do you get the 2D drawing context of a canvas element?",
+  "options": [
+   "`canvas.createContext('2d')`",
+   "`canvas.drawContext('2d')`",
+   "`canvas.getContext('2d')`",
+   "`canvas.getContext('canvas')`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "3",
+  "question": "What does `getContext()` return when the browser does not support the requested context type?",
+  "options": [
+   "An empty object",
+   "`undefined`",
+   "A `TypeError` exception",
+   "`null`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "4",
+  "question": "A canvas element has no `width` or `height` attribute. What is its default size?",
+  "options": [
+   "400 by 300 pixels",
+   "300 by 150 pixels",
+   "640 by 480 pixels",
+   "100 by 100 pixels"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "5",
+  "question": "Which code changes the pixel size of the drawing buffer of a canvas?",
+  "options": [
+   "`canvas.style.width = '800px'`",
+   "`ctx.width = 800`",
+   "`canvas.width = 800`",
+   "`ctx.canvas.style.size = 800`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "6",
+  "question": "What does `ctx.fillRect(10, 20, 100, 50)` do?",
+  "options": [
+   "Fills a rectangle between points (10,20) and (100,50)",
+   "Fills a rectangle with its center at x=10, y=20",
+   "Fills a rectangle with its top-left corner at x=20, y=10 and size 50 by 100",
+   "Fills a rectangle with its top-left corner at x=10, y=20"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "7",
+  "question": "Which method draws only the outline of a rectangle?",
+  "options": [
+   "`strokeRect()`",
+   "`outlineRect()`",
+   "`borderRect()`",
+   "`drawRect()`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "8",
+  "question": "How do you clear the whole canvas before the next animation frame?",
+  "options": [
+   "`ctx.clearCanvas(0, 0, canvas.width, canvas.height)`",
+   "`canvas.innerHTML = ''`",
+   "`ctx.clearRect(0, 0, canvas.width, canvas.height)`",
+   "`ctx.fillRect(0, 0, canvas.width, canvas.height)`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "9",
+  "question": "Which code draws a visible line from (0,0) to (50,50)?",
+  "options": [
+   "`ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(50,50);`",
+   "`ctx.beginPath(); ctx.lineTo(0,0); ctx.lineTo(50,50); ctx.fill(); ctx.closePath();`",
+   "`ctx.moveTo(0,0); ctx.lineTo(50,50); ctx.closePath();`",
+   "`ctx.beginPath(); ctx.moveTo(0,0); ctx.lineTo(50,50); ctx.stroke();`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "10",
+  "question": "What does `ctx.beginPath()` do?",
+  "options": [
+   "It starts a new path and removes the old sub-paths",
+   "It clears all pixels from the canvas",
+   "It saves the current drawing state and the old path on a stack",
+   "It closes the current sub-path with a line"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "11",
+  "question": "What does `ctx.closePath()` do?",
+  "options": [
+   "It ends the 2D context and frees its memory",
+   "It draws a line from the current point to the sub-path start",
+   "It removes the current path and resets the context state to defaults",
+   "It fills the current path with the fill style"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "12",
+  "question": "Which value can you assign to `ctx.fillStyle`?",
+  "options": [
+   "A `DOMRect` object",
+   "An `ImageData` object from `getImageData`",
+   "A `Path2D` object",
+   "A `CanvasGradient` object"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "13",
+  "question": "What is the default value of `ctx.lineWidth`?",
+  "options": [
+   "1",
+   "2",
+   "10",
+   "0"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "14",
+  "question": "Which call adds a full circle to the current path?",
+  "options": [
+   "`ctx.arc(x, y, r, 0, Math.PI)`",
+   "`ctx.arc(x, y, r, 0, 2 * Math.PI)`",
+   "`ctx.arc(x, y, r, 0, 2 * Math.PI * r)`",
+   "`ctx.arc(r, x, y, 0, 2 * Math.PI)`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "15",
+  "question": "Which unit does `ctx.rotate(angle)` use for the angle?",
+  "options": [
+   "Turns",
+   "Degrees",
+   "Radians",
+   "Gradians"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "16",
+  "question": "What does `ctx.save()` do?",
+  "options": [
+   "It pushes the current drawing state on a stack",
+   "It stores the current path for later",
+   "It copies the bitmap to a memory buffer for a later restore",
+   "It saves the canvas pixels to a PNG file"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "17",
+  "question": "After `ctx.restore()`, which item does the context bring back?",
+  "options": [
+   "The pixels and the path that were on the canvas at `save()`",
+   "The styles, transform, and clip from the last `save()`",
+   "The width and height of the canvas",
+   "The current path from the last `save()`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "18",
+  "question": "After `ctx.translate(50, 50)`, where does `ctx.fillRect(0, 0, 10, 10)` draw its square?",
+  "options": [
+   "At x=100, y=100",
+   "At x=60, y=60",
+   "At x=50, y=50",
+   "At x=0, y=0"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "19",
+  "question": "Which method returns the canvas content as a PNG image string?",
+  "options": [
+   "`canvas.getImageURL()`",
+   "`canvas.exportImage()`",
+   "`canvas.saveAsPng()`",
+   "`canvas.toDataURL()`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "20",
+  "question": "Which object can you pass to `drawImage()` as the image source?",
+  "options": [
+   "A URL string",
+   "Another `<canvas>` element",
+   "A file path string",
+   "A `Blob` object with image data"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "21",
+  "question": "A teammate calls `ctx.drawImage(img, 0, 0)` right after `img.src = 'a.png'`. Nothing shows. Why?",
+  "options": [
+   "`drawImage` needs `beginPath` first",
+   "`img.src` must be set before `getContext`",
+   "The image may not be loaded yet",
+   "`drawImage` needs `save` first"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "22",
+  "question": "In `ctx.fillText('Hi', 10, 50)`, what does the y value mean by default?",
+  "options": [
+   "The bottom of the descenders of the letters",
+   "The vertical center of the text",
+   "The top of the text box",
+   "The alphabetic baseline of the text"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "23",
+  "question": "How do you set the font for `fillText()`?",
+  "options": [
+   "`ctx.font = '16px sans-serif'`",
+   "`ctx.textFont = '16px sans-serif'`",
+   "`ctx.style.font = '16px sans-serif'`",
+   "`ctx.fontSize = 16`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "24",
+  "question": "How do you get the width of a string before you draw it?",
+  "options": [
+   "`ctx.getTextMetrics(text).width`",
+   "`ctx.measure(text)`",
+   "`ctx.measureText(text).width`",
+   "`ctx.textWidth(text)`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "25",
+  "question": "Why do you use `requestAnimationFrame` for animation instead of `setInterval`?",
+  "options": [
+   "It moves the drawing work to a worker thread of the browser",
+   "It runs exactly 60 times each second on every screen",
+   "It clears the canvas before each frame",
+   "It calls your function in sync with the display repaint"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "What does the callback of `requestAnimationFrame` receive as its argument?",
+  "options": [
+   "A high-resolution timestamp in ms",
+   "The 2D context object",
+   "The time in ms since the last frame was drawn",
+   "The number of the frame"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "27",
+  "question": "How do you stop a loop that you started with `requestAnimationFrame`?",
+  "options": [
+   "`stopAnimationFrame(frameId)`",
+   "`cancelAnimationFrame(id)`",
+   "`clearInterval(id)`",
+   "`clearTimeout(callback)`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "28",
+  "question": "Which property makes all next drawing 50 percent transparent?",
+  "options": [
+   "`ctx.opacity = 0.5`",
+   "`ctx.transparency = 0.5`",
+   "`ctx.alpha = 50`",
+   "`ctx.globalAlpha = 0.5`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "29",
+  "question": "Which method adds a color at a position on a gradient?",
+  "options": [
+   "`addColorStop(offset, color)`",
+   "`setStop(offset, color)`",
+   "`insertColorStop(offset, color)`",
+   "`addColor(offset, color)`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "30",
+  "question": "Where is the origin (0,0) of the default canvas coordinate system?",
+  "options": [
+   "At the bottom-left corner, with y going up",
+   "At the top-left corner, with y going down",
+   "At the top-right corner, with y going down",
+   "At the center, with y going up"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "What is the text inside a `<canvas>...</canvas>` tag for?",
+  "options": [
+   "It is the first text that the canvas draws",
+   "It is the tooltip that shows on hover",
+   "It is fallback content for tools that cannot use canvas",
+   "It is a script that the browser runs when the canvas loads"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "A canvas has a 300 px bitmap width. You set its CSS width to 600 px. What do you see?",
+  "options": [
+   "The bitmap stretches and looks blurry",
+   "The coordinate system changes to 600 units",
+   "The drawing is cut at 300 pixels",
+   "The canvas redraws itself at 600 pixels"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "33",
+  "question": "What is `Path2D` used for?",
+  "options": [
+   "To cache the pixels of a shape as a bitmap in memory",
+   "To store a path that you can draw many times",
+   "To save the state of the context",
+   "To run path drawing inside a worker only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "34",
+  "question": "What is the default value of `ctx.fillStyle`?",
+  "options": [
+   "White",
+   "Gray",
+   "Black",
+   "Transparent"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "What type of data does `ctx.getImageData(...).data` hold?",
+  "options": [
+   "A `Uint8Array` with RGB values",
+   "An array of hex color strings",
+   "A `Float32Array` with RGB values from 0 to 1",
+   "A `Uint8ClampedArray` with RGBA values"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "36",
+  "question": "Which method writes an `ImageData` object back to the canvas?",
+  "options": [
+   "`setImageData()`",
+   "`putImageData()`",
+   "`fillImageData()`",
+   "`drawImageData()`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "37",
+  "question": "You draw an image from another domain, then call `toDataURL()`. You get a `SecurityError`. Why?",
+  "options": [
+   "The data URL string is too long for the browser",
+   "The canvas was not cleared before the call",
+   "The cross-origin image tainted the canvas",
+   "The image format is not supported"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "38",
+  "question": "The image server sends CORS headers. What do you set on the image before you load it, to keep the canvas clean?",
+  "options": [
+   "`img.referrerPolicy = 'no-referrer'`",
+   "`img.origin = '*'`",
+   "`img.cors = true`",
+   "`img.crossOrigin = 'anonymous'`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "Which statement about canvas and SVG is true?",
+  "options": [
+   "Canvas keeps pixels only, SVG keeps DOM shape elements",
+   "SVG is always faster than canvas for many objects",
+   "Canvas keeps DOM shape nodes, SVG keeps only the pixels",
+   "Canvas output stays sharp at any zoom level"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "Which task suits canvas better than the DOM?",
+  "options": [
+   "Showing a menu that screen readers read",
+   "Showing a long article with links",
+   "Drawing 50,000 moving particles",
+   "Showing a form with text inputs"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "41",
+  "question": "Which method adds a rectangle with curved corners to the current path?",
+  "options": [
+   "`arcRect()`",
+   "`curveRect()`",
+   "`cornerRect()`",
+   "`roundRect()`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "42",
+  "question": "What does `ctx.fill()` do?",
+  "options": [
+   "It fills the current path with the fill style",
+   "It fills the whole canvas with the fill style",
+   "It clears the inside of the current path",
+   "It draws the outline of the path with the stroke style"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "43",
+  "question": "After `ctx.scale(2, 2)`, what does `ctx.fillRect(0, 0, 10, 10)` draw?",
+  "options": [
+   "A square of 10 by 10 pixels at x=2, y=2",
+   "A square of 20 by 20 pixels",
+   "A square of 5 by 5 pixels",
+   "A square of 20 by 20 pixels at x=20, y=20"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "44",
+  "question": "Around which point does `ctx.rotate()` turn the drawing by default?",
+  "options": [
+   "The last point of the path that you built",
+   "The center of the canvas",
+   "The center of the next shape",
+   "The origin of the coordinate system"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "45",
+  "question": "What is the default value of `ctx.globalCompositeOperation`?",
+  "options": [
+   "`'source-over'`",
+   "`'lighter'`",
+   "`'destination-over'`",
+   "`'copy'`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "What does `ctx.clip()` do?",
+  "options": [
+   "It crops the canvas element to the bounds of the path",
+   "It uses the current path as a mask for later drawing",
+   "It stops the path from growing with more calls",
+   "It cuts the pixels out of the canvas"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "47",
+  "question": "What does `window.devicePixelRatio` show?",
+  "options": [
+   "The ratio of canvas width to canvas height",
+   "The refresh rate of the screen in Hz",
+   "The ratio of physical pixels to CSS pixels",
+   "The number of colors that the screen can show"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "48",
+  "question": "What does `ctx.setLineDash([5, 10])` do?",
+  "options": [
+   "Later strokes have 5 px dashes and 10 px gaps",
+   "Later strokes have corners with radius 5 and 10",
+   "Later strokes have 5 dashes in 10 pixels",
+   "Later strokes are 5 px wide and 10 px long"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "49",
+  "question": "With `ctx.textAlign = 'center'`, what does the x value in `fillText` mean?",
+  "options": [
+   "The left edge of the text",
+   "The horizontal center of the text",
+   "The horizontal center of the canvas",
+   "The right edge of the text"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "50",
+  "question": "What does `ctx.drawImage(img, 0, 0, 100, 50)` do?",
+  "options": [
+   "It draws two copies of the image",
+   "It draws the top-left part of the image, 100 by 50 pixels",
+   "It draws the whole image scaled to 100 by 50 pixels",
+   "It draws the image at x=100, y=50"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "51",
+  "question": "How do you make a canvas sharp on a screen with `devicePixelRatio` 2?",
+  "options": [
+   "Double `width` and `height` and the CSS size too",
+   "Call only `ctx.scale(2, 2)` and keep the `width` and `height` of the canvas",
+   "Double only the CSS size of the canvas element",
+   "Double `width` and `height`, keep CSS size, call `ctx.scale(2, 2)`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "52",
+  "question": "A teammate writes `canvas.width = canvas.width` inside the loop. What happens?",
+  "options": [
+   "Nothing, because the browser ignores the same value",
+   "The canvas clears and the context state resets",
+   "The browser changes the layout of the page",
+   "Only the pixels clear, and the styles stay"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "53",
+  "question": "Code calls `ctx.scale(2, 2)` at the start of every frame. What is the scale after 3 frames?",
+  "options": [
+   "2 times",
+   "3 times",
+   "8 times",
+   "6 times"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "54",
+  "question": "What is the difference between `setTransform()` and `transform()`?",
+  "options": [
+   "`setTransform()` also resets the clip, `transform()` does not",
+   "`transform()` accepts only two arguments, `setTransform()` six",
+   "`setTransform()` multiplies the matrix, `transform()` replaces it",
+   "`setTransform()` replaces the matrix, `transform()` multiplies it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "55",
+  "question": "How do you rotate a rectangle around its own center (cx, cy)?",
+  "options": [
+   "`translate(cx, cy)`, `rotate(a)`, draw at (-w/2, -h/2)",
+   "`translate(cx, cy)`, draw at (0, 0), then `rotate(a)`",
+   "`rotate(a)`, then draw at (cx, cy)",
+   "`rotate(a)`, `translate(cx, cy)`, draw at (-w/2, -h/2)"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "A canvas has a CSS size that is different from its bitmap size. How do you convert a mouse event to canvas coordinates?",
+  "options": [
+   "Use `event.clientX` and `event.clientY` without any change",
+   "Use `event.offsetX` and `event.offsetY` without any change",
+   "Subtract `getBoundingClientRect` offset, scale by `canvas.width / rect.width`",
+   "Divide `event.pageX` and `event.pageY` by `devicePixelRatio`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "Many shapes overlap on a canvas. Which shape should a click select?",
+  "options": [
+   "The shape with the lowest id",
+   "The shape that is drawn first, so test in draw order",
+   "The shape with the largest area",
+   "The shape that is drawn last, so test in reverse draw order"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "58",
+  "question": "What is color picking for hit testing on a canvas?",
+  "options": [
+   "Draw shapes in unique colors on a hidden canvas, read the pixel under the cursor",
+   "Give each shape a CSS color and use `elementFromPoint`",
+   "Read the visible pixel under the cursor and compare it to each shape style",
+   "Mark each shape with a random color and sort by color value"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "59",
+  "question": "Why do you use elapsed time, not a fixed step for each frame, to move objects?",
+  "options": [
+   "You do not need to clear the canvas",
+   "The speed stays the same on 60 Hz and 144 Hz screens",
+   "The CPU load becomes lower",
+   "The browser renders each frame faster"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "60",
+  "question": "A user switches to another browser tab. What happens to your `requestAnimationFrame` loop?",
+  "options": [
+   "The loop runs without any change",
+   "The browser shows a cached frame and stops the callbacks",
+   "The loop runs faster to catch up with lost time",
+   "The browser pauses or slows the callbacks"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "Each frame, code calls `ctx.rect(...)` and `ctx.stroke()` but never `beginPath()`. What happens over time?",
+  "options": [
+   "The path grows, old shapes draw again, frames slow down",
+   "Old shapes disappear from the canvas",
+   "The browser throws an error after some frames",
+   "Only the last shape is drawn on the canvas"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "62",
+  "question": "Find the bug: `ctx.fill(); ctx.fillStyle = 'red';` Why is the shape not red?",
+  "options": [
+   "The color red needs a hex format",
+   "The color is set after the shape is filled",
+   "`fill()` needs `closePath()` first",
+   "`fillStyle` accepts only gradients"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "63",
+  "question": "Pixel art looks blurry when you scale it up. Which setting helps?",
+  "options": [
+   "`ctx.imageSmoothingQuality = 'high'`",
+   "`ctx.antialias = false`",
+   "`ctx.imageSmoothingEnabled = false`",
+   "`ctx.globalCompositeOperation = 'copy'`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "64",
+  "question": "A 1 px line at an integer y looks gray and 2 px thick. Why?",
+  "options": [
+   "The line is on a pixel edge, so it covers two half pixels",
+   "The minimum `lineWidth` in a canvas is 2 pixels",
+   "The canvas uses a wrong color profile for lines",
+   "The context has no saved state for the line"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "A static background is drawn on every frame and costs time. What helps most?",
+  "options": [
+   "Increase `lineWidth` of the background shapes",
+   "Draw it once on an offscreen canvas, then use `drawImage`",
+   "Wrap each draw call in `save()` and `restore()`",
+   "Read it with `getImageData` on every frame"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "66",
+  "question": "What is a main benefit of `OffscreenCanvas` in a web worker?",
+  "options": [
+   "The worker removes the need for any high-DPI scaling",
+   "The worker makes all 2D drawing use the GPU",
+   "The worker renders without blocking the main thread",
+   "The worker can access the DOM"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "Why do you use `createImageBitmap()` for a large image?",
+  "options": [
+   "It makes the image safe for cross-origin use in a canvas",
+   "It compresses the image in memory",
+   "It converts the image to a vector shape in memory",
+   "It decodes the image in the background, ready to draw"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "68",
+  "question": "A game has a static map and fast sprites. Which structure reduces redraw work?",
+  "options": [
+   "One canvas for each sprite",
+   "Two stacked canvases: one for the map and one for sprites",
+   "One canvas that redraws the map and the sprites",
+   "One canvas for the map, with DOM images for the sprites"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "What is the dirty rectangle technique?",
+  "options": [
+   "Skip some frames at random",
+   "Redraw the whole canvas at lower resolution",
+   "Clear and redraw only the area that changed",
+   "Mark the pixels that have errors"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "70",
+  "question": "You draw 10,000 circles of the same color. Which way is fastest?",
+  "options": [
+   "Call `save()` and `restore()` again for each circle",
+   "Call `beginPath()` and `fill()` again for each circle",
+   "Set `fillStyle` again for each circle",
+   "Add all arcs to one path with `moveTo`, then call `fill()` once"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "A label is drawn with `fillText` and a user uses a screen reader. What does the user get?",
+  "options": [
+   "The screen reader cannot read the drawn text",
+   "The screen reader reads the text in draw order",
+   "The screen reader reads the text if the `lang` attribute is set",
+   "The screen reader reads the text as normal text"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "72",
+  "question": "How do you make an interactive canvas usable with a keyboard?",
+  "options": [
+   "Call `canvas.focus()` once when the page starts",
+   "Add an `alt` attribute to the canvas element",
+   "Add focusable fallback elements in the canvas, handle key events",
+   "Set `role=\"img\"` and `aria-label` on the canvas only"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "You build a chart with 200 points that needs hover tooltips, sharp zoom, and CSS styles. What is the best choice?",
+  "options": [
+   "A CSS background image",
+   "A set of `<img>` elements",
+   "Canvas, because it keeps each shape as an object",
+   "SVG, because each point is a DOM element"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "74",
+  "question": "A scatter plot has 100,000 points. Why is SVG often slow here?",
+  "options": [
+   "Each point is a DOM node, so memory and layout cost grow",
+   "SVG cannot draw many circles in one image",
+   "SVG has a limit of 65,536 elements",
+   "SVG cannot use the GPU at all"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "You call `ctx.clip()` and forget `restore()`. What happens to later drawing?",
+  "options": [
+   "The clip affects only strokes",
+   "It stays clipped to the same area as before",
+   "The clip ends when the frame ends",
+   "The clip ends after the next fill call"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "76",
+  "question": "Which composite operation lets you erase pixels with a brush shape?",
+  "options": [
+   "`'source-out'`",
+   "`'destination-atop'`",
+   "`'xor'`",
+   "`'destination-out'`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "77",
+  "question": "Why do you prefer `canvas.toBlob()` over `toDataURL()` for a big image?",
+  "options": [
+   "It is asynchronous and makes no base64 string",
+   "It makes the later `drawImage` calls much faster",
+   "It also works when the canvas is tainted by images",
+   "It keeps the vector data of the drawing in the Blob"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "78",
+  "question": "The `mousemove` event fires 200 times each second. How do you reduce the redraw work?",
+  "options": [
+   "Call `clearRect` two times in each event",
+   "Save the latest position, then draw in `requestAnimationFrame`",
+   "Reduce the size of the canvas",
+   "Draw in each event and defer it with `setTimeout(0)`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "You need text to wrap inside a box. Canvas has no automatic wrap. What do you do?",
+  "options": [
+   "Set the CSS width of the canvas",
+   "Pass `maxWidth` to `fillText` to wrap the text",
+   "Split words, use `measureText` for breaks, call `fillText` per line",
+   "Set `ctx.wordWrap = true`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "80",
+  "question": "Why can frequent `getImageData` calls slow a canvas application?",
+  "options": [
+   "They can force a pixel copy from GPU memory to CPU memory",
+   "They lock the `requestAnimationFrame` loop until the next frame",
+   "They force a layout of the whole page on each call",
+   "They clone the DOM tree of the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "81",
+  "question": "What does `getContext('2d', { willReadFrequently: true })` tell the browser?",
+  "options": [
+   "Cache all the images that you draw in memory",
+   "Keep the canvas in CPU memory for many pixel reads",
+   "Enable high-DPI scaling",
+   "Run all the drawing code in a worker"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "82",
+  "question": "Why do you use a fixed time step for physics when the render rate changes?",
+  "options": [
+   "The number of draw calls in each frame becomes lower",
+   "You do not need `requestAnimationFrame` any more",
+   "The simulation stays repeatable at any frame rate",
+   "Floating-point errors cannot happen"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "83",
+  "question": "In a fixed-step loop with an accumulator, one update takes longer than the step. What is the risk?",
+  "options": [
+   "The accumulator drops below zero and the game freezes",
+   "The elapsed time becomes negative after some frames",
+   "`requestAnimationFrame` stops calling the loop for good",
+   "More updates run each frame and the loop gets slower"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "84",
+  "question": "You need to show a map of 50,000 by 50,000 pixels. What is the best approach?",
+  "options": [
+   "Make 500 canvases of 100 by 100 pixels and show all",
+   "Draw only the visible tiles on a small canvas",
+   "Make one huge canvas and scroll it with CSS only",
+   "Read the visible part with `getImageData`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "85",
+  "question": "Canvas is an immediate mode API. What must your code do to move a shape?",
+  "options": [
+   "Call a move method on the shape in the context",
+   "Change the CSS style of the shape",
+   "Change your data and redraw the scene or the changed area",
+   "Set `shape.x` and let the browser repaint"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "86",
+  "question": "Why can drawing sprites at fractional x and y values look blurry?",
+  "options": [
+   "The GPU cannot keep the sprite in a cache",
+   "The canvas throws a range error at that position",
+   "The transform matrix resets after each draw call",
+   "The browser must blend pixels to place the sprite"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "You put a semi-transparent pixel with `putImageData`, then read it with `getImageData`. The RGB values can differ. Why?",
+  "options": [
+   "The canvas can store premultiplied alpha, so rounding loses data",
+   "The canvas saves each pixel with JPEG compression",
+   "The browser applies color management to each pixel",
+   "`Uint8ClampedArray` changes the values on write"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "What does `getContext('2d', { alpha: false })` tell the browser?",
+  "options": [
+   "Ignore `globalAlpha` for all drawing calls",
+   "Turn off anti-aliasing for all shapes",
+   "The canvas is opaque, so it can skip blending",
+   "Remove the alpha channel from all `ImageData`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "Your JavaScript work takes 40 ms each frame on a 60 Hz screen. What does the user see?",
+  "options": [
+   "Smooth motion, because the GPU hides the cost",
+   "Smooth motion, because the browser splits the work in two",
+   "Frames that queue and show later at full speed",
+   "Dropped frames, far below 60 frames each second"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "90",
+  "question": "You scale a 4000 px image to 100 px with one `drawImage` call. The result looks jagged. What is a common fix?",
+  "options": [
+   "Scale down in several steps, by half each time",
+   "Lower `globalAlpha` before the single draw call",
+   "Make the CSS size of the canvas element bigger",
+   "Turn off `imageSmoothingEnabled`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "91",
+  "question": "A canvas has pan and zoom with `setTransform`. How do you test a click against shapes in world coordinates?",
+  "options": [
+   "Test the screen point against the world values",
+   "Apply the inverse transform to the mouse point",
+   "Apply the same transform to the mouse point",
+   "Divide the mouse point by `devicePixelRatio` only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "92",
+  "question": "Why not use 20 full-screen stacked canvases?",
+  "options": [
+   "Browsers block more than 16 canvases in one page",
+   "Only one canvas in a page can be transparent at a time",
+   "Stacked canvases always use software rendering to blend",
+   "Each canvas has its own bitmap, so the memory use grows"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "93",
+  "question": "Why do you call `close()` on an `ImageBitmap` that you do not need now?",
+  "options": [
+   "It frees the pixel memory at once, before garbage collection runs",
+   "It saves the image to the disk cache of the browser",
+   "It returns the bitmap to the DOM tree of the page",
+   "It stops the image decoder of the browser"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "94",
+  "question": "How do you move the rendering of a DOM canvas to a worker?",
+  "options": [
+   "Clone the canvas element with `structuredClone` and post it",
+   "Call `canvas.transferControlToOffscreen()` and send it to the worker",
+   "Pass the canvas element in a normal message to the worker",
+   "Post the 2D context object to the worker in a message"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "A user drags the window to a screen with a different pixel density. How does your code know?",
+  "options": [
+   "The `devicePixelRatio` value never changes while the page is open",
+   "Listen for a `devicechange` event on the window",
+   "Listen for a `matchMedia` change on a `resolution` query",
+   "Listen for a `dpr` event on the canvas"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "96",
+  "question": "You call `canvas.getContext('2d')` two times on the same canvas. What does the second call return?",
+  "options": [
+   "The same context object as the first call",
+   "A new context with a clean state",
+   "`null`, because the canvas has a context",
+   "A second context that shares the bitmap"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "97",
+  "question": "A big static drawing must pan smoothly. Which approach is cheap?",
+  "options": [
+   "Redraw the whole canvas on each mouse move event",
+   "Move the canvas with a CSS transform, redraw only new areas",
+   "Read pixels with `getImageData` and write them back with an offset",
+   "Change `canvas.width` on each mouse move to scroll"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "A thin 1 px line is hard to click. How do you make the hit test easier?",
+  "options": [
+   "Call `isPointInPath` on the open line path",
+   "Lower `devicePixelRatio`",
+   "Set a larger `lineWidth`, call `isPointInStroke`",
+   "Increase `miterLimit`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "99",
+  "question": "In which step of the browser frame does a `requestAnimationFrame` callback run?",
+  "options": [
+   "After layout but before style calculation",
+   "In a separate thread after the composite step",
+   "After paint",
+   "Before style calculation, layout, and paint"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "100",
+  "question": "Two circles share one center and have different radii. They are in one path, both drawn in the same direction. What does the default `fill()` show?",
+  "options": [
+   "A ring with a hole, because of the evenodd rule",
+   "Two filled circles with no hole, because of the nonzero rule",
+   "A ring with a hole, because the inner circle erases pixels",
+   "Nothing, because overlapping paths cancel each other"
+  ],
+  "correct_index": 1
+ }
+]

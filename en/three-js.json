@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "Which Three.js object holds all the meshes, lights, and groups that the renderer draws?",
+    "options": [
+      "THREE.WebGLRenderer",
+      "THREE.Raycaster",
+      "THREE.Layers",
+      "THREE.Scene"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "2",
+    "question": "Which class draws a scene on an HTML canvas element with WebGL?",
+    "options": [
+      "THREE.CanvasRenderer",
+      "THREE.SceneRenderer",
+      "THREE.WebGLRenderer",
+      "THREE.WebGLProgram"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "3",
+    "question": "Which two arguments does renderer.render() need?",
+    "options": [
+      "A mesh and a light",
+      "A geometry and a material",
+      "A scene and a camera",
+      "A canvas and a clock"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "4",
+    "question": "What happens to objects that are far from a PerspectiveCamera?",
+    "options": [
+      "They look smaller on the screen",
+      "They look larger because of lens zoom",
+      "They keep the same screen size as near objects",
+      "They look flat and lose all lighting"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "5",
+    "question": "When do you use an OrthographicCamera instead of a PerspectiveCamera?",
+    "options": [
+      "When objects must keep the same size at any distance",
+      "When you need stronger depth cues in a large world",
+      "When the scene has no lights and uses basic materials",
+      "When you render to a texture instead of the screen"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "6",
+    "question": "What is the first argument of PerspectiveCamera(fov, aspect, near, far)?",
+    "options": [
+      "The horizontal field of view, in radians",
+      "The vertical field of view, in degrees",
+      "The zoom factor of the lens, as a ratio",
+      "The camera distance from the origin, in units"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "7",
+    "question": "Which two parts does a THREE.Mesh need to show an object?",
+    "options": [
+      "Geometry and material",
+      "Texture and light",
+      "Scene and camera",
+      "Position and rotation"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "8",
+    "question": "What does requestAnimationFrame do in a render loop?",
+    "options": [
+      "It runs a function after a fixed 16 ms timer",
+      "It makes the GPU draw the scene two times",
+      "It runs a function before the next browser repaint",
+      "It starts a worker thread for the renderer"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "9",
+    "question": "Why does the Three.js documentation recommend renderer.setAnimationLoop for WebXR?",
+    "options": [
+      "The method makes the loop run at a fixed 60 frames per second on every device",
+      "The method moves the render loop to a worker thread to free the main thread",
+      "The method stops the loop by itself when the browser tab is hidden",
+      "A WebXR session has its own frame callback, and this method supports it"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "10",
+    "question": "What do the arguments of BoxGeometry(2, 3, 4) set?",
+    "options": [
+      "Radius 2, height 3, and 4 segments",
+      "Width 2, height 3, and depth 4",
+      "Three positions on the x, y, and z axes",
+      "Width 2 and 3 by 4 segments"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "11",
+    "question": "A mesh with MeshBasicMaterial stays bright in a scene with no lights. Why?",
+    "options": [
+      "This material does not react to lights",
+      "The material copies the light of the camera",
+      "This material takes light from the scene background",
+      "The renderer adds a hidden ambient light"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "12",
+    "question": "Which material needs at least one light in the scene to be visible?",
+    "options": [
+      "MeshBasicMaterial",
+      "MeshNormalMaterial",
+      "MeshStandardMaterial",
+      "LineBasicMaterial"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "13",
+    "question": "What does AmbientLight do?",
+    "options": [
+      "It lights objects from one direction, like the sun, and makes soft shadows",
+      "It lights objects inside a cone from one point, like a flashlight",
+      "It lights all objects equally and makes no shadows",
+      "It lights objects only near the camera position, like a headlamp"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "14",
+    "question": "Which light sends parallel rays like the sun?",
+    "options": [
+      "PointLight",
+      "DirectionalLight",
+      "SpotLight",
+      "HemisphereLight"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "15",
+    "question": "Which light shines in a cone from one point, like a flashlight?",
+    "options": [
+      "RectAreaLight",
+      "PointLight",
+      "DirectionalLight",
+      "SpotLight"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "16",
+    "question": "What does TextureLoader.load(url) return at once?",
+    "options": [
+      "A Promise that resolves with the loaded image when the file arrives",
+      "The raw pixel array of the image, ready to read on the CPU",
+      "Nothing, because the loader only works with a callback function",
+      "A Texture object that gets its image data later"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "17",
+    "question": "Which file formats does GLTFLoader load?",
+    "options": [
+      ".obj and .mtl files",
+      ".fbx and .dae files",
+      ".gltf and .glb files",
+      ".stl and .ply files"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "18",
+    "question": "After GLTFLoader finishes, which property of the result holds the loaded objects?",
+    "options": [
+      "gltf.meshes",
+      "gltf.scene",
+      "gltf.objects",
+      "gltf.world"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "19",
+    "question": "A PlaneGeometry mesh disappears when the camera looks at its back. What is the simple fix?",
+    "options": [
+      "Set mesh.visible to true",
+      "Call geometry.computeVertexNormals()",
+      "Set material.transparent to true",
+      "Set material.side to THREE.DoubleSide"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "20",
+    "question": "What does mesh.position.set(1, 2, 3) do?",
+    "options": [
+      "It adds 1, 2, and 3 to the position",
+      "It sets the scale to 1, 2, and 3",
+      "It sets x to 1, y to 2, and z to 3",
+      "It sets the rotation to 1, 2, and 3 radians"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "21",
+    "question": "In which unit does Three.js store rotation angles, such as mesh.rotation.y?",
+    "options": [
+      "Degrees",
+      "Turns, from 0 to 1",
+      "Radians",
+      "Gradians"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "22",
+    "question": "What does scene.add(mesh) do?",
+    "options": [
+      "It copies the mesh data to the GPU buffers at once",
+      "It moves the mesh to the center of the scene",
+      "It adds the mesh as a child of the scene",
+      "It starts the animation clips that belong to the mesh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "23",
+    "question": "What is the type of mesh.rotation?",
+    "options": [
+      "Quaternion",
+      "Vector3",
+      "Matrix4",
+      "Euler"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "24",
+    "question": "What is the default value of mesh.scale?",
+    "options": [
+      "(0.5, 0.5, 0.5)",
+      "(0, 0, 0)",
+      "(1, 1, 1)",
+      "(1, 0, 1)"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "25",
+    "question": "In which direction does a default camera look?",
+    "options": [
+      "Along the positive z axis",
+      "Along the negative y axis",
+      "Along the positive x axis",
+      "Along the negative z axis"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "26",
+    "question": "Which axis points up in the Three.js coordinate system?",
+    "options": [
+      "The z axis, in a right-handed system",
+      "The y axis, in a right-handed system",
+      "The y axis, in a left-handed system",
+      "The z axis, in a left-handed system"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "27",
+    "question": "What real-world length is one unit in Three.js?",
+    "options": [
+      "One centimeter, set by the renderer",
+      "No fixed length; you choose it",
+      "One pixel on the screen at the default zoom",
+      "One meter, which the renderer enforces"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "28",
+    "question": "What is a Raycaster mostly used for?",
+    "options": [
+      "To cast shadows from objects onto a floor",
+      "To draw the light rays that come from a light",
+      "To find objects that a ray hits",
+      "To measure the frame rate of the render loop"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "29",
+    "question": "In which order does raycaster.intersectObjects return the hits?",
+    "options": [
+      "Sorted by distance, nearest first",
+      "Sorted by distance, farthest first",
+      "Sorted by material id",
+      "In the order of the scene.add calls"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "30",
+    "question": "In which range are the pointer coordinates that raycaster.setFromCamera uses?",
+    "options": [
+      "From 0 to 1 on both axes",
+      "From -1 to +1 on both axes",
+      "From 0 to the canvas size in pixels",
+      "From -0.5 to +0.5 on both axes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "31",
+    "question": "What does THREE.AnimationMixer do?",
+    "options": [
+      "It mixes two textures into one blended texture",
+      "It plays animation clips for an object",
+      "It blends the colors of several lights together",
+      "It combines geometries into one merged geometry"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "32",
+    "question": "What must you call in each frame so that an AnimationMixer moves its objects?",
+    "options": [
+      "mixer.play()",
+      "mixer.update(deltaSeconds)",
+      "mixer.render()",
+      "mixer.tick(frameCount)"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "33",
+    "question": "What does clock.getDelta() return?",
+    "options": [
+      "The total time in seconds since the start",
+      "The number of frames since the last call",
+      "The time in milliseconds since the page load",
+      "The time in seconds since the last call"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "34",
+    "question": "What does OrbitControls give to the user?",
+    "options": [
+      "Mouse and touch control to orbit the camera",
+      "An automatic camera path along a curve in the scene",
+      "A tool to move the selected mesh with the arrow keys",
+      "A first-person camera with keyboard walking and look"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "35",
+    "question": "Which mesh property makes the mesh draw a shadow on other objects?",
+    "options": [
+      "castShadow",
+      "shadowEnabled",
+      "receiveShadow",
+      "drawShadow"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "36",
+    "question": "Which renderer setting must you enable before shadows work?",
+    "options": [
+      "renderer.shadowMap.enabled = true",
+      "renderer.shadows.enabled = true",
+      "scene.shadowMap.enabled = true",
+      "renderer.setShadowMode(THREE.PCFShadowMap)"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "37",
+    "question": "Which flag makes a floor mesh show the shadows of other meshes?",
+    "options": [
+      "castShadow = true",
+      "receiveShadow = true",
+      "shadowOnly = true",
+      "material.shadow = true"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "38",
+    "question": "After a window resize, what must you set in addition to renderer.setSize?",
+    "options": [
+      "camera.fov to the new window height in pixels, then render again",
+      "camera.aspect, then camera.updateProjectionMatrix()",
+      "scene.scale to the new ratio of the window size",
+      "renderer.shadowMap.needsUpdate to true for every light"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "39",
+    "question": "Why call camera.updateProjectionMatrix() after you change camera.fov?",
+    "options": [
+      "The projection matrix does not update by itself",
+      "It clears the depth buffer before the next frame",
+      "It moves the camera to a new position in the scene",
+      "It resets the camera rotation to its default value"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "40",
+    "question": "Why do many projects use Math.min(devicePixelRatio, 2) in renderer.setPixelRatio?",
+    "options": [
+      "To make the canvas larger than the screen on all devices",
+      "To turn off antialiasing on screens with a high pixel density",
+      "To keep the camera aspect ratio fixed during a resize event",
+      "To limit the pixel count and keep a good frame rate"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "41",
+    "question": "What does geometry.dispose() do?",
+    "options": [
+      "It removes the mesh from the scene",
+      "It frees the GPU buffers of the geometry",
+      "It sets the geometry vertices to zero",
+      "It deletes the JavaScript object at once"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "42",
+    "question": "When do you add DRACOLoader to GLTFLoader?",
+    "options": [
+      "When the file has KTX2-compressed textures",
+      "When the file has skeletal animation clips",
+      "When the file has Draco-compressed geometry",
+      "When the file has embedded base64 images"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "43",
+    "question": "In an AxesHelper, which color shows the y axis?",
+    "options": [
+      "Red",
+      "Green",
+      "Blue",
+      "Yellow"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "44",
+    "question": "What is THREE.Group used for?",
+    "options": [
+      "To move, rotate, or scale many objects as one unit",
+      "To share one material and one geometry between meshes",
+      "To merge many geometries into one buffer and one draw call",
+      "To select objects with the mouse and report the hit point"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "45",
+    "question": "Which code makes a red color?",
+    "options": [
+      "new THREE.Color(0xff0000)",
+      "new THREE.Color(0x00ff00)",
+      "new THREE.Color(0x0000ff)",
+      "new THREE.Color(0xffff00)"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "46",
+    "question": "How does a PlaneGeometry face by default?",
+    "options": [
+      "It lies in the XY plane and faces negative z",
+      "It lies in the XZ plane and faces up, like a floor",
+      "It lies in the YZ plane and faces right, like a wall",
+      "It lies in the XY plane and faces positive z"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "47",
+    "question": "What range do roughness and metalness of MeshStandardMaterial use?",
+    "options": [
+      "From 0 to 100",
+      "From -1 to +1",
+      "From 0 to 255",
+      "From 0 to 1"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "48",
+    "question": "What is React Three Fiber?",
+    "options": [
+      "A wrapper that replaces Three.js with its own engine",
+      "A build tool that bundles Three.js for React",
+      "A physics engine for Three.js scenes",
+      "A React renderer for Three.js"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "49",
+    "question": "What does the React Three Fiber Canvas component create?",
+    "options": [
+      "A renderer, a scene, a camera, and a render loop",
+      "Only an HTML canvas element, with no renderer or scene",
+      "Only a default camera and a set of orbit controls",
+      "A WebGL context, but no scene and no render loop"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "50",
+    "question": "What does the React Three Fiber useFrame hook do?",
+    "options": [
+      "It runs a callback on every rendered frame",
+      "It runs a callback once after the first render",
+      "It runs a callback when the component unmounts",
+      "It limits the frame rate to 30 frames per second"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "51",
+    "question": "Two transparent meshes overlap and the draw order looks wrong. What is the cause?",
+    "options": [
+      "Three.js sorts transparent objects by material id, not by distance",
+      "Transparent objects draw before the opaque objects in the same pass",
+      "The GPU sorts transparent triangles by color value in each frame",
+      "Three.js sorts transparent objects by center, not by triangle"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "52",
+    "question": "A glTF model loads but looks black. The scene has only the model and a camera. What is the likely fix?",
+    "options": [
+      "Add lights or an environment map",
+      "Set material.side to DoubleSide",
+      "Call geometry.computeBoundingSphere()",
+      "Raise camera.far"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "53",
+    "question": "A color texture looks washed out in Three.js r152 or newer. Which fix is correct?",
+    "options": [
+      "Set texture.colorSpace to THREE.LinearSRGBColorSpace",
+      "Set renderer.outputColorSpace to NoColorSpace",
+      "Set texture.colorSpace to THREE.SRGBColorSpace",
+      "Set material.toneMapped to true"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "54",
+    "question": "Which texture must keep a linear color space and not use sRGB?",
+    "options": [
+      "A base color map",
+      "An emissiveMap",
+      "A sprite icon texture",
+      "A normalMap"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "55",
+    "question": "What does MeshPhysicalMaterial add to MeshStandardMaterial?",
+    "options": [
+      "Support for shadows from directional and point lights",
+      "Extra features such as clearcoat and transmission",
+      "Support for vertex colors, fog, and texture tiling",
+      "Support for metalness, roughness, and a normal map"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "56",
+    "question": "What is the main difference between MeshPhongMaterial and MeshStandardMaterial?",
+    "options": [
+      "Standard is physically based; Phong uses shininess and specular color",
+      "Standard cannot receive shadows from lights, but Phong can receive them",
+      "Phong uses a physically based model; Standard uses a simple shading model with no PBR",
+      "Phong needs a texture map to show; Standard shows without any map"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "57",
+    "question": "A parent group is at x = 5 with no rotation or scale. Its child mesh has position.x = 1. What is the world x of the mesh?",
+    "options": [
+      "6",
+      "5",
+      "4",
+      "1"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "58",
+    "question": "How do you get the world position of a mesh inside nested groups?",
+    "options": [
+      "Read mesh.position",
+      "Call mesh.worldToLocal(new Vector3())",
+      "Read mesh.parent.position",
+      "Call mesh.getWorldPosition(target)"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "59",
+    "question": "What does object.lookAt(x, y, z) do?",
+    "options": [
+      "It moves the object to that point in world space",
+      "It rotates the object to face a world point",
+      "It changes the object scale in the direction of the point",
+      "It moves the camera to a position that looks at the object"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "60",
+    "question": "A click picks the object in a mirrored vertical position. Find the bug.\npointer.y = (event.clientY / h) * 2 - 1;",
+    "options": [
+      "The y value needs a minus sign: -(clientY / h) * 2 + 1",
+      "The raycaster must use the scene instead of the camera",
+      "The x axis needs a minus sign, and the y axis does not",
+      "The y value must use event.offsetY in pixels, not clientY"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "61",
+    "question": "Raycasting on a mesh with millions of triangles is slow. What is a common fix?",
+    "options": [
+      "Set a smaller raycaster.near value and a larger far value",
+      "Turn on frustumCulled for the mesh and its children",
+      "Call intersectObjects two times per frame and merge hits",
+      "Use a simple proxy mesh or a BVH for the raycast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "62",
+    "question": "How do you fade smoothly from one AnimationAction to another?",
+    "options": [
+      "Call action.stop() and then call other.play() at once",
+      "Call action.crossFadeTo(otherAction, duration)",
+      "Call mixer.update(0) once, between the two play calls",
+      "Set action.timeScale to zero on the old action"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "63",
+    "question": "Where do you find the animation clips of a loaded glTF file?",
+    "options": [
+      "In the gltf.scene.animations array",
+      "In the gltf.animations array",
+      "In the gltf.scenes[0].clips array",
+      "In the gltf.parser.clips list"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "64",
+    "question": "Shadows show a striped pattern on a lit surface (shadow acne). What is a common fix?",
+    "options": [
+      "Set material.side to DoubleSide on the floor mesh",
+      "Increase light.intensity until the stripes fade",
+      "Set a small light.shadow.bias or normalBias",
+      "Turn renderer.shadowMap.enabled off and on again"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "65",
+    "question": "Shadows look blocky. Which change helps most?",
+    "options": [
+      "Lower light.shadow.mapSize and widen the shadow camera frustum a lot",
+      "Raise light.shadow.mapSize and tighten the shadow camera frustum",
+      "Raise light.shadow.bias to a large value and lower the intensity",
+      "Raise camera.near and lower the value of renderer.setPixelRatio"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "66",
+    "question": "Which light type cannot cast shadows?",
+    "options": [
+      "PointLight",
+      "SpotLight",
+      "DirectionalLight",
+      "AmbientLight"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "67",
+    "question": "A scene has 5,000 trees with the same geometry and material. Which class cuts the draw calls most?",
+    "options": [
+      "THREE.LOD",
+      "THREE.Group",
+      "InstancedMesh",
+      "THREE.Points"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "68",
+    "question": "You call setMatrixAt on an InstancedMesh, but nothing moves. What is missing?",
+    "options": [
+      "mesh.matrixWorldNeedsUpdate = true",
+      "mesh.geometry.attributes.position.needsUpdate = true",
+      "mesh.instanceMatrix.needsUpdate = true",
+      "mesh.updateMatrix()"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "69",
+    "question": "You call scene.remove(mesh). Does this free the GPU memory of the mesh?",
+    "options": [
+      "Yes. The renderer frees all linked GPU resources after one frame",
+      "No. You must call dispose() on its geometry, material, and textures",
+      "Yes, but only the textures, not the geometry buffers",
+      "No. You must call renderer.dispose() once for each removed mesh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "70",
+    "question": "Which property shows the draw call count of the last frame?",
+    "options": [
+      "renderer.info.memory.calls",
+      "renderer.info.render.calls",
+      "renderer.stats.frame.calls",
+      "scene.info.drawCalls"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "71",
+    "question": "The code mesh.rotation.y += 0.01 spins faster on a 144 Hz screen. How do you fix this?",
+    "options": [
+      "Multiply the step by the delta time of each frame",
+      "Use setTimeout with 16 ms instead of the animation loop",
+      "Call renderer.setPixelRatio(1) to lower the frame rate",
+      "Multiply the step by the aspect ratio of the camera"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "72",
+    "question": "What does THREE.LOD do?",
+    "options": [
+      "It loads mesh files in the background while the scene runs",
+      "It shows a simpler mesh when the camera is far",
+      "It merges close meshes into one mesh to save draw calls",
+      "It lowers the texture size when the frame rate drops"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "73",
+    "question": "Which pass must be the first in an EffectComposer chain for a normal scene?",
+    "options": [
+      "RenderPass",
+      "UnrealBloomPass",
+      "OutputPass",
+      "ShaderPass"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "74",
+    "question": "After you add EffectComposer, edges look jagged, but renderer antialias is true. Why?",
+    "options": [
+      "Post-processing always turns off the depth test in each pass",
+      "The antialias option works only with perspective cameras",
+      "The composer renders to its own targets, which have no MSAA",
+      "The antialias option applies only to textures, not to the canvas"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "75",
+    "question": "In React Three Fiber, a component calls setState in useFrame on each frame. What is the problem?",
+    "options": [
+      "It stops the render loop after the first frame of the scene",
+      "It is not allowed, and React throws an error in development",
+      "It makes React render each frame; mutate refs instead",
+      "It works only in a component outside the Canvas element"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "76",
+    "question": "In React Three Fiber, how do you load a texture so that the component waits for it?",
+    "options": [
+      "Use useRef on the texture and read it in the render body",
+      "Use new TextureLoader().load in the render body",
+      "Use useFrame to poll the load state of the texture",
+      "Use useLoader with Suspense around the component"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "77",
+    "question": "What does frameloop=\"demand\" change on a React Three Fiber Canvas?",
+    "options": [
+      "It renders only on prop changes or invalidate() calls",
+      "It renders only when the mouse moves over the Canvas element",
+      "It stops the render loop forever until the page reloads",
+      "It renders at 30 frames per second to save power on devices"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "78",
+    "question": "Why do some projects use Quaternion instead of Euler angles for rotation?",
+    "options": [
+      "Quaternions use degrees, which are easier to read",
+      "Quaternions use less memory than a Matrix4 only",
+      "Quaternions avoid gimbal lock and blend smoothly",
+      "Euler angles do not work with cameras"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "79",
+    "question": "You edit the vertex positions of a BufferGeometry after the first render. What must you set?",
+    "options": [
+      "mesh.geometry.dirty = true on the mesh geometry",
+      "geometry.verticesNeedUpdate = true on the geometry",
+      "geometry.needsUpdate = true on the geometry object",
+      "geometry.attributes.position.needsUpdate = true"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "80",
+    "question": "A floor texture looks blurry when the camera views it at a low angle. Which setting helps?",
+    "options": [
+      "A higher texture.anisotropy value",
+      "texture.flipY",
+      "texture.wrapS set to RepeatWrapping",
+      "texture.premultiplyAlpha"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "81",
+    "question": "A vertex shader moves vertices far outside the geometry bounds, and the mesh vanishes at some camera angles. Why?",
+    "options": [
+      "The depth buffer removes vertices that the shader moves outside the geometry bounds",
+      "The renderer skips ShaderMaterial meshes whose uniforms change in each frame",
+      "The GPU removes triangles that move more than one unit per frame",
+      "Frustum culling uses the original bounding sphere, so set frustumCulled to false"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "82",
+    "question": "Many meshes share one MeshStandardMaterial. You change material.color for one mesh. What happens, and what is the fix?",
+    "options": [
+      "Only that mesh changes, because color is a per-mesh value",
+      "All meshes change; clone the material for the one mesh",
+      "All meshes change; call material.needsUpdate on each mesh",
+      "Only the first mesh changes; call mesh.updateMatrix()"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "83",
+    "question": "What does mesh.renderOrder do?",
+    "options": [
+      "It sets which mesh wins in a raycast hit list",
+      "A higher value draws first, and it comes after the distance sort",
+      "It sets the order of the mesh updates in scene.traverse",
+      "A lower value draws first, and it beats the distance sort"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "84",
+    "question": "Far surfaces flicker (z-fighting) with near = 0.001 and far = 100000. What is the best first fix?",
+    "options": [
+      "Lower camera.near further to improve precision",
+      "Raise camera.near as far as the scene allows",
+      "Set material.depthTest to false for all meshes",
+      "Set renderer.sortObjects to false"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "85",
+    "question": "Why can MeshPhysicalMaterial with transmission cost more than an opaque material?",
+    "options": [
+      "Transmission needs a ray tracing pass on the GPU in each frame",
+      "Transmission makes the shadow map rebuild in each frame",
+      "Three.js first renders opaque objects to an extra target",
+      "Transmission turns off the depth buffer for all meshes in the scene"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "86",
+    "question": "How can you find a GPU memory leak in an app that loads and removes models?",
+    "options": [
+      "Check that renderer.info.render.frame stays constant over time",
+      "Check that renderer.info.memory counts do not keep growing",
+      "Check that renderer.info.programs equals zero after removal",
+      "Check that scene.children.length returns to zero after removal"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "87",
+    "question": "You must show 100,000 particles that move in each frame. Which approach scales best?",
+    "options": [
+      "100,000 Mesh objects in one Group, with a shared geometry and material",
+      "100,000 Sprite objects that a JavaScript loop moves in each frame",
+      "One Mesh per particle, merged by mergeGeometries in each frame",
+      "One Points object, with the motion in the vertex shader"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "88",
+    "question": "Objects jitter when they are 1,000,000 units from the origin. What is the cause and fix?",
+    "options": [
+      "Float precision loss; keep the scene near the origin",
+      "The Euler order is wrong; switch to the YXZ order",
+      "Texture filtering is poor; set anisotropy to 16",
+      "The shadow bias is too low; raise light.shadow.bias a bit"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "89",
+    "question": "A static object never moves. How do you save CPU time in Three.js?",
+    "options": [
+      "Set frustumCulled to false on the mesh and its parents",
+      "Set visible to false and then to true in each frame",
+      "Set matrixAutoUpdate to false and update once",
+      "Remove it from the scene and add it to the camera"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "90",
+    "question": "When is mergeGeometries a better choice than InstancedMesh?",
+    "options": [
+      "For thousands of moving copies of one geometry and material",
+      "For static parts with different geometries and one material",
+      "For objects that need their own transforms and colors at run time",
+      "For meshes that use many different materials and shaders"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "91",
+    "question": "The first frame after a new material appears stutters. What is the cause and a fix?",
+    "options": [
+      "Shaders compile on first use; call renderer.compile() early",
+      "Garbage collection runs at that time; call renderer.dispose()",
+      "The shadow map rebuilds; set shadowMap.autoUpdate to false",
+      "The GPU decodes textures on first use; set texture.anisotropy to 1"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "92",
+    "question": "Why should you avoid new THREE.Vector3() inside the render loop?",
+    "options": [
+      "It creates garbage, which can cause frame drops",
+      "It makes the GPU upload a new buffer in each frame",
+      "It breaks the matrix cache of the object and its parent",
+      "It turns off frustum culling for the mesh and its children"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "93",
+    "question": "Which shadow-casting light is the most costly, and why?",
+    "options": [
+      "DirectionalLight, because its shadow camera has an infinite frustum",
+      "SpotLight, because it needs a cube map for the cone",
+      "SpotLight, because it renders the scene once per mesh in the cone",
+      "PointLight, because it renders the scene for six cube faces"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "94",
+    "question": "After you add EffectComposer, colors look dark and linear. Which fix is correct?",
+    "options": [
+      "Add an OutputPass as the last pass",
+      "Add a second RenderPass at the end",
+      "Add an FXAA pass as the first pass",
+      "Set composer.renderToScreen to false"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "95",
+    "question": "In React Three Fiber, two overlapping meshes have onClick. A click on the front mesh fires both. What is the fix?",
+    "options": [
+      "Set raycaster.far to the distance of the front mesh",
+      "Call event.preventDefault() in the front handler",
+      "Call event.stopPropagation() in the front handler",
+      "Wrap the meshes in separate Canvas elements"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "96",
+    "question": "Why does KTX2 reduce GPU memory more than Draco for a glTF model?",
+    "options": [
+      "Draco compresses textures, and the GPU decodes them in a shader at draw time",
+      "KTX2 textures stay compressed in VRAM; Draco shrinks only the download",
+      "KTX2 reduces the vertex count of meshes when the loader reads the file",
+      "Both formats expand to the same size in VRAM, so neither helps the GPU"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "97",
+    "question": "You clone a skinned glTF character with object.clone(), and both clones move together. Why?",
+    "options": [
+      "The clones share the same skeleton; use SkeletonUtils.clone",
+      "The clones share the same AnimationMixer clock",
+      "The clones share the same world matrix cache",
+      "A skinned mesh needs its own setAnimationLoop per clone"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "98",
+    "question": "You draw a HUD scene over the main scene with two render calls. The HUD erases the first image. What is the fix?",
+    "options": [
+      "Set renderer.sortObjects to false before the HUD render call",
+      "Use the same camera for both scenes, and render the HUD first",
+      "Set renderer.autoClear to false and call clearDepth() between calls",
+      "Call renderer.dispose() and then create a new renderer each frame"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "99",
+    "question": "In r152 or newer, you render a scene into a WebGLRenderTarget and show it on a plane. The colors differ from the screen. Why?",
+    "options": [
+      "The target always uses 8-bit sRGB storage with a fixed gamma of 2.2",
+      "The target ignores all lights and renders with a basic material only",
+      "The plane material applies the tone mapping a second time to the image",
+      "Tone mapping and sRGB output do not apply when rendering to a target"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "100",
+    "question": "Why do you use PMREMGenerator for an HDR environment map?",
+    "options": [
+      "It converts the environment to a cube of real-time lights",
+      "It compresses the HDR image to 8 bits for a smaller download",
+      "It prefilters the map so rough materials reflect a blur",
+      "It bakes shadows from the environment into the textures"
+    ],
+    "correct_index": 2
+  }
+]

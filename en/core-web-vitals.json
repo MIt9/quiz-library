@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "Which three metrics are the Core Web Vitals today?",
+  "options": [
+   "LCP, INP, and CLS",
+   "LCP, FID, and TTFB",
+   "FCP, INP, and CLS",
+   "LCP, TBT, and CLS"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "2",
+  "question": "What does Largest Contentful Paint (LCP) measure?",
+  "options": [
+   "The time until the first byte of the page arrives",
+   "The time until all JavaScript files finish to run",
+   "The time until the first pixel is painted on screen",
+   "The time to render the largest visible element"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "3",
+  "question": "What is the \"good\" threshold for LCP?",
+  "options": [
+   "1.8 seconds or less",
+   "3.0 seconds or less",
+   "2.5 seconds or less",
+   "4.0 seconds or less"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "4",
+  "question": "An LCP value is rated \"poor\" when it is more than what value?",
+  "options": [
+   "2.5 seconds",
+   "3 seconds",
+   "6 seconds",
+   "4 seconds"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "5",
+  "question": "What does Cumulative Layout Shift (CLS) measure?",
+  "options": [
+   "How long the main thread stays blocked after a click",
+   "How fast the largest element loads on the page",
+   "How much visible content moves without a user action",
+   "How many layout recalculations the browser does"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "6",
+  "question": "What is the \"good\" threshold for CLS?",
+  "options": [
+   "0.1 or less",
+   "0.25 or less",
+   "0.5 or less",
+   "1.0 or less"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "7",
+  "question": "What does Interaction to Next Paint (INP) measure?",
+  "options": [
+   "How long the browser needs to get the first byte",
+   "How fast the page loads after the first click only",
+   "How long the server needs to answer an API request",
+   "How fast the page shows a response to user input"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "What is the \"good\" threshold for INP?",
+  "options": [
+   "200 milliseconds or less",
+   "100 milliseconds or less",
+   "300 milliseconds or less",
+   "500 milliseconds or less"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "9",
+  "question": "Which Core Web Vital did INP replace in March 2024?",
+  "options": [
+   "First Input Delay (FID)",
+   "First Contentful Paint (FCP)",
+   "Time to Interactive (TTI)",
+   "Total Blocking Time (TBT)"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "10",
+  "question": "Which percentile does Google use to assess Core Web Vitals?",
+  "options": [
+   "The 50th percentile",
+   "The 75th percentile",
+   "The 90th percentile",
+   "The 99th percentile"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "11",
+  "question": "When does a page pass the Core Web Vitals assessment?",
+  "options": [
+   "When the average of all three metrics is in the good range",
+   "When at least two of the three metrics are in the good range",
+   "When all three metrics are good at the 75th percentile",
+   "When the best 25 percent of page loads are in the good range"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "12",
+  "question": "What is field data?",
+  "options": [
+   "Performance data from one test in a controlled setup",
+   "Performance data from the server access logs only",
+   "Performance data from real users who visit the page",
+   "Performance data from the CI build step"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "13",
+  "question": "What is lab data?",
+  "options": [
+   "Performance data from real users on many devices",
+   "Performance data from the Google search index",
+   "Data from a test in a controlled environment",
+   "Performance data from the browser extension store"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "14",
+  "question": "What is the Chrome User Experience Report (CrUX)?",
+  "options": [
+   "A public dataset of real-user data from Chrome",
+   "A Lighthouse plugin that runs lab tests on a schedule",
+   "A Google crawler that renders pages for the search index",
+   "A DevTools feature that records traces of a page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "15",
+  "question": "Which tool shows both field data and lab data in one report?",
+  "options": [
+   "PageSpeed Insights",
+   "Lighthouse in Chrome DevTools",
+   "The DevTools Network panel",
+   "The Rich Results Test"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "Which data source does the Search Console Core Web Vitals report use?",
+  "options": [
+   "Lab runs that Googlebot does on each page",
+   "Page views from your own analytics tool",
+   "Field data from CrUX",
+   "Response times from your server logs"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "17",
+  "question": "Do Core Web Vitals affect ranking in Google Search?",
+  "options": [
+   "No, they are only a diagnostic tool for developers",
+   "Yes, and a good score always wins over relevant content",
+   "Yes, but only for pages that contain video",
+   "Yes, but relevance of content counts more"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "18",
+  "question": "What is the LCP element?",
+  "options": [
+   "The largest image or text block in the viewport",
+   "The first element in the DOM tree of the page",
+   "The element with the largest file size on the page",
+   "The last element that the browser loads on the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "Which of these can be an LCP candidate?",
+  "options": [
+   "A `<script>` element",
+   "An `<img>` element",
+   "A `<style>` element",
+   "A `<div>` with `display: none`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "Which range of LCP values is rated \"needs improvement\"?",
+  "options": [
+   "Above 1.0 second and up to 2.5 seconds",
+   "Above 4 seconds and up to 6 seconds",
+   "Above 1.8 seconds and up to 3.0 seconds",
+   "Above 2.5 seconds and up to 4 seconds"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "What does TTFB mean?",
+  "options": [
+   "Time to Final Build",
+   "Time to First Block",
+   "Total Time for Browser",
+   "Time to First Byte"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "A server answers slowly. How does this change LCP?",
+  "options": [
+   "It has no effect, because LCP only counts the paint time",
+   "It changes only CLS, because the layout starts later",
+   "LCP cannot start before the first byte, so it is later",
+   "It changes only INP, because the main thread is busy"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "23",
+  "question": "What is a quick way to reduce TTFB for static pages?",
+  "options": [
+   "Minify the CSS files of the page",
+   "Serve the pages from a nearby CDN",
+   "Convert all images to the PNG format",
+   "Add more JavaScript bundles to the page"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "24",
+  "question": "What does `<link rel=\"preload\" as=\"image\" href=\"hero.jpg\">` do?",
+  "options": [
+   "It delays the image until the browser is idle",
+   "It converts the image to the WebP format",
+   "It loads the image only when the user scrolls",
+   "It tells the browser to fetch the image early"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "25",
+  "question": "What does the attribute `fetchpriority=\"high\"` on an `<img>` do?",
+  "options": [
+   "It forces the browser to inline the image as base64",
+   "It makes the browser decode the image before the HTML",
+   "It makes sure the image is always the first to paint",
+   "It tells the browser to fetch this image first"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "Should you add `loading=\"lazy\"` to the LCP image?",
+  "options": [
+   "Yes, because it saves bandwidth and makes LCP faster",
+   "Yes, but only on mobile devices",
+   "No, because it can delay the load of the image",
+   "No, because lazy images can never be an LCP candidate"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "27",
+  "question": "Which image formats usually give smaller files than JPEG at the same quality?",
+  "options": [
+   "PNG or GIF",
+   "WebP or AVIF",
+   "BMP or TIFF",
+   "SVG or ICO"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "28",
+  "question": "What does the `srcset` attribute do?",
+  "options": [
+   "It sets the CSS size of the image on the page",
+   "It lets the browser pick an image by screen size",
+   "It tells the browser to load all listed files at once",
+   "It sets the alternative text for the image"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "29",
+  "question": "What is a CDN?",
+  "options": [
+   "A network of servers close to the users",
+   "A tool that compresses JavaScript files at build time",
+   "A browser API that stores files for offline use",
+   "A database that stores static assets for the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "30",
+  "question": "Which attribute makes an `<img>` below the fold load later, to save bandwidth?",
+  "options": [
+   "`fetchpriority=\"high\"`",
+   "`loading=\"lazy\"`",
+   "`decoding=\"sync\"`",
+   "`crossorigin=\"anonymous\"`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "Which tool can run Lighthouse checks on every pull request?",
+  "options": [
+   "Lighthouse CI",
+   "The Rich Results Test",
+   "The Search Console URL report",
+   "The Chrome DevTools Network panel"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "32",
+  "question": "Which public API gives you CrUX field data for your own scripts?",
+  "options": [
+   "The Search Console removal API",
+   "The Analytics Measurement Protocol",
+   "The Lighthouse score endpoint on a CDN",
+   "The CrUX API"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "33",
+  "question": "Does Google assess Core Web Vitals for mobile and desktop separately?",
+  "options": [
+   "Yes, each device type has its own result",
+   "No, one combined result is used for all devices",
+   "No, only mobile results are used",
+   "No, only desktop results are used"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "34",
+  "question": "What is Lighthouse?",
+  "options": [
+   "A service that collects data from real users",
+   "A Google crawler that indexes web pages",
+   "A tool that audits a page in a lab setup",
+   "A public dataset of Chrome performance data"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "What does RUM mean in web performance?",
+  "options": [
+   "Rapid UI Measurement",
+   "Remote Uptime Monitor",
+   "Render Usage Metric",
+   "Real User Monitoring"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "36",
+  "question": "Which Google library collects Core Web Vitals in the browser?",
+  "options": [
+   "`perf-hooks`",
+   "`web-vitals`",
+   "`lighthouse-ci`",
+   "`vitals-server`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "37",
+  "question": "Which browser API reports LCP entries to your code?",
+  "options": [
+   "`IntersectionObserver`",
+   "`MutationObserver`",
+   "`PerformanceObserver`",
+   "`ResizeObserver`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "38",
+  "question": "Which Chrome DevTools panel do you use to record a performance trace?",
+  "options": [
+   "Network",
+   "Performance",
+   "Application",
+   "Sources"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "39",
+  "question": "What time window does CrUX use for its public data?",
+  "options": [
+   "The last 28 days",
+   "The last 24 hours",
+   "The last 7 days",
+   "The last 12 months"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "Which tool shows how CrUX field data for a site changes over several weeks?",
+  "options": [
+   "The Chrome DevTools Sources panel",
+   "CrUX Vis or the CrUX History API",
+   "A single Lighthouse run in a browser",
+   "The Rich Results Test"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "41",
+  "question": "What is a good TTFB value at the 75th percentile, according to web.dev?",
+  "options": [
+   "0.1 seconds or less",
+   "0.8 seconds or less",
+   "1.8 seconds or less",
+   "2.5 seconds or less"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "42",
+  "question": "A user opens a link that has two redirects before the page. How does this change LCP?",
+  "options": [
+   "It has no effect, because redirects end before the page loads",
+   "It changes only the images, not the text",
+   "It changes only CLS and not LCP",
+   "The redirects add to the TTFB, so LCP is later"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "How does render-blocking CSS change LCP?",
+  "options": [
+   "CSS changes only the CLS value and has no effect on LCP",
+   "CSS loads in parallel and never delays the first paint",
+   "The browser waits for CSS to paint, so LCP is later",
+   "CSS blocks only the execution of JavaScript files"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "A hero image is set with CSS `background-image`. What is a common problem?",
+  "options": [
+   "CSS images can never be an LCP candidate",
+   "CSS images cannot be stored in the browser cache",
+   "The browser finds the image late, after the CSS",
+   "CSS images always load with the lowest priority"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "Which INP value is rated \"poor\"?",
+  "options": [
+   "More than 500 milliseconds",
+   "More than 200 milliseconds",
+   "More than 300 milliseconds",
+   "More than 1000 milliseconds"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "Search Console shows a \"Poor\" group of URLs. What does a group mean?",
+  "options": [
+   "One URL that the report shows again and again",
+   "All URLs from the same sitemap file",
+   "All URLs with the same page title",
+   "URLs of a similar page type with one status"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "47",
+  "question": "Which status levels does the Search Console Core Web Vitals report use?",
+  "options": [
+   "Pass, Warning, Error, and Critical",
+   "Good, Needs improvement, and Poor",
+   "Fast, Moderate, and Slow",
+   "Green, Amber, and Critical"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "48",
+  "question": "PageSpeed Insights shows an \"origin\" result. What does it mean?",
+  "options": [
+   "Data from the country of the server",
+   "Field data for all pages of the site",
+   "Data from the first page that a user loads",
+   "Data from the CDN origin server only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "49",
+  "question": "Which Core Web Vital measures loading performance?",
+  "options": [
+   "Interaction to Next Paint",
+   "Largest Contentful Paint",
+   "Cumulative Layout Shift",
+   "Time to First Byte"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "50",
+  "question": "A large image is below the fold at load time. Can it be the LCP element?",
+  "options": [
+   "No, because LCP counts only visible content",
+   "Yes, because LCP counts every image in the page",
+   "Yes, because LCP counts the largest file in the page",
+   "No, because LCP counts only text elements"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "51",
+  "question": "A page has good LCP and CLS, but INP is 350 ms at the 75th percentile. What is the result?",
+  "options": [
+   "The page passes, because two of three metrics are good",
+   "The page does not pass, because INP needs improvement",
+   "The page passes, because INP is an optional metric",
+   "The page passes on desktop only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "52",
+  "question": "Lighthouse shows an LCP of 1.8 s, but CrUX shows 4.2 s. What is the most likely cause?",
+  "options": [
+   "Real users have slower devices than the lab",
+   "Lighthouse counts only the TTFB part of LCP",
+   "CrUX includes the visits of search bots and crawlers",
+   "CrUX uses the 99th percentile for LCP"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "53",
+  "question": "Which list shows the four sub-parts of LCP?",
+  "options": [
+   "TTFB, load delay, load duration, render delay",
+   "DNS lookup, TCP connect, TLS, and first paint",
+   "Parse, style, layout, paint, and composite",
+   "Request, queue, download, and decode steps"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "54",
+  "question": "What is the \"resource load delay\" sub-part of LCP?",
+  "options": [
+   "The time the browser needs to download the LCP resource",
+   "The time from TTFB to the start of the download",
+   "The time between the end of the download and the paint",
+   "The time the browser needs to open the server connection"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "55",
+  "question": "A JavaScript framework adds the hero `<img>` after it fetches data. What is the best fix?",
+  "options": [
+   "Add more JavaScript so the API data loads faster",
+   "Compress the image file with a higher ratio",
+   "Put the `<img>` in the first HTML or preload it",
+   "Lower the TTFB of the HTML document"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "56",
+  "question": "What is the \"element render delay\" sub-part of LCP?",
+  "options": [
+   "The time from the end of the download to the paint",
+   "The time between the page request and the first byte",
+   "The time between the first byte and the start of the download",
+   "The time the browser needs to parse the HTML document"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "57",
+  "question": "Google advises which two LCP sub-parts should take the most time?",
+  "options": [
+   "Resource load delay and element render delay",
+   "TTFB and element render delay",
+   "Resource load delay and resource load duration",
+   "TTFB and resource load duration"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "58",
+  "question": "Why does `fetchpriority=\"high\"` help an image that is in the initial HTML?",
+  "options": [
+   "It makes the browser skip the DNS lookup for the image",
+   "It moves the image above the CSS in the HTML",
+   "It decodes the image on the GPU before the paint",
+   "The browser can first give the image a low priority"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "59",
+  "question": "The hero image is a CSS `background-image` on a `<div>`. What helps the browser find it early?",
+  "options": [
+   "A `<link rel=\"preload\" as=\"image\">` in the head",
+   "The attribute `fetchpriority` on the `<div>`",
+   "The attribute `loading=\"eager\"` on the `<div>`",
+   "The attribute `decoding=\"async\"` on the `<div>`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "60",
+  "question": "Which `<link>` attributes preload a responsive hero image that uses `srcset`?",
+  "options": [
+   "`srcset` and `sizes`",
+   "`data-srcset` and `data-sizes`",
+   "`media-srcset` and `media-sizes`",
+   "`imagesrcset` and `imagesizes`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "The LCP element is an `<h1>`. It stays invisible until the web font loads. Which CSS helps?",
+  "options": [
+   "`font-display: swap`",
+   "`font-display: block`",
+   "`will-change: font`",
+   "`content-visibility: hidden`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "62",
+  "question": "Why does a default Lighthouse run not report INP?",
+  "options": [
+   "INP needs a server-side agent to measure it",
+   "No real user input in the test; it uses TBT",
+   "INP works only in Firefox and Safari",
+   "Lighthouse blocks all input events during a test"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "63",
+  "question": "In CrUX, how does Chrome treat route changes in a single-page app?",
+  "options": [
+   "It measures each route change as a new LCP",
+   "It measures only the last route change of a visit",
+   "It counts only full page loads",
+   "It measures route changes only for INP"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "64",
+  "question": "Which users give data to CrUX?",
+  "options": [
+   "Chrome users who opt in to share data",
+   "All users of all browsers",
+   "Googlebot, when it renders a page",
+   "Synthetic tests that run on Google servers"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "A new page has little traffic. PageSpeed Insights shows only origin data. Why?",
+  "options": [
+   "The page has a bad score, so Google hides it",
+   "CrUX needs enough samples for each URL",
+   "The page is too new to be in the search index",
+   "PageSpeed Insights supports only origin data"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "66",
+  "question": "Which value does a browser report as the LCP of a page load?",
+  "options": [
+   "The last largest candidate before user input",
+   "The first element that the browser paints",
+   "The average of all LCP candidates",
+   "The largest element at the time of the load event"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "67",
+  "question": "A team has a Lighthouse score of 100, but Search Console says \"Poor\". What should they do next?",
+  "options": [
+   "Ignore Search Console, because lab data is always exact",
+   "Run Lighthouse again until the report agrees",
+   "Check field data by device, network, and country",
+   "Remove the site from Search Console"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "68",
+  "question": "Which setup delays LCP most for a content page?",
+  "options": [
+   "Server-side rendering with a preloaded hero image",
+   "Static HTML files served from a nearby CDN node",
+   "Empty HTML that JavaScript fills with API data",
+   "Server-side rendering with streamed HTML output"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "69",
+  "question": "A hero image is 4000 px wide, 2 MB, and the page shows it at 800 px. What is the best first fix?",
+  "options": [
+   "Add `loading=\"lazy\"` to the image",
+   "Resize it and use `srcset` and WebP",
+   "Only increase the cache time of the file",
+   "Add a `preload` for the 2 MB file"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "A long `Cache-Control: max-age` is set on all assets. What does it improve?",
+  "options": [
+   "The CLS of the first visit of a new user",
+   "The INP of the first visit and the next ones",
+   "The TTFB of the first visit of a new user",
+   "Repeat visits, as it skips the network"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "What does the HTTP 103 Early Hints response allow?",
+  "options": [
+   "The server can send the page in two parts after caching",
+   "The browser can skip the TLS handshake for the page",
+   "The server can cancel slow requests of the client",
+   "The browser loads key files while the server works"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "72",
+  "question": "A team adds `preload` for 15 files. What is the risk?",
+  "options": [
+   "The browser ignores all preloads after the fifth one",
+   "CLS gets worse, because preload moves the layout",
+   "The files compete and can delay the LCP resource",
+   "Preload breaks the HTTP cache of the files"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "How can a server start a preload before the browser parses the HTML?",
+  "options": [
+   "Add a `Preload` cookie to the response",
+   "Add `preload` to the `robots.txt` file",
+   "Set `<meta http-equiv=\"preload\">` in the body",
+   "Send a `Link` header with `rel=preload`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "74",
+  "question": "An A/B test script hides the page body until the script loads. What is the effect on LCP?",
+  "options": [
+   "No effect, because the element is already in the DOM",
+   "LCP is later, because the content is not visible yet",
+   "LCP is better, because the content shows all at once",
+   "TTFB is lower, because the server sends less data"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "75",
+  "question": "How do you find the LCP element of a page in Chrome DevTools?",
+  "options": [
+   "Search for `lcp` in the Elements panel",
+   "Look at the largest file in the Network panel",
+   "Use the LCP marker in a Performance trace",
+   "Run `document.lcp` in the Console"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "TTFB is high only for some users. The CDN cache hit ratio is low. What is the best fix?",
+  "options": [
+   "Add more JavaScript bundles to the same page",
+   "Resize all the images of the page to a lower width",
+   "Raise the CDN cache hit ratio with better rules",
+   "Add `loading=\"lazy\"` to the images below the fold"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "77",
+  "question": "Which two content encodings reduce the size of HTML and CSS files on the network?",
+  "options": [
+   "Base64 or URL encoding",
+   "Keep-alive or pipelining",
+   "Brotli or gzip",
+   "Chunked or identity"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "78",
+  "question": "After you fix an LCP issue, what do you do in Search Console?",
+  "options": [
+   "Submit the sitemap again to reset the field data",
+   "Start \"Validate fix\" so Google monitors the URLs",
+   "Remove the URLs with the removal tool",
+   "Ask Google to delete the 28-day history"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "A page preloads an image that the page never uses. What happens?",
+  "options": [
+   "The browser skips it, because it is not in the DOM",
+   "The image becomes the LCP element of the page",
+   "The browser removes it from the HTTP cache",
+   "The browser downloads it for nothing and may warn in the console"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "80",
+  "question": "The hero image is on `cdn.example.net`. Which tag helps to cut the connection setup time?",
+  "options": [
+   "`<link rel=\"prefetch\" href=\"https://cdn.example.net\">`",
+   "`<link rel=\"prerender\" href=\"https://cdn.example.net\">`",
+   "`<link rel=\"canonical\" href=\"https://cdn.example.net/hero.jpg\">`",
+   "`<link rel=\"preconnect\" href=\"https://cdn.example.net\">`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "81",
+  "question": "LCP sub-parts: TTFB 300 ms, load delay 1500 ms, load duration 400 ms, render delay 200 ms. What is the first fix?",
+  "options": [
+   "Compress the image to cut the load duration",
+   "Add a CDN to cut the TTFB of the document",
+   "Remove render-blocking CSS to cut render delay",
+   "Find the image earlier, to cut the load delay"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "82",
+  "question": "The hero image arrives at 1.2 s, but LCP is 3 s. What is the most likely cause?",
+  "options": [
+   "The image file is too small for the viewport size",
+   "The main thread is busy or CSS blocks the paint",
+   "The TTFB of the server is too high",
+   "The CDN has a cache miss for the image"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "A hero image uses `data-src` and a JavaScript lazy-load library. Why is LCP late?",
+  "options": [
+   "The preload scanner misses `data-src`, so the load starts late",
+   "The `data-src` attribute is not valid HTML, so browsers drop it",
+   "Browsers block all `data-*` attributes in the head",
+   "The library loads the image two times in a row"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "Why does Google use the 75th percentile and not the average?",
+  "options": [
+   "Because 75 percent of users use Chrome",
+   "Because it is always equal to the median",
+   "Because it removes the fastest 25 percent of all visits",
+   "It covers most visits, and outliers do not dominate"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "A team sets `fetchpriority=\"high\"` on 10 images. What is the likely result?",
+  "options": [
+   "The hint loses its value, as images compete",
+   "The browser shows an error for each extra image",
+   "The browser uses only the first image with the hint",
+   "The LCP improves for all 10 images"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "86",
+  "question": "Personalized HTML cannot be cached and TTFB is 1.4 s. Which design is the best?",
+  "options": [
+   "Cache the full HTML page for all users, with their cookies",
+   "Cache a shared shell at the edge, load user data later",
+   "Move the whole page to client-side rendering",
+   "Raise the image quality of the hero image"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "87",
+  "question": "The origin p75 in CrUX is good, but your RUM shows poor LCP in one country. Why?",
+  "options": [
+   "CrUX uses the 50th percentile for each country of users",
+   "CrUX removes slow countries from its dataset",
+   "The origin p75 mixes segments and hides slow ones",
+   "RUM data is wrong because it uses real users"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "88",
+  "question": "A preloaded font downloads two times. What is a common cause?",
+  "options": [
+   "The CSS uses `font-display: swap`",
+   "The server uses HTTP/2 instead of HTTP/1.1",
+   "The preload `<link>` has no `crossorigin`",
+   "The font file has a long cache time"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "Why do teams use the attribution build of `web-vitals`?",
+  "options": [
+   "It gives the LCP element and sub-part times",
+   "It makes the library smaller in the final bundle",
+   "It sends the data to the CrUX dataset",
+   "It disables the back/forward cache"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "90",
+  "question": "A page is prerendered with Speculation Rules and the user opens it. How does Chrome measure LCP?",
+  "options": [
+   "From the time when the prerender started in the page",
+   "From the activation time, so it can be near zero",
+   "From the first byte of the prerender request",
+   "It does not measure LCP for prerendered pages"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "91",
+  "question": "In RUM, the LCP image comes from another domain and `renderTime` is 0. What is the cause?",
+  "options": [
+   "The browser blocks the image because of CORS",
+   "The CDN uses HTTP/3 for the image response",
+   "The image is too small to be an LCP candidate here",
+   "The image has no `Timing-Allow-Origin` header"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "92",
+  "question": "A cookie banner paragraph becomes the LCP element and LCP gets worse. Why?",
+  "options": [
+   "It is the largest element and it renders late",
+   "Browsers always exclude banners from the LCP value",
+   "The banner increases the TTFB of the page",
+   "The banner can only cause layout shifts"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "What is the default throttling mode of Lighthouse?",
+  "options": [
+   "Packet-level throttling in the operating system network",
+   "No throttling at all",
+   "Simulated: it loads fast, then estimates the slow load",
+   "Throttling of the CPU only"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "94",
+  "question": "A CDN sends AVIF or JPEG by the `Accept` header. Which header stops a cache from mixing the formats?",
+  "options": [
+   "`Vary: Accept-Encoding`",
+   "`ETag`",
+   "`Content-Disposition`",
+   "`Vary: Accept`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "95",
+  "question": "The hero fades in with CSS from `opacity: 0` over one second after load. What is the effect on LCP?",
+  "options": [
+   "No effect, because LCP counts at the time of DOM insertion",
+   "LCP is better, because the animation is smooth",
+   "LCP is later, because an element with opacity 0 does not count yet",
+   "Only CLS changes, because the opacity changes"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "96",
+  "question": "CrUX shows 78 percent of page loads with a good LCP. Does LCP pass?",
+  "options": [
+   "No, because the page needs 90 percent of loads to be good",
+   "No, because the average LCP must also be good",
+   "Yes, because at least 75 percent of the loads are good",
+   "Yes, but only for desktop page loads"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "Product pages change each minute and need a low TTFB. Which rendering model fits best?",
+  "options": [
+   "Static generation with a rebuild of 1 million pages each minute",
+   "Server rendering with an edge cache and stale-while-revalidate",
+   "Client-side rendering with an API call for each view",
+   "Server rendering with no cache at the origin"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "An `<img>` has `sizes=\"100vw\"`, but it shows in a 400 px column. What is the effect?",
+  "options": [
+   "The browser picks a smaller file, so the image is blurry",
+   "The browser picks a file that is larger than needed",
+   "The browser ignores `srcset` and loads the default file",
+   "The browser adds a layout shift to the image"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "99",
+  "question": "A page has a low TBT in the lab, but real INP is poor. Why?",
+  "options": [
+   "TBT covers the load only; INP covers the whole visit",
+   "TBT counts only the network time of the page",
+   "INP is measured only on the server",
+   "TBT and INP use the same events, so one must be wrong"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "100",
+  "question": "Why run synthetic tests when you already have RUM?",
+  "options": [
+   "They give more exact data about real users",
+   "They send their results to the CrUX dataset",
+   "They replace the 75th percentile rule in the report",
+   "They give repeatable results to catch regressions"
+  ],
+  "correct_index": 3
+ }
+]

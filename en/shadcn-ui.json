@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What is shadcn/ui's main distribution approach?",
+    "options": [
+      "Only a browser extension",
+      "Only a closed hosted widget",
+      "Local component source",
+      "Only an Angular template package"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "2",
+    "question": "Who maintains local shadcn/ui component edits?",
+    "options": [
+      "The API database",
+      "The browser vendor",
+      "The package registry alone",
+      "The application team"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "3",
+    "question": "What does the shadcn CLI add command typically add?",
+    "options": [
+      "A new browser rendering engine",
+      "A database schema migration",
+      "Source files and dependencies",
+      "A production server deployment"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "4",
+    "question": "What does shadcn CLI initialization configure?",
+    "options": [
+      "Project integration",
+      "Browser extension access",
+      "Application user accounts",
+      "Production API permissions"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "5",
+    "question": "What does components.json describe?",
+    "options": [
+      "Runtime user session data",
+      "Server routing state",
+      "CLI project configuration",
+      "Database connection credentials"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "6",
+    "question": "What do components.json aliases identify?",
+    "options": [
+      "Project import locations",
+      "Server response field names",
+      "Browser URL redirects",
+      "CSS property aliases"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "7",
+    "question": "What does the configured ui alias locate?",
+    "options": [
+      "Browser storage entries",
+      "Remote asset servers",
+      "Database model files",
+      "UI component files"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "8",
+    "question": "What does the configured utils alias locate?",
+    "options": [
+      "Public route destinations",
+      "User permission records",
+      "Shared utility imports",
+      "Server cache endpoints"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "9",
+    "question": "What does the configured CSS path identify?",
+    "options": [
+      "The project's relevant stylesheet",
+      "An automatically hosted theme",
+      "A browser-specific user stylesheet",
+      "A server-generated screenshot"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "10",
+    "question": "What does shadcn/ui theming commonly use?",
+    "options": [
+      "Hardcoded colors in every page",
+      "A database-backed color service",
+      "A required browser Sass compiler",
+      "Semantic CSS variables"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "11",
+    "question": "What does a background token name communicate?",
+    "options": [
+      "A React component identity",
+      "A server route category",
+      "Only a raw color value",
+      "A surface role"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "12",
+    "question": "What does a foreground token name communicate?",
+    "options": [
+      "Only a border radius",
+      "A navigation destination",
+      "A content color role",
+      "A component event name"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "13",
+    "question": "What does a primary token commonly represent?",
+    "options": [
+      "The first DOM child",
+      "The current application route",
+      "An emphasized semantic color",
+      "The default form field value"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "14",
+    "question": "What does a muted token commonly represent?",
+    "options": [
+      "An invisible DOM node",
+      "A subdued surface or role",
+      "A disabled server endpoint",
+      "A removed stylesheet dependency"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "15",
+    "question": "What does a destructive role communicate?",
+    "options": [
+      "A component lifecycle cleanup",
+      "A destructive action role",
+      "An automatically blocked request",
+      "A compiler syntax failure"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "16",
+    "question": "Why pair a surface token with a foreground token?",
+    "options": [
+      "Force every pair to share a value",
+      "Remove the need for contrast testing",
+      "Coordinate readable content colors",
+      "Avoid all theme configuration"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "17",
+    "question": "What does a radius token commonly control?",
+    "options": [
+      "Corner rounding",
+      "Browser scroll velocity",
+      "Server retry intervals",
+      "React render priority"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "18",
+    "question": "What does a dark theme override?",
+    "options": [
+      "Theme role values",
+      "The React component syntax",
+      "All application routes",
+      "All component names"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "19",
+    "question": "What does the cn utility commonly combine?",
+    "options": [
+      "Database migration identifiers",
+      "Conditional class names",
+      "Component server responses",
+      "Browser history records"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "20",
+    "question": "What does tailwind-merge help resolve?",
+    "options": [
+      "Every CSS specificity conflict",
+      "All React prop collisions",
+      "Every global stylesheet rule",
+      "Tailwind utility conflicts"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "21",
+    "question": "What does class-variance-authority commonly model?",
+    "options": [
+      "Visual class variants",
+      "Browser permission modes",
+      "Database query variants",
+      "Application route guards"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "22",
+    "question": "What does a variant prop commonly select?",
+    "options": [
+      "A required server response type",
+      "A separate React rendering root",
+      "A new component source file",
+      "A documented visual treatment"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "23",
+    "question": "What does a size prop commonly select?",
+    "options": [
+      "The database payload size",
+      "The source file byte length",
+      "A component size treatment",
+      "The current viewport width"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "24",
+    "question": "What does local component ownership allow?",
+    "options": [
+      "Automatic upstream merging",
+      "Direct source customization",
+      "Guaranteed permanent API stability",
+      "Removal of all dependencies"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "25",
+    "question": "Does adding shadcn/ui source eliminate primitive dependencies?",
+    "options": [
+      "Yes, every component becomes standalone",
+      "No, dependencies can remain",
+      "Only if dark mode is disabled",
+      "Only if the component has a label"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "26",
+    "question": "What can power shadcn/ui interaction behavior?",
+    "options": [
+      "The CLI's console output",
+      "The selected primitive library",
+      "The theme's color variables",
+      "The browser package manager"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "27",
+    "question": "Are Radix UI and Base UI editions interchangeable at every prop?",
+    "options": [
+      "No, their contracts can differ",
+      "Only their CSS colors differ",
+      "Yes, every part has the same API",
+      "Only their filenames differ"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "28",
+    "question": "What does a shadcn Button provide?",
+    "options": [
+      "An automatic route guard",
+      "A complete form state store",
+      "A server authentication method",
+      "A styled action control"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "29",
+    "question": "What does a shadcn Input provide?",
+    "options": [
+      "A complete autocomplete service",
+      "An automatic validation schema",
+      "A server text parser",
+      "A styled input control"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "30",
+    "question": "What does a shadcn Label provide?",
+    "options": [
+      "A server validation rule",
+      "A submitted field value",
+      "An application route name",
+      "A control label"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "31",
+    "question": "What does a shadcn Dialog organize?",
+    "options": [
+      "A page grid system",
+      "A dialog task",
+      "A database transaction",
+      "A theme token collection"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "32",
+    "question": "What does an AlertDialog support?",
+    "options": [
+      "Only an image preview",
+      "An attention-requiring confirmation",
+      "Only a hover explanation",
+      "Only a list of navigation links"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "33",
+    "question": "What does a shadcn Sheet represent?",
+    "options": [
+      "A compiled CSS Module",
+      "A server data worksheet",
+      "A side-panel dialog pattern",
+      "A responsive grid column"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "What does a shadcn Popover present?",
+    "options": [
+      "Anchored content",
+      "A required page route",
+      "A persistent global database view",
+      "A viewport-only image export"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "35",
+    "question": "What does a shadcn Tooltip provide?",
+    "options": [
+      "Brief supporting information",
+      "An essential editable form",
+      "A persistent error report",
+      "A complete command menu"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "36",
+    "question": "What does a shadcn DropdownMenu organize?",
+    "options": [
+      "Server request batches",
+      "Popup actions",
+      "Theme compiler options",
+      "Text field validation rules"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "37",
+    "question": "What does a shadcn Select represent?",
+    "options": [
+      "Automatic server searching",
+      "Option selection",
+      "Application route registration",
+      "Free text editing by default"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "38",
+    "question": "What does a shadcn Checkbox represent?",
+    "options": [
+      "A numeric range",
+      "A loading percentage",
+      "A date interval",
+      "A checked choice"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "39",
+    "question": "What does a shadcn Switch represent?",
+    "options": [
+      "A binary setting",
+      "A selectable action list",
+      "A form error group",
+      "A responsive grid track"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "40",
+    "question": "What does a shadcn Tabs pattern organize?",
+    "options": [
+      "Selectable content panels",
+      "Only global keyboard shortcuts",
+      "Independent browser profiles",
+      "Server cache namespaces"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "41",
+    "question": "What does a shadcn Accordion organize?",
+    "options": [
+      "Expandable sections",
+      "Only image upload previews",
+      "Only selected input values",
+      "A set of chart axes"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "42",
+    "question": "What does a shadcn Card group?",
+    "options": [
+      "Database permissions",
+      "Application state globally",
+      "Related content",
+      "Browser network requests"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "43",
+    "question": "What does a shadcn Skeleton indicate?",
+    "options": [
+      "A completed upload",
+      "A selected option",
+      "Content loading",
+      "A validated form"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "44",
+    "question": "What does a shadcn Table supply by itself?",
+    "options": [
+      "Complete server pagination",
+      "Table presentation primitives",
+      "A complete database query engine",
+      "Automatic row virtualization"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "45",
+    "question": "What do shadcn/ui charts build on in documented implementations?",
+    "options": [
+      "Only an HTML table export",
+      "A mandatory database renderer",
+      "A charting library integration",
+      "Only a browser screenshot API"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "46",
+    "question": "What does a shadcn registry distribute?",
+    "options": [
+      "Database backup archives",
+      "Production user sessions",
+      "Installable source items",
+      "Browser extension permissions"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "47",
+    "question": "What does a registry item's file list describe?",
+    "options": [
+      "Browser cache entries",
+      "Remote API results",
+      "User-uploaded attachments",
+      "Files to install"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "48",
+    "question": "What do registryDependencies identify?",
+    "options": [
+      "Only npm packages",
+      "Other registry items",
+      "Only browser APIs",
+      "Only CSS selectors"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "49",
+    "question": "What do registry npm dependencies identify?",
+    "options": [
+      "Required package dependencies",
+      "Other registry file paths only",
+      "User permission scopes",
+      "The active theme mode"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "50",
+    "question": "Does shadcn/ui source ownership prove full accessibility?",
+    "options": [
+      "Yes, every edit remains accessible",
+      "Only if every file uses TypeScript",
+      "Only if all colors use variables",
+      "No, custom integration still needs review"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "51",
+    "question": "A shadcn component is copied and locally edited. What does a package-manager update not guarantee?",
+    "options": [
+      "Downloading a new package version",
+      "Merging new upstream source edits",
+      "Updating declared npm dependencies",
+      "Resolving a package lockfile"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "52",
+    "question": "A shadcn CLI command writes files to the wrong folder. What configuration should the team inspect?",
+    "options": [
+      "components.json aliases",
+      "The browser viewport size",
+      "The runtime dialog title",
+      "The database default schema"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "53",
+    "question": "A shadcn import alias resolves in TypeScript but not the bundler. What must project integration align?",
+    "options": [
+      "Only the CLI command's spelling",
+      "Both alias-resolution configurations",
+      "Only the component's className prop",
+      "Only the theme's primary color"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "54",
+    "question": "A shadcn component appears without expected colors. What setup should the developer inspect?",
+    "options": [
+      "Only the component's React key",
+      "Only the server request timeout",
+      "Theme variables and stylesheet inclusion",
+      "Only the package description text"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "55",
+    "question": "A dark theme changes backgrounds but keeps light-theme text colors. What should the theme update together?",
+    "options": [
+      "Only the component file names",
+      "Only the default button size",
+      "Surface and foreground roles",
+      "Only the import alias names"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "56",
+    "question": "A shadcn Button adds a new visual variant. What must the local API update together?",
+    "options": [
+      "Only the package version string",
+      "Only the component's route destination",
+      "Variant styles and type contract",
+      "Only the button's source filename"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "57",
+    "question": "A caller supplies a conflicting padding class to a shadcn Button. What should review inspect?",
+    "options": [
+      "Only the server's response status",
+      "Only the component's accessible name",
+      "Only the browser's saved zoom level",
+      "The class merge and variant policy"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "58",
+    "question": "A shadcn component wraps a primitive Trigger. What must its adapter preserve?",
+    "options": [
+      "Only the custom background color",
+      "Only the component display name",
+      "Required props, events, and refs",
+      "Only the visible text children"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "59",
+    "question": "A Radix-based shadcn Button uses asChild around a link. What should it preserve?",
+    "options": [
+      "A second nested button element",
+      "Link semantics and destination",
+      "A numeric slider interval",
+      "A required checkbox value"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "60",
+    "question": "A Base UI-based shadcn component lacks a Radix prop from an example. Which contract should guide the adapter?",
+    "options": [
+      "Only the component's file size",
+      "Only the application's page title",
+      "That edition's primitive contract",
+      "Only the old example's CSS colors"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "61",
+    "question": "A shadcn Dialog's close button is only an icon. What must the UI still supply?",
+    "options": [
+      "A new global stylesheet",
+      "A second invisible dialog",
+      "A numeric form field value",
+      "An accessible name"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "62",
+    "question": "A shadcn Dialog opens from a menu item. What focus case should integration test?",
+    "options": [
+      "The backdrop can use opacity",
+      "The title can contain spaces",
+      "The content can have padding",
+      "The trigger item can unmount"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "63",
+    "question": "A shadcn Select stores a label instead of a stable value. What can fail after labels change?",
+    "options": [
+      "Selection and data mapping",
+      "The input's border radius",
+      "The theme provider's mount order",
+      "The component's CSS import syntax"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "64",
+    "question": "A shadcn form example uses a form library. What does the styled field component not replace?",
+    "options": [
+      "Validation and form state logic",
+      "The field label presentation",
+      "The error message presentation",
+      "The native input's visible styling"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "65",
+    "question": "A shadcn table must fetch sorted pages. What logic belongs to the application or its data adapter?",
+    "options": [
+      "Only the table border color",
+      "Query state and server requests",
+      "Only the row's CSS class name",
+      "Only the header text alignment"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "66",
+    "question": "A shadcn date-picker example wraps calendar and popover parts. What should callers verify?",
+    "options": [
+      "Only the source file indentation",
+      "Only the popup's border radius",
+      "The actual value and interaction contract",
+      "Only the calendar caption color"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "67",
+    "question": "A shadcn toast includes a critical recovery instruction but disappears quickly. What product change helps?",
+    "options": [
+      "Require pointer hover for every instruction",
+      "Shorten all visible messages",
+      "Remove every close control",
+      "Keep essential recovery information available"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "68",
+    "question": "A shadcn component applies theme tokens only to its root. A body portal looks wrong. What should the app inspect?",
+    "options": [
+      "Only the trigger's React key",
+      "Theme scope at the portal's DOM location",
+      "Only the menu's selected item label",
+      "Only the component source extension"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "69",
+    "question": "A registry item installs source with a new npm dependency. What must review include?",
+    "options": [
+      "That dependency's integration requirements",
+      "Only the item screenshot dimensions",
+      "Only the destination folder name",
+      "Only the registry description spelling"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "70",
+    "question": "A shadcn registry item depends on another registry item. What should installation resolve?",
+    "options": [
+      "Only the final CSS file size",
+      "Only the browser route tree",
+      "Only the alphabetical item order",
+      "The declared item dependency graph"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "71",
+    "question": "A team edits generated shadcn source then reruns add with overwrite. What risk needs review?",
+    "options": [
+      "A forced database migration",
+      "Loss of local modifications",
+      "Automatic duplicate user sessions",
+      "A browser CSS parser reset"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "72",
+    "question": "A shadcn component has inline hardcoded colors. What makes dark-mode maintenance easier?",
+    "options": [
+      "Give every color a random variable name",
+      "Copy the light colors into every dark rule",
+      "Change only the document title",
+      "Map colors to semantic theme roles"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "73",
+    "question": "A local shadcn component accepts className. What should its wrapper normally retain?",
+    "options": [
+      "Only the primitive's display name",
+      "Only the generated source filename",
+      "Only the caller's classes unconditionally",
+      "Its own required classes plus caller classes"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "74",
+    "question": "A shadcn CLI upgrade changes installation templates. What should the team compare?",
+    "options": [
+      "Only the CLI's console banner",
+      "Installed source diffs",
+      "Only the number of project routes",
+      "Only the application's current theme"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "75",
+    "question": "A shadcn registry item contains environment-specific import paths. What portability concern should review detect?",
+    "options": [
+      "Assumptions about consumer project layout",
+      "Only the screenshot's background color",
+      "Only the SVG's exported dimensions",
+      "Only the component's initial input value"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "76",
+    "question": "A shadcn custom dialog removes its descriptive text. What relationship should the wrapper handle deliberately?",
+    "options": [
+      "The dialog's accessible description",
+      "Only the trigger's text case",
+      "Only the close icon's color",
+      "Only the layout's maximum width"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "77",
+    "question": "A shadcn DropdownMenu item contains nested interactive controls. What risk should review consider?",
+    "options": [
+      "Only the item's foreground token",
+      "Only the component's source extension",
+      "Conflicting action and keyboard semantics",
+      "Only the package's install size"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "78",
+    "question": "A shadcn component modifies a primitive's controlled props. What ownership rule must the wrapper define?",
+    "options": [
+      "Which CSS file loads first alphabetically",
+      "Which state source is authoritative",
+      "Which component name appears in DevTools",
+      "Which source comment has the longest text"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "79",
+    "question": "A shadcn Sidebar integrates routes and responsive state. What behavior should tests cover?",
+    "options": [
+      "Navigation, collapse, and input methods",
+      "Only its screenshot at one width",
+      "Only the number of color tokens",
+      "Only its component import names"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "80",
+    "question": "A shadcn component source is not a separate published package. What version record can support maintenance?",
+    "options": [
+      "Only the last package-manager update time",
+      "Only the app's current route count",
+      "Only the browser's user-agent string",
+      "Its upstream origin and local revision"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "81",
+    "question": "A design system forks many shadcn components. What architecture prevents local changes from becoming untraceable?",
+    "options": [
+      "Hide all local edits from version control",
+      "Copy the same component separately per screen",
+      "Overwrite every component on each install",
+      "Document ownership and deliberate upstream synchronization"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "82",
+    "question": "A shadcn component migrates from Radix UI to Base UI. What is the main integration boundary to revalidate?",
+    "options": [
+      "State, composition, focus, and event contracts",
+      "Only the number of theme colors",
+      "Only the source filenames' capitalization",
+      "Only the exported icon dimensions"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "83",
+    "question": "A shadcn registry distributes executable source across teams. What trust boundary must consumers review?",
+    "options": [
+      "Only the screenshot's visual polish",
+      "Installed code and its dependencies",
+      "Only the component's default radius",
+      "Only the registry's display title"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "84",
+    "question": "A monorepo installs the same shadcn component into several apps. What design reduces incompatible local forks?",
+    "options": [
+      "A separate color literal for each screen",
+      "A shared owned component package",
+      "A mutable remote script on every page",
+      "Independent undocumented copies in each app"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "85",
+    "question": "A shadcn wrapper exposes private primitive props as permanent public API. What upgrade cost follows?",
+    "options": [
+      "Consumers depend on upstream internals",
+      "The browser cannot render child elements",
+      "Every wrapper loses TypeScript support",
+      "CSS variables stop crossing components"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "86",
+    "question": "A shadcn form error is visually correct but disconnected from its input. What integration is missing?",
+    "options": [
+      "A different CLI installation path",
+      "A wider input container",
+      "An accessible error relationship",
+      "A second error color token"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "87",
+    "question": "A shadcn chart shows values only through color. What must the product provide beyond the default style?",
+    "options": [
+      "Only a more saturated palette",
+      "Only a shorter legend title",
+      "Alternative perceivable data cues",
+      "Only a larger chart canvas"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "88",
+    "question": "Two shadcn registries publish an item named button. What installation identifier prevents ambiguity?",
+    "options": [
+      "Only the component's display title",
+      "A qualified registry namespace and item",
+      "Only the screenshot's output filename",
+      "The shortest matching local file path"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "89",
+    "question": "A shadcn theme adds a new role but some components retain literals. What audit detects incomplete adoption?",
+    "options": [
+      "Trace role usage and remaining raw values",
+      "Compare only the output filenames",
+      "Count only the number of CSS variables",
+      "Sort only the components.json aliases"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "90",
+    "question": "A shadcn dialog contains another library's portaled editor popup. What regression should tests target?",
+    "options": [
+      "Only the close button's SVG path count",
+      "Only the editor's font size",
+      "Focus and outside-interaction boundaries",
+      "Only the dialog's source file extension"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "91",
+    "question": "A shadcn table wraps a headless table engine. What ownership should its API make clear?",
+    "options": [
+      "Only the library author's username",
+      "Only the header's CSS class names",
+      "Presentation versus data-model behavior",
+      "Only the generated DOM node count"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "92",
+    "question": "A shadcn app streams server content around interactive components. What integration must distinguish?",
+    "options": [
+      "Server/client component boundaries",
+      "Only the number of source files",
+      "Only the color mode name",
+      "Only the CLI's command output format"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "93",
+    "question": "A shadcn Button wraps an async destructive action. What belongs in the app's contract beyond styling?",
+    "options": [
+      "Only the destructive color value",
+      "Only the icon's visual position",
+      "Only the button corner radius",
+      "Pending state and duplicate-action prevention"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "94",
+    "question": "A shadcn component upgrade changes internal parts but preserves its public wrapper. What tests protect the abstraction?",
+    "options": [
+      "Only the component source line count",
+      "Consumer behavior and supported styling hooks",
+      "Only snapshots of private class hashes",
+      "Only the upstream package description"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "95",
+    "question": "A shadcn class merge utility supports a newer Tailwind syntax than the app. What compatibility should review verify?",
+    "options": [
+      "Only matching component export order",
+      "Only identical CSS source whitespace",
+      "Only equal package name lengths",
+      "Utility conflict rules for the installed versions"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "96",
+    "question": "A shadcn registry uses shared dependencies with different requested versions. What packaging risk needs resolution?",
+    "options": [
+      "Only a changed JSON indentation width",
+      "Only a larger screenshot file",
+      "Only a different component display name",
+      "Dependency compatibility"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "97",
+    "question": "A local shadcn component adds a prop that reaches a native DOM node unexpectedly. What should its adapter define?",
+    "options": [
+      "A random class name per render",
+      "A new source filename per caller",
+      "A separate provider for every prop",
+      "Explicit prop forwarding"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "98",
+    "question": "A shadcn theme changes every radius token. What regression set best checks the impact?",
+    "options": [
+      "Only the token declaration syntax",
+      "Only the package lockfile size",
+      "Representative controls and nested surfaces",
+      "Only one card screenshot at desktop width"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "99",
+    "question": "A shadcn component looks correct with pointer input. What evidence still checks primitive integration?",
+    "options": [
+      "Only the number of JSX attributes",
+      "Keyboard and assistive-technology behavior",
+      "Only the screenshot resolution",
+      "Only the compiled CSS byte size"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "100",
+    "question": "A shadcn registry item relies on a global stylesheet side effect. What must its installation contract communicate?",
+    "options": [
+      "The required style dependency and scope",
+      "Only the screenshot's aspect ratio",
+      "Only the component's visible title",
+      "Only the registry owner's profile name"
+    ],
+    "correct_index": 0
+  }
+]

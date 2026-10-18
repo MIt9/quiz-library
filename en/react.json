@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What is JSX?",
+  "options": [
+   "A syntax extension that looks like HTML in JavaScript",
+   "A template language that React compiles into CSS rules",
+   "A separate language that the browser can run directly",
+   "A JSON format that React uses to describe components"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "2",
+  "question": "How must the name of a React component start?",
+  "options": [
+   "With a lowercase letter",
+   "With a capital letter",
+   "With an underscore",
+   "With the prefix use"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "What do props do in React?",
+  "options": [
+   "Store data that changes inside the component",
+   "Run code after the component renders on screen",
+   "Pass data from a parent to a child",
+   "Connect the component to the real browser DOM"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "4",
+  "question": "Can a child component change the props that it gets?",
+  "options": [
+   "Yes, with a direct assignment",
+   "Yes, but only in class components",
+   "Yes, but only for object props",
+   "No, props are read-only"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "5",
+  "question": "What does the useState hook return?",
+  "options": [
+   "A state value and an update function",
+   "Only the current state value of the hook",
+   "A promise that resolves with the new state",
+   "An object with a get method and a set method"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "6",
+  "question": "A developer writes `count = count + 1` for a state variable. What is the problem?",
+  "options": [
+   "The value changes into a string at the next render",
+   "React does not see the change, so no new render",
+   "React throws an error at once in development",
+   "The change works but it is slow for large trees"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "7",
+  "question": "What is the purpose of the `key` prop in a list?",
+  "options": [
+   "Give each item a unique style in the CSS file",
+   "Let each item receive its own events from React",
+   "Help React find which items change or move",
+   "Sort the items in the list by their value"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "8",
+  "question": "Which value is a good `key` for items in a list that can change order?",
+  "options": [
+   "The index of the item in the array",
+   "A new Math.random() value at each render",
+   "The length of the array",
+   "A stable unique id from the data"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "9",
+  "question": "What does the useEffect hook do?",
+  "options": [
+   "Runs side effects after the render",
+   "Makes state updates run at once in the handler",
+   "Keeps a value between two renders of the component",
+   "Creates a new instance of the component"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "10",
+  "question": "What does an empty dependency array `[]` in useEffect mean?",
+  "options": [
+   "The effect runs after every render of the component",
+   "The effect runs after the first render only",
+   "The effect never runs because it has no dependency",
+   "The effect runs before the first render of the component"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "11",
+  "question": "How do you clean up a subscription made in useEffect?",
+  "options": [
+   "Call a cleanup method on the component",
+   "Add a second effect with the same dependencies",
+   "Return a cleanup function from the effect",
+   "Set the subscription to null at the end"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "12",
+  "question": "What is the virtual DOM?",
+  "options": [
+   "A browser feature that draws elements that are hidden",
+   "A separate thread that paints the page for React",
+   "A disk cache that holds the real DOM nodes",
+   "A JavaScript copy of the UI that React compares"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "13",
+  "question": "What is a controlled component?",
+  "options": [
+   "A form input whose value comes from state",
+   "An input that React never renders again after mount",
+   "A component that only its parent can unmount",
+   "A component that uses refs and has no state"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "14",
+  "question": "Why do you use a Fragment (`<>...</>`)?",
+  "options": [
+   "To load a part of the component at a later time",
+   "To group elements without an extra DOM node",
+   "To split the state of a component into small parts",
+   "To split the code of the app into bundles"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "15",
+  "question": "Which array method do you usually use to render a list of elements in JSX?",
+  "options": [
+   "forEach",
+   "filter",
+   "map",
+   "reduce"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "16",
+  "question": "Which code attaches a click handler correctly in JSX?",
+  "options": [
+   "<button onclick=\"handleClick()\">",
+   "<button onClick={handleClick()}>",
+   "<button on-click={handleClick}>",
+   "<button onClick={handleClick}>"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "17",
+  "question": "What is a main use of the useRef hook?",
+  "options": [
+   "Keep a mutable value without a new render",
+   "Start a new render when a value changes",
+   "Share a value with all child components of the tree",
+   "Run code before the first render of the component"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "18",
+  "question": "What does the useContext hook do?",
+  "options": [
+   "Creates a new Context object for the component tree",
+   "Reads the value of the nearest Context provider",
+   "Sends data from a child component up to a parent",
+   "Stores the state of the component in the browser"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "19",
+  "question": "What must the name of a custom hook start with?",
+  "options": [
+   "hook",
+   "with",
+   "use",
+   "get"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "20",
+  "question": "Where can you call a hook?",
+  "options": [
+   "Inside an if block of a function component",
+   "Inside any regular JavaScript helper function",
+   "Inside a method of a class component",
+   "At the top level of a component or custom hook"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "Which change makes a function component render again?",
+  "options": [
+   "A state update",
+   "A change of a local `let` variable",
+   "A change of `ref.current`",
+   "A call to console.log"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "22",
+  "question": "Which class lifecycle method is closest to useEffect with an empty dependency array?",
+  "options": [
+   "constructor",
+   "componentDidMount",
+   "render",
+   "shouldComponentUpdate"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "23",
+  "question": "What does React.memo do?",
+  "options": [
+   "Saves the state of the component in the browser",
+   "Caches the result of a function inside the component",
+   "Skips a render when the props are equal",
+   "Blocks all state updates that the component gets"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "24",
+  "question": "What does the useMemo hook do?",
+  "options": [
+   "Caches a function so that its identity stays equal",
+   "Runs a calculation after the render is on screen",
+   "Stores a value that does not cause a new render",
+   "Caches a calculated value between renders"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "25",
+  "question": "What does the useCallback hook return?",
+  "options": [
+   "A function that changes with its dependencies",
+   "The result of calling the function at that time",
+   "A promise that resolves to the function later",
+   "A new function that React makes at each render"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "26",
+  "question": "Which expression shows `<Banner />` only when `show` is true?",
+  "options": [
+   "{show ? <Banner />}",
+   "{show && <Banner />}",
+   "{if (show) <Banner />}",
+   "{show || <Banner />}"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "27",
+  "question": "Two sibling components need the same state. What is the usual solution?",
+  "options": [
+   "Copy the state in both and sync it with effects",
+   "Store the state in a ref",
+   "Move the state to their closest common parent",
+   "Store the state in a global variable"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "What is `props.children`?",
+  "options": [
+   "The list of all state values of the child components",
+   "The props object that the parent component has",
+   "The DOM nodes that the component renders on screen",
+   "The content between the tags of a component"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "29",
+  "question": "How do you read the value of an uncontrolled input?",
+  "options": [
+   "With a ref to the DOM node",
+   "With the state that an onChange handler sets",
+   "With the props that the parent gives to the input",
+   "With a value that the context provides"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "30",
+  "question": "What does `<StrictMode>` do in development?",
+  "options": [
+   "Makes the app run faster than in production",
+   "Runs extra checks and calls some functions twice",
+   "Blocks the use of unsafe props in production",
+   "Turns off all the warnings in the console"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "31",
+  "question": "Which errors does an error boundary catch?",
+  "options": [
+   "Errors that happen inside event handlers",
+   "Errors in async code such as setTimeout callbacks",
+   "Errors thrown while its children render",
+   "Errors that happen in the server code"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "How do you make an error boundary?",
+  "options": [
+   "Use a function component with a useEffect hook",
+   "Put a try/catch block around the JSX output",
+   "Use the built-in useErrorBoundary hook of React",
+   "Use a class with getDerivedStateFromError"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "33",
+  "question": "What does `<Suspense fallback={...}>` show?",
+  "options": [
+   "The fallback while a child waits for code or data",
+   "An error message when a child component fails",
+   "A message to the user when the network is offline",
+   "A loading bar during the first page load only"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "34",
+  "question": "What does React.lazy do?",
+  "options": [
+   "Delays all state updates of the component",
+   "Loads component code when it first renders",
+   "Keeps the component in memory for later use",
+   "Renders the component on the server only"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "35",
+  "question": "What does createPortal do?",
+  "options": [
+   "Sends data between two separate React apps",
+   "Renders the children in a separate browser thread",
+   "Renders children into a DOM node outside the parent",
+   "Copies a component to another page of the app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "Why must you not use `push` on a state array?",
+  "options": [
+   "push is not allowed when strict mode is on",
+   "push makes the array slower for large lists",
+   "push removes the other items of the array",
+   "React compares references and may miss the change"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "37",
+  "question": "Which rule is correct for the render function of a component?",
+  "options": [
+   "It must be pure: same input, same output",
+   "It must call the API to get fresh data",
+   "It must change the DOM nodes directly",
+   "It must read and write state in the body"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "38",
+  "question": "A React event handler calls setState two times. How many renders happen?",
+  "options": [
+   "Two renders, one for each call",
+   "One render, because React batches the calls",
+   "The second call is ignored by React",
+   "React shows a warning in the console"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "39",
+  "question": "Which code always uses the latest state value?",
+  "options": [
+   "setCount(count => count++)",
+   "setCount(count++)",
+   "setCount(c => c + 1)",
+   "setCount(++count)"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "40",
+  "question": "When is useReducer a good choice?",
+  "options": [
+   "When the state is one single boolean flag",
+   "When you get fresh data from a server",
+   "When you need to read a DOM node",
+   "When state is complex with related updates"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "41",
+  "question": "What is the `useId` hook for?",
+  "options": [
+   "To make stable ids for attributes like htmlFor",
+   "To make keys for the items of a list",
+   "To identify the current user of the app",
+   "To make random numbers for the component"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "42",
+  "question": "Which JSX attribute sets a CSS class?",
+  "options": [
+   "class",
+   "className",
+   "cssClass",
+   "styleClass"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "43",
+  "question": "Which value does the `style` prop take in JSX?",
+  "options": [
+   "A string: style=\"color: red\" as in HTML",
+   "The name of a CSS file in the project",
+   "An object: style={{ color: 'red' }}",
+   "An array of CSS strings in a list"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "What does `createRoot(el).render(<App />)` do?",
+  "options": [
+   "Makes a static HTML string from App",
+   "Attaches handlers to HTML from the server",
+   "Adds App as a child of the document body",
+   "Starts a React 18 root and renders App"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "45",
+  "question": "What is hydration?",
+  "options": [
+   "React attaches handlers to server HTML",
+   "React converts the HTML of the page to JSON",
+   "React fills a form with data saved before",
+   "React compresses the HTML from the server"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "46",
+  "question": "What is prop drilling?",
+  "options": [
+   "Reading props with destructuring in a component",
+   "Passing props through levels that do not use them",
+   "Sending all props to a child with the spread syntax",
+   "Changing the props inside a child component"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "47",
+  "question": "What is the value of a prop when the parent does not pass it?",
+  "options": [
+   "null",
+   "An empty string",
+   "undefined",
+   "false"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "48",
+  "question": "Which library do most teams use to test React components by user behavior?",
+  "options": [
+   "Enzyme with shallow rendering",
+   "Puppeteer with a headless browser",
+   "Selenium with a remote browser",
+   "React Testing Library"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "49",
+  "question": "Which React Testing Library query is best to find a button by its name?",
+  "options": [
+   "getByRole('button', { name })",
+   "getByTestId",
+   "container.querySelector('.btn')",
+   "getByClassName"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "What does `render` from React Testing Library do?",
+  "options": [
+   "Prints the component as HTML on screen",
+   "Mounts a component in a test DOM",
+   "Starts a development server",
+   "Makes a snapshot file"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "51",
+  "question": "This counter stops at 1. Why?\n`useEffect(() => {\n  const t = setInterval(() => setN(n + 1), 1000);\n  return () => clearInterval(t);\n}, []);`",
+  "options": [
+   "setInterval does not work inside an effect",
+   "The cleanup runs after each tick of the timer",
+   "The callback uses n from the first render",
+   "setN is async, so React ignores the result"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "52",
+  "question": "An effect sets state, and the same state is in its dependencies. The new value is a new array each time. What happens?",
+  "options": [
+   "The effect runs one time only after the mount",
+   "React ignores the state update from the effect",
+   "React stops the build with an error message",
+   "An infinite loop of renders can start"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "53",
+  "question": "A component makes `const opts = { a: 1 }` in render and puts opts in effect dependencies. What happens?",
+  "options": [
+   "The effect runs after every render",
+   "The effect runs one time only",
+   "React compares the content, so no extra runs",
+   "React warns and stops the effect"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "54",
+  "question": "When does useLayoutEffect run?",
+  "options": [
+   "After the browser paints the new screen",
+   "After the DOM update and before the paint",
+   "Before the render phase of the component",
+   "Only on the server when the page is made"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "55",
+  "question": "A user types fast and old responses arrive late. What is a good fix in the effect?",
+  "options": [
+   "Mark the effect function itself as async",
+   "Remove the dependency array from the effect",
+   "Use the cleanup to ignore or abort old calls",
+   "Add a second effect that makes the fetch"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "56",
+  "question": "How can you reset the state of a component when the `userId` prop changes?",
+  "options": [
+   "Call setState in the render body",
+   "Use an effect with an empty dependency array",
+   "Wrap the component in React.memo",
+   "Pass `key={userId}` to the component"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "57",
+  "question": "A list of inputs uses the index as `key`. The user removes the first item. What is the bug?",
+  "options": [
+   "Input values can show on the wrong items",
+   "The whole list becomes empty after the removal",
+   "React throws a duplicate key error at once",
+   "The removed item stays on the screen"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "58",
+  "question": "A memo child still renders each time. The parent passes `style={{ a: 1 }}`. Why?",
+  "options": [
+   "memo works only for class components",
+   "The object is new at each render",
+   "React never compares the style props",
+   "The child component has its own state"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "59",
+  "question": "The value of a Context provider changes. Which components render again?",
+  "options": [
+   "Only the direct children of the provider",
+   "Only components that use the changed field",
+   "All components that consume that context",
+   "Every component in the app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "60",
+  "question": "A provider has `value={{ user, setUser }}` made in the render. What is the risk?",
+  "options": [
+   "The value of the context becomes read-only",
+   "The context loses the user after some time",
+   "React throws a warning when the app builds",
+   "A new object makes consumers render again"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "Why must you not call a hook inside a condition?",
+  "options": [
+   "React tracks hooks by their call order",
+   "Hooks are slower when they are in a condition",
+   "The compiler removes hooks that are in a condition",
+   "Hooks work only with values that are constant"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "62",
+  "question": "In React 19, how does a function component get a ref from its parent?",
+  "options": [
+   "Only with the forwardRef function",
+   "As a regular prop named ref",
+   "Only with the useRef hook",
+   "Only with a context provider"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "63",
+  "question": "What does useImperativeHandle do?",
+  "options": [
+   "Reads the DOM node of a child faster",
+   "Creates a new context for the child tree",
+   "Sets which methods a parent gets from a ref",
+   "Runs an effect before the render phase"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "64",
+  "question": "A developer uses `useState(props.value)`. The prop changes later. What happens to the state?",
+  "options": [
+   "The state updates by itself with the prop",
+   "React throws an error about the copied prop",
+   "The component unmounts and mounts again",
+   "The state keeps its first value"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "65",
+  "question": "An input has `value={text}` and text starts as undefined. Which warning can appear later?",
+  "options": [
+   "Uncontrolled input changes to controlled",
+   "A list item in the form needs a key prop",
+   "A hook call is not valid in this component",
+   "The input is read-only without an onChange"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "After `setCount(5)`, `console.log(count)` in the same handler shows the old value. Why?",
+  "options": [
+   "setState is slow, so it ends after the log",
+   "The state value is a snapshot of that render",
+   "console.log runs before the handler starts",
+   "React hides the new value until the next paint"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "67",
+  "question": "Two elements of different types are at the same place in the tree. What does React do?",
+  "options": [
+   "It updates only the attributes of the old nodes",
+   "It moves the old nodes to the new place",
+   "It removes the old tree and builds a new one",
+   "It keeps the state of the children in place"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "68",
+  "question": "A developer defines `function Row()` inside the `Table` component. What is the problem?",
+  "options": [
+   "Row cannot receive props from its parent Table",
+   "Row cannot call hooks when Table defines it",
+   "Table cannot render a component defined in it",
+   "React remounts Row each render and loses state"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "69",
+  "question": "What does `startTransition` do?",
+  "options": [
+   "Marks an update as not urgent",
+   "Delays the render by a fixed time",
+   "Starts a CSS animation for the update",
+   "Makes the updates run at the same time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "70",
+  "question": "What does useDeferredValue give you?",
+  "options": [
+   "A value that updates after a fixed timeout",
+   "A copy of a value that can lag behind",
+   "A promise that resolves with the value",
+   "A debounced version of the function"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "71",
+  "question": "An error occurs in an onClick handler. Does an error boundary catch it?",
+  "options": [
+   "Yes, the boundary catches all handler errors",
+   "Yes, but only if the boundary is a class",
+   "No, use try/catch in the handler",
+   "Yes, but only in a production build"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "72",
+  "question": "Where must you put `<Suspense>` for a component made with React.lazy?",
+  "options": [
+   "Inside the lazy component",
+   "Only in index.html",
+   "Below the lazy component in the tree",
+   "Above the lazy component in the tree"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "73",
+  "question": "A form must send a POST request on submit. Where is the best place for this code?",
+  "options": [
+   "In the submit event handler",
+   "In an effect with no dependencies",
+   "In the render body",
+   "In a useMemo callback"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "74",
+  "question": "In React Testing Library, a text appears after a fetch. Which query waits for it?",
+  "options": [
+   "getByText",
+   "findByText",
+   "queryByText",
+   "getAllByText"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "75",
+  "question": "Why does Testing Library advise tests of what the user sees instead of the state?",
+  "options": [
+   "React blocks access to the state of a component",
+   "The tests run in less time than other tests",
+   "Tests stay valid when you change internals",
+   "Snapshots become smaller in size"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "A test shows the warning 'not wrapped in act(...)'. What does it mean?",
+  "options": [
+   "A list item in the test has no key",
+   "A hook is called inside a loop in the test",
+   "The test used a wrong render function",
+   "A state update happened outside of act"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "77",
+  "question": "A developer wraps every cheap calculation in useMemo. What is the effect?",
+  "options": [
+   "More code and memory use for little gain",
+   "The app is always faster after that",
+   "The calculation runs two times in each render",
+   "State updates stop in the component"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "78",
+  "question": "Why does a change of `ref.current` not update the screen?",
+  "options": [
+   "Refs are frozen objects in React 18",
+   "A ref change does not start a render",
+   "React copies the refs at each render",
+   "ref.current is read-only in the render"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "What is the difference between `useState(compute())` and `useState(() => compute())`?",
+  "options": [
+   "The second calls compute at each render",
+   "The first one is lazy and the second is not",
+   "The second calls compute once, at mount",
+   "There is no difference between the two"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "80",
+  "question": "What does the exhaustive-deps lint rule warn about?",
+  "options": [
+   "Imports in the file that the code never uses",
+   "Items of a list that do not have a key prop",
+   "State that two components both read and write",
+   "Values in an effect that are not in the array"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "81",
+  "question": "What is the main benefit of the Fiber architecture in React?",
+  "options": [
+   "Rendering can pause and resume by priority",
+   "It removes the need for a virtual DOM in the app",
+   "It moves all render work into web workers",
+   "It makes every render run in one synchronous step"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "82",
+  "question": "In concurrent React, why must the render phase stay pure?",
+  "options": [
+   "It runs only in the browser and not on the server",
+   "React can call it many times or drop the result",
+   "It runs only once for each mount of the tree",
+   "It is the phase that changes the DOM directly"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "Which problem does useSyncExternalStore solve?",
+  "options": [
+   "Slow network requests that the store makes",
+   "Missing keys in lists that a store holds",
+   "Tearing: UI that shows two store values",
+   "Errors in server rendering of a store"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "84",
+  "question": "When do you use flushSync?",
+  "options": [
+   "When you want the renders to run faster",
+   "When you want effects to run before the render",
+   "When you want to batch more updates in one",
+   "When you must read the DOM right after an update"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "In React 18 development, why does an effect run, clean up, and run again on mount?",
+  "options": [
+   "StrictMode checks that the cleanup is correct",
+   "It is a known bug of React in development",
+   "The component mounts two times in production",
+   "Hot reload runs the effect again by design"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "86",
+  "question": "A state setter gets the same value (Object.is). What can React do?",
+  "options": [
+   "React always renders the whole tree again",
+   "React can skip the children and the effects",
+   "React throws an error for the same value",
+   "React renders and runs all effects again"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "87",
+  "question": "A memo child gets `children` JSX that the parent makes at each render. Does memo help?",
+  "options": [
+   "Yes, memo always blocks the render here",
+   "Yes, because memo compares children deep",
+   "No, children is a new element each render",
+   "Yes, but only when children is plain text"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "88",
+  "question": "One big context makes many components render too often. What is a sound fix?",
+  "options": [
+   "Put all the values in one big state object",
+   "Store all the values in one ref object",
+   "Copy the values to state with an effect",
+   "Split the context by how often values change"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "89",
+  "question": "The server HTML shows `Date.now()`, and the client shows another value. What happens?",
+  "options": [
+   "React logs a hydration mismatch",
+   "Nothing happens, React fixes the text silently",
+   "The server HTML is always deleted at once",
+   "The date value stays frozen on the client"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "90",
+  "question": "What does the useOptimistic hook (React 19) do?",
+  "options": [
+   "Caches the result of an action for later renders",
+   "Shows a temporary value while an async action runs",
+   "Retries a failed action until it works",
+   "Runs an action without a new render"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "91",
+  "question": "In a keyed list, an item moves to a new position. What does React do?",
+  "options": [
+   "It remounts the item with a new state",
+   "It updates only the text of the item",
+   "It moves the instance and keeps its state",
+   "It remounts all the items after the item"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "92",
+  "question": "A transition render is in progress, and an urgent update arrives. What does React do?",
+  "options": [
+   "It finishes the transition before the urgent one",
+   "It drops both updates from the update queue",
+   "It merges both updates into one single render",
+   "It pauses the transition for the urgent one"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "93",
+  "question": "When does the cleanup of a previous effect run?",
+  "options": [
+   "Before the next run and on unmount",
+   "After the next run of the effect, on mount",
+   "Only when the component unmounts from the tree",
+   "Before the render phase of each new render"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "94",
+  "question": "Is the `dispatch` function from useReducer stable between renders?",
+  "options": [
+   "No, it is new at each render",
+   "Yes, React keeps the same identity",
+   "Only if you wrap it in useCallback",
+   "Only in StrictMode"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "95",
+  "question": "What is the risk of a custom `areEqual` function in React.memo?",
+  "options": [
+   "It makes the child render more often than needed",
+   "It disables the hooks of the child component",
+   "It can skip a changed prop and show old data",
+   "It copies the props deep at each render"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "96",
+  "question": "Why is a read of `ref.current` during render a risk?",
+  "options": [
+   "It throws an error in React 18 and later",
+   "It is slower than a read of the state",
+   "It works only during the first render",
+   "Render can repeat, and refs are not tracked"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "97",
+  "question": "An error boundary shows a fallback. How can the user try again?",
+  "options": [
+   "Reset the boundary state, for example with a key",
+   "Call forceUpdate on the root of the app",
+   "Call hydrate again for the whole page",
+   "Throw the same error a second time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "98",
+  "question": "A list of 10,000 rows is slow at every render. What is the best first fix?",
+  "options": [
+   "Wrap each row of the list in useMemo",
+   "Virtualize the list to render visible rows",
+   "Use useLayoutEffect for each of the rows",
+   "Use longer keys for each row in the list"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "99",
+  "question": "What is a difference between React 17 and 18 for setState in a setTimeout?",
+  "options": [
+   "React 17 batches them, React 18 does not",
+   "There is no difference between the versions",
+   "React 18 batches them, React 17 does not",
+   "React 18 skips these updates in a timeout"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "100",
+  "question": "What can the `use` hook (React 19) do that other hooks cannot?",
+  "options": [
+   "It runs the effects of a component on the server",
+   "It replaces the useState hook in React 19",
+   "It must be at the top level only",
+   "It reads a promise and works in an if block"
+  ],
+  "correct_index": 3
+ }
+]

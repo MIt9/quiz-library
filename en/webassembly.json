@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What is WebAssembly?",
+    "options": [
+      "A browser plugin that runs native desktop executables with direct access to the system",
+      "A JavaScript library that compiles TypeScript code into faster browser code at run time",
+      "A binary instruction format that runs in a sandboxed virtual machine in the browser",
+      "A markup language that describes the page layout in a compact binary form"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "2",
+    "question": "Which file extension does a compiled WebAssembly module use?",
+    "options": [
+      "`.wasmbin`",
+      "`.wbin`",
+      "`.wsm`",
+      "`.wasm`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "3",
+    "question": "What is the name of the human-readable text format of WebAssembly?",
+    "options": [
+      "WIR",
+      "WASI-text",
+      "WBC",
+      "WAT"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "4",
+    "question": "Which MIME type must the server send for `WebAssembly.instantiateStreaming` to work?",
+    "options": [
+      "`application/octet-stream`",
+      "`application/javascript`",
+      "`application/wasm`",
+      "`text/webassembly`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "5",
+    "question": "Which kind of virtual machine does the WebAssembly instruction set use?",
+    "options": [
+      "A register machine with a fixed set of 32 registers",
+      "A stack machine, where instructions take values from a stack",
+      "A dataflow machine, where instructions form a graph",
+      "An object machine, where instructions send messages to heap objects"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "6",
+    "question": "Which value types can the core WebAssembly 1.0 specification pass to a function?",
+    "options": [
+      "`i32`, `i64`, `f32` and `f64` numbers",
+      "`number`, `string`, `boolean` and `null` values",
+      "`char`, `short`, `int` and `long` numbers",
+      "`int`, `float`, `string` and `array` values"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "7",
+    "question": "A JS app must send a string to a Wasm function. How does it do this without glue code?",
+    "options": [
+      "It passes the string as an argument because Wasm has a native string type",
+      "It writes the bytes to linear memory and passes a pointer and a length",
+      "It passes the string as a JSON object and Wasm parses it on the stack",
+      "It sets a global JS variable and the Wasm code reads it by name"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "8",
+    "question": "What is the linear memory of a Wasm module?",
+    "options": [
+      "A shared area that holds all the DOM nodes of the page and the CSS rules",
+      "A tree of objects that the garbage collector of the browser manages for the module",
+      "A read-only area that holds only the code of the module and its constants",
+      "A contiguous, resizable array of bytes that the module reads and writes"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "9",
+    "question": "Which JS class represents the linear memory of a Wasm module?",
+    "options": [
+      "`WebAssembly.Storage`",
+      "`WebAssembly.Memory`",
+      "`WebAssembly.Segment`",
+      "`WebAssembly.Table`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "10",
+    "question": "Which API compiles and instantiates a Wasm module while it downloads from the network?",
+    "options": [
+      "`WebAssembly.instantiateSync(await fetch(url), imports)`",
+      "`WebAssembly.compileAsync(fetch(url), imports).instantiate()`",
+      "`WebAssembly.loadModule(fetch(url), imports, { stream: true })`",
+      "`WebAssembly.instantiateStreaming(fetch(url), imports)`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "11",
+    "question": "You call `WebAssembly.instantiate(bytes, imports)` with an `ArrayBuffer`. What does it return?",
+    "options": [
+      "A promise that resolves to the exports object of the module only, without a module",
+      "An `Instance` object, returned at once without a promise or a module",
+      "A promise that resolves to an object with `module` and `instance`",
+      "A `Module` object, returned at once without a promise and without an instance"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "12",
+    "question": "How does JS call a function that a Wasm module exports?",
+    "options": [
+      "It calls the function from the global `wasm` object",
+      "It uses `WebAssembly.call(name, args)`",
+      "It reads the function from `window.__wasm__`",
+      "It calls the function from `instance.exports`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "13",
+    "question": "What is the purpose of the imports object in `WebAssembly.instantiate`?",
+    "options": [
+      "It lists the JS files that the browser must load before it runs the module",
+      "It tells the compiler which npm packages the module needs at build time",
+      "It gives the module the functions, memory or values that the host provides",
+      "It defines which functions the module shows to other modules and to JS code"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "14",
+    "question": "What is the correct relation between WebAssembly and JavaScript?",
+    "options": [
+      "Wasm runs only inside JS and cannot run without a JS parser",
+      "Wasm replaces JS, and the browser will remove JS support soon",
+      "Wasm runs next to JS, and the two languages call each other",
+      "Wasm is a JS subset that the browser interprets more slowly"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "15",
+    "question": "Which task is the best fit for WebAssembly in a web page?",
+    "options": [
+      "Reading the values of form fields when the user sends them",
+      "Toggling CSS classes on many buttons after each user click event",
+      "Heavy numeric loops such as video encoding or image filters",
+      "Fetching JSON from an API and showing it in a long list"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "16",
+    "question": "Can a Wasm module call DOM APIs directly?",
+    "options": [
+      "Yes, it uses the global `document` object in the same way as JS code does",
+      "No, it calls imported JS functions, and those functions use the DOM",
+      "Yes, but only when the module uses the `i64` type for the pointers",
+      "No, because the DOM is blocked in all browser sandboxes by the vendors"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "17",
+    "question": "Which statement describes the Wasm sandbox correctly?",
+    "options": [
+      "The module can read any memory of the browser process but cannot write to it at all",
+      "The module can use any web API but only after the user gives permission",
+      "The module can access the file system but only in the download folder",
+      "The module can touch only its own memory and the imports that the host gives"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "18",
+    "question": "Which toolchain compiles existing C and C++ code to WebAssembly?",
+    "options": [
+      "Emscripten",
+      "wasm-pack",
+      "AssemblyScript",
+      "Babel"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "19",
+    "question": "What does the tool `wasm-pack` do for a Rust project?",
+    "options": [
+      "It runs Rust unit tests inside a headless browser and prints a report",
+      "It translates Rust source code into TypeScript source code",
+      "It builds Rust to Wasm and creates an npm-ready package with JS glue",
+      "It downloads Rust crates from npm and links them with a Wasm runtime"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "20",
+    "question": "What does `wasm-bindgen` do?",
+    "options": [
+      "It binds Wasm functions to HTML events in the page without any JS code",
+      "It compresses the `.wasm` file with a Wasm-specific algorithm",
+      "It generates JS glue code so Rust and JS can pass strings and objects",
+      "It checks that the Rust code does not use any unsafe blocks"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "21",
+    "question": "What is AssemblyScript?",
+    "options": [
+      "A tool that converts a TypeScript project into plain JavaScript files",
+      "A runtime that executes TypeScript inside a Wasm virtual machine",
+      "A language with TypeScript-like syntax that compiles to WebAssembly",
+      "A debugger that shows TypeScript source in the Wasm disassembly"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "22",
+    "question": "Which environment variables make the standard Go compiler build a Wasm file for the browser?",
+    "options": [
+      "`GOOS=web GOARCH=wasm`",
+      "`GOOS=wasm GOARCH=js`",
+      "`GOOS=browser GOARCH=wasm32`",
+      "`GOOS=js GOARCH=wasm`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "23",
+    "question": "What is the size of one page of Wasm linear memory?",
+    "options": [
+      "128 KiB",
+      "256 KiB",
+      "64 KiB",
+      "16 KiB"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "24",
+    "question": "How can JS read bytes from the linear memory of a Wasm module?",
+    "options": [
+      "It calls `memory.read(address)` for each byte that it needs to get",
+      "It makes a typed array such as `Uint8Array` over `memory.buffer`",
+      "It reads the exported `.wasm` file again with `fetch` and parses it",
+      "It sends a message to the module with `postMessage` and waits for it"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "25",
+    "question": "What does WASI stand for and do?",
+    "options": [
+      "WebAssembly System Interface, a standard API for files, clocks and other system calls",
+      "WebAssembly Security Indicator, a flag in the file header that marks a module as signed",
+      "Web API Standard Interface, a set of DOM functions for Wasm modules",
+      "WebAssembly Script Interpreter, a runtime that runs Wasm text files directly"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "26",
+    "question": "What is the goal of Wasm SIMD?",
+    "options": [
+      "One thread runs many modules at once, using the shared event loop of the page",
+      "One instruction works on many values at once, using the 128-bit `v128` type",
+      "One module compiles many source files at once, using parallel jobs",
+      "One function call returns many results at once, using multi-value"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "27",
+    "question": "Which JS object does a Wasm module need to share memory between threads?",
+    "options": [
+      "A `MessageChannel` port that sends a copy of the whole memory to each thread",
+      "A shared `WebAssembly.Memory` backed by a `SharedArrayBuffer`",
+      "A `ReadableStream` that sends the memory bytes in chunks",
+      "A `BroadcastChannel` that keeps a memory object in sync"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "28",
+    "question": "Which HTTP headers make a page cross-origin isolated so `SharedArrayBuffer` is available?",
+    "options": [
+      "`Access-Control-Allow-Origin: *` and `Content-Security-Policy: default-src 'self'; script-src 'self'`",
+      "`Cross-Origin-Opener-Policy: same-origin` and `Cross-Origin-Embedder-Policy: require-corp`",
+      "`Cross-Origin-Resource-Policy: same-site` and `X-Frame-Options: DENY`",
+      "`Cache-Control: no-store` and `Cross-Origin-Opener-Policy: unsafe-none`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "29",
+    "question": "How can you see the instructions of a Wasm module in Chrome DevTools?",
+    "options": [
+      "Open the Network panel and select the preview tab of the `.wasm` request to see the code",
+      "Open the Sources panel, where the module appears as disassembled text with breakpoints",
+      "Open the Console panel and call `instance.dump()` on the module",
+      "Open the Memory panel and take a snapshot of the code section"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "30",
+    "question": "What does the `wasm-opt` tool from Binaryen do?",
+    "options": [
+      "It runs a Wasm file and prints a performance profile",
+      "It checks a Wasm file for security problems and signs it",
+      "It converts a Wasm file into JavaScript source code",
+      "It optimizes a Wasm file for size and speed"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "31",
+    "question": "Why should a server compress `.wasm` files with gzip or Brotli?",
+    "options": [
+      "The files are binary but still compress well, so the download is smaller",
+      "The browser cannot read a `.wasm` file that the server did not compress first",
+      "The compression step makes the module run faster after the browser loads it",
+      "The browser needs the compression to pass the MIME type check of the file"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "32",
+    "question": "A Wasm module and a JS app run in one page. Where do the JS objects live?",
+    "options": [
+      "In the JS heap, outside the linear memory, so Wasm cannot hold direct pointers to them",
+      "In a shared heap that both sides read and write without any copy of the data",
+      "In the table of the module, as one entry for each object that JS creates",
+      "In the linear memory of the module, so Wasm can use them through pointers to the objects"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "33",
+    "question": "A Wasm function divides an integer by zero. What does the JS caller see?",
+    "options": [
+      "A silent return of the value zero to JS",
+      "A thrown `RangeError` with a division message",
+      "The value `Infinity` as the integer result",
+      "A thrown `WebAssembly.RuntimeError`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "34",
+    "question": "Which error does the browser throw when the bytes are not a valid Wasm module?",
+    "options": [
+      "`WebAssembly.CompileError`",
+      "`WebAssembly.RuntimeError`",
+      "`WebAssembly.ValidationError`",
+      "`WebAssembly.InstanceError`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "35",
+    "question": "Which error does the browser throw when the imports object misses a function that the module needs?",
+    "options": [
+      "`WebAssembly.LinkError`",
+      "`WebAssembly.RuntimeError`",
+      "`ReferenceError`",
+      "`WebAssembly.CompileError`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "36",
+    "question": "Which statement about the speed of Wasm is correct?",
+    "options": [
+      "Wasm is always faster than JS, including for short and simple functions",
+      "Wasm is slower than JS because the browser interprets every instruction",
+      "Wasm is faster than JS because it skips the validation of the code",
+      "Wasm gives stable speed for compute loops but not for DOM work"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "37",
+    "question": "Which Rust target do you use to build a Wasm module for the browser?",
+    "options": [
+      "`wasm32-unknown-unknown`",
+      "`wasm32-bindgen-unknown-js`",
+      "`wasm32-unknown-browser-js`",
+      "`x86_64-unknown-wasm32-js`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "38",
+    "question": "What does the `#[wasm_bindgen]` attribute do on a Rust function?",
+    "options": [
+      "It makes the compiler run the function at build time",
+      "It marks the function as unsafe so the borrow checker skips it",
+      "It exposes the function to JS and generates the glue code",
+      "It moves the function to a separate Web Worker thread"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "39",
+    "question": "What does Emscripten produce when you compile a C file with default output settings?",
+    "options": [
+      "A `.wasm` file and a JS file that loads and wraps it",
+      "A single JS file with the whole program as plain asm code",
+      "A `.wasm` file only, with no JS code for the loader",
+      "A native binary and a `.wasm` file for the debug build"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "40",
+    "question": "Which Emscripten helper lets JS call an exported C function by its name?",
+    "options": [
+      "`Module.cwrap` or `Module.ccall`",
+      "`Module.invoke` or `Module.native`",
+      "`Module.import` or `Module.bridge`",
+      "`Module.callC` or `Module.exec`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "41",
+    "question": "What is a `WebAssembly.Table` used for?",
+    "options": [
+      "It stores rows of data that the module reads like a database",
+      "It stores the names of the exports of the module",
+      "It stores the strings that the module sends to JS",
+      "It stores function references for indirect calls"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "42",
+    "question": "Which type of web app is a well-known real use of Wasm?",
+    "options": [
+      "A static blog that shows text and a few images with a small stylesheet",
+      "A design tool with a C++ rendering engine, such as Figma",
+      "A landing page that plays a CSS animation on the scroll event",
+      "A contact form that sends data to a server after a click"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "43",
+    "question": "How do most developers create Wasm modules?",
+    "options": [
+      "They compile code from a language such as Rust, C++ or Go",
+      "They write WAT text files by hand and never use any compiler",
+      "They write the binary bytes by hand in a hex editor tool",
+      "They record a JS function and export it as a binary file"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "44",
+    "question": "Does the WebAssembly 1.0 core specification include a garbage collector?",
+    "options": [
+      "Yes, the engine frees unused objects of the module on its own",
+      "No, the module manages its own memory inside linear memory",
+      "Yes, but only when the module imports the `gc` function",
+      "No, because Wasm modules never allocate any memory"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "45",
+    "question": "Which JS type does a Wasm `i64` value have at the JS boundary in modern browsers?",
+    "options": [
+      "`BigInt`",
+      "`Number`",
+      "`string`",
+      "`Float64Array`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "46",
+    "question": "Which method of `WebAssembly.Memory` makes the memory larger?",
+    "options": [
+      "`memory.resize(bytes)`",
+      "`memory.extend(pages)`",
+      "`memory.alloc(bytes)`",
+      "`memory.grow(pages)`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "47",
+    "question": "Which function checks if some bytes form a valid Wasm module without running them?",
+    "options": [
+      "`WebAssembly.verifyModule(bytes)`",
+      "`WebAssembly.validate(bytes)`",
+      "`WebAssembly.checkBytes(bytes)`",
+      "`WebAssembly.isValid(bytes)`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "48",
+    "question": "Which items can a Wasm module export to JS?",
+    "options": [
+      "Functions, memories, tables and globals",
+      "Functions, classes, strings, arrays and objects",
+      "Functions, threads, sockets, files and streams",
+      "Functions, modules, promises, events and workers"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "49",
+    "question": "What is the difference between a `WebAssembly.Module` and a `WebAssembly.Instance`?",
+    "options": [
+      "A module is the text format, and an instance is the binary format of the same code",
+      "A module is compiled code without state, and an instance has its own memory and state",
+      "A module runs on the main thread, and an instance runs in a worker thread of the page",
+      "A module holds the exports, and an instance holds the imports of the code"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "50",
+    "question": "Which tool of the WABT toolkit converts a `.wat` text file to a `.wasm` binary file?",
+    "options": [
+      "`wasm-strip`",
+      "`wasm2wat`",
+      "`wat2wasm`",
+      "`wasm-opt`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "51",
+    "question": "A teammate moves a tiny `add(a, b)` function to Wasm and calls it a million times from JS. It is not faster. Why?",
+    "options": [
+      "The JIT already inlines the small JS function, and the Wasm call adds boundary work",
+      "Wasm functions run in an interpreter until the module has run ten thousand times in a page",
+      "The browser compiles each Wasm call again because the module has no cache for the code",
+      "Wasm cannot add numbers faster than JS because it has no native integer type for sums"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "52",
+    "question": "A Rust function returns a string pointer and a length. How does JS read the text?",
+    "options": [
+      "It reads the pointer as a JS string because both use the same encoding",
+      "It calls `String.fromCharCode` on the pointer number",
+      "It parses the pointer number with `JSON.parse` to get the text",
+      "It decodes a `Uint8Array` view of `memory.buffer` with `TextDecoder`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "53",
+    "question": "A `Uint8Array` view of `memory.buffer` has length 0 after Wasm allocates a lot of data. What happened?",
+    "options": [
+      "The garbage collector freed the `Uint8Array` because JS did not use it for a while",
+      "The memory grew, and the old `ArrayBuffer` became detached, so make a new view",
+      "The browser set the memory to read-only after the module reached its maximum",
+      "The Wasm module wrote a zero into the length field of the view"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "54",
+    "question": "`instantiateStreaming` fails with a TypeError about the MIME type. What is the correct fix?",
+    "options": [
+      "Serve it as `application/wasm`, or use `fetch`, `arrayBuffer` and `instantiate`",
+      "Add the `defer` attribute to the script tag that loads the module in the page head",
+      "Compile the module again with a flag that removes the MIME header from the file",
+      "Rename the file to `.js` so the browser accepts any MIME type for the file as a script"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "55",
+    "question": "A team runs `wasm-opt -Oz` in the build. What is the main goal?",
+    "options": [
+      "To split the module into many chunks for lazy loading",
+      "To make the module run on older browsers without Wasm",
+      "To add debug names to the module for the browser DevTools",
+      "To make the `.wasm` file as small as possible"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "56",
+    "question": "Which statement about AssemblyScript and Rust is correct?",
+    "options": [
+      "Rust needs a runtime with a garbage collector, while AssemblyScript uses ownership rules for memory",
+      "Both languages need a full JS engine inside the module to manage their memory",
+      "Both languages let the browser garbage collector free objects from linear memory",
+      "Rust has no garbage collector and uses ownership, but AssemblyScript ships a memory runtime"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "57",
+    "question": "Which `wasm-pack build` target creates an ES module that a page loads with no bundler?",
+    "options": [
+      "`--target bundler`",
+      "`--target web`",
+      "`--target no-bundler`",
+      "`--target nodejs`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "58",
+    "question": "`SharedArrayBuffer` is `undefined` on a page. Which value do you check first?",
+    "options": [
+      "`self.crossOriginIsolated`, which is `true` only with the COOP and COEP headers",
+      "`navigator.hardwareConcurrency`, which must be larger than one for the threads to work",
+      "`document.domain`, which must match the domain of the Wasm file for the page to load",
+      "`window.isSecureContext`, which must be `false` for local tests of the Wasm module"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "59",
+    "question": "After a team adds `Cross-Origin-Embedder-Policy: require-corp`, an image from a CDN stops loading. Why?",
+    "options": [
+      "The CDN response has no CORP header and the request does not use CORS",
+      "The policy blocks all images and allows only scripts and Wasm files",
+      "The CDN image is too large for a cross-origin isolated page to load",
+      "The policy needs the image to use HTTP and not HTTPS on the same page"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "60",
+    "question": "Which Emscripten flag allows the compiler to emit Wasm SIMD instructions?",
+    "options": [
+      "`-fwasm-simd`",
+      "`-msimd128`",
+      "`-O3simd`",
+      "`-sUSE_SIMD`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "61",
+    "question": "A browser may not support Wasm SIMD. How do you ship one app for all users?",
+    "options": [
+      "Compile one module and let the browser translate SIMD to scalar code on load with the same speed",
+      "Catch the `LinkError` of the module and fall back to a JS version after the error",
+      "Check the `User-Agent` string and send the SIMD build to Chrome only, not to other browsers",
+      "Test support with `WebAssembly.validate` on a tiny SIMD module, then load the right build"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "62",
+    "question": "Which Emscripten flag turns on pthread support for Wasm builds?",
+    "options": [
+      "`-fthreads`",
+      "`-mthread-pool`",
+      "`-pthread`",
+      "`-sMULTI_CORE`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "63",
+    "question": "JS must give a large `Float32Array` to Wasm for each frame. Which approach copies the least data?",
+    "options": [
+      "Allocate the buffer once in linear memory and write to it through a view",
+      "Convert the array to a JSON string and parse it in Wasm on each frame",
+      "Send each number to Wasm as a call argument in a loop over the whole array",
+      "Create a new Wasm instance for each frame with the array as an import"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "64",
+    "question": "Rust code must set `document.title`. Which approach is correct?",
+    "options": [
+      "Call the `document` object directly with a raw pointer from Rust",
+      "Write the title into linear memory and let the browser read it",
+      "Use `web-sys` and `wasm-bindgen`, which call imported JS functions",
+      "Compile with the `--dom` flag so that the Wasm module gets direct DOM access"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "65",
+    "question": "Which debug information lets Chrome DevTools show C++ source lines for a Wasm module?",
+    "options": [
+      "DWARF data, together with the C/C++ DevTools Support extension",
+      "The `names` field of the manifest file of the web app and its icons",
+      "A `console.table` call in each C++ function of the module",
+      "A `.d.ts` file that the compiler writes next to the module file"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "66",
+    "question": "A stack trace shows `wasm-function[42]` instead of function names. What is missing?",
+    "options": [
+      "The source map for the JS glue file of the app",
+      "The name section, which the build removed",
+      "The `type` attribute of the script tag in the HTML",
+      "The export of the `main` function of the module"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "67",
+    "question": "Which Rust release setting helps most to reduce the size of a Wasm file?",
+    "options": [
+      "`opt-level = 0` with `debug = true`",
+      "`opt-level = \"z\"` with `lto = true`",
+      "`panic = \"unwind\"` with `codegen-units = 256`",
+      "`incremental = true` with `strip = false`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "68",
+    "question": "Why is `instantiateStreaming` often faster than `fetch` followed by `arrayBuffer` and `instantiate`?",
+    "options": [
+      "The browser caches the module in memory without using HTTP",
+      "The browser skips the validation step for the module, so it is ready sooner",
+      "The browser compiles the module while the bytes still arrive",
+      "The browser runs the module on the GPU during the download"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "69",
+    "question": "Why avoid `new WebAssembly.Module(bytes)` for a large module on the main thread?",
+    "options": [
+      "It skips the validation step, so a module with bad code can run without any check",
+      "It runs the start function twice, so the state of the new module breaks at the first call",
+      "It compiles the module synchronously, so a large module blocks the main thread for a long time",
+      "It needs the COOP and COEP headers on the page, so it fails when the server omits them"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "70",
+    "question": "A Rust program built for `wasm32-wasip1` fails in the browser. What is the most likely reason?",
+    "options": [
+      "The target produces 64-bit pointers that the browser cannot address in linear memory",
+      "The target needs a SharedArrayBuffer for all of its function calls",
+      "It imports WASI functions that the browser does not provide, so it needs a shim",
+      "The target works only with the Firefox engine and no other browser"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "71",
+    "question": "Can a Wasm module read the cookies or `localStorage` of a page?",
+    "options": [
+      "Yes, it can read them with the same API as JS because they share an origin",
+      "No, and a JS import cannot give such access either",
+      "Yes, but only after the user clicks a permission prompt",
+      "Not directly, only through JS functions that the host passes as imports"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "72",
+    "question": "C code with a buffer overflow runs as Wasm. What is the risk?",
+    "options": [
+      "The attacker can read any file of the user because the Wasm sandbox has a hole in the file API",
+      "The attacker can corrupt the linear memory of the module, but cannot leave the sandbox",
+      "The attacker can overwrite the native stack of the browser process",
+      "The attacker can run native machine code on the CPU of the user"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "73",
+    "question": "A Rust panic traps in a Wasm module built with `panic = \"abort\"`. What is true afterwards?",
+    "options": [
+      "The call throws a `RuntimeError`, and the module memory may be in a broken state",
+      "The panic is caught by the engine and the function returns a default value to JS",
+      "The browser tab closes because a trap is a fatal error for the page",
+      "The module restarts at once with a clean memory and the same instance"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "74",
+    "question": "What happens when `call_indirect` calls a table function with a different type signature?",
+    "options": [
+      "The engine converts the arguments and calls the function",
+      "The engine skips the call and returns zero",
+      "The call traps with a runtime error",
+      "The engine calls the function and ignores the extra arguments"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "75",
+    "question": "Which statement about WebAssembly GC support in major browsers is true?",
+    "options": [
+      "It is still behind a flag in all browsers and no language uses it",
+      "It is shipped in Chrome, Firefox and Safari, and Kotlin and Dart use it",
+      "It is shipped in Chrome only, and the other browsers have no plans for it",
+      "It is removed from the proposal and replaced by finalizers in JS"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "76",
+    "question": "When is Emscripten a better choice than `wasm-bindgen`?",
+    "options": [
+      "When you write a new Rust library that returns structs to JS and uses many crates",
+      "When you port a large C or C++ code base that uses POSIX-like APIs and files",
+      "When you want to write the whole app in TypeScript syntax",
+      "When you need to call the DOM from the code without JS glue"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "77",
+    "question": "A basic Go program for `GOOS=js GOARCH=wasm` is several megabytes, and TinyGo output is much smaller. Why?",
+    "options": [
+      "TinyGo compresses the module with Brotli before it writes the file",
+      "Standard Go stores the source code inside the module for the reflection API",
+      "Standard Go includes its full runtime, scheduler and garbage collector",
+      "TinyGo removes the garbage collector and does not manage memory at all"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "78",
+    "question": "What is the address-space limit of a 32-bit Wasm linear memory in the specification?",
+    "options": [
+      "4 GiB",
+      "16 GiB",
+      "No limit, because it grows with the RAM",
+      "1 GiB"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "79",
+    "question": "What is the purpose of the `externref` type?",
+    "options": [
+      "It lets Wasm store a pointer to its own linear memory in a JS variable for later",
+      "It lets Wasm keep a string in a table with the same encoding as JS",
+      "It lets Wasm call a function of another Wasm module without an import",
+      "It lets Wasm hold an opaque reference to a host object, such as a JS object"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "80",
+    "question": "Which `Atomics` method wakes a thread that waits on a location in shared Wasm memory?",
+    "options": [
+      "`Atomics.signal`",
+      "`Atomics.release`",
+      "`Atomics.wake`",
+      "`Atomics.notify`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "81",
+    "question": "Why does WasmGC help a Kotlin or Dart build more than a custom GC inside linear memory?",
+    "options": [
+      "The module can free all the objects of JS and the DOM on its own",
+      "The linear memory gets a bigger address space for the garbage collector of the module",
+      "The compiler can skip the type checks of the objects at run time",
+      "The engine manages the objects, so the module is smaller and uses the browser GC"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "82",
+    "question": "A shared Wasm memory grows. What happens to a `Uint8Array` that was made on the old `SharedArrayBuffer`?",
+    "options": [
+      "The old buffer becomes detached, and the old view shows a length of zero after the grow call",
+      "The old buffer stays valid with its old length, so the code must make a new view",
+      "The old buffer grows at the same time, and the view shows the new size",
+      "The old buffer is copied into the new one, and the view reads the copy"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "83",
+    "question": "Why does a large Wasm module in Chrome start fast before it is fully optimized?",
+    "options": [
+      "The browser compiles only the exported functions and skips the rest for good",
+      "The browser keeps a pre-compiled copy of each module from a global server cache of the vendor",
+      "The browser interprets the whole module and never compiles it to machine code",
+      "A fast baseline compiler (Liftoff) makes code first, and TurboFan optimizes it later"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "84",
+    "question": "An image filter in Wasm copies the pixels from `ImageData` to linear memory for each frame. What is a better design?",
+    "options": [
+      "Send the pixels to Wasm in small chunks with `postMessage` calls from a worker thread",
+      "Convert each frame to a PNG, then let the module decode it",
+      "Make an `ImageData` over a `Uint8ClampedArray` view of the Wasm memory, with no copy",
+      "Make a new Wasm instance for each frame to get a clean memory"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "85",
+    "question": "Why must a page be cross-origin isolated before the browser gives it `SharedArrayBuffer`?",
+    "options": [
+      "Shared memory is not thread-safe, and the headers add a lock for each write",
+      "Shared memory can build precise timers for Spectre-type attacks, and isolation keeps other origins out",
+      "Shared memory needs the HTTP/2 protocol, and the headers turn on this protocol",
+      "Shared memory can read cookies of other sites, and the headers delete these cookies from the page before it runs"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "86",
+    "question": "How do 64-bit engines make the bounds checks of Wasm memory access cheap?",
+    "options": [
+      "They run a JS check before each load and store instruction of the module code at run time",
+      "They reserve a big virtual region with guard pages, and a fault becomes a trap",
+      "They copy the memory to a safe area before each call from JS",
+      "They compile every memory access as a call to a checked function"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "87",
+    "question": "A design calls a small Wasm function very often from JS. Where is the cost usually the largest today?",
+    "options": [
+      "In the call instruction, because each call needs a full context switch of the CPU thread",
+      "In the data conversion and copying at the boundary, not in the call itself",
+      "In the validation of the module, which the engine repeats for each call",
+      "In the table lookup, which the engine does for every exported function"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "88",
+    "question": "Which tool shows which functions use the most bytes in a Rust Wasm binary?",
+    "options": [
+      "`wasm-strip`",
+      "`wasm-validate`",
+      "`wasm-decompile`",
+      "`twiggy`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "89",
+    "question": "A 5 MB codec is needed only on one screen of a page. Which design is best?",
+    "options": [
+      "Instantiate the module at page start and keep it idle until it is needed",
+      "Embed the bytes as base64 in the main bundle so there is one request",
+      "Load and instantiate the module on demand, with a long-lived HTTP cache",
+      "Load the module with a synchronous XHR so the code can use it at once"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "90",
+    "question": "What is the main cost of the Emscripten Asyncify feature?",
+    "options": [
+      "The compiler instruments the code, so the file is larger and slower",
+      "The module needs a SharedArrayBuffer and the COOP and COEP headers",
+      "The module can run only on a Web Worker and never on the main thread",
+      "The module loses access to its linear memory while it waits for the call"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "91",
+    "question": "Why can one relaxed SIMD instruction return different results on different CPUs?",
+    "options": [
+      "The engine chooses a random rounding mode when the module starts",
+      "The specification lets it use the fastest native instruction for edge cases",
+      "The instruction splits the vector in a different way on each CPU",
+      "The instruction reads the CPU clock and uses the time value in the result lanes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "92",
+    "question": "The core Wasm specification is mostly deterministic. Which case may still differ between engines?",
+    "options": [
+      "The size of one memory page on a 32-bit module",
+      "The wrap-around result of an integer addition that overflows the `i32` range",
+      "The order of the exports in the `instance.exports` object",
+      "The sign and payload bits of a NaN that a float operation produces"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "93",
+    "question": "Production crash reports show only Wasm function indices. Which approach gives readable traces and keeps the shipped file small?",
+    "options": [
+      "Ship a stripped file, keep a separate debug file, and symbolicate traces on the server",
+      "Ship the module as WAT text so each function keeps its name",
+      "Ship the full DWARF data to all users and let the browser translate the names for each crash report",
+      "Add a `console.log` with the name at the start of each function"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "94",
+    "question": "An Emscripten build with threads deadlocks when the main thread creates a thread and then waits for it. Which setting helps?",
+    "options": [
+      "`-sALLOW_MEMORY_GROWTH=1`, which lets the thread stack grow at run time for each worker",
+      "`-sASSERTIONS=0`, which removes the checks that block the main thread",
+      "`-sPTHREAD_POOL_SIZE=N`, which starts the workers before the code needs them",
+      "`-sSTACK_SIZE=1MB`, which gives each new thread a bigger stack"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "95",
+    "question": "Why can an attacker not overwrite a return address with a buffer overflow in a Wasm module?",
+    "options": [
+      "The engine encrypts each return address with a key that changes for each call",
+      "The compiler puts a canary value before each return address in linear memory",
+      "Return addresses live on the engine stack, which is outside linear memory",
+      "The module is read-only after the instantiation step"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "96",
+    "question": "A team ports JSON parsing to Wasm, and the page gets slower. What is the most likely cause?",
+    "options": [
+      "Wasm cannot read the UTF-8 encoding, so it converts each character",
+      "Wasm functions cannot return arrays, so the code uses many calls",
+      "The bytes must be copied in and JS objects built out, and `JSON.parse` is native",
+      "The Wasm module runs on a low-priority thread that the browser throttles when the tab is busy"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "97",
+    "question": "A Rust struct from `wasm-bindgen` is created for each frame in JS, and memory grows. What is the safe fix?",
+    "options": [
+      "Pass the struct as a JSON string, because linear memory cannot hold more than one struct of each type",
+      "Call `memory.shrink()` after each frame, because the struct stays in linear memory until the page closes",
+      "Create the struct once in Rust, because the compiler keeps every struct alive until the page closes",
+      "Call `free()` on the JS wrapper, because the struct lives in linear memory and the JS GC does not scan it"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "98",
+    "question": "A Wasm app uses 1 GB at its peak and then frees most of it. What happens to the memory?",
+    "options": [
+      "The linear memory stays at its peak size because Wasm cannot shrink memory",
+      "The browser shrinks the memory after the module frees the blocks",
+      "The module calls `memory.shrink` at idle time and returns the pages to the browser",
+      "The memory returns to its initial size when the tab is not visible"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "99",
+    "question": "`instantiateStreaming(fetch(url))` rejects a `.wasm` file from another origin. What is the likely cause?",
+    "options": [
+      "The response is opaque because the other origin sends no CORS headers",
+      "The browser blocks all cross-origin Wasm files by design and has no way to allow them",
+      "The file needs the `crossorigin` attribute on the HTML body tag of the page",
+      "The file uses a MIME type that is only valid on the same origin as the page"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "100",
+    "question": "Does the Wasm `memory.copy` instruction handle a source and a destination region that overlap?",
+    "options": [
+      "Yes, it works like `memmove` and gives the correct result",
+      "No, it traps when the two regions overlap in any byte of the range",
+      "Yes, but only when the two regions have the same length in bytes",
+      "No, it works like `memcpy`, and the result is undefined for the overlap"
+    ],
+    "correct_index": 0
+  }
+]

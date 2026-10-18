@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What does the CSS cascade decide?",
+  "options": [
+   "Which style sheet the browser loads first",
+   "Which element the browser draws first",
+   "Which value a child copies from its parent",
+   "Which rule wins for one property"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "2",
+  "question": "Which selector has the highest specificity?",
+  "options": [
+   ".nav.active",
+   "#nav",
+   "ul li a",
+   "a[href]"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "A declaration has `!important`. What is the effect?",
+  "options": [
+   "It wins over normal rules for the same property",
+   "It stops the property from being inherited",
+   "It makes the browser load the rule first",
+   "It gives the rule the same weight as an ID"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "4",
+  "question": "Which property does a child element inherit by default?",
+  "options": [
+   "margin",
+   "border",
+   "color",
+   "background-color"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "5",
+  "question": "What is the correct order of the box model layers, from the inside to the outside?",
+  "options": [
+   "Content, border, padding, then margin",
+   "Content, padding, border, margin",
+   "Padding, content, border, margin",
+   "Content, margin, border, padding"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "6",
+  "question": "What does `box-sizing: border-box` do?",
+  "options": [
+   "The width includes the margin only",
+   "The border is drawn outside the margin",
+   "Padding and border are inside the width",
+   "The padding is removed from the box"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "7",
+  "question": "Two block siblings have a bottom margin of 20px and a top margin of 30px. What is the gap between them?",
+  "options": [
+   "20px (the smaller margin)",
+   "50px (the sum of both)",
+   "10px (the difference)",
+   "30px (the larger margin)"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "What is the difference between `display: none` and `visibility: hidden`?",
+  "options": [
+   "`none` removes the box; `hidden` keeps its space",
+   "`none` keeps the space; `hidden` removes the box",
+   "Both keep the space but only `none` hides text",
+   "`hidden` removes the element from the DOM tree"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "9",
+  "question": "What does `position: relative` do to an element?",
+  "options": [
+   "It removes the element from the normal flow",
+   "It offsets the element and keeps its old space",
+   "It fixes the element to the top of the viewport",
+   "It sizes the element to fit its content text"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "10",
+  "question": "A child has `position: absolute`. What is its offset parent?",
+  "options": [
+   "The nearest positioned ancestor",
+   "The direct parent element in all cases",
+   "The body element of the page",
+   "The nearest block-level ancestor"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "11",
+  "question": "What is the offset parent of an element with `position: fixed`?",
+  "options": [
+   "The body element",
+   "The nearest positioned ancestor",
+   "The direct parent element",
+   "The viewport"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "12",
+  "question": "What does `position: sticky; top: 0` do?",
+  "options": [
+   "The element stays at the top of the page at all times",
+   "The element sticks to the bottom of its parent",
+   "The element scrolls, then stays at the top edge",
+   "The element is removed from the document flow"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "13",
+  "question": "Which element must have `display: flex` to make a flex layout?",
+  "options": [
+   "Each child item of the container",
+   "The body element of the page",
+   "The first child item inside it",
+   "The parent of the items"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "14",
+  "question": "In a row flex container, which property aligns items along the main axis?",
+  "options": [
+   "align-items",
+   "align-content",
+   "justify-content",
+   "justify-items"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "15",
+  "question": "In a row flex container, which property aligns items along the cross axis?",
+  "options": [
+   "align-items",
+   "justify-content",
+   "flex-flow",
+   "place-content"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "What happens to the main axis when you set `flex-direction: column`?",
+  "options": [
+   "The main axis stays horizontal",
+   "The main axis becomes vertical",
+   "The cross axis becomes vertical",
+   "The items wrap into new lines"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "17",
+  "question": "What does `flex-wrap: wrap` do?",
+  "options": [
+   "Items shrink until they are invisible",
+   "Items stay on one line and overflow",
+   "Items go to a new line if they do not fit",
+   "Items reverse their order in each line"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "18",
+  "question": "What does `flex: 1` mean for a flex item?",
+  "options": [
+   "The item can grow to share the free space",
+   "The item has a fixed width of 1px",
+   "The item cannot shrink below its content",
+   "The item moves to the first place in order"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "What does the `gap` property do in a flex or grid container?",
+  "options": [
+   "It sets the space inside each item",
+   "It sets the space between the items",
+   "It sets the margin of the container",
+   "It sets the border width between items"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "What does `grid-template-columns: repeat(3, 1fr)` create?",
+  "options": [
+   "Three columns of 1 pixel width",
+   "One column that repeats three times",
+   "Three rows of equal height",
+   "Three columns of equal width"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "What does the `fr` unit mean in CSS Grid?",
+  "options": [
+   "A fixed number of font rows",
+   "A fraction of the viewport width",
+   "A share of free grid space",
+   "A fraction of the parent font size"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "22",
+  "question": "What is the purpose of `grid-template-areas`?",
+  "options": [
+   "It sets the area of each image in pixels",
+   "It lists the classes of the grid items",
+   "It limits the grid to a maximum area",
+   "It names the areas of the grid layout in a visual map"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "23",
+  "question": "How do you center a block with a fixed width in its parent, horizontally?",
+  "options": [
+   "margin: 0 auto",
+   "text-align: center",
+   "float: center",
+   "padding: 0 auto"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "24",
+  "question": "A static `div` (not a flex or grid item) has `z-index: 10`. What happens?",
+  "options": [
+   "The div moves above all other elements",
+   "The z-index has no effect",
+   "The div becomes positioned",
+   "The div moves below its siblings"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "25",
+  "question": "What is the `rem` unit relative to?",
+  "options": [
+   "The font size of the parent element",
+   "The font size of the root element",
+   "The width of the viewport",
+   "The font size of the body element"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "26",
+  "question": "An element has `font-size: 1.5em`. What is `em` relative to in this case?",
+  "options": [
+   "The font size of the root element",
+   "The font size of the element itself",
+   "The default font size of the browser",
+   "The font size of the parent element"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "27",
+  "question": "What does `1vw` equal?",
+  "options": [
+   "1% of the parent width",
+   "1% of the viewport height",
+   "1% of the viewport width",
+   "1 pixel of the viewport"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "An element has `width: 50%`. What is the base for the percentage?",
+  "options": [
+   "The width of the containing block",
+   "The width of the viewport",
+   "The width of the root element",
+   "The width of the element content"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "29",
+  "question": "How do you declare a custom property and use it?",
+  "options": [
+   "`$brand: red;` and `color: var(brand);`",
+   "`--brand: red;` and `color: --brand;`",
+   "`@brand: red;` and `color: var(@brand);`",
+   "`--brand: red;` and `color: var(--brand);`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "When does the `:hover` pseudo-class apply?",
+  "options": [
+   "When the pointer is over the element",
+   "When the user clicks the element",
+   "When the element has keyboard focus",
+   "When the page finishes loading"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "31",
+  "question": "Which property must you set so a `::before` pseudo-element shows?",
+  "options": [
+   "display",
+   "position",
+   "content",
+   "visibility"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "What is the difference between a pseudo-class and a pseudo-element?",
+  "options": [
+   "A pseudo-class selects a part; a pseudo-element selects a state",
+   "A pseudo-class selects a state; a pseudo-element, a part",
+   "A pseudo-class uses two colons; a pseudo-element uses one",
+   "A pseudo-class adds new HTML nodes to the DOM tree of the page"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "What does `li:nth-child(2)` select?",
+  "options": [
+   "The second `li` in the whole document",
+   "An `li` that is the second child",
+   "Every second `li` in the list",
+   "An `li` with exactly two children"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "34",
+  "question": "What does the selector `ul > li` select?",
+  "options": [
+   "All `li` elements inside `ul` at any depth",
+   "The `li` element that follows a `ul`",
+   "Only direct `li` children of `ul`",
+   "Every `ul` that contains an `li`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "When does `@media (max-width: 600px)` apply?",
+  "options": [
+   "When the viewport width is 600px or less",
+   "When the viewport width is 600px or more",
+   "When the device screen is exactly 600px wide",
+   "When the element width is 600px or less"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "36",
+  "question": "What does a mobile-first approach mean in CSS?",
+  "options": [
+   "Base styles are for large screens; `max-width` queries remove features",
+   "The page loads one separate style sheet for each phone",
+   "All layouts use only fixed pixel widths and heights",
+   "Base styles are for phones; `min-width` queries add larger layouts"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "37",
+  "question": "What does the `transition` property do?",
+  "options": [
+   "It defines the steps of a keyframe animation",
+   "It animates a property change over a set time",
+   "It moves the element to a new position at once",
+   "It loads a new style sheet after a delay"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "38",
+  "question": "What does `@keyframes` define?",
+  "options": [
+   "The size of a media query range",
+   "The trigger event of a transition",
+   "The order of the cascade layers",
+   "The steps of an animation"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "What does `animation-iteration-count: infinite` do?",
+  "options": [
+   "The animation plays once and stays at the end",
+   "The animation plays forward and then backward once",
+   "The animation repeats without end",
+   "The animation starts only after a click"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "40",
+  "question": "What does `transform: translateX(50px)` do to the page layout?",
+  "options": [
+   "It moves the element but does not move other elements",
+   "It moves the element and pushes the next siblings",
+   "It changes the left margin of the element",
+   "It makes the element 50px wider than before"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "41",
+  "question": "What does `overflow: hidden` do?",
+  "options": [
+   "It adds a scrollbar to the box",
+   "It removes the content from the DOM",
+   "It makes the box grow to fit the content",
+   "It clips the content outside the box"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "42",
+  "question": "What does `object-fit: cover` do to an image in a fixed box?",
+  "options": [
+   "It fills the box, keeps the ratio, and crops",
+   "It stretches the image to fill the box",
+   "It shows the full image with empty space around it",
+   "It repeats the image until the box is full"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "43",
+  "question": "What does `line-height: 1.5` (no unit) mean?",
+  "options": [
+   "The line height is fixed at 1.5 pixels",
+   "It is 1.5 times the font size of the element",
+   "The line height is 1.5 times the parent line height",
+   "The line height is 1.5 times the viewport height"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "44",
+  "question": "An inline element has `width: 200px`. What happens?",
+  "options": [
+   "The element becomes 200px wide",
+   "The element becomes a block",
+   "The width has no effect",
+   "The element wraps to a new line"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "What is special about `display: inline-block`?",
+  "options": [
+   "The element takes the full line and ignores height",
+   "The element ignores vertical margins and padding",
+   "The element is removed from the normal flow",
+   "It flows with text and accepts width and height"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "46",
+  "question": "What does `inset: 0` do on a positioned element?",
+  "options": [
+   "It sets the margin on all four sides to 0",
+   "It sets `top`, `right`, `bottom`, and `left` to 0",
+   "It removes the border and padding of the box",
+   "It moves the element inside the padding of its parent"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "47",
+  "question": "What does the `:root` selector match?",
+  "options": [
+   "The `body` element",
+   "The first element in the body",
+   "The `html` element",
+   "Every element without a parent class"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "48",
+  "question": "How do you set a fallback value for a custom property?",
+  "options": [
+   "`var(--gap, 8px)`",
+   "`var(--gap || 8px)`",
+   "`var(--gap) 8px`",
+   "`var(--gap = 8px)`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "49",
+  "question": "When does the `:focus-visible` pseudo-class apply?",
+  "options": [
+   "Whenever the pointer is over the element",
+   "Only when the element has the `tabindex` attribute",
+   "When the element is visible in the viewport",
+   "When the browser shows focus, as with the keyboard"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "50",
+  "question": "A square `div` has `border-radius: 50%`. What shape does it show?",
+  "options": [
+   "A square with small round corners",
+   "An oval with a flat top",
+   "A circle",
+   "A square with a round border only"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "51",
+  "question": "A rule `.a.b.c.d` and a rule `#x` match the same element. Both set `color`. Which rule wins?",
+  "options": [
+   "`#x`, because one ID is stronger than any number of classes",
+   "`.a.b.c.d`, because four classes add up to more than one ID",
+   "The one that comes first in the file",
+   "Neither; the browser mixes the two colors"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "52",
+  "question": "Two rules have the same specificity and the same origin. Which rule wins?",
+  "options": [
+   "The rule that comes first in the source order",
+   "The later rule in the file",
+   "The rule with the shorter selector",
+   "The rule from the external style sheet"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "53",
+  "question": "What does `all: unset` do to a property that is inherited by default, such as `color`?",
+  "options": [
+   "It works like `initial` for that property",
+   "It works like `inherit` for that property",
+   "It removes the declaration from the style sheet",
+   "It sets the value to `transparent`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "54",
+  "question": "What is the specificity of `:where(#nav, .menu)`?",
+  "options": [
+   "The same as a class",
+   "The same as an ID",
+   "The same as the selector that matched",
+   "Zero"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "55",
+  "question": "A child has `margin-top: 40px`. The parent has no padding or border and moves down 40px. What is the cause and fix?",
+  "options": [
+   "Margin collapse; use `display: flow-root` on the parent",
+   "Margin inheritance; use `margin: 0` on the child's parent",
+   "A float problem; add `clear: both` to the parent",
+   "A z-index problem; add `position: relative` to the child"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "A flex item with long text does not shrink and the row overflows. What is a common fix?",
+  "options": [
+   "Set `flex-grow: 0` on the container",
+   "Set `align-items: stretch` on the container",
+   "Set `min-width: 0` on the flex item",
+   "Set `display: block` on the flex item"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "In a row flex container, an item has `width: 200px` and `flex-basis: 300px`. What is its starting size?",
+  "options": [
+   "200px, because `width` always wins",
+   "300px, because `flex-basis` wins",
+   "500px, because the two values add up",
+   "250px, because the browser averages"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "58",
+  "question": "What is the difference between `align-items` and `align-content` in a flex container?",
+  "options": [
+   "`align-content` places the items on the main axis",
+   "`align-items` places the lines of a multi-line container",
+   "They are the same, and one is only an alias",
+   "`align-content` places the flex lines"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "59",
+  "question": "What is the difference between `auto-fit` and `auto-fill` in `repeat()` for a grid?",
+  "options": [
+   "`auto-fill` collapses empty tracks, so the items can grow",
+   "`auto-fit` makes the grid rows instead of columns",
+   "`auto-fit` collapses empty tracks, so the items can grow",
+   "`auto-fill` works only with fixed pixel sizes"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "60",
+  "question": "A grid uses `grid-template-columns: 1fr 1fr`. A long word makes one column wider. What is a fix?",
+  "options": [
+   "Use `minmax(0, 1fr)`",
+   "Use `fr` units with a `gap` of 0",
+   "Use `grid-auto-flow: dense`",
+   "Use `justify-items: stretch`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "61",
+  "question": "A modal child has `z-index: 9999` but a sibling of its parent still covers it. What is the likely cause?",
+  "options": [
+   "The parent has its own lower stacking context",
+   "The z-index value is too large for the browser",
+   "The child has `opacity: 1` set on it",
+   "The sibling has `display: block` set on it"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "62",
+  "question": "A `position: sticky` header does not stick. An ancestor has `overflow: hidden`. Why?",
+  "options": [
+   "Sticky works only on the body element",
+   "The ancestor becomes the scroller",
+   "Sticky needs `display: flex` on the parent",
+   "The ancestor removes the `top` value"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "63",
+  "question": "What does `font-size: clamp(1rem, 2vw + 0.5rem, 2rem)` do?",
+  "options": [
+   "The size is always 1rem on small screens and 2rem on large screens",
+   "The size changes only at media query breakpoints",
+   "The size grows with the viewport but stays between 1rem and 2rem",
+   "The size equals the average of 1rem and 2rem"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "64",
+  "question": "What is the advantage of `100dvh` over `100vh` on a mobile browser?",
+  "options": [
+   "It always equals the full screen height of the device",
+   "It ignores the width and the height of the viewport",
+   "It works in browsers that do not support `vh`",
+   "It follows the visible viewport when toolbars change"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "65",
+  "question": "Why is `rem` better than `px` for font sizes in terms of accessibility?",
+  "options": [
+   "It follows the font size set in the browser",
+   "It stops the user from zooming the page",
+   "It keeps the text the same size on all devices",
+   "It is faster for the browser to calculate"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "A nested `ul` and its parent `ul` both have `font-size: 1.2em`. What is the result for the inner list?",
+  "options": [
+   "The size stays at 1.2 times the base size",
+   "The size is 2.4 times the base size",
+   "The size is the same as the root size",
+   "The size compounds to 1.44 times the base size"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "67",
+  "question": "A custom property `--bg` is set on `:root` and set again on `.dark`. What value does a child of `.dark` see?",
+  "options": [
+   "The value from `:root`",
+   "The value from `.dark`",
+   "The first value that the browser reads",
+   "An invalid value"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "68",
+  "question": "How do you change a custom property from JavaScript?",
+  "options": [
+   "`el.style['--x'] = '10px'`",
+   "`el.css.var('--x', '10px')`",
+   "`el.style.setProperty('--x', '10px')`",
+   "`el.setAttribute('--x', '10px')`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "69",
+  "question": "What does the selector `.card:has(img)` select?",
+  "options": [
+   "An `img` that is inside a `.card`",
+   "A `.card` that is next to an `img`",
+   "A `.card` that has an `img` as its parent",
+   "A `.card` element that contains an `img`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "70",
+  "question": "What must you set on a parent so its children can use `@container` queries by width?",
+  "options": [
+   "`container-type: inline-size`",
+   "`display: container`",
+   "`contain: width`",
+   "`position: container`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "71",
+  "question": "What does `margin-inline-start` map to in a page with `dir=\"rtl\"`?",
+  "options": [
+   "The left margin",
+   "The right margin",
+   "The top margin",
+   "The bottom margin"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "72",
+  "question": "Layers are declared as `@layer base, components;`. A rule in each layer sets the same property. Both are normal (not `!important`). Which wins?",
+  "options": [
+   "The rule in `base`, because it is the first layer",
+   "The rule with the higher selector specificity",
+   "The rule in `components`, because it is the later layer",
+   "Neither; the browser throws an error"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "A rule outside of any layer and a rule inside a layer both set `color`. Both are normal. Which wins?",
+  "options": [
+   "The rule inside the layer",
+   "The rule with the lower specificity",
+   "The rule that has the shorter selector",
+   "The rule outside of any layer"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "74",
+  "question": "A property is set to `initial`. What value does it get?",
+  "options": [
+   "The initial value from the CSS specification",
+   "The computed value of that property on the parent",
+   "The default value from the browser style sheet",
+   "The last value set earlier in the cascade"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "Which two properties are best to animate for smooth performance?",
+  "options": [
+   "`width` and `height`",
+   "`top` and `left`",
+   "`transform` and `opacity`",
+   "`margin` and `padding`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "What is the risk of `will-change: transform` on many elements?",
+  "options": [
+   "It disables all other animations on the page",
+   "It uses more memory for extra layers",
+   "It blocks the cascade for those elements",
+   "It forces a layout on each scroll event"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "77",
+  "question": "What is the difference between `:nth-child(2)` and `:nth-of-type(2)`?",
+  "options": [
+   "`nth-of-type` counts only siblings with the same class",
+   "`nth-child` counts only elements with text",
+   "They are the same if all siblings are `div`",
+   "`nth-of-type` counts siblings with the same tag"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "78",
+  "question": "What does `@media (prefers-reduced-motion: reduce)` help you do?",
+  "options": [
+   "Reduce the file size of the style sheet on phones",
+   "Reduce animation for users who want it",
+   "Slow down all transitions on slow devices",
+   "Stop the page from scrolling by itself at all"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "What does `aspect-ratio: 16 / 9` do to a box with a set width?",
+  "options": [
+   "The browser crops the content to 16 by 9 pixels",
+   "The browser sets the width to 16 percent",
+   "The browser calculates the height from the width",
+   "The browser rotates the box by 9 degrees"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "80",
+  "question": "What does `place-items: center` do in a grid container?",
+  "options": [
+   "It centers each item in its cell on both axes",
+   "It centers the whole grid inside its parent element",
+   "It centers only the text inside each item",
+   "It centers the grid lines between the tracks"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "81",
+  "question": "Which declaration creates a new stacking context on a static element?",
+  "options": [
+   "`isolation: isolate`",
+   "`position: relative` with no `z-index`",
+   "`overflow: hidden`",
+   "`display: block`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "82",
+  "question": "An element matches `.b` through the selector `:is(#a, .b)`. What is the specificity of that selector?",
+  "options": [
+   "The same as a class, because only `.b` matched",
+   "Zero, because `:is()` adds no weight to rules",
+   "An ID, because `:is()` takes its strongest argument",
+   "The sum of an ID and a class together"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "83",
+  "question": "What does `content-visibility: auto` do on a long page?",
+  "options": [
+   "The browser hides the boxes with `display: none`",
+   "The browser skips rendering of off-screen boxes",
+   "The browser loads the images of the boxes later",
+   "The browser fixes the size of all boxes to zero"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "84",
+  "question": "Two flex items have `flex-shrink: 1` and base sizes 300px and 100px. The container is 100px too small. How do they shrink?",
+  "options": [
+   "Equally, so each item loses 50px of width",
+   "Only the larger item shrinks until it fits",
+   "Only the item that comes last shrinks to fit",
+   "By base size, so the first loses more"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "A child has `height: 100%`. The parent has `height: auto`. What is the computed result?",
+  "options": [
+   "The child fills the height of the viewport",
+   "The child height behaves as `auto`",
+   "The child has a height of zero",
+   "The child fills the height of the grandparent"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "86",
+  "question": "An element has `padding-top: 10%`. What is the percentage based on?",
+  "options": [
+   "The width of the containing block",
+   "The height of the containing block",
+   "The height of the element itself",
+   "The height of the viewport"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "87",
+  "question": "What is the purpose of `grid-template-columns: subgrid` on a nested grid?",
+  "options": [
+   "The nested grid creates smaller tracks inside one parent track",
+   "The nested grid ignores the gap of its parent",
+   "The nested grid sizes its tracks from its own content",
+   "The nested grid uses the column tracks of its parent grid"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "88",
+  "question": "Why does a box with `container-type: inline-size` not grow with its content width?",
+  "options": [
+   "It becomes a flex container and the children are ignored",
+   "It cannot have child elements that use percent units in width",
+   "Inline-size containment ignores content for width",
+   "It must have a fixed pixel width set by the author in CSS"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "Two layers have an `!important` declaration for the same property. Layer `base` is declared before `components`. Which one wins?",
+  "options": [
+   "The one in `components`, because it is the later layer",
+   "The one with the higher specificity in its selector",
+   "Neither; the browser uses the value outside the layers",
+   "The one in `base`, because `!important` reverses the order"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "90",
+  "question": "Why do you register a custom property with `@property` and `syntax: \"<color>\"` to animate it?",
+  "options": [
+   "The browser then moves the animation to the GPU",
+   "The browser knows its type and can blend it",
+   "The browser then skips the cascade for this property",
+   "The browser then stops the property from inheriting"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "91",
+  "question": "In a media query, `@media (min-width: 40em)` is used. What is `em` relative to?",
+  "options": [
+   "The font size of the html element in the page",
+   "The font size of the body element in the page",
+   "The browser default font size",
+   "The font size of the element that matches"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "92",
+  "question": "Two flex items have `margin-bottom: 20px` and `margin-top: 30px` in a column container. What is the gap?",
+  "options": [
+   "50px; flex items do not collapse margins",
+   "30px, because the larger margin wins in a column",
+   "20px, because the first margin wins in a column",
+   "0px, because flex items ignore all margins"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "A `position: fixed` child scrolls with its parent. The parent has `transform: translateZ(0)`. Why?",
+  "options": [
+   "Fixed elements ignore the viewport when the parent has a size",
+   "The parent has `overflow: visible` set on it",
+   "The transform makes the parent the containing block",
+   "The browser changes `fixed` to `absolute` for all children"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "94",
+  "question": "An element has `transform: none` in an ID rule. A `@keyframes` animation changes `transform`. Which value shows during the animation?",
+  "options": [
+   "The animation value, because it beats normal rules",
+   "The ID rule value, because its specificity is higher",
+   "The first value that the browser read in the file",
+   "A mix of both values in each frame"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "95",
+  "question": "A rule `@container (min-width: 400px) { .box { padding: 2rem } }` targets the container `.box` itself. What happens?",
+  "options": [
+   "It applies to the container when it is wider than 400px",
+   "It applies to the parent of the container",
+   "It applies to all containers with the same name",
+   "No effect; container queries style only descendants"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "96",
+  "question": "Why does the middle value of `clamp(1rem, 2vw + 1rem, 3rem)` use `rem` and not only `vw`?",
+  "options": [
+   "`vw` units are not valid inside `clamp()` at all",
+   "Text can still scale when the user zooms",
+   "`rem` makes the browser run the math on the GPU",
+   "Browsers need `rem` to read the `clamp()` limits"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "97",
+  "question": "What is a possible cost of a broad selector such as `body:has(.error)` on a large page?",
+  "options": [
+   "It blocks the first paint until all images load",
+   "It disables the cascade for the child elements",
+   "The browser may re-check a large DOM often",
+   "It forces all selectors in the file to match twice"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "98",
+  "question": "Third-party CSS wins over your styles because of high specificity. What is a low-cost fix that keeps your code clean?",
+  "options": [
+   "Import the third-party CSS into an earlier `@layer`",
+   "Add `!important` to all of your declarations",
+   "Raise the specificity of your selectors with IDs",
+   "Copy the third-party CSS into your own file"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "99",
+  "question": "The page content moves sideways when a scrollbar appears. Which property helps?",
+  "options": [
+   "`overflow-anchor: auto`",
+   "`scrollbar-gutter: stable`",
+   "`scroll-behavior: smooth`",
+   "`overscroll-behavior: contain`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "100",
+  "question": "A child with `z-index: -1` disappears behind the page background. The parent has no stacking context. What is a good fix?",
+  "options": [
+   "Set `z-index: 9999` on the child element",
+   "Set `display: block` on the child element",
+   "Set `overflow: visible` on the parent element",
+   "Add `isolation: isolate` to the parent"
+  ],
+  "correct_index": 3
+ }
+]

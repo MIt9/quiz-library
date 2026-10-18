@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "A game sells a pack of 500 coins that a user can buy many times. Which product type is this?",
+  "options": [
+   "Non-consumable",
+   "Consumable",
+   "Auto-renewable subscription",
+   "Promotional offer"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "A user pays one time to remove ads and keeps this right forever. Which product type is this?",
+  "options": [
+   "Consumable",
+   "Subscription",
+   "Free trial offer",
+   "Non-consumable"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "3",
+  "question": "What does the store do at the end of each period of an auto-renewable subscription?",
+  "options": [
+   "It charges the user again, unless the user turned off auto-renew",
+   "It asks the app to start a new charge for the user",
+   "It stops access and waits for the user to buy again",
+   "It sends the receipt to the user and ends the plan"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "4",
+  "question": "Which component does an Android app use to sell in-app products?",
+  "options": [
+   "Google Pay API for payments",
+   "Firebase Authentication service",
+   "Google Play Billing Library",
+   "Google Play Integrity API check"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "5",
+  "question": "What is a product ID in the store console?",
+  "options": [
+   "The unique ID of the user who buys a product",
+   "A unique string that names one product you sell",
+   "The unique ID of one purchase transaction in the store",
+   "The unique ID of the device that buys the product"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "6",
+  "question": "Why does the app show the price text that the store gives, and not a fixed price in code?",
+  "options": [
+   "The store blocks all apps that show a fixed price in code",
+   "The app cannot save a currency symbol in its own code",
+   "The store sends a new price at each start of the app",
+   "The store knows the local currency and tax of the user"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "7",
+  "question": "What is the purpose of the \"restore purchases\" function?",
+  "options": [
+   "It gives earlier non-consumable and subscription purchases to the user again",
+   "It gets the money back from the store for an earlier purchase",
+   "It lets the user buy a consumable again at a lower price",
+   "It moves each earlier purchase to another store account"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "8",
+  "question": "Which type of purchase does the store normally not restore?",
+  "options": [
+   "Non-consumable unlock",
+   "Auto-renewable subscription",
+   "Consumable",
+   "Family-shared non-consumable"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "9",
+  "question": "What is an entitlement in a purchase system?",
+  "options": [
+   "A signed receipt file that the store sends to the app after a payment",
+   "A right to use a feature that the system gives after a valid purchase",
+   "A price level that the developer sets for one product in the console",
+   "A product type that the user can buy many times in the app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "10",
+  "question": "Why must a server check a purchase before it gives paid content?",
+  "options": [
+   "The store keeps no purchase record for the developer",
+   "The device cannot read purchase data from the store",
+   "The store charges only after the server check",
+   "A user can modify the app and fake a purchase"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "11",
+  "question": "What is a purchase receipt?",
+  "options": [
+   "A signed record from the store that proves a purchase",
+   "A bill that the app emails to the user after a payment",
+   "A list of the products that you sell in the console",
+   "A log that the app writes in a file after each payment"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "12",
+  "question": "Which value does your server use to ask Google Play about one purchase?",
+  "options": [
+   "The serial number of the device",
+   "The password of the Google account",
+   "The purchase token",
+   "The signing key of the app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "13",
+  "question": "What is a free trial of a subscription?",
+  "options": [
+   "A product that the user gets without any store account",
+   "A period of use without payment before the first charge",
+   "A refund that the store gives to the user after one week",
+   "A discount that the user gets at each renewal of the plan"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "14",
+  "question": "What is the purpose of a sandbox environment for purchases?",
+  "options": [
+   "To keep real receipts for a longer period of time",
+   "To move purchases from one app to another app",
+   "To show the price of a product in many currencies",
+   "To test the full purchase flow with test accounts and no real charge"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "15",
+  "question": "A user cancels a subscription in the middle of a paid period. When does access normally end?",
+  "options": [
+   "At the end of the paid period",
+   "When the user cancels the plan",
+   "At the start of the next day",
+   "After the store sends a refund to the user"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "What is a refund in in-app purchases?",
+  "options": [
+   "The app gives a coupon code that the user can use in the next purchase",
+   "The user moves the purchase to another account in the same store",
+   "The store returns the money and the purchase is no longer valid",
+   "The store pauses the charge of the user for one month"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "17",
+  "question": "A service sells a monthly plan and a yearly plan in one subscription group. How many plans can one user have active in that group?",
+  "options": [
+   "Both plans at the same time",
+   "Only one plan at a time",
+   "The yearly plan only",
+   "Up to three plans at the same time"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "18",
+  "question": "An app sells a video course that users watch inside the app. Which billing does the store normally require?",
+  "options": [
+   "Any card form that the app builds itself",
+   "A third-party card SDK inside the app",
+   "A bank transfer that the user starts in the app",
+   "The in-app purchase system of the store"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "19",
+  "question": "A shopping app sells physical shoes. Must it use the in-app purchase system of the store?",
+  "options": [
+   "No, physical goods use other payment methods",
+   "Yes, all payments in an app must use the store",
+   "Yes, but only when the app runs on Android",
+   "No, but only when the price of the shoes is low"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "20",
+  "question": "What does the store take from each in-app sale?",
+  "options": [
+   "A fixed fee for each year of the app only",
+   "A tax from the user and not from the developer",
+   "A commission, which is a part of the price",
+   "Nothing, if the app is free to install"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "21",
+  "question": "The app gives the item of a new purchase to the user. What must the app do next in the store?",
+  "options": [
+   "Delete the product in the store console",
+   "Acknowledge (Google) or finish (Apple) the purchase",
+   "Ask the user to restart the app at once",
+   "Send the receipt to the user by email"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "22",
+  "question": "On Google Play, a new purchase is not acknowledged in three days. What happens?",
+  "options": [
+   "The store makes the product free for the user",
+   "The store keeps the money and removes the product",
+   "The store asks the user to buy the product again",
+   "The store cancels and refunds the purchase"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "23",
+  "question": "What is a pending purchase?",
+  "options": [
+   "A purchase where the payment is not complete yet",
+   "A purchase that the user already got a refund for",
+   "A purchase that the app already gave to the user",
+   "A purchase that the user made in a test mode"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "24",
+  "question": "A purchase is pending. What must the app do?",
+  "options": [
+   "Give the item now and take it back later if needed",
+   "Cancel the purchase at once and show an error",
+   "Not give the item until the purchase is complete",
+   "Ask the user to pay again with another card"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "25",
+  "question": "What is an introductory offer?",
+  "options": [
+   "A refund for users who cancel in the first week",
+   "A lower price or free period for new subscribers",
+   "A special price for users of an old app version",
+   "A bonus item pack that users get at each renewal"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "26",
+  "question": "What is a promo code in in-app purchases?",
+  "options": [
+   "A code that the app uses to sign the receipts it sends",
+   "A code that the store uses to find a bug in a purchase",
+   "A token that the server uses to call the store API",
+   "A code that the user enters to get a product or an offer"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "27",
+  "question": "What is the main job of a service such as RevenueCat?",
+  "options": [
+   "It handles receipts and entitlements for many stores in one API",
+   "It sells apps of developers in its own store to users",
+   "It replaces the stores and takes the payment from users",
+   "It builds the app for each store and signs it for release"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "28",
+  "question": "What is a paywall?",
+  "options": [
+   "A server that checks the receipts of the users",
+   "A store rule that blocks refunds after one day",
+   "A screen that shows offers and asks the user to buy",
+   "A file with the list of products from the store"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "29",
+  "question": "What is a grace period for a subscription?",
+  "options": [
+   "Time before the first charge of a free trial for a new user",
+   "Time when the user keeps access after a failed renewal",
+   "Time after a cancel when the user can ask for a refund",
+   "Time when the app can check receipts with no internet"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "30",
+  "question": "What is billing retry?",
+  "options": [
+   "The app sends the same purchase to the server twice",
+   "The user buys the same product on two devices",
+   "The server checks the same receipt with the store again",
+   "The store tries again to charge a failed renewal"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "31",
+  "question": "How can you test an expired subscription fast in the sandbox?",
+  "options": [
+   "The sandbox makes renewal periods much shorter",
+   "You change the date and time of the test phone",
+   "You delete the receipt that is saved on the device",
+   "You ask the store by email to expire the plan"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "32",
+  "question": "Where is it unsafe to keep the only copy of the \"is premium\" flag?",
+  "options": [
+   "In the database of the backend of the app",
+   "In the user record on the server",
+   "In local storage on the device",
+   "In a signed token that the server gives to the app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "33",
+  "question": "What is a server notification (webhook) from the store used for?",
+  "options": [
+   "To show the price of a product in the app for the user",
+   "To tell your backend about renewals, cancels, and refunds",
+   "To ask the user for a review of the app in the store",
+   "To sign the app before it goes to the store"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "34",
+  "question": "A user buys a subscription on a phone and then opens your web site. What do you need?",
+  "options": [
+   "A second purchase of the same plan on the web site",
+   "A copy of the store receipt that the browser keeps",
+   "A new product ID that the store makes for the web site",
+   "A backend that links the purchase to the user account"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "35",
+  "question": "Which value links a store purchase to your own user?",
+  "options": [
+   "Your own user ID, which you send with the purchase",
+   "The card number of the user in the store",
+   "The password of the store account of the user",
+   "The IMEI number of the phone of the user"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "36",
+  "question": "A user changes the country of the store account. What can change?",
+  "options": [
+   "The product ID of each product in the store",
+   "The token of the old purchases of the user",
+   "The price and the currency that the store shows",
+   "The type of each product in the store console and catalog"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "37",
+  "question": "Where does a user normally cancel a subscription?",
+  "options": [
+   "In the admin page of the backend of the app",
+   "In the subscription settings of the store",
+   "With a cancel call that the app code sends",
+   "In the product page of the store console"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "38",
+  "question": "What does \"idempotent\" mean for the delivery of a purchase?",
+  "options": [
+   "The server replies faster to a repeated request",
+   "The store charges the user once per day",
+   "The receipt changes after each server check",
+   "A repeated purchase gives the item only once"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "What is a transaction ID?",
+  "options": [
+   "A unique ID of one purchase in the store",
+   "The ID of the product in the store console",
+   "The ID of the app in the store catalog",
+   "The ID of the paywall screen in the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "A user says: \"I paid, but I have no access.\" What do you check first?",
+  "options": [
+   "Only the cached data on the phone of the user",
+   "Only the price of the product in the store console",
+   "The purchase in the store and the entitlement",
+   "Only the version number of the app of the user"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "41",
+  "question": "What is a base plan on Google Play?",
+  "options": [
+   "A free tier of the app that new users get first",
+   "The price and billing period of one subscription",
+   "A backup copy of the purchase token on the server",
+   "A plan that the developer uses to refund users"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "42",
+  "question": "Which details must a paywall show clearly before a user buys a subscription?",
+  "options": [
+   "The product ID and the version of the SDK",
+   "The commission that the store takes from the sale",
+   "The address of the server that checks the receipt",
+   "The price, the billing period, and the trial terms"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "A free trial ends and the user did not cancel. What happens?",
+  "options": [
+   "The store charges the first payment",
+   "The store extends the trial one more time",
+   "The app asks the user for a new card number",
+   "The subscription ends and the user pays nothing"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "44",
+  "question": "The phone has no internet. How can the app know that the user is subscribed?",
+  "options": [
+   "It calls the store API at each screen of the app",
+   "It asks the user to type a code that the store sent",
+   "It uses a saved entitlement with an expiry date",
+   "It always blocks the paid content with no internet"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "What is the first step in a basic purchase flow?",
+  "options": [
+   "The server sends a refund request to the store",
+   "The app loads the product details from the store",
+   "The app checks the receipt on the server of the app",
+   "The user restores the earlier purchases in the app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "46",
+  "question": "In a basic flow, the store confirms the payment. What does the app do next?",
+  "options": [
+   "It deletes the product from the store catalog",
+   "It asks the store for a refund check",
+   "It signs the receipt with its own key",
+   "It sends the purchase data to the backend"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "47",
+  "question": "Which screen does the user see when the user pays for an in-app product?",
+  "options": [
+   "A payment sheet that the store owns",
+   "A form that your app makes and shows",
+   "A web page that your backend serves",
+   "A dialog that your analytics SDK shows"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "48",
+  "question": "Does your app see the card number of the user?",
+  "options": [
+   "Yes, it is in the receipt that the store sends",
+   "Yes, it is in the purchase token of the store",
+   "No, the store handles the payment data",
+   "Yes, but only if the user gives the permission"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "49",
+  "question": "What is churn for a subscription app?",
+  "options": [
+   "The share of subscribers who ask for a refund in a period",
+   "The share of subscribers who stop paying in a period",
+   "The number of new users who install the app in a period",
+   "The price drop that loyal users get in a period"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "50",
+  "question": "Which case is involuntary churn?",
+  "options": [
+   "A user cancels the plan in the store settings",
+   "A user switches to a different app",
+   "A user asks the store for a refund of the plan",
+   "A user loses a subscription because the payment failed"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "51",
+  "question": "Which order of steps is correct for a safe purchase flow?",
+  "options": [
+   "Buy, send to backend, verify with store, grant access, finish",
+   "Buy, grant access in the app, then verify later on the backend",
+   "Buy, verify in the app code, grant access, then tell the backend",
+   "Buy, finish the purchase, grant access, then ask the user to confirm"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "52",
+  "question": "A teammate only checks the receipt signature on the device before it gives access. What is the risk?",
+  "options": [
+   "The signature check is too slow for the phone of the user",
+   "Signed receipts expire after one hour and then fail the check",
+   "An attacker with a modified app can skip or fake the check",
+   "The store refuses signed receipts that come from old apps"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "53",
+  "question": "An attacker sends one valid purchase token for two user accounts. How do you stop this?",
+  "options": [
+   "Check the format of the token with a regular expression",
+   "Save the token with the first user and reject it for other users",
+   "Shorten the life of the token to one minute",
+   "Ask the store to change the token after each check"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "54",
+  "question": "On Google Play, a subscription is in account hold. What access does the user have?",
+  "options": [
+   "Full access to all the features of the plan",
+   "Access for 24 hours and then no access",
+   "Access to the content of the free trial again",
+   "No access until the payment is fixed"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "55",
+  "question": "Why do teams enable a grace period for subscriptions?",
+  "options": [
+   "To lose fewer subscribers after a failed payment",
+   "To give users one free month each year",
+   "To delay the first charge of new users for a few days",
+   "To stop the store from taking a commission on renewals"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "The store sends a refund notification for a purchase. What must the backend do?",
+  "options": [
+   "Ignore it, because the user already paid for the item",
+   "Delete the user account and all data of the user",
+   "Revoke the related entitlement and record the event",
+   "Ask the app to restore the purchase for the user"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "A user spent the coins of a pack and then got a refund. What is the typical problem?",
+  "options": [
+   "The store takes the coins back from the app by itself",
+   "The user keeps the value, so you need a negative balance",
+   "A refund is not possible for a consumable product",
+   "The coins come back to the user at the next restore"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "58",
+  "question": "Why use store server notifications and not only reports from the app?",
+  "options": [
+   "They are the only way to show the price of a product in the app",
+   "They remove the need to validate user receipts",
+   "They work only when the app is open on the phone",
+   "They report renewals and refunds when the app is closed"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "59",
+  "question": "Your backend gets a store notification by HTTP. What must it do before it trusts the notification?",
+  "options": [
+   "Verify the signature or confirm with a store API call",
+   "Check that the request arrives fast, in less than a second",
+   "Check that the IP address of the request is from your country",
+   "Reply with a status 500 first to test the retry of the store"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "60",
+  "question": "On Google Play, how does an app get the active purchases of the user at start?",
+  "options": [
+   "It reads the purchase token from a file on the device",
+   "It asks the user to type the order ID in a form",
+   "It queries the owned purchases with the billing client",
+   "It calls the consume method for each product it sells"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "61",
+  "question": "The app crashes after the user pays, before the app gives the item. What must the app do at the next start?",
+  "options": [
+   "Ask the user to pay again",
+   "Look for unfinished purchases and process them",
+   "Delete the unfinished purchase from the device",
+   "Wait until the user presses the restore button and then retry"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "62",
+  "question": "A developer sets \"remove ads\" as a consumable product. What is the problem?",
+  "options": [
+   "The product loses its price after the first sale in the store",
+   "The price of the product is in the wrong currency",
+   "The store rejects the first purchase of the product",
+   "The user can buy it again, and restore does not return it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "63",
+  "question": "A user moves from a monthly plan to a yearly plan. What does proration mean?",
+  "options": [
+   "The store adjusts the charge for the unused time of the old plan",
+   "The store gives a refund for the full price of the new year",
+   "The store counts the two plans as two separate subscriptions",
+   "The store removes the trial from the new yearly plan"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "64",
+  "question": "Who can usually get an introductory offer for a subscription?",
+  "options": [
+   "Any user at each renewal of the plan",
+   "Only users who have a new device",
+   "A user who never got that offer",
+   "Only users who use the restore function"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "65",
+  "question": "On Google Play, why must the app consume a consumable after it grants the item?",
+  "options": [
+   "Consuming sends the receipt to the user by email",
+   "Until it is consumed, the user cannot buy the same product again",
+   "Consuming lowers the commission of the store",
+   "Consuming moves the coins to the server of Google"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "66",
+  "question": "A purchase works in a test build but fails in production. Which cause is common?",
+  "options": [
+   "The test build has a longer receipt than the production build",
+   "The sandbox price is too low for the store to accept",
+   "The test user account has a different phone language",
+   "The product is not active in the live store catalog yet"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "67",
+  "question": "A review team makes sandbox purchases against your production backend. What is a safe design?",
+  "options": [
+   "The backend reads the environment and handles sandbox apart",
+   "The backend rejects all sandbox data as an error",
+   "The backend counts all sandbox purchases as real revenue",
+   "The app switches the backend by the country of the user"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "68",
+  "question": "Why do many teams use a purchase abstraction layer such as RevenueCat?",
+  "options": [
+   "It removes the store commission from each sale",
+   "It lets users buy products without any store account",
+   "It gives one entitlement model for many stores",
+   "It makes the sandbox tests of the team not needed"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "69",
+  "question": "The app asks the SDK for customer info and reads the active entitlements. What does this show?",
+  "options": [
+   "A list of all the raw receipts that the user has in the store",
+   "A store-neutral view of the features the user can access",
+   "The card data that the user saved in the store",
+   "The next price of the product in the store"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "70",
+  "question": "A user buys before login. Later the user logs in on another phone. What do you need?",
+  "options": [
+   "A new product ID that is made for the user",
+   "A receipt that the store sends to the user by email after login",
+   "A reset of the store account of the user",
+   "A way to link the anonymous purchase owner to the account"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "One phone has two app accounts and one store account. The store account bought a subscription. What is the risk?",
+  "options": [
+   "The same purchase can unlock more than one app account",
+   "The store charges both app accounts for the same plan every month",
+   "The store blocks the login of the second app account",
+   "The receipt becomes invalid for both app accounts"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "72",
+  "question": "Restore returns an old expired subscription, and the app gives access. What is the bug?",
+  "options": [
+   "The product ID has a wrong type in the console",
+   "The restore call is too slow for the app to wait",
+   "The app did not check the expiry date or status",
+   "The store sent a sandbox receipt for the restore"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "Why do you store the original transaction ID of a subscription?",
+  "options": [
+   "It changes at each renewal to stop a replay of the receipt",
+   "It stays the same over renewals for one subscription",
+   "It holds a hash of the card number of the user",
+   "It is the same as the user ID of the store account"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "74",
+  "question": "Which design is better for access control: server-driven or client-driven entitlements?",
+  "options": [
+   "Client-driven, because it works faster when the phone is offline",
+   "Client-driven, because the store signs every screen of the app",
+   "Server-driven, because it removes the commission of the store",
+   "Server-driven, because the user cannot change it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "75",
+  "question": "Two notifications for one subscription arrive out of order. Which design handles this?",
+  "options": [
+   "Read the current state from the store",
+   "Process the notifications in the order of arrival at the server",
+   "Drop the second notification and keep the first one",
+   "Wait one hour for each notification before the work starts"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "76",
+  "question": "What is the difference between a canceled and an expired subscription?",
+  "options": [
+   "Canceled means the store refunded the plan; expired means it is paused",
+   "Both words mean that the access of the user ends now",
+   "Canceled: auto-renew is off, access continues. Expired: access has ended",
+   "Canceled means the plan is in trial; expired means auto-renew is off"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "77",
+  "question": "What is a subscription pause on Google Play?",
+  "options": [
+   "The developer stops the product in the store for all users",
+   "The user pauses billing and access, then it resumes",
+   "The store holds the payment of the user for a refund",
+   "The trial timer of the plan stops for one day"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "78",
+  "question": "Users in Japan see wrong prices in the app.\nlabel = \"$\" + product.priceAmount\nWhat is the bug?",
+  "options": [
+   "The store sends the prices in US dollars only",
+   "The product needs a new ID for each country",
+   "The price must be an integer in this code",
+   "The code ignores the currency of the store"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "79",
+  "question": "Find the bug.\ngrantAccess();\nawait verifyOnServer(token);",
+  "options": [
+   "Access is granted before the server check",
+   "The server call must run before the purchase starts",
+   "The token must be sent two times to the server",
+   "The function must run on the main thread of the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "80",
+  "question": "Your server missed a renewal notification. The user pays, but the app shows the free plan. What is the best fix?",
+  "options": [
+   "Ask the users to install the app again on the phone",
+   "Give all users access for 30 days with no check",
+   "Add a regular sync of the state from the store",
+   "Remove the notification system from the backend"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "81",
+  "question": "Two requests validate the same purchase token at the same time. Both give 500 coins. Which fix is right?",
+  "options": [
+   "A check in the app before the call to the server",
+   "A unique constraint on the transaction ID with an atomic insert",
+   "A longer timeout on the call to the store API",
+   "A random delay before each request to the server"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "82",
+  "question": "Why must the backend check the package name and the product ID of a validated purchase?",
+  "options": [
+   "The store changes these values at each renewal of the plan",
+   "The store API hides these values from the backend",
+   "These values hide the email address of the user",
+   "A valid purchase of another app can be sent to your backend"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "83",
+  "question": "A subscription price rises, and the store asks the user for consent. The user never agrees. What happens?",
+  "options": [
+   "The store ends the renewal and the subscription expires",
+   "The store charges the new price after seven days anyway",
+   "The store refunds the last payment to the user",
+   "The store moves the user to a free tier"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "Which set of subscription states should normally give access?",
+  "options": [
+   "Active, trial, and account hold",
+   "Active, grace period, and expired",
+   "Active, trial, and grace period",
+   "Trial, paused, and expired"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "85",
+  "question": "A user buys coins, spends them, and asks for a refund again and again. Which control is best?",
+  "options": [
+   "Ban all the users who ever ask for a refund",
+   "Handle refund events, reduce the balance, and flag repeats",
+   "Give each user a fixed refund limit in the store console",
+   "Give the coins to users only after 30 days"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "86",
+  "question": "What is the highest cost of your own receipt validation, compared with a service such as RevenueCat?",
+  "options": [
+   "Higher store fees on each sale of the app",
+   "The sandbox of the store does not work with it",
+   "Users must make a second payment in the app",
+   "Ongoing work for store API changes and edge states"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "87",
+  "question": "What is a real risk of a third-party service between the app and the store?",
+  "options": [
+   "Your access checks depend on that service staying up",
+   "The store stops all refunds for your app and its users",
+   "The card data of the user goes to the app of the developer",
+   "The store commission doubles for each sale of the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "88",
+  "question": "Which entitlement cache rule is safe for offline use?",
+  "options": [
+   "Keep the entitlement forever, because the receipt is signed",
+   "Keep the entitlement until the next update of the app",
+   "A time limit that ends with the subscription period",
+   "Never cache the entitlement and block all access offline"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "On Google Play, a user upgrades a plan and gets a new purchase token. What must the backend do?",
+  "options": [
+   "Create a new user account for the new token",
+   "Link the new token to the old one",
+   "Keep both tokens active for access to the plan",
+   "Delete the old token in the store with an API call"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "90",
+  "question": "Store notifications can be late, repeated, or lost. Which design handles all three?",
+  "options": [
+   "One handler that keeps no memory of past events",
+   "A retry in the app that runs each minute",
+   "Trust the order of the events and skip the checks",
+   "Idempotent handlers and regular reconciliation"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "91",
+  "question": "Why can the revenue in your analytics differ from the payout of the store?",
+  "options": [
+   "Taxes, commission, refunds, currency rates, and payout timing",
+   "The store hides some purchases from the API of the developer",
+   "Receipts show only numbers that the store rounded",
+   "Sandbox purchases count as real revenue in the store"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "92",
+  "question": "A non-consumable is shared with family members. What problem can this cause for your backend?",
+  "options": [
+   "The receipt of the purchase has no product ID",
+   "Family members must pay a second commission to the store",
+   "The purchase can belong to a user other than the buyer",
+   "A shared purchase can never be restored by anyone"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "93",
+  "question": "A user pays for the same service on iOS and on Android. What is a good design?",
+  "options": [
+   "Charge the user only in the store with the cheaper price",
+   "Keep entitlements per store with a rule for duplicates",
+   "Let the two stores merge the two subscriptions of the user",
+   "Block the second purchase of the user in the stores"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "94",
+  "question": "The purchase callback arrives, but the backend sync takes 10 seconds. Which user flow is best?",
+  "options": [
+   "Give access at once and verify the purchase later",
+   "Ask the user to restart the app and try again",
+   "Charge the user one more time to be safe",
+   "Show a pending state and retry with backoff"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "95",
+  "question": "Which metric best shows that the purchase pipeline loses revenue?",
+  "options": [
+   "Store purchases with no entitlement in the backend",
+   "The number of times that users open the paywall screen",
+   "The average length of a session in the app",
+   "The number of clicks on the push notifications"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "96",
+  "question": "Why send an obfuscated account ID with a purchase?",
+  "options": [
+   "It lowers the commission that the store takes",
+   "It encrypts the receipt on the way to the server",
+   "It links the purchase to your user without personal data",
+   "It lets the user skip the login in the app"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "A billing issue happens. Which action reduces involuntary churn the most?",
+  "options": [
+   "Cancel the subscription of the user at once",
+   "Show a message in the app to update the payment method",
+   "Send a refund of the last payment to the user right away",
+   "Remove the paywall from the app for this user"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "Why is sandbox testing not enough before a release?",
+  "options": [
+   "Sandbox purchases are never signed by the store",
+   "Sandbox uses another list of currencies than production",
+   "Sandbox cannot load product details from the store",
+   "Renewals and edge states can differ from production"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "99",
+  "question": "Restore returns a purchase that the backend has under user A. Now user B calls restore with it. What is the right policy?",
+  "options": [
+   "Apply a rule: move it to user B or reject, and log it",
+   "Give the purchase to both users at the same time",
+   "Delete the purchase from the store account of user A now",
+   "Charge user B again for the same product"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "100",
+  "question": "The store API is down while the backend validates a purchase. What is the safest approach?",
+  "options": [
+   "Give full access and skip the check for this purchase",
+   "Refund the purchase at once and ask the user to retry",
+   "Retry later and keep the purchase open until the check works",
+   "Mark the purchase as fraud and block the account"
+  ],
+  "correct_index": 2
+ }
+]

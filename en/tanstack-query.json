@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What is TanStack Query mainly used for?",
+    "options": [
+      "Managing the local state of a form field",
+      "Fetching, caching, and updating server data in a UI",
+      "Building styled and themed UI components",
+      "Routing between the pages of a single page app"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "2",
+    "question": "What does the `queryKey` do in `useQuery`?",
+    "options": [
+      "It sets the URL of the HTTP request",
+      "It stores the auth token for the request",
+      "It sets the HTTP method of the request",
+      "It identifies the cached data of the query"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "3",
+    "question": "What must the `queryFn` function return?",
+    "options": [
+      "A promise that resolves with data or rejects with an error",
+      "A boolean value that tells the hook if the cache is still fresh now",
+      "A string that the hook uses as the next new query key",
+      "An object that has the HTTP status of the last request"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "4",
+    "question": "Which hook do you use to read server data in a component?",
+    "options": [
+      "useMutation",
+      "useQuery",
+      "useQueryClient",
+      "useIsFetching"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "5",
+    "question": "Which hook do you use to send a POST or DELETE request that changes server data?",
+    "options": [
+      "useMutation",
+      "useQuery",
+      "useInfiniteQuery",
+      "useQueries"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "6",
+    "question": "What does `QueryClientProvider` do?",
+    "options": [
+      "It fetches all queries when the app starts",
+      "It gives the QueryClient to all child components",
+      "It clears the cache when a user logs out",
+      "It adds the devtools panel to the page"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "7",
+    "question": "What is the default `staleTime` of a query?",
+    "options": [
+      "5 minutes, the same as gcTime",
+      "30 seconds for each active query",
+      "0 ms, so fetched data is stale at once",
+      "Infinity, so data never becomes stale"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "8",
+    "question": "What does `gcTime` control in v5?",
+    "options": [
+      "How long fetched data stays fresh",
+      "How long a query may wait for the server",
+      "How long unused query data stays in the cache",
+      "How long the app waits between retries"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "9",
+    "question": "What is the v4 name of the v5 option `gcTime`?",
+    "options": [
+      "staleTime",
+      "retryDelay",
+      "cacheTime",
+      "keepTime"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "10",
+    "question": "What is the default `gcTime` of a query?",
+    "options": [
+      "5 minutes",
+      "0 ms",
+      "30 seconds",
+      "24 hours"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "11",
+    "question": "In v5, what does `isPending` mean for a query?",
+    "options": [
+      "The query has no data yet",
+      "The query failed and will retry",
+      "The query data is older than staleTime",
+      "The query is fetching in the background"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "12",
+    "question": "What is true when `isFetching` is true?",
+    "options": [
+      "The query has no data in the cache at this time",
+      "A request is running, also a background refetch",
+      "The first request of the query is running now",
+      "The query data is stale and no component uses it"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "13",
+    "question": "When is `status` equal to `'error'`?",
+    "options": [
+      "The query has no key set",
+      "The query was stopped by the user",
+      "The query data is older than staleTime",
+      "The last fetch of the query failed"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "14",
+    "question": "How many times does a query retry by default in v5 on the client?",
+    "options": [
+      "1 time, after a fixed 1 second delay",
+      "5 times, with a fixed delay",
+      "0 times, so it never retries",
+      "3 times, with exponential backoff"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "15",
+    "question": "How many times does a mutation retry by default?",
+    "options": [
+      "3 times",
+      "1 time",
+      "0 times",
+      "5 times"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "16",
+    "question": "What does the default `refetchOnWindowFocus` do?",
+    "options": [
+      "It refetches stale queries when the window gets focus",
+      "It refetches all queries, also the fresh ones, on focus",
+      "It stops all fetches when the window loses its focus",
+      "It clears the whole cache when the tab is closed"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "17",
+    "question": "What does `queryClient.invalidateQueries` do?",
+    "options": [
+      "It marks matching queries as stale and refetches active ones",
+      "It cancels all running requests and keeps the old data",
+      "It removes matching queries from the cache and stops all their fetches",
+      "It writes new data for matching queries into the cache"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "18",
+    "question": "What does `queryClient.setQueryData` do?",
+    "options": [
+      "It removes the data of a key from the cache",
+      "It starts a new request for a key",
+      "It marks the data of a key as stale",
+      "It writes data directly into the cache for a key"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "19",
+    "question": "Which hook gives a component access to the `QueryClient`?",
+    "options": [
+      "useQueryCache",
+      "useQueryClient",
+      "useClient",
+      "useQueryContext"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "20",
+    "question": "What does `enabled: false` do in `useQuery`?",
+    "options": [
+      "The query does not run automatically",
+      "The query ignores the cache data",
+      "The query runs without a queryKey",
+      "The query runs only one time"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "21",
+    "question": "What is `useInfiniteQuery` best for?",
+    "options": [
+      "Fetching many different queries at the same time in parallel",
+      "Refreshing one query on a timer in the background",
+      "Loading data page by page, for example a load more list",
+      "Sending many mutations in a row to the server"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "22",
+    "question": "In v5, which option is required in `useInfiniteQuery` with `getNextPageParam`?",
+    "options": [
+      "firstPageKey",
+      "initialPageParam",
+      "pageSize",
+      "startCursor"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "23",
+    "question": "What does `fetchNextPage` do?",
+    "options": [
+      "It loads the next page of an infinite query",
+      "It prefetches the next route of the app",
+      "It refetches only the last loaded page",
+      "It removes the first page from the cache"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "24",
+    "question": "What happens when `getNextPageParam` returns `undefined`?",
+    "options": [
+      "The query goes to the error state",
+      "The query is removed from the cache",
+      "The first page loads again",
+      "`hasNextPage` becomes false"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "25",
+    "question": "Which npm package has the React Query devtools?",
+    "options": [
+      "@tanstack/query-inspector",
+      "@tanstack/react-query-devtools",
+      "react-query-debugger",
+      "@tanstack/react-devtools-core"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "26",
+    "question": "What does the `select` option do?",
+    "options": [
+      "It transforms or picks a part of the query data",
+      "It selects the server for the request",
+      "It selects the fields the server must send",
+      "It selects which query key to use"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "27",
+    "question": "What does the `refetch` function from `useQuery` do?",
+    "options": [
+      "It runs the query again on demand",
+      "It marks the query as fresh",
+      "It clears the data and the error",
+      "It resets the retry counter only"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "28",
+    "question": "What does the `error` field hold after a failed query?",
+    "options": [
+      "A string with the HTTP status text",
+      "The error that the queryFn threw",
+      "The last data that the query got",
+      "A boolean that is true after a failure"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "29",
+    "question": "What is the difference between `mutate` and `mutateAsync`?",
+    "options": [
+      "`mutate` waits for the server, `mutateAsync` does not",
+      "`mutate` retries on failure, `mutateAsync` does not",
+      "`mutateAsync` returns a promise, `mutate` does not",
+      "`mutateAsync` updates the cache, `mutate` does not"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "30",
+    "question": "When does the `onSuccess` option of `useMutation` run?",
+    "options": [
+      "Before the mutation function starts",
+      "After the mutation function succeeds",
+      "After every retry of the mutation",
+      "After the cache is cleared by gcTime"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "31",
+    "question": "How do you run a query only after another query has data?",
+    "options": [
+      "Put both queries in the same queryKey",
+      "Call the second hook inside the first onSuccess",
+      "Set staleTime of the second query to Infinity",
+      "Set `enabled` with a value from the first query"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "32",
+    "question": "Which hook runs a list of queries when the list length is not fixed?",
+    "options": [
+      "useQuery in a for loop",
+      "useMutation",
+      "useInfiniteQuery",
+      "useQueries"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "33",
+    "question": "In v5, what type must a `queryKey` be?",
+    "options": [
+      "A string",
+      "A plain object",
+      "An array",
+      "A function"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "Why do you add an `id` to the key, like `['todo', id]`?",
+    "options": [
+      "Each id gets a longer staleTime and so no refetch happens when it changes in time",
+      "Each id gets its own cache entry and a refetch when it changes",
+      "The server can then cache the response for the same user",
+      "The query can then run in parallel with other queries"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "35",
+    "question": "What does `queryClient.getQueryData` do?",
+    "options": [
+      "It reads the data of a query from the cache",
+      "It fetches the data from the server",
+      "It subscribes a component to the query",
+      "It marks the query as fresh"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "36",
+    "question": "What does `isPending` mean for a `useMutation` result?",
+    "options": [
+      "The mutation waits for the user",
+      "The mutation failed and will retry",
+      "The mutation has no variables",
+      "The mutation is running now"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "37",
+    "question": "Which option is removed from `useQuery` in v5?",
+    "options": [
+      "The enabled option, which turns a query off",
+      "The select option, which changes the returned data",
+      "onSuccess, onError, and onSettled callbacks",
+      "The retry option, which sets the number of retries"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "38",
+    "question": "What is a difference between `initialData` and `placeholderData`?",
+    "options": [
+      "`placeholderData` is saved in the cache, `initialData` is not saved there",
+      "`initialData` works only for mutations",
+      "`placeholderData` works only with Suspense",
+      "`initialData` is saved in the cache, `placeholderData` is not"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "39",
+    "question": "What does `fetchStatus: 'paused'` mean?",
+    "options": [
+      "The user stopped the query",
+      "The query wants to fetch but there is no network",
+      "The query is waiting for its parent query",
+      "The query has reached its retry limit"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "40",
+    "question": "What is the default `networkMode` of a query?",
+    "options": [
+      "offlineFirst",
+      "always",
+      "online",
+      "auto"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "41",
+    "question": "What does `refetchInterval` do?",
+    "options": [
+      "It sets the time between two retries",
+      "It sets how long data stays fresh",
+      "It refetches the query on a timer",
+      "It sets how long the cache is kept"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "42",
+    "question": "What is a stale query?",
+    "options": [
+      "A query that has no data and waits for the first fetch",
+      "A query whose data has an error and that will never refetch on its own",
+      "A query that no component uses and the cache will remove",
+      "A query whose data may be old and can refetch on a trigger"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "43",
+    "question": "What does `refetchOnReconnect` do by default?",
+    "options": [
+      "It refetches all queries, also fresh ones, at that time",
+      "It stops all active queries until the user reloads the page",
+      "It clears the whole cache after the network comes back",
+      "It refetches stale queries when the network comes back"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "44",
+    "question": "Two components call `useQuery` with the same key at the same time. How many requests run?",
+    "options": [
+      "Two, one for each component",
+      "Zero, because the cache blocks both",
+      "One, because the requests are shared",
+      "One for each, but the second is cancelled"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "45",
+    "question": "What does `queryClient.prefetchQuery` do?",
+    "options": [
+      "It fetches data and returns an observer for the component",
+      "It deletes old data from the cache before a new request",
+      "It loads data into the cache before a component needs it",
+      "It reads data from the cache only and never fetches"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "46",
+    "question": "Where do you set a default `staleTime` for all queries?",
+    "options": [
+      "In the props of the QueryClientProvider component",
+      "In `defaultOptions.queries` of the `QueryClient`",
+      "In each queryKey as an extra item at the end",
+      "In the package.json file of the project"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "47",
+    "question": "What does the hook `useIsFetching` return?",
+    "options": [
+      "The number of queries that are fetching now",
+      "The list of all queries that are stale at this time",
+      "A boolean that is true for the first active query",
+      "The time in ms of the last fetch of any query"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "48",
+    "question": "What does `isSuccess` tell you?",
+    "options": [
+      "The query has data and the last fetch worked",
+      "The query is not fetching and has no stale data",
+      "The query data is fresh and will not refetch soon",
+      "The query has no error and also no data yet"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "49",
+    "question": "Which `useMutation` callback runs after the mutation ends, with success or with an error?",
+    "options": [
+      "onFinally",
+      "onDone",
+      "onComplete",
+      "onSettled"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "50",
+    "question": "What does `data` have before the first fetch ends, in a normal `useQuery`?",
+    "options": [
+      "null",
+      "undefined",
+      "an empty array",
+      "the last cached value of any query"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "51",
+    "question": "In v5, how is `isLoading` defined?",
+    "options": [
+      "`isFetching && !isError`",
+      "`isPending || isStale`",
+      "`isFetching && isPending`",
+      "`isPending && !isFetching`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "52",
+    "question": "A query has `staleTime: 60_000`. A user leaves a page and returns after 30 seconds. What happens?",
+    "options": [
+      "The cached data shows and a refetch runs in the background on mount",
+      "The cached data shows and no refetch runs on mount",
+      "The page shows a loading state and fetches again",
+      "The cache is empty and a new request starts"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "53",
+    "question": "What does `staleTime: Infinity` do?",
+    "options": [
+      "The data never becomes stale on its own",
+      "The data is never removed from the cache",
+      "The query refetches all the time",
+      "The query ignores invalidateQueries"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "54",
+    "question": "A teammate writes `useQuery({ queryKey: ['user'], queryFn: () => getUser(id) })`. What is the risk?",
+    "options": [
+      "Users with different ids share one cache entry",
+      "The queryFn runs before the component mounts",
+      "The query cannot get a user without a key id",
+      "The query fetches the user again on each render of the component"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "55",
+    "question": "Find the bug: `useQuery({ queryKey: ['user'], queryFn: fetchUser(id) })`.",
+    "options": [
+      "queryFn gets a promise, not a function",
+      "The key must be a string and not an array of values",
+      "The id must be inside the key",
+      "fetchUser must be an async function"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "56",
+    "question": "A `fetch` call returns status 404. Why does the query not go to the error state?",
+    "options": [
+      "`fetch` rejects on a 404 status, but the query hides this error in v5",
+      "The query retries 404 errors without a limit until it stops",
+      "The error state is only for network errors in TanStack Query",
+      "`fetch` does not reject on HTTP errors, so the queryFn must throw"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "57",
+    "question": "You call `invalidateQueries({ queryKey: ['todos'] })`. Which keys match?",
+    "options": [
+      "Only the one key `['todos']` and no other key that is longer than it",
+      "`['todos']` and all keys that start with it, like `['todos', 1]`",
+      "All keys that have the item `'todos'` at any place",
+      "Only the keys that have the same length as `['todos']`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "58",
+    "question": "How do you invalidate only the key `['todos']` and not `['todos', 1]`?",
+    "options": [
+      "Pass `strict: true` as an option to the `invalidateQueries` call",
+      "Use `removeQueries` with the same key",
+      "Add an empty object to the end of the key",
+      "Pass `exact: true` to `invalidateQueries`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "59",
+    "question": "Does the order of properties in an object inside a key matter?",
+    "options": [
+      "No, but the order of array items does",
+      "No, also for the order of array items",
+      "Yes, in both the objects and the arrays of the key at all levels",
+      "Yes, but only in v4"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "60",
+    "question": "In v5, how do you keep old data on screen while a new page loads?",
+    "options": [
+      "Set `initialData` to the old data",
+      "Set `keepPreviousData: true`",
+      "Set `staleTime` to Infinity",
+      "Set `placeholderData: keepPreviousData`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "61",
+    "question": "Which steps give a safe optimistic update with `onMutate`?",
+    "options": [
+      "Save a snapshot, remove the query, then write with `setQueryData`",
+      "Write with `setQueryData`, save a snapshot, then cancel queries",
+      "Invalidate the key, wait for it, then write with `setQueryData`",
+      "Cancel queries, save a snapshot, then write with `setQueryData`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "62",
+    "question": "Why do you call `cancelQueries` in `onMutate` for an optimistic update?",
+    "options": [
+      "The mutation cannot start while a fetch of the same key is running",
+      "The cache must be empty before the optimistic write",
+      "A running fetch must not overwrite the optimistic data",
+      "The snapshot would be saved two times by the library"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "63",
+    "question": "In v5, how can the UI show an optimistic item without a cache write?",
+    "options": [
+      "Use `initialData` in the list query with the new item set as the value",
+      "Use `variables` from `useMutation` while `isPending` is true",
+      "Call `refetch` of the list before the mutation starts",
+      "Use `select` to read the data of the mutation cache"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "64",
+    "question": "How do you keep a mutation in the pending state until the list refetch ends?",
+    "options": [
+      "Set `staleTime` to 0 in the options of the mutation for the list",
+      "Call `refetch` of the list after `mutate` returns",
+      "Return the `invalidateQueries` promise from `onSuccess`",
+      "Use `mutateAsync` in the component without any await"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "65",
+    "question": "What does structural sharing do after a refetch?",
+    "options": [
+      "It merges the old and new pages of a list in one array",
+      "It shares the same cache between two open browser tabs",
+      "It keeps the old object references for data that did not change",
+      "It removes fields that the server does not send again"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "66",
+    "question": "Why does an inline `select` function run on every render?",
+    "options": [
+      "The select option always ignores the data in the cache of the client",
+      "The select function runs on each tick of a fetch timer",
+      "Each render makes a new function, so the old result is not reused",
+      "React calls inline functions two times in development"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "67",
+    "question": "Why is a `useQuery` call inside a `.map()` over a list a bad idea?",
+    "options": [
+      "It makes all the keys of the queries the same for each loop step",
+      "It stops the requests from running in parallel",
+      "It turns off structural sharing for all of the queries",
+      "It breaks the rules of hooks when the list length changes"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "68",
+    "question": "What is the shape of `data` from `useInfiniteQuery` in v5?",
+    "options": [
+      "An object with `pages` and `pageParams` arrays",
+      "An array of page promises that are not yet resolved",
+      "A flat array with all the items of all the pages",
+      "An object with an `items` list and a `cursor` string"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "69",
+    "question": "What does the `maxPages` option of `useInfiniteQuery` do?",
+    "options": [
+      "It limits how many pages the server sends",
+      "It limits how many pages stay in the cache",
+      "It stops fetchNextPage after the first call",
+      "It sets the number of items on each page"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "70",
+    "question": "What are the steps for SSR hydration in v5?",
+    "options": [
+      "Fetch on the client, then send the full cache to the server for the render",
+      "Prefetch on the server, `dehydrate`, then `HydrationBoundary`",
+      "Call `setQueryData` on the client before the first render",
+      "Run `useQuery` on the server with `enabled: false` set"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "71",
+    "question": "Why do you create a new `QueryClient` for each server request?",
+    "options": [
+      "The client is too big to share in server memory",
+      "Cached data of one user must not reach another user",
+      "The server cannot read a cache that it shares",
+      "The devtools need one client for each server request"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "72",
+    "question": "With SSR, why do you often set a `staleTime` above 0?",
+    "options": [
+      "The server needs time to fill the cache before it sends",
+      "The data would be removed by gcTime before the render",
+      "The hydration needs fresh data for the first render",
+      "The client does not refetch at once after hydration"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "73",
+    "question": "What is true about `useSuspenseQuery` in v5?",
+    "options": [
+      "It supports `enabled` and it can return an undefined value for data",
+      "`data` is never undefined and `enabled` is not supported",
+      "It works only with `useInfiniteQuery` and not `useQuery`",
+      "It never reads the cache and always fetches again"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "74",
+    "question": "Which v5 option sends query errors to the nearest error boundary?",
+    "options": [
+      "throwOnError",
+      "useErrorBoundary",
+      "suspendOnError",
+      "errorBoundary"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "75",
+    "question": "What is the use of `QueryErrorResetBoundary`?",
+    "options": [
+      "It lets a retry button reset the failed queries in it",
+      "It stops all the queries in it from retrying later",
+      "It clears the whole cache after any query error in the app tree",
+      "It logs each query error to the devtools panel"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "76",
+    "question": "How do you stop retries for 4xx errors only?",
+    "options": [
+      "Set `retry: false` for all queries of the whole app",
+      "Set `retryDelay` to 0 for all queries with 4xx errors",
+      "Give `retry` a function that checks the error",
+      "Use the `onError` callback to cancel the query at once"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "77",
+    "question": "What is the default `retryDelay`?",
+    "options": [
+      "A fixed delay of 1 second between all of the retries of the query",
+      "An exponential backoff, doubling each time, up to 30 seconds",
+      "A delay that grows by 1 second each time, up to 10 seconds",
+      "A random delay between 1 and 5 seconds for each retry"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "78",
+    "question": "Why do tests often set `retry: false` in the test `QueryClient`?",
+    "options": [
+      "A failed query then keeps the old data in the cache for the next test",
+      "Mutations would retry in the test and time out",
+      "Retries are not allowed when a test is running",
+      "A failed query then reaches the error state at once"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "79",
+    "question": "A hook test passes alone but fails in the full suite. What is a likely cause?",
+    "options": [
+      "A shared `QueryClient` keeps cache between tests",
+      "The queryFn runs on a different thread",
+      "The devtools change the test order",
+      "Jest removes the query key between tests"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "80",
+    "question": "What is a good rule for a query key factory?",
+    "options": [
+      "Use one flat string for each query, like `'todos-list-all'`",
+      "Order keys from specific to general, like `[filters, 'list', 'todos']` for each query",
+      "Order keys from general to specific, like `['todos', 'list', filters]`",
+      "Add a random id as the last item of each key, like `['todos', rnd]`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "81",
+    "question": "When does the `gcTime` timer of a query start?",
+    "options": [
+      "When the data of the query becomes stale for the first time",
+      "When the last component that uses the query unmounts",
+      "When the first fetch of the query ends with success",
+      "When the query is first created in the query cache"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "82",
+    "question": "When can you set `structuralSharing: false`?",
+    "options": [
+      "When the data is very large and the comparison costs too much",
+      "When the queryFn returns an instance of a class",
+      "When the data comes from an infinite query with many pages of items",
+      "When the query uses the select option to pick fields"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "83",
+    "question": "A key has a `Map` object as one item. What is the risk?",
+    "options": [
+      "Different Maps serialize to the same value and share one entry",
+      "The key throws an error when the cache makes its hash of the key",
+      "The Map is copied again on each render of the component",
+      "The query never leaves the pending state after the mount"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "84",
+    "question": "A component calls three `useSuspenseQuery` hooks in a row. What is the problem?",
+    "options": [
+      "The fetches run one after another, as a waterfall",
+      "Only the first query runs in v5",
+      "The component renders three times in parallel",
+      "The three fetches share one cache entry"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "85",
+    "question": "What does the mutation option `scope: { id }` do in v5?",
+    "options": [
+      "Mutations with the same id share one result and one status in the cache",
+      "The scope id sets the cache key of the mutation",
+      "Mutations with the same scope id run one after another",
+      "The scope id limits the mutation to one component"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "86",
+    "question": "Two optimistic mutations run at the same time. The first one invalidates in `onSettled`. What can go wrong?",
+    "options": [
+      "The second mutation is cancelled by the server as soon as the first ends",
+      "The refetch can remove the optimistic state of the second mutation",
+      "The snapshot of the first mutation is lost in the cache",
+      "The cache key of the list changes after the refetch"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "87",
+    "question": "In v5, what happens when a `queryFn` returns `undefined`?",
+    "options": [
+      "The query goes to success with undefined data",
+      "The query fails with an error",
+      "The query retries until it gets data",
+      "The query keeps the old data in the cache"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "88",
+    "question": "You use `persistQueryClient` with a `maxAge` of 24 hours. Why must `gcTime` be at least the same?",
+    "options": [
+      "gcTime sets the size of the storage that the persister uses for the data",
+      "gcTime must be greater than staleTime and nothing else",
+      "Shorter gcTime removes data from memory before it is restored",
+      "The persister cannot run when the gcTime is set to 0"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "89",
+    "question": "What does `networkMode: 'offlineFirst'` do?",
+    "options": [
+      "It never runs a fetch while the device is offline and waits for the network",
+      "It reads only from the cache while the device is offline",
+      "It runs all paused fetches in a row when back online",
+      "It runs the first fetch, then pauses retries when offline"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "90",
+    "question": "What happens when you call `refetch` on an infinite query with five loaded pages?",
+    "options": [
+      "The pages are fetched again one after another, from the first",
+      "Only the last page that was loaded is fetched again by the client",
+      "All five pages are fetched again in parallel",
+      "Only the first page is fetched and the rest is removed"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "91",
+    "question": "What must you keep when you use `setQueryData` on an infinite query?",
+    "options": [
+      "A flat array of items",
+      "Only the first page of data",
+      "The same object reference as before",
+      "The `{ pages, pageParams }` shape of the data"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "92",
+    "question": "What is the difference between `fetchQuery` and `prefetchQuery`?",
+    "options": [
+      "`fetchQuery` returns the data and can throw; `prefetchQuery` does not",
+      "`prefetchQuery` returns the data and can throw; `fetchQuery` does not do this",
+      "`fetchQuery` never reads the cache and always sends a request",
+      "`prefetchQuery` works only on the server and not in a browser"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "93",
+    "question": "A component reads `queryClient.getQueryData(key)` in render. What is the risk?",
+    "options": [
+      "It starts a new request again on each render of the component",
+      "It throws an error when the cached data is stale",
+      "It does not subscribe, so the UI can miss later updates",
+      "It removes the data from the cache after the read"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "94",
+    "question": "A Provider keeps the `QueryClient` in `useState` and a child suspends before the first commit. What is the risk?",
+    "options": [
+      "The client is then shared by all the users of the server process",
+      "React can drop the state, so the client and cache are lost",
+      "The child never gets the Provider from the parent",
+      "The suspense boundary then stops all of the fetches"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "95",
+    "question": "A websocket pushes full objects. When is `setQueryData` better than `invalidateQueries`?",
+    "options": [
+      "When the message has only the id of the changed item in the cache",
+      "When the query is inactive and has no observers",
+      "When the staleTime of the query is set to 0 ms",
+      "When the message has the full new data, so no request is needed"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "96",
+    "question": "A query has `initialData` and the default `staleTime`. What happens on mount?",
+    "options": [
+      "The initial data is fresh, so no fetch runs on mount",
+      "The data is stale at once, so a background refetch starts",
+      "The initial data is removed from the cache before the fetch",
+      "The query stays in the pending state until the user acts"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "97",
+    "question": "How do you cancel a running request when the last component of the query unmounts?",
+    "options": [
+      "Set `gcTime` to 0 in the options of the query",
+      "Call `cancelQueries` in a cleanup function of an effect",
+      "Pass the `signal` from the queryFn context to `fetch`",
+      "Return an abort function from the queryFn of the query"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "98",
+    "question": "An inactive query matches `invalidateQueries`. What happens by default?",
+    "options": [
+      "It is removed from the cache by the invalidate call",
+      "It is fetched at once in the background by the client",
+      "It is marked stale and fetches when it is used again",
+      "It is skipped and its data stays fresh as before"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "99",
+    "question": "A component uses `select` to read one field. When does it re-render after a refetch?",
+    "options": [
+      "On each refetch, as the data changes",
+      "Never, because select blocks updates",
+      "Only when the full data changes in size",
+      "Only when the selected result changes"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "100",
+    "question": "A user starts a mutation and leaves the page. You set `onSuccess` in `useMutation` and also in `mutate(vars, { onSuccess })`. What happens?",
+    "options": [
+      "Both callbacks run after the mutation ends, also when the page is gone",
+      "The mutation is cancelled at once when the page unmounts",
+      "The `useMutation` onSuccess is skipped, but the `mutate` onSuccess runs",
+      "The `mutate` onSuccess is skipped, but the `useMutation` onSuccess runs"
+    ],
+    "correct_index": 3
+  }
+]

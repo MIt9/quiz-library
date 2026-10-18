@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What is an Observable in RxJS?",
+    "options": [
+      "A lazy stream that can send many values over time",
+      "An object that stores one value for all subscribers",
+      "A function that runs at once and returns one value",
+      "A list of Promises that resolve in a fixed order"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "2",
+    "question": "Which method starts the execution of a cold Observable?",
+    "options": [
+      "`pipe()`",
+      "`next()`",
+      "`complete()`",
+      "`subscribe()`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "3",
+    "question": "What is a key difference between an Observable and a Promise?",
+    "options": [
+      "An Observable can send many values over time, a Promise settles once",
+      "An Observable always runs asynchronously, a Promise always runs synchronously",
+      "A Promise can be cancelled with a method, an Observable cannot be cancelled",
+      "A Promise is lazy and starts on `then`, an Observable starts at creation"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "4",
+    "question": "A teammate writes `new Observable(sub => console.log('run'))`. When does `run` print?",
+    "options": [
+      "Once, when the Observable is created",
+      "Each time the `pipe` method is called",
+      "Once, when the first subscriber joins",
+      "Each time someone subscribes to it"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "5",
+    "question": "What does the `pipe` method do?",
+    "options": [
+      "It starts the Observable and returns a Subscription",
+      "It joins operators and returns a new Observable",
+      "It changes the source Observable in place",
+      "It sends a value to all current subscribers"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "6",
+    "question": "What does `map` do in an Observable pipeline?",
+    "options": [
+      "It removes the values that fail a test function and keeps the others",
+      "It joins the values from two Observables into one new stream",
+      "It applies a function to each value and emits the result",
+      "It runs a side effect and then drops the value from the stream"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "7",
+    "question": "What does `filter` do in an Observable pipeline?",
+    "options": [
+      "It emits only the values for which the function returns true",
+      "It changes each value with a function and emits the new result",
+      "It removes the values that are equal to the previous value",
+      "It emits only the first value and then it completes the stream"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "8",
+    "question": "What does the `complete` notification tell the observer?",
+    "options": [
+      "The source had an error but can still send values",
+      "The last value was lost on the way",
+      "The subscriber must call `subscribe` again",
+      "The source will send no more values"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "9",
+    "question": "What does `subscription.unsubscribe()` do?",
+    "options": [
+      "It stops the delivery of values and runs the teardown logic",
+      "It sends an `error` notification to the observer and closes it",
+      "It pauses the delivery until `subscribe` is called again later",
+      "It sends a `complete` notification to the observer and closes it"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "10",
+    "question": "What does `observable.subscribe()` return?",
+    "options": [
+      "A `Promise` of the first value",
+      "A new `Observable` for the result",
+      "An array of all emitted values",
+      "A `Subscription` object"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "11",
+    "question": "What is a `Subject` in RxJS?",
+    "options": [
+      "An Observable that is also an observer and can multicast values",
+      "An Observable that keeps its last value for new subscribers only, and nothing else",
+      "A Promise that can send many values over time to its subscribers",
+      "An operator that joins many Observables into one new Observable"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "12",
+    "question": "What is special about `BehaviorSubject`?",
+    "options": [
+      "It sends values only after the source completes and the buffer is full",
+      "It stores all past values and replays every one of them to each new subscriber",
+      "It needs an initial value and gives the current value to new subscribers",
+      "It ignores new subscribers until the first call of `next`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "13",
+    "question": "`new ReplaySubject(2)` has sent 1, 2 and 3. What does a new subscriber get?",
+    "options": [
+      "Only the value 3",
+      "No values until the next `next` call",
+      "The values 1, 2 and 3",
+      "The values 2 and 3"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "14",
+    "question": "In Angular code, what does a `$` at the end of a variable name mean?",
+    "options": [
+      "The variable is a private field of the class",
+      "The variable holds a value that never changes",
+      "The variable is read only and cannot be set",
+      "It is an Observable by naming convention"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "15",
+    "question": "What does `of(1, 2, 3)` do?",
+    "options": [
+      "It emits 1, 2, 3 in order and then completes",
+      "It emits 1, 2, 3 every second without end",
+      "It emits the array [1, 2, 3] as one value",
+      "It waits for a subscriber and emits only 3"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "16",
+    "question": "What does `of([1, 2, 3])` emit?",
+    "options": [
+      "Three values, 1, 2 and 3, and then it completes",
+      "Nothing, because it needs `from` for arrays",
+      "One value, the whole array, and then it completes",
+      "An error, because `of` does not accept arrays"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "17",
+    "question": "What does `from(fetchPromise)` return?",
+    "options": [
+      "An Observable that emits the Promise object itself and then completes",
+      "An Observable that emits the resolved value and then completes",
+      "A Subscription that cancels the Promise on unsubscribe",
+      "An Observable that retries when the Promise rejects"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "18",
+    "question": "What does `interval(1000)` emit?",
+    "options": [
+      "The number 0 once after one second",
+      "Numbers 0, 1, 2 and so on, one each second",
+      "The current time each second, as a Date",
+      "Numbers 1, 2, 3 and so on, one each second"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "19",
+    "question": "What does `timer(2000)` do?",
+    "options": [
+      "It emits 0 after two seconds and then completes",
+      "It emits 0 at once and completes after two seconds",
+      "It emits 0, 1, 2 and so on every two seconds",
+      "It completes after two seconds without any value"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "20",
+    "question": "What does `debounceTime(300)` do?",
+    "options": [
+      "It emits the first value and then ignores other values for 300 ms",
+      "It delays every value by exactly 300 ms and keeps the order",
+      "It emits a value only after 300 ms pass with no new value",
+      "It emits the latest value once in each 300 ms window of time"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "21",
+    "question": "What does `distinctUntilChanged()` emit for the source values 1, 1, 2, 2, 1?",
+    "options": [
+      "1, 2",
+      "1, 2, 1",
+      "1, 1, 2",
+      "2, 1"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "22",
+    "question": "What does `take(3)` do?",
+    "options": [
+      "It skips the first three values and emits the rest",
+      "It emits the last three values when the source completes",
+      "It emits three values and keeps the source open",
+      "It emits the first three values and then completes"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "23",
+    "question": "What is `tap` used for?",
+    "options": [
+      "To change each value with a function and emit the result of that function",
+      "To run a side effect, such as logging, without changing the values",
+      "To start a second Observable for each value from the source",
+      "To remove a value from the stream when the function returns false"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "24",
+    "question": "What must the function in `catchError` return?",
+    "options": [
+      "A plain value that the subscriber gets next",
+      "An Observable that replaces the failed source",
+      "A boolean that tells RxJS to retry the source",
+      "Nothing, because RxJS ignores the error at once"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "25",
+    "question": "What does `retry(2)` do when the source sends an error?",
+    "options": [
+      "It repeats the last value two times",
+      "It subscribes to the source again, up to two times",
+      "It waits two seconds and then completes",
+      "It subscribes again after the source completes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "26",
+    "question": "A new outer value arrives while a `switchMap` inner Observable runs. What happens?",
+    "options": [
+      "The new outer value waits until the old inner Observable ends and then runs",
+      "The new outer value is ignored by the operator until the inner one ends",
+      "The old inner Observable is unsubscribed and a new one starts",
+      "Both inner Observables run at the same time and both send results"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "27",
+    "question": "How does `mergeMap` treat inner Observables?",
+    "options": [
+      "It subscribes to one and waits for it to complete",
+      "It subscribes to all of them at the same time",
+      "It cancels the older one for each new value",
+      "It ignores new ones while another one is active"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "28",
+    "question": "What does `concatMap` guarantee?",
+    "options": [
+      "Inner Observables run one by one in the order of the outer values",
+      "Inner Observables run in parallel and the results keep the order of the outer values",
+      "Only the newest inner Observable gives results to the subscriber at the end",
+      "Inner Observables are skipped when another one is still active"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "29",
+    "question": "Which operator ignores new outer values while the current inner Observable runs?",
+    "options": [
+      "`switchMap`",
+      "`concatMap`",
+      "`mergeMap`",
+      "`exhaustMap`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "30",
+    "question": "When does `combineLatest([a$, b$])` emit its first value?",
+    "options": [
+      "When a$ or b$ emits its first value",
+      "When a$ emits and b$ has a default value",
+      "After both a$ and b$ have completed",
+      "After both a$ and b$ have emitted at least one value"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "31",
+    "question": "When does `forkJoin([a$, b$])` emit?",
+    "options": [
+      "Each time any source emits, with all the latest values in an array",
+      "Once, when the first source completes, with its last value",
+      "Once, after all sources complete, with the last value of each",
+      "Once, after all sources emit, with their first values"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "32",
+    "question": "In `a$.pipe(withLatestFrom(b$))`, which source triggers an emission?",
+    "options": [
+      "Only b$; it pairs each value with the latest value of a$",
+      "Only a$; it pairs each value with the latest value of b$",
+      "Neither; it emits when both sources complete",
+      "Both a$ and b$ trigger an emission with the pair"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "33",
+    "question": "What does the Angular `async` pipe do with an Observable?",
+    "options": [
+      "It subscribes once and keeps the subscription open after the component is destroyed",
+      "It converts the Observable to a Promise for the template to read",
+      "It subscribes, shows the latest value and unsubscribes on destroy",
+      "It reads the value one time and never updates it"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "What does `HttpClient.get()` return in Angular?",
+    "options": [
+      "A `Response` object with the data inside it",
+      "A Promise that sends the request at once when the method is called",
+      "An Observable that sends the request when you subscribe",
+      "A Subscription that is already active and waits for the response"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "35",
+    "question": "What does `defaultIfEmpty(0)` do?",
+    "options": [
+      "It replaces every `undefined` value with 0",
+      "It emits 0 before the first value of the source",
+      "It emits 0 if the source completes without a value",
+      "It emits 0 if the source sends an error"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "36",
+    "question": "In an Angular reactive form, what is `control.valueChanges`?",
+    "options": [
+      "An Observable that emits each time the control value changes",
+      "A Promise that resolves when the user submits the form for the first time",
+      "A method that sets a new value for the control and its parent form",
+      "A Subject that emits only when the form is valid and not pristine"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "37",
+    "question": "Why do developers use `takeUntil(this.destroy$)` in a component?",
+    "options": [
+      "To delay the stream until the component is ready",
+      "To start the stream when the component is created",
+      "To retry the stream when the component shows again",
+      "To complete the stream when the component is destroyed"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "38",
+    "question": "What usually causes a memory leak with RxJS in Angular?",
+    "options": [
+      "Too many `pipe` calls in one component",
+      "A subscription to a long-lived source is never closed",
+      "An Observable that completes after one value",
+      "Use of `Subject` instead of `BehaviorSubject`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "39",
+    "question": "What does the constant `EMPTY` do when you subscribe?",
+    "options": [
+      "It emits `undefined` and then completes",
+      "It completes at once without any value",
+      "It never emits and never completes",
+      "It sends an error at once"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "40",
+    "question": "What does `throwError(() => new Error('x'))` return?",
+    "options": [
+      "An Observable that sends the error to each subscriber",
+      "A Subscription that is already closed with the error inside",
+      "An Observable that throws the error when you call `pipe` on it",
+      "A Promise that rejects with the error when someone awaits it"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "41",
+    "question": "What does `first()` do if the source completes with no values?",
+    "options": [
+      "It waits until the source emits again",
+      "It completes without any value",
+      "It emits `undefined` and completes",
+      "It sends an `EmptyError`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "42",
+    "question": "What does `scan` do?",
+    "options": [
+      "It accumulates values and emits only the final result",
+      "It scans the source and emits the largest value",
+      "It accumulates values and emits each step of the result",
+      "It joins two sources and emits pairs of values"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "43",
+    "question": "When does `reduce` emit its result?",
+    "options": [
+      "When the source completes",
+      "When the source emits the first value",
+      "After each value of the source",
+      "When the accumulator value changes"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "44",
+    "question": "What does `startWith('loading')` do?",
+    "options": [
+      "It emits 'loading' after the source completes",
+      "It emits 'loading' if the source has no values",
+      "It emits 'loading' first, then the source values",
+      "It replaces the first source value with 'loading'"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "45",
+    "question": "What does `merge(a$, b$)` do?",
+    "options": [
+      "It emits all values of a$ and then all values of b$",
+      "It emits arrays with the latest value from each",
+      "It emits only the values that are in both",
+      "It emits values from both sources as they arrive"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "46",
+    "question": "When does `concat(a$, b$)` subscribe to b$?",
+    "options": [
+      "After a$ completes",
+      "At the same time as a$",
+      "When a$ emits its first value",
+      "After a$ has emitted and a timer ends"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "47",
+    "question": "In RxJS 7, `toPromise()` is deprecated. What replaces it for the last value?",
+    "options": [
+      "`firstValueFrom`",
+      "`promiseFrom`",
+      "`lastValueFrom`",
+      "`fromPromise`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "48",
+    "question": "What does `delay(1000)` do to each emitted value?",
+    "options": [
+      "It sends the value to the subscriber one second later",
+      "It drops the value if it arrives within one second",
+      "It sends only the latest value after one second",
+      "It waits one second before it subscribes to the source"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "49",
+    "question": "When does the function in `finalize` run?",
+    "options": [
+      "Only when the stream completes without an error, not on unsubscribe",
+      "When the stream completes, errors or is unsubscribed",
+      "Only when the stream sends an error to the subscriber",
+      "Before the first value arrives from the source"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "50",
+    "question": "A source sends an `error` notification. What happens to the stream after that?",
+    "options": [
+      "It continues and sends the next value as normal, after the error",
+      "It ends, and no more values or `complete` come",
+      "It sends `complete` right after the error to close the stream",
+      "It restarts the source at once and sends the values again"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "51",
+    "question": "Two components subscribe to the same cold `http.get(url)` Observable. How many requests go out?",
+    "options": [
+      "One request, shared by both subscribers",
+      "One request, because the browser cache joins both",
+      "Two requests, one for each subscription",
+      "Two requests, but the second one cancels the first"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "52",
+    "question": "Two components need the same HTTP result. A late subscriber must get it without a new request. Which operator?",
+    "options": [
+      "`shareReplay(1)`",
+      "`take(1)`",
+      "`distinctUntilChanged()`",
+      "`share()`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "53",
+    "question": "A search box uses `mergeMap` for HTTP calls. Old results sometimes replace new results. Why?",
+    "options": [
+      "Old requests are not cancelled and can finish after new ones",
+      "`mergeMap` runs the requests one by one and keeps them in the wrong order",
+      "`mergeMap` ignores the newest value while an old request still runs",
+      "`mergeMap` caches the first response and uses it for all inputs"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "54",
+    "question": "`zip(a$, b$)`: a$ emits 1, 2, 3 and b$ emits 'x', 'y' and completes. What does zip emit?",
+    "options": [
+      "[1, 'x'] and [2, 'y'], then it completes",
+      "[1, 'x'], [2, 'x'] and [3, 'y'] in any order",
+      "Only [3, 'y'], when both sources complete",
+      "[1, 'x'], [2, 'y'] and [3, 'y'], then it completes"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "55",
+    "question": "A `mergeMap` calls a slow server for 100 ids at once. What is a simple fix?",
+    "options": [
+      "Replace `mergeMap` with `switchMap` to keep all of the results",
+      "Add `debounceTime(5)` after the `mergeMap` operator in the pipe",
+      "Use `shareReplay(5)` before the `mergeMap` operator in the pipe",
+      "Set the concurrent parameter, for example `mergeMap(fn, 5)`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "56",
+    "question": "A developer calls `subscribe` inside another `subscribe` callback. What is the main problem?",
+    "options": [
+      "RxJS throws an error at run time when it finds nested subscriptions",
+      "It is hard to cancel and to handle errors in one place",
+      "The inner subscription always runs before the outer one starts",
+      "The outer Observable stops after the first value is sent"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "57",
+    "question": "A component has this code in `ngOnInit`. What is the risk?\ninterval(1000).subscribe(n => this.count = n);",
+    "options": [
+      "The timer stops after the first value and the count stays at 0",
+      "The timer keeps running after the component is destroyed",
+      "The count value is always the same for each new value",
+      "The component cannot be created two times in the same page"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "58",
+    "question": "A pipe has `takeUntil(destroy$)` before `switchMap(...)`. What is the risk?",
+    "options": [
+      "The `switchMap` function never runs at all because of the order",
+      "The stream completes before the first value can arrive",
+      "The inner Observable can still run after `destroy$` emits",
+      "RxJS shows a compile error for this order of operators"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "59",
+    "question": "How is `BehaviorSubject` different from `ReplaySubject(1)`?",
+    "options": [
+      "`BehaviorSubject` needs an initial value, so new subscribers always get a value",
+      "`BehaviorSubject` replays the last two values to new subscribers",
+      "`ReplaySubject(1)` needs an initial value, so new subscribers always get a value",
+      "`ReplaySubject(1)` completes after it sends one value"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "60",
+    "question": "A `Subject` emits 1. Then a new subscriber joins. Then the `Subject` emits 2. What does the new subscriber get?",
+    "options": [
+      "Both 1 and 2",
+      "Only 1",
+      "Only 2",
+      "Nothing, because the Subject is already active"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "61",
+    "question": "`combineLatest([a$, b$])` is used and b$ never emits. What does the subscriber get?",
+    "options": [
+      "The values of a$ in an array, with `undefined` in place of b$",
+      "The values of a$ in an array, with `null` in place of b$",
+      "Nothing, because it waits for a value from every source",
+      "An error, because b$ has no value to combine with a$"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "62",
+    "question": "`forkJoin([a$, b$])` is used and b$ is `interval(1000)`. What happens?",
+    "options": [
+      "It emits the first value of b$ with a$",
+      "It never emits, because b$ never completes",
+      "It emits every second, with the latest values",
+      "It emits once, after the first second"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "63",
+    "question": "`forkJoin` runs three HTTP calls and one fails. What does the subscriber get?",
+    "options": [
+      "An array with `undefined` at the place of the failed request",
+      "The two good results, then an error from the third call",
+      "The two good results, and the error is ignored by RxJS",
+      "An error, and the other requests are cancelled"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "64",
+    "question": "A stream with `switchMap(q => http.get(q))` stops after one HTTP error. How do you keep it alive?",
+    "options": [
+      "Add `catchError` after `switchMap` that returns `EMPTY` to the stream",
+      "Add `catchError` on the inner request inside `switchMap`",
+      "Add `finalize` after `switchMap` to restart the stream on error",
+      "Use `mergeMap` instead, because it ignores errors from inner requests"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "65",
+    "question": "Which RxJS 7.8 code retries a failed request 3 times, with 1 second between tries?",
+    "options": [
+      "`retry({ count: 3, delay: 1000 })`",
+      "`retry(3, 1000)`",
+      "`retry({ times: 3, wait: 1000 })`",
+      "`retryWhen(3, 1000)`"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "66",
+    "question": "A team adds `retry(3)` to an HTTP POST that creates an order. What is the risk?",
+    "options": [
+      "The POST request is sent as GET after a retry",
+      "The first error is hidden and the order is lost",
+      "The server can create the order more than one time",
+      "RxJS sends all three requests at the same time"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "67",
+    "question": "`distinctUntilChanged()` is used on objects. Each new value is a new object with equal data. What happens?",
+    "options": [
+      "RxJS throws an error for non-primitive values",
+      "Only the first value passes, because the data is equal",
+      "RxJS compares each property and blocks the copies",
+      "All values pass, because the check compares references"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "68",
+    "question": "You must handle `scroll` events at most one time each 200 ms. Which operator fits best?",
+    "options": [
+      "`debounceTime(200)`",
+      "`delay(200)`",
+      "`throttleTime(200)`",
+      "`timeout(200)`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "69",
+    "question": "A template uses `data$ | async` in three places and `data$` is `http.get()`. How many requests go out?",
+    "options": [
+      "One, because the `async` pipe caches the result",
+      "Three, one for each `async` pipe",
+      "One, because Angular joins equal subscriptions",
+      "Two, one for the first and one for the others"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "70",
+    "question": "`shareReplay(1)` is on an `interval` stream. All subscribers unsubscribe. What happens to the source?",
+    "options": [
+      "It keeps running, because `refCount` is false by default",
+      "It stops at once, because no subscriber is left to receive values",
+      "It stops after the next value is emitted to the buffer",
+      "It restarts and emits from 0 for the next subscriber that joins"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "71",
+    "question": "A `Subject` calls `complete()`. Then code calls `next(5)`. What happens?",
+    "options": [
+      "RxJS throws an error in the caller",
+      "The subject opens again and sends 5",
+      "The value is ignored and no subscriber gets it",
+      "The value waits for the next subscriber"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "72",
+    "question": "What does `pairwise()` emit for the source values 1, 2, 3?",
+    "options": [
+      "[1, 2] and [2, 3]",
+      "[1, 2] and [3]",
+      "[1, 2, 3] as one array",
+      "[1, 1], [2, 2] and [3, 3]"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "73",
+    "question": "Which source shares one execution between all subscribers by default?",
+    "options": [
+      "`http.get(url)`",
+      "A `Subject`",
+      "`interval(1000)`",
+      "`of(1, 2, 3)`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "74",
+    "question": "In a marble string for `TestScheduler`, what does the `#` character mean?",
+    "options": [
+      "The source completes",
+      "The source is unsubscribed",
+      "One frame of time passes",
+      "The source sends an error"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "75",
+    "question": "Why do tests for `debounceTime` use `TestScheduler` with `run()`?",
+    "options": [
+      "It makes `debounceTime` emit all the values at once in the test",
+      "Time is virtual, so the test does not wait in real time",
+      "It turns off the debounce logic in the tests to make them fast",
+      "It converts the Observable to a Promise so the test can use `await`"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "76",
+    "question": "Which operator makes the next notifications go through a given scheduler, such as `asyncScheduler`?",
+    "options": [
+      "`subscribeOn`",
+      "`timeout`",
+      "`delayWhen`",
+      "`observeOn`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "77",
+    "question": "In `a$.pipe(withLatestFrom(b$))`, a$ emits before b$ has emitted. What happens to that a$ value?",
+    "options": [
+      "It waits and is sent when b$ emits",
+      "It is dropped, and the stream does not emit for it",
+      "It is sent with `undefined` for b$",
+      "It is sent with `null` for b$"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "78",
+    "question": "In Angular, must you unsubscribe from `http.get()` to prevent a memory leak?",
+    "options": [
+      "Usually no, because it completes after the response",
+      "Yes, because it stays open for more responses",
+      "Yes, because Angular keeps every request in memory",
+      "No, because Angular unsubscribes it on route change"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "79",
+    "question": "Which Angular 16+ operator completes a stream when the injection context is destroyed?",
+    "options": [
+      "`takeWhileDestroyed`",
+      "`completeOnDestroy`",
+      "`untilDestroyed`",
+      "`takeUntilDestroyed`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "80",
+    "question": "A function calls `from(fetch(url))` and the request starts at once. How do you start it only on subscribe?",
+    "options": [
+      "Add `share()` after `from(...)` to delay the start of the request",
+      "Add `delay(0)` after `from(...)` to move the request to later",
+      "Use `of(fetch(url))` instead of `from` to make it lazy",
+      "Wrap it: `defer(() => from(fetch(url)))`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "81",
+    "question": "In RxJS 7, a source behind `share()` completes. Later a new subscriber joins. What happens?",
+    "options": [
+      "The new subscriber gets the last value and then completes",
+      "`share()` resets and subscribes to the source again",
+      "The new subscriber gets only a `complete` notification",
+      "`share()` throws an error because the stream is closed"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "82",
+    "question": "`shareReplay(1)` caches an HTTP call and the call fails once. What does the next new subscriber trigger in RxJS 7?",
+    "options": [
+      "The same error, replayed from the cache to the new subscriber",
+      "A new request, because the cache resets after an error",
+      "The last good value, replayed from the cache to the new subscriber",
+      "Nothing, because the stream is closed after the error"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "83",
+    "question": "A fast source overloads a slow consumer. RxJS has no pull-based backpressure. What can you do?",
+    "options": [
+      "Reduce the load with `sampleTime` or `bufferTime`",
+      "Set the `highWaterMark` option in `subscribe`",
+      "Call `request(n)` on the Subscription",
+      "Call `pause()` on the source Observable"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "84",
+    "question": "In RxJS 7 a `next` handler of one subscriber throws. What happens to other subscribers of the same Subject?",
+    "options": [
+      "They do not get the value, and the Subject errors for all of them at once",
+      "They do not get the value, but the Subject stays open for new values",
+      "The error goes to their own `error` callback, one by one",
+      "They still get the value; the error is reported later and asynchronously"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "85",
+    "question": "A `ReplaySubject()` without a size limit is an app event bus that lives all the time. What is the risk?",
+    "options": [
+      "It keeps every value in memory, so memory grows",
+      "It completes after the buffer is full",
+      "It sends old values to all subscribers a second time",
+      "It blocks `next` when the buffer is large"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "86",
+    "question": "`switchMap` cancels a running POST request when a new value arrives. What is the risk?",
+    "options": [
+      "The server rolls back the first request at once",
+      "The server can still process the first request",
+      "The first response is shown after the second",
+      "The second request is cancelled instead"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "87",
+    "question": "`concatMap` is used with a fast source and a slow inner request. What grows?",
+    "options": [
+      "An internal queue of outer values that wait for their turn",
+      "A cache of all inner results for the later subscribers of the stream",
+      "A pool of parallel requests that run together at the same time",
+      "A buffer of the values that the operator dropped on the way"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "88",
+    "question": "An `AsyncSubject` gets 1, 2, 3 by `next` but `complete` is never called. What does a subscriber get?",
+    "options": [
+      "Only the value 3",
+      "The values 1, 2 and 3",
+      "Nothing",
+      "Only the value 1"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "89",
+    "question": "In the marble string `hot('-a-^-b')`, what does the `^` character mean?",
+    "options": [
+      "The hot Observable starts to emit here",
+      "The subscription starts here, so `a` is not seen",
+      "The Observable completes at this frame",
+      "The value `a` is repeated at this frame"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "90",
+    "question": "Which scheduler runs a task in a microtask, before the next macrotask?",
+    "options": [
+      "`asyncScheduler`",
+      "`queueScheduler`",
+      "`asapScheduler`",
+      "`animationFrameScheduler`"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "91",
+    "question": "A function in `map` throws an error. What does the subscriber get?",
+    "options": [
+      "The error is thrown in the code that called `subscribe`",
+      "A `complete` notification without the error",
+      "The value is skipped and the stream continues",
+      "An `error` notification, and the stream ends"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "92",
+    "question": "In RxJS 7, which function replaces deprecated `publish()` for a manual start with `connect()`?",
+    "options": [
+      "`defer`",
+      "`multicast`",
+      "`refCount`",
+      "`connectable`"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "93",
+    "question": "A service exposes a `BehaviorSubject` as `state$.asObservable()`. What is the benefit?",
+    "options": [
+      "The Observable becomes cold for each subscriber",
+      "New subscribers do not get the current value",
+      "Outside code cannot call `next` on it",
+      "The Observable completes after each value"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "94",
+    "question": "A template uses `getData$() | async` and the method returns a new `http.get()` each call. What happens?",
+    "options": [
+      "The `async` pipe caches the first Observable and reuses it every time",
+      "Angular shows a compile error because the method returns an Observable",
+      "Only one request goes out, because the Observable is cold and lazy",
+      "Each change detection creates a new Observable and a new request"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "95",
+    "question": "Both a$ and b$ come from the same `s$`. `combineLatest([a$, b$])` emits twice for each `s$` value. Why?",
+    "options": [
+      "`combineLatest` always emits two times per input value, whatever the sources are",
+      "`s$` is hot, so it sends each value two times to every subscriber",
+      "`combineLatest` has no cache for the latest values of the sources",
+      "Each source emits on its own, and RxJS does not make this glitch-free"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "96",
+    "question": "A Subject has subscribers A and B. A calls `subject.next(2)` while it handles 1. In which order does B see the values?",
+    "options": [
+      "1 first, then 2",
+      "2 first, then 1",
+      "Only 2",
+      "Only 1"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "97",
+    "question": "What happens with `lastValueFrom(interval(1000))`?",
+    "options": [
+      "The Promise never settles, because the source never completes",
+      "The Promise resolves with 0 after one second, the first value",
+      "The Promise rejects with an `EmptyError` after the first second",
+      "The Promise resolves with the last value after ten seconds pass"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "98",
+    "question": "`takeUntil(notifier$)` is used. `notifier$` completes and never emits. What happens to the source?",
+    "options": [
+      "The source sends an error, because the notifier closed without a value",
+      "The source completes at once, because the notifier completed",
+      "The source continues, because only an emission of the notifier stops it",
+      "The source is unsubscribed, but it sends no `complete` notification"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "99",
+    "question": "Two subscribers use this stream. What is the bug?\nsrc$.pipe(scan((a, v) => { a.push(v); return a; }, []))",
+    "options": [
+      "`scan` needs `reduce` to work with arrays, so the result is wrong",
+      "`push` returns a new array, so values are lost on the next call",
+      "The seed array is shared by all subscriptions, so state leaks",
+      "The seed must be a function, or `scan` throws an error at once"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "100",
+    "question": "One inner Observable of `mergeMap` sends an error. What happens to the other active inner Observables?",
+    "options": [
+      "They are unsubscribed, and the whole stream sends the error",
+      "They continue, and only the failed one is removed from the list",
+      "They continue until they complete, and then the error is sent",
+      "They are paused until the failed one retries with a new try"
+    ],
+    "correct_index": 0
+  }
+]

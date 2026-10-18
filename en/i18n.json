@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What does the term i18n mean?",
+  "options": [
+   "Design the app so it can support many languages",
+   "Translate all app text into one new language and region",
+   "Add a menu that lets users switch the page language",
+   "Convert all dates in the app to one common format"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "2",
+  "question": "What does the term l10n mean?",
+  "options": [
+   "Design the code so it can support any locale",
+   "Adapt the app for one specific language and region",
+   "Detect the user country from the IP address",
+   "Compress the files that hold the translations"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "Which standard defines locale tags such as `en-US` and `pt-BR`?",
+  "options": [
+   "ISO 8601",
+   "RFC 3986",
+   "BCP 47",
+   "ECMA-404"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "4",
+  "question": "In the tag `pt-BR`, what does the `BR` part show?",
+  "options": [
+   "The language (Brazilian)",
+   "The script (Braille)",
+   "The variant (Brazilian dialect)",
+   "The region (Brazil)"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "5",
+  "question": "Which JavaScript object formats numbers with the rules of a locale?",
+  "options": [
+   "Intl.PluralRules",
+   "Intl.NumberFormat",
+   "Intl.ListFormat",
+   "Intl.DisplayNames"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "6",
+  "question": "What does `new Intl.NumberFormat('de-DE').format(1234.5)` return?",
+  "options": [
+   "\"1,234.5\"",
+   "\"1 234,5\"",
+   "\"1.234,5\"",
+   "\"1234,5\""
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "7",
+  "question": "Which object compares strings with the sort rules of a locale?",
+  "options": [
+   "Intl.Segmenter",
+   "Intl.DisplayNames",
+   "Intl.ListFormat",
+   "Intl.Collator"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "Which object formats dates and times for a locale?",
+  "options": [
+   "Intl.DateTimeFormat",
+   "Intl.DateFormat",
+   "Intl.Calendar",
+   "Intl.TimeFormat"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "9",
+  "question": "What does `new Intl.PluralRules('en').select(1)` return?",
+  "options": [
+   "\"singular\"",
+   "\"1\"",
+   "\"one\"",
+   "\"other\""
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "10",
+  "question": "What does `new Intl.RelativeTimeFormat('en').format(-1, 'day')` return?",
+  "options": [
+   "\"-1 days\"",
+   "\"in 1 day\"",
+   "\"yesterday\"",
+   "\"1 day ago\""
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "11",
+  "question": "What does the option `numeric: 'auto'` do in `Intl.RelativeTimeFormat`?",
+  "options": [
+   "It can show words such as \"yesterday\"",
+   "It finds the number system from the locale",
+   "It rounds the value to a whole number",
+   "It always shows Latin digits"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "12",
+  "question": "A developer writes `\"You have \" + n + \" items\"`. Why is this bad for i18n?",
+  "options": [
+   "String concatenation is slow in all modern browsers",
+   "Word order and plural forms differ in other languages",
+   "The plus operator breaks Unicode characters in strings of text",
+   "A number cannot be part of a string in JavaScript code"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "13",
+  "question": "What is a translation key?",
+  "options": [
+   "A secret token that the translation service needs",
+   "The first word of the source text in English",
+   "The hash of a locale file stored on the server",
+   "An identifier that code uses to find the text"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "14",
+  "question": "What is a fallback locale?",
+  "options": [
+   "The locale the app uses when a translation is missing",
+   "The locale that the user selects on the first visit to the app",
+   "The locale of the server that runs the app",
+   "The locale that has the most translated keys"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "15",
+  "question": "Which HTML attribute sets the language of a page?",
+  "options": [
+   "`locale` on the `<body>` element",
+   "`lang` on the `<html>` element",
+   "`hreflang` on the `<html>` element",
+   "`language` on the `<head>` element"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "16",
+  "question": "Which attribute sets the text direction to right-to-left?",
+  "options": [
+   "`align=\"right\"`",
+   "`lang=\"rtl\"`",
+   "`dir=\"rtl\"`",
+   "`writing=\"rtl\"`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "17",
+  "question": "Which pair of languages is normally written right-to-left?",
+  "options": [
+   "Arabic and Hebrew",
+   "Chinese and Japanese",
+   "Hindi and Thai",
+   "Greek and Russian"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "18",
+  "question": "Which CSS property is the logical version of `margin-left` in a left-to-right page?",
+  "options": [
+   "`margin-block-start`",
+   "`margin-inline-start`",
+   "`margin-left-start`",
+   "`margin-direction`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "19",
+  "question": "What does the term \"text expansion\" mean in localization?",
+  "options": [
+   "The font size grows when the user zooms the page in the browser",
+   "The translation file gets bigger over time",
+   "Translated text is often longer than the source text",
+   "Long words are cut after the first line"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "20",
+  "question": "What does `new Intl.ListFormat('en').format(['A', 'B', 'C'])` return?",
+  "options": [
+   "\"A, B, C\"",
+   "\"A, B and C\"",
+   "\"A, B, and C\"",
+   "\"A and B and C\""
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "21",
+  "question": "What is the purpose of the `hreflang` annotation?",
+  "options": [
+   "It sets the language of the text on the page",
+   "It tells search engines about other language versions",
+   "It tells the browser which font to load for each language",
+   "It sends the user to a page in a local language"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "22",
+  "question": "What is ICU message format used for?",
+  "options": [
+   "To compress translation files for faster download over a network",
+   "To store the locale of a user in a browser cookie",
+   "To write messages with placeholders and plural rules",
+   "To convert dates between two different time zones"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "23",
+  "question": "In the ICU message `Hello, {name}`, what is `{name}`?",
+  "options": [
+   "A comment that the translators must remove before release",
+   "A key that the app looks up in a locale file",
+   "A tag that makes the text of the message bold",
+   "A placeholder that the app replaces at run time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "Which library gives the React components `FormattedMessage` and `FormattedDate`?",
+  "options": [
+   "react-intl",
+   "react-i18next",
+   "Lingui",
+   "Globalize"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "25",
+  "question": "In i18next, which function returns the translated string for a key?",
+  "options": [
+   "`i18n.read('key')`",
+   "`i18next.string('key')`",
+   "`t('key')`",
+   "`locale.get('key')`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "26",
+  "question": "Which attribute marks text in an Angular template for the built-in i18n?",
+  "options": [
+   "`translate`",
+   "`i18n-text`",
+   "`ng-lang`",
+   "`i18n`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "27",
+  "question": "Why should developers not hard-code visible text in components?",
+  "options": [
+   "The text cannot be translated without a code change",
+   "The browser cannot cache text that is in components",
+   "The text is not safe against XSS attacks in the page",
+   "The build tool removes the text from the final bundle"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "28",
+  "question": "Which browser property returns the preferred language of the user?",
+  "options": [
+   "`window.locale`",
+   "`navigator.language`",
+   "`document.language`",
+   "`navigator.region`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "29",
+  "question": "What does `navigator.languages` contain?",
+  "options": [
+   "All languages that the browser can show to the user",
+   "The languages of the links that are on the page",
+   "The languages of the fonts installed on the system",
+   "An ordered list of the user's preferred languages"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "Which HTTP request header sends the preferred languages of the browser?",
+  "options": [
+   "`Accept-Language`",
+   "`Content-Language`",
+   "`Accept-Charset`",
+   "`X-Locale`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "31",
+  "question": "What does `new Intl.NumberFormat('en-US', { style: 'currency', currency: 'EUR' }).format(5)` return?",
+  "options": [
+   "\"EUR 5\"",
+   "\"€5.00\"",
+   "\"$5.00\"",
+   "\"5.00 €\""
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "32",
+  "question": "When should an app format a date for the user?",
+  "options": [
+   "When the app saves the date in the database",
+   "When the API creates the JSON response",
+   "At display time, in the UI layer",
+   "When the server starts"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "33",
+  "question": "Why is a country flag a poor icon for a language switcher?",
+  "options": [
+   "A flag shows a country, not a language",
+   "A flag image is too big for a small menu on mobile",
+   "A flag looks different in each of the major browsers",
+   "A flag cannot be read by a screen reader at all"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "34",
+  "question": "What is pseudo-localization?",
+  "options": [
+   "A tool that translates all text with machine learning",
+   "A test mode that makes text longer and accented",
+   "A method that hides the text of unfinished locales",
+   "A format for locale files that contain only fake keys"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "35",
+  "question": "What is a locale resource file (bundle)?",
+  "options": [
+   "A file with CSS rules that are made for one locale",
+   "A file with the code of a language runtime in it",
+   "A file with keys and text for one locale",
+   "A file with the fonts that one locale needs to use"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "36",
+  "question": "What does `Intl.DateTimeFormat().resolvedOptions().timeZone` return?",
+  "options": [
+   "The UTC offset of the user in minutes, such as 120",
+   "The time zone of the server that sent this page",
+   "The abbreviation of the time zone, such as \"EET\"",
+   "The IANA time zone name, such as \"Europe/Kyiv\""
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "37",
+  "question": "Which translation key is the best for a Pay button in a checkout page?",
+  "options": [
+   "`blueButtonOnRight`",
+   "`checkout.payButton`",
+   "`generic.button.text`",
+   "`k_4821_checkout`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "38",
+  "question": "What does `new Intl.DisplayNames(['en'], { type: 'region' }).of('UA')` return?",
+  "options": [
+   "\"UA\"",
+   "\"Ukrainian\"",
+   "\"Ukraine\"",
+   "\"UKR\""
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "39",
+  "question": "Why is `names.sort((a, b) => a < b ? -1 : 1)` a poor way to sort names for users?",
+  "options": [
+   "The operator `<` is too slow when the names are long",
+   "The operator `<` changes the case of the letters in names",
+   "The operator `<` fails with names that are not Latin text",
+   "The operator `<` compares code units, so accents sort wrong"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "40",
+  "question": "What locale does `date.toLocaleDateString()` use when you give no argument?",
+  "options": [
+   "The default locale of the runtime",
+   "Always `en-US`",
+   "The language of the HTML page",
+   "The locale of the server"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "41",
+  "question": "Why is the date \"03/04/2025\" a risk in an international app?",
+  "options": [
+   "Slashes are not allowed in date strings in JSON",
+   "The year is not complete, and has two digits only",
+   "Some users read it as 4 March, others as 3 April",
+   "The browser cannot parse this date format at all"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "42",
+  "question": "Which URL design is best for SEO of language versions?",
+  "options": [
+   "One URL that changes the language with a user cookie value",
+   "One URL that changes the language with a `localStorage` flag",
+   "One URL with the language stored in the hash fragment",
+   "A separate URL for each language, such as `/de/` paths"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "Which package gives the `useTranslation` hook?",
+  "options": [
+   "react-i18next",
+   "i18next-react",
+   "react-intl",
+   "@i18next/hooks"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "44",
+  "question": "Which component of react-intl shows a translated message in JSX?",
+  "options": [
+   "`IntlText`",
+   "`FormattedMessage`",
+   "`Translate`",
+   "`I18nString`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "45",
+  "question": "What is the default placeholder syntax in i18next strings?",
+  "options": [
+   "`{name}`",
+   "`%s`",
+   "`${name}`",
+   "`{{name}}`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "46",
+  "question": "Which tag is a valid BCP 47 language tag?",
+  "options": [
+   "`en-US`",
+   "`en_US`",
+   "`english-US`",
+   "`en/US`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "47",
+  "question": "Which ICU keyword picks a text by a string value, such as gender?",
+  "options": [
+   "`plural`",
+   "`select`",
+   "`switch`",
+   "`case`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "48",
+  "question": "Which character encoding should a multilingual web page use?",
+  "options": [
+   "ASCII",
+   "ISO-8859-1",
+   "UTF-8",
+   "Windows-1252"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "49",
+  "question": "Why is text inside an image a problem for i18n?",
+  "options": [
+   "Translators cannot edit it as text",
+   "Images cannot show non-Latin letters in all browsers",
+   "Images are never cached by the browser at all",
+   "Image text is always too small on a mobile screen"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "50",
+  "question": "What does \"locale negotiation\" mean?",
+  "options": [
+   "The app asks the user to confirm each new locale before use",
+   "The app picks the best locale from the user's preferences",
+   "The server and the client agree on one text encoding for a page",
+   "The translators and developers agree on the key names"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "51",
+  "question": "Which plural categories does CLDR define for Polish integers?",
+  "options": [
+   "one, few, many, other",
+   "one, other",
+   "one, two, other",
+   "zero, one, two, few, many, other"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "52",
+  "question": "How many plural categories does Arabic have in CLDR?",
+  "options": [
+   "Two",
+   "Six",
+   "Three",
+   "Four"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "53",
+  "question": "A developer writes `n === 1 ? 'item' : 'items'`. What is the main risk?",
+  "options": [
+   "The code throws an error when the value of `n` is zero",
+   "The code gives wrong results for numbers above one million",
+   "Many languages have more than two plural forms",
+   "The code cannot be tested"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "54",
+  "question": "In the ICU message `{count, plural, one {# file} other {# files}}`, what does `#` show?",
+  "options": [
+   "The text \"#\" with no change in the output",
+   "The index of the matched plural category",
+   "The count of all plural options in the message",
+   "The number, formatted for the locale"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "55",
+  "question": "In an ICU plural message, what does `=0 {No files}` do?",
+  "options": [
+   "It matches all values that are smaller than 1, including negatives",
+   "It matches the exact value 0 before the category rules",
+   "It sets the default text for each language in the whole file",
+   "It adds the new category `zero` to the plural rules of English"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "56",
+  "question": "What does `new Intl.PluralRules('ru').select(2)` return?",
+  "options": [
+   "\"other\"",
+   "\"two\"",
+   "\"few\"",
+   "\"many\""
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "What does `new Intl.PluralRules('en', { type: 'ordinal' }).select(2)` return?",
+  "options": [
+   "\"few\"",
+   "\"other\"",
+   "\"one\"",
+   "\"two\""
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "58",
+  "question": "A user in New York sees 12/31/2024 for `new Intl.DateTimeFormat('en-US').format(new Date('2025-01-01'))`. Why?",
+  "options": [
+   "The date string is parsed as UTC, shown in the local zone",
+   "The locale `en-US` puts the day before the month",
+   "The month in the date string is counted from zero",
+   "`Intl.DateTimeFormat` uses the wrong locale by default"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "59",
+  "question": "Which icon must the app mirror in a right-to-left layout?",
+  "options": [
+   "A clock face",
+   "A check mark",
+   "A \"back\" arrow",
+   "A company logo"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "60",
+  "question": "The page is left-to-right but shows Arabic user names. Which element isolates the direction of each name?",
+  "options": [
+   "`<bdo>`",
+   "`<wbr>`",
+   "`<rtl>`",
+   "`<bdi>`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "61",
+  "question": "Which value of `text-align` follows the direction of the page?",
+  "options": [
+   "`start`",
+   "`left`",
+   "`justify`",
+   "`initial`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "62",
+  "question": "A flex row has `dir=\"rtl\"` on the page. Where does the first item go?",
+  "options": [
+   "At the left side",
+   "At the right side",
+   "In the center",
+   "At the left, because flex uses physical sides"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "63",
+  "question": "Page A has `hreflang` links to page B, but page B has no link back. What happens?",
+  "options": [
+   "Search engines remove page B from the index",
+   "Search engines show page A in all languages",
+   "The browser shows a warning to the user",
+   "Search engines can ignore the annotation"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "64",
+  "question": "What does the value `x-default` mean in `hreflang`?",
+  "options": [
+   "The fallback page for users with no matching version",
+   "The version in the original language of the site",
+   "The page that search engines must index first",
+   "The page for users who do not have JavaScript on"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "65",
+  "question": "Which way is best to load locale files for a large app?",
+  "options": [
+   "Import all locale files in the entry file",
+   "Use dynamic `import()` for the needed locale",
+   "Fetch all locale files in parallel at the start",
+   "Put all locales in the HTML of each page"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "66",
+  "question": "What is the purpose of namespaces in i18next?",
+  "options": [
+   "To keep two copies of the same key in one resource file",
+   "To set a different language for each group of users in the app",
+   "To split translations into groups that load apart",
+   "To protect the keys from a change made by the translators"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "What does `t('missing.key')` return in i18next when the key does not exist?",
+  "options": [
+   "The key itself",
+   "An empty string",
+   "`undefined`",
+   "It throws an error"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "68",
+  "question": "In i18next v21 or newer with JSON v4, how do you write plural forms of the key `item`?",
+  "options": [
+   "`item.one` and `item.other`",
+   "`item_one` and `item_other`",
+   "`item` and `item_plural`",
+   "`item[1]` and `item[n]`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "69",
+  "question": "You need translated text for an `aria-label` attribute in react-intl. What do you use?",
+  "options": [
+   "`<FormattedMessage>` inside the attribute",
+   "`<FormattedHTMLMessage>` in the template",
+   "`intl.formatMessage()` from `useIntl`",
+   "`injectString()` in the component"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "70",
+  "question": "What does the command `formatjs extract` do?",
+  "options": [
+   "It translates the messages with an online service",
+   "It removes the unused locale files from a project",
+   "It compiles all locale files into one single bundle",
+   "It collects messages and their IDs from the code"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "71",
+  "question": "How does the built-in i18n of Angular apply translations by default?",
+  "options": [
+   "At run time, with a pipe in each template",
+   "At build time, with one app build for each locale",
+   "In the browser, with the `Accept-Language` header",
+   "On the server, with a middleware"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "72",
+  "question": "Which API marks a text in TypeScript code for Angular built-in i18n?",
+  "options": [
+   "`@Translate()`",
+   "`i18n()`",
+   "`$localize`",
+   "`translate.instant()`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "A message is split in three keys: \"Click\", a link \"here\", and \"to continue\". What is the main problem?",
+  "options": [
+   "The link cannot get an `href` attribute inside the sentence text",
+   "The three keys use more memory in the tab of the browser app",
+   "Screen readers read the link two times in a row to the user",
+   "Translators lose context and cannot change word order"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "74",
+  "question": "A user in Germany pays in USD. What decides the currency symbol in `Intl.NumberFormat`?",
+  "options": [
+   "The `currency` option",
+   "The `locale` argument",
+   "The IP address of the user",
+   "The language of the browser"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "A German user types \"1.234,56\". Why does `parseFloat('1.234,56')` return 1.234?",
+  "options": [
+   "It removes the dot and rounds the value up",
+   "It reads the string with the `en-US` rules and rounds",
+   "It accepts only a dot as the decimal mark",
+   "It cannot read strings that have more than five digits"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "Which date format should two systems use in an API?",
+  "options": [
+   "The locale format of the sender",
+   "The locale format of the receiver",
+   "The format of the server database",
+   "ISO 8601, with a UTC time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "77",
+  "question": "What does `['z', 'ä', 'a'].sort()` return?",
+  "options": [
+   "`['a', 'z', 'ä']`",
+   "`['a', 'ä', 'z']`",
+   "`['ä', 'a', 'z']`",
+   "`['z', 'ä', 'a']`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "78",
+  "question": "What does the option `numeric: true` do in `Intl.Collator`?",
+  "options": [
+   "It removes all digits from the compared strings",
+   "It compares digit sequences as numbers",
+   "It sorts only the strings that contain digits",
+   "It shows digits in the numbering system of the locale"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "A table renders 10,000 rows and calls `new Intl.NumberFormat(...)` in each row. What is the best fix?",
+  "options": [
+   "Use `toString()` instead of the formatter",
+   "Call the formatter in a web worker",
+   "Cache the formatted string in `localStorage`",
+   "Create the formatter once and reuse it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "80",
+  "question": "A button says \"Post\". What helps the translators most?",
+  "options": [
+   "A description or context note for the key",
+   "A shorter and simpler name for the key",
+   "A longer English text for the button label",
+   "The text of the label in capital letters only"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "81",
+  "question": "What does the extension `-u-nu-latn` do in `new Intl.NumberFormat('ar-EG-u-nu-latn')`?",
+  "options": [
+   "It sets the numbering system to Latin digits",
+   "It sets the script of the text to Latin",
+   "It changes the language to Latin",
+   "It sets the number of fraction digits"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "82",
+  "question": "Which fallback chain is the standard truncation for the tag `zh-Hant-TW`?",
+  "options": [
+   "`zh-Hant-TW`, `zh`, `zh-Hant`, then the default",
+   "`zh-Hant-TW`, `zh-Hant`, `zh`, then the default",
+   "`zh-Hant-TW`, `zh-Hans`, `zh`, then the default",
+   "`zh-Hant-TW`, `en`, `zh`, then the default"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "An SSR app shows a hydration warning for dates. The server uses a different default locale and time zone. What is the best fix?",
+  "options": [
+   "Format the dates only on the server and never on the client",
+   "Disable the hydration check for the date elements",
+   "Pass the same explicit `locale` and `timeZone`",
+   "Use `Date.now()` as the formatted value of the date"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "84",
+  "question": "You cut user text at 20 characters with `slice(0, 20)`, and some emoji break. Which API fixes this?",
+  "options": [
+   "`String.prototype.normalize` with the form `NFC`",
+   "`Array.from` on the string before the cut",
+   "`TextEncoder` with the encoding UTF-8",
+   "`Intl.Segmenter` with grapheme granularity"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "A search for \"café\" fails for text from another system. What is the likely cause?",
+  "options": [
+   "The search is case sensitive by default in the app",
+   "The strings use different Unicode composition forms",
+   "The browser removes accents from the input fields",
+   "The other system uses UTF-16, and the app uses UTF-8"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "86",
+  "question": "In the `tr` locale, the app uppercases \"i\" with `toUpperCase()` and gets \"I\". What is the problem?",
+  "options": [
+   "Turkish has no uppercase letters; skip the call",
+   "The text needs `normalize('NFD')` first; then retry",
+   "Turkish needs \"İ\"; use `toLocaleUpperCase('tr')`",
+   "The method needs a locale in `toUpperCase('tr')`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "87",
+  "question": "Why do teams precompile ICU messages to an AST with FormatJS?",
+  "options": [
+   "The messages become valid for all locales at the same time",
+   "The translators can no longer change the text of the messages",
+   "The messages no longer need any plural rules for translation",
+   "The app does not parse message strings at run time"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "88",
+  "question": "Which category is required in every ICU plural message?",
+  "options": [
+   "`other`",
+   "`one`",
+   "`zero`",
+   "`many`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "89",
+  "question": "How many fraction digits does `Intl.NumberFormat` show by default for the currency JPY?",
+  "options": [
+   "Two, because all currencies use cents",
+   "Zero or two, as the locale decides",
+   "Zero, because the currency sets the default",
+   "Three, because JPY has a small value"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "90",
+  "question": "Which CSS rule does NOT flip by itself when the page changes to `dir=\"rtl\"`?",
+  "options": [
+   "`text-align: start`",
+   "`margin-inline-start: 8px`",
+   "`flex-direction: row`",
+   "`transform: translateX(10px)`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "91",
+  "question": "A server sends different HTML for one URL by `Accept-Language`. What is the main risk?",
+  "options": [
+   "A cache can send the wrong language; crawlers see one",
+   "The browser cannot read the response of the server",
+   "The extra header makes each request much slower",
+   "The URL fails the `hreflang` check on mobile devices"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "92",
+  "question": "A team sets the canonical link of every translated page to the English page. What is the effect?",
+  "options": [
+   "Search engines rank all pages higher",
+   "Search engines can ignore the translated pages",
+   "Search engines merge all languages in one result",
+   "Search engines show the English page only to users in English"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "93",
+  "question": "A lazy-loaded locale makes users see raw keys for a short time. What is the best fix?",
+  "options": [
+   "Bundle all locales in the entry file of the app",
+   "Show an empty page until the user scrolls down",
+   "Use the keys as the visible text of the interface",
+   "Wait for the locale bundle before the first render"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "94",
+  "question": "What is a drawback of using the English sentence as the translation key?",
+  "options": [
+   "A change in English text breaks links to old translations",
+   "The English sentence cannot contain any ICU placeholders at all",
+   "The keys are too short to be unique in a large project file",
+   "The translation tool cannot read keys with spaces in them"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "95",
+  "question": "Why do many react-i18next apps set `escapeValue: false`?",
+  "options": [
+   "i18next cannot escape text that is not Latin",
+   "React already escapes the output of values",
+   "The option is faster than the default setting",
+   "Escaped values break the plural rules of i18next"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "96",
+  "question": "A developer writes `intl.formatMessage({ defaultMessage: 'Hi ' + name })`. What is the risk?",
+  "options": [
+   "The message is cached with a wrong locale in the memory of the app",
+   "The name is shown in the default language only",
+   "A name with `{` or `<` is read as syntax and can throw",
+   "The IDs of the messages are no longer unique in the same file"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "An app saves a future meeting at 09:00 local time. What must it store?",
+  "options": [
+   "The local time and the IANA time zone ID",
+   "The UTC offset at the time of saving",
+   "The local time as a Unix timestamp",
+   "The local time and the language of the user"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "98",
+  "question": "Why does `new Date(2025, 0, 1).toLocaleDateString('th-TH')` show the year 2568?",
+  "options": [
+   "The runtime adds 543 years to the year by mistake in the code",
+   "The locale `th-TH` uses the Buddhist calendar by default",
+   "The Date object stores the year in a Thai format by default",
+   "The year 2025 is in the wrong time zone for users in Thailand"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "99",
+  "question": "Which ICU keyword picks a text for ordinal numbers, such as 1st and 2nd?",
+  "options": [
+   "`ordinal`",
+   "`selectordinal`",
+   "`plural`",
+   "`ordinal-plural`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "100",
+  "question": "What does `new Intl.PluralRules('en').select(1.5)` return?",
+  "options": [
+   "\"one\"",
+   "\"few\"",
+   "\"many\"",
+   "\"other\""
+  ],
+  "correct_index": 3
+ }
+]

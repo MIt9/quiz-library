@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "What does the abbreviation CLS mean in web performance?",
+  "options": [
+   "Cumulative Load Speed",
+   "Cumulative Layout Shift",
+   "Content Layout Size",
+   "Critical Layout Stability Score"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "2",
+  "question": "What does CLS measure?",
+  "options": [
+   "How much visible content moves without a user action",
+   "How fast the largest visible element appears on the screen",
+   "How fast the page reacts to a user click on a button",
+   "How many bytes the page loads before it is ready to use"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "3",
+  "question": "What is a good CLS value at the 75th percentile?",
+  "options": [
+   "0.25 or less",
+   "0.5 or less",
+   "0.1 or less",
+   "0.05 or less"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "4",
+  "question": "Which CLS value range is rated poor?",
+  "options": [
+   "Above 0.5 only",
+   "Above 0.25",
+   "Between 0.1 and 0.25",
+   "Between 0.05 and 0.1"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "5",
+  "question": "In which unit is a CLS score given?",
+  "options": [
+   "Milliseconds",
+   "Pixels per frame",
+   "It has no unit",
+   "Percent of the viewport"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "6",
+  "question": "How does the browser calculate the score of one layout shift?",
+  "options": [
+   "Impact fraction multiplied by distance fraction",
+   "Impact fraction added to distance fraction and halved",
+   "Impact fraction divided by distance fraction",
+   "Shifted pixels multiplied by shift time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "7",
+  "question": "What does the impact fraction of a layout shift show?",
+  "options": [
+   "The page height that loads after first paint",
+   "The share of images that have no set size",
+   "The load time that the shifts use up",
+   "The viewport area that moved elements cover"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "Which move does the distance fraction use?",
+  "options": [
+   "The greatest move of any unstable element",
+   "The sum of the moves of all unstable elements",
+   "The average vertical move of all page elements",
+   "The vertical move of the first unstable element"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "9",
+  "question": "An img tag has no width and no height. What can happen when the image loads?",
+  "options": [
+   "The image shows in low quality until the full file arrives",
+   "The content below moves down and adds to CLS",
+   "The browser blocks the first paint until the image loads",
+   "The image loads twice from the network, once per size"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "10",
+  "question": "Which HTML change helps the browser reserve space for an image before it loads?",
+  "options": [
+   "Add an alt attribute to the image",
+   "Add width and height attributes",
+   "Add decoding=\"async\" to the image",
+   "Add fetchpriority=\"high\" to the image"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "11",
+  "question": "Which CSS property sets a preferred width-to-height ratio for a box?",
+  "options": [
+   "object-position",
+   "box-sizing",
+   "aspect-ratio",
+   "line-height"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "12",
+  "question": "Which font behavior often causes a layout shift?",
+  "options": [
+   "A font file uses the WOFF2 compression format",
+   "A font file comes from a CDN on another domain",
+   "A font file has a long cache time in the browser",
+   "A web font replaces a fallback font"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "13",
+  "question": "Which kind of animation does not cause layout shifts?",
+  "options": [
+   "Animation of transform",
+   "Animation of top and left",
+   "Animation of margin and padding",
+   "Animation of height and width"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "14",
+  "question": "Which source gives CLS data from real Chrome users?",
+  "options": [
+   "The Chrome UX Report (CrUX)",
+   "A Lighthouse run on a laptop",
+   "The DevTools Performance panel",
+   "A WebPageTest run with throttling"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "15",
+  "question": "Which of these tools gives lab data for CLS?",
+  "options": [
+   "Lighthouse",
+   "The CrUX dataset",
+   "The Search Console Core Web Vitals report",
+   "The web-vitals library in production"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "Which Core Web Vitals metric measures visual stability?",
+  "options": [
+   "LCP",
+   "INP",
+   "CLS",
+   "TTFB"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "17",
+  "question": "A late ad pushes the article text down. What is the best fix?",
+  "options": [
+   "Load the ad script with the defer attribute",
+   "Compress the images of the ad",
+   "Load the article text with lazy loading",
+   "Reserve a slot with a fixed min-height"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "18",
+  "question": "A cookie banner pushes the page down when it appears. What is a good fix?",
+  "options": [
+   "Load its script with the async attribute and a priority hint",
+   "Show it as an overlay with position: fixed",
+   "Move its script to the top of the head element and inline it",
+   "Show it two seconds after the page finishes the load event"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "19",
+  "question": "A user scrolls the page, and the content moves on the screen. Is this a layout shift?",
+  "options": [
+   "Yes, every move of content is counted",
+   "No, scroll movement is not counted",
+   "Yes, but only on mobile devices",
+   "Yes, but only when the scroll is fast"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "A user taps a button, and a menu opens 100 ms later. Does the shift count in CLS?",
+  "options": [
+   "Yes, all shifts count in the same way, with or without input",
+   "Yes, but only the shifts of the button itself count",
+   "No, shifts right after user input are excluded",
+   "No, but only if the menu is a modal dialog box"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "21",
+  "question": "Which browser API gives layout shift entries to JavaScript?",
+  "options": [
+   "IntersectionObserver",
+   "ResizeObserver",
+   "MutationObserver",
+   "PerformanceObserver"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "22",
+  "question": "Which library helps to collect Core Web Vitals from real users?",
+  "options": [
+   "lighthouse-ci",
+   "core-js",
+   "web-vitals",
+   "perf-hooks"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "23",
+  "question": "Which DevTools option shows the areas that moved in a layout shift?",
+  "options": [
+   "Paint flashing for repainted areas",
+   "Layer borders for compositor layers",
+   "The FPS meter for frame rate drops",
+   "Layout Shift Regions"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "24",
+  "question": "A fade-in animation changes only the opacity of a banner. Does it cause a layout shift?",
+  "options": [
+   "No, opacity does not change the layout",
+   "Yes, because the banner changes during the animation",
+   "Yes, because opacity forces the browser to paint again",
+   "No, but only if the animation is shorter than 500 ms"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "25",
+  "question": "What does font-display: swap do?",
+  "options": [
+   "Hides the text until the web font loads",
+   "Never replaces the fallback font on screen",
+   "Uses the web font only if it is in the cache",
+   "Shows the fallback first, then the web font"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "26",
+  "question": "A script adds a news bar above the article after the page loads. What is the result?",
+  "options": [
+   "The article stays, as the bar is a new element",
+   "The page reloads to fix the layout",
+   "The article moves down and CLS increases",
+   "Only the news bar counts as unstable"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "27",
+  "question": "Why do you set width and height on an embedded iframe?",
+  "options": [
+   "The embed loads faster when it has a fixed size in the page",
+   "The browser reserves space before the embed loads",
+   "The embed gets a higher priority on the network queue",
+   "The embed cannot use the styles of the page around it"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "28",
+  "question": "An img has width and height attributes and the CSS rule height: auto. What does the browser do?",
+  "options": [
+   "It ignores the attributes and waits for the image file",
+   "It keeps the ratio of the attributes when it scales",
+   "It stretches the image to the full attribute height",
+   "It crops the image to the size of the attributes"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "29",
+  "question": "A banner at the top is removed, and the content below moves up. Does this count as a layout shift?",
+  "options": [
+   "No, CLS counts only moves in the down direction",
+   "No, CLS counts only elements that the page adds",
+   "Yes, any move of a visible element counts",
+   "Yes, but only if the user did not click the banner"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "30",
+  "question": "A modal opens above the page with position: fixed. Does it add to CLS?",
+  "options": [
+   "Yes, because the modal is a new element in the page tree",
+   "Yes, because it covers the page content under it",
+   "No, but only if the modal has an animation on open",
+   "No, other elements do not change their position"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "31",
+  "question": "What is the main CLS purpose of a skeleton screen?",
+  "options": [
+   "It reserves space of the size of the final content",
+   "It makes the server respond faster to the page request",
+   "It lowers the size of the JavaScript bundle for the page",
+   "It hides slow network calls from the user with a spinner"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "32",
+  "question": "A comments block loads after a fetch call. Which CSS reserves space for it?",
+  "options": [
+   "z-index",
+   "overflow: hidden",
+   "display: contents",
+   "min-height"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "33",
+  "question": "What does the value property of a layout-shift entry hold?",
+  "options": [
+   "The score of that one shift",
+   "The total CLS of the page",
+   "The time of the shift in milliseconds",
+   "The number of elements that moved"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "34",
+  "question": "Which Lighthouse audit lists elements that cause large shifts?",
+  "options": [
+   "Reduce unused JavaScript",
+   "Serve images in next-gen formats",
+   "Avoid large layout shifts",
+   "Eliminate render-blocking resources"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "Images use loading=\"lazy\" and have no width or height. What can happen when the user scrolls?",
+  "options": [
+   "Images never load below the first screen of the page",
+   "Loaded images push visible content and add CLS",
+   "The browser loads all images at once without waiting",
+   "The browser removes the images from the layout flow"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "36",
+  "question": "A font preload link needs which attribute, even for a file from the same origin?",
+  "options": [
+   "integrity",
+   "crossorigin",
+   "referrerpolicy",
+   "nomodule"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "37",
+  "question": "Does CLS count only the shifts during the first page load?",
+  "options": [
+   "Yes, it stops at the load event of the page",
+   "Yes, it stops at the first paint of the page",
+   "No, it counts shifts during the whole visit",
+   "No, it counts only shifts that happen after a click"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "38",
+  "question": "Which percentile of page loads does the Core Web Vitals check use for CLS?",
+  "options": [
+   "The 50th percentile (median)",
+   "The 90th percentile of all loads",
+   "The 99th percentile of all loads",
+   "The 75th percentile"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "How does the CLS check treat mobile and desktop visits?",
+  "options": [
+   "It reports them as separate groups",
+   "It mixes them into one single score",
+   "It uses only the mobile visits",
+   "It uses only the desktop visits"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "40",
+  "question": "A page renders an empty container, and JavaScript fills it later. What is the risk?",
+  "options": [
+   "The content below moves when the container fills",
+   "The browser blocks the first paint of the page until it fills",
+   "The container loses all of its CSS styles after the fill",
+   "The container is never visible to the users of the page"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "41",
+  "question": "An icon font loads late, and the icons appear after the text. Which fix helps?",
+  "options": [
+   "Load the icon font with a lower network priority",
+   "Give the icon box a fixed width and height",
+   "Increase the icon font size in the CSS of the page",
+   "Add a longer cache time for the icon font file"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "42",
+  "question": "Why is a high CLS bad for users?",
+  "options": [
+   "Users must wait longer for the first byte of data",
+   "Users get less content from the web server",
+   "Users cannot scroll the page to the end",
+   "Users can tap the wrong item when content moves"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "43",
+  "question": "Which property of a layout-shift entry lists the elements that moved?",
+  "options": [
+   "targets",
+   "nodes",
+   "sources",
+   "elements"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "44",
+  "question": "Why does the web-vitals library report the final CLS late?",
+  "options": [
+   "The server must confirm the score before the report",
+   "The score needs a reload of the page to be final",
+   "CLS can still grow until the page is hidden",
+   "The browser needs time to compute the score of each shift"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "A CMS shows images of many sizes. How do you set their dimensions?",
+  "options": [
+   "Set the same fixed size for all images in one CSS rule",
+   "Let the browser read the size from the file name of the image",
+   "Set the size with JavaScript after the load event of the page",
+   "Save the image size in the CMS and print it in the tag"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "46",
+  "question": "Card images have different ratios. Which CSS keeps all cards at a stable height?",
+  "options": [
+   "height: auto with object-fit: fill",
+   "max-width: 100% with display: inline",
+   "width: auto with object-fit: none",
+   "aspect-ratio with object-fit: cover"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "47",
+  "question": "An infinite list loads more items. Which method gives no shift of the current items?",
+  "options": [
+   "Insert the new items above the current items",
+   "Append the new items below the current items",
+   "Replace the whole list with the new items",
+   "Insert the new items in the middle of the list"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "48",
+  "question": "A page loads in one second. Can it still have a poor CLS?",
+  "options": [
+   "Yes, CLS measures stability and not speed",
+   "No, a fast page has no shifts at all in any case",
+   "No, CLS depends only on the load time of the page",
+   "Yes, but only on slow networks and old devices"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "49",
+  "question": "Why is a late ad a common source of CLS?",
+  "options": [
+   "Ad scripts always block the first paint of the whole page",
+   "Its size is often unknown until the late request ends",
+   "Ads use more memory than the other page elements",
+   "Ad networks change the font of the page text"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "50",
+  "question": "A video element has no size and no poster image. What can happen when its metadata loads?",
+  "options": [
+   "The box grows and moves the content below",
+   "The video starts to play at once with sound",
+   "The browser blocks all of the other images",
+   "The video loses its audio track after the load"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "51",
+  "question": "An element covers the top 50% of a tall viewport. It moves down by 25% of the viewport height. What is the score?",
+  "options": [
+   "0.125",
+   "0.09375",
+   "0.1875",
+   "0.25"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "52",
+  "question": "The viewport is 1000 px wide and 600 px high. Content moves 100 px down. What is the distance fraction?",
+  "options": [
+   "0.167",
+   "0.6",
+   "0.1",
+   "1.0"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "53",
+  "question": "Shifts of 0.04, 0.05 and 0.06 occur in 1 s. Eight seconds later, one shift of 0.12 occurs. What is the CLS?",
+  "options": [
+   "0.27, the sum of all shifts",
+   "0.12, the last shift only",
+   "0.06, the average window",
+   "0.15, the worst window"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "54",
+  "question": "What do previousRect and currentRect show in a layout shift source?",
+  "options": [
+   "The box of the viewport before and after the shift",
+   "The box of the parent before and after the load",
+   "The box of the element in two different viewports",
+   "The box of the element before and after the shift"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "55",
+  "question": "Why did Chrome change CLS from one total sum to session windows?",
+  "options": [
+   "The sum was not fair for pages that stay open",
+   "The sum was too slow to compute in the browser",
+   "The sum counted shifts that users caused",
+   "The sum did not include the shifts of images"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "You build field CLS with a PerformanceObserver. Which check do you add to follow the CLS rules for user input?",
+  "options": [
+   "Skip entries where value is less than 0.1",
+   "Skip entries that happen after five seconds",
+   "Skip entries where hadRecentInput is true",
+   "Skip entries that have more than one source"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "A banner uses the keyframe from margin-top: -50px to margin-top: 0 on load. What is the problem and the fix?",
+  "options": [
+   "It repaints only; add animation-fill-mode: both",
+   "It moves the content below it; add will-change: margin-top",
+   "It is safe, because CSS animations never change the layout",
+   "It moves the content below it; use transform: translateY"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "58",
+  "question": "A user clicks Load more, and the fetch takes 1.2 s. Then new items push the footer. Does this shift count?",
+  "options": [
+   "Yes, it happens more than 500 ms after the click",
+   "No, every shift after a click is excluded for the visit",
+   "No, the footer is not the element that the user clicked",
+   "Yes, but only if the footer was not visible before"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "59",
+  "question": "A script adds a 600 px block at the page bottom, far below the viewport. What is the effect on CLS?",
+  "options": [
+   "The score grows by the height of the block",
+   "The score grows by the change of the page height",
+   "None, because no visible element moves",
+   "The score grows only on mobile devices"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "60",
+  "question": "Which @font-face descriptors adjust the fallback font to match the web font?",
+  "options": [
+   "font-size-adjust, line-gap and font-stretch",
+   "size-adjust, ascent-override and descent-override",
+   "unicode-range, font-variant and font-feature-settings",
+   "font-display, src and font-style"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "61",
+  "question": "Which font-display value removes shifts from font swap, but can skip the web font on the first visit?",
+  "options": [
+   "swap, with no limit on the swap period",
+   "optional, with a very short block period",
+   "block, with a long invisible text period",
+   "fallback, with a short block period"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "62",
+  "question": "Why does a font preload help to reduce CLS?",
+  "options": [
+   "The font file is smaller after the preload step",
+   "The browser keeps the fallback font for a longer time",
+   "The preload removes the need for font-display",
+   "The font arrives earlier, so the swap happens sooner"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "63",
+  "question": "Lighthouse shows a CLS of 0, but CrUX shows 0.18. What is a likely cause?",
+  "options": [
+   "A bug in the CrUX data for this origin",
+   "A wrong version of Lighthouse in the test run",
+   "Shifts after scroll or clicks that the test misses",
+   "The page uses too many CSS rules in the head"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "64",
+  "question": "A default Lighthouse run shows CLS 0, but shifts appear after a click. Which mode records them?",
+  "options": [
+   "Snapshot mode",
+   "Navigation mode with no throttling",
+   "Timespan mode",
+   "Navigation mode on a faster device"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "65",
+  "question": "Where do you find layout shifts in a DevTools performance trace?",
+  "options": [
+   "The request waterfall in the Network panel",
+   "The heap snapshot in the Memory panel",
+   "The file list in the Coverage panel",
+   "The Layout Shifts track in the Performance panel"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "66",
+  "question": "No ad fills a slot, and a script sets the slot height to 0. What happens?",
+  "options": [
+   "Nothing, because the slot is empty",
+   "The ad script loads again",
+   "The content below moves up and adds CLS",
+   "The content below stays and the slot stays hidden"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "67",
+  "question": "A hero image has a different ratio on mobile and on desktop. How do you keep CLS low?",
+  "options": [
+   "Set the aspect-ratio for each breakpoint",
+   "Set one fixed height for all screen sizes",
+   "Set height: auto and wait for the image file",
+   "Hide the image until the load event fires"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "68",
+  "question": "A third-party script injects a card of unknown height. What is the best practice?",
+  "options": [
+   "Wrap it in a container with a set min-height",
+   "Load the script with the defer attribute",
+   "Set the card to position: absolute in the page",
+   "Load the script after the load event fires"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "69",
+  "question": "An A/B test tool changes the DOM after load and moves the hero. What is the best fix?",
+  "options": [
+   "Load the tool script with the async attribute",
+   "Hide the whole body until the tool script runs",
+   "Run the tool script at the end of the body",
+   "Choose the variant on the server before the HTML"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "70",
+  "question": "Which CSS property reserves a size for off-screen sections that use content-visibility: auto?",
+  "options": [
+   "min-content on the section",
+   "contain-intrinsic-size",
+   "contain: layout on the section",
+   "will-change on the section"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "71",
+  "question": "A skeleton is 300 px high, but the real content is 180 px high. What happens when the content replaces it?",
+  "options": [
+   "Nothing happens, because the content is smaller",
+   "The content below moves up by 120 px, so CLS grows",
+   "The skeleton stays until the user scrolls the page",
+   "The page reloads to fix the height of the box"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "72",
+  "question": "What does buffered: true do in a PerformanceObserver for layout-shift?",
+  "options": [
+   "It gives entries from before the observer started",
+   "It groups the entries into session windows",
+   "It skips entries that come from user input",
+   "It delays the callback until the page is hidden"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "73",
+  "question": "Why do teams use navigator.sendBeacon in an onCLS callback?",
+  "options": [
+   "The beacon makes the CLS score lower",
+   "The callback can run when the page hides",
+   "The beacon sends data faster than fetch always",
+   "The beacon removes the need for a server endpoint"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "74",
+  "question": "A page restores from the bfcache. What does the web-vitals library do for CLS?",
+  "options": [
+   "It keeps the old CLS value without a change",
+   "It stops all CLS reports for the tab",
+   "It adds the old CLS value to the new one",
+   "It reports a new CLS value for the restored visit"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "75",
+  "question": "Why does a bfcache restore usually give a low CLS?",
+  "options": [
+   "The page returns fully rendered from memory",
+   "The browser turns off layout for restored pages",
+   "The browser hides the page during the restore",
+   "The browser loads all resources before it shows it"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "76",
+  "question": "A menu item grows on hover and moves its siblings. Does the 500 ms input rule exclude this shift?",
+  "options": [
+   "No, hover is not a discrete input, so it counts",
+   "Yes, hover is a user input like a click",
+   "Yes, but only for devices that use a mouse",
+   "No, but only if the menu uses transform"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "77",
+  "question": "How do you reserve space for a responsive 16:9 video embed?",
+  "options": [
+   "Set aspect-ratio: 16 / 9 and width: 100%",
+   "Set height: auto on the iframe element",
+   "Set min-width: 100% on the iframe element",
+   "Set overflow: hidden on the body element"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "78",
+  "question": "You add width and height to all images, but the footer still moves. What is the next check?",
+  "options": [
+   "Convert all of the images to the WebP format",
+   "Add decoding=\"async\" to all of the images",
+   "Move the CSS file to the end of the page",
+   "Look for late ads or banners above the footer"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "79",
+  "question": "A message box toggles between display: none and display: block after a fetch. Which change keeps CLS low?",
+  "options": [
+   "Change the z-index of the message box",
+   "Keep the reserved height and change the opacity",
+   "Change display to inline-block for the box",
+   "Add a transition for the display property"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "80",
+  "question": "A hero image grows from 0 to 400 px in height and pushes text down. Which elements are unstable?",
+  "options": [
+   "The hero image, because its size changes",
+   "The text below, because its start position changes",
+   "The hero image and the text, in the same way",
+   "Only the body element"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "81",
+  "question": "Your RUM CLS is lower than the CrUX CLS, and an ad iframe shifts. What is a likely reason?",
+  "options": [
+   "CrUX counts only shifts that follow a click",
+   "The page observer counts the shifts two times",
+   "CrUX ignores the shifts that come from ads",
+   "CrUX counts shifts inside iframes, the observer does not"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "82",
+  "question": "Shifts of 0.02 happen every 2 seconds for 60 seconds. What is the CLS?",
+  "options": [
+   "0.2",
+   "0.02",
+   "0.6",
+   "0.04"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "83",
+  "question": "What is the main trade-off of font-display: optional?",
+  "options": [
+   "On a slow first visit the page keeps the fallback",
+   "Text stays invisible for up to three seconds",
+   "The font file loads two times on each visit",
+   "CLS rises on the cached visits of a user"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "84",
+  "question": "What does auto do in contain-intrinsic-size: auto 600px?",
+  "options": [
+   "It computes the size from children while off-screen",
+   "It uses the size of 600px in all cases",
+   "It removes the size containment of the element",
+   "It uses the last rendered size after the first render"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "Two unstable elements overlap in the viewport. How does the browser compute the impact fraction?",
+  "options": [
+   "It uses the union of their visible areas",
+   "It adds the area of each unstable element",
+   "It uses the area of the largest element only",
+   "It uses the average area of both elements"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "86",
+  "question": "An unstable element is half outside the viewport. How does this affect the impact fraction?",
+  "options": [
+   "The whole element area counts",
+   "Only the part inside the viewport counts",
+   "The element is ignored in the score",
+   "Only the part outside the viewport counts"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "87",
+  "question": "Why is the same layout shift often worse on mobile?",
+  "options": [
+   "Mobile browsers count the shifts two times",
+   "Mobile networks make the shifts slower",
+   "The viewport is small, so the fractions are larger",
+   "Mobile browsers ignore the user input"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "88",
+  "question": "The server renders three cards, but the client adds a fourth card and a banner after hydration. What is the risk?",
+  "options": [
+   "The page loses its CSS; inline all of the styles",
+   "The cards load twice; add a cache header",
+   "Content moves after hydration; render the same HTML",
+   "The banner blocks input; delay the hydration"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "A script adds a stylesheet link to the head after the first paint. What is the CLS risk?",
+  "options": [
+   "The page never shows the new styles at all",
+   "The browser ignores the late CSS rules fully",
+   "The page shows unstyled, then restyles with a shift",
+   "The browser blocks the next paint for a second"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "90",
+  "question": "An ad slot reserves 250 px, but a 600 px ad sometimes fills it. What is the trade-off if you reserve 600 px?",
+  "options": [
+   "The score becomes worse for all of the visits",
+   "Many visits show empty space, but no shift occurs",
+   "The ad auction fails more often for the slot",
+   "The page blocks the first paint for the ad"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "91",
+  "question": "Which RUM data best finds the top CLS cause across many users?",
+  "options": [
+   "The final CLS number of each visit and nothing more",
+   "The page load time of each visit to the site",
+   "The Lighthouse score from the last build run",
+   "The largest shift target with its value, by selector"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "92",
+  "question": "A teammate adds will-change: transform to a banner that pushes content. Does this fix the shifts?",
+  "options": [
+   "No, the layout change still moves the siblings",
+   "Yes, the banner moves on the GPU only",
+   "Yes, the browser skips layout for that banner",
+   "No, but it lowers the impact fraction"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "A slider changes its height on each autoplay step because slides have different heights. What is the fix?",
+  "options": [
+   "Increase the autoplay delay of the slider",
+   "Animate the slider height with a transition",
+   "Give all slides one aspect-ratio",
+   "Load the slides with loading=\"lazy\" attribute"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "94",
+  "question": "Lab CLS is 0.02, but the CrUX 75th percentile is 0.12. Which value sets your Core Web Vitals status?",
+  "options": [
+   "The lab value, so the status is good",
+   "The mean of both values, so the status is good",
+   "The worse of both values, so the status is poor",
+   "The CrUX value, so the status is Needs improvement"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "95",
+  "question": "Which CSS change helps to reduce vertical movement of text after a font swap?",
+  "options": [
+   "Set a larger font-size on the body element",
+   "Set letter-spacing to zero for all of the text",
+   "Set an explicit line-height instead of normal",
+   "Set white-space: nowrap on all of the text"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "96",
+  "question": "Search Console flags 500 URLs for poor CLS. Which approach is the most efficient?",
+  "options": [
+   "Fix each URL one by one",
+   "Remove the flagged URLs from the sitemap",
+   "Find the shared template cause and fix it once",
+   "Raise the cache time of the flagged URLs"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "97",
+  "question": "Which CI check best catches CLS regressions that happen after scroll or click steps?",
+  "options": [
+   "A default Lighthouse navigation run, and nothing more",
+   "A Playwright script that runs the steps and reads entries",
+   "A bundle size budget for the main JavaScript file",
+   "A unit test for the CSS files of the project"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "98",
+  "question": "Page content moves 15 px sideways when a scrollbar appears on desktop. Which CSS reserves the space?",
+  "options": [
+   "overflow-x: hidden",
+   "scrollbar-gutter: stable",
+   "scroll-behavior: smooth",
+   "overscroll-behavior: contain"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "99",
+  "question": "Small shifts occur every 0.5 s from t=0 to t=12 s. Why does CLS count only a part of them?",
+  "options": [
+   "CLS keeps the worst window, and a window lasts 5 s at most",
+   "CLS counts only the first ten shifts of the page",
+   "CLS drops all shifts that are smaller than 0.01",
+   "CLS counts only the shifts of the first second"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "100",
+  "question": "A widget has a fixed 120 px placeholder, but on phones it is 200 px high. What is the better method?",
+  "options": [
+   "Set the placeholder to 400 px for all screens",
+   "Set the placeholder height to auto in CSS",
+   "Hide the placeholder on all phones",
+   "Set the min-height for each breakpoint"
+  ],
+  "correct_index": 3
+ }
+]

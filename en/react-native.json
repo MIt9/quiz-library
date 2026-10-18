@@ -1,0 +1,1102 @@
+[
+ {
+  "id": "1",
+  "question": "Which core component do you use to show text on the screen in React Native?",
+  "options": [
+   "`Label`",
+   "`Span`",
+   "`Paragraph`",
+   "`Text`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "2",
+  "question": "Which core component works as a basic layout container, like a `div` on the web?",
+  "options": [
+   "`Container`",
+   "`View`",
+   "`Block`",
+   "`Section`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "3",
+  "question": "How do you usually define styles for a React Native component?",
+  "options": [
+   "With JavaScript objects, often made by `StyleSheet.create` and passed to the `style` prop",
+   "With a `.css` file that you import in the component and that Metro turns into styles",
+   "With a `<style>` tag that you place inside the component, as in HTML",
+   "With a `.scss` file that Metro compiles to native styles at build time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "4",
+  "question": "What is the default `flexDirection` of a `View` in React Native?",
+  "options": [
+   "`row`",
+   "`row-reverse`",
+   "`column`",
+   "`column-reverse`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "5",
+  "question": "You must show a list of 2,000 items. Which component is the right choice?",
+  "options": [
+   "`ScrollView`, because it renders all items one time and keeps scrolling smooth for any size",
+   "`FlatList`, because it renders only the items near the screen",
+   "`Modal`, because it keeps long content in a separate layer",
+   "`SectionHeader`, because it groups all items in one block"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "6",
+  "question": "Which JavaScript engine does a new React Native app use by default since version 0.70?",
+  "options": [
+   "V8",
+   "JavaScriptCore",
+   "Hermes",
+   "SpiderMonkey"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "7",
+  "question": "What does `Platform.OS` return when the app runs on an iPhone?",
+  "options": [
+   "`'iphone'`",
+   "`'apple'`",
+   "`'darwin'`",
+   "`'ios'`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "8",
+  "question": "Which core component do you use to let the user type text?",
+  "options": [
+   "`TextInput`",
+   "`Input`",
+   "`TextField`",
+   "`EditText`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "9",
+  "question": "What is Metro in a React Native project?",
+  "options": [
+   "The tool that builds the native iOS project and signs the app for release",
+   "A JavaScript bundler and development server",
+   "The emulator that runs Android devices on the computer",
+   "The library that manages navigation state between screens"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "10",
+  "question": "Which command starts the Metro development server in a project that uses the community CLI?",
+  "options": [
+   "`npx react-native start`",
+   "`npx react-native dev-server --start`",
+   "`npx metro build`",
+   "`npm run bundle-dev`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "11",
+  "question": "What does Fast Refresh do when you save a file?",
+  "options": [
+   "It rebuilds the native app and installs it again on the device after each save",
+   "It restarts the phone operating system and opens the app again",
+   "It compiles the JavaScript files to native code before each run",
+   "It updates the changed component and usually keeps state"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "12",
+  "question": "In React Native styles, which unit do number values for `width` and `height` use?",
+  "options": [
+   "CSS pixels, written as strings such as `'100px'` in the style",
+   "Percent of the screen, written as numbers",
+   "Density-independent pixels, written as plain numbers in the style object",
+   "Physical device pixels, written as plain numbers"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "13",
+  "question": "Which core component shows a picture on the screen?",
+  "options": [
+   "`Img`",
+   "`Picture`",
+   "`Photo`",
+   "`Image`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "14",
+  "question": "You use `<Image source={{ uri: 'https://example.com/a.png' }} />` and see nothing. What do you need to add?",
+  "options": [
+   "A `src` prop with the same URL in place of the `source` prop",
+   "A `cache` prop set to `true`",
+   "A `width` and a `height` in the style",
+   "A `format` prop set to `'png'`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "15",
+  "question": "What happens to a child of `TouchableOpacity` when the user presses it?",
+  "options": [
+   "Its opacity goes down for a short time",
+   "Its size goes up for a short time",
+   "Its touch events go to the parent view",
+   "Its text color changes to the system color"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "16",
+  "question": "Which core component does the React Native team recommend for custom pressable areas?",
+  "options": [
+   "`TapArea`",
+   "`Pressable`",
+   "`ClickView`",
+   "`TouchableText`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "17",
+  "question": "Which hook gives the current window size and updates when the device rotates?",
+  "options": [
+   "`useDeviceOrientation`",
+   "`useDeviceInfo`",
+   "`useWindowDimensions`",
+   "`useOrientation`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "18",
+  "question": "Which `Text` prop limits the text to two lines and adds an ellipsis?",
+  "options": [
+   "`numberOfLines={2}`",
+   "`maxLines={2}`",
+   "`lineLimit={2}`",
+   "`textLines={2}`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "19",
+  "question": "What does `KeyboardAvoidingView` do?",
+  "options": [
+   "It hides the keyboard when the user taps outside",
+   "It moves or resizes its content so the keyboard does not cover it",
+   "It changes the keyboard layout to match the device language",
+   "It blocks all key presses in the child inputs"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "20",
+  "question": "Which React Navigation method moves the user to a screen named `Details`?",
+  "options": [
+   "`navigation.visit('Details')`",
+   "`navigation.open('Details')`",
+   "`navigation.showScreen('Details')`",
+   "`navigation.navigate('Details')`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "21",
+  "question": "Which navigator type keeps a stack of screens and gives a back action?",
+  "options": [
+   "Bottom tab navigator",
+   "Drawer navigator",
+   "Stack navigator",
+   "Material top tab navigator"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "22",
+  "question": "How does a screen read the params sent by `navigation.navigate('Profile', { id: 5 })`?",
+  "options": [
+   "With `navigation.params`",
+   "With `props.query`",
+   "With `window.location`",
+   "With `route.params`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "23",
+  "question": "What is the role of `NavigationContainer` in React Navigation?",
+  "options": [
+   "It holds the navigation state and wraps all navigators in the app",
+   "It draws the header bar and the back button for each screen",
+   "It loads the screen data from the network on every focus",
+   "It creates the native view for each tab of the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "24",
+  "question": "What does `Platform.select({ ios: 1, android: 2 })` return on Android?",
+  "options": [
+   "`1`",
+   "`2`",
+   "`undefined`",
+   "`{ android: 2 }`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "25",
+  "question": "The app has `Button.ios.js` and `Button.android.js`. What does `import Button from './Button'` do?",
+  "options": [
+   "It loads both files and merges the exports of each platform file in order",
+   "It loads the file for the current platform",
+   "It fails because the file name does not say which platform to use",
+   "It loads `Button.ios.js` on every platform, even on Android devices"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "26",
+  "question": "Which tool shows the component tree with props and state of a running app?",
+  "options": [
+   "Android Lint",
+   "CocoaPods",
+   "Gradle Profiler",
+   "React DevTools"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "27",
+  "question": "What is `AsyncStorage` used for?",
+  "options": [
+   "To keep secrets in an encrypted hardware vault that the operating system protects",
+   "To run SQL queries on a local database",
+   "To keep small key-value data on the device between app starts",
+   "To share data in memory between two apps"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "28",
+  "question": "Where should an app keep a refresh token on the device?",
+  "options": [
+   "In the iOS Keychain or the Android Keystore",
+   "In `AsyncStorage`, because the data there is private to the app and safe",
+   "In a global variable, because the app reads it very fast",
+   "In the source code, because the value never changes after release"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "29",
+  "question": "Which API can you use without extra libraries to call a REST endpoint?",
+  "options": [
+   "`http.get` from Node.js",
+   "`require('https')`",
+   "`jQuery.ajax`",
+   "`fetch`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "30",
+  "question": "Which command builds the app and runs it on an Android emulator or device?",
+  "options": [
+   "`npx react-native run-android`",
+   "`npx react-native build-android`",
+   "`npx metro run-android`",
+   "`gradle start-android`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "31",
+  "question": "After you add a library with iOS native code, which command do you run in the `ios` folder?",
+  "options": [
+   "`gradle sync`",
+   "`npm link`",
+   "`pod install`",
+   "`swift build`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "32",
+  "question": "Which build tool does the Android part of a React Native app use?",
+  "options": [
+   "Maven",
+   "Gradle",
+   "Ant",
+   "Make"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "33",
+  "question": "Which `TextInput` prop hides the typed characters in a password field?",
+  "options": [
+   "`hideText`",
+   "`secureTextEntry`",
+   "`passwordMode`",
+   "`maskInput`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "34",
+  "question": "What does `StyleSheet.absoluteFill` give you?",
+  "options": [
+   "A style with a full black background color and a size that fits the parent view",
+   "A style that scales the font to the screen size and the pixel density",
+   "A style with `position: 'absolute'` and all four edges set to `0`",
+   "A style that hides the view from the screen and from the screen reader"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "35",
+  "question": "Which `FlatList` prop tells the list how to get a unique key for each item?",
+  "options": [
+   "`keyExtractor`",
+   "`keyProp`",
+   "`idField`",
+   "`uniqueKey`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "36",
+  "question": "Which `FlatList` prop is a function that draws one row?",
+  "options": [
+   "`renderRow`",
+   "`itemRenderer`",
+   "`rowComponent`",
+   "`renderItem`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "37",
+  "question": "Which core component shows a loading spinner?",
+  "options": [
+   "`Spinner`",
+   "`ActivityIndicator`",
+   "`LoadingIndicatorView`",
+   "`ProgressRing`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "38",
+  "question": "The container has `flexDirection: 'column'`. Which style centers the children horizontally?",
+  "options": [
+   "`justifyContent: 'center'`",
+   "`alignContent: 'center'`",
+   "`textAlign: 'center'`",
+   "`alignItems: 'center'`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "39",
+  "question": "What does `flex: 1` do on a `View`?",
+  "options": [
+   "It sets the width of the view to exactly one pixel on all devices",
+   "It shows the view one time only",
+   "It takes the free space of its parent",
+   "It puts the view behind its siblings"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "40",
+  "question": "Which `ScrollView` prop makes the content scroll from side to side?",
+  "options": [
+   "`horizontal`",
+   "`scrollX`",
+   "`direction`",
+   "`axis`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "41",
+  "question": "What does `Linking.openURL('https://example.com')` do?",
+  "options": [
+   "It loads the page inside a `View` of your app",
+   "It downloads the page to the app cache",
+   "It adds the link to the navigation history",
+   "It opens the link in the browser or in another app that handles it"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "42",
+  "question": "Which core component shows content on top of the current screen?",
+  "options": [
+   "`Modal`",
+   "`Overlay`",
+   "`Popup`",
+   "`Layer`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "43",
+  "question": "Which core component shows an on and off toggle?",
+  "options": [
+   "`Toggle`",
+   "`Switch`",
+   "`Checkbox`",
+   "`Slider`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "44",
+  "question": "What is LogBox in React Native?",
+  "options": [
+   "A native crash reporter that sends the stack of each crash in release builds",
+   "A Metro plugin that writes logs to a file",
+   "An in-app overlay that shows warnings and errors in development",
+   "A tool that sends the logs to a server"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "45",
+  "question": "Which props does the core `Button` component use to show a label and handle a press?",
+  "options": [
+   "`label` and `onClick`",
+   "`text` and `onTap`",
+   "`children` and `onSelect`",
+   "`title` and `onPress`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "46",
+  "question": "What is a native module in React Native?",
+  "options": [
+   "A JavaScript package that Metro compiles to machine code",
+   "Native code (Kotlin, Java, Swift, Objective-C) that JavaScript can call",
+   "A Hermes file that stores the compiled app bytecode",
+   "A style file with values for each platform"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "47",
+  "question": "Which core API animates values such as opacity and position?",
+  "options": [
+   "`Transition`",
+   "`Keyframes`",
+   "`Animated`",
+   "`Motion`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "48",
+  "question": "What does `AppRegistry.registerComponent` do?",
+  "options": [
+   "It registers the root component so native code can start it",
+   "It adds a component to the navigation stack so the user can open it later",
+   "It saves a component in the device storage so the app can load it later",
+   "It uploads a component to the app store for the review process"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "49",
+  "question": "What does the `metro.config.js` file configure?",
+  "options": [
+   "Native build settings such as the app version and the signing key",
+   "Navigation settings such as the screen names and the links",
+   "Style settings such as the theme colors and the fonts",
+   "Bundler settings such as the resolver, the transformer, and the watched folders"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "50",
+  "question": "What is the value of `__DEV__` in a release build?",
+  "options": [
+   "`true`",
+   "`undefined`",
+   "`false`",
+   "`null`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "51",
+  "question": "In the old architecture, how do JavaScript and native code talk to each other?",
+  "options": [
+   "They send asynchronous batched JSON messages over the bridge",
+   "They call each other directly through shared C++ pointers, with no copy of the data",
+   "They share one memory block that both sides read and write at the same time",
+   "They send HTTP requests to a local server that runs inside the app process"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "52",
+  "question": "What is JSI in React Native?",
+  "options": [
+   "A JSON format that the bridge uses to send messages between the two sides",
+   "A C++ layer that lets JavaScript call native functions directly",
+   "A build tool that compiles JavaScript to native code",
+   "A debugging protocol for the Chrome developer tools"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "53",
+  "question": "What is Fabric?",
+  "options": [
+   "The old name of the Metro bundler",
+   "The new rendering system of the New Architecture",
+   "The tool that links native libraries at build time",
+   "The default navigation library of React Native"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "54",
+  "question": "What are TurboModules?",
+  "options": [
+   "Native modules that run only on the JS thread in a worker",
+   "JavaScript modules that Metro loads at build time only",
+   "Native modules that use the old bridge and batch the calls",
+   "Native modules that load when needed and use JSI with typed specs"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "55",
+  "question": "What does Codegen do in the New Architecture?",
+  "options": [
+   "It makes native interface code from typed Flow or TypeScript specs",
+   "It makes JavaScript bundles smaller with tree shaking when you build the release app",
+   "It makes test files for each component in the project",
+   "It makes app icons for all screen sizes"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "56",
+  "question": "What is one main benefit of Hermes for a release app?",
+  "options": [
+   "It runs JavaScript with a JIT compiler for the best peak speed after a long warm-up time",
+   "It lets the app use Node.js modules like `fs` directly",
+   "It compiles JavaScript to bytecode at build time, so startup is faster",
+   "It moves all JavaScript work from the JS thread to the UI thread"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "57",
+  "question": "A screen shows 5,000 rows in a `ScrollView` with `map`. What is the main problem?",
+  "options": [
+   "It cannot scroll more than 1,000 rows on a real device without a crash of the app",
+   "It creates all rows at once, so memory and startup time grow",
+   "It re-creates each row on every scroll event, even when the data did not change",
+   "It sends each row to the bridge as a separate message and blocks the UI thread"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "58",
+  "question": "When is `getItemLayout` useful on a `FlatList`?",
+  "options": [
+   "When the rows have different heights that change often, because the list measures them",
+   "When the list data comes from a slow network call",
+   "When the list must show a header and a footer",
+   "When all rows have a known height, so the list skips measuring"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "59",
+  "question": "A `FlatList` row is heavy and scrolling is slow. Which first step is most useful?",
+  "options": [
+   "Replace `FlatList` with a `ScrollView` and a `map` call",
+   "Set `removeClippedSubviews` on all lists in the app",
+   "Wrap the row in `React.memo` and keep its props stable between renders",
+   "Move the row data to `AsyncStorage` to read it faster"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "60",
+  "question": "What does the `windowSize` prop of `FlatList` control?",
+  "options": [
+   "How much content, in screen heights, the list renders around the visible area",
+   "How many pixels the list scrolls with each swipe of the finger on the screen",
+   "How wide the list is on a tablet screen",
+   "How many rows the list keeps in the data array"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "61",
+  "question": "Tapping a button inside a `ScrollView` only closes the keyboard. Which prop fixes this?",
+  "options": [
+   "`keyboardShouldPersistTaps=\"handled\"`",
+   "`keyboardDismissMode=\"interactive\"`",
+   "`scrollEnabled={false}`",
+   "`automaticallyAdjustKeyboardInsets`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "62",
+  "question": "What is the risk of `removeClippedSubviews` on a long list?",
+  "options": [
+   "Rows lose their state when the user scrolls back to them after a long time",
+   "Rows can show wrong or blank content on some devices",
+   "The list stops sending scroll events to JavaScript until the user stops",
+   "The list uses more memory than it would use without the prop"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "63",
+  "question": "You see the error 'Text strings must be rendered within a <Text> component'. What is the likely cause?",
+  "options": [
+   "A `Text` component has no `style` prop and the parent view has no `flex` value",
+   "A `Text` component is inside a `ScrollView`",
+   "A raw string or number is a direct child of a `View`",
+   "A string is passed to a `TextInput` as `value`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "64",
+  "question": "A screen shows `{count && <Text>Items</Text>}` and `count` is `0`. What happens in a `View`?",
+  "options": [
+   "The screen shows nothing and no error appears, because React ignores the value `0`",
+   "The screen shows the text `Items` anyway",
+   "The component renders `false` and the app logs a warning",
+   "React Native throws an error because `0` is not inside a `Text`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "65",
+  "question": "A heavy loop runs on the JS thread. What does the user see?",
+  "options": [
+   "Taps respond late and animations that run in JS drop frames",
+   "The native views freeze, but all JS animations stay smooth because they run on the UI thread",
+   "The app closes at once, because the OS stops a busy JS thread after a few seconds",
+   "Only the network requests become slower, and all other work stays fast"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "66",
+  "question": "What does `useNativeDriver: true` do for an `Animated` animation?",
+  "options": [
+   "It runs the animation on the JS thread with a higher priority and a fixed frame time",
+   "It lets the animation change any style prop, such as `width`",
+   "It moves the animation to a background thread in Hermes",
+   "It runs the animation on the native side, but only for non-layout props such as `opacity` and `transform`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "67",
+  "question": "In Reanimated, where does a worklet run?",
+  "options": [
+   "On the JS thread, in a separate microtask queue that React Native flushes at each frame",
+   "On the UI thread, if you call it from an animation or gesture callback",
+   "On a native background thread that has no JavaScript runtime",
+   "On the main thread of the Metro bundler"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "68",
+  "question": "What is a Reanimated shared value from `useSharedValue`?",
+  "options": [
+   "A state value that re-renders the component on each change and so keeps JS and UI in sync",
+   "A global constant that you set one time when the app starts",
+   "A value both threads can read without a re-render",
+   "A value that the bridge copies to the native side on every frame"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "69",
+  "question": "What does `useAnimatedStyle` return?",
+  "options": [
+   "A style object that you must pass to `StyleSheet.create` before you can use it on a view",
+   "A promise that resolves when the animation ends",
+   "A list of styles that React renders one by one",
+   "A style object that updates on the UI thread when shared values change"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "70",
+  "question": "Why do many apps use `react-native-gesture-handler` instead of the built-in responder system?",
+  "options": [
+   "It handles gestures on the native side, so they stay smooth when JS is busy",
+   "It adds CSS hover states for the touch events and a long press on the web only",
+   "It makes all gestures work the same on the web",
+   "It removes the need for any native code in the app"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "71",
+  "question": "What is the difference between `useFocusEffect` and `useEffect` in React Navigation?",
+  "options": [
+   "`useFocusEffect` runs only when the app comes to the foreground after the user leaves it",
+   "`useFocusEffect` runs each time the screen gets focus, even when it stayed mounted",
+   "`useFocusEffect` runs before the screen is mounted",
+   "`useFocusEffect` runs only for the first screen of a stack"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "72",
+  "question": "You push screen B over screen A in a stack. What happens to screen A?",
+  "options": [
+   "It unmounts and loses its state",
+   "It stays mounted, but its state resets",
+   "It stays mounted and keeps its state",
+   "It unmounts, and React Navigation saves its state"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "73",
+  "question": "How do you map URLs to screens for deep links in React Navigation?",
+  "options": [
+   "With the `href` option of each screen header",
+   "With a `deepLinks.json` file in the project root",
+   "With the `Linking.addEventListener` call in each screen",
+   "With the `linking` prop of `NavigationContainer`"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "74",
+  "question": "Why do many teams choose `@react-navigation/native-stack` for new apps?",
+  "options": [
+   "It uses native navigation controllers, so transitions look native and run well",
+   "It runs all transitions in JavaScript for full control",
+   "It works on the web only and not on phones",
+   "It removes the need for `NavigationContainer`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "75",
+  "question": "Which style prop creates a shadow on an Android view?",
+  "options": [
+   "`shadowRadius`",
+   "`shadowOpacity`",
+   "`elevation`",
+   "`shadowOffset`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "76",
+  "question": "After you install a native library, the iOS build fails because a module is not found. What is the first step?",
+  "options": [
+   "Delete `node_modules`, install again, and restart the Metro server with a clean cache",
+   "Run `pod install` in the `ios` folder and build again",
+   "Add the library name to `metro.config.js`",
+   "Run `npx react-native link` for the library"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "77",
+  "question": "You add a new native library and press save. Fast Refresh does not show it. Why?",
+  "options": [
+   "Fast Refresh handles one file per save, so you need a second save",
+   "Fast Refresh turns itself off when Hermes is on in the app",
+   "Fast Refresh needs a restart of the Metro cache before it sees new libraries",
+   "Fast Refresh updates JavaScript only, so rebuild the app"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "78",
+  "question": "Which Gradle task makes an Android App Bundle for the Google Play Store?",
+  "options": [
+   "`assembleDebug`",
+   "`bundleRelease`",
+   "`installRelease`",
+   "`packageDebug`"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "79",
+  "question": "In a release build, where does the JavaScript code come from?",
+  "options": [
+   "From the Metro server on the developer computer",
+   "From a CDN that the app calls at each start, then keeps in memory until the app closes",
+   "From a bundle inside the app, compiled to Hermes bytecode",
+   "From the native code, which has the JS logic in C++"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "80",
+  "question": "Which `Pressable` prop makes the touch area larger without a change to the layout?",
+  "options": [
+   "`hitSlop`",
+   "`touchPadding`",
+   "`touchArea`",
+   "`minHitSize`"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "81",
+  "question": "Why can JavaScript not read a native layout value in a synchronous way with the old bridge?",
+  "options": [
+   "The bridge is asynchronous and passes messages between threads",
+   "The native layout runs in a separate operating system process",
+   "Hermes does not allow a function to return a value to native code",
+   "Native layout code is not allowed to share numbers with JavaScript"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "82",
+  "question": "Which statement about Fabric is true?",
+  "options": [
+   "Layout is still calculated in JavaScript on the JS thread",
+   "Each platform has its own layout engine with different rules",
+   "Layout and the shadow tree run in shared C++ code for both platforms",
+   "Fabric works only when Hermes is turned off"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "83",
+  "question": "Which feature does the New Architecture make possible for React Native apps?",
+  "options": [
+   "Direct use of the browser DOM from JavaScript inside the native view tree",
+   "React 18 concurrent features such as transitions",
+   "Running native views inside a Web Worker",
+   "Automatic conversion of Swift code to Kotlin"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "84",
+  "question": "What does the interop layer do in the New Architecture?",
+  "options": [
+   "It converts all JavaScript code to C++ when you build the app",
+   "It runs the old bridge in a second process for safety",
+   "It lets web components render inside the native view tree",
+   "It lets old native modules and views work in a new-architecture app"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "85",
+  "question": "Why does Hermes not use a JIT compiler?",
+  "options": [
+   "Its bytecode format does not allow any code optimization at run time on a phone",
+   "It targets fast startup, low memory, and small size on phones",
+   "Android blocks all JIT compilers in apps",
+   "JIT code cannot run the `Promise` API"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "86",
+  "question": "What is Bridgeless mode?",
+  "options": [
+   "A mode where the legacy bridge is not created and JSI handles all native calls",
+   "A mode where JavaScript runs without native modules and uses web APIs only",
+   "A mode where Metro serves the bundle without a WebSocket connection",
+   "A mode where the app uses only one thread for all of its work"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "87",
+  "question": "A 15 MB JSON response freezes the UI during `JSON.parse`. What is the best fix?",
+  "options": [
+   "Wrap `JSON.parse` in `async` and `await` so that it runs in parallel on another thread",
+   "Set `useNativeDriver: true` on the loading spinner of the screen",
+   "Increase the `windowSize` of the list that shows the parsed data",
+   "Use pagination, or move the heavy work off the JS thread"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "88",
+  "question": "In Reanimated 3, how does a worklet start a normal JS function, such as a state setter?",
+  "options": [
+   "With `fn.call(args)` inside the worklet",
+   "With `setImmediate(fn)` on the UI thread",
+   "With `runOnJS(fn)(args)`",
+   "With `useSharedValue(fn)` before the call"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "89",
+  "question": "A selected row in a `FlatList` does not update when only `selectedId` state changes. What do you do?",
+  "options": [
+   "Change the `keyExtractor` to use the index",
+   "Set `initialNumToRender` to the data length",
+   "Call `forceUpdate` on the `ScrollView` ref",
+   "Pass `extraData={selectedId}` to the list"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "90",
+  "question": "What does `InteractionManager.runAfterInteractions` do?",
+  "options": [
+   "It runs a task on a native background thread that has its own JavaScript runtime",
+   "It delays a task until running animations and touches finish",
+   "It runs a task before the next frame is drawn",
+   "It cancels the task if the user touches the screen"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "91",
+  "question": "A TurboModule method returns a value synchronously and takes 200 ms. What is the risk?",
+  "options": [
+   "It blocks the UI thread of the whole operating system",
+   "It makes Hermes restart the runtime",
+   "It blocks the JS thread for 200 ms",
+   "It is sent to a queue and the result is lost"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "92",
+  "question": "A component calls `Keyboard.addListener` in an effect and never removes the listener. What is the risk?",
+  "options": [
+   "Handlers pile up on each mount and keep running after unmount, which leaks memory",
+   "The keyboard stays open after the screen closes",
+   "The listener works only on the first mount, so later screens miss events",
+   "Metro shows an error at build time"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "93",
+  "question": "Why does a 4000x3000 photo in a 100 px list item use a lot of memory?",
+  "options": [
+   "The bridge copies the photo as Base64 for each render, so memory grows with the item count",
+   "Hermes keeps all the pixels as JavaScript numbers in the heap",
+   "The native layer decodes the full bitmap, about 48 MB",
+   "The `Image` component stores the photo twice in `AsyncStorage`"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "94",
+  "question": "Which tool shows why a React component re-rendered in a slow screen?",
+  "options": [
+   "The React DevTools Profiler",
+   "The Xcode Interface Builder",
+   "The Android Layout Inspector",
+   "The Metro bundle visualizer"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "95",
+  "question": "On a fast scroll, a `FlatList` shows blank areas. What is the most likely cause?",
+  "options": [
+   "The native scroll view runs on the JS thread and stalls when the list data is large",
+   "The list has too few items in its data array",
+   "The bridge drops the scroll events on purpose",
+   "The JS thread cannot render new rows as fast as the native scroll moves"
+  ],
+  "correct_index": 3
+ },
+ {
+  "id": "96",
+  "question": "What makes FlashList faster than `FlatList` in many cases?",
+  "options": [
+   "It renders all rows on the native side and never calls JavaScript",
+   "It recycles item views instead of mounting and unmounting them as the user scrolls",
+   "It moves the `renderItem` function to the UI thread",
+   "It keeps all rows in memory to avoid any render"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "97",
+  "question": "A team ships an OTA JS update that calls a new native module. Old app binaries get it. What happens?",
+  "options": [
+   "The update installs the native module in the old binary",
+   "The update is blocked by Hermes before it starts",
+   "The old binaries fail at runtime, because the native code is not in them",
+   "The call returns `null` and the app goes on without errors"
+  ],
+  "correct_index": 2
+ },
+ {
+  "id": "98",
+  "question": "An Android release build crashes in a library, but the debug build works. What is a likely cause?",
+  "options": [
+   "R8 minification removed or renamed classes that the library needs",
+   "Metro did not bundle the library for the release build because of a path rule",
+   "Hermes does not support the library API in release mode",
+   "The release build has no Internet permission by default"
+  ],
+  "correct_index": 0
+ },
+ {
+  "id": "99",
+  "question": "Crash reports from a release build show stack frames with unreadable positions. What do you need?",
+  "options": [
+   "A debug build with the Metro server turned on for the test",
+   "The source maps of the exact release build, uploaded to the crash tool",
+   "A newer version of Gradle in the project and a clean build",
+   "The `console.log` output from the same device and the same app"
+  ],
+  "correct_index": 1
+ },
+ {
+  "id": "100",
+  "question": "What does the Metro option `inlineRequires` do?",
+  "options": [
+   "It merges all modules into one large function that the engine runs at the app start",
+   "It removes unused modules from the bundle with tree shaking at build time",
+   "It loads all modules in parallel on separate native threads at start",
+   "It loads each module on first use, so startup can be faster"
+  ],
+  "correct_index": 3
+ }
+]

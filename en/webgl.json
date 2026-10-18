@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "1",
+    "question": "What is WebGL?",
+    "options": [
+      "A CSS module that draws three-dimensional effects for page elements",
+      "A JavaScript library that wraps the Canvas 2D API",
+      "A browser plugin that runs native C++ graphics code",
+      "A JavaScript API for GPU-accelerated graphics, based on OpenGL ES"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "2",
+    "question": "Which HTML element do you use to get a WebGL rendering context?",
+    "options": [
+      "The <svg> element with a 3D drawing mode",
+      "The <canvas> element",
+      "The <iframe> element",
+      "The <webgl> element"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "3",
+    "question": "Which call gets a WebGL 2 context from a canvas?",
+    "options": [
+      "canvas.getContext('webgl2')",
+      "canvas.getContext('webgl', {version: 2})",
+      "canvas.getContext('opengl2')",
+      "canvas.getContext('gl2')"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "4",
+    "question": "Which language do you use to write WebGL shaders?",
+    "options": [
+      "HLSL",
+      "WGSL",
+      "GLSL ES",
+      "Metal Shading Language"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "5",
+    "question": "How often does the vertex shader run?",
+    "options": [
+      "Once for each pixel on the screen",
+      "Once for each triangle in a draw call",
+      "Once for each vertex in a draw call",
+      "Once for each frame of the animation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "6",
+    "question": "How often does the fragment shader run?",
+    "options": [
+      "Once for each fragment that rasterization makes",
+      "Once for each draw call in the frame",
+      "Once for each texture in the program",
+      "Once for each vertex of a primitive in the draw call"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "7",
+    "question": "What does the vertex shader write to gl_Position?",
+    "options": [
+      "The vertex position in world space",
+      "The vertex position in clip space",
+      "The vertex color in RGBA format",
+      "The vertex position in canvas pixels"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "8",
+    "question": "In a WebGL 1 fragment shader, which built-in variable sets the output color?",
+    "options": [
+      "gl_FragOut",
+      "gl_Color",
+      "gl_FragColor",
+      "gl_PixelColor"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "9",
+    "question": "What does rasterization do in the rendering pipeline?",
+    "options": [
+      "It compiles the shader source into machine code for the GPU",
+      "It turns primitives into fragments on the screen grid",
+      "It applies the model matrix to each vertex",
+      "It moves vertex data from CPU memory to the GPU"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "10",
+    "question": "What is an attribute in a vertex shader?",
+    "options": [
+      "A value that stays the same for the whole draw call",
+      "A value that the vertex shader sends to the fragment shader",
+      "A per-vertex input that comes from a buffer",
+      "A texture that the vertex shader samples"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "11",
+    "question": "What is a uniform in GLSL?",
+    "options": [
+      "A per-vertex input that the vertex shader reads from a buffer",
+      "A value that the rasterizer changes for each fragment",
+      "A value that each shader invocation can write for later invocations",
+      "A read-only value that is the same for all invocations in one draw call"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "12",
+    "question": "What does a varying (WebGL 1) pass between the shader stages?",
+    "options": [
+      "Data from the vertex shader to the fragment shader, interpolated",
+      "Data from the fragment shader back to the vertex shader stage",
+      "Data from JavaScript to the vertex shader, without any change",
+      "Data from one draw call to the next draw call"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "13",
+    "question": "What does gl.bufferData do?",
+    "options": [
+      "It draws the vertices in the bound buffer",
+      "It creates a new empty WebGLBuffer object on the GPU side",
+      "It tells the shader how to read the buffer",
+      "It allocates GPU buffer storage and copies data into it"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "14",
+    "question": "What does the gl.ARRAY_BUFFER target usually hold?",
+    "options": [
+      "Index data for the drawElements call, such as triangle lists",
+      "Vertex attribute data, such as positions",
+      "Uniform data for a shader program",
+      "Pixel data for a texture upload"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "15",
+    "question": "Which buffer target holds the indices for drawElements?",
+    "options": [
+      "gl.ARRAY_BUFFER",
+      "gl.ELEMENT_ARRAY_BUFFER",
+      "gl.UNIFORM_BUFFER, which holds vertex indices",
+      "gl.INDEX_BUFFER"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "16",
+    "question": "How is drawElements different from drawArrays?",
+    "options": [
+      "It draws only lines and points, not triangles",
+      "It reads vertex order from an index buffer",
+      "It draws many copies of the same mesh in one call",
+      "It reads vertex data from a texture, not a buffer"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "17",
+    "question": "With the gl.TRIANGLES mode, how does WebGL use 6 vertices?",
+    "options": [
+      "It makes 4 triangles that share edges with each other",
+      "It makes 2 triangles from groups of 3 vertices",
+      "It makes 5 triangles in a strip",
+      "It makes 1 triangle from the first 3 vertices"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "18",
+    "question": "What is the visible range for x, y, and z in normalized device coordinates?",
+    "options": [
+      "-1 to 1",
+      "0 to the canvas width",
+      "-100 to 100",
+      "0 to 1"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "19",
+    "question": "What does gl.viewport(x, y, w, h) set?",
+    "options": [
+      "How device coordinates map to canvas pixels",
+      "The size of the canvas element in the page layout",
+      "The area of the canvas that gl.clear affects",
+      "The field of view of the camera"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "20",
+    "question": "What does gl.clear(gl.COLOR_BUFFER_BIT) do?",
+    "options": [
+      "It deletes all textures and buffers of the context",
+      "It fills the color buffer with the clear color",
+      "It resets all GL state to the default values",
+      "It removes the last drawn triangle"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "21",
+    "question": "A teammate calls gl.clearColor(1, 0, 0, 1), but the canvas stays black. What is the likely cause?",
+    "options": [
+      "The code never calls gl.clear after the color",
+      "The canvas element has no width attribute in the page",
+      "The alpha value must be 255, not 1",
+      "The viewport must be set before clearColor"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "22",
+    "question": "How do you read the error text of a shader that fails to compile?",
+    "options": [
+      "Read the shader.errorMessage property",
+      "Call gl.getError() after gl.compileShader",
+      "Call gl.getProgramParameter(shader)",
+      "Call gl.getShaderInfoLog(shader)"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "23",
+    "question": "What does gl.linkProgram do?",
+    "options": [
+      "It sends the program to the GPU draw queue at once",
+      "It binds the program to the current canvas",
+      "It compiles each shader from source text",
+      "It joins the two shaders into one program"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "24",
+    "question": "What does gl.useProgram(program) do?",
+    "options": [
+      "It makes the program current for the next draw calls",
+      "It sends the program to every canvas on the page",
+      "It compiles the program for the first time on the GPU",
+      "It draws one frame with the program"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "25",
+    "question": "What does gl.getUniformLocation return if the uniform name does not exist in the program?",
+    "options": [
+      "null",
+      "undefined",
+      "0",
+      "-1"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "26",
+    "question": "Which call sets a vec4 uniform from four numbers?",
+    "options": [
+      "gl.uniformMatrix4fv",
+      "gl.uniform1f",
+      "gl.vertexAttrib4f",
+      "gl.uniform4f"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "27",
+    "question": "What is a texture in WebGL?",
+    "options": [
+      "An image that shaders read with a sampler",
+      "A list of vertex positions in a buffer",
+      "A compiled shader program in GPU memory",
+      "A set of transformation matrices"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "28",
+    "question": "Which GLSL type do you use to read a 2D texture in a shader?",
+    "options": [
+      "image2D",
+      "texture2D, as in the WebGL 1 shader function",
+      "sampler2D",
+      "tex2D"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "29",
+    "question": "Which function reads a texture in a WebGL 2 shader that uses #version 300 es?",
+    "options": [
+      "texture(sampler, uv)",
+      "texture2D(sampler, uv)",
+      "sample(sampler, uv)",
+      "fetch2D(sampler, uv)"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "30",
+    "question": "What does gl.activeTexture(gl.TEXTURE1) do?",
+    "options": [
+      "It loads an image into the texture with number 1",
+      "It sets the sampler uniform to 1 automatically",
+      "It deletes the texture on unit 1",
+      "It selects texture unit 1 for bindTexture"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "31",
+    "question": "Why do you call gl.generateMipmap for a texture?",
+    "options": [
+      "It makes the image file load faster from the network cache",
+      "It adds a depth channel to the texture",
+      "It makes smaller copies to reduce aliasing at small sizes",
+      "It converts the texture to the sRGB color space"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "32",
+    "question": "Which OpenGL ES version is the base of WebGL 2?",
+    "options": [
+      "OpenGL ES 2.0",
+      "OpenGL ES 3.2 with compute shaders",
+      "OpenGL ES 1.1",
+      "OpenGL ES 3.0"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "33",
+    "question": "What is a framebuffer object used for?",
+    "options": [
+      "To store the vertex data of a mesh in GPU memory",
+      "To store the compiled shader programs",
+      "To render into textures instead of the canvas",
+      "To copy the canvas into the page layout"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "What does the depth test do after gl.enable(gl.DEPTH_TEST)?",
+    "options": [
+      "It removes triangles that face away from the camera",
+      "It sorts the triangles from back to front on the CPU side",
+      "It fades fragments that are far from the camera",
+      "It discards fragments that are behind earlier fragments"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "35",
+    "question": "What does gl.enable(gl.BLEND) allow?",
+    "options": [
+      "It lets the GPU run two shaders at the same time on one draw",
+      "It smooths the edges of triangles",
+      "It mixes the new color with the buffer color",
+      "It merges two textures into one texture"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "36",
+    "question": "What does gl.enable(gl.CULL_FACE) do?",
+    "options": [
+      "It removes all triangles that are outside of the viewport",
+      "It removes triangles that are behind other triangles",
+      "It skips triangles that face one chosen side",
+      "It hides all triangles with a transparent color"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "37",
+    "question": "By default, which vertex order does WebGL treat as front-facing?",
+    "options": [
+      "Clockwise",
+      "Counter-clockwise",
+      "Order of increasing index value",
+      "Top to bottom on the screen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "38",
+    "question": "What does a vertex array object (VAO) store?",
+    "options": [
+      "The pixel data of the framebuffer and its depth values",
+      "The compiled code of the vertex shader",
+      "The values of all uniforms in a program",
+      "The attribute setup, such as buffers and layouts"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "39",
+    "question": "Which WebGL 2 call draws many copies of a mesh in one call?",
+    "options": [
+      "gl.drawArraysMultiple",
+      "gl.drawArraysInstanced",
+      "gl.drawRangeCopies",
+      "gl.drawElementsBatch with an index count"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "40",
+    "question": "What does gl.vertexAttribPointer describe?",
+    "options": [
+      "Where a uniform is found in the linked program",
+      "Which shader reads the buffer",
+      "How an attribute reads data from the buffer",
+      "How many vertices a draw call uses"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "41",
+    "question": "Why do you call gl.enableVertexAttribArray(location)?",
+    "options": [
+      "To make the attribute read from its buffer when you draw",
+      "To compile the attribute in the shader program",
+      "To create the buffer for the attribute",
+      "To set the type of the attribute to float"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "42",
+    "question": "A WebGL 1 fragment shader uses float and has no precision line. What happens?",
+    "options": [
+      "The shader uses lowp by default",
+      "The shader fails to compile",
+      "The shader uses highp by default",
+      "The shader compiles with a warning only"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "43",
+    "question": "Which precision qualifier gives the highest float accuracy in GLSL ES?",
+    "options": [
+      "highp",
+      "mediump",
+      "maxp",
+      "lowp"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "44",
+    "question": "What does the GLSL type vec3 hold?",
+    "options": [
+      "A 3x3 matrix",
+      "Three integer numbers",
+      "Three floating-point numbers",
+      "Three texture coordinates and a depth"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "45",
+    "question": "What do you use a mat4 for in a vertex shader?",
+    "options": [
+      "To hold four texture units",
+      "To store four colors for one single vertex",
+      "To apply a transform, such as a projection",
+      "To keep four vertex indices"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "46",
+    "question": "Which event does a canvas fire when the GPU context is lost?",
+    "options": [
+      "gpucontextlost",
+      "contextlost",
+      "webglerror",
+      "webglcontextlost"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "47",
+    "question": "Which call returns the last WebGL error code?",
+    "options": [
+      "gl.getLastError()",
+      "gl.checkError()",
+      "gl.errorCode()",
+      "gl.getError()"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "48",
+    "question": "What does it mean that WebGL is a state machine?",
+    "options": [
+      "The GPU runs every draw call in a separate process",
+      "Calls change global state that later calls use",
+      "Each object keeps its own copy of all settings",
+      "Every draw call must list all its settings"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "49",
+    "question": "How do you check for WebGL 2 support in the browser?",
+    "options": [
+      "Read the navigator.webgl2 version",
+      "Call getContext('webgl2') and test for null",
+      "Check that window.WebGL2RenderingContext equals zero",
+      "Call getContext('webgl') and read the version number"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "50",
+    "question": "Which tool records the WebGL calls of one frame so you can inspect them?",
+    "options": [
+      "Spector.js",
+      "Webpack Bundle Analyzer",
+      "The Chrome Network panel",
+      "Lighthouse"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "51",
+    "question": "A page must restore a WebGL context after loss. Why call preventDefault in the webglcontextlost handler?",
+    "options": [
+      "It allows the browser to fire the webglcontextrestored event",
+      "It stops the browser from showing an error message in the page",
+      "It saves the GPU memory for the next frame",
+      "It copies all textures to CPU memory"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "52",
+    "question": "The webglcontextrestored event fires. What must the application do?",
+    "options": [
+      "Nothing, because the browser restores all GL objects",
+      "Create all buffers, textures, and programs again",
+      "Only reset the viewport and the clear color",
+      "Call gl.flush to refresh the old objects"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "53",
+    "question": "Why is gl.readPixels in the render loop a problem for performance?",
+    "options": [
+      "It copies the pixels to a texture with a slow pixel format",
+      "It clears the depth buffer after each call",
+      "It locks the canvas element in the page layout",
+      "It forces the CPU to wait until the GPU finishes drawing"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "54",
+    "question": "What is the main goal of batching in WebGL?",
+    "options": [
+      "To compile the shaders in a separate background thread",
+      "To use fewer draw calls for many objects",
+      "To store textures in a compressed format",
+      "To draw objects from front to back"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "55",
+    "question": "Why do engineers sort draw calls by program and texture?",
+    "options": [
+      "WebGL draws objects with the same texture twice otherwise",
+      "The depth test needs this order to work",
+      "It reduces the number of costly state changes",
+      "It makes the blending result more accurate"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "56",
+    "question": "In WebGL 1, a texture has a non-power-of-two size. Which limit applies?",
+    "options": [
+      "It cannot use the RGBA format for its pixels",
+      "It cannot use mipmaps or REPEAT wrap",
+      "It cannot be used as a framebuffer target",
+      "It cannot be sampled in a vertex shader"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "57",
+    "question": "The canvas uses premultiplied alpha by default. Which blend function fits premultiplied source colors?",
+    "options": [
+      "gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA)",
+      "gl.blendFunc(gl.ONE, gl.ONE)",
+      "gl.blendFunc(gl.ZERO, gl.SRC_ALPHA)",
+      "gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA)"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "58",
+    "question": "An image looks upside down after texImage2D. Which pixel store parameter fixes it?",
+    "options": [
+      "gl.UNPACK_ALIGNMENT",
+      "gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL",
+      "gl.UNPACK_COLORSPACE_CONVERSION_WEBGL",
+      "gl.UNPACK_FLIP_Y_WEBGL"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "59",
+    "question": "A framebuffer with a texture attachment draws nothing. Which call finds the problem?",
+    "options": [
+      "gl.checkFramebufferStatus(gl.FRAMEBUFFER)",
+      "gl.isFramebuffer(fbo)",
+      "gl.getParameter(gl.FRAMEBUFFER_BINDING) and a null test",
+      "gl.getFramebufferStatus(fbo)"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "60",
+    "question": "Far surfaces flicker as they fight for depth. What is a common fix?",
+    "options": [
+      "Increase the near plane distance of the projection",
+      "Decrease the near plane distance to a value near zero",
+      "Disable the depth test for far objects",
+      "Use the lowp qualifier for the depth value"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "61",
+    "question": "How do you transform vertex normals when the model matrix has non-uniform scale?",
+    "options": [
+      "Multiply them by the model matrix without any change",
+      "Multiply them by the inverse transpose of the model matrix",
+      "Multiply them by the view matrix",
+      "Multiply them by the projection matrix"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "62",
+    "question": "A shader makes the clip position from model, view, and projection matrices. Which GLSL line is correct?",
+    "options": [
+      "gl_Position = model * view * projection * pos;",
+      "gl_Position = pos * model * view * projection;",
+      "gl_Position = view * model * projection * pos;",
+      "gl_Position = projection * view * model * pos;"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "63",
+    "question": "What must the transpose argument of uniformMatrix4fv be in WebGL?",
+    "options": [
+      "True when the array is a Float32Array",
+      "Any value, because WebGL ignores it",
+      "False, because data is column-major",
+      "True when the matrix comes from JavaScript"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "64",
+    "question": "What does the rasterizer do with a varying value across a triangle?",
+    "options": [
+      "It uses the average of all vertex values",
+      "It copies the value of the first vertex",
+      "It interpolates the value between vertices",
+      "It sends the value to the vertex shader again"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "65",
+    "question": "In WebGL 2 (GLSL ES 3.00), what does the flat qualifier do for a varying?",
+    "options": [
+      "It stops interpolation and uses the value of one vertex",
+      "It removes the depth from the value",
+      "It rounds the value to the nearest integer",
+      "It sends the value to the depth buffer"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "66",
+    "question": "Which feature lets WebGL 1 use 32-bit indices in drawElements?",
+    "options": [
+      "The gl.UNSIGNED_LONG index type in core",
+      "The OES_element_index_uint extension",
+      "The WEBGL_draw_buffers extension",
+      "A larger ELEMENT_ARRAY_BUFFER size hint"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "67",
+    "question": "Which extension gives instanced drawing in WebGL 1?",
+    "options": [
+      "OES_vertex_array_object",
+      "EXT_frag_depth",
+      "WEBGL_draw_buffers",
+      "ANGLE_instanced_arrays"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "68",
+    "question": "What does gl.vertexAttribDivisor(loc, 1) do in instanced drawing?",
+    "options": [
+      "It runs the attribute for every second vertex",
+      "It divides the attribute value by one",
+      "It sends the attribute to the fragment shader",
+      "It advances the attribute once per instance"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "69",
+    "question": "What does gl.getExtension('OES_texture_float') return if the GPU does not support it?",
+    "options": [
+      "It throws an error",
+      "An empty object",
+      "The value false",
+      "null"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "70",
+    "question": "What is a main benefit of uniform buffer objects in WebGL 2?",
+    "options": [
+      "Many programs can share one block of uniform data",
+      "They remove the need for a vertex shader",
+      "They store textures in uniform memory",
+      "They make uniforms writable in the fragment shader"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "71",
+    "question": "A mesh does not appear and the console shows no error. Which first check is best?",
+    "options": [
+      "Raise the precision to highp in all shaders",
+      "Check that the canvas has a CSS border",
+      "Call gl.finish before each draw call",
+      "Check LINK_STATUS and the shader info logs"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "72",
+    "question": "getAttribLocation returns -1 for an attribute declared in the shader. What is a likely reason?",
+    "options": [
+      "The buffer is too large",
+      "The shader does not use it, so the compiler drops it",
+      "The program needs a second link call",
+      "The attribute name uses upper case letters"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "73",
+    "question": "Which WebGL 2 call selects several color attachments for one fragment shader pass?",
+    "options": [
+      "gl.colorMask",
+      "gl.readBuffer",
+      "gl.drawBuffers",
+      "gl.bindBufferRange"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "74",
+    "question": "What does transform feedback do in WebGL 2?",
+    "options": [
+      "It saves vertex shader output into a buffer",
+      "It sends fragment shader output back to the CPU",
+      "It repeats a draw call for each frame",
+      "It copies a texture into a vertex array"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "75",
+    "question": "You call readPixels in a later task after the frame is on screen, and the result is empty. What is the likely cause?",
+    "options": [
+      "The depth buffer is full after the first frame",
+      "preserveDrawingBuffer is false, so the buffer is cleared",
+      "The canvas has an odd width in CSS pixels",
+      "The context uses antialias true with alpha false"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "76",
+    "question": "The antialias context attribute is true. Which buffer does it affect?",
+    "options": [
+      "Only the default framebuffer",
+      "Every framebuffer object you create",
+      "Only the textures that you sample",
+      "Only the depth buffer in your shader"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "77",
+    "question": "An app uploads a cross-origin image to a texture without CORS. What happens in current browsers?",
+    "options": [
+      "The browser uploads a low-resolution copy",
+      "The texture shows black pixels only",
+      "texImage2D throws a SecurityError",
+      "The GPU driver blocks the image without a message"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "78",
+    "question": "In WebGL 2, you want to render into a 32-bit float color texture. Which extension do you need?",
+    "options": [
+      "OES_texture_float_linear",
+      "EXT_color_buffer_float",
+      "WEBGL_color_buffer_float",
+      "OES_standard_derivatives"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "79",
+    "question": "How do you draw transparent objects with blending in a scene with a depth test?",
+    "options": [
+      "Draw transparent objects first with depth writes on",
+      "Draw all objects in a random order with depth writes on",
+      "Draw opaque objects first, then transparent ones back to front",
+      "Draw transparent objects from front to back with blending off"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "80",
+    "question": "On a high-DPI screen, a WebGL canvas looks blurry. What is a common fix?",
+    "options": [
+      "Call gl.clear twice for each frame to remove blur",
+      "Set the CSS width of the canvas to 100 percent only",
+      "Scale the drawing buffer by devicePixelRatio and set the viewport",
+      "Enable the antialias context attribute and change nothing else"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "81",
+    "question": "readPixels blocks the main thread. Which WebGL 2 approach avoids the stall?",
+    "options": [
+      "Call gl.finish first, then read the pixels in the same frame",
+      "Use a second context with preserveDrawingBuffer set to true",
+      "Read into a PIXEL_PACK_BUFFER, wait on a fence, then call getBufferSubData",
+      "Read the pixels with a smaller type, such as UNSIGNED_BYTE"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "82",
+    "question": "A page creates many WebGL canvases. The oldest canvas shows a lost context. Why?",
+    "options": [
+      "The GPU driver deletes a context after 60 seconds of idle time",
+      "The garbage collector frees any canvas that the user cannot see",
+      "Each canvas must share one program, and the oldest canvas has none",
+      "The browser limits the number of active contexts and loses the oldest one"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "83",
+    "question": "A fragment shader uses mediump float for large world coordinates. Why do artifacts appear on some mobile GPUs?",
+    "options": [
+      "mediump turns off the depth test on mobile GPUs",
+      "mediump can be 16-bit there, so large values lose accuracy",
+      "mediump values cannot be negative in fragment shaders",
+      "mediump makes the GPU run the shader on the CPU"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "84",
+    "question": "A scene has 5,000 objects with 200 uniforms each. Which change helps most in WebGL 2?",
+    "options": [
+      "Put per-object data in uniform buffers or instance attributes",
+      "Call gl.getUniformLocation for each uniform every frame",
+      "Use highp for all uniforms to speed up the upload",
+      "Create a new program for each object to cache the values"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "85",
+    "question": "When is instancing a worse choice than merging meshes into one buffer?",
+    "options": [
+      "When the objects are static and have different shapes",
+      "When the objects share one mesh but have different transforms",
+      "When you need a different color for each copy of the mesh",
+      "When the scene has more than 1,000 copies of the same mesh"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "86",
+    "question": "Linking a large program freezes the main thread. Which extension reduces this problem?",
+    "options": [
+      "WEBGL_lose_context, which lets you drop the program until the link ends",
+      "KHR_parallel_shader_compile, which lets you poll COMPLETION_STATUS_KHR",
+      "OES_vertex_array_object, which caches the link result for each VAO",
+      "EXT_disjoint_timer_query, which moves the link to a worker thread"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "87",
+    "question": "A draw call reads texture T while the bound framebuffer writes to T. What happens?",
+    "options": [
+      "It is a feedback loop, and the draw call fails with INVALID_OPERATION",
+      "The GPU makes a copy of T, so the result is correct but slow",
+      "The draw call reads the old values of T, so ping-pong is not needed",
+      "The browser loses the context to protect the GPU"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "88",
+    "question": "Why does a deferred renderer need WebGL 2 or an extension?",
+    "options": [
+      "It needs geometry shaders to build the light volumes",
+      "It needs compute shaders to sort the lights",
+      "It writes several G-buffer textures in one pass with multiple render targets",
+      "It needs 3D textures to store the light list"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "89",
+    "question": "In WebGL 2, how do you connect a uniform block in a shader to a buffer?",
+    "options": [
+      "Call gl.getUniformLocation for the block name, then upload the data with gl.uniform4fv",
+      "Call gl.uniformBlockBinding for the block, then bind the buffer to the same index with gl.bindBufferBase",
+      "Call gl.vertexAttribPointer for the block name, then draw with gl.drawArraysInstanced",
+      "Call gl.bindBuffer with gl.ARRAY_BUFFER, and the block reads the data from there"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "90",
+    "question": "How does a browser stop one page from reading old GPU memory of another page?",
+    "options": [
+      "The browser encrypts all textures with a key for each page",
+      "The browser runs each canvas in a separate driver on the CPU",
+      "The WebGL spec requires new buffers, textures, and renderbuffers to start with zeros",
+      "The browser blocks readPixels on every canvas that uses textures"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "91",
+    "question": "A fragment shader loops for several seconds. What can happen?",
+    "options": [
+      "The shader compiler rejects the loop at link time in all cases",
+      "The browser pauses the shader and resumes it in the next frame",
+      "The loop ends after 1,000 iterations on all GPUs without an error",
+      "The GPU watchdog resets the GPU, and the page gets a webglcontextlost event"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "92",
+    "question": "How do you check without blocking if the GPU finished its commands in WebGL 2?",
+    "options": [
+      "Call gl.finish and test its return value",
+      "Read one pixel with readPixels and test if it is zero",
+      "Call gl.flush and wait for the next animation frame",
+      "Create a fenceSync and poll it with clientWaitSync with a timeout of zero"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "93",
+    "question": "A semi-transparent WebGL canvas shows a bright halo on a white page. What is a likely cause?",
+    "options": [
+      "The canvas has antialias true, which adds a halo to the alpha channel",
+      "The depth buffer writes the alpha value twice",
+      "The shader writes non-premultiplied color, but the compositor expects premultiplied alpha",
+      "The texture uses mipmaps with the REPEAT wrap mode"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "94",
+    "question": "You rewrite a large vertex buffer every frame with bufferSubData while the GPU still uses it. What is the risk?",
+    "options": [
+      "The browser deletes the buffer after the write",
+      "The driver may stall or make a copy to keep the data safe",
+      "The data goes to the next frame only if you use STATIC_DRAW",
+      "bufferSubData changes the buffer size and resets the attributes"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "95",
+    "question": "How can a WebGL app render in a Web Worker?",
+    "options": [
+      "Use OffscreenCanvas, from transferControlToOffscreen or new OffscreenCanvas",
+      "Call getContext on document.createElement('canvas') in the worker",
+      "Use a SharedArrayBuffer to share the GL state with the worker",
+      "Pass the main thread WebGL context to the worker with postMessage"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "96",
+    "question": "A shader lights in linear space. For the default framebuffer, where must the sRGB conversion happen?",
+    "options": [
+      "In the swap chain, because WebGL does it for each canvas",
+      "In the fragment shader, with a gamma function before the output",
+      "In gl.blendFunc, with the SRC_COLOR factor",
+      "In gl.viewport, with a color space argument"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "97",
+    "question": "Which API decodes an image off the main thread before you upload it with texImage2D?",
+    "options": [
+      "new Image with the decoding property set to sync",
+      "gl.compressedTexImage2D with the JPEG data",
+      "createImageBitmap, then upload the ImageBitmap",
+      "gl.texStorage2D with the file bytes"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "98",
+    "question": "A WebGL 1 vertex shader samples a texture and fails to link on one device. What is a likely cause?",
+    "options": [
+      "MAX_VERTEX_TEXTURE_IMAGE_UNITS can be 0, so vertex texture fetch is not available",
+      "Vertex texture fetch always needs the OES_texture_float extension",
+      "Vertex shaders in WebGL 1 can use texture2D only with mediump",
+      "Samplers in vertex shaders need the flat qualifier"
+    ],
+    "correct_index": 0
+  },
+  {
+    "id": "99",
+    "question": "After context loss, what does gl.getError return, and how do most gl calls behave?",
+    "options": [
+      "It returns OUT_OF_MEMORY, and all calls throw exceptions",
+      "It returns INVALID_OPERATION, and calls wait for the restore",
+      "It returns NO_ERROR, and all calls use the CPU instead",
+      "It returns CONTEXT_LOST_WEBGL once, and most calls do nothing"
+    ],
+    "correct_index": 3
+  },
+  {
+    "id": "100",
+    "question": "A WebGL 2 vertex shader declares `in ivec4 a_ids;`. Which call must set up the attribute?",
+    "options": [
+      "vertexAttribPointer with the type gl.FLOAT, because integers use float storage",
+      "vertexAttribPointer with normalized false, because it keeps integers",
+      "vertexAttribDivisor with the integer type",
+      "vertexAttribIPointer, which keeps the integer values"
+    ],
+    "correct_index": 3
+  }
+]
