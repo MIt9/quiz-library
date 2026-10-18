@@ -1,25 +1,25 @@
 [
   {
     "id": "1",
-    "question": "What does Less add to CSS authoring?",
+    "question": "Which file extension do Less source files normally use?",
     "options": [
-      "A server routing language",
-      "A required browser DOM API",
-      "A React-only component model",
-      "Variables and reusable logic"
+      ".less",
+      ".lss",
+      ".ls",
+      ".lcss"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "2",
-    "question": "What does a Less compiler normally produce?",
+    "question": "What does the Less compiler produce from .less files?",
     "options": [
-      "Design screenshots",
-      "CSS",
-      "JavaScript components",
-      "HTML"
+      "An HTML template",
+      "A JavaScript bundle",
+      "A CSS stylesheet",
+      "A JSON token file"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "3",
@@ -34,14 +34,14 @@
   },
   {
     "id": "4",
-    "question": "Which Less declaration assigns a color variable?",
+    "question": "Which Less comment style does not appear in the compiled CSS?",
     "options": [
-      "@brand: #369;",
-      "--brand = #369;",
-      "brand := #369;",
-      "$brand: #369;"
+      "<!-- html comment -->",
+      "/* block comment */",
+      "// line comment",
+      "# hash comment"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "5",
@@ -56,58 +56,58 @@
   },
   {
     "id": "6",
-    "question": "What does Less nesting organize?",
+    "question": "What does nesting let you do in Less?",
     "options": [
-      "Related selectors",
-      "Component runtime state",
-      "Browser event listeners",
-      "Server request handlers"
+      "Group unrelated rules into one output file",
+      "Declare parent rules inside a child declaration",
+      "Load child stylesheets from the HTML file",
+      "Declare child rules inside a parent rule"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "7",
     "question": "What does & refer to in a nested Less selector?",
     "options": [
-      "The first sibling element",
       "The current parent selector",
-      "The stylesheet filename",
+      "The first sibling element",
+      "The previous declaration value",
       "The root document element"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "8",
     "question": "Which nested selector makes a parent hover rule?",
     "options": [
-      "@:hover",
+      "&:hover",
       "self:hover",
       ":parent:hover",
-      "&:hover"
+      "@:hover"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "9",
-    "question": "What does a Less mixin reuse?",
+    "question": "What is a Less mixin used for?",
     "options": [
-      "A browser DOM node",
-      "A set of declarations",
-      "A component event handler",
-      "A loaded server route"
+      "Matching many elements with one selector",
+      "Storing one value under a single name",
+      "Running code in the browser at load time",
+      "Reusing a group of declarations in other rules"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "10",
     "question": "Which definition declares a parameterized Less mixin?",
     "options": [
       "function space(n) { padding: n; }",
-      ".space($n) { padding: $n; }",
+      ".space(@n) { padding: @n; }",
       "@mixin space(@n) { padding: @n; }",
-      ".space(@n) { padding: @n; }"
+      ".space($n) { padding: $n; }"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "11",
@@ -115,30 +115,30 @@
     "options": [
       "@apply .space(8px);",
       "@include space(8px);",
-      ".space(8px);",
-      "space = 8px;"
+      "space = 8px;",
+      ".space(8px);"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "12",
     "question": "What does a mixin parameter default supply?",
     "options": [
-      "A generated selector name",
-      "A required override for every call",
-      "A value when its argument is omitted",
-      "A global browser custom property"
+      "A value used when the call omits that argument",
+      "A value that every call must override",
+      "A name for the generated selector",
+      "A guard that blocks the mixin"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "13",
     "question": "What does a Less mixin guard control?",
     "options": [
-      "Whether CSS loads in the browser",
-      "Whether a definition matches",
-      "Whether a component receives focus",
-      "Whether HTML has a valid ID"
+      "Whether the browser loads the CSS file",
+      "Whether the mixin definition matches a call",
+      "Whether the output file is minified",
+      "Whether imports are resolved"
     ],
     "correct_index": 1
   },
@@ -155,91 +155,91 @@
   },
   {
     "id": "15",
-    "question": "What does @arguments represent inside a mixin?",
+    "question": "What does @arguments hold inside a mixin?",
     "options": [
-      "All stylesheet variable names",
-      "Every generated CSS selector",
-      "The arguments passed to it",
-      "The browser command-line flags"
+      "All variables in the stylesheet",
+      "All arguments passed in the mixin call",
+      "The list of imported files",
+      "The compiler command-line options"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "16",
-    "question": "What does a variadic mixin parameter collect?",
+    "question": "What does the @rest... parameter collect in a mixin?",
     "options": [
-      "Additional arguments",
-      "Additional plugin filenames",
-      "Additional CSS imports",
-      "Additional selector parents"
+      "The remaining arguments after the named ones",
+      "The remaining selectors in the rule",
+      "The remaining imports in the file",
+      "The remaining properties in the output"
     ],
     "correct_index": 0
   },
   {
     "id": "17",
-    "question": "What does selector interpolation insert?",
+    "question": "What does selector interpolation do in Less?",
     "options": [
-      "A CSS specificity exception",
-      "A new browser DOM element",
-      "A computed selector fragment",
-      "A component source import"
+      "Raises the specificity of the selector",
+      "Inserts a variable value into the selector text",
+      "Imports a rule set into the selector",
+      "Adds a browser pseudo-class"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "18",
     "question": "Which syntax interpolates a Less variable in a selector?",
     "options": [
       "var(--name)",
-      "@{name}",
+      "${name}",
       "#{name}",
-      "${name}"
+      "@{name}"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "19",
-    "question": "What does variable indirection with @@name use?",
+    "question": "What does @@name mean in Less?",
     "options": [
-      "The previous stylesheet filename",
-      "The browser's current custom property",
-      "The name stored in another variable",
-      "The element's current attribute value"
+      "The default value of a mixin parameter",
+      "The value of the parent scope variable @name",
+      "The last imported variable called name",
+      "The value of the variable named by the value of @name"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "20",
     "question": "What does Less lazy variable evaluation mean?",
     "options": [
-      "Evaluate variables on every browser repaint",
+      "Resolve values from their scope when needed",
       "Fetch variable values from the server",
       "Ignore variable declarations after first use",
-      "Resolve values from their scope when needed"
+      "Evaluate variables on every browser repaint"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "21",
-    "question": "What scopes a variable defined inside a Less ruleset?",
+    "question": "Where is a variable declared inside a ruleset visible?",
     "options": [
-      "The browser window",
-      "The enclosing Less scope",
-      "The HTTP request",
-      "The complete application state"
+      "Inside that ruleset and its nested rules",
+      "In every file of the project",
+      "Only after the compiler restarts",
+      "Only in the next imported file"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "22",
-    "question": "What does @import commonly include during Less compilation?",
+    "question": "What does @import normally do in a Less file?",
     "options": [
-      "A user authentication token",
-      "Another stylesheet source",
-      "A deployed JavaScript component",
-      "A browser DOM subtree"
+      "Defines a namespace for mixins",
+      "Downloads a font in the browser",
+      "Registers a compiler plugin",
+      "Includes another Less file in the compilation"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "23",
@@ -265,278 +265,278 @@
   },
   {
     "id": "25",
-    "question": "What does an inline import do?",
+    "question": "What does the inline import option do?",
     "options": [
-      "Insert file contents without Less processing",
-      "Convert all declarations into variables",
-      "Resolve every URL into a data URI",
-      "Create a browser inline style attribute"
+      "Wraps the file in a style attribute",
+      "Converts the file into variables",
+      "Resolves the file URLs as data URIs",
+      "Copies the file contents without processing them"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "26",
     "question": "What is a reference import intended for?",
     "options": [
-      "Load a CSS file in every browser tab",
-      "Force every imported selector to emit",
-      "Use definitions without emitting them by default",
-      "Replace all imported variable names"
+      "Using definitions without their CSS",
+      "Emitting every imported selector twice",
+      "Loading the file only in the browser",
+      "Renaming all imported variables"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "27",
-    "question": "What does a multiple import option allow?",
+    "question": "What does the multiple import option allow?",
     "options": [
-      "Load every file in a directory",
-      "Import the same file again",
-      "Create multiple browser contexts",
-      "Compile several themes automatically"
+      "Importing every file in a directory",
+      "Importing the same file more than once",
+      "Importing files in parallel threads",
+      "Importing a file as both CSS and Less"
     ],
     "correct_index": 1
   },
   {
     "id": "28",
-    "question": "What does an optional import allow?",
+    "question": "What does the optional import option allow?",
     "options": [
-      "A plugin without a configured runtime",
-      "A selector without a declaration block",
-      "A missing import without a fatal error",
-      "An invalid stylesheet without parsing"
-    ],
-    "correct_index": 2
-  },
-  {
-    "id": "29",
-    "question": "What does Less :extend reuse?",
-    "options": [
-      "The application's theme context",
-      "A mixin argument list",
-      "A browser computed style value",
-      "Matching selector relationships"
-    ],
-    "correct_index": 3
-  },
-  {
-    "id": "30",
-    "question": "How does :extend differ from copying declarations?",
-    "options": [
-      "It creates inline style objects",
-      "It evaluates only in the browser",
-      "It ignores the CSS cascade",
-      "It adds selectors to existing rules"
-    ],
-    "correct_index": 3
-  },
-  {
-    "id": "31",
-    "question": "What does :extend(... all) broaden?",
-    "options": [
-      "Matching within compound selector patterns",
-      "The scope of JavaScript variables",
-      "The number of compiled theme files",
-      "The runtime number of DOM nodes"
+      "Skipping a missing file without a compile error",
+      "Skipping the parsing of a present file",
+      "Importing a file only in production",
+      "Importing a file only once"
     ],
     "correct_index": 0
   },
   {
-    "id": "32",
-    "question": "What is a detached ruleset?",
+    "id": "29",
+    "question": "What does :extend do in Less?",
     "options": [
-      "A stylesheet removed from the browser",
-      "A ruleset stored as a value",
-      "A selector without any name",
-      "A mixin with no parameters"
+      "Copies the declarations into a new, separate rule",
+      "Adds the extending selector to the target rule",
+      "Turns the target rule into a reusable mixin",
+      "Imports the target rule from another Less file"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "30",
+    "question": "What is a benefit of :extend compared with a mixin call?",
+    "options": [
+      "It accepts parameters at the call site",
+      "It avoids repeated declarations in the CSS",
+      "It runs in the browser after load",
+      "It evaluates guards at runtime"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "31",
+    "question": "What does the all keyword do in :extend(.a all)?",
+    "options": [
+      "Extends every rule in the file",
+      "Matches .a inside longer selectors too",
+      "Extends all imported files",
+      "Extends the rule in all media queries"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "32",
+    "question": "What is a detached ruleset in Less?",
+    "options": [
+      "A ruleset removed from the compiled output",
+      "A ruleset stored in a variable",
+      "A ruleset with no selector name at all",
+      "A mixin that has no body at all"
     ],
     "correct_index": 1
   },
   {
     "id": "33",
-    "question": "What does invoking a detached ruleset do?",
+    "question": "A detached ruleset is stored in @rules. How does the code call it?",
     "options": [
-      "Attach a new DOM stylesheet",
-      "Evaluate its contained rules",
-      "Rename all contained selectors",
-      "Fetch a remote CSS response"
+      "@include rules;",
+      "@rules;",
+      "@rules();",
+      ".rules;"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "What can Less operations calculate at compile time?",
+    "options": [
+      "Database query totals",
+      "Numbers, dimensions and colors",
+      "DOM element sizes",
+      "Viewport widths"
     ],
     "correct_index": 1
   },
   {
-    "id": "34",
-    "question": "What can Less arithmetic calculate?",
-    "options": [
-      "Current browser focus positions",
-      "Database query totals",
-      "Numeric style values",
-      "DOM element measurements"
-    ],
-    "correct_index": 2
-  },
-  {
     "id": "35",
-    "question": "In Less 4's default math mode, where should division be evaluated explicitly?",
+    "question": "In Less 4's default math mode, where is division evaluated?",
     "options": [
+      "Inside a comment",
       "Inside a class selector",
-      "Inside a quoted URL",
-      "Inside parentheses",
-      "Inside an HTML attribute"
+      "Inside a url() function",
+      "Inside parentheses"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "36",
-    "question": "What does Less unit() help change?",
+    "question": "What does unit(5, px) return?",
     "options": [
-      "A number's unit representation",
-      "The component's state identity",
-      "The browser zoom level",
-      "The stylesheet character encoding"
+      "px",
+      "5",
+      "50px",
+      "5px"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "37",
-    "question": "What does Less convert() do for compatible units?",
+    "question": "What does convert(9s, ms) return?",
     "options": [
-      "Resolve a missing import target",
-      "Change a selector into a mixin",
-      "Convert HTML into a stylesheet",
-      "Convert a dimension value"
-    ],
-    "correct_index": 3
-  },
-  {
-    "id": "38",
-    "question": "What does Less percentage() produce?",
-    "options": [
-      "A unitless color channel",
-      "A CSS selector priority",
-      "A viewport width measurement",
-      "A percentage from a number"
-    ],
-    "correct_index": 3
-  },
-  {
-    "id": "39",
-    "question": "What does Less lighten() adjust?",
-    "options": [
-      "A border's physical width",
-      "A selector's specificity",
-      "A color's lightness",
-      "A font's numeric weight"
+      "0.009ms",
+      "9ms",
+      "9000ms",
+      "9s"
     ],
     "correct_index": 2
   },
   {
-    "id": "40",
-    "question": "What does Less fade() set?",
+    "id": "38",
+    "question": "What does percentage(0.5) return?",
     "options": [
-      "An animation duration",
-      "A text shadow offset",
-      "A layout gap",
-      "A color's alpha"
+      "5%",
+      "0.5%",
+      "50%",
+      "500%"
     ],
-    "correct_index": 3
+    "correct_index": 2
+  },
+  {
+    "id": "39",
+    "question": "What does lighten(@c, 10%) do?",
+    "options": [
+      "Raises the opacity of the color",
+      "Raises the lightness of the color",
+      "Raises the saturation of the color",
+      "Rotates the hue of the color"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "40",
+    "question": "What does fade(@c, 50%) do?",
+    "options": [
+      "Sets the saturation of the color to 50%",
+      "Sets the lightness of the color to 50%",
+      "Sets the alpha of the color to 50%",
+      "Sets the hue of the color to 50 degrees"
+    ],
+    "correct_index": 2
   },
   {
     "id": "41",
-    "question": "What does Less mix() combine?",
+    "question": "What does mix(@a, @b) do?",
     "options": [
-      "Two DOM trees",
-      "Two import directories",
-      "Two component states",
-      "Two colors"
+      "Joins two lists",
+      "Merges two selectors",
+      "Combines two import files",
+      "Blends two colors by weight"
     ],
     "correct_index": 3
   },
   {
     "id": "42",
-    "question": "What does Less length() return for a list?",
+    "question": "What does length(1px 2px 3px) return?",
     "options": [
-      "Its compiled CSS size",
-      "Its pixel width",
-      "Its item count",
-      "Its source byte count"
+      "6",
+      "1",
+      "3",
+      "3px"
     ],
     "correct_index": 2
   },
   {
     "id": "43",
-    "question": "What does Less extract() select?",
+    "question": "What does extract(@list, 2) return?",
     "options": [
-      "A list item by index",
-      "A selector from the browser",
-      "A component from its display name",
-      "An imported file by extension"
+      "The third item",
+      "The second item",
+      "The item named 2",
+      "The last two items"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "44",
-    "question": "Which index selects the first item with Less extract()?",
+    "question": "Which command compiles app.less into app.css?",
     "options": [
-      "1",
-      "0",
-      "2",
-      "-1"
+      "lessc compile app.css app.less",
+      "lessc app.less app.css",
+      "lessc --out app.less app.css",
+      "lessc build app.less > app"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "45",
-    "question": "What does Less each() help generate?",
+    "question": "What does the escape syntax ~\"text\" output?",
     "options": [
-      "Rules from a collection",
-      "Server-side application routes",
-      "React component instances",
-      "Runtime browser event listeners"
+      "The text as a new variable",
+      "The text with doubled quotes",
+      "The text without quotes, left unprocessed",
+      "The text in uppercase"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "46",
-    "question": "What does Less range() create?",
+    "question": "What does range(4) return?",
     "options": [
-      "A sequence of numbers",
-      "A responsive viewport observer",
-      "An image color histogram",
-      "A font fallback chain"
+      "1 2 3 4",
+      "0 1 2 3",
+      "1 2 3",
+      "4"
     ],
     "correct_index": 0
   },
   {
     "id": "47",
-    "question": "What does Less data-uri() help produce?",
+    "question": "What does data-uri() do?",
     "options": [
-      "A component import path",
-      "An embedded asset URL",
-      "A CSS selector alias",
-      "A browser storage key"
-    ],
-    "correct_index": 1
-  },
-  {
-    "id": "48",
-    "question": "What does lessc provide?",
-    "options": [
-      "A command-line compiler",
-      "A design token repository",
-      "A component testing framework",
-      "A browser DOM inspector"
+      "Embeds a file as a data URI",
+      "Loads a file from the server at runtime",
+      "Compresses an image with a plugin",
+      "Creates a CSS variable from a URL"
     ],
     "correct_index": 0
   },
   {
-    "id": "49",
-    "question": "What does a Less source map support?",
+    "id": "48",
+    "question": "What is lessc?",
     "options": [
-      "Selecting a component theme",
-      "Tracing output to source",
-      "Resolving browser CSS inheritance",
-      "Registering a runtime plugin"
+      "A CSS linter",
+      "A browser developer tool",
+      "The command-line Less compiler",
+      "A Less package registry"
     ],
-    "correct_index": 1
+    "correct_index": 2
+  },
+  {
+    "id": "49",
+    "question": "What does a Less source map provide?",
+    "options": [
+      "A list of unused mixins",
+      "A link from variables to CSS custom properties",
+      "A link from compiled CSS back to Less source",
+      "A split of the CSS into chunks"
+    ],
+    "correct_index": 2
   },
   {
     "id": "50",
@@ -562,25 +562,25 @@
   },
   {
     "id": "52",
-    "question": "A Less mixin reads variables from surrounding scopes. What should a review inspect?",
+    "question": "Two declarations of @w exist in the same scope. Which value does Less use?",
     "options": [
-      "Only the browser's event order",
-      "Definition and caller scope resolution",
-      "Only the component's DOM attributes",
-      "Only the generated filename suffix"
+      "Both values, as a list",
+      "The first definition in that scope",
+      "The last definition in that scope",
+      "Neither; compilation fails"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "53",
     "question": "A Less mixin accepts a comma-separated font list. Why can semicolon separators help its call?",
     "options": [
-      "Keep commas within one argument",
-      "Convert each font into a selector",
       "Remove all list delimiters from output",
+      "Convert each font into a selector",
+      "Keep commas within one argument",
       "Force every argument to be numeric"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "54",
@@ -598,33 +598,33 @@
     "question": "A Less mixin uses a false guard. What happens to that definition at the call?",
     "options": [
       "It throws a JavaScript exception",
-      "It does not contribute output",
       "It emits a browser runtime condition",
+      "It does not contribute output",
       "It becomes an empty global variable"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "56",
     "question": "A Less 4 expression uses 12px / 2 without parentheses. What should the developer inspect?",
     "options": [
       "Whether the selector becomes invalid",
-      "Whether px becomes a global variable",
       "Whether division remains unevaluated CSS",
+      "Whether px becomes a global variable",
       "Whether every import is duplicated"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "57",
     "question": "A Less calculation combines incompatible dimensions. What option helps detect unsuitable unit arithmetic?",
     "options": [
-      "Strict unit checking",
+      "Selector compression only",
       "Source map embedding only",
       "Import duplication only",
-      "Selector compression only"
+      "Strict unit checking"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "58",
@@ -642,55 +642,55 @@
     "question": "A Less mixin definition omits empty parentheses. What extra output can a class-style definition create?",
     "options": [
       "A generated browser event handler",
-      "A CSS custom property per argument",
+      "Its standalone CSS rule",
       "An automatic JavaScript function",
-      "Its standalone CSS rule"
+      "A CSS custom property per argument"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "60",
-    "question": "A mixin is defined as .helper() with empty parentheses. What is the intended output behavior?",
+    "question": "What does .m() !important; do at a mixin call?",
     "options": [
-      "Create one CSS import per invocation",
-      "Generate a browser class automatically",
-      "Emit one rule for every DOM instance",
-      "Use it as a mixin without a standalone rule"
+      "Raises the specificity of the mixin selector",
+      "Marks only the last declaration as !important",
+      "Marks every declaration from the mixin as !important",
+      "Stops the mixin from emitting output"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "61",
     "question": "A reference import supplies a mixin used by one selector. Why use it instead of a regular import?",
     "options": [
-      "Avoid resolving the source dependency",
+      "Avoid unrelated imported output",
       "Avoid all declaration duplication",
       "Avoid parsing the imported Less",
-      "Avoid unrelated imported output"
+      "Avoid resolving the source dependency"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "62",
-    "question": "A Less selector uses @{state}. Which source value should the build control?",
+    "question": "Which syntax builds a property name from the variable @prop?",
     "options": [
-      "The interpolated selector fragment",
-      "Only the element's runtime text",
-      "Only the image's intrinsic width",
-      "Only the stylesheet's HTTP headers"
+      "@prop-color: red;",
+      "@{prop}-color: red;",
+      "{@prop}-color: red;",
+      "#{prop}-color: red;"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "63",
     "question": "A nested Less rule uses & + &. What relationship does the output describe?",
     "options": [
       "A descendant and every ancestor",
-      "Adjacent matching siblings",
+      "Two independent document roots",
       "A parent and its first child",
-      "Two independent document roots"
+      "Adjacent matching siblings"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "64",
@@ -698,65 +698,65 @@
     "options": [
       "After the declaration value",
       "As a mixin argument default",
-      "Inside the property name",
-      "Before the parent selector"
+      "Before the parent selector",
+      "Inside the property name"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "65",
     "question": "A Less import ends in .css. Why might its contents not enter the compiled file?",
     "options": [
       "The browser must parse the source Less",
-      "It can remain a native CSS import",
+      "Less never supports relative file paths",
       "CSS files cannot contain declarations",
-      "Less never supports relative file paths"
+      "It can remain a native CSS import"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "66",
-    "question": "A build must process a CSS file as Less source. Which import option should it use?",
+    "question": "A mixin has definitions .m(dark; @c) and .m(light; @c). What selects one at the call .m(dark; red)?",
     "options": [
-      "css",
-      "less",
-      "optional",
-      "multiple"
+      "The literal first argument matches dark",
+      "The alphabetical order of definitions",
+      "The last imported definition only",
+      "The color scheme of the browser"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "67",
     "question": "A Less URL points to an image beside an imported file. What must build configuration handle?",
     "options": [
-      "Only the current selector specificity",
-      "Only the browser's page title",
       "Correct asset URL resolution",
+      "Only the browser's page title",
+      "Only the current selector specificity",
       "Only the mixin's return value"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "68",
     "question": "A compiled selector contains an unexpected parent chain. What should the developer inspect?",
     "options": [
-      "Only the color function precision",
-      "Only the imported image dimensions",
       "Nesting and parent selector expansion",
+      "Only the imported image dimensions",
+      "Only the color function precision",
       "Only the source map filename"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "69",
     "question": "A Less recursive mixin generates spacing helpers. What must its guard ensure?",
     "options": [
-      "A global DOM class registry",
       "A terminating condition",
+      "A global DOM class registry",
       "A fixed browser viewport",
       "A mandatory CSS import"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "70",
@@ -784,23 +784,23 @@
     "id": "72",
     "question": "A team expects a Less guard to react to user interaction. Why is that expectation wrong?",
     "options": [
-      "The guard requires a component callback",
+      "The guard runs during compilation",
       "The guard runs only during hydration",
       "The guard always ignores boolean values",
-      "The guard runs during compilation"
+      "The guard requires a component callback"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "73",
-    "question": "A Less theme changes one entry in a lookup-based token map. What should dependent styles reference?",
+    "question": "Given @config: { size: 4px; }, which expression reads the size value?",
     "options": [
-      "The map's semantic lookup",
-      "The compiler's output line number",
-      "A copied literal in each selector",
-      "The generated source map URL"
+      "@config.size",
+      "@config[size]",
+      "@config(size)",
+      "@config->size"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "74",
@@ -808,10 +808,10 @@
     "options": [
       "Only the HTML document language",
       "Only the browser's font fallback",
-      "Exact matching versus all matching",
-      "Only the source file character count"
+      "Only the source file character count",
+      "Exact matching versus all matching"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "75",
@@ -829,11 +829,11 @@
     "question": "A Less plugin defines a custom function. Where does that function normally execute?",
     "options": [
       "In the component event handler",
-      "In the server's database process",
+      "In the compilation environment",
       "In every browser animation frame",
-      "In the compilation environment"
+      "In the server's database process"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "77",
@@ -841,30 +841,30 @@
     "options": [
       "All CSS properties become browser scripts",
       "The output requires a JavaScript interpreter",
-      "Sources can execute code during compilation",
-      "Every color value becomes a network URL"
+      "Every color value becomes a network URL",
+      "Sources can execute code during compilation"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "78",
     "question": "A Less build can read local imports. What must a service compiling untrusted source restrict?",
     "options": [
       "Only the number of class names",
-      "Only the source filename extension",
       "Filesystem and import access",
+      "Only the source filename extension",
       "Only the generated CSS indentation"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "79",
-    "question": "A Less build transforms a shared mixin. What regression set best checks its consumers?",
+    "question": "What does the comma in when (@a), (@b) mean in a Less guard?",
     "options": [
-      "Only the final CSS filename spelling",
-      "Representative uses with varied arguments",
-      "Only one screenshot at a fixed width",
-      "Only the mixin's source character count"
+      "AND: both conditions must match",
+      "OR: either condition can match",
+      "NOT: neither condition may match",
+      "Sequence: the first, then the second"
     ],
     "correct_index": 1
   },
@@ -872,34 +872,34 @@
     "id": "80",
     "question": "A Less file imports shared tokens and emits theme CSS. Why can splitting definitions from output help?",
     "options": [
-      "Reduce unintended repeated CSS",
-      "Eliminate the need for compilation",
       "Remove all scope dependencies",
+      "Eliminate the need for compilation",
+      "Reduce unintended repeated CSS",
       "Prevent every theme conflict"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "81",
     "question": "A Less recursive generator accepts a user-controlled upper bound. What production safeguard belongs in the build?",
     "options": [
       "A second identical import statement",
-      "A resource limit on generated work",
+      "A default font family declaration",
       "A larger browser cache duration",
-      "A default font family declaration"
+      "A resource limit on generated work"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "82",
     "question": "A Less :extend target appears inside a media query. What should the developer verify?",
     "options": [
-      "The extension's conditional scope",
+      "Only the color function names",
       "Only the page's tab order",
       "Only the generated asset hostname",
-      "Only the color function names"
+      "The extension's conditional scope"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "83",
@@ -925,12 +925,12 @@
   },
   {
     "id": "85",
-    "question": "A Less map uses variables as keys and values. What should its API document?",
+    "question": "Which variables does each(@list, {...}) set for the ruleset by default?",
     "options": [
-      "Only the current editor theme",
-      "Only the source map comment style",
-      "Lookup names and fallback policy",
-      "Only the package archive filename"
+      "@this, @parent and @root",
+      "@item, @i and @length",
+      "@value, @key and @index",
+      "@first, @last and @rest"
     ],
     "correct_index": 2
   },
@@ -938,65 +938,65 @@
     "id": "86",
     "question": "A build cache keys Less output by the entry file alone. What change can it miss?",
     "options": [
-      "Imported files and compiler options",
-      "The number of page navigation links",
       "The browser's current zoom value",
+      "The number of page navigation links",
+      "Imported files and compiler options",
       "The developer's cursor position"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "87",
-    "question": "A Less compiler upgrade changes math behavior. What migration evidence matters?",
+    "question": "What does if((@mode = dark), black, white) return when @mode is dark?",
     "options": [
-      "Computed values in representative output",
-      "Only matching source file extensions",
-      "Only unchanged import binding names",
-      "Only successful dependency installation"
+      "black",
+      "white",
+      "true",
+      "dark"
     ],
     "correct_index": 0
   },
   {
     "id": "88",
-    "question": "A library publishes Less sources for consumer theming. What becomes part of its compatibility contract?",
+    "question": "What does @w: $width; read in Less 3 and later?",
     "options": [
-      "Every minified output line number",
-      "The author's local directory path",
-      "Documented variables and mixins",
-      "The browser's default font settings"
+      "The width of the browser window",
+      "A Less variable that is named width",
+      "A CSS custom property named --width",
+      "The width property value in this scope"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "89",
     "question": "A service compiles arbitrary Less with plugins enabled. Why isolate the compiler process?",
     "options": [
-      "Mixin names execute in the browser console",
-      "CSS selectors create operating system users",
       "Plugins run trusted host-side code",
+      "CSS selectors create operating system users",
+      "Mixin names execute in the browser console",
       "All CSS custom properties call shell commands"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "90",
-    "question": "A Less build embeds all images as data URIs. What trade-off needs measurement?",
+    "question": "What does when (default()) match in a mixin guard?",
     "options": [
-      "CSS size versus separate asset caching",
-      "Only selector specificity",
-      "Only component keyboard behavior",
-      "Only design token naming"
+      "A call that no other same-name definition matched",
+      "A call made without any arguments",
+      "A call that uses default parameter values",
+      "A call made inside the default theme"
     ],
     "correct_index": 0
   },
   {
     "id": "91",
-    "question": "A theme generator calls one large mixin per component. What can create avoidable CSS duplication?",
+    "question": "A (reference) import defines .base. A rule uses .btn:extend(.base). What does the output contain?",
     "options": [
-      "Repeated source comments only",
-      "Repeated variable references only",
-      "Repeated emitted declarations",
-      "Repeated filename suffixes only"
+      "The whole referenced file",
+      "Nothing, because reference hides extensions",
+      "The .base declarations, applied to .btn",
+      "An error about missing output"
     ],
     "correct_index": 2
   },
@@ -1015,34 +1015,34 @@
     "id": "93",
     "question": "A Less compiler service fetches remote imports. What boundary must it enforce?",
     "options": [
-      "Allowed network destinations and limits",
       "Only the spelling of breakpoint names",
+      "Allowed network destinations and limits",
       "Only the number of local class selectors",
       "Only the indentation of emitted CSS"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "94",
-    "question": "A Less token library renames a public map key. Why can compilation fail for consumers?",
+    "question": "A detached ruleset and its call site both define @c. Which value applies inside the ruleset?",
     "options": [
-      "Every map key is a browser property",
-      "Their lookups depend on that key",
-      "CSS forbids named token collections",
-      "The browser caches the old Less source"
+      "The first value in alphabetical order",
+      "The value from the call site",
+      "The value from where it was defined",
+      "Neither; compilation reports a conflict"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "95",
-    "question": "A build compiles the same Less from different working directories. What should reproducibility tests compare?",
+    "question": "A file loaded with @plugin registers a custom function. Which call does it use?",
     "options": [
-      "Only the current shell prompt text",
-      "Import paths, assets, and generated output",
-      "Only the package description field",
-      "Only the developer's editor font"
+      "functions.add('name', fn)",
+      "less.register('name', fn)",
+      "plugin.define('name', fn)",
+      "less.functions['name'] = fn"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "96",
@@ -1050,52 +1050,52 @@
     "options": [
       "Only the source file's final newline",
       "Only the number of color variables",
-      "Only the source map file extension",
-      "Shared selector and cascade dependencies"
+      "Shared selector and cascade dependencies",
+      "Only the source map file extension"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "97",
     "question": "A Less mixin emits global element selectors. What does parameterizing the mixin fail to provide automatically?",
     "options": [
       "Build-time expression evaluation",
-      "Numeric argument support",
+      "Selector scope isolation",
       "Reusable declaration groups",
-      "Selector scope isolation"
+      "Numeric argument support"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "98",
     "question": "One Less mixin appends transform values with +_. Another uses +. What failure should a reviewer detect?",
     "options": [
-      "Space merging always removes every transform",
+      "Comma merging can invalidate a transform list",
       "Both operators generate browser variables",
       "Either operator prevents all mixin matching",
-      "Comma merging can invalidate a transform list"
+      "Space merging always removes every transform"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "99",
-    "question": "A Less theme compiles without errors but changes focus styles. What additional review is necessary?",
+    "question": "How does the code read the variable @result that the mixin .m() defines?",
     "options": [
-      "Only the generated stylesheet size",
-      "Only the JSON package metadata",
-      "Keyboard accessibility in rendered controls",
-      "Only the compiler's success code"
+      ".m().@result",
+      ".m()[@result]",
+      "@m[result]",
+      "@result(.m)"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "100",
-    "question": "A component package ships Less and compiled CSS. What usage contract prevents doubled styling output?",
+    "question": "In Less 4, which --math value evaluates every operation without parentheses?",
     "options": [
-      "Rename all local variables at runtime",
-      "Choose and document one output path",
-      "Require both outputs on every page",
-      "Import both outputs for each component"
+      "parens",
+      "always",
+      "parens-division",
+      "strict"
     ],
     "correct_index": 1
   }

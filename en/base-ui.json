@@ -4,88 +4,88 @@
     "question": "What does Base UI provide for React apps?",
     "options": [
       "A server rendering framework",
-      "A CSS compilation language",
+      "Unstyled UI primitives",
       "A required visual theme",
-      "Unstyled UI primitives"
+      "A CSS compilation language"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "2",
     "question": "Which package installs the current Base UI React library?",
     "options": [
       "@angular/material",
-      "@radix-ui/react-dialog",
+      "@base-ui/react",
       "@mui/base",
-      "@base-ui/react"
+      "@radix-ui/react-dialog"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "3",
     "question": "Who defines the visual design of a Base UI component?",
     "options": [
-      "The API server",
-      "The browser extension",
-      "The package installer",
-      "The application team"
+      "The application team",
+      "A required default theme file",
+      "The compiled package stylesheet",
+      "The Base UI maintainers"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "4",
     "question": "What is a Base UI component part?",
     "options": [
-      "A backend validation rule",
       "A building block of a component",
+      "A backend validation rule",
       "A generated CSS bundle",
       "A browser layout engine"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "5",
     "question": "What does Dialog.Root coordinate?",
     "options": [
       "Only the dialog colors",
-      "The document route table",
       "Dialog state and context",
+      "The document route table",
       "The application data cache"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "6",
     "question": "Which Dialog part opens a dialog through user interaction?",
     "options": [
-      "Dialog.Description",
+      "Dialog.Trigger",
       "Dialog.Title",
       "Dialog.Portal",
-      "Dialog.Trigger"
+      "Dialog.Description"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "7",
     "question": "Which Dialog part contains its visible dialog content?",
     "options": [
       "Dialog.Backdrop",
-      "Dialog.Trigger",
+      "Dialog.Popup",
       "Dialog.Root",
-      "Dialog.Popup"
+      "Dialog.Trigger"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "8",
     "question": "What is the purpose of Dialog.Backdrop?",
     "options": [
-      "The dialog accessible name",
-      "The current dialog value",
       "A layer behind the dialog",
+      "The current dialog value",
+      "The dialog accessible name",
       "The dialog close action"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "9",
@@ -93,21 +93,21 @@
     "options": [
       "Dialog.Backdrop",
       "Dialog.Description",
-      "Dialog.Title",
-      "Dialog.Portal"
+      "Dialog.Portal",
+      "Dialog.Title"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "10",
     "question": "Which part supplies supporting dialog text?",
     "options": [
-      "Dialog.Description",
-      "Dialog.Close",
       "Dialog.Trigger",
+      "Dialog.Close",
+      "Dialog.Description",
       "Dialog.Title"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "11",
@@ -124,12 +124,12 @@
     "id": "12",
     "question": "What does a Base UI Portal change?",
     "options": [
-      "The component import path",
       "The DOM rendering location",
+      "The component import path",
       "The selected input value",
       "The React context value"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "13",
@@ -148,21 +148,21 @@
     "options": [
       "The global popup position",
       "The permanent controlled state",
-      "The initial uncontrolled state",
-      "The initial animation duration"
+      "The initial animation duration",
+      "The initial uncontrolled state"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "15",
     "question": "What does onOpenChange report?",
     "options": [
-      "A successful form submission",
       "A requested open-state change",
+      "A successful form submission",
       "A changed application route",
       "A new dialog title string"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "16",
@@ -170,10 +170,10 @@
     "options": [
       "Tabs",
       "Select",
-      "Meter",
-      "Menu"
+      "Menu",
+      "Meter"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "17",
@@ -201,12 +201,12 @@
     "id": "19",
     "question": "Which Base UI component shows information near a trigger?",
     "options": [
-      "Tooltip",
+      "NumberField",
       "Fieldset",
       "AlertDialog",
-      "NumberField"
+      "Tooltip"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "20",
@@ -235,11 +235,11 @@
     "question": "What does Accordion.Trigger control?",
     "options": [
       "Every sibling button",
-      "The application theme",
       "Its associated panel",
+      "The application theme",
       "The page scroll position"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "23",
@@ -256,23 +256,23 @@
     "id": "24",
     "question": "Which Base UI component organizes content in tab panels?",
     "options": [
-      "Tabs",
-      "Slider",
       "Toast",
+      "Slider",
+      "Tabs",
       "Menu"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "25",
     "question": "What does Tabs.Tab select?",
     "options": [
-      "An associated content panel",
+      "A new browser window",
       "A new table sort order",
       "A validation error state",
-      "A new browser window"
+      "An associated content panel"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "26",
@@ -280,21 +280,21 @@
     "options": [
       "Meter",
       "Slider",
-      "Select",
-      "Switch"
+      "Switch",
+      "Select"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "27",
     "question": "Which component supports a checked and an unchecked choice?",
     "options": [
       "Popover",
-      "Checkbox",
       "NumberField",
+      "Checkbox",
       "Progress"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "28",
@@ -313,10 +313,10 @@
     "options": [
       "Meter",
       "ScrollArea",
-      "Progress",
-      "Slider"
+      "Slider",
+      "Progress"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "30",
@@ -333,23 +333,23 @@
     "id": "31",
     "question": "Which component groups a field label, control, and errors?",
     "options": [
-      "Field",
       "Portal",
+      "Field",
       "Separator",
       "Positioner"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "32",
     "question": "Which Field part provides the visible field label?",
     "options": [
-      "Field.Error",
-      "Field.Validity",
       "Field.Label",
+      "Field.Validity",
+      "Field.Error",
       "Field.Description"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "33",
@@ -377,23 +377,23 @@
     "id": "35",
     "question": "Which Base UI component styles a scrollable area through separate parts?",
     "options": [
-      "ScrollArea",
-      "NavigationMenu",
       "Accordion",
+      "NavigationMenu",
+      "ScrollArea",
       "Dialog"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "36",
     "question": "Which component shows a user image with fallback content?",
     "options": [
       "PreviewCard",
-      "Toast",
+      "Avatar",
       "Tooltip",
-      "Avatar"
+      "Toast"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "37",
@@ -421,23 +421,23 @@
     "id": "39",
     "question": "Which component provides a pressable on-or-off button?",
     "options": [
-      "Switch",
       "Toggle",
+      "Switch",
       "RadioGroup",
       "Select"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "40",
     "question": "Which component arranges related controls with keyboard navigation?",
     "options": [
-      "Separator",
       "Toolbar",
+      "Separator",
       "Avatar",
       "Fieldset"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "41",
@@ -455,33 +455,33 @@
     "question": "Which component presents brief notifications?",
     "options": [
       "Tooltip",
-      "PreviewCard",
       "Toast",
+      "PreviewCard",
       "Popover"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "43",
     "question": "Which component supports a right-click action menu?",
     "options": [
-      "ContextMenu",
+      "NavigationMenu",
       "Select",
       "Accordion",
-      "NavigationMenu"
+      "ContextMenu"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "44",
     "question": "Which component groups application navigation links and related panels?",
     "options": [
-      "NavigationMenu",
+      "RadioGroup",
       "CheckboxGroup",
       "Menu",
-      "RadioGroup"
+      "NavigationMenu"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "45",
@@ -489,10 +489,10 @@
     "options": [
       "Tooltip",
       "Avatar",
-      "AlertDialog",
-      "Separator"
+      "Separator",
+      "AlertDialog"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "46",
@@ -510,66 +510,66 @@
     "question": "Which prop can replace the element rendered by a Base UI part?",
     "options": [
       "template",
-      "render",
+      "asChild",
       "component",
-      "asChild"
+      "render"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "48",
     "question": "What do Base UI state data attributes support?",
     "options": [
-      "State-dependent styling",
-      "Package version detection",
       "Remote data persistence",
+      "Package version detection",
+      "State-dependent styling",
       "Server route selection"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "49",
     "question": "Can an app use CSS Modules with Base UI?",
     "options": [
       "Only after ejecting the package",
-      "No, only CSS-in-JS works",
       "Yes, through className",
+      "No, only CSS-in-JS works",
       "Only through a theme provider"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "50",
     "question": "Does an unstyled Base UI button still need an accessible name?",
     "options": [
       "No, the library infers its action",
-      "Yes, the app supplies its name",
+      "Only if it appears in a form",
       "Only if its styling is disabled",
-      "Only if it appears in a form"
+      "Yes, the app supplies its name"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "51",
     "question": "A controlled Base UI dialog has open={false}. Its callback ignores true. What happens when the trigger activates?",
     "options": [
-      "The dialog opens permanently",
-      "The trigger loses its label",
       "The dialog stays closed",
+      "The trigger loses its label",
+      "The dialog opens permanently",
       "The dialog becomes uncontrolled"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "52",
     "question": "A Base UI dialog changes defaultOpen after mounting. How should the app drive later state changes?",
     "options": [
       "Replace the Portal container",
-      "Use open with onOpenChange",
+      "Move defaultOpen to Popup",
       "Keep changing defaultOpen",
-      "Move defaultOpen to Popup"
+      "Use open with onOpenChange"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "53",
@@ -577,21 +577,21 @@
     "options": [
       "The stylesheet compilation step",
       "The application package install",
-      "Library event and ARIA behavior",
-      "The server route registration"
+      "The server route registration",
+      "Library event and ARIA behavior"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "54",
     "question": "A custom Base UI trigger does not forward its ref. What can fail?",
     "options": [
       "The application language setting",
-      "The static font file download",
+      "Focus and position measurement",
       "The selected server endpoint",
-      "Focus and position measurement"
+      "The static font file download"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "55",
@@ -599,65 +599,65 @@
     "options": [
       "Only its own className value",
       "Only the custom click handler",
-      "Only the visible text children",
-      "Required props on the DOM node"
+      "Required props on the DOM node",
+      "Only the visible text children"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "56",
     "question": "A Base UI menu trigger wraps another native button. What should the team use to avoid nested buttons?",
     "options": [
-      "An extra onClick listener",
       "The render composition prop",
+      "An extra onClick listener",
       "A higher z-index value",
       "A different Portal container"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "57",
     "question": "A Base UI dialog must close after successful saving. Where should the app control that behavior?",
     "options": [
       "Its Portal container width",
-      "Its description text content",
+      "Its controlled open state",
       "Its backdrop background color",
-      "Its controlled open state"
+      "Its description text content"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "58",
     "question": "A Base UI popup stays hidden behind page content. What should the team inspect?",
     "options": [
-      "Only the option value format",
       "Stacking contexts and portal location",
+      "Only the option value format",
       "Only the input autocomplete hint",
       "Only the label ID spelling"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "59",
     "question": "A Base UI popover needs space from its trigger. Which Positioner input controls that gap?",
     "options": [
-      "arrowPadding",
-      "alignOffset",
       "sideOffset",
+      "alignOffset",
+      "arrowPadding",
       "collisionPadding"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "60",
     "question": "A Base UI popup needs a preferred top placement. Which Positioner input expresses that preference?",
     "options": [
       "anchor",
-      "side",
+      "align",
       "positionMethod",
-      "align"
+      "side"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "61",
@@ -674,78 +674,78 @@
     "id": "62",
     "question": "A Base UI tooltip contains a required Save button. Which component better fits that interaction?",
     "options": [
-      "Separator",
       "Popover",
+      "Separator",
       "Avatar",
       "Meter"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "63",
     "question": "A Base UI form field has help text. Which part connects that supporting description?",
     "options": [
-      "Field.Error",
+      "Field.Description",
       "Field.Label",
       "Field.Validity",
-      "Field.Description"
+      "Field.Error"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "64",
     "question": "A Base UI accordion should allow several panels to stay open. Which root option supports that?",
     "options": [
-      "multiple",
-      "disabled",
       "orientation",
+      "disabled",
+      "multiple",
       "loopFocus"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "65",
     "question": "A Base UI checkbox represents a partial group selection. Which state should it expose?",
     "options": [
       "uncontrolled",
-      "indeterminate",
+      "read-only",
       "unavailable",
-      "read-only"
+      "indeterminate"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "66",
     "question": "A Base UI switch stays unchanged after a click with checked supplied. What should the app check?",
     "options": [
       "Whether its label uses a heading",
-      "Whether its thumb has a border",
       "Whether onCheckedChange updates state",
+      "Whether its thumb has a border",
       "Whether its root uses a Portal"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "67",
     "question": "A Base UI select uses value. What callback keeps its controlled selection current?",
     "options": [
-      "onValueChange",
-      "onCheckedChange",
       "onOpenChange",
+      "onCheckedChange",
+      "onValueChange",
       "onValueCommitted"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "68",
     "question": "A Base UI Tabs.Root uses value. What should each tab and panel share to associate them?",
     "options": [
       "A matching inline width",
-      "A matching DOM tag",
+      "A matching value",
       "A matching className",
-      "A matching value"
+      "A matching DOM tag"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "69",
@@ -763,44 +763,44 @@
     "question": "A Base UI slider has two thumbs. What value shape represents a range?",
     "options": [
       "An object of DOM elements",
-      "A boolean for each thumb",
+      "An array of numbers",
       "A string of CSS lengths",
-      "An array of numbers"
+      "A boolean for each thumb"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "71",
     "question": "A Base UI component uses a className function. What can that function inspect?",
     "options": [
-      "The component state",
       "The package lockfile",
+      "The component state",
       "The server route table",
       "The browser extension list"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "72",
     "question": "A Base UI popup has an exit animation. Why can immediate unmounting break it?",
     "options": [
-      "The element disappears before animation",
       "The trigger receives a new value",
+      "The element disappears before animation",
       "The title becomes a form label",
       "The popup switches its DOM role"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "73",
     "question": "A Base UI app uses right-to-left text. Which provider supplies direction to components?",
     "options": [
-      "FormProvider",
       "DirectionProvider",
+      "FormProvider",
       "ThemeProvider",
       "CacheProvider"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "74",
@@ -808,10 +808,10 @@
     "options": [
       "On the document body",
       "On hidden page controls",
-      "Within the dialog",
-      "In the browser address bar"
+      "In the browser address bar",
+      "Within the dialog"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "75",
@@ -828,23 +828,23 @@
     "id": "76",
     "question": "A Base UI Menu.Item runs a command. Why should it not be used as a free text input?",
     "options": [
-      "Menu items follow action semantics",
-      "Menu items require numeric values",
       "Menu items ignore pointer events",
+      "Menu items require numeric values",
+      "Menu items follow action semantics",
       "Menu items cannot receive focus"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "77",
     "question": "A Base UI Slider needs heavy computation only after dragging ends. Which callback fits?",
     "options": [
       "onOpenChange",
-      "onValueCommitted",
       "onValueChange",
+      "onValueCommitted",
       "onCheckedChange"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "78",
@@ -861,12 +861,12 @@
     "id": "79",
     "question": "A Base UI Button uses a custom anchor through render. What must a reviewer check?",
     "options": [
-      "The link retains its href and semantics",
       "The anchor receives a checked prop",
+      "The link retains its href and semantics",
       "The anchor becomes a modal backdrop",
       "The link receives a numeric value"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "80",
@@ -884,11 +884,11 @@
     "question": "A Base UI wrapper manually replaces ARIA props after spreading library props. What failure can this cause?",
     "options": [
       "Disable React reconciliation",
-      "Break generated relationships",
+      "Make CSS Modules global",
       "Turn a modal into a form",
-      "Make CSS Modules global"
+      "Break generated relationships"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "82",
@@ -927,23 +927,23 @@
     "id": "85",
     "question": "A Base UI modal wraps a third-party editor popup outside its subtree. What integration needs testing?",
     "options": [
-      "Only the application logo size",
       "Focus containment and dismissal",
+      "Only the application logo size",
       "Only the editor font family",
       "Only the popup border radius"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "86",
     "question": "A Base UI server render shows a closed popup, but hydration starts open. What is the underlying risk?",
     "options": [
-      "The browser cannot render portals",
       "Server and client markup can differ",
+      "The browser cannot render portals",
       "React converts the popup to an iframe",
       "Every event handler runs on the server"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "87",
@@ -960,40 +960,40 @@
     "id": "88",
     "question": "A Base UI menu action opens a dialog after the menu disappears. What focus case must the app handle?",
     "options": [
-      "The original focused item no longer exists",
+      "The closed menu keeps its CSS variables",
       "The action cannot update React state",
       "The new dialog has too many title words",
-      "The closed menu keeps its CSS variables"
+      "The original focused item no longer exists"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "89",
     "question": "A Base UI tooltip has essential instructions available only on hover. What product change supports touch users?",
     "options": [
-      "Show the essential instructions persistently",
       "Disable the trigger on touch devices",
+      "Show the instructions always",
       "Hide the tooltip from screen readers",
       "Increase the tooltip opening delay"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "90",
     "question": "A Base UI remote combobox receives responses in a different request order. Which data rule prevents stale choices?",
     "options": [
-      "Accept only the current query response",
+      "Reuse the first response for all queries",
       "Append every response to the old choices",
       "Delay rendering by a fixed timeout",
-      "Reuse the first response for all queries"
+      "Accept only the current query response"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "91",
     "question": "A Base UI remote combobox changes its option set. Why must item identity remain stable?",
     "options": [
-      "Preserve selection and active-item mapping",
+      "Keep selection mapping stable",
       "Force all options to remount on each key",
       "Prevent the input value from changing",
       "Make every option share one DOM ID"
@@ -1005,11 +1005,11 @@
     "question": "A Base UI combobox searches remotely after each keystroke. What separates selected value from the current search text?",
     "options": [
       "One shared boolean open state",
-      "The popup alignment configuration",
+      "Independent selection and input state",
       "The Portal container reference",
-      "Independent selection and input state"
+      "The popup alignment configuration"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "93",
@@ -1017,32 +1017,32 @@
     "options": [
       "Let each backdrop clear all form data",
       "Share one title ID between both dialogs",
-      "Unmount the editor on every close request",
-      "Control both dialogs and gate closure"
+      "Control both dialogs and gate closure",
+      "Unmount the editor on every close request"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "94",
     "question": "A Base UI nested dialog opens. Which behavior deserves an integration test?",
     "options": [
       "Every backdrop closes all dialogs at once",
+      "Only the top modal owns focus",
       "All parent controls remain freely tabbable",
-      "Only the active modal owns focus interaction",
       "Every dialog receives the same keyboard event"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "95",
     "question": "A Base UI popup moves with a scrolling anchor. Why can a one-time getBoundingClientRect measurement fail?",
     "options": [
-      "Anchor coordinates change during scrolling",
       "The portal changes its React owner",
+      "Scrolling moves the anchor",
       "The label removes the anchor width",
       "The option values become uncontrolled"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "96",
@@ -1061,21 +1061,21 @@
     "options": [
       "Only the selected component names",
       "Only the number of exported types",
-      "The alphabetical order of imports",
-      "Runtime styles and nonce requirements"
+      "Runtime styles and nonce requirements",
+      "The alphabetical order of imports"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "98",
     "question": "A Base UI wrapper exposes only pointer handlers for a menu item. What regression must the review catch?",
     "options": [
-      "The Portal creates a second React root",
-      "The menu loses all CSS custom properties",
       "Keyboard activation no longer runs the action",
+      "The menu loses all CSS custom properties",
+      "The Portal creates a second React root",
       "Every item becomes a form submit control"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "99",
@@ -1084,7 +1084,7 @@
       "It removes all React context boundaries",
       "It prevents the use of named exports",
       "It forces all consumers to use inline CSS",
-      "It assumes ownership of internal DOM details"
+      "It owns internal DOM details"
     ],
     "correct_index": 3
   },
@@ -1092,11 +1092,11 @@
     "id": "100",
     "question": "A Base UI library upgrade changes popup focus behavior. Which test best protects a checkout dialog?",
     "options": [
+      "Keyboard flow of the dialog",
       "A test of the package version string",
-      "Keyboard flow through open, submit, and close",
       "A count of JavaScript source lines",
       "A snapshot of generated class names"
     ],
-    "correct_index": 1
+    "correct_index": 0
   }
 ]

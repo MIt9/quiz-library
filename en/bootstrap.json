@@ -25,23 +25,23 @@
     "id": "3",
     "question": "What does .container-fluid provide?",
     "options": [
-      "Full available width",
       "Only a narrow reading width",
+      "Full available width",
       "A viewport-height sidebar",
       "One fixed desktop width"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "4",
     "question": "What does .container provide at larger breakpoints?",
     "options": [
-      "Responsive maximum widths",
       "An unlimited fixed width",
+      "Responsive maximum widths",
       "A mandatory vertical scrollbar",
       "An absolute positioned panel"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "5",
@@ -49,10 +49,10 @@
     "options": [
       "Absolute positioning",
       "CSS subgrid",
-      "Floats",
-      "Flexbox"
+      "Flexbox",
+      "Floats"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "6",
@@ -60,10 +60,10 @@
     "options": [
       "Breakpoint variables",
       "Only text labels",
-      "Only modal dialogs",
-      "Columns"
+      "Columns",
+      "Only modal dialogs"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "7",
@@ -91,12 +91,12 @@
     "id": "9",
     "question": "What does .col-auto size primarily from?",
     "options": [
-      "The column content",
+      "The preceding row height",
       "The largest breakpoint value",
       "The whole viewport width",
-      "The preceding row height"
+      "The column content"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "10",
@@ -113,34 +113,34 @@
     "id": "11",
     "question": "What does .gx-3 control?",
     "options": [
-      "Container height",
       "Horizontal gutters",
+      "Container height",
       "Vertical margins",
       "Grid column count"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "12",
     "question": "What does .gy-3 control?",
     "options": [
       "Breakpoint width",
-      "Vertical gutters",
+      "Horizontal padding only",
       "Column order",
-      "Horizontal padding only"
+      "Vertical gutters"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "13",
     "question": "When does .col-md-6 apply in the default grid?",
     "options": [
       "At every width including xs",
-      "Only at one exact width",
+      "At md and wider sizes",
       "Only below the md size",
-      "At md and wider sizes"
+      "Only at one exact width"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "14",
@@ -148,10 +148,10 @@
     "options": [
       "Three rows per column",
       "Three hidden columns",
-      "Three columns per row",
-      "Three pixels between rows"
+      "Three pixels between rows",
+      "Three columns per row"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "15",
@@ -159,10 +159,10 @@
     "options": [
       "A second responsive row",
       "A two-pixel border",
-      "A two-row height limit",
-      "A two-column start offset"
+      "A two-column start offset",
+      "A two-row height limit"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "16",
@@ -170,10 +170,10 @@
     "options": [
       "The JavaScript load order",
       "The table sort direction",
-      "The source document order",
-      "The visual flex item order"
+      "The visual flex item order",
+      "The source document order"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "17",
@@ -190,56 +190,56 @@
     "id": "18",
     "question": "Which class centers flex children along the main axis?",
     "options": [
-      "justify-content-center",
       "align-items-center",
+      "justify-content-center",
       "mx-auto",
       "text-center"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "19",
     "question": "Which class centers flex children along the cross axis?",
     "options": [
-      "justify-content-center",
-      "text-center",
       "align-items-center",
+      "text-center",
+      "justify-content-center",
       "align-content-start"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "20",
     "question": "Which class hides an element through display?",
     "options": [
       "invisible",
-      "d-none",
       "opacity-0",
+      "d-none",
       "visually-hidden"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "21",
     "question": "Which class hides an element but preserves its layout space?",
     "options": [
-      "d-none",
+      "invisible",
       "visually-hidden",
       "collapse",
-      "invisible"
+      "d-none"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "22",
     "question": "Which class supplies text for assistive technology without normal visual display?",
     "options": [
-      "visually-hidden",
-      "d-none",
       "text-muted",
+      "d-none",
+      "visually-hidden",
       "opacity-0"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "23",
@@ -247,21 +247,21 @@
     "options": [
       "Padding on the start side",
       "Margin on every side",
-      "Padding on every side",
-      "Margin on the end side"
+      "Margin on the end side",
+      "Padding on every side"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "24",
-    "question": "What does .ms-2 target?",
+    "question": "What does .ms-2 apply?",
     "options": [
-      "The logical start margin",
-      "The physical right border",
-      "The physical left padding",
-      "The vertical margin pair"
+      "Margin on the end side",
+      "Padding on the start side",
+      "Margin on the start side",
+      "Margin on top and bottom"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "25",
@@ -279,88 +279,88 @@
     "question": "Which classes create a primary button style?",
     "options": [
       "button primary",
-      "btn btn-primary",
       "btn-group primary",
+      "btn btn-primary",
       "form-control primary"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "27",
     "question": "What does .btn-outline-primary change?",
     "options": [
-      "Require a tooltip label",
+      "Use an outline button style",
       "Submit every enclosing form",
       "Prevent keyboard activation",
-      "Use an outline button style"
+      "Require a tooltip label"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "28",
     "question": "What does .btn-group organize?",
     "options": [
       "Modal focus targets",
-      "Form validation rules",
       "Related buttons",
+      "Form validation rules",
       "Table header columns"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "29",
     "question": "Which component groups related content with a flexible body?",
     "options": [
       "toast",
-      "carousel",
       "card",
+      "carousel",
       "collapse"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "30",
     "question": "Which class makes an image scale within its parent?",
     "options": [
-      "figure-img",
       "img-fluid",
+      "figure-img",
       "rounded",
       "img-thumbnail"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "31",
     "question": "Which class enables Bootstrap table styling?",
     "options": [
-      "table-group-divider",
       "table",
+      "table-group-divider",
       "table-responsive",
       "table-active"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "32",
     "question": "What does .table-responsive provide around a table?",
     "options": [
-      "Server-side row filtering",
-      "Automatic data pagination",
       "Horizontal overflow handling",
+      "Automatic data pagination",
+      "Server-side row filtering",
       "Keyboard grid navigation"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "33",
     "question": "Which class styles a text input?",
     "options": [
-      "form-control",
-      "input-group-text",
       "form-select",
+      "input-group-text",
+      "form-control",
       "form-check-input"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "34",
@@ -377,34 +377,34 @@
     "id": "35",
     "question": "Which class styles a checkbox or radio input?",
     "options": [
-      "form-check-input",
-      "form-select",
       "form-control",
+      "form-select",
+      "form-check-input",
       "form-floating"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "36",
     "question": "What does .input-group combine?",
     "options": [
       "Several submitted forms",
-      "A set of table row filters",
+      "An input with related add-ons",
       "Unrelated navigation links",
-      "An input with related add-ons"
+      "A set of table row filters"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "37",
     "question": "What does .form-text provide?",
     "options": [
       "A required value constraint",
-      "An input type conversion",
       "Supporting form information",
+      "An input type conversion",
       "A form submission handler"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "38",
@@ -412,10 +412,10 @@
     "options": [
       "invalid-feedback",
       "form-check-label",
-      "valid-feedback",
-      "is-valid"
+      "is-valid",
+      "valid-feedback"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "39",
@@ -433,33 +433,33 @@
     "question": "What does .alert present?",
     "options": [
       "A page routing control",
-      "A contextual message",
+      "An input selection panel",
       "A permanent modal layer",
-      "An input selection panel"
+      "A contextual message"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "41",
     "question": "Which component shows a small status or count?",
     "options": [
-      "badge",
+      "carousel",
       "breadcrumb",
       "offcanvas",
-      "carousel"
+      "badge"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "42",
     "question": "What does .breadcrumb represent?",
     "options": [
-      "A set of form errors",
-      "A selected date interval",
       "A navigation location path",
+      "A selected date interval",
+      "A set of form errors",
       "A sequence of API retries"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "43",
@@ -467,21 +467,21 @@
     "options": [
       "badge",
       "tooltip",
-      "spinner",
-      "modal"
+      "modal",
+      "spinner"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "44",
     "question": "Which component shows a panel from a screen edge?",
     "options": [
       "popover",
-      "offcanvas",
+      "pagination",
       "breadcrumb",
-      "pagination"
+      "offcanvas"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "45",
@@ -498,56 +498,56 @@
     "id": "46",
     "question": "Which component groups expandable sections?",
     "options": [
-      "pagination",
-      "navbar",
       "accordion",
+      "navbar",
+      "pagination",
       "list-group"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "47",
     "question": "Which component cycles through slides?",
     "options": [
       "tooltip",
-      "carousel",
+      "toast",
       "dropdown",
-      "toast"
+      "carousel"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "48",
     "question": "Which component presents brief notifications?",
     "options": [
       "breadcrumb",
-      "badge",
+      "toast",
       "spinner",
-      "toast"
+      "badge"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "49",
     "question": "Which component marks the current navigation section during scrolling?",
     "options": [
-      "carousel",
       "scrollspy",
+      "carousel",
       "popover",
       "collapse"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "50",
     "question": "Does Bootstrap 5 require jQuery for its JavaScript plugins?",
     "options": [
       "Only color modes require it",
-      "Yes, every plugin requires it",
       "No, its plugins use JavaScript",
+      "Yes, every plugin requires it",
       "Only the grid requires it"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "51",
@@ -555,10 +555,10 @@
     "options": [
       "The grid column widths",
       "The CSS button colors",
-      "The text font rendering",
-      "Modal trigger behavior"
+      "Modal trigger behavior",
+      "The text font rendering"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "52",
@@ -575,34 +575,34 @@
     "id": "53",
     "question": "A collapse button controls #details. Which attribute points to that element?",
     "options": [
-      "data-bs-target",
+      "data-bs-parent",
       "data-bs-container",
       "data-bs-theme",
-      "data-bs-parent"
+      "data-bs-target"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "54",
     "question": "A Bootstrap tooltip never appears after loading the bundle. What is commonly missing?",
     "options": [
-      "Tooltip initialization",
-      "A body background utility",
       "A second grid container",
+      "A body background utility",
+      "Tooltip initialization",
       "A table responsive wrapper"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "55",
-    "question": "A dropdown uses the separate Bootstrap script. Which positioning dependency can it need?",
+    "question": "A dropdown uses the separate Bootstrap script. Which positioning library does it need?",
     "options": [
-      "Angular CDK",
+      "jQuery",
+      "Tether",
       "Popper",
-      "React DOM",
-      "jQuery UI"
+      "Masonry"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "56",
@@ -619,45 +619,45 @@
     "id": "57",
     "question": "A layout must stack below md and split equally from md. Which classes fit each column?",
     "options": [
-      "col-auto col-md-12",
       "col-12 col-md-6",
+      "col-auto col-md-12",
       "col-6 col-md-12",
       "col-md-12 col-lg-6"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "58",
     "question": "A row contains col-8 and col-6. What happens in the default wrapping grid?",
     "options": [
       "The row adds two columns",
-      "Both columns shrink to six",
+      "The second column wraps",
       "The container becomes fluid",
-      "The second column wraps"
+      "Both columns shrink to six"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "59",
     "question": "A nested grid needs independent columns. Where should its new row go?",
     "options": [
       "Outside every grid container",
-      "Inside an existing column",
+      "Directly inside the old row",
       "Inside the column class name",
-      "Directly inside the old row"
+      "Inside an existing column"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "60",
     "question": "A modal should scroll its body while its header remains visible. Which class fits the dialog?",
     "options": [
-      "modal-dialog-scrollable",
       "modal-dialog-centered",
+      "modal-dialog-scrollable",
       "modal-sm",
       "modal-fullscreen"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "61",
@@ -665,32 +665,32 @@
     "options": [
       "data-bs-focus=\"false\"",
       "data-bs-toggle=\"modal\"",
-      "data-bs-backdrop=\"static\"",
-      "data-bs-keyboard=\"true\""
+      "data-bs-keyboard=\"true\"",
+      "data-bs-backdrop=\"static\""
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "62",
     "question": "A modal needs focus on an input after opening. Which event is a suitable point?",
     "options": [
-      "hide.bs.modal",
+      "shown.bs.modal",
       "show.bs.modal",
       "hidden.bs.modal",
-      "shown.bs.modal"
+      "hide.bs.modal"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "63",
     "question": "A tab trigger changes active content. What links it to the panel?",
     "options": [
       "Its container spacing value",
-      "Its text alignment utility",
       "Its target panel identifier",
+      "Its text alignment utility",
       "Its button color modifier"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "64",
@@ -698,21 +698,21 @@
     "options": [
       "A div with tabindex only",
       "A label with a hidden input",
-      "An anchor with href",
-      "A span with cursor styling"
+      "A span with cursor styling",
+      "An anchor with href"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "65",
     "question": "A floating input label does not work with label before input. What markup order does Bootstrap expect?",
     "options": [
-      "The input before its label",
       "The placeholder after its label",
+      "The input before its label",
       "The label before its wrapper",
       "The input outside its wrapper"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "66",
@@ -740,12 +740,12 @@
     "id": "68",
     "question": "A dismissible alert has a close button. Which attribute enables plugin dismissal?",
     "options": [
-      "data-bs-dismiss=\"alert\"",
-      "data-bs-toggle=\"alert\"",
       "data-bs-target=\"dismiss\"",
+      "data-bs-toggle=\"alert\"",
+      "data-bs-dismiss=\"alert\"",
       "data-bs-theme=\"alert\""
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "69",
@@ -753,43 +753,43 @@
     "options": [
       "A global disabled stylesheet",
       "dark=\"true\" on every button",
-      "An aria-dark attribute on body",
-      "data-bs-theme=\"dark\" on the sidebar"
+      "data-bs-theme=\"dark\" on the sidebar",
+      "An aria-dark attribute on body"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "70",
     "question": "A .bg-primary element needs contrasting text. Which helper combines contextual background and text?",
     "options": [
-      "text-primary",
-      "link-primary",
       "text-bg-primary",
+      "link-primary",
+      "text-primary",
       "bg-opacity-100"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "71",
-    "question": "A Bootstrap button uses .disabled on an anchor. What else needs attention?",
+    "question": "A Bootstrap button uses .disabled on an anchor. What else does the anchor need?",
     "options": [
-      "Set its href to the same page",
-      "Tab styling",
-      "Replace its accessible name",
-      "Add a second disabled class"
+      "tabindex=\"-1\" and aria-disabled=\"true\"",
+      "The disabled attribute on the anchor",
+      "An href that points to the same page",
+      "A second disabled class on its parent"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "72",
     "question": "A nav uses .nav-tabs but no tab JavaScript. What does the class alone provide?",
     "options": [
-      "The panel visibility state",
       "The tab visual style",
+      "The panel visibility state",
       "The keyboard activation logic",
       "The active panel switching"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "73",
@@ -797,43 +797,43 @@
     "options": [
       "Only the badge text length",
       "Only the tab active state",
-      "Gutters and container padding",
-      "Only the button focus ring"
+      "Only the button focus ring",
+      "Gutters and container padding"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "74",
     "question": "A toast provides critical instructions but hides automatically. What change helps users?",
     "options": [
-      "Keep essential information available",
       "Shorten its visible duration",
+      "Keep essential information available",
       "Move the message into an icon",
       "Disable its accessible label"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "75",
     "question": "A tooltip trigger cannot receive focus. What user group can lose access?",
     "options": [
       "Only mouse users",
-      "Only touchscreen users",
       "Keyboard users",
+      "Only touchscreen users",
       "Only users with wide displays"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "76",
-    "question": "A Sass override follows a Bootstrap variable marked !default. Why does it not affect earlier generated rules?",
+    "question": "A Sass override comes after the Bootstrap import. Why does it not change the compiled component rules?",
     "options": [
-      "The CSS loader reverses all imports",
+      "The rules already used the old value",
       "The browser rejects Sass variables",
-      "The rules already use the old value",
+      "The CSS loader reverses all imports",
       "The variable becomes immutable"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "77",
@@ -841,21 +841,21 @@
     "options": [
       "The navbar target attribute",
       "The dropdown event interface",
-      "The modal options object",
-      "The Sass utilities map"
+      "The Sass utilities map",
+      "The modal options object"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "78",
     "question": "A Bootstrap plugin is removed with its DOM node in a long-lived app. Which API releases its plugin instance?",
     "options": [
-      "hide()",
+      "dispose()",
       "show()",
       "toggle()",
-      "dispose()"
+      "hide()"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "79",
@@ -863,32 +863,32 @@
     "options": [
       "getInstance()",
       "dispose()",
-      "handleUpdate()",
-      "toggle()"
+      "toggle()",
+      "handleUpdate()"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "80",
-    "question": "A Bootstrap app uses two independent modal plugins for nested dialogs. Why is this architecture risky?",
+    "question": "A team opens a second Bootstrap modal from inside an open modal. Why is this risky?",
     "options": [
-      "Bootstrap supports one modal at a time",
-      "Bootstrap requires every modal in a table",
       "The browser removes all backdrop colors",
+      "Bootstrap requires every modal in a table",
+      "Bootstrap supports one modal at a time",
       "The grid stops responding to breakpoints"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "81",
     "question": "A React component and Bootstrap plugin both write the same collapse classes. What is the main risk?",
     "options": [
       "The CSS grid becomes non-responsive",
-      "The package cannot be tree-shaken",
       "Competing owners cause state divergence",
+      "The package cannot be tree-shaken",
       "The Sass compiler loses type information"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "82",
@@ -906,11 +906,11 @@
     "question": "A Bootstrap upgrade changes utility output order. What can break when conflicting utilities target the same property?",
     "options": [
       "The HTML source element order",
-      "The winning cascade declaration",
+      "The browser native tab ordering",
       "The stored server response data",
-      "The browser native tab ordering"
+      "The winning cascade declaration"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "84",
@@ -927,34 +927,34 @@
     "id": "85",
     "question": "A product uses Bootstrap default colors for status. What must accessibility review still check?",
     "options": [
-      "Whether each badge uses a grid column",
+      "Contrast in the actual combinations",
       "Whether every table has equal rows",
       "Whether all colors use hex syntax",
-      "Contrast in the actual combinations"
+      "Whether each badge uses a grid column"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "86",
     "question": "A team overrides Bootstrap through hundreds of !important rules. Which design reduces future conflicts?",
     "options": [
-      "Centralize theme variables and scoped overrides",
+      "Load the same stylesheet twice per page",
       "Disable component class names at runtime",
       "Add one stronger selector per regression",
-      "Load the same stylesheet twice per page"
+      "Centralize theme variables and scoped overrides"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "87",
     "question": "A Bootstrap Sass build removes unused components. What dependency mistake can still break it?",
     "options": [
       "Generating fewer unused utility classes",
-      "Dropping shared imports needed by retained parts",
+      "Keeping the grid container mixins",
       "Keeping customized color variables",
-      "Keeping the grid container mixins"
+      "Dropping shared imports needed by retained parts"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "88",
@@ -962,10 +962,10 @@
     "options": [
       "HTML encoding versus source map names",
       "Network latency versus database size",
-      "React context depth versus event count",
-      "CSS size versus useful combinations"
+      "CSS size versus useful combinations",
+      "React context depth versus event count"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "89",
@@ -973,32 +973,32 @@
     "options": [
       "The bundle removes all later DOM nodes",
       "Tooltips require fixed viewport widths",
-      "Later elements have no plugin instances",
-      "Sass cannot compile dynamic HTML"
+      "Sass cannot compile dynamic HTML",
+      "Later elements have no plugin instances"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "90",
     "question": "A Bootstrap tooltip accepts HTML from an API. What boundary should the application keep?",
     "options": [
-      "Disable all escaping globally",
-      "Trust content with a CSS class",
       "Sanitize untrusted content",
+      "Trust content with a CSS class",
+      "Disable all escaping globally",
       "Insert raw markup through titles"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "91",
     "question": "A modal transition starts, then code immediately calls hide. Why should it coordinate through lifecycle events?",
     "options": [
       "The show call changes the browser route",
-      "Calls during transitions can be ignored",
       "The hide call requires a new Sass build",
+      "Calls during transitions can be ignored",
       "The event names disable all transitions"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "92",
@@ -1006,10 +1006,10 @@
     "options": [
       "The tooltip cannot use CSS variables",
       "The trigger value overrides every color",
-      "The theme requires a second Popper copy",
-      "The tooltip sits outside the themed subtree"
+      "The tooltip sits outside the themed subtree",
+      "The theme requires a second Popper copy"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "93",
@@ -1026,12 +1026,12 @@
     "id": "94",
     "question": "A Bootstrap offcanvas closes after route navigation removes its trigger. What integration case needs attention?",
     "options": [
-      "Focus restoration to a surviving control",
+      "The number of grid columns per row",
       "The border color of every dropdown",
       "The filename of the main stylesheet",
-      "The number of grid columns per row"
+      "Focus restoration to a surviving control"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "95",
@@ -1048,34 +1048,34 @@
     "id": "96",
     "question": "A Bootstrap carousel receives automatic slides and custom motion. What review protects users who need reduced motion?",
     "options": [
-      "Remove all slide labels from the markup",
+      "Check custom motion against user preference",
       "Force the longest duration for every slide",
       "Restart the carousel on every focus event",
-      "Check custom motion against user preference"
+      "Remove all slide labels from the markup"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "97",
-    "question": "A component uses Bootstrap transitions while users prefer reduced motion. What should custom animations preserve?",
+    "question": "A team needs a new brand color for .btn-brand and .text-brand. Which Sass map should they extend?",
     "options": [
-      "The reduced-motion accommodation",
-      "Only the original easing curve",
-      "Only the longest duration value",
-      "The number of animated DOM nodes"
+      "$spacers",
+      "$grid-breakpoints",
+      "$theme-colors",
+      "$utilities"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "98",
     "question": "A customized Bootstrap grid changes gutter width. Why must nested layouts receive regression checks?",
     "options": [
       "Grid columns stop using percentages",
-      "All containers become absolutely positioned",
       "Row margins and column padding interact",
+      "All containers become absolutely positioned",
       "Every breakpoint becomes a max-width query"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "99",
@@ -1093,10 +1093,10 @@
     "question": "A Bootstrap dialog wrapper exposes both imperative show() and an independent open prop. What contract must it define?",
     "options": [
       "A unique font family for each dialog",
-      "A second unrelated backdrop layer",
+      "One authoritative visibility state",
       "A separate stylesheet for each method",
-      "One authoritative visibility state"
+      "A second unrelated backdrop layer"
     ],
-    "correct_index": 3
+    "correct_index": 1
   }
 ]

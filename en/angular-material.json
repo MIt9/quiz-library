@@ -3,23 +3,23 @@
     "id": "1",
     "question": "What does Angular Material provide for an Angular app?",
     "options": [
-      "A browser layout engine",
-      "A CSS preprocessor",
       "Material Design components",
+      "A CSS preprocessor",
+      "A browser layout engine",
       "A React component adapter"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "2",
     "question": "Why does a team use the Angular CDK with custom components?",
     "options": [
       "A required visual theme",
-      "Reusable interaction tools",
       "A replacement template syntax",
+      "Reusable interaction tools",
       "Automatic API validation"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "3",
@@ -27,54 +27,54 @@
     "options": [
       "@angular/cdk/dialog",
       "@angular/common/dialog",
-      "@angular/forms/dialog",
-      "@angular/material/dialog"
+      "@angular/material/dialog",
+      "@angular/forms/dialog"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "4",
     "question": "What does mat-form-field add around a supported control?",
     "options": [
-      "Labels, hints, errors",
-      "A form state replacement",
       "A data submission endpoint",
+      "A form state replacement",
+      "Labels, hints, errors",
       "A required field validator"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "5",
     "question": "Which directive connects a native input to mat-form-field?",
     "options": [
-      "matInput",
+      "matControl",
       "matOption",
       "matLabel",
-      "matControl"
+      "matInput"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "6",
     "question": "What does mat-label provide in a form field?",
     "options": [
-      "A validation expression",
       "A visible field label",
+      "A validation expression",
       "A control value accessor",
       "A submitted field value"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "7",
     "question": "Which element shows a validation message in a Material form field?",
     "options": [
-      "mat-error",
+      "mat-hint",
       "mat-label",
       "mat-option",
-      "mat-hint"
+      "mat-error"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "8",
@@ -92,11 +92,11 @@
     "question": "Which component lets a user select one value from options?",
     "options": [
       "mat-toolbar",
-      "mat-card",
+      "mat-select",
       "mat-menu",
-      "mat-select"
+      "mat-card"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "10",
@@ -104,10 +104,10 @@
     "options": [
       "mat-tab",
       "mat-list-item",
-      "mat-option",
-      "mat-menu-item"
+      "mat-menu-item",
+      "mat-option"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "11",
@@ -115,21 +115,21 @@
     "options": [
       "The displayed group label",
       "The option template name",
-      "The selected model value",
-      "The panel accessible name"
+      "The panel accessible name",
+      "The selected model value"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "12",
     "question": "Which component suggests choices while a user types?",
     "options": [
       "mat-expansion-panel",
-      "mat-autocomplete",
+      "mat-button-toggle",
       "mat-selection-list",
-      "mat-button-toggle"
+      "mat-autocomplete"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "13",
@@ -155,10 +155,10 @@
   },
   {
     "id": "15",
-    "question": "What does mat-radio-group coordinate?",
+    "question": "What does mat-radio-group manage for its radio buttons?",
     "options": [
       "A sequence of form pages",
-      "One radio choice",
+      "A single shared selection value",
       "Several independent checkboxes",
       "A collection of text inputs"
     ],
@@ -180,22 +180,22 @@
     "question": "Which Material component presents a numeric range control?",
     "options": [
       "mat-paginator",
-      "mat-progress-bar",
       "mat-slider",
+      "mat-progress-bar",
       "mat-stepper"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "18",
     "question": "What does mat-datepicker add to a date input?",
     "options": [
       "A time duration editor",
-      "A calendar selection panel",
+      "A time zone conversion",
       "A database date column",
-      "A time zone conversion"
+      "A calendar selection panel"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "19",
@@ -223,23 +223,23 @@
     "id": "21",
     "question": "Which service opens a Material modal dialog?",
     "options": [
-      "MatDialog",
-      "MatIconRegistry",
       "MatSnackBar",
+      "MatIconRegistry",
+      "MatDialog",
       "MatBottomSheet"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "22",
     "question": "What does MatDialog.open return?",
     "options": [
-      "A FormControl instance",
+      "A MatDialogRef instance",
       "A MatTableDataSource instance",
       "A ComponentHarness instance",
-      "A MatDialogRef instance"
+      "A FormControl instance"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "23",
@@ -256,23 +256,23 @@
     "id": "24",
     "question": "Which service shows a brief notification with an optional action?",
     "options": [
-      "MatSort",
-      "MatDialog",
       "MatSnackBar",
+      "MatDialog",
+      "MatSort",
       "MatTooltip"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "25",
     "question": "What is a suitable use for mat-tooltip?",
     "options": [
       "A required form input",
-      "Brief control information",
       "A keyboard navigation menu",
+      "Brief control information",
       "A persistent error report"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "26",
@@ -290,11 +290,11 @@
     "question": "Which directive connects a button to a menu?",
     "options": [
       "matMenuPanel",
-      "matMenuContent",
+      "matMenuTriggerFor",
       "matMenuItem",
-      "matMenuTriggerFor"
+      "matMenuContent"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "28",
@@ -322,34 +322,34 @@
     "id": "30",
     "question": "Which component shows collapsible sections?",
     "options": [
-      "mat-expansion-panel",
       "mat-tab-group",
+      "mat-expansion-panel",
       "mat-card",
       "mat-divider"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "31",
     "question": "What does mat-accordion group?",
     "options": [
       "Dialog action buttons",
-      "Autocomplete options",
       "Expansion panels",
+      "Autocomplete options",
       "Table header cells"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "32",
     "question": "Which component shows content through selectable tabs?",
     "options": [
       "mat-selection-list",
-      "mat-radio-group",
       "mat-tab-group",
+      "mat-radio-group",
       "mat-button-toggle-group"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "33",
@@ -377,23 +377,23 @@
     "id": "35",
     "question": "When is an indeterminate progress indicator suitable?",
     "options": [
-      "Unknown completion fraction",
-      "The operation requires a choice",
       "The operation has a known percent",
+      "The operation requires a choice",
+      "Unknown completion fraction",
       "The operation is complete"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "36",
     "question": "Which component divides table data into pages?",
     "options": [
       "MatTabGroup",
-      "MatPaginator",
       "MatSort",
+      "MatPaginator",
       "MatStepper"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "37",
@@ -410,23 +410,23 @@
     "id": "38",
     "question": "Which directive identifies a Material table column?",
     "options": [
-      "matColumnDef",
       "matRowDef",
+      "matColumnDef",
       "matHeaderRowDef",
       "matCellDef"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "39",
     "question": "What does a Material table dataSource provide?",
     "options": [
-      "The row data to render",
+      "The header label translations",
       "The column width rules",
       "The table color palette",
-      "The header label translations"
+      "The row data to render"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "40",
@@ -445,21 +445,21 @@
     "options": [
       "A visible text paragraph",
       "A numeric tab order",
-      "A required form validator",
-      "An accessible name"
+      "An accessible name",
+      "A required form validator"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "42",
     "question": "What does mat-divider show?",
     "options": [
-      "A selected item indicator",
       "A visual content separator",
+      "A selected item indicator",
       "A hidden validation message",
       "A loading progress value"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "43",
@@ -467,10 +467,10 @@
     "options": [
       "mat-menu",
       "mat-tooltip",
-      "mat-step",
-      "mat-sidenav"
+      "mat-sidenav",
+      "mat-step"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "44",
@@ -478,10 +478,10 @@
     "options": [
       "mat-toolbar",
       "mat-sidenav-content",
-      "mat-sidenav-container",
-      "mat-nav-list"
+      "mat-nav-list",
+      "mat-sidenav-container"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "45",
@@ -498,12 +498,12 @@
     "id": "46",
     "question": "Why does an app use Material component harnesses in tests?",
     "options": [
-      "Generate component theme tokens",
+      "Supported test interactions",
       "Remove asynchronous rendering",
       "Replace application form validation",
-      "Supported test interactions"
+      "Generate component theme tokens"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "47",
@@ -511,32 +511,32 @@
     "options": [
       "A navigation action group",
       "A full validation report",
-      "A small count or status",
-      "A required input label"
+      "A required input label",
+      "A small count or status"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "48",
     "question": "Which component presents a selectable list of items?",
     "options": [
-      "mat-tab-nav-bar",
-      "mat-action-list",
       "mat-selection-list",
+      "mat-action-list",
+      "mat-tab-nav-bar",
       "mat-nav-list"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "49",
     "question": "What does mat-bottom-sheet present?",
     "options": [
-      "A pinned table footer",
+      "A panel from the screen bottom",
       "A nested selection menu",
       "A fixed application toolbar",
-      "A panel from the screen bottom"
+      "A pinned table footer"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "50",
@@ -544,10 +544,10 @@
     "options": [
       "mat-tree",
       "mat-list",
-      "mat-accordion",
-      "mat-grid-list"
+      "mat-grid-list",
+      "mat-accordion"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "51",
@@ -555,32 +555,32 @@
     "options": [
       "MatInputModule",
       "CommonModule",
-      "MatFormFieldModule",
-      "ReactiveFormsModule"
+      "ReactiveFormsModule",
+      "MatFormFieldModule"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "52",
     "question": "A select loses its object selection after data reload. What compares objects by a stable ID?",
     "options": [
-      "compareWith",
+      "filterPredicate",
       "displayWith",
       "sortingDataAccessor",
-      "filterPredicate"
+      "compareWith"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "53",
     "question": "An autocomplete stores objects but must show names. Which input accepts the display function?",
     "options": [
-      "autoActiveFirstOption",
+      "displayWith",
       "compareWith",
       "requireSelection",
-      "displayWith"
+      "autoActiveFirstOption"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "54",
@@ -588,19 +588,19 @@
     "options": [
       "A second matInput directive",
       "A required date adapter",
-      "Option filtering logic",
-      "A menu trigger binding"
+      "A menu trigger binding",
+      "Option filtering logic"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "55",
-    "question": "An autocomplete contains a checkbox inside each option. What is the main risk?",
+    "question": "Which mat-autocomplete input highlights the first option automatically while the user types?",
     "options": [
-      "Automatic table row selection",
-      "Duplicate form field outlines",
-      "Incorrect date parsing behavior",
-      "Listbox interaction conflicts"
+      "requireSelection",
+      "hideSingleSelectionIndicator",
+      "displayWith",
+      "autoActiveFirstOption"
     ],
     "correct_index": 3
   },
@@ -608,12 +608,12 @@
     "id": "56",
     "question": "A teammate gives mat-select multiple a string value. What should the value be?",
     "options": [
-      "An array of selected values",
+      "A comma-separated value",
       "A map of option labels",
       "A selected option index",
-      "A comma-separated value"
+      "An array of selected values"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "57",
@@ -630,111 +630,111 @@
     "id": "58",
     "question": "A datepicker reports a missing DateAdapter. What should the app configure?",
     "options": [
-      "A date adapter provider",
-      "An icon registry provider",
       "A table data source provider",
+      "An icon registry provider",
+      "A date adapter provider",
       "A dialog data token provider"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "59",
     "question": "What does a datepicker min value constrain?",
     "options": [
       "The first day of each week",
-      "The calendar opening month",
       "The earliest valid date",
+      "The calendar opening month",
       "The date display format"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "60",
     "question": "A datepicker allows weekdays only. Which input accepts that rule?",
     "options": [
-      "startAt",
-      "matDatepicker",
       "matDatepickerFilter",
+      "matDatepicker",
+      "startAt",
       "touchUi"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "61",
     "question": "A dialog closes with close(result). Where does the caller receive the result?",
     "options": [
       "keydownEvents()",
-      "backdropClick()",
+      "afterClosed()",
       "afterOpened()",
-      "afterClosed()"
+      "backdropClick()"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "62",
     "question": "A dialog needs a name for assistive technology. Which config can provide it?",
     "options": [
       "viewContainerRef",
-      "ariaLabelledBy",
       "panelClass",
+      "ariaLabelledBy",
       "backdropClass"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "63",
     "question": "A Material dialog opens with focus on the wrong control. Which config selects the initial focus target?",
     "options": [
-      "autoFocus",
       "hasBackdrop",
+      "autoFocus",
       "disableClose",
       "restoreFocus"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "64",
     "question": "A dialog blocks Escape through disableClose. What should a reviewer check?",
     "options": [
-      "Users still have a clear exit",
-      "Whether table sorting stays stable",
       "Whether the locale provider updates",
+      "Whether table sorting stays stable",
+      "Users still have a clear exit",
       "Whether the data source disconnects"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "65",
     "question": "A select panel needs a custom class. Which input provides it?",
     "options": [
-      "backdropClass",
-      "overlayOrigin",
       "panelClass",
+      "overlayOrigin",
+      "backdropClass",
       "className"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "66",
     "question": "A raw array gains a row in place, but MatTable does not update. Which method requests a row update?",
     "options": [
-      "updateSize()",
+      "renderRows()",
       "detectColumns()",
       "updatePosition()",
-      "renderRows()"
+      "updateSize()"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "67",
     "question": "Table column names differ from nested data properties. What customizes MatTableDataSource sorting values?",
     "options": [
-      "displayWith",
+      "sortingDataAccessor",
       "compareWith",
       "filterPredicate",
-      "sortingDataAccessor"
+      "displayWith"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "68",
@@ -763,11 +763,11 @@
     "question": "Which value controls the rendered column order in a Material table?",
     "options": [
       "The order of data object keys",
-      "The row definition column list",
+      "The column definition DOM order",
       "The order of theme declarations",
-      "The column definition DOM order"
+      "The row definition column list"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "71",
@@ -784,45 +784,45 @@
     "id": "72",
     "question": "A costly step should render only when opened. Which template directive supports this?",
     "options": [
-      "matStepperNext",
       "matStepContent",
+      "matStepperNext",
       "matStepLabel",
       "matStepHeader"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "73",
     "question": "A tab contains costly content that should load on activation. Which directive marks its lazy template?",
     "options": [
-      "matTabLink",
-      "matTabLabel",
       "matTabContent",
+      "matTabLabel",
+      "matTabLink",
       "matTabNavPanel"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "74",
     "question": "A snackbar offers Undo. Which observable reports an action click?",
     "options": [
       "afterDismissed()",
-      "afterOpened()",
+      "onAction()",
       "valueChanges",
-      "onAction()"
+      "afterOpened()"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "75",
     "question": "An expansion panel must render its heavy body only when first opened. Which directive helps?",
     "options": [
       "matPanelDescription",
-      "matExpansionPanelContent",
       "matExpansionPanelHeader",
+      "matExpansionPanelContent",
       "matAccordion"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "76",
@@ -840,22 +840,22 @@
     "question": "An app translates paginator labels. Which service supplies those labels?",
     "options": [
       "MatSortHeader",
-      "MatDatepickerIntl",
       "MatPaginatorIntl",
+      "MatDatepickerIntl",
       "MatIconRegistry"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "78",
     "question": "A test needs an open dialog outside the fixture root. Which harness loader scope fits?",
     "options": [
-      "The document root",
+      "The selected table row",
       "The fixture host only",
       "The closed dialog trigger",
-      "The selected table row"
+      "The document root"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "79",
@@ -883,78 +883,78 @@
     "id": "81",
     "question": "A server supplies sorted pages. Why can a custom DataSource fit better than MatTableDataSource?",
     "options": [
-      "It models remote operations",
+      "It stores every page in the DOM",
       "It removes server error handling",
       "It guarantees fewer network requests",
-      "It stores every page in the DOM"
+      "It models remote operations"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "82",
     "question": "A table fetches each filter request independently. Old responses replace newer results. Which stream design prevents this?",
     "options": [
-      "Cache the first response permanently",
+      "Cancel stale requests with switchMap",
       "Merge every response with mergeMap",
       "Delay every response by one second",
-      "Cancel stale requests with switchMap"
+      "Cache the first response permanently"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "83",
     "question": "A custom table DataSource creates subscriptions in connect. What responsibility belongs in disconnect?",
     "options": [
-      "Clear the browser history",
+      "Release owned subscriptions",
       "Reset the global theme",
       "Destroy the Angular injector",
-      "Release owned subscriptions"
+      "Clear the browser history"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "84",
     "question": "A team styles private Material DOM classes. What upgrade risk does this create?",
     "options": [
-      "Angular stops compiling templates",
       "Internal markup can change",
+      "Angular stops compiling templates",
       "Public selectors become immutable",
       "The theme disables view encapsulation"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "85",
     "question": "A theme class sits on an app subtree. Dialogs outside that subtree lack the theme. What resolves the scope problem?",
     "options": [
-      "Disable every component animation",
+      "Apply the class to the overlay container",
       "Move the class to each form control",
       "Replace dialog data with theme data",
-      "Apply the class to the overlay container"
+      "Disable every component animation"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "86",
     "question": "A custom input implements ControlValueAccessor only. Why can mat-form-field still reject it?",
     "options": [
       "It also needs a paginator instance",
-      "It must inject MAT_DIALOG_DATA",
+      "It also needs MatFormFieldControl",
       "It must extend MatTableDataSource",
-      "It also needs MatFormFieldControl"
+      "It must inject MAT_DIALOG_DATA"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "87",
     "question": "A custom form field uses plain state properties. What notifies mat-form-field when its focused state changes?",
     "options": [
       "The dialog afterClosed stream",
-      "The control stateChanges stream",
       "The table connect stream",
+      "The control stateChanges stream",
       "The paginator page stream"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "88",
@@ -962,65 +962,65 @@
     "options": [
       "Remove keyboard focus from the page",
       "Keep focus on the dialog backdrop",
-      "Focus a surviving useful control",
-      "Focus the removed menu item again"
+      "Focus the removed menu item again",
+      "Focus a surviving useful control"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "89",
     "question": "A table changes role to grid. What additional work remains for grid interaction?",
     "options": [
       "Use only native checkbox inputs",
-      "Add keyboard and focus behavior",
       "Disable the paginator page events",
+      "Add keyboard and focus behavior",
       "Replace every cell with a button"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "90",
     "question": "A filtered table offers Select all. What must the product define before implementation?",
     "options": [
       "The default icon font size",
-      "The component import order",
+      "The intended selection scope",
       "The theme primary color value",
-      "The intended selection scope"
+      "The component import order"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "91",
     "question": "A backend refresh replaces selected row objects. What selection design survives object replacement?",
     "options": [
-      "Track selection through stable row IDs",
+      "Clear selection after every request",
       "Use visible row positions as identity",
       "Keep references to removed DOM rows",
-      "Clear selection after every request"
+      "Track selection through stable row IDs"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "92",
     "question": "A datepicker stores calendar dates as UTC timestamps. What can happen when another time zone displays them?",
     "options": [
-      "The calendar day can shift by zone",
-      "The date adapter becomes a validator",
       "The input rejects every leap day",
+      "The date adapter becomes a validator",
+      "The calendar day can shift by zone",
       "The theme changes the date locale"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "93",
     "question": "An app uses a custom date type. What must agree with the chosen DateAdapter?",
     "options": [
-      "Control values and date operations",
       "The table column sorting direction",
+      "Control values and date operations",
       "Only the displayed field label",
       "Only the calendar container width"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "94",
@@ -1028,32 +1028,32 @@
     "options": [
       "Only the initial empty value",
       "Only selected object IDs",
-      "Typed strings and selected objects",
-      "Only the displayed option index"
+      "Only the displayed option index",
+      "Typed strings and selected objects"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "95",
     "question": "A wrapper exposes every internal Material option directly. What is an architectural cost?",
     "options": [
       "Consumers lose Angular dependency injection",
-      "Consumers depend on upstream details",
+      "Consumers cannot bind form values",
       "Consumers must use native CSS only",
-      "Consumers cannot bind form values"
+      "Consumers depend on upstream details"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "96",
     "question": "A server-side table applies client pagination to one returned page. What failure can occur?",
     "options": [
-      "Every page request becomes cached",
       "Valid server rows disappear from view",
+      "Every page request becomes cached",
       "The server total count becomes exact",
       "Sorting automatically becomes global"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "97",
@@ -1071,11 +1071,11 @@
     "question": "A team emits full Material themes for twelve color schemes. Which design reduces repeated typography CSS?",
     "options": [
       "Emit full typography rules in every theme",
-      "Put each full theme in a new style element",
       "Emit typography once and scope color styles",
+      "Put each full theme in a new style element",
       "Add more specific typography selectors"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "99",
@@ -1092,11 +1092,11 @@
     "id": "100",
     "question": "A dialog needs feature-scoped providers but renders in the global overlay. Which MatDialog config supplies its logical component context?",
     "options": [
-      "viewContainerRef",
       "panelClass",
+      "viewContainerRef",
       "backdropClass",
       "ariaDescribedBy"
     ],
-    "correct_index": 0
+    "correct_index": 1
   }
 ]

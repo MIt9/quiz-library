@@ -1,12 +1,12 @@
 [
   {
     "id": "1",
-    "question": "What does Sass compilation produce?",
+    "question": "Which Sass implementation receives all new language features?",
     "options": [
-      "React components",
-      "CSS",
-      "DOM nodes",
-      "Browser bytecode"
+      "LibSass (C/C++)",
+      "Dart Sass",
+      "node-sass (LibSass binding)",
+      "Ruby Sass"
     ],
     "correct_index": 1
   },
@@ -23,157 +23,157 @@
   },
   {
     "id": "3",
-    "question": "What defines blocks in indented Sass?",
+    "question": "What defines blocks in indented Sass syntax?",
     "options": [
-      "Square brackets",
-      "HTML tags",
+      "Indentation",
       "Curly braces",
-      "Indentation"
+      "Semicolons",
+      "Parentheses"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "4",
-    "question": "How does an indented Sass declaration normally end?",
+    "question": "How does a statement end in indented Sass syntax?",
     "options": [
-      "With an HTML closing tag",
-      "At its statement-ending newline",
-      "With a required comma",
-      "With a required semicolon"
+      "With a blank line",
+      "With a semicolon",
+      "With a closing brace",
+      "At the end of the line"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "5",
-    "question": "Which prefix introduces a Sass variable?",
+    "question": "Which prefix starts a Sass variable name?",
     "options": [
-      "&",
       "@",
-      "--",
-      "$"
+      "$",
+      "%",
+      "#"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "6",
-    "question": "What does Sass !default allow?",
+    "question": "What does @use \"library\" with ($primary: blue) do?",
     "options": [
-      "An immutable constant",
-      "A browser fallback rule",
-      "A configurable default value",
-      "An automatic global export"
+      "Overrides $primary in every module that loads library",
+      "Sets a module variable on load",
+      "Creates a global alias named primary for the module",
+      "Imports only the $primary variable from library"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "7",
-    "question": "What does Sass !global affect?",
+    "question": "What does !global do when you assign a variable inside a mixin?",
     "options": [
-      "Selector specificity",
-      "File loading order",
-      "Browser inheritance",
-      "Assignment scope"
+      "Assigns the top-level variable",
+      "Writes the variable into the generated CSS",
+      "Exports the variable to every module with @forward",
+      "Makes the variable constant for later code"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "8",
-    "question": "What does a Sass mixin generate?",
+    "question": "What is a Sass mixin?",
     "options": [
-      "A required scalar value",
-      "A React component instance",
-      "Reusable style rules",
-      "A browser event listener"
+      "A value that @return sends back to the caller",
+      "A reusable block of styles",
+      "A selector shared between rules with @extend",
+      "A variable that holds a map of design tokens"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "9",
-    "question": "Which directive invokes a Sass mixin?",
+    "question": "Which directive inserts a mixin into a rule?",
     "options": [
-      "@call",
       "@include",
+      "@use",
       "@apply",
-      "@render"
+      "@call"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "10",
     "question": "Which directive defines a Sass function?",
     "options": [
-      "@function",
       "@mixin",
-      "@module",
-      "@value"
+      "@function",
+      "@define",
+      "@return"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "11",
-    "question": "What does @return provide in a Sass function?",
+    "question": "Which statement about LibSass is true today?",
     "options": [
-      "Its result value",
-      "A new stylesheet import",
-      "A browser redirect",
-      "A DOM element reference"
+      "It fully supports the @use module system",
+      "It is the default compiler inside Dart Sass",
+      "It is deprecated and gets no new features",
+      "It is required by the sass-embedded package"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "12",
-    "question": "What does Sass @content permit in a mixin?",
+    "question": "What does @content do inside a mixin?",
     "options": [
-      "A caller-supplied rule block",
-      "A required CSS filename",
-      "A server response body",
-      "A browser callback function"
+      "Reads the CSS content property of a rule",
+      "Returns the mixin's result to the caller",
+      "Imports the contents of a partial file",
+      "Inserts the caller block"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "13",
-    "question": "What does a Sass parameter default supply?",
+    "question": "What is node-sass?",
     "options": [
-      "A global DOM attribute",
-      "An omitted argument's value",
-      "A generated selector prefix",
-      "A mandatory argument override"
+      "A Node.js wrapper around Dart Sass",
+      "A deprecated LibSass binding",
+      "The JavaScript build of Dart Sass",
+      "A PostCSS plugin that parses Sass"
     ],
     "correct_index": 1
   },
   {
     "id": "14",
-    "question": "What does a Sass rest argument collect?",
+    "question": "What does a rest argument such as $args... collect in a mixin?",
     "options": [
-      "DOM sibling nodes",
-      "Imported stylesheets",
-      "Additional arguments",
-      "Browser events"
+      "Only the keyword arguments in a map",
+      "The extra arguments in one list",
+      "Only the last positional argument",
+      "All modules loaded in the file"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "15",
-    "question": "How does a Sass keyword argument identify its parameter?",
+    "question": "How does Sass match a keyword argument to a parameter?",
     "options": [
-      "By compiled CSS order",
-      "By DOM class name",
-      "By source line number",
-      "By parameter name"
+      "By the CSS property it sets",
+      "By its position only",
+      "By its data type",
+      "By its name, as in $size: 2px"
     ],
     "correct_index": 3
   },
   {
     "id": "16",
-    "question": "What does Sass @if select?",
+    "question": "Which npm package is Dart Sass compiled to JavaScript?",
     "options": [
-      "A CSS specificity layer",
-      "A DOM event target",
-      "A conditional code branch",
-      "A runtime browser route"
+      "sass",
+      "node-sass",
+      "sass-loader",
+      "sassc"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "17",
@@ -188,69 +188,69 @@
   },
   {
     "id": "18",
-    "question": "What does Sass @else provide?",
+    "question": "What is the status of @import in Dart Sass?",
     "options": [
-      "An alternative branch",
-      "A browser fallback stylesheet",
-      "A new global variable scope",
-      "A second module namespace"
+      "Required for namespaced modules",
+      "Deprecated, to be removed",
+      "Preferred over @use for new code",
+      "Already removed since version 1.0"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "19",
-    "question": "What does Sass @for generate?",
+    "question": "How do you mark a Sass file as a partial?",
     "options": [
-      "Counted repetitions",
-      "A server route list",
-      "A component render tree",
-      "A browser event queue"
+      "Start its file name with a dollar sign",
+      "Give it a .part extension",
+      "Start its file name with an underscore",
+      "End its file name with a dash"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "20",
     "question": "How do Sass through and to differ in @for?",
     "options": [
-      "to includes the endpoint",
+      "through includes the endpoint",
       "Both exclude the endpoint",
       "Both always include the endpoint",
-      "through includes the endpoint"
+      "to includes the endpoint"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "21",
-    "question": "What does Sass @each iterate over?",
+    "question": "What can Sass @each iterate over?",
     "options": [
-      "DOM children only",
+      "Only CSS properties",
+      "Only numeric ranges",
       "List or map entries",
-      "Network packets only",
-      "CSS files only"
+      "Only loaded modules"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "22",
-    "question": "What does Sass @while repeat?",
+    "question": "What does Sass @while do?",
     "options": [
-      "A browser event until it bubbles",
-      "A selector until it matches the DOM",
-      "A module until it loads twice",
-      "A block while its condition is true"
+      "Repeats a block a fixed number of times",
+      "Repeats a block while its condition is true",
+      "Repeats a block once for each list item",
+      "Repeats a block once per loaded module"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "23",
-    "question": "What does Sass interpolation insert?",
+    "question": "What does @extend .a do inside a rule?",
     "options": [
-      "A route into browser history",
-      "A value into generated syntax",
-      "A server value into a database",
-      "A DOM node into a component"
+      "Adds the selector to the rule of .a",
+      "Copies the declarations of .a into the current rule",
+      "Includes .a as if it were a mixin",
+      "Imports the stylesheet that defines .a"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "24",
@@ -265,12 +265,12 @@
   },
   {
     "id": "25",
-    "question": "What does a Sass map associate?",
+    "question": "What does a Sass map store?",
     "options": [
       "Keys and values",
-      "Stylesheets and users",
-      "Routes and browser tabs",
-      "DOM parents and children"
+      "Selectors and media queries",
+      "Mixins and functions",
+      "Files and namespaces"
     ],
     "correct_index": 0
   },
@@ -280,43 +280,43 @@
     "options": [
       "sass:meta",
       "sass:list",
-      "sass:map",
-      "sass:math"
+      "sass:math",
+      "sass:map"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "27",
     "question": "What happens when map.get cannot find a key?",
     "options": [
-      "It returns null",
+      "It always throws",
       "It returns zero",
       "It returns the first value",
-      "It always throws"
+      "It returns null"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "28",
     "question": "What does map.has-key test?",
     "options": [
-      "Whether the map has one entry",
       "Whether a key exists",
+      "Whether the map has one entry",
       "Whether its value is numeric",
       "Whether its value is true"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "29",
     "question": "What does map.merge return?",
     "options": [
-      "A new merged map",
-      "A mutated first map only",
-      "A DOM style object",
-      "A compiled CSS file"
+      "The first map, changed in place",
+      "A new map with both entries",
+      "A list that holds both maps",
+      "Only the keys of both maps"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "30",
@@ -324,65 +324,65 @@
     "options": [
       "Only empty maps are immutable",
       "Only lists are immutable",
-      "Yes, every operation mutates in place",
-      "No, operations produce new values"
+      "No, operations produce new values",
+      "Yes, every operation mutates in place"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "31",
     "question": "What indexing convention does Sass list.nth use?",
     "options": [
-      "Zero-based indexing",
-      "Only negative indexes",
       "One-based indexing",
+      "Only negative indexes",
+      "Zero-based indexing",
       "Only string keys"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "32",
-    "question": "What does a negative Sass list index count from?",
+    "question": "In a Sass list, what does a negative index count from?",
     "options": [
-      "The DOM parent",
-      "The module root",
-      "The list end",
-      "The stylesheet start"
+      "The last key of a map",
+      "The start of the list",
+      "The middle of the list",
+      "The end of the list"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "33",
-    "question": "What does list.separator report?",
+    "question": "What does list.separator return?",
     "options": [
-      "The browser's decimal format",
-      "The current file encoding",
-      "The list's separator kind",
-      "The module namespace delimiter"
+      "The number of items in the list",
+      "The separator name",
+      "The index of the first comma",
+      "Whether the list has square brackets"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "34",
     "question": "What does list.append return?",
     "options": [
-      "A mutated DOM element",
-      "A generated CSS import",
-      "A merged token map",
-      "A list with an added item"
+      "A map with a new key",
+      "The same list, changed in place",
+      "The index of the added value",
+      "A new list with the value at the end"
     ],
     "correct_index": 3
   },
   {
     "id": "35",
-    "question": "What does Sass null commonly mean for output values?",
+    "question": "What happens to a declaration whose value is null?",
     "options": [
-      "No value to emit",
-      "A required default color",
-      "An automatic zero length",
-      "A CSS string named null"
+      "Sass writes the value 0",
+      "Sass writes the text null",
+      "Sass omits it from the output",
+      "Sass stops compilation"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "36",
@@ -397,80 +397,80 @@
   },
   {
     "id": "37",
-    "question": "What does math.div perform?",
+    "question": "Which call is the recommended way to divide numbers in Dart Sass?",
     "options": [
-      "CSS selector splitting",
-      "DOM layout measurement",
-      "Numeric division",
-      "Module namespace merging"
+      "div($a, $b)",
+      "math.divide($a, $b)",
+      "math.div($a, $b)",
+      "$a // $b"
     ],
     "correct_index": 2
   },
   {
     "id": "38",
-    "question": "What does math.compatible check?",
+    "question": "What does math.compatible($a, $b) check?",
     "options": [
-      "Whether selectors share a class",
-      "Whether modules share an importer",
-      "Whether colors have equal channels",
-      "Whether number units can be compared"
+      "Whether both numbers are positive",
+      "Whether both numbers are integers",
+      "Whether the units can be added or compared",
+      "Whether both numbers are equal"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "39",
     "question": "What does math.is-unitless check?",
     "options": [
       "Whether a number is an integer",
-      "Whether a number is zero",
+      "Whether a number has no units",
       "Whether a number is positive",
-      "Whether a number has no units"
+      "Whether a number is zero"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "40",
-    "question": "What does math.unit return?",
+    "question": "What does math.unit(12px) return?",
     "options": [
-      "A browser's pixel density",
-      "A module's import directory",
-      "A selector's specificity score",
-      "A number's unit representation"
+      "\"length\"",
+      "12",
+      "\"px\"",
+      "true"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "41",
     "question": "Which module provides string utilities?",
     "options": [
       "sass:map",
-      "sass:string",
       "sass:meta",
+      "sass:string",
       "sass:math"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "42",
-    "question": "What does string.quote return?",
+    "question": "What does string.quote(abc) return?",
     "options": [
-      "A CSS escaped selector always",
-      "A quoted string",
-      "A generated module name",
-      "A URL-encoded asset name"
+      "A selector named abc",
+      "The unquoted text abc",
+      "The quoted string \"abc\"",
+      "An error message"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "43",
     "question": "What does string.unquote remove?",
     "options": [
-      "The file extension",
-      "String quoting",
-      "Every escape character",
-      "All whitespace"
+      "The units from a number",
+      "The whitespace from a string",
+      "The escape sequences from a string",
+      "The quotes from a string"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "44",
@@ -485,69 +485,69 @@
   },
   {
     "id": "45",
-    "question": "What does color.adjust change?",
+    "question": "What does color.adjust do?",
     "options": [
-      "The CSS selector nesting",
-      "Specified color channels",
-      "The component's focus order",
-      "The compiler output mode"
+      "Scales chosen channels by a percentage",
+      "Adds a fixed amount to channels",
+      "Mixes two colors by weight",
+      "Converts a color to grayscale"
     ],
     "correct_index": 1
   },
   {
     "id": "46",
-    "question": "What does color.scale use for channel changes?",
+    "question": "How does color.scale change a channel?",
     "options": [
-      "A proportion of available adjustment",
-      "A browser viewport measurement",
-      "A DOM element's computed style",
-      "An absolute pixel offset"
+      "By mixing it with another color",
+      "By a fixed amount you pass",
+      "By setting it to a given value",
+      "By a percentage of the possible range"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "47",
     "question": "What does meta.type-of report?",
     "options": [
-      "The Sass value type",
-      "The source file extension",
-      "The browser element type",
-      "The CSS selector's specificity"
+      "The Sass type of a value, such as number",
+      "The unit of a number",
+      "The CSS property type of a value",
+      "The file type of a module"
     ],
     "correct_index": 0
   },
   {
     "id": "48",
-    "question": "What does Sass @debug output?",
+    "question": "What does @debug do?",
     "options": [
-      "A required CSS declaration",
-      "A diagnostic value",
-      "A browser alert dialog",
-      "A server response payload"
+      "Prints a deprecation warning",
+      "Adds a CSS comment that holds the value",
+      "Stops compilation with an error",
+      "Prints a value to stderr"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "49",
-    "question": "What does Sass @warn output?",
+    "question": "What does @warn do?",
     "options": [
-      "An invalid CSS selector",
-      "A browser event message",
-      "A nonfatal diagnostic",
-      "A required compiler exit"
+      "Prints a warning and continues compiling",
+      "Stops compilation with an error",
+      "Adds a CSS comment to the output",
+      "Hides the warning from the log"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "50",
-    "question": "What does Sass @error do?",
+    "question": "What does @error do?",
     "options": [
-      "Add a red CSS background",
-      "Return null unconditionally",
-      "Stop compilation with an error",
-      "Emit a browser console warning"
+      "Returns null from the function",
+      "Prints a warning and continues",
+      "Writes a CSS comment and continues",
+      "Stops compilation with an error message"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "51",
@@ -555,65 +555,65 @@
     "options": [
       "Yes, every reference resolves at file end",
       "Only if its name has a hyphen",
-      "Only if it has a numeric value",
-      "No, variables evaluate imperatively"
+      "No, variables evaluate imperatively",
+      "Only if it has a numeric value"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "52",
     "question": "A Sass variable is set to null before a !default assignment. What happens?",
     "options": [
-      "The compiler converts null to zero",
       "The default assignment applies",
+      "The compiler converts null to zero",
       "The default creates a browser variable",
       "Null prevents all later assignments"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "53",
     "question": "A Sass condition uses zero. Which branch interpretation applies?",
     "options": [
-      "Zero always becomes null",
       "Zero is truthy",
+      "Zero always becomes null",
       "Zero is falsey",
       "Zero is a syntax error"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "54",
     "question": "A Sass function receives 1in and 96px. Why can numeric comparison succeed?",
     "options": [
-      "The browser performs the comparison",
+      "The units are compatible",
       "Every CSS unit is interchangeable",
       "Both values become unitless strings",
-      "The units are compatible"
+      "The browser performs the comparison"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "55",
-    "question": "A Sass arithmetic result contains incompatible numerator and denominator units. Why can emitting it as a length fail?",
+    "question": "Which Sass CLI flag recompiles files when they change?",
     "options": [
-      "CSS cannot represent that compound unit",
-      "Division always returns a string",
-      "All arithmetic requires a browser",
-      "Every Sass number must be unitless"
+      "--live",
+      "--follow",
+      "--watch",
+      "--rebuild"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "56",
     "question": "A Sass function needs an optional map value. What avoids confusing absence with false?",
     "options": [
       "Replace all missing values with zero",
-      "Check whether the map has the key",
       "Convert every value to a quoted string",
+      "Check whether the map has the key",
       "Treat every false value as absent"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "57",
@@ -621,21 +621,21 @@
     "options": [
       "Every unquoted map key becomes null",
       "String lookups always use numeric indexes",
-      "The key can parse as a color value",
-      "Sass removes keys that name CSS colors"
+      "Sass removes keys that name CSS colors",
+      "The key can parse as a color value"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "58",
     "question": "A Sass list contains one parenthesized value. What syntax explicitly distinguishes a one-item comma list?",
     "options": [
-      "A leading dollar sign",
-      "A trailing colon",
       "A trailing comma",
+      "A trailing colon",
+      "A leading dollar sign",
       "A leading ampersand"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "59",
@@ -643,21 +643,21 @@
     "options": [
       "map.merge",
       "string.split",
-      "list.slash",
-      "math.div"
+      "math.div",
+      "list.slash"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "60",
     "question": "A Sass mixin calls @content twice. What does that imply for the caller's block?",
     "options": [
-      "Its output can appear twice",
+      "The block becomes a global variable",
       "The second call always fails",
       "Only the final call emits output",
-      "The block becomes a global variable"
+      "Its output can appear twice"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "61",
@@ -675,33 +675,33 @@
     "question": "A Sass mixin passes data through @content($value). What syntax lets the caller receive it?",
     "options": [
       "as $argument",
-      "with $argument",
       "using ($argument)",
+      "with $argument",
       "return $argument"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "63",
-    "question": "A Sass recursive function processes a deeply nested map. What failure should its design prevent?",
+    "question": "What happens to a %placeholder rule that nothing extends?",
     "options": [
-      "Global CSS reset removal",
-      "Browser DOM duplication",
-      "Automatic route hydration",
-      "Unbounded recursion"
+      "Sass does not emit it",
+      "Sass emits it as a class",
+      "Sass emits it with a warning",
+      "Sass emits it as a comment"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "64",
     "question": "A Sass @while loop updates no variable used in its condition. What risk follows?",
     "options": [
       "A guaranteed empty stylesheet",
-      "A browser-only error",
       "Nontermination",
+      "A browser-only error",
       "Automatic integer overflow"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "65",
@@ -716,12 +716,12 @@
   },
   {
     "id": "66",
-    "question": "A Sass interpolation creates an unquoted selector fragment. What should library code validate?",
+    "question": "Which is a known risk of @extend?",
     "options": [
-      "Only the original variable's spelling",
-      "The intended generated selector syntax",
-      "Only the source map filename",
-      "Only the current browser route"
+      "It copies declarations into every extender",
+      "It can create large and unexpected selector lists",
+      "It works only on class selectors",
+      "It cannot be used in partial files"
     ],
     "correct_index": 1
   },
@@ -729,56 +729,56 @@
     "id": "67",
     "question": "A Sass value interpolated into a custom property needs evaluation. Why can interpolation be necessary?",
     "options": [
-      "Custom property values use CSS-oriented parsing",
       "Sass forbids variables in every declaration",
+      "Custom property values use CSS-oriented parsing",
       "The browser reads Sass variable names",
       "Custom properties always require quoted colors"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "68",
     "question": "A Sass function needs to preserve a CSS calc expression. What should it avoid?",
     "options": [
-      "Forcing incompatible units into one number",
-      "Returning a calculation value",
       "Allowing the browser to finish calculation",
+      "Returning a calculation value",
+      "Forcing incompatible units into one number",
       "Using any numeric value at all"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "69",
     "question": "A Sass codebase replaces deprecated global built-in calls. What modern access pattern fits?",
     "options": [
-      "Evaluate functions through browser JavaScript",
-      "Prefix every call with a DOM ID",
       "Load and use the built-in module",
+      "Prefix every call with a DOM ID",
+      "Evaluate functions through browser JavaScript",
       "Copy every compiler function into source"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "70",
-    "question": "A Sass color function receives a modern color-space value. What must its operation specify correctly?",
+    "question": "What does @use \"module\" as * do?",
     "options": [
-      "Only the stylesheet's output directory",
-      "Only the color's source filename",
-      "Only the generated selector length",
-      "The intended channels and color space"
+      "Makes all members private",
+      "Loads the module a second time",
+      "Makes members global in every file",
+      "Skips the namespace"
     ],
     "correct_index": 3
   },
   {
     "id": "71",
-    "question": "A Sass function changes alpha but must preserve other channels. Which review should re-derive the result?",
+    "question": "What does @forward do?",
     "options": [
-      "The stylesheet import alphabetization",
-      "The specific channel operation",
-      "The source map encoding",
-      "The component's route state"
+      "Imports the module with a global namespace",
+      "Makes the module's members usable in the same file",
+      "Compiles the module into a separate CSS file",
+      "Re-exports a module's members"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "72",
@@ -793,45 +793,45 @@
   },
   {
     "id": "73",
-    "question": "A Sass function uses meta.inspect for user-facing CSS. Why should the team treat it cautiously?",
+    "question": "What does the Dart Sass CLI write next to out.css by default?",
     "options": [
-      "It is a diagnostic representation",
-      "It always produces valid CSS values",
-      "It sanitizes all untrusted selectors",
-      "It resolves browser custom properties"
+      "A minified copy named out.min.css",
+      "A source map named out.css.map",
+      "A log file named out.css.log",
+      "A cache file named out.css.cache"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "74",
     "question": "A Sass token function returns null for a required value. What stronger library contract can expose mistakes?",
     "options": [
       "Convert null into an empty class",
-      "Raise @error with useful context",
+      "Ignore missing values until runtime",
       "Silently remove the declaration",
-      "Ignore missing values until runtime"
-    ],
-    "correct_index": 1
-  },
-  {
-    "id": "75",
-    "question": "A Sass mixin merges caller options with defaults. What precedence should its API document?",
-    "options": [
-      "Only the caller's component display name",
-      "Only the compiler's executable path",
-      "Only the generated file's timestamp",
-      "Which keys override which defaults"
+      "Raise @error with useful context"
     ],
     "correct_index": 3
   },
   {
-    "id": "76",
-    "question": "A Sass helper accepts either a scalar or a list. What should its normalization define?",
+    "id": "75",
+    "question": "What default namespace does @use \"src/corners\" create?",
     "options": [
-      "How each supported input shape behaves",
-      "Only the generated selector prefix",
-      "Only the source file indentation width",
-      "Only the package's archive filename"
+      "src/corners",
+      "src",
+      "corners",
+      "None; members are global"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "76",
+    "question": "How do you make a Sass member private to its module?",
+    "options": [
+      "Start its name with - or _",
+      "Prefix it with !private",
+      "Declare it after @forward",
+      "Put it inside @at-root"
     ],
     "correct_index": 0
   },
@@ -840,11 +840,11 @@
     "question": "A Sass source uses underscore and hyphen variable spellings interchangeably. What language rule explains matching names?",
     "options": [
       "The compiler lowercases every selector",
-      "Sass treats them as equivalent identifiers",
       "The browser removes every underscore",
+      "Sass treats them as equivalent identifiers",
       "Only !global variables allow aliases"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "78",
@@ -859,56 +859,56 @@
   },
   {
     "id": "79",
-    "question": "A Sass indented multiline expression breaks outside valid continuation syntax. What should the developer inspect?",
+    "question": "Why did Sass deprecate / as the division operator?",
     "options": [
-      "Only the current browser viewport",
-      "Only the source file's final character",
-      "Only the generated output filename",
-      "Whether the statement can end at that newline"
+      "The slash was slower than math.div to compile",
+      "The slash also separates CSS values",
+      "The slash conflicted with @use URL paths",
+      "The slash worked only in LibSass"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "80",
-    "question": "A Sass library's function derives semantic values from a large map. What should it expose as its stable contract?",
+    "question": "Which Sass CLI option writes minified CSS?",
     "options": [
-      "Every current diagnostic message byte",
-      "Every output line number",
-      "Every private helper variable",
-      "Supported keys, types, and failure behavior"
+      "--minify",
+      "--style=compressed",
+      "--output=min",
+      "--compress"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "81",
-    "question": "A Sass compiler service accepts custom importers. What trust boundary must it control?",
+    "question": "What problem does @import cause that @use avoids?",
     "options": [
-      "Only the CSS selector's class prefix",
-      "Only the number of source comments",
-      "Only the generated file's extension",
-      "Files and resources importers can access"
+      "It always emits CSS twice",
+      "It cannot load partial files",
+      "It cannot load nested files",
+      "Global members can collide"
     ],
     "correct_index": 3
   },
   {
     "id": "82",
-    "question": "A Sass custom function performs network calls during compilation. What does reproducibility require?",
+    "question": "Where must @use appear in a stylesheet?",
     "options": [
-      "Controlled inputs and dependency tracking",
-      "Only a valid module namespace",
-      "Only one output stylesheet per build",
-      "Only a fixed CSS indentation width"
+      "Anywhere in the file, even inside rules",
+      "Before any rules except @forward and variable declarations",
+      "Only inside the first mixin",
+      "Only after all variable declarations and mixins"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "83",
     "question": "A Sass generator produces every combination of token values. What can dominate build and output cost?",
     "options": [
+      "The text encoding of the source file",
       "The length of one variable name",
-      "The number of compiler banner lines",
-      "The source file's text encoding",
-      "Combinatorial expansion"
+      "The number of comments in the source",
+      "Nested loops that multiply generated rules"
     ],
     "correct_index": 3
   },
@@ -938,23 +938,23 @@
     "id": "86",
     "question": "A Sass mixin repeatedly emits a large declaration group. What output cost differs from returning a function value?",
     "options": [
-      "Repeated CSS declarations",
+      "Repeated React component instances",
       "Repeated browser event handlers",
       "Repeated server route registrations",
-      "Repeated React component instances"
+      "Repeated CSS declarations"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "87",
     "question": "A Sass build enables quiet dependency warnings globally. What maintenance risk can remain hidden?",
     "options": [
-      "Every browser rendering error",
-      "Every generated source map URL",
-      "Every invalid application route",
-      "Deprecated dependency APIs"
+      "Rendering errors in some browsers",
+      "Deprecated APIs used in dependencies",
+      "Wrong source map URLs in output",
+      "Unused selectors in generated CSS"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "88",
@@ -969,36 +969,36 @@
   },
   {
     "id": "89",
-    "question": "A Sass function accepts user-derived strings for selectors. What contract should the build define?",
+    "question": "What does meta.load-css do?",
     "options": [
-      "Only the server's database index count",
-      "Only the browser's pointer speed",
-      "Allowed syntax and escaping strategy",
-      "Only the output stylesheet color mode"
+      "Includes a module's CSS at call time",
+      "Loads a module and exposes its members",
+      "Loads CSS from a remote URL during compilation",
+      "Loads only the mixins of a module"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "90",
-    "question": "A Sass compiler uses different importer rules in development and CI. What should a compatibility check compare?",
+    "question": "Why do large builds often prefer sass-embedded over the sass package?",
     "options": [
-      "Only the local shell prompt",
-      "Only the editor's font rendering",
-      "Only the CSS file indentation",
-      "Canonical module resolution"
+      "It runs a native compiler, so it is faster",
+      "It adds LibSass features that Dart Sass lacks",
+      "It compiles the indented syntax only",
+      "It skips source maps and module loading"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "91",
     "question": "A Sass module graph has a cycle during initial loading. Why must the dependency design change?",
     "options": [
       "The browser detects the cycle after hydration",
-      "Every cycle becomes a recursive CSS selector",
       "Modules cannot load themselves through a cycle",
+      "Every cycle becomes a recursive CSS selector",
       "All stylesheets require a single global file"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "92",
@@ -1017,32 +1017,32 @@
     "options": [
       "Every use reparses and emits its CSS",
       "Only modules without functions emit CSS",
-      "Only the shortest path emits CSS",
-      "A module loads once per compilation"
+      "A module loads once per compilation",
+      "Only the shortest path emits CSS"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "94",
     "question": "A Sass @forward file also needs the forwarded functions internally. What additional action may be required?",
     "options": [
-      "Copy all generated CSS back in",
       "Load them with @use",
+      "Copy all generated CSS back in",
       "Declare every function !global",
       "Rename the entrypoint to CSS"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "95",
     "question": "A Sass public module hides some forwarded members. What API goal does that support?",
     "options": [
       "Remove all compile-time evaluation",
-      "Control the exported surface",
       "Prevent browser stylesheet inheritance",
+      "Control the exported surface",
       "Force every member into one namespace"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "96",
@@ -1060,11 +1060,11 @@
     "question": "A Sass build cache ignores compiler version changes. What correctness risk follows?",
     "options": [
       "An automatic network permission change",
-      "Stale output under changed language semantics",
+      "A guaranteed browser memory leak",
       "A required component name collision",
-      "A guaranteed browser memory leak"
+      "Stale output under changed language semantics"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "98",
@@ -1072,19 +1072,19 @@
     "options": [
       "Only one example in the README",
       "Only matching file extensions",
-      "Equivalent behavior for both syntaxes",
-      "Only identical source whitespace"
+      "Only identical source whitespace",
+      "Equivalent behavior for both syntaxes"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "99",
     "question": "A Sass build fails inside a custom host function. What diagnostics help locate the source problem?",
     "options": [
-      "Only the browser's viewport size",
-      "Only the package description text",
+      "The description text of the package",
+      "The viewport size of the browser",
       "Call context and source location",
-      "Only the final minified CSS length"
+      "The length of the minified CSS"
     ],
     "correct_index": 2
   },
@@ -1092,11 +1092,11 @@
     "id": "100",
     "question": "A Sass higher-order helper accepts consumer function values. What contract should it validate around meta.call?",
     "options": [
-      "Callback arguments and result types",
-      "Only the generated selector prefix",
       "Only the stylesheet's output directory",
+      "Only the generated selector prefix",
+      "Callback arguments and result types",
       "Only the callback's source filename"
     ],
-    "correct_index": 0
+    "correct_index": 2
   }
 ]

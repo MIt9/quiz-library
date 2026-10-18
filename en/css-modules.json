@@ -4,11 +4,11 @@
     "question": "What does CSS Modules scope locally by default?",
     "options": [
       "Every HTML element",
-      "Class and animation names",
       "Every browser stylesheet",
+      "Class and animation names",
       "All CSS custom properties"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "2",
@@ -16,32 +16,32 @@
     "options": [
       "A React component tree",
       "A DOM stylesheet element",
-      "A mapping of exported names",
-      "A list of media query matches"
+      "A list of media query matches",
+      "A mapping of exported names"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "3",
     "question": "Why can two CSS Modules each define .button?",
     "options": [
-      "Browsers isolate CSS by filename",
+      "Their local names compile separately",
       "Only the first imported file applies",
       "The second file replaces the first",
-      "Their local names compile separately"
+      "Browsers isolate CSS by filename"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "4",
     "question": "In React, how does a CSS Module class reach an element?",
     "options": [
       "Through the component key",
-      "Through a module HTML attribute",
       "Through className",
+      "Through a module HTML attribute",
       "Through a style string"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "5",
@@ -59,55 +59,55 @@
     "question": "What does the .module.css suffix commonly signal to a build tool?",
     "options": [
       "Enable a browser module script",
-      "Enable a CSS-only custom element",
+      "Enable CSS Modules processing",
       "Enable inline style rendering",
-      "Enable CSS Modules processing"
+      "Enable a CSS-only custom element"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "7",
     "question": "Who transforms local CSS Module names?",
     "options": [
       "The HTML parser",
-      "The React event system",
       "The configured build pipeline",
+      "The React event system",
       "The browser cascade engine"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "8",
     "question": "Do browsers understand composes as a native CSS feature?",
     "options": [
       "Only inside a media query",
-      "Yes, every browser expands it",
+      "No, module tooling processes it",
       "Only in shadow roots",
-      "No, module tooling processes it"
+      "Yes, every browser expands it"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "9",
     "question": "What does composes reuse?",
     "options": [
-      "The stylesheet URL alone",
       "Class membership",
+      "The stylesheet URL alone",
       "A React component instance",
       "The parent DOM element"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "10",
     "question": "What can one exported composed class contain?",
     "options": [
       "Only an inline CSS object",
-      "A required DOM ID selector",
       "Several class name tokens",
+      "A required DOM ID selector",
       "Only one numeric index"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "11",
@@ -115,10 +115,10 @@
     "options": [
       "inherit: .base;",
       "extends: base;",
-      "composes: base;",
-      "include: base;"
+      "include: base;",
+      "composes: base;"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "12",
@@ -137,32 +137,32 @@
     "options": [
       "A class limited to one component",
       "A class exported from JavaScript",
-      "A class name that stays global",
-      "A class loaded from a CDN"
+      "A class loaded from a CDN",
+      "A class name that stays global"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "14",
     "question": "What does :local(.item) explicitly mark?",
     "options": [
-      "A component runtime variable",
-      "A browser private element",
       "A locally scoped class",
+      "A browser private element",
+      "A component runtime variable",
       "A globally inherited token"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "15",
     "question": "What happens to a plain button element selector in a CSS Module?",
     "options": [
-      "It remains an element selector",
-      "It becomes a scoped custom element",
       "It matches only imported components",
+      "It becomes a scoped custom element",
+      "It remains an element selector",
       "It becomes a unique class"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "16",
@@ -181,76 +181,76 @@
     "options": [
       "Only for stylesheet extraction",
       "Only for animation names",
-      "No, other UI systems can use them",
-      "Yes, they depend on React context"
+      "Yes, they depend on React context",
+      "No, other UI systems can use them"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "18",
     "question": "Can CSS Modules contain media queries?",
     "options": [
-      "No, local classes prevent them",
+      "Yes, normal media queries work",
       "Only in a global stylesheet",
       "Only with a JavaScript listener",
-      "Yes, normal media queries work"
+      "No, local classes prevent them"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "19",
-    "question": "Can a local class use :hover?",
+    "question": "What does an ambient declaration for *.module.css give TypeScript?",
     "options": [
-      "Only if the class becomes global",
-      "No, classes must be static",
-      "Only with a React event handler",
-      "Yes, pseudo-classes remain usable"
+      "A runtime check of every class name used",
+      "A type for the imported class map",
+      "A compiled copy of each stylesheet file",
+      "A list of unused selectors in each file"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "20",
     "question": "Does CSS Modules replace the CSS cascade?",
     "options": [
       "Only for composed classes",
-      "Only when class names are hashed",
       "No, cascade rules still apply",
+      "Only when class names are hashed",
       "Yes, imports always win"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "21",
     "question": "What does a component stylesheet import make explicit?",
     "options": [
       "Its network request lifetime",
-      "Its stylesheet dependency",
       "Its DOM accessibility role",
+      "Its stylesheet dependency",
       "Its server validation schema"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "22",
     "question": "What is a common benefit of short local class names?",
     "options": [
-      "Automatic removal of unused rules",
       "Reduced global naming coordination",
+      "Automatic removal of unused rules",
       "Automatic responsive behavior",
       "Guaranteed selector uniqueness at runtime"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "23",
     "question": "Are generated class names a stable public styling API by default?",
     "options": [
-      "No, build settings can change them",
       "Yes, their hashes are standardized",
+      "No, build settings can change them",
       "Only if they include a filename",
       "Only when they include a number"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "24",
@@ -267,23 +267,23 @@
     "id": "25",
     "question": "What can a missing exported class lookup return in JavaScript?",
     "options": [
-      "A default style object",
-      "The nearest matching class",
       "undefined",
+      "The nearest matching class",
+      "A default style object",
       "A browser CSS exception"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "26",
     "question": "What does className={`${styles.root} ${styles.active}`} do?",
     "options": [
       "Merge their CSS declarations in JavaScript",
-      "Apply both exported classes",
       "Create a new module stylesheet",
+      "Apply both exported classes",
       "Make active extend root at runtime"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "27",
@@ -302,120 +302,120 @@
     "options": [
       "No, local classes block the cascade",
       "Only if JavaScript copies the class",
-      "Only in the development server",
-      "Yes, matching global rules can apply"
+      "Yes, matching global rules can apply",
+      "Only in the development server"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "29",
-    "question": "Does importing CSS Module styles validate the HTML structure?",
+    "question": "Which loaders does webpack commonly need for a .module.css file?",
     "options": [
-      "No, it supplies styles and exports",
-      "Only if the filename matches a component",
-      "Yes, it checks every child element",
-      "Only if classes use camelCase"
+      "file-loader alone",
+      "ts-loader with a CSS flag",
+      "babel-loader with a CSS preset",
+      "css-loader with a style injection loader"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "30",
     "question": "Can CSS custom properties supply theme values inside a CSS Module?",
     "options": [
-      "No, custom properties cannot cross files",
-      "Only if every class becomes global",
       "Yes, normal variable resolution applies",
+      "Only if every class becomes global",
+      "No, custom properties cannot cross files",
       "Only through JavaScript string replacement"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "31",
     "question": "Are custom property names automatically local class names?",
     "options": [
-      "No, they remain custom property names",
+      "Yes, each import changes their names",
       "Only in media queries",
       "Only when they start with two hyphens",
-      "Yes, each import changes their names"
+      "No, they remain custom property names"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "32",
     "question": "What does a local keyframes name protect against?",
     "options": [
-      "Animation name collisions",
+      "Animation timing differences",
       "Every reduced-motion violation",
       "Every animation performance cost",
-      "Animation timing differences"
-    ],
-    "correct_index": 0
-  },
-  {
-    "id": "33",
-    "question": "Can a CSS Module contain @supports rules?",
-    "options": [
-      "Only when all classes are global",
-      "Yes, normal feature queries work",
-      "Only through a React hook",
-      "No, support checks need JavaScript"
-    ],
-    "correct_index": 1
-  },
-  {
-    "id": "34",
-    "question": "What does a CSS Module source map help locate?",
-    "options": [
-      "The selected DOM role",
-      "The active component state",
-      "The latest server route",
-      "Original stylesheet source"
+      "Animation name collisions"
     ],
     "correct_index": 3
   },
   {
-    "id": "35",
-    "question": "Does a CSS Module import add its class to an element automatically?",
+    "id": "33",
+    "question": "Which css-loader option configures CSS Modules?",
     "options": [
-      "No, the app must apply it",
-      "Yes, to every matching tag",
-      "Only when the file has one class",
-      "Only for the default export"
+      "scope",
+      "locals",
+      "modules",
+      "isolation"
+    ],
+    "correct_index": 2
+  },
+  {
+    "id": "34",
+    "question": "What does a generated class name hash usually come from?",
+    "options": [
+      "The file path and local class name",
+      "The build timestamp",
+      "The CSS declarations inside the rule",
+      "The order of the class in the file"
     ],
     "correct_index": 0
+  },
+  {
+    "id": "35",
+    "question": "What does MiniCssExtractPlugin do for CSS Module output?",
+    "options": [
+      "Compiles each class into an inline style rule",
+      "Drops the class map and keeps plain names",
+      "Writes CSS to files and keeps the class map in JavaScript",
+      "Merges all local classes into one global name"
+    ],
+    "correct_index": 2
   },
   {
     "id": "36",
     "question": "What determines whether .module.scss works in a project?",
     "options": [
       "The HTML document language",
-      "The number of exported classes",
+      "Its configured tool support",
       "The browser native SCSS engine",
-      "Its configured tool support"
+      "The number of exported classes"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "37",
     "question": "What is ICSS in the CSS Modules ecosystem?",
     "options": [
-      "An interchange format for imports and exports",
       "A browser API for isolated layout",
+      "An interchange format for imports and exports",
       "A React hook for computed styles",
       "A standard format for icon fonts"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "38",
     "question": "Which naming approach suits local module classes?",
     "options": [
-      "Names that describe component roles",
       "Generated hashes written by hand",
+      "Names that describe component roles",
       "Unique app-wide prefixes on every class",
       "A required BEM prefix for every file"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "39",
@@ -423,98 +423,98 @@
     "options": [
       "Only in a production build",
       "No, imports overwrite each other",
-      "Only if neither exports root",
-      "Yes, using separate import bindings"
+      "Yes, using separate import bindings",
+      "Only if neither exports root"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "40",
     "question": "Can several instances of one component share one CSS Module class?",
     "options": [
-      "Yes, the class is not instance-specific",
+      "Only if they share all props",
       "No, each instance needs a new module",
       "Only if they render in one parent",
-      "Only if they share all props"
+      "Yes, the class is not instance-specific"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "41",
-    "question": "Which concern belongs to CSS Modules rather than a reset stylesheet?",
+    "question": "What is a downside of a generic *.module.css declaration with string keys?",
     "options": [
-      "Local class export mappings",
-      "Default element margin removal",
-      "Default form font inheritance",
-      "Global box-sizing normalization"
+      "Classes stop being hashed",
+      "Imports fail at runtime",
+      "Typos in class keys are not caught",
+      "Media queries are dropped"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "42",
     "question": "Does CSS Modules require CSS-in-JS at runtime?",
     "options": [
-      "Only for imported animations",
+      "No, build-time CSS output can work",
       "Yes, every class needs a style object",
       "Only for responsive selectors",
-      "No, build-time CSS output can work"
+      "Only for imported animations"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "43",
-    "question": "Can a local selector target an element with a data attribute?",
+    "question": "Which Vite option sets the generated class name pattern for CSS Modules?",
     "options": [
-      "No, attributes must be class exports",
-      "Yes, normal attribute selectors work",
-      "Only if the attribute becomes global",
-      "Only through a runtime state map"
+      "build.rollupOptions.cssClassNames",
+      "css.postcss.scopedNames",
+      "css.modules.generateScopedName",
+      "resolve.localIdentName"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "44",
-    "question": "Does changing a local CSS class select the corresponding React state automatically?",
+    "question": "Which Vite option lets JavaScript read .user-card as styles.userCard?",
     "options": [
-      "Yes, local names become state variables",
-      "No, the component manages state",
-      "Only if the class uses a pseudo-class",
-      "Only for an active class"
+      "build.cssCodeSplit",
+      "css.modules.camelKeys",
+      "css.postcss.exportNames",
+      "css.modules.localsConvention"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "45",
     "question": "What should a component expose for consumer styling?",
     "options": [
-      "A documented styling contract",
-      "Its generated hash algorithm only",
       "Its build output directory name",
+      "Its generated hash algorithm only",
+      "A documented styling contract",
       "Its private child selectors only"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "46",
     "question": "What does :global usually sacrifice for a selector?",
     "options": [
       "The normal CSS cascade order",
-      "Local name isolation",
+      "The ability to use pseudo-classes",
       "The ability to use media queries",
-      "The ability to use pseudo-classes"
+      "Local name isolation"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "47",
-    "question": "Can CSS Modules style an SVG element through a local class?",
+    "question": "What does @value declare in a CSS Module?",
     "options": [
-      "No, classes apply only to HTML",
-      "Yes, when the class reaches that element",
-      "Only through a global element selector",
-      "Only after converting it to a PNG"
+      "A shared constant other modules import",
+      "A runtime variable that React sets later",
+      "A hashed animation name for JavaScript use",
+      "A browser custom property with a scope"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "48",
@@ -540,25 +540,25 @@
   },
   {
     "id": "50",
-    "question": "Does CSS Modules guarantee that a color has sufficient contrast?",
+    "question": "What does the css-loader localIdentName option control?",
     "options": [
-      "Yes, local classes enforce contrast",
-      "Only if the file exports a theme",
-      "Only if colors use custom properties",
-      "No, visual choices need review"
+      "The pattern of generated class names",
+      "The folder of the output CSS file",
+      "The file name of the JavaScript export",
+      "The order of classes in the HTML"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "51",
     "question": "A component uses className=\"root\" instead of styles.root. Why does its local rule miss?",
     "options": [
-      "The selector requires an ID",
-      "The browser removes the class attribute",
       "The emitted class name differs",
+      "The browser removes the class attribute",
+      "The selector requires an ID",
       "The module changes the element type"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "52",
@@ -575,23 +575,23 @@
     "id": "53",
     "question": "A team assumes composes copies declarations into the new selector. What actually appears on the element?",
     "options": [
-      "A second nested DOM element",
       "The exported combined class tokens",
+      "A second nested DOM element",
       "A new browser style inheritance rule",
       "A copied inline style object"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "54",
     "question": "A composed CSS Module class appears in a DOM class attribute. Should the app split and select just its first token?",
     "options": [
-      "Only retain the final token",
       "No, retain the whole exported value",
+      "Only retain the final token",
       "Only retain tokens with a hash",
       "Yes, the rest are debug metadata"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "55",
@@ -599,10 +599,10 @@
     "options": [
       "Only if the classes come from one import",
       "No, component ownership blocks matching",
-      "Only if React context is shared",
-      "Yes, if both classes exist in that DOM relation"
+      "Yes, if both classes exist in that DOM relation",
+      "Only if React context is shared"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "56",
@@ -620,22 +620,22 @@
     "question": "A module contains :global(.toast). Where can that selector match?",
     "options": [
       "Only inside the importing component",
-      "Anywhere that global selector matches",
+      "Only in the module export object",
       "Only in the next rendered element",
-      "Only in the module export object"
+      "Anywhere that global selector matches"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "58",
     "question": "A module needs a global library child only under its local root. Which selector fits?",
     "options": [
-      ".root :global(.library-child)",
-      ":global(.root .library-child)",
       ":local(.library-child)",
+      ":global(.root .library-child)",
+      ".root :global(.library-child)",
       ".root .library-child"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "59",
@@ -652,45 +652,45 @@
     "id": "60",
     "question": "A component joins an absent module key into a template string. What can its class attribute contain?",
     "options": [
-      "A CSS syntax exception",
       "The literal token undefined",
+      "A CSS syntax exception",
       "A generated fallback class",
       "A repaired camelCase export"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "61",
     "question": "A project needs typed CSS Module class keys. What build feature can help?",
     "options": [
-      "Generate declarations from module exports",
+      "Disable stylesheet extraction",
       "Add IDs to every styled node",
       "Write hashes into the component source",
-      "Disable stylesheet extraction"
+      "Generate declarations from module exports"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "62",
     "question": "A module class is renamed, but its JavaScript use is unchanged. What review should detect?",
     "options": [
       "An invalid DOM event listener",
-      "A changed CSS color syntax",
+      "A missing exported key reference",
       "A missing server response type",
-      "A missing exported key reference"
+      "A changed CSS color syntax"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "63",
     "question": "A CSS Module imports a background image with url(). What does the build normally need to resolve?",
     "options": [
       "The component runtime props object",
-      "The asset request relative to its source",
       "The current browser tab history",
+      "The asset request relative to its source",
       "The global stylesheet class map"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "64",
@@ -698,21 +698,21 @@
     "options": [
       "Only a runtime style injection stage",
       "Only a CSS minification stage",
-      "Only the final source map comment",
-      "Both processing stages in the correct pipeline"
+      "Both processing stages in the correct pipeline",
+      "Only the final source map comment"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "65",
     "question": "A team wants runtime light and dark themes in CSS Modules. Which design avoids regenerating classes for each toggle?",
     "options": [
-      "Duplicate the React component tree",
       "Scoped CSS custom property values",
+      "Duplicate the React component tree",
       "Recompile Sass in the browser",
       "Rename generated hashes on each click"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "66",
@@ -727,25 +727,25 @@
   },
   {
     "id": "67",
-    "question": "A CSS Module with .root:focus-visible needs a visible outline. What does local scoping change about the focus requirement?",
+    "question": "Which css-loader option exports class maps without emitting CSS, for server rendering?",
     "options": [
-      "It replaces focus with a hover state",
-      "It makes the node keyboard-focusable",
-      "Nothing; the app still defines focus styles",
-      "It automatically adds a sufficient outline"
+      "modules.serverOnly",
+      "modules.noEmit",
+      "esModule: false",
+      "modules.exportOnlyLocals"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "68",
     "question": "A test selects a production class hash. What makes the test fragile?",
     "options": [
-      "The generated name can change",
-      "Browsers hide scoped classes from tests",
       "Local classes cannot be selected",
+      "Browsers hide scoped classes from tests",
+      "The generated name can change",
       "Hashes always differ on each render"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "69",
@@ -785,22 +785,22 @@
     "question": "A module composes a global utility class. Which documented syntax expresses that?",
     "options": [
       "@global composes utility;",
-      "composes: global(utility);",
       "composes: utility from global;",
+      "composes: global(utility);",
       "global-compose: utility;"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "73",
     "question": "A module declares composition on a combined selector. Why should the team use a simple local class instead?",
     "options": [
       "Every combined selector becomes global",
-      "The browser only accepts one class per file",
+      "Composition targets a single local class",
       "Combined selectors cannot use declarations",
-      "Composition targets a single local class"
+      "The browser only accepts one class per file"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "74",
@@ -817,23 +817,23 @@
     "id": "75",
     "question": "A dev build uses readable generated names and production uses short hashes. What should app code use in both?",
     "options": [
-      "The module export values",
+      "The production hash prefix",
       "The source filename as a class",
       "The development output names",
-      "The production hash prefix"
+      "The module export values"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "76",
     "question": "A team uses kebab-case class names but wants camelCase JavaScript keys. Where is that behavior configured?",
     "options": [
-      "The HTML parser options",
-      "The browser stylesheet API",
       "The chosen CSS Modules implementation",
+      "The browser stylesheet API",
+      "The HTML parser options",
       "The React DOM renderer"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "77",
@@ -850,45 +850,45 @@
     "id": "78",
     "question": "A module exports an animation name used in CSS. What should application code avoid assuming?",
     "options": [
-      "The emitted name equals the source name",
       "The animation can use transform",
+      "The emitted name equals the source name",
       "The animation can respect reduced motion",
       "The animation accepts timing values"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "79",
     "question": "A production CSS Module class exists in HTML but no style applies. What resource should the developer inspect?",
     "options": [
       "The HTML document title",
-      "The component accessible name",
       "The emitted CSS asset loading",
+      "The component accessible name",
       "The JavaScript export binding spelling only"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "80",
     "question": "A global reset changes form control font inheritance. Can CSS Modules prevent that automatically?",
     "options": [
       "Only if each module imports React",
-      "Only if the generated names contain hashes",
       "No, name scoping is not a cascade boundary",
+      "Only if the generated names contain hashes",
       "Yes, every local class blocks inherited values"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "81",
     "question": "A server and client compile CSS Modules with different naming inputs. What can hydration expose?",
     "options": [
       "A conversion from local names to IDs",
-      "Mismatched class names",
       "A guaranteed browser fallback theme",
+      "Mismatched class names",
       "An automatic runtime reconciliation of CSS"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "82",
@@ -906,22 +906,22 @@
     "question": "A bundler drops a CSS import as side-effect-free. What packaging rule can preserve the needed stylesheet?",
     "options": [
       "Mark all selectors as global",
-      "Declare relevant CSS side effects",
+      "Remove every stylesheet import",
       "Convert classes to HTML IDs",
-      "Remove every stylesheet import"
+      "Declare relevant CSS side effects"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "84",
     "question": "Two separately built apps emit short CSS Module names into one document. What naming policy reduces accidental collisions?",
     "options": [
-      "Use distinct build namespaces or salts",
-      "Use the same constant class in every app",
       "Use only the first letter of each filename",
+      "Use the same constant class in every app",
+      "Use distinct build namespaces or salts",
       "Remove module hashing from both builds"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "85",
@@ -939,33 +939,33 @@
     "question": "A shared CSS Module composition graph has a cycle. Why should the team reject that cycle?",
     "options": [
       "Browsers cannot render equal class names",
-      "React requires one stylesheet per component",
       "Cyclic resolution can be undefined",
+      "React requires one stylesheet per component",
       "CSS rejects every stylesheet import"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "87",
     "question": "A module composes classes from two files with conflicting declarations. What must the team avoid relying on?",
     "options": [
-      "The presence of both exported class tokens",
+      "Cross-file override order",
       "The normal browser cascade model",
       "The use of a component-local export name",
-      "Cross-file override order"
+      "The presence of both exported class tokens"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "88",
     "question": "A framework streams HTML before its module CSS loads. What user-visible failure can occur?",
     "options": [
-      "A conversion of classes into inline styles",
-      "A permanent loss of all event handlers",
       "A flash of unstyled component content",
+      "A permanent loss of all event handlers",
+      "A conversion of classes into inline styles",
       "A guaranteed browser hydration crash"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "89",
@@ -973,10 +973,10 @@
     "options": [
       "Eliminate every browser layout calculation",
       "Avoid all style recalculation after state changes",
-      "Guarantee zero rendering cost for each instance",
-      "Reuse one static set of CSS rules"
+      "Reuse one static set of CSS rules",
+      "Guarantee zero rendering cost for each instance"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "90",
@@ -984,10 +984,10 @@
     "options": [
       "A copied production hash prefix",
       "A selector built from output filenames",
-      "A regular expression over minified names",
-      "A documented token or styling interface"
+      "A documented token or styling interface",
+      "A regular expression over minified names"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "91",
@@ -1004,99 +1004,99 @@
     "id": "92",
     "question": "Lazy-loaded CSS Modules override shared global selectors. Why can route loading order change the final appearance?",
     "options": [
-      "Local names always reset every global rule",
+      "Stylesheet insertion can affect cascade order",
       "JavaScript imports sort CSS by selector name",
       "The browser ignores all lazily loaded styles",
-      "Stylesheet insertion can affect cascade order"
+      "Local names always reset every global rule"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "93",
     "question": "A design system exposes its full CSS Module mapping to consumers. What long-term cost follows?",
     "options": [
       "The browser stops applying media queries",
-      "Consumers cannot combine className strings",
       "Internals become public API",
+      "Consumers cannot combine className strings",
       "The package loses all animation support"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "94",
     "question": "A library wants style overrides without exposing child structure. Which API best supports that?",
     "options": [
-      "Documented variants and style slots",
+      "Consumer edits to emitted package CSS",
       "Generated class hashes in usage examples",
       "Private descendant selectors for each child",
-      "Consumer edits to emitted package CSS"
+      "Documented variants and style slots"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "95",
-    "question": "An app publishes readable CSS Module names with internal file paths. What should its release review consider?",
+    "question": "What does css-loader modules.mode set to pure require?",
     "options": [
-      "Unnecessary exposure of source structure",
-      "Automatic execution of those file paths",
-      "Complete disclosure of server credentials",
-      "A mandatory browser source map download"
+      "Every file uses only :global rules",
+      "Each selector has a local class or ID",
+      "No file uses composes at all",
+      "Each file has only one class"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "96",
     "question": "A component renders untrusted text as className input. Why is local CSS Module naming not a security boundary?",
     "options": [
-      "All hashed classes contain secret values",
-      "The browser executes class names as scripts",
       "Global classes still apply",
+      "The browser executes class names as scripts",
+      "All hashed classes contain secret values",
       "Local classes validate every input string"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "97",
     "question": "A component library extracts CSS into a separate file. What must consumers receive beyond JavaScript exports?",
     "options": [
-      "A stylesheet loading mechanism",
+      "An app-wide global naming prefix",
       "A second copy of the component source",
       "A runtime Sass compiler instance",
-      "An app-wide global naming prefix"
+      "A stylesheet loading mechanism"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "98",
     "question": "A team changes css-loader export configuration. What consumer contract can change without changing CSS selectors?",
     "options": [
       "The HTML element accessibility role",
-      "The JavaScript import shape",
+      "The native browser cascade order",
       "The source stylesheet media query syntax",
-      "The native browser cascade order"
+      "The JavaScript import shape"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "99",
     "question": "A component uses CSS Modules inside a shadow root. Why can document-level extracted CSS miss it?",
     "options": [
-      "CSS Modules replaces the shadow root host",
-      "React strips classes from shadow descendants",
       "Shadow boundaries block those rules",
+      "React strips classes from shadow descendants",
+      "CSS Modules replaces the shadow root host",
       "Generated classes cannot exist in shadow trees"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "100",
     "question": "A CSS Modules library uses :global for vendor overrides. Which boundary limits coupling to vendor internals?",
     "options": [
-      "Centralize versioned adapters around public hooks",
-      "Scatter copied vendor selectors across components",
       "Export all vendor hash names as app tokens",
+      "Scatter copied vendor selectors across components",
+      "Centralize versioned adapters around public hooks",
       "Require each screen to rename vendor classes"
     ],
-    "correct_index": 0
+    "correct_index": 2
   }
 ]

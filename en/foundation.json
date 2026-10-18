@@ -5,65 +5,65 @@
     "options": [
       "A React-only renderer",
       "A database query engine",
-      "An email delivery API",
-      "Responsive UI tools"
+      "Responsive UI tools",
+      "An email delivery API"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "2",
     "question": "What powers Foundation 6's XY Grid?",
     "options": [
-      "HTML tables",
-      "CSS subgrid only",
       "Flexbox",
+      "CSS subgrid only",
+      "HTML tables",
       "Absolute positioning"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "3",
     "question": "Which XY Grid class creates a horizontal grid?",
     "options": [
-      "grid-x",
-      "grid-container",
       "cell",
+      "grid-container",
+      "grid-x",
       "grid-y"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "4",
     "question": "Which XY Grid class identifies a child item?",
     "options": [
-      "column-group",
-      "grid-item-root",
       "cell",
+      "grid-item-root",
+      "column-group",
       "grid-container"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "5",
-    "question": "Which class creates a vertical XY Grid?",
+    "question": "Which class on a grid-x gives three equal cells per row from small widths up?",
     "options": [
-      "grid-x",
-      "grid-y",
-      "grid-container",
-      "grid-margin-x"
+      "grid-up-3",
+      "small-3-up",
+      "cell-up-3",
+      "small-up-3"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "6",
     "question": "What does small-6 request in the default twelve-column grid?",
     "options": [
       "A six-pixel gutter",
-      "A six-row container",
       "A half-width cell",
+      "A six-row container",
       "Six children per cell"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "7",
@@ -71,10 +71,10 @@
     "options": [
       "A four-row height",
       "A four-pixel margin",
-      "Four nested containers",
-      "A four-column span"
+      "A four-column span",
+      "Four nested containers"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "8",
@@ -91,23 +91,23 @@
     "id": "9",
     "question": "What does grid-container fluid provide?",
     "options": [
-      "A twelve-pixel gutter",
       "Full available width",
+      "A twelve-pixel gutter",
       "A content-only width",
       "A fixed reading width"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "10",
     "question": "What does grid-margin-x create?",
     "options": [
       "Horizontal border spacing",
-      "Vertical flex alignment",
+      "Horizontal margin gutters",
       "Vertical padding gutters",
-      "Horizontal margin gutters"
+      "Vertical flex alignment"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "11",
@@ -115,21 +115,21 @@
     "options": [
       "A fixed column count",
       "A full-height viewport",
-      "Horizontal padding gutters",
-      "Vertical margin gutters"
+      "Vertical margin gutters",
+      "Horizontal padding gutters"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "12",
-    "question": "What does grid-margin-y create?",
+    "question": "Which class on a grid-x centers its cells horizontally?",
     "options": [
-      "A fixed-size sidebar",
-      "A new document section",
-      "Horizontal padding gutters",
-      "Vertical margin gutters"
+      "text-center",
+      "align-center",
+      "float-center",
+      "cell-center"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "13",
@@ -148,65 +148,65 @@
     "options": [
       "The whole viewport height",
       "A fixed half-row width",
-      "The remaining row width",
-      "Content-based sizing"
+      "Content-based sizing",
+      "The remaining row width"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "15",
     "question": "What does Foundation's mobile-first grid approach mean?",
     "options": [
       "Every breakpoint needs JavaScript",
-      "Desktop styles always load first",
       "Base styles work from smaller widths",
+      "Desktop styles always load first",
       "All layouts use fixed widths"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "16",
     "question": "Which class supplies basic Foundation button styling?",
     "options": [
-      "button",
+      "ui-action",
       "btn",
       "button-root",
-      "ui-action"
+      "button"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "17",
     "question": "Which modifier gives a Foundation button an outline style?",
     "options": [
-      "outlined",
+      "hollow",
       "border-only",
       "outline-primary",
-      "hollow"
+      "outlined"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "18",
     "question": "What does an expanded button do?",
     "options": [
-      "Open a modal automatically",
       "Fill its available width",
+      "Open a modal automatically",
       "Increase every text size",
       "Become a flex container"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "19",
     "question": "What does button-group organize?",
     "options": [
-      "Related buttons",
+      "Only responsive grid cells",
       "Only form validation text",
       "Only navigation destinations",
-      "Only responsive grid cells"
+      "Related buttons"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "20",
@@ -225,10 +225,10 @@
     "options": [
       "A selected option element",
       "A hidden text field",
-      "A checkbox input",
-      "A progress meter element"
+      "A progress meter element",
+      "A checkbox input"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "22",
@@ -245,34 +245,34 @@
     "id": "23",
     "question": "Which component shows contextual information in a box?",
     "options": [
-      "Magellan",
-      "Orbit",
       "Callout",
+      "Orbit",
+      "Magellan",
       "Reveal"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "24",
     "question": "What does a Foundation card group?",
     "options": [
-      "Only tooltip triggers",
       "Related content",
+      "Only tooltip triggers",
       "Only form error rules",
       "Only table headings"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "25",
     "question": "Which component arranges an image beside content?",
     "options": [
-      "Media Object",
-      "Accordion Menu",
       "Dropdown Menu",
+      "Accordion Menu",
+      "Media Object",
       "Responsive Embed"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "26",
@@ -324,43 +324,43 @@
     "options": [
       "Breadcrumbs",
       "Pagination",
-      "Drilldown Menu",
-      "Dropdown Menu"
+      "Dropdown Menu",
+      "Drilldown Menu"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "31",
     "question": "Which navigation component expands nested lists inline?",
     "options": [
-      "Accordion Menu",
-      "Top Bar",
       "Drilldown Menu",
+      "Top Bar",
+      "Accordion Menu",
       "Badge"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "32",
     "question": "What does Top Bar provide?",
     "options": [
       "A server-rendered menu API",
-      "A required routing engine",
       "A navigation layout container",
+      "A required routing engine",
       "An automatic authentication guard"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "33",
     "question": "What do breadcrumbs show?",
     "options": [
-      "The navigation hierarchy",
       "The current form errors",
+      "The navigation hierarchy",
       "The selected numeric range",
       "The remaining upload progress"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "34",
@@ -377,12 +377,12 @@
     "id": "35",
     "question": "Which plugin tracks navigation targets during scrolling?",
     "options": [
-      "Magellan",
       "Toggler",
+      "Magellan",
       "Equalizer",
       "Abide"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "36",
@@ -400,33 +400,33 @@
     "question": "What does Responsive Embed preserve?",
     "options": [
       "A video's original file size",
-      "A mandatory video codec",
       "An embedded media aspect ratio",
+      "A mandatory video codec",
       "An iframe authentication state"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "38",
     "question": "Which component shows a small count or status?",
     "options": [
-      "Card",
+      "Badge",
       "Reveal",
       "Top Bar",
-      "Badge"
+      "Card"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "39",
     "question": "What does a progress meter communicate?",
     "options": [
       "A hidden validation rule",
-      "A selected radio option",
+      "Completion progress",
       "A navigation hierarchy",
-      "Completion progress"
+      "A selected radio option"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "40",
@@ -454,45 +454,45 @@
     "id": "42",
     "question": "Which plugin equalizes watched element heights?",
     "options": [
-      "Equalizer",
+      "Reveal",
       "Sticky",
       "Toggler",
-      "Reveal"
+      "Equalizer"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "43",
     "question": "Which plugin selects responsive content sources?",
     "options": [
       "Equalizer",
-      "Interchange",
       "Accordion",
+      "Interchange",
       "Magellan"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "44",
     "question": "Which plugin toggles classes or visibility?",
     "options": [
-      "Toggler",
       "Magellan",
+      "Toggler",
       "Interchange",
       "Equalizer"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "45",
     "question": "Which plugin keeps an element positioned while scrolling?",
     "options": [
       "Reveal",
-      "Sticky",
+      "Abide",
       "Tabs",
-      "Abide"
+      "Sticky"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "46",
@@ -509,45 +509,45 @@
     "id": "47",
     "question": "What does show-for-medium do in the default visibility system?",
     "options": [
-      "Show only when JavaScript runs",
+      "Show from medium upward",
       "Show only below medium",
       "Show only on touch devices",
-      "Show from medium upward"
+      "Show only when JavaScript runs"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "48",
-    "question": "What does Foundation's breakpoint Sass mixin generate?",
+    "question": "What does @include breakpoint(medium down) target?",
     "options": [
-      "Runtime resize event handlers",
-      "Responsive media queries",
-      "Server response variants",
-      "Component state machines"
+      "Only screens narrower than small",
+      "Only the medium breakpoint range",
+      "Medium screens and every larger size",
+      "Medium screens and every smaller size"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "49",
     "question": "Which call initializes Foundation plugins through its jQuery integration?",
     "options": [
       "jQuery.mountFoundation()",
-      "$(document).foundation()",
       "Foundation.render(document)",
+      "$(document).foundation()",
       "document.foundation.init()"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "50",
     "question": "Does Foundation's CSS alone initialize Reveal interaction?",
     "options": [
       "Only when the modal contains a form",
-      "No, its JavaScript is also needed",
       "Yes, data attributes run native code",
+      "No, its JavaScript is also needed",
       "Only when its width is fixed"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "51",
@@ -564,56 +564,56 @@
     "id": "52",
     "question": "A Reveal close control needs the dismissal hook. Which attribute fits?",
     "options": [
-      "aria-dismiss",
-      "data-bs-dismiss",
       "data-close",
+      "data-bs-dismiss",
+      "aria-dismiss",
       "data-reveal-close-id"
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "53",
     "question": "A Foundation plugin element contains data-options. What does that attribute provide?",
     "options": [
       "A CSS class name registry",
-      "A generated Sass variable",
       "Plugin configuration",
+      "A generated Sass variable",
       "A form submission endpoint"
+    ],
+    "correct_index": 1
+  },
+  {
+    "id": "54",
+    "question": "New Foundation plugin markup enters the DOM. Which documented call initializes that changed subtree?",
+    "options": [
+      "$(subtree).foundation('open')",
+      "Foundation.Reveal.render(subtree)",
+      "$(subtree).foundation()",
+      "Foundation.MediaQuery.atLeast('medium')"
     ],
     "correct_index": 2
   },
   {
-    "id": "54",
-    "question": "New Foundation plugin markup enters the DOM. Which documented initialization call scans that changed subtree?",
-    "options": [
-      "$(subtree).foundation('open')",
-      "Foundation.reInit('reveal')",
-      "Foundation.MediaQuery.atLeast('medium')",
-      "$(subtree).foundation()"
-    ],
-    "correct_index": 3
-  },
-  {
     "id": "55",
-    "question": "A page loads foundation.js before jQuery. What dependency should the developer check?",
+    "question": "Which script order loads Foundation 6 correctly with jQuery?",
     "options": [
-      "The grid's number of columns",
-      "The Sass variable naming style",
-      "Required script loading order",
-      "The modal's exported asset size"
+      "$(document).foundation(), jQuery, then foundation.js",
+      "foundation.js, jQuery, then $(document).foundation()",
+      "jQuery, foundation.js, then $(document).foundation()",
+      "foundation.js, then $(document).foundation(), then jQuery"
     ],
     "correct_index": 2
   },
   {
     "id": "56",
-    "question": "A Foundation app imports only Reveal. What must its custom JavaScript build include?",
+    "question": "A custom JavaScript build imports only Foundation Reveal. What else must it include?",
     "options": [
-      "All available Sass helper classes",
-      "Reveal's required utility dependencies",
-      "Every unrelated visual component",
-      "A second browser DOM implementation"
+      "Foundation core and Reveal's utility modules",
+      "The Orbit and Sticky plugin modules",
+      "A separate polyfill for every plugin",
+      "The compiled Sass settings file"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "57",
@@ -630,34 +630,34 @@
     "id": "58",
     "question": "A grid cell uses shrink and its sibling uses auto. What layout intent does that express?",
     "options": [
-      "Two hidden items above medium",
+      "Content-sized item plus flexible remainder",
       "Two equal fixed-width items",
       "One item per vertical viewport",
-      "Content-sized item plus flexible remainder"
+      "Two hidden items above medium"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "59",
-    "question": "A nested XY Grid has unexpected spacing. What should the developer inspect?",
+    "question": "A grid-margin-x must drop its gutters only on small screens. Which class does that?",
     "options": [
-      "Both grid gutter configurations",
-      "Only the page document title",
-      "Only the form submit handler",
-      "Only the generated icon sprite"
+      "small-gutter-none",
+      "small-margin-collapse",
+      "small-collapse-x",
+      "grid-no-margin-small"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "60",
     "question": "A Foundation button is an anchor styled as disabled. What must application code still prevent?",
     "options": [
       "All stylesheet loading",
-      "Every hover color change",
+      "Navigation and activation",
       "Any screen-reader announcement",
-      "Navigation and activation"
+      "Every hover color change"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "61",
@@ -672,102 +672,102 @@
   },
   {
     "id": "62",
-    "question": "An Abide custom validation rule depends on another field. What must the app define?",
+    "question": "A custom Abide rule compares two fields. How do you register it?",
     "options": [
-      "Only the page's grid breakpoint",
-      "The cross-field validation behavior",
-      "Only the input border color",
-      "Only the label's font weight"
+      "Add a function to Foundation.Abide.defaults.validators and set data-validator on the input",
+      "Add a regular expression to Foundation.Abide.defaults.patterns and set the pattern attribute",
+      "Add a Sass mixin to the form settings and include it before Foundation",
+      "Add a key named after the rule to the form's data-options attribute"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "63",
     "question": "A Tabs link targets #settings. What must the markup provide?",
     "options": [
       "A matching Sass variable",
-      "A matching tooltip title",
       "A matching panel ID",
+      "A matching tooltip title",
       "A matching export filename"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "64",
     "question": "A Foundation accordion should allow multiple open sections. Which option should the developer inspect?",
     "options": [
       "slideSpeed",
-      "multiExpand",
       "allowAllClosed",
+      "multiExpand",
       "deepLink"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "65",
     "question": "A Foundation accordion must allow every section to close. Which option fits?",
     "options": [
-      "allowAllClosed",
-      "deepLink",
       "wrapOnKeys",
+      "deepLink",
+      "allowAllClosed",
       "multiExpand"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "66",
-    "question": "A Foundation menu must switch interaction pattern by breakpoint. Which feature is intended for that?",
+    "question": "A menu must be a drilldown on small screens and a dropdown from medium up. Which attribute does that?",
     "options": [
-      "Only a plain grid cell",
-      "Responsive navigation",
-      "Only the visibility helper",
-      "Only the callout component"
+      "data-menu-mode=\"small-drilldown medium-dropdown\"",
+      "data-responsive-menu=\"medium-drilldown dropdown\"",
+      "data-dropdown-menu=\"drilldown medium\"",
+      "data-responsive-menu=\"drilldown medium-dropdown\""
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "67",
     "question": "An Equalizer group measures before web fonts load. What can become wrong?",
     "options": [
-      "The measured element heights",
-      "The modal target IDs",
       "The form control names",
+      "The modal target IDs",
+      "The measured element heights",
       "The compiled breakpoint map"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "68",
     "question": "Interchange chooses an image source by media query. What concern remains outside that choice?",
     "options": [
       "Whether the container has a class",
-      "Alternative text and content meaning",
+      "Whether any image can load at all",
       "Whether JavaScript supports strings",
-      "Whether any image can load at all"
+      "Alternative text and content meaning"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "69",
     "question": "A Foundation tooltip contains an essential input. What is a better component choice?",
     "options": [
-      "An interactive dialog or dropdown",
       "A smaller tooltip font",
+      "An interactive dialog or dropdown",
       "An extra tooltip title",
       "A longer opening delay"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "70",
-    "question": "A Foundation form error appears only as red color. What must the implementation add?",
+    "question": "Which class does Abide add to an input that fails validation?",
     "options": [
-      "A wider grid container",
-      "A perceivable error message",
-      "A second stylesheet import",
-      "A larger breakpoint map"
+      "invalid-field",
+      "is-error-field",
+      "is-invalid-input",
+      "abide-error"
     ],
-    "correct_index": 1
+    "correct_index": 2
   },
   {
     "id": "71",
@@ -775,21 +775,21 @@
     "options": [
       "The document body receives all keys",
       "The overlay removes all tab stops",
-      "The button keeps focus behind it",
-      "Focus enters and returns usefully"
+      "Focus enters and returns usefully",
+      "The button keeps focus behind it"
     ],
-    "correct_index": 3
+    "correct_index": 2
   },
   {
     "id": "72",
-    "question": "A Foundation theme changes its primary color. Where should a Sass customization normally start?",
+    "question": "A theme must change the primary color for all components. Where should the Sass change start?",
     "options": [
-      "The modal's runtime target attribute",
-      "The generated minified CSS hash",
-      "The user's browser extension settings",
-      "The theme settings before CSS generation"
+      "Edit the compiled foundation.css file inside node_modules",
+      "Edit $foundation-palette in the settings file before the Foundation import",
+      "Add !important color rules to each component selector",
+      "Pass a color option to foundation.js at initialization"
     ],
-    "correct_index": 3
+    "correct_index": 1
   },
   {
     "id": "73",
@@ -815,133 +815,133 @@
   },
   {
     "id": "75",
-    "question": "A Foundation tooltip remains after its trigger is removed. What lifecycle concern should the app inspect?",
+    "question": "A Foundation tooltip stays on screen after its trigger is removed. What lifecycle step is missing?",
     "options": [
       "Plugin destruction and owned DOM cleanup",
-      "Only the trigger's text alignment",
-      "Only the source image export size",
-      "Only the page's default language"
+      "Sass variable resolution order",
+      "Grid gutter inheritance",
+      "Breakpoint map serialization"
     ],
     "correct_index": 0
   },
   {
     "id": "76",
-    "question": "A Foundation responsive class has no effect. What should the developer check first?",
+    "question": "Which attribute makes an off-canvas panel slide over the page without moving the content?",
     "options": [
-      "Only the modal overlay duration",
-      "Only the server's database schema",
-      "The matching compiled CSS and breakpoint",
-      "Only the browser bookmark name"
+      "data-content-scroll=\"false\"",
+      "data-transition=\"push\"",
+      "data-position=\"overlap\"",
+      "data-transition=\"overlap\""
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "77",
-    "question": "A Reveal dialog grows after asynchronous content loads. What should the app test?",
+    "question": "Which Orbit attribute stops slides from advancing automatically?",
     "options": [
-      "Only the global icon font size",
-      "Only the button text capitalization",
-      "Sizing, scroll, and focus behavior",
-      "Only the download filename"
+      "data-auto-play=\"false\"",
+      "data-pause-on-hover=\"true\"",
+      "data-infinite-wrap=\"false\"",
+      "data-use-m-u-i=\"false\""
     ],
-    "correct_index": 2
+    "correct_index": 0
   },
   {
     "id": "78",
-    "question": "A Foundation slider updates a reactive form. What must the integration keep synchronized?",
+    "question": "A Foundation slider must send its value with a form. Which markup does that?",
     "options": [
-      "Only the grid container width",
-      "Only the tooltip font family",
-      "Only the browser's scroll offset",
-      "Plugin value and application state"
+      "A hidden input whose id matches the handle's aria-controls value",
+      "A name attribute placed directly on the slider handle span",
+      "A data-submit attribute placed on the slider fill element",
+      "A form attribute placed on the slider track container"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "79",
     "question": "A Foundation source file uses legacy float-grid classes with XY Grid CSS only. What is the likely issue?",
     "options": [
-      "The markup targets another grid system",
+      "The browser disables all flex items",
       "The modal has a duplicate title",
       "The page requires another image codec",
-      "The browser disables all flex items"
+      "The markup targets another grid system"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "80",
-    "question": "A sticky panel overlaps a short footer. What should the app inspect?",
+    "question": "A Sticky element never sticks. Which wrapper does the plugin need?",
     "options": [
-      "Only the accordion's title strings",
-      "Only the callout's background color",
-      "Its configured containing boundaries",
-      "Only the slider's numeric interval"
+      "A parent element with position: fixed styling",
+      "A parent element with the grid-container class",
+      "A sibling element with data-sticky-anchor",
+      "An ancestor element with data-sticky-container"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "81",
     "question": "A React app and Foundation plugin both mutate the same menu classes. What architecture issue follows?",
     "options": [
-      "A mandatory server rendering failure",
       "Competing state ownership",
+      "A mandatory server rendering failure",
       "A broken JavaScript module syntax",
       "An invalid Sass color map"
     ],
-    "correct_index": 1
+    "correct_index": 0
   },
   {
     "id": "82",
     "question": "A Foundation plugin adds document listeners in a routed view. What must unmount cleanup handle?",
     "options": [
-      "The plugin's owned resources",
+      "Every global stylesheet rule",
       "The server's persisted user session",
       "The application's route history",
-      "Every global stylesheet rule"
+      "The plugin's owned resources"
     ],
-    "correct_index": 0
+    "correct_index": 3
   },
   {
     "id": "83",
-    "question": "A team enables float, flex, and XY grids together. What cost should architecture review measure?",
+    "question": "A team enables float, flex, and XY grids together. What cost should the review measure?",
     "options": [
-      "Only the number of page headings",
-      "Only the source file character encoding",
-      "CSS size and incompatible usage patterns",
-      "Only the modal animation duration"
+      "Compile time of the typography mixins",
+      "Browser support for CSS Grid properties",
+      "Runtime cost of the Motion UI animations",
+      "CSS size and conflicting grid class conventions"
     ],
-    "correct_index": 2
+    "correct_index": 3
   },
   {
     "id": "84",
-    "question": "A Foundation Sass build changes breakpoints while JavaScript reads stale media-query metadata. What failure can occur?",
+    "question": "How does Foundation's JavaScript learn the Sass breakpoint values?",
     "options": [
-      "CSS and plugin behavior disagree",
-      "jQuery stops accepting event handlers",
-      "Every media query becomes invalid CSS",
-      "The browser drops all layout calculations"
+      "It reads a serialized breakpoint map from the compiled CSS",
+      "It reads a generated JSON file shipped beside foundation.js",
+      "It uses fixed pixel defaults hard-coded in each plugin",
+      "It reads data attributes that the developer adds to the body"
     ],
     "correct_index": 0
   },
   {
     "id": "85",
-    "question": "A team manually duplicates Foundation breakpoints in application code. What design reduces drift?",
+    "question": "App code must test for at least the medium breakpoint. Which API avoids copying the pixel value?",
     "options": [
-      "Copy the current viewport width into Sass",
-      "Read or generate a shared breakpoint contract",
-      "Use separate undocumented values per view",
-      "Hardcode the highest breakpoint everywhere"
+      "$(window).width() > $('body').data('medium')",
+      "window.innerWidth >= 640",
+      "Foundation.Viewport.min('medium')",
+      "Foundation.MediaQuery.atLeast('medium')"
     ],
-    "correct_index": 1
+    "correct_index": 3
   },
   {
     "id": "86",
-    "question": "A Foundation Reveal embeds a third-party focus-managed editor. What integration risk should tests target?",
+    "question": "A Foundation Reveal hosts a third-party editor that also traps focus. What should tests target?",
     "options": [
-      "Only the callout spacing scale",
-      "Competing focus containment",
-      "Only image compression differences",
-      "Only the editor's file extension"
+      "Gutter calculations inside nested cells",
+      "Competing focus traps and Tab key handling",
+      "Sass variable resolution order",
+      "Breakpoint map serialization"
     ],
     "correct_index": 1
   },
@@ -958,14 +958,14 @@
   },
   {
     "id": "88",
-    "question": "A Foundation responsive menu changes plugin mode while focused. What accessibility case needs testing?",
+    "question": "A Foundation responsive menu changes plugin mode while an item has focus. What accessibility case needs testing?",
     "options": [
+      "Gutter widths after the plugin rebuilds markup",
       "Focus continuity and keyboard behavior",
-      "Only the generated CSS filename",
-      "Only the menu's total text length",
-      "Only the original screenshot resolution"
+      "Sass variable values after the mode switch",
+      "Color contrast of the default menu theme"
     ],
-    "correct_index": 0
+    "correct_index": 1
   },
   {
     "id": "89",
@@ -980,12 +980,12 @@
   },
   {
     "id": "90",
-    "question": "A Foundation token overrides spacing globally. What regression set best reveals the impact?",
+    "question": "Which Sass setting defines the margin gutter widths per breakpoint?",
     "options": [
-      "Only the token source JSON syntax",
-      "Only the primary button at desktop width",
-      "Only the package's exported version string",
-      "Representative components at multiple widths"
+      "$grid-columns, the number of columns per row",
+      "$grid-gutter-width, one value for all sizes",
+      "$global-margin, applied only to cells",
+      "$grid-margin-gutters, a map keyed by breakpoint"
     ],
     "correct_index": 3
   },
@@ -993,43 +993,43 @@
     "id": "91",
     "question": "A Foundation Equalizer group contains hidden tabs. Why can initial measurements be unreliable?",
     "options": [
-      "Equalizer requires all panels to be forms",
-      "Sass changes heights after every click",
-      "Tabs cannot contain text elements",
-      "Hidden elements lack useful visible geometry"
+      "Hidden elements have no usable layout height",
+      "Equalizer ignores elements inside tab panels",
+      "Tab panels reset their heights on each click",
+      "Sass overrides heights after initialization"
     ],
-    "correct_index": 3
+    "correct_index": 0
   },
   {
     "id": "92",
-    "question": "A Foundation Interchange region replaces interactive content. What integration step may be needed after replacement?",
+    "question": "A Foundation Interchange region replaces interactive content. What step may be needed after replacement?",
     "options": [
-      "Remove labels from the replaced controls",
-      "Load all CSS files a second time",
+      "Rebuild the Sass breakpoint map",
       "Initialize new behavior and clean old resources",
-      "Disable every semantic HTML element"
+      "Load the stylesheet a second time",
+      "Remove ARIA attributes from the new controls"
     ],
-    "correct_index": 2
+    "correct_index": 1
   },
   {
     "id": "93",
-    "question": "A Foundation app removes a Reveal trigger while its dialog remains open. What should closing logic provide?",
+    "question": "A Foundation app removes a Reveal trigger while its dialog is open. What should the closing logic provide?",
     "options": [
-      "A forced reset of all grid gutters",
-      "A hidden copy of the removed button",
+      "A reset of the grid gutter settings",
+      "A hidden copy of the removed trigger",
       "A meaningful surviving focus target",
-      "A new ID for every table cell"
+      "A new ID for the Reveal overlay"
     ],
     "correct_index": 2
   },
   {
     "id": "94",
-    "question": "A team removes Foundation utilities from a custom bundle. What dependency audit protects retained plugins?",
+    "question": "Reveal CSS is scoped under a .page wrapper but fails when the dialog opens. Why?",
     "options": [
-      "Remove every shared event helper first",
-      "Count only its top-level source imports",
-      "Check the plugin utility requirements",
-      "Compare only the minified filename lengths"
+      "Reveal strips every class from the dialog on open",
+      "Reveal clones the dialog into an iframe element",
+      "Reveal moves the dialog into an overlay appended to body",
+      "Reveal swaps the dialog for a shadow DOM copy"
     ],
     "correct_index": 2
   },
@@ -1049,54 +1049,54 @@
     "question": "A Foundation design system wraps plugins behind a common API. What should the wrapper own explicitly?",
     "options": [
       "Only the generated CSS filename",
-      "Only the page's initial scroll position",
+      "State, lifecycle, and accessibility contracts",
       "Every private plugin DOM class forever",
-      "State, lifecycle, and accessibility contracts"
-    ],
-    "correct_index": 3
-  },
-  {
-    "id": "97",
-    "question": "A shared handler receives Reveal lifecycle events from several dialogs. How should it identify which dialog changed?",
-    "options": [
-      "Assume the first dialog is always active",
-      "Inspect the event target and plugin context",
-      "Read only the shared overlay background",
-      "Use the page title as the dialog identifier"
+      "Only the page's initial scroll position"
     ],
     "correct_index": 1
   },
   {
-    "id": "98",
-    "question": "A Foundation RTL build ships with LTR-only custom offsets. What should review compare?",
+    "id": "97",
+    "question": "Several Reveal dialogs fire open.zf.reveal. How can one shared handler find which dialog opened?",
     "options": [
-      "Only the component's package version",
-      "Only the image export dimensions",
-      "Only the text's language code",
-      "Logical layout behavior in both directions"
+      "Assume the first element with data-reveal opened",
+      "Read the namespace string of the event type",
+      "Read event.target, because the event bubbles from the dialog",
+      "Read data-open from the document body"
     ],
-    "correct_index": 3
+    "correct_index": 2
+  },
+  {
+    "id": "98",
+    "question": "Which Sass setting switches Foundation's generated CSS to right-to-left?",
+    "options": [
+      "$text-flow: rtl",
+      "$global-rtl-mode: true",
+      "$global-text-direction: rtl",
+      "$grid-direction: reverse"
+    ],
+    "correct_index": 2
   },
   {
     "id": "99",
     "question": "A Foundation responsive navigation upgrade changes nested markup. What consumer coupling makes upgrades expensive?",
     "options": [
-      "Selectors tied to private structure",
-      "Publicly documented navigation options",
       "Explicit wrapper component properties",
+      "Publicly documented navigation options",
+      "Selectors tied to private structure",
       "Semantic links with stable destinations"
     ],
-    "correct_index": 0
+    "correct_index": 2
   },
   {
     "id": "100",
     "question": "A Foundation app mounts many hidden Orbit carousels. What performance trade-off needs measurement?",
     "options": [
-      "Only the total Sass variable count",
-      "Only the page's heading font size",
       "Timers, listeners, and media work",
-      "Only the package's README length"
+      "Sass compile time of the grid mixins",
+      "Gutter calculation in nested cells",
+      "Specificity of the callout selectors"
     ],
-    "correct_index": 2
+    "correct_index": 0
   }
 ]
